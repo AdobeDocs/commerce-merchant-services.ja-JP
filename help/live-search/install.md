@@ -1,0 +1,282 @@
+---
+title: ライブ検索のインストール
+description: Adobe Commerceから Live Search をインストール、更新、アンインストールする方法を説明します。
+exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
+source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+workflow-type: tm+mt
+source-wordcount: '1490'
+ht-degree: 0%
+
+---
+
+# インストール [!DNL Live Search]
+
+[!DNL Live Search] はスタンドアロンのセットです [パッケージ](#live-search-packages) これは、標準のMagento Open SourceおよびAdobe Commerceの検索機能に代わるものです。 この [!DNL Live Search] モジュールは、サーバーのコマンドラインからインストールされ、Adobe Commerceインストールに as a として接続します。 [サービス](https://docs.magento.com/user-guide/system/saas.html). プロセスが完了したら、 [!DNL Live Search] が *マーケティング* 下のメニュー *SEO と検索* 内 [!DNL Commerce] 管理者。
+
+Adobe Commerce側には、検索管理者のホスト、カタログデータの同期、クエリサービスの実行が含まれます。
+
+![ライブ検索のアーキテクチャ図](assets/architecture-diagram.svg)
+
+次の期間の後 [!DNL Live Search] モジュール（カタログモジュールを依存関係として使用）がインストールされ、設定されます。 [!DNL Commerce] は、SaaS サービスとの検索およびカタログデータの共有を開始します。 この時点で、管理者ユーザーは、検索ファセット、シノニムおよびマーチャンダイジングルールを設定、カスタマイズおよび管理できます。
+
+このトピックでは、次の操作の手順を説明します。
+
+* [インストール [!DNL Live Search]](#before-you-begin) （方法 1 及び 2）
+* [更新 [!DNL Live Search]](#update)
+* [アンインストール [!DNL Live Search]](#uninstall)
+
+## 要件 {#requirements}
+
+* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.x
+* PHP 7.3 / 7.4
+* [!DNL Composer]
+
+### サポートされるプラットフォーム
+
+* Adobe Commerceオンプレミス (EE) :2.4.x
+* Adobe Commerce on Cloud (ECE) :2.4.x
+
+## 境界としきい値
+
+現時点では、ライブ検索カテゴリの検索/カテゴリ API には、次の制限および静的境界がサポートされています。
+
+### インデックス作成
+
+* ストア表示あたり最大 300 個の製品属性のインデックス
+* Adobe Commerceデータベースの製品のインデックスのみを作成します
+* CMS ページのインデックスを作成しない
+
+### 機能
+
+* ストアフロント [詳細（フォーム）検索](https://docs.magento.com/user-guide/catalog/search-advanced.html) モジュール
+* [顧客グループ](https://docs.magento.com/user-guide/customers/customer-groups.html)
+* [カスタム価格グループ](https://docs.magento.com/user-guide/catalog/product-price-group.html)
+* 使用する複数の在庫場所 [MCOM](https://docs.magento.com/user-guide/mcom.html) またはその他の OMS 拡張
+* [統合 B2B 機能](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+
+### クエリ
+
+* ライブ検索は、カテゴリツリーの完全な分類にアクセスできず、一部の階層的なナビゲーション検索シナリオがその範囲を超えて作成されます。
+* ライブ検索は、クエリに一意の GraphQL エンドポイントを使用して、インテリジェントなファセット設定や、タイプごとの検索などの機能をサポートします。 ただし、 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)の場合は、いくつかの違いがあり、一部のフィールドは現時点で完全に互換性がない可能性があります。
+
+### Progressive Web Application(PWA)
+
+* ライブ検索はサポートされていません [PWA](https://developer.adobe.com/commerce/pwa-studio/) この時点で
+
+## 始める前に {#before-you-begin}
+
+次の操作を実行します。
+
+1. 確認 [cron ジョブ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) および [indexers](https://docs.magento.com/user-guide/system/index-management.html) が実行中です。
+
+1. 要件を満たすオンボーディング方法を選択し、指示に従います。
+
+   * [方法 1](#method-1):を使用せずにインストール [!DNL Elasticsearch]
+   * [方法 2](#method-2):次を使用してインストール [!DNL Elasticsearch] （ダウンタイムなし）
+
+   >[!TIP]
+   >
+   >コマンドラインに手順を入力するには、コードボックスの右端にカーソルを置き、 [!UICONTROL **コピー**] リンク。 次に、コマンドラインに貼り付けます。 コマンドラインでの作業経験がない場合は、システムインテグレーターまたは開発者に問い合わせてください。
+
+## メソッド 1:インストール (Elasticsearchなし ) {#method-1}
+
+このオンボーディング方法は、 [!DNL Live Search] 移動先：
+
+* 新規 [!DNL Commerce] インストール
+* ステージング環境
+
+このシナリオでは、ストアフロント操作は、 [!DNL Live Search] サービスは、カタログ内のすべての製品のインデックスを作成します。 インストール時に、 [!DNL Live Search] モジュールが有効になり、 [!DNL Elasticsearch] モジュールが無効になっています。
+
+1. 次を使用せずにAdobe Commerce 2.4.x をインストール [!DNL Live Search].
+
+1. 次の手順で `live-search` package で、コマンドラインから次のコマンドを実行します。
+
+   ```bash
+   composer require magento/DNL live-search
+   ```
+
+   詳しくは、 [!DNL Live Search] [依存](#dependencies) が [!DNL Composer].
+
+1. 次のコマンドを実行して無効にします [!DNL Elasticsearch] および関連するモジュール、およびインストール [!DNL Live Search]:
+
+   ```bash
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch  Magento_InventoryElasticsearch
+   ```
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+   >[!WARNING]
+   >
+   > データのインデックスが作成され、同期されている間は、検索およびカテゴリの参照操作はストアフロントで使用できません。 カタログのサイズによっては、プロセスに少なくとも 1 時間かかる場合があります `cron` データの同期先として実行 [!DNL Live Search] サービス。
+
+1. 次の点を確認します。 [indexers](https://docs.magento.com/user-guide/system/index-management.html) が `Update by Schedule`:
+
+   * 製品フィード
+   * 製品バリアントフィード
+   * カタログ属性フィード
+
+1. の設定 [API キー](#configure-api-keys) から [同期](#synchronize-catalog-data) カタログデータを [!DNL Live Search] サービス。
+
+1. ストアフロントでファセットをフィルターとして使用できるようにするには、 [ファセット](https://docs.magento.com/user-guide/live-search/facets-add.html) 以下の通り必要です。 [ファセット要件](https://docs.magento.com/user-guide/live-search/facets.html).
+
+   の後にファセットを追加できます。 `cron` 属性フィードを実行し、属性メタデータを書き出します。
+
+1. 少なくとも 1 時間後に待つ `cron` を実行してデータを同期します。 すると、 [確認](#verify-export) データがエクスポートされた。
+
+1. [テスト](#test-the-connection) ストアフロントからの接続。
+
+## 方法 2:インストールElasticsearch {#method-2}
+
+このオンボーディング方法は、 [!DNL Live Search] 移動先：
+
+* 既存の実稼動 [!DNL Commerce] インストール
+
+このシナリオでは、 [!DNL Elasticsearch] ストアフロントからの検索リクエストを一時的に管理し、 [!DNL Live Search] サービスは、通常のストアフロント操作を中断することなく、バックグラウンドですべての製品のインデックスを作成します。 [!DNL Elasticsearch] が無効で、 [!DNL Live Search] すべてのカタログデータのインデックスが作成され、同期された後に有効になります。
+
+1. 次の手順で `live-search` package で、コマンドラインから次のコマンドを実行します。
+
+   ```bash
+   composer require magento/live-search
+   ```
+
+   詳しくは、 [!DNL Live Search] [依存](#live-search-dependencies) が [!DNL Composer].
+
+1. 次のコマンドを実行して、 [!DNL Live Search] ストアフロントの検索結果を提供するモジュール。
+
+   ```bash
+   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   ```
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+   [!DNL Elasticsearch] は、 [!DNL Live Search] サービスは、カタログデータを同期し、製品のインデックスをバックグラウンドで作成します。
+
+1. 次の点を確認します。 [indexers](https://docs.magento.com/user-guide/system/index-management.html) が `Update by Schedule`:
+
+   * 製品フィード
+   * 製品バリアントフィード
+   * カタログ属性フィード
+
+1. の設定 [API キー](#configure-api-keys) から [同期](#synchronize-catalog-data) カタログデータを [!DNL Live Search] サービス。
+
+1. ストアフロントでファセットをフィルターとして使用できるようにするには、 [ファセット](https://docs.magento.com/user-guide/live-search/facets-add.html) 以下の通り必要です。 [ファセット要件](https://docs.magento.com/user-guide/live-search/facets.html).
+
+   の後にファセットを追加できます。 `cron` 製品および属性フィードを実行し、属性メタデータをに書き出します。 [!DNL Live Search] サービス。
+
+1. データのインデックスが作成され、同期されるまで 1 時間以上待ちます。 次に、 [GraphQL プレイグラウンド](https://devdocs.magento.com/live-search/graphql-support.html) をデフォルトのクエリに置き換えて、以下を検証します。
+
+   * 返される製品数は、ストア表示で期待される数に近い数です
+   * ファセットが返される
+
+1. 次のコマンドを実行して無効にします [!DNL Elasticsearch] モジュール、有効化 [!DNL Live Search] モジュールと実行 `setup`:
+
+   ```bash
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   ```
+
+   ```bash
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch Magento_InventoryElasticsearch
+   ```
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. [テスト](#test-the-connection) ストアフロントからの接続。
+
+## API キーの設定 {#configure-api-keys}
+
+接続するには、Adobe Commerce API キーと、それに関連する秘密鍵が必要です [!DNL Live Search] Adobe Commerceのインストールに API キーは、 [!DNL Commerce] 開発者または SI と共有できるライセンス所有者。 開発者は、ライセンス所有者に代わって SaaS データスペースを作成および管理できます。
+
+### Adobe Commerceライセンス所有者
+
+API キーと秘密鍵の生成については、 [Commerce Services コネクタ](https://docs.magento.com/user-guide/system/saas.html).
+
+### Adobe Commerce開発者または SI
+
+設定の「 Commerce Services 」の節で説明されているように、開発者または SI が SaaS データ空間を設定します。 Commerce Services は、SaaS モジュールがインストールされると、管理者設定サイドバーで使用可能になります。
+
+## カタログデータを同期 {#synchronize-catalog-data}
+
+[!DNL Live Search] では、検索操作用に同期された製品データが必要です。ファセットを設定するには、同期された属性データが必要です。 製品カタログとカタログサービス間の初期同期は、次の時点で開始されます。 [!DNL Live Search] は最初に接続されます。 カタログのインストール方法とサイズに応じて、でデータの書き出しとインデックス作成がおこなわれるまで、最大 8 時間かかる場合があります。 [!DNL Live Search]. カタログサービスと同期および共有されるデータのリストは、次の場所で定義されているスキーマ内にあります。
+
+`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+### 書き出しを検証 {#verify-export}
+
+カタログデータがAdobe Commerceインスタンスから書き出され、次の項目と同期されていることを確認するには： [!DNL Live Search]次の表のエントリを探します。
+
+* `catalog_data_exporter_products`
+* `catalog_data_exporter_product_attributes`
+
+その他のヘルプについては、 [[!DNL Live Search] カタログが同期されていません](https://support.magento.com/hc/en-us/articles/4405637804301-Live-search-catalog-not-synchronized) 」を参照してください。
+
+### 今後の製品アップデート
+
+最初の同期の後、増分製品の更新がストアフロント検索で使用できるようになるまで、最大 15 分かかる場合があります。 詳しくは、 [製品アップデートのストリーミング](https://devdocs.magento.com/live-search/indexing.html).
+
+## 接続をテストする {#test-connection}
+
+ストアフロントで、以下を確認します。
+
+* この [!UICONTROL Search] ボックスが正しく結果を返す
+* カテゴリの参照によって結果が正しく返される
+* ファセットは、検索結果ページのフィルターとして使用できます
+
+すべてが正しく動作する場合は、おめでとうございます。 [!DNL Live Search] がインストールされ、接続され、使用できる状態になっている。
+
+ストアフロントで問題が発生した場合は、 `var/log/system.log` ファイルに保存され、API 通信の失敗やサービス側でのエラーに関する情報が含まれます。
+
+## 更新中 [!DNL Live Search] {#update}
+
+更新するには [!DNL Live Search]のコマンドラインで、次のコマンドを実行します。
+
+```bash
+composer update magento/live-search --with-dependencies
+```
+
+1.0 から 2.0 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します [!DNL Composer] `.json` ファイルの内容は次のとおりです。
+
+1. ルートを開く `composer.json` ファイルと検索 `magento/live-search`.
+
+1. 内 `require` 「 」セクションで、次のようにバージョン番号を更新します。
+
+   ```json
+   "require": {
+      ...
+      "magento/live-search": "^2.0",
+      ...
+    }
+   ```
+
+1. **保存** `composer.json`. 次に、コマンドラインから次の操作を実行します。
+
+   ```bash
+   composer update magento/live-search –-with-dependencies
+   ```
+
+## アンインストール [!DNL Live Search] {#uninstall}
+
+アンインストールするには [!DNL Live Search]（を参照） [モジュールのアンインストール](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+
+## [!DNL Live Search] パッケージ {#packages}
+
+| パッケージ | 説明 |
+|--- |--- |
+| `module-live-search` | マーチャントがファセット設定、シノニム、クエリルールなどの検索設定を設定でき、読み取り専用の GraphQL プレイグラウンドにアクセスして管理者からのクエリをテストできます。 |
+| `module-live-search-adapter` | ストアフロントからにリクエストをルーティングします [!DNL Live Search] 結果がストアフロントに表示されます。 <br /> — カテゴリ参照 — ストアフロントからリクエストをルーティングします。 [上部ナビゲーション](https://docs.magento.com/user-guide/catalog/navigation-top.html) を検索サービスに追加します。<br /> — グローバル検索 — リクエストを [クイック検索](https://docs.magento.com/user-guide/catalog/search-quick.html) 店頭の右上にある箱 [!DNL Live Search] サービス。 |
+| `module-live-search-storefront-popover` | 「入力に応じて検索」ポップオーバーは、標準のクイック検索に代わり、動的な製品の提案と上位の検索結果のサムネールを返します。 |
+
+## [!DNL Live Search] 依存 {#dependencies}
+
+以下 [!DNL Live Search] 依存関係は次の方法でキャプチャされます。 [!DNL Composer]:
+
+| 依存関係 | 説明 |
+|--- |--- |
+| モジュールの書き出し | 以下のモジュールは、カタログデータを収集し、同期します。<br />`saas-export`<br />`module-bundle-product-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter` |
+| `services-connector` | Commerce Services への接続を設定するために必要です。 |
+| `module-services-id` | Commerce Services への接続を設定するために必要です。 |

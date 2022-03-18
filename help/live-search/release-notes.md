@@ -1,0 +1,75 @@
+---
+title: Live Search リリースノート
+description: Adobe Commerceのライブ検索の最新のリリース情報です。
+exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
+source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 1%
+
+---
+
+# [!DNL Live Search] リリースノート
+
+これらのリリースノートでは、の最新バージョンについて説明します [!DNL Live Search] およびを含めます。
+
+* ![新規](../assets/new.svg)  — 新機能
+* ![修正点](../assets/fix.svg)  — 修正点および改善点
+* ![バグ](../assets/bug.svg)  — 既知の問題
+
+## [!DNL Live Search] 1.3.1
+
+* Adobe Commerce(EE) との互換性：2.4.x
+* Adobe Commerce for Cloud(ECE) との互換性：2.4.x
+* 安定性：安定
+
+* ![修正点](../assets/fix.svg) - [カスタム価格属性](https://docs.magento.com/user-guide/stores/attributes-input-types.html) が [ファセット]({% link live-search/facets-add.md %})。
+* ![修正点](../assets/fix.svg)  — 次の場合にエラーが発生する問題を修正しました。 [通貨記号](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) が使用可能です。
+* ![修正点](../assets/fix.svg) - [ストアフロントポップオーバー](storefront-popover.md) 今は [特別価格](https://docs.magento.com/user-guide/catalog/product-price-special.html) （最終価格の最小値）を指定できます。
+
+## [!DNL Live Search] 1.3.0
+
+* Adobe Commerce(EE) との互換性：2.4.x
+* Adobe Commerce for Cloud(ECE) との互換性：2.4.x
+* 安定性：安定
+
+* ![新規](../assets/new.svg) - [パフォーマンス](https://docs.magento.com/user-guide/live-search/performance.html) レポートダッシュボードでは、買い物客が使用する検索用語に関するインサイトを得ることができます。
+* ![新規](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) では、イベント公開および購読サービス、指標を含む、共通のデータレイヤーにアクセスできます。
+* ![修正点](../assets/fix.svg) - [ストアフロントポップオーバー](https://devdocs.magento.com/live-search/storefront-popover.html) 新しい `active` クラス `.search-autocomplete` 表示/非表示を制御するコンテナ。
+* ![修正点](../assets/fix.svg)  — 店頭では、 [検索語句](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) フッターリンクが削除され、そのキャッシュが無効になっている [!DNL Live Search] インストール。
+* ![バグ](../assets/bug.svg)  — 検索アダプタのパッチは、重複する製品を処理します。
+* ![バグ](../assets/bug.svg) - [!DNL Live Search] サポート [単一ソース](https://docs.magento.com/user-guide/catalog/inventory-sources.html) （物理）複数の（仮想）在庫場所 [在庫](https://docs.magento.com/user-guide/catalog/inventory-stock.html). 現時点では、複数の在庫ソースはサポートされていません。
+
+## [!DNL Live Search] 1.2.0
+
+* Adobe Commerce(EE) との互換性：2.4.x
+* Adobe Commerce for Cloud(ECE) との互換性：2.4.x
+* 安定性：安定
+
+* ![新規](../assets/new.svg)  — ストアフロント [ポップオーバー](storefront-popover.md) 「検索」ボックスに買い物客タイプのクエリとして、上位の検索結果の推奨製品とサムネール画像を表示します。
+* ![新規](../assets/new.svg) - Commerce Admin セッションは、キーボードが操作されない状態が長時間続く間、開いたままになります
+* ![新規](../assets/new.svg) - [!DNL Live Search] オンボーディング後、が自動的に有効になります
+* ![修正点](../assets/fix.svg)  — 初期インデックス作成時間が 1 時間未満です
+* ![修正点](../assets/fix.svg)  — ほぼリアルタイムで製品の増分アップデート（インストールおよびセットアップ後）
+* ![修正点](../assets/fix.svg)  — シノニム・エディタの並べ替え可能な列
+* ![修正点](../assets/fix.svg) - [!DNL Live Search] 検索条件に空の並べ替え順の値が含まれる場合にエラーがスローされなくなりました。
+* ![修正点](../assets/fix.svg)  — 属性コードに「to」または「from」の文字列が含まれる場合、範囲フィルタリングが壊れなくなりました
+
+## [!DNL Live Search] 1.1.0
+
+* Adobe Commerce(EE) との互換性：2.4.x
+* Adobe Commerce for Cloud(ECE) との互換性：2.4.x
+* 安定性：安定
+
+* ![バグ](../assets/bug.svg) - [!DNL Live Search] サービスは、 [基準通貨](https://docs.magento.com/user-guide/stores/currency-configuration.html) Adobe Commerceのインストール
+* ![バグ](../assets/bug.svg)  — ファセットを追加する場合、に設定すると、製品属性フィードが正しく更新されません。 `Update on Save`. この問題を回避するには、に移動します。 [インデックス管理](https://docs.magento.com/user-guide/system/index-management.html) 製品属性フィードをに設定します。 `Update by Schedule`.
+* ![バグ](../assets/bug.svg) - [!DNL Live Search] シノニムはストア表示ごとに定義されますが、現在は Web サイトごとに保存され、次の組み合わせで識別されます。 `environmentId` + `storeViewCode`. その結果、Adobe Commerceのインストール内のすべての Web サイトおよびストア表示で、同じ同義語のセットが共有されます。 ストア表示のシノニムの最近作成したセットが優先されます。
+* ![バグ](../assets/bug.svg)  — シノニム用語に複数の単語が含まれる場合、各単語は別々のシノニムとして扱われます。 例えば、「時間」を「時間」のシノニムとして定義した場合、「時間」と「ピース」の両方は、時間の同義語として扱われます。
+
+## ドキュメント
+
+詳しくは、以下を参照してください。
+
+* [Adobe Commerce開発者向けドキュメント](https://devdocs.magento.com/)
+* [Adobe Commerce User Guide](https://docs.magento.com/user-guide/)
+* [[!DNL Live Search] Marketplace の](https://marketplace.magento.com/magento-live-search.html)
