@@ -4,7 +4,7 @@ description: 返金の作成 [!DNL Payment Services] クレジット・メモ・
 exl-id: 2b3721a1-9c9d-4e3f-ab7d-5bd61573dcb4
 source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
