@@ -3,20 +3,22 @@ user-guide-title: ライブ検索ガイド
 user-guide-description: このガイドでは、Adobe Commerceのライブ検索を使用する手順を詳しく説明します。
 breadcrumb-title: ライブ検索ガイド
 hide: true
-source-git-commit: b4310f95a038022e377158bca77f5fa9eaf05078
+source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '90'
 ht-degree: 2%
 
 ---
 
 # コマースのライブ検索 {#live-search}
 
-- [ライブ検索ガイド](overview.md)
-- はじめに {#getting-started}
-   - [インストール](install.md)
-   - [リリースノート](release-notes.md)
-- ライブ検索ストアフロント{#live-search-storefront}
+- [ガイドの概要](guide-overview.md)
+- [ライブ検索の概要](overview.md)
+- [リリースノート](release-notes.md)
+- オンボーディングライブ検索 {#onboard}
+   - [オンボーディングの概要](onboarding-overview.md)
+   - [ライブ検索のインストール](install.md)
+- ライブ検索ストアフロント {#live-search-storefront}
    - [クイックツアー](quick-tour.md)
    - [ストアフロントポップオーバー](storefront-popover.md)
    - [ポップオーバー要素のスタイル設定](storefront-popover-styling.md)

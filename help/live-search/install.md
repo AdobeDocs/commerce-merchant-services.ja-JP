@@ -2,66 +2,22 @@
 title: ライブ検索のインストール
 description: Adobe Commerceから Live Search をインストール、更新、アンインストールする方法を説明します。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
 
 # インストール [!DNL Live Search]
 
-[!DNL Live Search] はスタンドアロンのセットです [パッケージ](#live-search-packages) これは、標準のMagento Open SourceおよびAdobe Commerceの検索機能に代わるものです。 この [!DNL Live Search] モジュールは、サーバーのコマンドラインからインストールされ、Adobe Commerceインストールに as a として接続します。 [サービス](https://docs.magento.com/user-guide/system/saas.html). プロセスが完了したら、 [!DNL Live Search] が *マーケティング* 下のメニュー *SEO と検索* 内 [!DNL Commerce] 管理者。
-
-Adobe Commerce側には、検索管理者のホスト、カタログデータの同期、クエリサービスの実行が含まれます。
-
-![ライブ検索のアーキテクチャ図](assets/architecture-diagram.svg)
-
-次の期間の後 [!DNL Live Search] モジュール（カタログモジュールを依存関係として使用）がインストールされ、設定されます。 [!DNL Commerce] は、SaaS サービスとの検索およびカタログデータの共有を開始します。 この時点で、管理者ユーザーは、検索ファセット、シノニムおよびマーチャンダイジングルールを設定、カスタマイズおよび管理できます。
+ライブ検索は、Extension Marketplace の拡張機能としてAdobeされます。 次の期間の後 [!DNL Live Search] モジュール（カタログモジュールを依存関係として使用）がインストールされ、設定されます。 [!DNL Commerce] は、SaaS サービスとの検索およびカタログデータの共有を開始します。 この時点で *管理者* ユーザーは、検索ファセット、シノニムおよびマーチャンダイジングルールを設定、カスタマイズおよび管理できます。
 
 このトピックでは、次の操作の手順を説明します。
 
 * [インストール [!DNL Live Search]](#before-you-begin) （方法 1 及び 2）
 * [更新 [!DNL Live Search]](#update)
 * [アンインストール [!DNL Live Search]](#uninstall)
-
-## 要件 {#requirements}
-
-* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.x
-* PHP 7.3 / 7.4
-* [!DNL Composer]
-
-### サポートされるプラットフォーム
-
-* Adobe Commerceオンプレミス (EE) :2.4.x
-* Adobe Commerce on Cloud (ECE) :2.4.x
-
-## 境界としきい値
-
-現時点では、ライブ検索カテゴリの検索/カテゴリ API には、次の制限および静的境界がサポートされています。
-
-### インデックス作成
-
-* ストア表示あたり最大 300 個の製品属性のインデックス
-* Adobe Commerceデータベースの製品のインデックスのみを作成します
-* CMS ページのインデックスを作成しない
-
-### 機能
-
-* ストアフロント [詳細（フォーム）検索](https://docs.magento.com/user-guide/catalog/search-advanced.html) モジュール
-* [顧客グループ](https://docs.magento.com/user-guide/customers/customer-groups.html)
-* [カスタム価格グループ](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* 使用する複数の在庫場所 [MCOM](https://docs.magento.com/user-guide/mcom.html) またはその他の OMS 拡張
-* [統合 B2B 機能](https://business.adobe.com/products/magento/b2b-ecommerce.html)
-
-### クエリ
-
-* ライブ検索は、カテゴリツリーの完全な分類にアクセスできず、一部の階層的なナビゲーション検索シナリオがその範囲を超えて作成されます。
-* ライブ検索は、クエリに一意の GraphQL エンドポイントを使用して、インテリジェントなファセット設定や、タイプごとの検索などの機能をサポートします。 ただし、 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)の場合は、いくつかの違いがあり、一部のフィールドは現時点で完全に互換性がない可能性があります。
-
-### Progressive Web Application(PWA)
-
-* ライブ検索はサポートされていません [PWA](https://developer.adobe.com/commerce/pwa-studio/) この時点で
 
 ## 始める前に {#before-you-begin}
 
@@ -74,10 +30,6 @@ Adobe Commerce側には、検索管理者のホスト、カタログデータの
    * [方法 1](#method-1):を使用せずにインストール [!DNL Elasticsearch]
    * [方法 2](#method-2):次を使用してインストール [!DNL Elasticsearch] （ダウンタイムなし）
 
-   >[!TIP]
-   >
-   >コマンドラインに手順を入力するには、コードボックスの右端にカーソルを置き、 [!UICONTROL **コピー**] リンク。 次に、コマンドラインに貼り付けます。 コマンドラインでの作業経験がない場合は、システムインテグレーターまたは開発者に問い合わせてください。
-
 ## メソッド 1:インストール (Elasticsearchなし ) {#method-1}
 
 このオンボーディング方法は、 [!DNL Live Search] 移動先：
@@ -86,6 +38,10 @@ Adobe Commerce側には、検索管理者のホスト、カタログデータの
 * ステージング環境
 
 このシナリオでは、ストアフロント操作は、 [!DNL Live Search] サービスは、カタログ内のすべての製品のインデックスを作成します。 インストール時に、 [!DNL Live Search] モジュールが有効になり、 [!DNL Elasticsearch] モジュールが無効になっています。
+
+>[!TIP]
+>
+>入力エラーを避けるには、コードボックスの右端にマウスポインターを置いて、 [!UICONTROL **コピー**] リンクし、コマンドラインに貼り付けます。
 
 1. 次を使用せずにAdobe Commerce 2.4.x をインストール [!DNL Live Search].
 
@@ -100,7 +56,7 @@ Adobe Commerce側には、検索管理者のホスト、カタログデータの
 1. 次のコマンドを実行して無効にします [!DNL Elasticsearch] および関連するモジュール、およびインストール [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch  Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
    ```
 
    ```bash
@@ -117,7 +73,7 @@ Adobe Commerce側には、検索管理者のホスト、カタログデータの
    * 製品バリアントフィード
    * カタログ属性フィード
 
-1. の設定 [API キー](#configure-api-keys) から [同期](#synchronize-catalog-data) カタログデータを [!DNL Live Search] サービス。
+1. の設定 [API キー](#configure-api-keys) カタログデータが [同期済み](#synchronize-catalog-data) と [!DNL Live Search] サービス。
 
 1. ストアフロントでファセットをフィルターとして使用できるようにするには、 [ファセット](https://docs.magento.com/user-guide/live-search/facets-add.html) 以下の通り必要です。 [ファセット要件](https://docs.magento.com/user-guide/live-search/facets.html).
 
@@ -134,6 +90,10 @@ Adobe Commerce側には、検索管理者のホスト、カタログデータの
 * 既存の実稼動 [!DNL Commerce] インストール
 
 このシナリオでは、 [!DNL Elasticsearch] ストアフロントからの検索リクエストを一時的に管理し、 [!DNL Live Search] サービスは、通常のストアフロント操作を中断することなく、バックグラウンドですべての製品のインデックスを作成します。 [!DNL Elasticsearch] が無効で、 [!DNL Live Search] すべてのカタログデータのインデックスが作成され、同期された後に有効になります。
+
+>[!TIP]
+>
+>入力エラーを避けるには、コードボックスの右端にマウスポインターを置いて、 [!UICONTROL **コピー**] リンクし、コマンドラインに貼り付けます。
 
 1. 次の手順で `live-search` package で、コマンドラインから次のコマンドを実行します。
 
@@ -161,7 +121,7 @@ Adobe Commerce側には、検索管理者のホスト、カタログデータの
    * 製品バリアントフィード
    * カタログ属性フィード
 
-1. の設定 [API キー](#configure-api-keys) から [同期](#synchronize-catalog-data) カタログデータを [!DNL Live Search] サービス。
+1. の設定 [API キー](#configure-api-keys) カタログデータが [同期済み](#synchronize-catalog-data) と [!DNL Live Search] サービス。
 
 1. ストアフロントでファセットをフィルターとして使用できるようにするには、 [ファセット](https://docs.magento.com/user-guide/live-search/facets-add.html) 以下の通り必要です。 [ファセット要件](https://docs.magento.com/user-guide/live-search/facets.html).
 
@@ -169,17 +129,17 @@ Adobe Commerce側には、検索管理者のホスト、カタログデータの
 
 1. データのインデックスが作成され、同期されるまで 1 時間以上待ちます。 次に、 [GraphQL プレイグラウンド](https://devdocs.magento.com/live-search/graphql-support.html) をデフォルトのクエリに置き換えて、以下を検証します。
 
-   * 返される製品数は、ストア表示で期待される数に近い数です
-   * ファセットが返される
+   * 返される製品数は、ストア表示で期待される数に近い数です。
+   * ファセットが返されます。
 
-1. 次のコマンドを実行して無効にします [!DNL Elasticsearch] モジュール、有効化 [!DNL Live Search] モジュールと実行 `setup`:
+1. 次のコマンドを実行してを有効にします。 [!DNL Live Search] モジュール、無効 [!DNL Elasticsearch]、およびを実行します。 `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
    ```
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
    ```
 
    ```bash
@@ -198,7 +158,7 @@ API キーと秘密鍵の生成については、 [Commerce Services コネク�
 
 ### Adobe Commerce開発者または SI
 
-設定の「 Commerce Services 」の節で説明されているように、開発者または SI が SaaS データ空間を設定します。 Commerce Services は、SaaS モジュールがインストールされると、管理者設定サイドバーで使用可能になります。
+設定の「 Commerce Services 」の節で説明されているように、開発者または SI が SaaS データ領域を設定します。 内 *管理者* SaaS モジュールがインストールされると、Commerce Services が設定サイドバーで使用可能になります。
 
 ## カタログデータを同期 {#synchronize-catalog-data}
 
@@ -239,7 +199,7 @@ API キーと秘密鍵の生成については、 [Commerce Services コネク�
 composer update magento/live-search --with-dependencies
 ```
 
-1.0 から 2.0 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します [!DNL Composer] `.json` ファイルの内容は次のとおりです。
+1.0.0 から 2.0.0 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
 
 1. ルートを開く `composer.json` ファイルと検索 `magento/live-search`.
 
@@ -267,7 +227,7 @@ composer update magento/live-search --with-dependencies
 
 | パッケージ | 説明 |
 |--- |--- |
-| `module-live-search` | マーチャントがファセット設定、シノニム、クエリルールなどの検索設定を設定でき、読み取り専用の GraphQL プレイグラウンドにアクセスして管理者からのクエリをテストできます。 |
+| `module-live-search` | マーチャントがファセット設定、シノニム、クエリルールなどの検索設定を設定でき、読み取り専用の GraphQL プレイグラウンドにアクセスして、 *管理者*. |
 | `module-live-search-adapter` | ストアフロントからにリクエストをルーティングします [!DNL Live Search] 結果がストアフロントに表示されます。 <br /> — カテゴリ参照 — ストアフロントからリクエストをルーティングします。 [上部ナビゲーション](https://docs.magento.com/user-guide/catalog/navigation-top.html) を検索サービスに追加します。<br /> — グローバル検索 — リクエストを [クイック検索](https://docs.magento.com/user-guide/catalog/search-quick.html) 店頭の右上にある箱 [!DNL Live Search] サービス。 |
 | `module-live-search-storefront-popover` | 「入力に応じて検索」ポップオーバーは、標準のクイック検索に代わり、動的な製品の提案と上位の検索結果のサムネールを返します。 |
 

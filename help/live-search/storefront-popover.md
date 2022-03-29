@@ -2,9 +2,9 @@
 title: ストアフロントポップオーバー
 description: ライブ検索ストアフロントポップオーバーは、推奨される製品とサムネールを動的に返します。
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,15 @@ ht-degree: 0%
 * `categories`
 
 ![ライブ検索ポップオーバー](assets/storefront-search-as-you-type.png)
+
+## ポップオーバーページサイズ
+
+ポップオーバーのページサイズによって、返すオートコンプリート済み製品の行数が決まります。 以前は、ページサイズは 6 行にハードコードされていました。 ただし、 `page_size` の値は現在、 *管理者*. ライブ検索のインストール中に、 `page_size` 値が [カタログ検索](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` 設定。
+
+デフォルトでは、「カタログ検索 — オートコンプリートの上限」の値は 8 行（または行）に設定されています。 ポップオーバーのページサイズを変更するには、次の操作を行います。
+
+1. の *管理者* サイドバー、移動 **ストア** /設定/ **設定**.
+1. 左側のパネルで、を展開します。 **カタログ** を選択します。 **カタログ** を選択します。
+1. を展開します。 *カタログ検索* 」セクションに入力します。
+1. を **オートコンプリート制限** を、ポップオーバーに許可する行数に設定します。
+1. 完了したら、「 **設定を保存**.

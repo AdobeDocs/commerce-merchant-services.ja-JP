@@ -2,9 +2,9 @@
 title: Live Search リリースノート
 description: Adobe Commerceのライブ検索の最新のリリース情報です。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,19 @@ ht-degree: 1%
 * ![新規](../assets/new.svg)  — 新機能
 * ![修正点](../assets/fix.svg)  — 修正点および改善点
 * ![バグ](../assets/bug.svg)  — 既知の問題
+
+## [!DNL Live Search] 2.0
+
+* Adobe Commerce(EE) との互換性：2.4.x
+* Adobe Commerce for Cloud(ECE) との互換性：2.4.x
+* 安定性：安定
+
+* ![新規](../assets/new.svg) - [ストアフロントポップオーバー](quick-tour.md) は、 *管理者*.
+* ![新規](../assets/new.svg)  — ベータ版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) ライブ検索の互換性。
+* ![新規](../assets/new.svg)  — ライブ検索のインストールプロセスが、プロセスの詳細な変更で更新されます。
+* ![修正点](../assets/fix.svg) - [詳細検索](https://docs.magento.com/user-guide/catalog/search-advanced.html) storefront フッターからリンクが削除されました。
+* ![バグ](../assets/bug.svg)  — 次の製品属性は、ではサポートされていません [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) PWAのベータリリースに関連して使用する場合： `description`, `name`, `short_description`
+* ![バグ](../assets/bug.svg)  — ライブ検索のPWAのベータ版リリースはサポートしていません [イベント処理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 
@@ -47,7 +60,7 @@ ht-degree: 1%
 * 安定性：安定
 
 * ![新規](../assets/new.svg)  — ストアフロント [ポップオーバー](storefront-popover.md) 「検索」ボックスに買い物客タイプのクエリとして、上位の検索結果の推奨製品とサムネール画像を表示します。
-* ![新規](../assets/new.svg) - Commerce Admin セッションは、キーボードが操作されない状態が長時間続く間、開いたままになります
+* ![新規](../assets/new.svg)  — コマース *管理者* キーボードの操作が行われない時間が長く続く間、セッションは開いたままになる
 * ![新規](../assets/new.svg) - [!DNL Live Search] オンボーディング後、が自動的に有効になります
 * ![修正点](../assets/fix.svg)  — 初期インデックス作成時間が 1 時間未満です
 * ![修正点](../assets/fix.svg)  — ほぼリアルタイムで製品の増分アップデート（インストールおよびセットアップ後）
