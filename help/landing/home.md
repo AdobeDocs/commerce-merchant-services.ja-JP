@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: ドキュメント
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: ddfcc8e195b1971b0f431205948faa6c6dd2c49f
+source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 
 次の項目は、ドキュメントに対する最近の変更です。
 
-* 更新された [!DNL Live Search] リリースノート： [1.3.1 リリース](/help/live-search/release-notes.md).
+* 更新された [!DNL Live Search] リリースノート： [2.0 リリース](/help/live-search/release-notes.md).
 * の節を追加しました (_境界としきい値_) を [インストール [!DNL Live Search]](/help/live-search/install.md) トピック。
 * 追加済み [[!DNL Payment Services] ガイド](/help/payment-services/guide-overview.md) 新しい marketplace 拡張機能およびホストされているサービス v1.0.0 の最新情報を入力します。
 * この [!DNL Live Search] [パフォーマンスレポートダッシュボード](/help/live-search/performance.md) では、買い物客が使用する検索用語の効果に関するインサイトを提供します。
-* での B2B サポートの追加 [[!DNL Product Recommendations]](https://docs.magento.com/user-guide/recommendations/overview.html).
+* での B2B サポートの追加 [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
