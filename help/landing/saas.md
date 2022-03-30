@@ -1,0 +1,109 @@
+---
+title: Commerce Services コネクタ
+description: API キーと秘密鍵を使用して、Adobe CommerceまたはMagento Open Sourceインスタンスをサービスに統合する方法について説明します。
+source-git-commit: 8789bd21362109325d0d7b23d9b130067390eeae
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 0%
+
+---
+
+# [!DNL Commerce Services Connector]
+
+一部のAdobe CommerceおよびMagento Open Source機能は、 [!DNL Commerce Services]  SaaS（サービスとしてのソフトウェア）としてデプロイされます。 これらのサービスを使用するには、 [!DNL Commerce] API キーと秘密鍵を使用するインスタンスと、 [設定](https://docs.magento.com/user-guide/configuration/services/saas.html). 設定が必要なのは 1 回だけです。
+
+## 利用可能なサービス
+
+以下に、 [!DNL Commerce] でアクセスできる機能 [!DNL Commerce Services Connector]:
+
+| サービス | 使用可否 |
+| ---|--- |
+| [!DNL Product Recommendations] Adobe Senseiを活用 | Adobe Commerce |
+| [!DNL Live Search] Adobe Senseiを活用 | Adobe Commerce |
+| [!DNL Payment Services] | Adobe CommerceとMagento Open Source |
+
+## アーキテクチャ
+
+高いレベルでは、 [!DNL Commerce Services Connector] は、次のコア要素で構成されています。
+
+![Commerce Services コネクタのアーキテクチャ](assets/saas-config-sync-workflow.png)
+
+次のセクションでは、これらの各要素について詳しく説明します。
+
+## 資格情報 {#apikey}
+
+API キーと秘密鍵は、 [!DNL Commerce] 一意の [!DNL Commerce] ID (MageID)。 次のようなサービスの使用権限の検証に合格するには： [!DNL Product Recommendations] または [!DNL Live Search]を使用する場合、マーチャントの組織のライセンス所有者は、アカウントが正常である限り、API キーのセットを生成できます。 キーは、ライセンス所有者に代わってプロジェクトと環境を管理するシステムインテグレーターまたは開発チームと「知っておく必要がある」という理由で共有できます。 また、ソリューションインテグレーターは、 [!DNL Commerce Services]. ソリューションインテグレーターの場合、 [!DNL Commerce] パートナー契約は、API キーを生成する必要があります。
+
+### API キーと秘密鍵の生成 {#genapikey}
+
+1. にログインします。 [!DNL Commerce] アカウント [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}。
+
+1. 以下 **Magento** タブ、選択 **API ポータル** サイドバーに表示されます。
+
+1. 次の _環境_ メニュー、選択 **実稼動** または **サンドボックス**.
+
+   >[!NOTE]
+   >
+   > の場合 [!DNL _製品Recommendations_] および [!DNL _ライブ検索_]&#x200B;を選択します。 **実稼動**. 実稼動用キーを使用すると、実稼動用データスペースと非実稼動用データスペースにアクセスできます。 サンドボックスキーは、これらのサービスには使用されません。
+
+1. 名前を _API キー_ 「 」セクションで、「 」をクリックします。 **新規追加**.
+
+   新しいキーをダウンロードするためのダイアログが開きます。
+
+   ![秘密鍵をダウンロード](assets/download-api-private-key.png)
+
+   >[!WARNING]
+   >
+   > これは、鍵をコピーまたはダウンロードする必要がある唯一の機会です。
+
+1. クリック **ダウンロード** 次に、 **キャンセル**.
+
+   この **API キー** 「 」セクションに API キーが表示されるようになりました。 API キーと秘密鍵の両方が必要な場合は、 [SaaS プロジェクトを選択または作成する](#createsaasenv).
+
+## SaaS 設定 {#saasenv}
+
+[!DNL Commerce] インスタンスは、SaaS プロジェクトと SaaS データスペースを使用して、 [!DNL Commerce Services] では、適切な場所にデータを送信できます。 SaaS プロジェクトは、すべての SaaS データスペースをグループ化します。 SaaS データスペースは、 [!DNL Commerce Services] を有効にします。 このデータの一部は、 [!DNL Commerce] インスタンスと一部は、ストアフロントでの買い物客の行動から収集される場合があります。 その後、そのデータは保持され、クラウドストレージを保護します。
+
+の場合 [!DNL Product Recommendations]に設定すると、SaaS データスペースには、カタログと行動データが含まれます。 次の項目を指定： [!DNL Commerce] 次の方法で SaaS データ空間にインスタンスを送信 [選択](https://docs.magento.com/user-guide/configuration/services/saas.html) 内 [!DNL Commerce] 設定。
+
+>[!WARNING]
+>
+> 実稼動環境の SaaS データ領域を実稼動環境でのみ使用する [!DNL Commerce] データの衝突を回避するためのインストール。 そうしないと、実稼動サイトのデータがテストデータで汚染され、デプロイメントが遅延する可能性があります。 例えば、実稼動製品のデータがステージング URL などのステージングデータから誤って上書きされる可能性があります。
+
+### SaaS プロジェクトを選択または作成する {#createsaasenv}
+
+>[!NOTE]
+>
+> 次の項目が表示されない場合、 **Commerce Services コネクタ** セクション [!DNL Commerce] 設定するには、 [!DNL Commerce] 目的の [!DNL Commerce Service]例： [!DNL Product Recommendations].
+
+SaaS プロジェクトを選択または作成するには、 [!DNL Commerce] からの API キー [!DNL Commerce] お客様の店舗のライセンス所有者。
+
+1. の _管理者_ サイドバー、移動 **ストア** > _設定_ > **設定**.
+
+1. 左側のパネルで、を展開します。 **サービス** を選択します。 **Commerce Services コネクタ**.
+
+1. 内 _API キー_ 」セクションで、 **実稼動 API キー** そして **実稼動用秘密鍵**.
+
+   秘密鍵には、 `----BEGIN PRIVATE KEY---` キーの先頭と `----END PRIVATE KEY----` 秘密鍵の最後に。
+
+1. クリック **設定を保存**.
+
+API キーに関連付けられている SaaS プロジェクトは、 **SaaS プロジェクト** フィールドに入力します。
+
+1. SaaS プロジェクトが存在しない場合は、「 **プロジェクトを作成**. 次に、 **プロジェクト名** 「 」フィールドに、SaaS プロジェクトの名前を入力します。
+
+   SaaS プロジェクトを作成する場合、 [!DNL Commerce] によって、に応じて 1 つ以上の SaaS データスペースが生成されます [!DNL Commerce] ライセンス：
+   - Adobe Commerce - 1 つの実稼動データ領域2 つのテスト用データスペース
+   - Magento Open Source- 1 つの実稼動データ領域テストデータスペースなし
+
+1. を選択します。 **SaaS データ容量** を [!DNL Commerce] ストア。
+
+>[!WARNING]
+>
+> マイアカウントの API ポータルセクションで新しいキーを生成する場合は、管理者設定で API キーを直ちに更新してください。 新しいキーを生成し、Admin で更新しない場合、SaaS 拡張機能は機能しなくなり、有用なデータが失われます。
+
+SaaS プロジェクト名またはデータスペース名を変更するには、 **このプロジェクトの名前を変更** または **データスペース名を変更** それぞれ
+
+## カタログの同期
+
+次の場合、 [!DNL Commerce] インスタンスが正常に接続しました [!DNL Commerce Services]カタログ同期プロセスで、 [!DNL Commerce] サーバーから [!DNL Commerce Services]. [詳細情報](catalog-sync.md) カタログ同期プロセスについて
