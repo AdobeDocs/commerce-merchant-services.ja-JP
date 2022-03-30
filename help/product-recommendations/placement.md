@@ -1,9 +1,9 @@
 ---
 title: 配置とラベル
 description: サイトの様々なページにレコメンデーションを配置できる場所と、各レコメンデーションタイプで頻繁に使用されるラベルの提案について説明します。
-source-git-commit: 4ec8acf6795cd451df48fbfba12e8635c180bf79
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 選択するレコメンデーションタイプが非常に多い場合、各ページで使用するレコメンデーションタイプはどれか。 どこから始めればよいかわからない場合は、次の手順に従ってください。
 
-|ホームページ|`Recommended for you`| |製品ページ|`Viewed this, viewed that`| |買い物かご|`Bought this, bought that`|
+| ページ | レコメンデーションタイプ |
+|---|---|
+| ホームページ | `Recommended for you` |
+| 製品ページ | `Viewed this, viewed that` |
+| 買い物かご | `Bought this, bought that` |
 
 次を追跡するには、 [指標](workspace.md) 必要に応じて調整します。 実験が重要であることを覚えておいてください。
 
