@@ -2,9 +2,9 @@
 title: Live Search リリースノート
 description: Adobe Commerceのライブ検索の最新のリリース情報です。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 1%
 * Adobe Commerce for Cloud(ECE) との互換性：2.4.x
 * 安定性：安定
 
-* ![新規](../assets/new.svg) - [パフォーマンス](https://docs.magento.com/user-guide/live-search/performance.html) レポートダッシュボードでは、買い物客が使用する検索用語に関するインサイトを得ることができます。
+* ![新規](../assets/new.svg) - [パフォーマンス](performance.md) レポートダッシュボードでは、買い物客が使用する検索用語に関するインサイトを得ることができます。
 * ![新規](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) では、イベント公開および購読サービス、指標を含む、共通のデータレイヤーにアクセスできます。
 * ![修正点](../assets/fix.svg) - [ストアフロントポップオーバー](https://devdocs.magento.com/live-search/storefront-popover.html) 新しい `active` クラス `.search-autocomplete` 表示/非表示を制御するコンテナ。
 * ![修正点](../assets/fix.svg)  — 店頭では、 [検索語句](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) フッターリンクが削除され、そのキャッシュが無効になっている [!DNL Live Search] インストール。

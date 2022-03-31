@@ -2,9 +2,9 @@
 title: ライブ検索のインストール
 description: Adobe Commerceから Live Search をインストール、更新、アンインストールする方法を説明します。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 1. の設定 [API キー](#configure-api-keys) カタログデータが [同期済み](#synchronize-catalog-data) と [!DNL Live Search] サービス。
 
-1. ストアフロントでファセットをフィルターとして使用できるようにするには、 [ファセット](https://docs.magento.com/user-guide/live-search/facets-add.html) 以下の通り必要です。 [ファセット要件](https://docs.magento.com/user-guide/live-search/facets.html).
+1. ストアフロントでファセットをフィルターとして使用できるようにするには、 [ファセット](facets-add.md) 以下の通り必要です。 [ファセット要件](facets.md).
 
    の後にファセットを追加できます。 `cron` 属性フィードを実行し、属性メタデータを書き出します。
 
@@ -123,7 +123,7 @@ ht-degree: 0%
 
 1. の設定 [API キー](#configure-api-keys) カタログデータが [同期済み](#synchronize-catalog-data) と [!DNL Live Search] サービス。
 
-1. ストアフロントでファセットをフィルターとして使用できるようにするには、 [ファセット](https://docs.magento.com/user-guide/live-search/facets-add.html) 以下の通り必要です。 [ファセット要件](https://docs.magento.com/user-guide/live-search/facets.html).
+1. ストアフロントでファセットをフィルターとして使用できるようにするには、 [ファセット](facets-add.md) 以下の通り必要です。 [ファセット要件](facets.md).
 
    の後にファセットを追加できます。 `cron` 製品および属性フィードを実行し、属性メタデータをに書き出します。 [!DNL Live Search] サービス。
 
@@ -177,7 +177,7 @@ API キーと秘密鍵の生成については、 [Commerce Services コネク�
 
 ### 今後の製品アップデート
 
-最初の同期の後、増分製品の更新がストアフロント検索で使用できるようになるまで、最大 15 分かかる場合があります。 詳しくは、 [製品アップデートのストリーミング](https://devdocs.magento.com/live-search/indexing.html).
+最初の同期の後、増分製品の更新がストアフロント検索で使用できるようになるまで、最大 15 分かかる場合があります。 詳しくは、 [製品アップデートのストリーミング](indexing.md).
 
 ## 接続をテストする {#test-connection}
 
