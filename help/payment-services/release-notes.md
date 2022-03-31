@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] リリースノート"'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
+source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ![新規](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) は、Adobe CommerceおよびMagento Open Sourceのバージョン 2.4.0 ～ 2.4.4 と互換性があるようになりました。
 
-![新規](../assets/new.svg)<!-- Issue PAY-2682 --> この [!DNL Payment Services] Adobe CommerceとMagento Open Sourceの拡張機能は、カナダの商人が利用できます。 商人は次のいずれかで支払の構成を表示できます： [フランス語](overview.md?lang=fr) または [英語](overview.md?lang=en).
+![新規](../assets/new.svg)<!-- Issue PAY-2682 --> この [!DNL Payment Services] Adobe CommerceとMagento Open Sourceの拡張機能は、カナダの商人が利用できます。 商人は次のいずれかで支払の構成を表示できます： [フランス語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) または [英語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
 ![新規](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] サポート [カナダドル (CAD)](overview.md#accepted-credit-cards-and-currencies) クレジットカードと Paypal を使用します。 買い物客は、買い物をする店舗のロケールに応じて、好みの言語で買い物体験をすることができます。
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2475 --> [PayPal サンドボックスアカウント](https://support.magento.com/hc/en-us/articles/4406954952461) 対象 [!DNL Payment Services] は、オンボーディング中にアカウントが作成された場合は検証できません。
 
-![既知の問題](../assets/bug.svg)<!-- Issue PAY-2842 --> [クレジットカードのテストが失敗しました](https://support.magento.com/hc/en-us/articles/4406954952461) と PayPal の両方を使用します。
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-2842 --> [クレジットカードのテストが失敗しました](https://support.magento.com/hc/en-us/articles/5201041963917) と PayPal の両方を使用します。
 
 ## v1.0.0
 
