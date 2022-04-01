@@ -2,7 +2,7 @@
 title: ファセットを追加
 description: フィルタリング可能な製品属性をライブ検索ファセットとして追加する方法について説明します。
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 手順 2:ファセットのプロパティを編集（オプション）
 
-1. ファセットのプロパティを編集するには、 **詳細** (![その他のセレクター](assets/btn-more.png) 」オプションが表示されます。
+1. ファセットのプロパティを編集するには、 **詳細** (![その他のセレクター](assets/btn-more.png)) オプションを使用できます。
 1. メニューで、 **編集**. 次に、必要に応じて次のプロパティを調整します。
 
    * ラベル — ([ヘッドレス](facets-type.md) ) 使用するファセットラベルを入力します。

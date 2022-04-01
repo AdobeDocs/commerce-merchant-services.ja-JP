@@ -2,9 +2,9 @@
 title: ライブ検索のインストール
 description: Adobe Commerceから Live Search をインストール、更新、アンインストールする方法を説明します。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 このトピックでは、次の操作の手順を説明します。
 
-* [インストール [!DNL Live Search]](#before-you-begin) （方法 1 及び 2）
+* インストール [!DNL Live Search] （方法 1 及び 2）
 * [更新 [!DNL Live Search]](#update)
 * [アンインストール [!DNL Live Search]](#uninstall)
 
@@ -150,15 +150,15 @@ ht-degree: 0%
 
 ## API キーの設定 {#configure-api-keys}
 
-接続するには、Adobe Commerce API キーと、それに関連する秘密鍵が必要です [!DNL Live Search] Adobe Commerceのインストールに API キーは、 [!DNL Commerce] 開発者または SI と共有できるライセンス所有者。 開発者は、ライセンス所有者に代わって SaaS データスペースを作成および管理できます。
+接続するには、Adobe Commerce API キーと、それに関連する秘密鍵が必要です [!DNL Live Search] Adobe Commerceのインストールに API キーは、 [!DNL Commerce] 開発者または SI と共有できるライセンス所有者。 開発者は、ライセンス所有者に代わって SaaS データスペースを作成および管理できます。  既に API キーのセットがある場合は、それらを再生成する必要はありません。
 
 ### Adobe Commerceライセンス所有者
 
-API キーと秘密鍵の生成については、 [Commerce Services コネクタ](https://docs.magento.com/user-guide/system/saas.html).
+API キーと秘密鍵の生成については、 [Commerce Services コネクタ](../landing/saas.md).
 
 ### Adobe Commerce開発者または SI
 
-設定の「 Commerce Services 」の節で説明されているように、開発者または SI が SaaS データ領域を設定します。 内 *管理者* SaaS モジュールがインストールされると、Commerce Services が設定サイドバーで使用可能になります。
+開発者または SI は、 *コマースサービス* 」セクションに含まれています。 内 *管理者*&#x200B;に設定されている場合、Commerce Services は *設定* SaaS モジュールがインストールされている場合にサイドバーが表示されます。
 
 ## カタログデータを同期 {#synchronize-catalog-data}
 
@@ -177,7 +177,7 @@ API キーと秘密鍵の生成については、 [Commerce Services コネク�
 
 ### 今後の製品アップデート
 
-最初の同期の後、増分製品の更新がストアフロント検索で使用できるようになるまで、最大 15 分かかる場合があります。 詳しくは、 [製品アップデートのストリーミング](indexing.md).
+最初の同期の後、増分製品の更新がストアフロント検索で使用できるようになるまで、最大 15 分かかる場合があります。 詳しくは、 [インデックス作成 — 製品アップデートのストリーミング](indexing.md).
 
 ## 接続をテストする {#test-connection}
 

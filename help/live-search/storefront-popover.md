@@ -2,9 +2,9 @@
 title: ストアフロントポップオーバー
 description: ライブ検索ストアフロントポップオーバーは、推奨される製品とサムネールを動的に返します。
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この [!DNL Live Search] ストアフロントポップオーバーは、 *Luma* テーマ、または *Luma*. この *Luma* テーマが [!DNL Commerce] サンプルデータ。 このポップオーバーは *空白* テーマ。 詳しくは、 [変更したテーマの使用](#working-with-modified-theme) を参照してください。
+>この [!DNL Live Search] ストアフロントポップオーバーは、 *Luma* テーマ、または *Luma*. この *Luma* テーマが [!DNL Commerce] サンプルデータ。 このポップオーバーは *空白* テーマ。 詳しくは、 [ポップオーバー要素のスタイル設定](storefront-popover-styling.md) を参照してください。
 
 ## 検索可能な属性
 

@@ -2,7 +2,7 @@
 title: クイックツアー
 description: ストアフロントからライブ検索のクイックツアーを参照してください。
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -16,6 +16,7 @@ ht-degree: 0%
 ## 入力に応じて検索
 
 [!DNL Live Search] は、提案された製品と、上位の検索結果のサムネール画像を使用して、 [ポップオーバー](storefront-popover.md) 買い物客が [検索](https://docs.magento.com/user-guide/catalog/search-quick.html) ボックス この [製品の詳細](https://docs.magento.com/user-guide/quick-tour/product-page.html) 買い物客が提案または注目すべき製品をクリックすると、ページが表示されます。 A _すべて表示_ リンクは、ポップオーバーのフッターに、検索結果ページを表示します。
+
 [!DNL Live Search] は、2 文字以上のクエリに対する「入力時に検索」の結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 クエリの文字数は設定できません。 ポップオーバーには、次のフィールドが含まれます。 `name`, `sku`、および `category_ids`.
 
 ![ストアフロントの例 — 入力時に検索](assets/storefront-search-as-you-type.png)

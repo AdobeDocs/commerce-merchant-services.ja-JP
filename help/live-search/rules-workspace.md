@@ -2,9 +2,9 @@
 title: ルールワークスペース
 description: ライブ検索ルールワークスペースの操作方法を説明します。
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ View Details パネルから、次の操作を実行できます。
 
 | 制御 | 説明 |
 |--- |--- |
-| ルールを追加 | を開きます。 [ルールエディター]({% link live-search/rules-add.md %})。 |
+| ルールを追加 | を開きます。 [ルールエディター](rules-add.md). |
 | ステータス | ルールのリストをステータスでフィルターします。 オプション：すべて、アクティブ、非アクティブ、スケジュール済み |
 | ![列セレクター](assets/btn-show-hide-columns.png) | グリッドに表示する列を指定します。 オプション：最終更新日、開始日、終了日、ステータス |
 | 検索 | 完全な名前または部分一致でルールを検索します。 |
