@@ -1,17 +1,17 @@
 ---
-title: 管理での設定
-description: インストール後、 [!DNL Payment Services] 」と入力します。
+title: レガシー支払いサービスの設定
+description: インストール後、 [!DNL Payment Services] ストア設定の「管理者」で、
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
 
-# 管理での設定
+# レガシー支払いサービスの設定
 
 カスタマイズ可能 [!DNL Payment Services] を必要に応じて管理者の設定オプションを使用できます。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 詳しくは、 [支払いオプション](payments-options.md#paypal-smart-buttons) を参照してください。
 
-### PayPal スマートボタンの設定
+### 設定 [!DNL PayPal Smart Buttons]
 
 PayPal スマートボタンの支払いオプションは、Admin 内で有効にして設定できます。
 
@@ -93,7 +93,7 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 1. デバッグモードを有効にするには、 `Yes` の **[!UICONTROL Debug Mode]** (`No` 無効にします )。
 1. 変更を保存するには、 **[!UICONTROL Save Config]** .
 
-#### 設定オプション
+### 設定オプション
 
 | フィールド | 範囲 | 説明 |
 |---|---|---|
@@ -106,3 +106,15 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 | [!UICONTROL Show buttons on product detail page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] 製品の詳細ページに表示されます。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini cart preview] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] ミニカートのプレビューで オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on cart page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] を買い物かごページに追加します。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+
+### [!DNL PayPal Smart Buttons] スタイル設定オプション
+
+| フィールド | [範囲]({% link configuration/scope.md %}) | 説明 |
+|--- |--- |--- |
+| [!UICONTROL Layout] | ストア表示 | Paypal スマートボタンのレイアウトのスタイルを定義します。 オプション： [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
+| [!UICONTROL Color] | ストア表示 | Paypal スマートボタンの色を定義します。 オプション： [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
+| [!UICONTROL Shape] | ストア表示 | Paypal スマートボタンの形状を定義します。 オプション： [!UICONTROL Rectangular] / [!UICONTROL Pill] |
+| [!UICONTROL Use Default Height] | ストア表示 | PayPal スマートボタンがデフォルトの高さを使用するかどうかを定義します。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Height] | ストア表示 | PayPal のスマートボタンの高さを定義します。 デフォルト値：なし |
+| [!UICONTROL Label] | ストア表示 | PayPal のスマートボタンに表示されるラベルを定義します。 オプション： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+| [!UICONTROL Tagline] | ストア表示 | タグラインを有効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |

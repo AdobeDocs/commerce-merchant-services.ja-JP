@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] リリースノート"'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -42,8 +42,6 @@ ht-degree: 1%
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-2561 --> 以前に削除した製品は、 _注文を確認_ ページ。
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] 管理での支払い方法のラベルが改善されました。
-
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-2907 --> 不正ルールとチャージバック保護を最適に利用するために、トランザクション・データの収集を改善。
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [誤ったコンポーザーキー](https://support.magento.com/hc/en-us/articles/4406603542541) 拡張機能のインストール中に、ユーザーは [認証](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正しい `MAGEID`.
 

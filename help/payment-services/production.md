@@ -2,9 +2,9 @@
 title: 有効にする [!DNL Payment Services] 本番用
 description: を有効にしてオンボーディングプロセスを完了します。 [!DNL Payment Services] 実稼動用。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,17 @@ Payments Services 拡張機能が [インストール済み](install.md)、イ�
 
 ## Adobeからの支払い権限の要求
 
-ライブオンボーディングを有効にするには、次から支払いの使用権限を要求する必要があります： [Adobe](https://business.adobe.com/resources/payment-services.html).
+ライブオンボーディングを有効にするには、次のAdobeに支払い権限を要求する必要があります。
+
+1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. クリック **[!UICONTROL Get Live Payments]** の [!DNL Payment Services] ダッシュボード。
+
+   ![権限のリクエスト](assets/request-entitlements.png)
+
+1. フォームに情報を入力します。
+1. セールスチームのメンバーから連絡が来ます。
+
+または、次の場所でAdobeの支払い権限を要求できます： [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
