@@ -2,9 +2,9 @@
 title: のテスト [!DNL Express Checkout] Adobe Commerce拡張機能
 description: テストと検証により、 [!DNL Express Checkout] 拡張機能は期待どおりに動作します。
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ### Sandbox アカウントの使用
 
-サンドボックスをテストおよび検証する際は、偽のクレジットカード番号と [サンドボックス](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} Bolt のマーチャントアカウント。既存のクレジットカードアカウントに対する実際の料金を作成しないようにします。
+サンドボックスをテストおよび検証する際は、偽のクレジットカード番号と [サンドボックス](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} マーチャントアカウント [!DNL Bolt]既存のクレジットカードアカウントに対して実際の料金を作成しないようにします。
 
 ## 実稼動環境でのテスト
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 1. ストアフロントに移動し、カートに必要な項目を配置します。
 1. チェックアウトに進みます。
-1. プロンプトが表示されたら、Bolt アカウントに関連付けられている電子メールアドレスを入力します。
+1. 次に関連する電子メールアドレスを入力 [!DNL Bolt] プロンプトが表示されたら、アカウントを選択します。
 1. アカウントの電子メールアドレスに送信するワンタイムパスワード (OTP) を入力します。
 1. 環境ダッシュボードを選択します。
 

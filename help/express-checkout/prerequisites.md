@@ -2,9 +2,9 @@
 title: '''[!DNL Express Checkout] 前提条件'
 description: システムが、 [!DNL Express Checkout] Adobe Commerce拡張機能の場合
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
@@ -34,4 +34,4 @@ ht-degree: 1%
 | ISPU | [!DNL In-Store Pickup] (ISPU) 機能はサポートされていません |
 | Multishipping | マルチシッピングはサポートされていません |
 
-詳しくは、 [ボルトの制限](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) Bolt と [!DNL Express Checkout] 拡張子。
+詳しくは、 [[!DNL Bolt] 制限](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) の互換性制限の詳細については、このページを参照してください。 [!DNL Bolt] そして [!DNL Express Checkout] 拡張子。

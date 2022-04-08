@@ -2,9 +2,9 @@
 title: の問題のトラブルシューティング [!DNL Express Checkout]
 description: エラーのトラブルシューティング、および [!DNL Express Checkout] Adobe Commerce拡張機能の場合
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Adobe Commerceは通常、最大 20 番地の住所行をサポートするよ�
 
 には既知の問題があります [!DNL Express Checkout].
 
-次を有効にした場合、 `Enable terms and conditions` チェックボックスと [Bolt アカウントでログイン](https://help.bolt.com/shoppers/guides/checkout/log-in/)の場合、チェックボックスは表示されません。
+次を有効にした場合、 `Enable terms and conditions` 」チェックボックスをオンにし、 [!DNL Bolt] アカウント、 `Enable terms and conditions` チェックアウト時にチェックボックスが表示されない。 詳しくは、 [ログイン](https://help.bolt.com/shoppers/account/login-dashboard/) [!DNL Bolt] ページを参照してください。
 
 詳しくは、 [利用条件](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) トピックを参照してください。
 
@@ -105,7 +105,7 @@ Adobe Commerceは通常、最大 20 番地の住所行をサポートするよ�
 
 次に `Display Billing Address On` パラメータ `payment page` および [Bolt アカウントでログイン](https://help.bolt.com/shoppers/guides/checkout/log-in/) 次の項目を確認する場合 `My billing and shipping address are the same` チェックボックス：
 
-![同じアドレス](../assets/checked-address.png)
+![同じアドレス](assets/checked-address.png)
 
 ラジオボタンの表示 `use existing card`.
 
@@ -119,4 +119,4 @@ Adobe Commerceを使用すると、複数の地域や市場に対してストア
 
 ## お問い合わせ
 
-さらにサポートや質問が必要な場合は、Adobe Commerceサポートにお問い合わせください。
+サポートが必要な場合は、Adobe Commerceサポートにお問い合わせください。

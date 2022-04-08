@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Express Checkout] Adobe Commerce'
 user-guide-description: 詳しくは、 [!DNL Express Checkout] は、Adobe Commerceインスタンスと、拡張機能のオンボーディングと設定に成功する方法に役立ちます。
 breadcrumb-title: Merchant Services ガイド
 hide: true
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '55'
 ht-degree: 0%
 
 ---
@@ -26,4 +26,5 @@ ht-degree: 0%
    - [チェックアウトフロー](checkout-flow.md)
    - [発送の詳細](shipping-details.md)
    - [支払い方法](payment-methods.md)
+   - [管理での注文の作成](create-order-admin.md)
    - [トラブルシューティング [!DNL Express Checkout]](troubleshooting.md)

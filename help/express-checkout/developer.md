@@ -2,9 +2,9 @@
 title: '''[!DNL Express Checkout] (Adobe Commerce開発者向け情報 )'
 description: '''[!DNL Express Checkout] 開発者情報。'''
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,53 @@ ht-degree: 0%
 
 このトピックには、Adobe CommerceとMagento Open Sourceコードを緊密に連携し、 [!DNL Express Checkout] 拡張子。
 
-チェック [Bolt 開発者用ヘルプ](https://help.bolt.com/developers/) を参照してください。
+## 拡張ポイント
+
+拡張ポイントを使用した [!DNL Express Checkout].
+
+拡張機能ポイントを使用すると、アプリケーションコード内のコアコンポーネントを実際に変更することなく、カスタマイズを行うことができます。
+
+### 発送先詳細ステップ
+
+拡張ポイントを使用して、でログインした後の自動ステップナビゲーションをカスタマイズできます。 [!DNL Bolt].
+
+買い物客が [!DNL Bolt]の場合、すべての有効な情報が事前入力され、注文をおこなうための支払いの詳細ステップにリダイレクトされます。 詳しくは、 [チェックアウトフロー](https://experienceleague.adobe.com/docs/commerce-merchant-services/express-checkout/manage-checkout/checkout-flow.html) トピックを参照してください。
+
+この拡張ポイントは、支払い手順への移動を防ぎ、買い物客が出荷手順に対して追加のアクションを実行する必要がある拡張機能がある場合に役立ちます。 拡張機能ポイントと Mixin の使用方法について、以下の例を参照してください。
+
+1. での新しい Mixin の登録 `require-config.js` 次の場所にあるファイル： `app/code/Vendor/ModuleName/view/frontend/`.
+
+   ```js
+   var config = {
+       config: {
+           mixins: {
+               "Magento_ExpressCheckout/js/model/can-navigate-to-payment": {
+                   "Vendor/ModuleName/js/model/can-navigate-to-payment-mixin": true
+               }
+           }
+       }
+   };
+   ```
+
+1. でモデルを拡張する `can-navigate-to-payment.js` 次の場所にあるファイル： `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
+
+   ```js
+   define([
+       'Magento_Checkout/js/model/quote',
+       'mage/utils/wrapper',
+   ], function (quote, wrapper) {
+       'use strict';
+       return function (canNavigateToPayment) {
+           return wrapper.wrap(canNavigateToPayment, function (originalAction) {
+               /* Include custom checks or conditions to stay on the shipping step,i.e: your shopper is from Germany */
+               return originalAction() && quote.shippingAddress().countryId !== 'DE');
+           });
+       };
+   });
+   ```
+
+>[!WARNING]
+>
+> これは、ドイツ (DE) の買い物客が配送の詳細ステップに滞在したい場合の例です。
+
+チェック [[!DNL Bolt] 開発者向けヘルプ](https://help.bolt.com/developers/) 詳しくは、 [!DNL Bolt] 開発者向け
