@@ -2,7 +2,7 @@
 title: '''[!DNL Express Checkout] (Adobe Commerce開発者向け情報 )'
 description: '''[!DNL Express Checkout] 開発者情報。'''
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: 46d5cae4e55a2983a2dc8c442cf5530803be65af
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 拡張機能ポイントを使用すると、アプリケーションコード内のコアコンポーネントを実際に変更することなく、カスタマイズを行うことができます。
 
-### 発送先詳細ステップ
+## 発送先詳細ステップ
 
 拡張ポイントを使用して、でログインした後の自動ステップナビゲーションをカスタマイズできます。 [!DNL Bolt].
 
