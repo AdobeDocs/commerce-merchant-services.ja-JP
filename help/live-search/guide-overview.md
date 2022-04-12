@@ -1,13 +1,13 @@
 ---
-title: ガイドの概要
+title: ライブ検索ガイドの概要
 description: Adobe Commerceのライブ検索は、驚くほど高速で、超関連性が高く、直感的な検索エクスペリエンスを提供します。
-source-git-commit: 69c2689c4d97169078c413e9055601893c5467a0
+exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
-
 
 # ライブ検索ガイドの概要
 

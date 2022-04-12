@@ -2,14 +2,14 @@
 title: Workspace の Faceting
 description: ライブ検索のファセット設定ワークスペースの操作方法を説明します。
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
-# ワークスペースの Faceting
+# Workspace の Faceting
 
 この [!DNL Live Search] workspace には、現在使用可能なすべてのファセットが一覧表示され、ファセットの設定と管理に必要なツールへのアクセス権を提供します。 固定されたファセットが既存のファセットのリストで最初に表示され、その後に動的ファセットが表示されます。 リストをフィルタリングして、すべてのファセットを表示したり、ピン留めされたファセットや動的なファセットのみを表示したりできます。
 

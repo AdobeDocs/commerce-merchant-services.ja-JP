@@ -2,16 +2,16 @@
 title: ファセット
 description: ライブ検索ファセットでは、属性値の複数のディメンションが検索条件として使用されます。
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # ファセット
 
-ファセット化は、属性値の複数のディメンションを検索基準として使用する、高パフォーマンスのフィルタリングの方法です。 ファセット検索は似ていますが、標準よりも「かなり賢い」です [層状ナビゲーション](https://docs.magento.com/user-guide/catalog/navigation-layered.html). 使用可能なフィルターのリストは、 [フィルター可能な属性](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) 検索結果に返された製品の数。 で最大 100 個のファセットを設定できます。 [!DNL Live Search].
+ファセット化は、属性値の複数のディメンションを検索基準として使用する、高パフォーマンスのフィルタリングの方法です。 ファセット検索は似ていますが、標準よりも「かなり賢い」です [層状ナビゲーション](https://docs.magento.com/user-guide/catalog/navigation-layered.html). 使用可能なフィルターのリストは、 [フィルター可能な属性](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) 検索結果に返された製品の数。
 
 ![フィルター済みの検索結果](assets/storefront-search-results-run.png)
 
@@ -19,11 +19,24 @@ ht-degree: 0%
 
 ファセット設定のカテゴリと製品属性の要件は、レイヤー化されたナビゲーションで使用されるフィルタリング可能な属性と似ています。 各属性のストアフロントプロパティは、に設定する必要があります。 `filterable (with results)`.
 
+* を使用してファセットとして設定できる属性は最大 100 個までです。 [!DNL Live Search].
+* [!DNL Live Search] 最大 300 個の属性のインデックスをフィルタリング可能/検索可能/並べ替え可能として作成し、検索で表示できます。
+
 | 設定 | 説明 |
 |--- |--- |
 | [カテゴリの表示設定](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | アンカー — `Yes` |
 | [属性プロパティ](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [カタログ入力タイプ](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | 属性ストアフロントのプロパティ | レイヤーナビゲーションで使用 — `Filterable (with results)` |
+
+## デフォルトの属性値
+
+次の製品属性には、 [storefront プロパティ](https://docs.magento.com/user-guide/stores/attributes-product.html) が [!DNL Live Search] デフォルトで有効になっています。
+
+| プロパティ | Storefront プロパティ | 属性 |
+|---|---|---|
+| 並べ替え可能 | 製品リストの並べ替えに使用 | `price` |
+| 検索可能 | 検索で使用 | `price` <br />`sku`<br />`name` |
+| FilterableInSearch | レイヤーナビゲーションで使用 — フィルタリング可能（結果付き） | `price`<br />`visibility`<br />`category_name` |
 
 ## システム以外のデフォルトの属性プロパティ
 

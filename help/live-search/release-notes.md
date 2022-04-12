@@ -2,9 +2,9 @@
 title: Live Search リリースノート
 description: Adobe Commerceのライブ検索の最新のリリース情報です。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: a3a52af6cd907b2b8734a5dd3ca7df71158db190
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '684'
 ht-degree: 1%
 
 ---
@@ -23,12 +23,16 @@ ht-degree: 1%
 * Adobe Commerce for Cloud(ECE) との互換性：2.4.x
 * 安定性：安定
 
+既存 [!DNL Live Search] インストールは、次にアップグレードする必要があります： [!DNL Live Search] 2.0.0 では、次の新機能、修正点および改善点を活用できます。
+
+* ![新規](../assets/new.svg) - [!DNL Live Search] Adobe Commerce 2.4.4 を実行するインストールで、PHP 8.1 がサポートされるようになりました。
+* ![新規](../assets/new.svg) - `Magento_ElasticsearchCatalogPermissionsGraphQl` モジュールは、インストール時に無効になるモジュールのリストに追加されます。
 * ![新規](../assets/new.svg) - [ストアフロントポップオーバー](quick-tour.md) は、 *管理者*.
-* ![新規](../assets/new.svg)  — ベータ版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) ライブ検索の互換性。
-* ![新規](../assets/new.svg)  — ライブ検索のインストールプロセスが、プロセスの詳細な変更で更新されます。
+* ![新規](../assets/new.svg)  — ベータ版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 互換性 [!DNL Live Search].
+* ![新規](../assets/new.svg) - [!DNL Live Search] インストールプロセスは、高度なプロセス変更で更新されます。
 * ![修正点](../assets/fix.svg) - [詳細検索](https://docs.magento.com/user-guide/catalog/search-advanced.html) storefront フッターからリンクが削除されました。
 * ![バグ](../assets/bug.svg)  — 次の製品属性は、ではサポートされていません [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) PWAのベータリリースに関連して使用する場合： `description`, `name`, `short_description`
-* ![バグ](../assets/bug.svg)  — ライブ検索のPWAのベータ版リリースはサポートしていません [イベント処理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+* ![バグ](../assets/bug.svg)  — 用PWAのベータリリース [!DNL Live Search] はをサポートしていません [イベント処理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 

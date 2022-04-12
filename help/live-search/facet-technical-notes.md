@@ -2,9 +2,9 @@
 title: ファセットに関するテクニカルノート
 description: ライブ検索ファセットの使用に関する技術メモです。
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: e53fb13b98684757b8081b2e19dd33d925e8ce5d
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,3 @@ ht-degree: 0%
 * `categories` 集計 — 集計 `categories`適用 `color` および `price` フィルター（ただし、除外） `categories` フィルター。
 * `color` 集計 — 集計 `color`適用 `price` および `categories` フィルター（ただし、除外） `color` フィルター。
 * `price` 集計 — 集計 `price`適用 `color` および `categories` フィルター（ただし、除外） `price` フィルター。
-
-## デフォルトの属性値
-
-次の製品属性には、 [storefront プロパティ](https://docs.magento.com/user-guide/stores/attributes-product.html) これはデフォルトで有効になっています。
-
-| プロパティ | Storefront プロパティ | 属性 |
-|---|---|---|
-| 並べ替え可能 | 製品リストの並べ替えに使用 | `price` |
-| 検索可能 | 検索で使用 | `price` <br />`sku`<br />`name` |
-| FilterableInSearch | レイヤーナビゲーションで使用 — フィルタリング可能（結果付き） | `price`<br />`visibility`<br />`category_name` |

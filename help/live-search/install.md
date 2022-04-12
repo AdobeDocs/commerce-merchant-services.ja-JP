@@ -2,9 +2,9 @@
 title: ライブ検索のインストール
 description: Adobe Commerceから Live Search をインストール、更新、アンインストールする方法を説明します。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 27adb528c0c805478516dd9669237b971d0efc95
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,8 @@ ht-degree: 0%
 1. 次のコマンドを実行して無効にします [!DNL Elasticsearch] および関連するモジュール、およびインストール [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
+   Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -139,7 +140,8 @@ ht-degree: 0%
    ```
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
+   Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -200,6 +202,18 @@ composer update magento/live-search --with-dependencies
 ```
 
 1.0.0 から 2.0.0 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
+
+1. 現在 `magento/live-search` のバージョンが `1.3.1` または以下のバージョンにアップグレードしている `2.0.0` 以降の場合は、アップグレードの前に次のコマンドを実行します。
+
+   ```bash
+   bin/magento module:enable Magento_AdvancedSearch
+   ```
+
+   現在インストールされている `magento/live-search` バージョンの場合は、次のコマンドを実行します。
+
+   ```bash
+   composer show magento/live-search
+   ```
 
 1. ルートを開く `composer.json` ファイルと検索 `magento/live-search`.
 
