@@ -1,9 +1,10 @@
 ---
 title: イベントコレクションを検証
 description: 行動データがAdobe Commerceに送信されていることを確認する方法を説明します。
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
+source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,9 @@ ht-degree: 0%
 1. ページをリロードします。
 1. 次のようになります。 `ds.js` または `ds.min.js` 内 **名前** 列。
 
+![イベントコレクター JS](assets/filter-ds.png)
+_イベントコレクター JS_
+
 サイト（ホーム、製品、チェックアウトなど）全体のページでイベントが発生するようにするには：
 
 1. ブラウザー上での広告ブロッカーを必ず無効にし、サイト上での cookie を受け入れてください。
@@ -29,6 +33,9 @@ ht-degree: 0%
 1. を選択します。 **ネットワーク** タブとフィルター `tp2`.
 1. ページをリロードします。
 1. の下に呼び出しが表示されます。 `tp2` 内 **名前** 列。
+
+![イベントの発生](assets/filter-tp2.png)
+_イベントが発生していることを確認します。_
 
 ## Snowplow Chrome 拡張機能を使用した検証
 
@@ -46,7 +53,8 @@ ht-degree: 0%
 
 1. を確認します。 [SaaS データ容量 ID](https://docs.magento.com/user-guide/configuration/services/saas.html) が正しく設定されている。
 
-イベントが収集され、Adobe Commerceに送信されていることを確認する際に問題が発生した場合は、 [連絡先サポート](https://support.magento.com/hc/en-us).
+![Snowplow フィルター](assets/snowplow-filter.png)
+_Snowplow フィルター_
 
 >[!NOTE]
 >

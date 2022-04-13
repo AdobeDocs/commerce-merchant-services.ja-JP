@@ -1,9 +1,10 @@
 ---
 title: Commerce Services コネクタ
 description: API キーと秘密鍵を使用して、Adobe CommerceまたはMagento Open Sourceインスタンスをサービスに統合する方法について説明します。
-source-git-commit: 8789bd21362109325d0d7b23d9b130067390eeae
+exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ ht-degree: 0%
 
 | サービス | 使用可否 |
 | ---|--- |
-| [!DNL Product Recommendations] Adobe Senseiを活用 | Adobe Commerce |
-| [!DNL Live Search] Adobe Senseiを活用 | Adobe Commerce |
-| [!DNL Payment Services] | Adobe CommerceとMagento Open Source |
+| [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) Adobe Senseiを活用 | Adobe Commerce |
+| [[!DNL Live Search]](/help/live-search/overview.md) Adobe Senseiを活用 | Adobe Commerce |
+| [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe CommerceとMagento Open Source |
 
 ## アーキテクチャ
 
@@ -74,7 +75,7 @@ API キーと秘密鍵は、 [!DNL Commerce] 一意の [!DNL Commerce] ID (MageI
 
 >[!NOTE]
 >
-> 次の項目が表示されない場合、 **Commerce Services コネクタ** セクション [!DNL Commerce] 設定するには、 [!DNL Commerce] 目的の [!DNL Commerce Service]例： [!DNL Product Recommendations].
+> 次の項目が表示されない場合、 **[!UICONTROL Commerce Services Connector]** セクション [!DNL Commerce] 設定するには、 [!DNL Commerce] 目的の [!DNL Commerce] サービス： [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
 
 SaaS プロジェクトを選択または作成するには、 [!DNL Commerce] からの API キー [!DNL Commerce] お客様の店舗のライセンス所有者。
 

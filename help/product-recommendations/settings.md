@@ -1,9 +1,10 @@
 ---
 title: 設定
 description: ソースの変更方法を学ぶ [!DNL Product Recommendations] データと、視覚的なレコメンデーションを有効にする方法を説明します。
-source-git-commit: 8c85d26474e371d30b76499f312553a07e329a80
+exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ ht-degree: 0%
 
 1. 「 Recommendations source 」セクションで、「 **設定を編集**.
 
-1. 手順に従って新しい [コマースサービス].
+1. 手順に従って新しい [[!DNL Commerce] サービス](/help/landing/saas.md).
 
 ## 視覚的なレコメンデーションを有効にする
 
