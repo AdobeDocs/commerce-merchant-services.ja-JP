@@ -2,7 +2,7 @@
 title: ファセットを追加
 description: フィルタリング可能な製品属性をライブ検索ファセットとして追加する方法について説明します。
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
+source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -54,8 +54,8 @@ ht-degree: 0%
 
    ![ワークスペースの Faceting](assets/facet-edit.png)
 
-1. ファセットを *フィルター* リストで、灰色のプッシュピン (![ピンセレクター](assets/btn-pin-gray.png).
-1. 固定されたファセットの順序を変更するには、 **移動** (![移動セレクター](assets/btn-move.png) アイコンをクリックし、行を *ピンされたファセット* 」セクションに入力します。
+1. ファセットを *フィルター* リストで、灰色のプッシュピン (![ピンセレクター](assets/btn-pin-gray.png)) をクリックします。
+1. 固定されたファセットの順序を変更するには、 **移動** (![移動セレクター](assets/btn-move.png)) アイコンをクリックし、行を *ピンされたファセット* 」セクションに入力します。
 
 ## 手順 3:変更を公開
 

@@ -2,9 +2,9 @@
 title: オンボーディングの概要
 description: ライブ検索のオンボーディングフロー、必要システム構成、境界、制限
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
+source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 0%
 
 ### PWAベータリリース
 
+* 現在の Live Search のベータPWA実装では、ネイティブの Commerce ストアフロントを使用した Live Search よりも検索結果を返すのに、より多くの処理時間が必要です。
 * のPWAのベータリリース [!DNL Live Search] はをサポートしていません [イベント処理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * 以下の製品属性は、のベータ版リリースと関連して使用された場合、GraphQL ではサポートされません。 [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -55,3 +56,5 @@ ht-degree: 0%
 * [カスタム価格グループ](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * 使用する複数の在庫場所 [MCOM](https://docs.magento.com/user-guide/mcom.html) またはその他の OMS 拡張
 * [統合 B2B 機能](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* 製品の価格は含まれません [付加価値税](https://docs.magento.com/user-guide/tax/vat.html) (VAT)。
+* 在庫切れの製品は、 [在庫オプション](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) 設定。

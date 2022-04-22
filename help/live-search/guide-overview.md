@@ -2,16 +2,16 @@
 title: ライブ検索ガイドの概要
 description: Adobe Commerceのライブ検索は、驚くほど高速で、超関連性が高く、直感的な検索エクスペリエンスを提供します。
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
+source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # ライブ検索ガイドの概要
 
-[!DNL Live Search] Adobe Commerceからは、驚くほど高速で、超関連性が高く、直感的な検索操作が可能で、Adobe Commerceでは追加料金なしで利用できます。 [!DNL Live Search] を使用 [Adobe Sensei](https://www.adobe.com/sensei.html) は、人工知能と機械学習アルゴリズムを使用して、集計された訪問者データを深く分析します。 このデータをAdobe Commerceカタログと組み合わせると、魅力的で関連性が高く、パーソナライズされたショッピングエクスペリエンスが得られます。 スピード、関連性、使いやすさに重点を置いて [!DNL Live Search] 買い物客と商人の両方にとって、大きな変革となる。
+[!DNL Live Search] Adobe Commerceからは、Adobe Commerceでの迅速で超関連性の高い直感的な検索エクスペリエンスを、追加料金なしで提供します。 [!DNL Live Search] を使用 [Adobe Sensei](https://www.adobe.com/sensei.html) は、人工知能と機械学習アルゴリズムを使用して、集計された訪問者データを深く分析します。 このデータをAdobe Commerceカタログと組み合わせると、魅力的で関連性が高く、パーソナライズされたショッピングエクスペリエンスが得られます。 スピード、関連性、使いやすさに重点を置いて [!DNL Live Search] 買い物客と商人の両方にとって、大きな変革となる。
 
 ライブ検索には、管理者向けの次の 3 つの領域があります。
 
