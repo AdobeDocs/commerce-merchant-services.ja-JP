@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] ストア設定の
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 
 ### [!DNL PayPal Smart Buttons] スタイル設定オプション
 
-| フィールド | [範囲]({% link configuration/scope.md %}) | 説明 |
+| フィールド | 範囲 | 説明 |
 |--- |--- |--- |
 | [!UICONTROL Layout] | ストア表示 | Paypal スマートボタンのレイアウトのスタイルを定義します。 オプション： [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
 | [!UICONTROL Color] | ストア表示 | Paypal スマートボタンの色を定義します。 オプション： [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |

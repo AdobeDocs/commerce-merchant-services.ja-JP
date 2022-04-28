@@ -3,9 +3,10 @@ title: ダッシュボードでの設定
 description: インストール後、 [!DNL Payment Services] 」と入力します。
 role: Admin, User
 level: Intermediate
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -97,4 +98,4 @@ ht-degree: 0%
 1. 変更を保存するには、 **[!UICONTROL Save]** をクリックします。
 1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
-次の項目を設定できます。 [!DNL PayPal Smart Buttons] スタイルを管理者またはダッシュボードで設定する。 詳しくは、 [設定 [!DNL PayPal Smart Buttons style]](configure-admin.md#configure-paypal-smart-button-styling) を参照してください。
+次の項目を設定できます。 [!DNL PayPal Smart Buttons] スタイルを管理者またはダッシュボードで設定する。 詳しくは、 [PayPal のボタンスタイルガイド](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) を参照してください。
