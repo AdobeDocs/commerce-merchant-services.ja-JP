@@ -2,16 +2,16 @@
 title: シノニムの追加
 description: ライブ検索のシノニムを追加して、検索リクエストへの応答を改善します。
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 87e0500c623f9492d1722c21a2b47bf43d104829
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # シノニムの追加
 
-独自にキュレーションされたのリストを追加 [!DNL Live Search] シノニムを使用して、検索リクエストへの応答を改善し、顧客の関与を維持できます。
+ライブ検索のシノニムに独自の厳選されたリストを追加して、顧客エンゲージメントを高めます。 [!DNL Live Search] 1 回につき 200 個まで同義語を管理できます `Data Space ID`.
 
 ![[!DNL Live Search] 同義語](assets/synonym-workspace.png)
 

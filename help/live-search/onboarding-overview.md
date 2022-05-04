@@ -2,9 +2,9 @@
 title: オンボーディングの概要
 description: ライブ検索のオンボーディングフロー、必要システム構成、境界、制限
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
+source-git-commit: 66ffbf2576615bb1f6015a13c65af86e8d7ea700
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,11 @@ ht-degree: 0%
 * Adobe Commerceデータベースの製品のインデックスのみを作成します
 * CMS ページのインデックスを作成しない
 
-### クエリの制限
+### シノニム
+
+* [!DNL Live Search] 1 回につき 200 個まで同義語を管理できます `Data Space ID`.
+
+### クエリ
 
 * [!DNL Live Search] では、カテゴリツリーの完全な分類にアクセスできず、一部の階層的ナビゲーション検索シナリオがその範囲を超えています。
 * [!DNL Live Search] は、クエリに一意の GraphQL エンドポイントを使用して、インテリジェントなファセット設定や、ユーザータイプでの検索などの機能をサポートします。 ただし、 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)の場合は、いくつかの違いがあり、一部のフィールドは現時点で完全に互換性がない可能性があります。
