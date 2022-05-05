@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] 」と入力しま
 role: Admin, User
 level: Intermediate
 exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 44e97a0299e980656aef557eb5c2bac9b6443452
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ ht-degree: 0%
 
 1. 変更を保存するには、 **[!UICONTROL Save]** をクリックします。
 
+   変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
+
 1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
 ### クレジットカードのフィールド
@@ -63,6 +65,9 @@ ht-degree: 0%
 1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)，設定 **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
 1. の場合 **[!UICONTROL Debug Mode]**&#x200B;で、セレクターを切り替えてデバッグモードを有効にします。
 1. 変更を保存するには、 **[!UICONTROL Save]** をクリックします。
+
+   変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
+
 1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
 ### PayPal のスマートボタン
@@ -83,6 +88,9 @@ ht-degree: 0%
 1. 次の手順で [後で支払うメッセージ](payments-options.md#pay-later-button) （必要に応じて）、 **[!UICONTROL Display Pay Later message]** オプション。
 1. デバッグモードを有効にするには、 **[!UICONTROL Debug Mode]**,
 1. 変更を保存するには、 **[!UICONTROL Save]** をクリックします。
+
+   変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
+
 1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
 ### ボタンのスタイル
@@ -96,6 +104,9 @@ ht-degree: 0%
 1. ボタンの高さセレクターを有効にするには、 **[!UICONTROL Responsive button height]**.
 1. 次の手順で **[!UICONTROL Label]**」で、目的のラベルオプションを選択します。
 1. 変更を保存するには、 **[!UICONTROL Save]** をクリックします。
+
+   変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
+
 1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
 次の項目を設定できます。 [!DNL PayPal Smart Buttons] スタイルを管理者またはダッシュボードで設定する。 詳しくは、 [PayPal のボタンスタイルガイド](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) を参照してください。
