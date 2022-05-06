@@ -2,9 +2,9 @@
 title: ライブ検索ガイドの概要
 description: Adobe Commerceのライブ検索は、驚くほど高速で、超関連性が高く、直感的な検索エクスペリエンスを提供します。
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
+source-git-commit: 5f83b72c18490a6829ef30064f75c5d963bd93be
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -32,3 +32,9 @@ ht-degree: 0%
 
 [ヘルプセンター](https://support.magento.com/hc/en-us)  — ライブ検索に関するトラブルシューティング記事を参照してください。
 [サポートチケット](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket)  — 追加のヘルプを受け取るには、チケットを送信します。
+
+サポートチケットを送信する前に、コマンドラインから次のコマンドを実行して、現在インストールされているライブ検索のバージョンを確認します。
+
+```bash
+composer show magento/module-live-search | grep version
+```

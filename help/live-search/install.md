@@ -2,9 +2,9 @@
 title: ライブ検索のインストール
 description: Adobe Commerceから Live Search をインストール、更新、アンインストールする方法を説明します。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 26d841f8a47f4b9067974234c94d4441be6733ea
+source-git-commit: ec68feaebc911c097bd643aabfc61ec586a7e099
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -192,6 +192,14 @@ API キーと秘密鍵の生成については、 [Commerce Services コネク�
 すべてが正しく動作する場合は、おめでとうございます。 [!DNL Live Search] がインストールされ、接続され、使用できる状態になっている。
 
 ストアフロントで問題が発生した場合は、 `var/log/system.log` ファイルに保存され、API 通信の失敗やサービス側でのエラーに関する情報が含まれます。
+
+## インストールされているバージョンの確認
+
+ライブ検索を更新する前に、コマンドラインから次のコマンドを実行して、現在インストールされているライブ検索のバージョンを確認します。
+
+```bash
+composer show magento/module-live-search | grep version
+```
 
 ## 更新中 [!DNL Live Search] {#update}
 
