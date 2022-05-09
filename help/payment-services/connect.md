@@ -2,9 +2,9 @@
 title: インスタンスに接続
 description: API キーと秘密鍵を使用して Commerce インスタンスに接続し、設定でデータ領域を指定します。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Commerce SaaS サービスを使用するには、インスタンスの API キ�
 
 ### コマース API キーと秘密鍵
 
-一部のAdobe CommerceおよびMagento Open Source機能は、SaaS（サービスとしてのソフトウェア）としてデプロイされます。これは、コマースサービスと呼ばれます。 これらのサービスを使用するには、API キーと秘密鍵を使用してコマースインスタンスをこれらのサービスに接続し、 [設定](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}。
+一部 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 機能は、SaaS（サービスとしてのソフトウェア）としてデプロイされます。これは、Commerce Services と呼ばれます。 これらのサービスを使用するには、API キーと秘密鍵を使用してコマースインスタンスをこれらのサービスに接続し、 [設定](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}。
 
 画像 ID で識別されるコマースアカウントを作成する際に、コマース API キーと秘密鍵を生成できます。 次のようなコマースサービスを使用するには： [!DNL Payment Services], [!DNL Product Recommendations]または [!DNL Live Search]に設定されている場合、ライセンス所有者が使用権限の検証に合格するには、これらのキーを生成する必要があります。 これらのキーは、ライセンス所有者に代わってプロジェクトと環境を管理するシステムインテグレーターまたは開発チームに渡すことができます。 ソリューションインテグレーターの場合は、お客様自身のニーズに合わせてこれらのサービスを使用する権利も与えられます。 この場合、コマースパートナー契約の署名者がキーを生成する必要があります。
 
@@ -67,8 +67,8 @@ Commerce SaaS サービスを使用するには、インスタンスの API キ�
 
 SaaS プロジェクトを作成すると、Commerce は、Commerce ライセンスに応じて、1 つ以上の SaaS データスペースを生成します。
 
-* Adobe Commerce - 1 つの実稼動データ領域2 つのテスト用データスペース
-* Magento Open Source- 1 つの実稼動データ領域テストデータスペースなし
+* [!DNL Adobe Commerce] - 1 つの実稼動データ領域2 つのテスト用データスペース
+* [!DNL Magento Open Source] - 1 つの実稼動データ領域テストデータスペースなし
 
 ### SaaS プロジェクトの設定
 

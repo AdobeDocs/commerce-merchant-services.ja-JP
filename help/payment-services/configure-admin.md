@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] ストア設定の
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 カスタマイズ可能 [!DNL Payment Services] を必要に応じて管理者の設定オプションを使用できます。
 
-設定時に [!DNL Payment Services] Adobe Commerceと管理Magento Open Sourceの場合、これらの設定は、 [!UICONTROL Method] ～の分野 [!UICONTROL General Configuration]. 設定フィールドで行った変更は、 [!UICONTROL Method] 「選択」(selection) — メソッドを切り替えても、選択はリセットされません。
+設定時に [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 管理者では、これらの設定は、 _[!UICONTROL Method]_～の分野_[!UICONTROL General Configuration]_. 設定フィールドで行った変更は、 _[!UICONTROL Method]_「選択」(selection) — メソッドを切り替えても、選択はリセットされません。
 
 詳しくは、 [[!UICONTROL General Configuration] セクション](#general-configuration) を参照してください。
 
 ## 一般設定
 
-次を有効にすることができます。 [!DNL Payment Services] ストアに対して、でサンドボックステストまたはライブ支払いを有効にします。 [!UICONTROL General Configuration] 」セクションに入力します。
+次を有効にすることができます。 [!DNL Payment Services] ストアに対して、でサンドボックステストまたはライブ支払いを有効にします。 _[!UICONTROL General Configuration]_」セクションに入力します。
 
 1. の _管理者_ サイドバー、移動 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 左側のパネルで、を展開します。 **[!UICONTROL Sales]** を選択します。 **[!UICONTROL Payment Methods]**.
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >お使いの [!UICONTROL Sandbox Merchant ID] および [!UICONTROL Production Merchant ID] は自動生成され、サンドボックスや実稼動のオンボーディングが完了すると、該当するフィールドに存在します。 これらの ID を削除または変更しないでください。
+   >お使いの _[!UICONTROL Sandbox Merchant ID]_および_[!UICONTROL Production Merchant ID]_ は自動生成され、サンドボックスや実稼動のオンボーディングが完了すると、該当するフィールドに存在します。 これらの ID を削除または変更しないでください。
 
 1. クリック **[!UICONTROL Save Config]** 変更を保存します。
 

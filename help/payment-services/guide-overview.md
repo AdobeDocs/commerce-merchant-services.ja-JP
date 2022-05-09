@@ -1,42 +1,42 @@
 ---
 title: '"[!DNL Payment Services] ガイドの概要»'
-description: に関する包括的な情報 [!DNL Payment Services] (Adobe CommerceおよびMagento Open Source管理者向け )
+description: に関する包括的な情報 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 管理者（インストールとオンボーディングを含む）
 seo-title: Adobe Commerce Payments Services Guide
-seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or Magento Open Source.
+seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
 # [!DNL Payment Services] ガイドの概要
 
-このガイドは、Adobe CommerceとMagento Open Sourceの管理者を対象としています。 のインストールとオンボーディングに関する詳細情報が含まれます。 [!DNL Payment Services]、およびサービスの設定と管理。 ここでは、コマースのコア設定と機能に関する基本的な知識を前提としています。
+このガイドは、 [!DNL Adobe Commerce] および [!DNL Magento Open Source]. のインストールとオンボーディングに関する詳細情報が含まれます。 [!DNL Payment Services]、およびサービスの設定と管理。 ここでは、コマースのコア設定と機能に関する基本的な知識を前提としています。
 
 [!DNL Payment Services] には、管理者向けの次の 2 つの領域があります。
 
 * 管理者：この領域を使用して、設定 UI とレポートにアクセスします。
-* コマンドラインインターフェイスは次のようになります。このツールを使用して、インストールおよびバックエンドの設定タスクを実行します。
+* コマンドラインインターフェイス（または CLI）:このツールを使用して、インストールおよびバックエンドの設定タスクを実行します。
 
 このガイドでは、以下について説明します。
 
 * すべて [!DNL Payment Services] — 管理者で実行される特定のタスク。
 * すべて [!DNL Payment Services] — コマースコマンドラインを使用して実行される特定のタスク
 
-このガイドでは、Adobe CommerceとMagento Open Sourceの主な機能については説明しません。
+このガイドでは、の主な機能は説明していません [!DNL Adobe Commerce] および [!DNL Magento Open Source].
 
 ## その他のドキュメント
 
 | ガイド | 説明 |
 |------ | ----------- |
-| [Adobe Commerce 2.4 ユーザーガイド](https://docs.magento.com/user-guide/) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャント中心のドキュメント |
-| [Adobe Commerce 2.4 開発者ガイド](https://devdocs.magento.com/) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けドキュメント |
+| [[!DNL Adobe Commerce] 2.4 ユーザーガイド](https://docs.magento.com/user-guide/) | 両方に関するマーチャント中心のドキュメント [!DNL Adobe Commerce] および [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 開発者ガイド](https://devdocs.magento.com/) | ビルドとカスタマイズに使用する開発者向けドキュメント [!DNL Adobe Commerce] または [!DNL Magento Open Source] |
 
 ## サポート
 
-このガイドに記載されていない情報や質問がある場合は、ダッシュボードから入手できる次のリソースを使用してください。
+このガイドに記載されていない情報や質問がある場合は、ご自宅から提供される次のリソースをご利用ください。
 
 ![ヘルプリソース](assets/help-resources.png)
 

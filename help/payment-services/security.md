@@ -2,9 +2,9 @@
 title: セキュリティとコンプライアンス
 description: サイトのセキュリティとコンプライアンス要件を確認します。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## コマースセキュリティ
 
-Adobe CommerceとMagento Open Sourceには、いくつかのセキュリティ機能のサポートが含まれています。
+[!DNL Adobe Commerce] および [!DNL Magento Open Source] いくつかのセキュリティ機能のサポートが含まれています。
 
 詳しくは、 [セキュリティ](https://docs.magento.com/user-guide/stores/security.html)セキュリティのベストプラクティスを確認し、管理者セッションと資格情報の管理、CAPTCHA の実装、Web サイト制限の管理の方法を学ぶためのコアユーザーガイドの {target=&quot;_blank&quot;}。
 

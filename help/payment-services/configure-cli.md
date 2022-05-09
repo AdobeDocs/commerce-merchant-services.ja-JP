@@ -4,26 +4,26 @@ description: インストール後、 [!DNL Payment Services] コマンドライ
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # コマンドライン設定
 
-インストール後 [!DNL Payment Services]を使用すると、 [管理者内](configure-admin.md) または CLI（コマンド・ライン・インタフェース）を使用します。
+インストール後 [!DNL Payment Services]を使用すると、 [家の中で](payments-home.md) または CLI（コマンド・ライン・インタフェース）を使用します。
 
 ## データエクスポートの設定
 
-[!DNL Payment Services] Magento Open SourceとAdobe Commerceからエクスポートされた注文データを支払いプロバイダーからの集計した支払いデータと組み合わせて、有用なレポートを作成します。 この [!DNL Payment Services] 拡張機能では、インデクサーを使用して、レポートに必要なすべてのデータを効率的に収集します。
+[!DNL Payment Services] から書き出された注文データを組み合わせます [!DNL Magento Open Source] および [!DNL Adobe Commerce] を使用して、有用なレポートを作成するための支払いプロバイダーからの集計された支払いデータ。 この [!DNL Payment Services] 拡張機能では、インデクサーを使用して、レポートに必要なすべてのデータを効率的に収集します。
 
 で使用されるデータについて学ぶには [!DNL Payment Services] レポートについては、 [注文の支払いステータスレポート](order-payment-status.md#data-used-in-the-report).
 
-### Magento Open Source時の cron の設定
+### cron の設定 [!DNL Magento Open Source]
 
-を使用する場合、 `BY SCHEDULE` インデックスモードは、Magento Open Source時に cron を設定する必要があります。 詳しくは、 [cron の設定と実行](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+を使用する場合、 `BY SCHEDULE` インデックスモード [!DNL Magento Open Source]を設定する場合は、cron を設定する必要があります。 詳しくは、 [cron の設定と実行](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 ### インデクサーを設定
 

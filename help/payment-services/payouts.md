@@ -4,22 +4,22 @@ description: 支払額、処理済数量および財務調整の取引レベル�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: aff1a43fedab473b84d02068a7d3fbd33b4fe093
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
 
 # ペイアウトレポート
 
-[!DNL Payment Services] Adobe CommerceとMagento Open Sourceの場合は、包括的なレポートを使用して、店舗の注文と支払いを明確に把握できます。
+[!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗の注文件数と支払い数を明確に把握できるよう、包括的なレポートを提供します。
 
 ![財務レポートビュー](assets/reports-view.png)
 
 ペイアウトレポートは、総合的なペイアウト情報を一目で表示し、支払金額、処理済数量、財務調整のトランザクションレベルに関する詳細なレポートを完全に透明化できます。
 
-注文と支払いを相互に参照したり、アカウントを紐付けするために、複数のダッシュボードまたはビューを開く必要はありません。 [!DNL Payment Services] Adobe CommerceとMagento Open Sourceでは、これらのすべてのアクションを 1 か所（ペイアウトレポート）から実行し、ペイアウトを効率的に表示および管理できます。
+複数のビューを開いて、注文と支払いを相互参照したり、勘定を調整したりする必要はありません。 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] では、これらすべてのアクションを 1 か所（ペイアウトレポート）から実行し、ペイアウトを効率的に表示および管理できます。
 
 管理のペイアウトレポート内で、リンクされたコマース注文およびトランザクション ID、トランザクション金額、トランザクションごとの支払い方法などを確認します。
 
@@ -45,7 +45,7 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、ライ�
 
 データソースの選択は、次のように動作します。
 
-* ライブモードのストアがない場合、データソースの選択はデフォルトでになります。 [!UICONTROL Sandbox]_.
+* ライブモードのストアがない場合、データソースの選択はデフォルトでになります。 _[!UICONTROL Sandbox]_.
 * ライブモードでストア（1 つ以上）がある場合、データソースの選択はデフォルトでになります。 _[!UICONTROL Live]_.
 * レポートの書き出しは、常にデータソースの選択に従います。
 

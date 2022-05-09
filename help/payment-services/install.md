@@ -2,24 +2,24 @@
 title: インストール [!DNL Payment Services]
 description: Payments Services 拡張機能をインストールします。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
 
 # インストール [!DNL Payment Services]
 
-のインストール [!DNL Payment Services] Adobe CommerceとMagento Open Sourceの拡張は、 [!DNL Payment Services].
+のインストール [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、 [!DNL Payment Services].
 
 ![[!DNL Payment Services] 拡張機能の管理ビュー](assets/admin-view.png)
 
-この [!DNL Payment Services] Adobe CommerceおよびMagento Open Source用の拡張機能は、MagentoID([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 登録プロセスで提供されます。 Composer は、Adobe Commerceの初回インストール時、または Composer のキーが以前に `auth.json` ファイル。
+この [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、MagentoID([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 登録プロセスで提供されます。 Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に `auth.json` ファイル。
 
 詳しくは、 [認証キーの取得](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) を参照してください。
 
-この拡張機能をインストールするには、次の 2 つの方法があります。 [Adobe Commerce an cloud infrastructure](https://devdocs.magento.com/payment-services/install-payments.html#magento-commerce-cloud) または [オンプレミス](https://devdocs.magento.com/payment-services/install-payments.html#on-premises) インストール。 これらの方法では、CLI（コマンドラインインターフェイス）を使用する必要があります。
+この拡張機能をインストールするには、次の 2 つの方法があります。 [[!DNL Adobe Commerce] クラウドインフラストラクチャ](install.md#adobe-commerce-on-cloud-infrastructure) または [オンプレミス](install.md#on-premises) インストール。 これらの方法では、CLI（コマンドラインインターフェイス）を使用する必要があります。
 
 ## 最小安定性設定を更新
 
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 ## 拡張機能のインストール
 
-次をインストールできます： [!DNL Payment Services] クラウドインフラストラクチャ上のAdobe Commerceとオンプレミスインスタンスの両方の拡張機能。
+次をインストールできます： [!DNL Payment Services] 両方の [!DNL Adobe Commerce] クラウドインフラストラクチャおよびオンプレミスインスタンス上
 
-### Adobe Commerce an cloud infrastructure
+### [!DNL Adobe Commerce] クラウドインフラストラクチャ
 
 このメソッドは、 [!DNL Payment Services] Commerce Cloudインスタンスの拡張。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
    この `composer update` コマンドはすべての依存関係を更新します。 すべての依存関係を同時に更新しない場合は、代わりに次のコマンドを使用します。 `composer require magento/payment-services`.
 
-1. Adobe Commerceをアップグレード：
+1. アップグレード [!DNL Adobe Commerce]:
 
    ```bash
    bin/magento setup:upgrade

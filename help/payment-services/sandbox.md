@@ -2,9 +2,9 @@
 title: テスト用サンドボックスの設定
 description: PayPal Sandbox アカウントを使用して [!DNL Payment Services] テストモードの
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Sandbox アカウントをリセットするには：
 サンドボックスのオンボーディングを完了するには：
 
 1. 次に移動： [PayPal 開発者アカウントページ](https://developer.paypal.com/developer/accounts/).
-1. クリック **[!UICONTROL Log in to Dashboard]** 既存の資格情報を使用して PayPal Developers アカウントにログインするか、 **新規登録** をクリックしてアカウントを作成します。
+1. クリック **[!UICONTROL Log in to Home]** 既存の資格情報を使用して PayPal Developers アカウントにログインするか、 **新規登録** をクリックしてアカウントを作成します。
 1. PayPal Sandbox アカウントの作成：
    1. に移動します。 _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. クリック **[!UICONTROL Create account]**.
@@ -42,7 +42,7 @@ Sandbox アカウントをリセットするには：
 
    このオプションは、のサンドボックスオンボーディングをまだ完了していない場合に表示されます。 [!DNL Payment Services].
 
-   サンドボックスマーチャント ID が自動生成され、 [設定](configure-admin.md). この ID を変更または変更しないでください。
+   サンドボックスマーチャント ID が自動生成され、 [設定](settings.md). この ID を変更または変更しないでください。
 
    PayPal アカウントを接続して支払いの受け入れを開始するための PayPal ウィンドウが表示されます。
 
@@ -59,7 +59,7 @@ PayPal サンドボックスのオンボーディングが承認されると、�
 
 >[!IMPORTANT]
 >
->次の同意を取り消した場合： [!DNL Payment Services] （PayPal アカウント設定で）Adobe CommerceとMagento Open Sourceの支払い処理のために、ストア内の注文を次の手順で処理することはできません： [!DNL Payment Services].
+>次の同意を取り消した場合： [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] お客様の支払い処理（お客様の PayPal アカウント設定）に関して、お客様のストア内の注文を次の手順で処理することはできません： [!DNL Payment Services].
 
 ## 連絡先電話番号を有効にする
 

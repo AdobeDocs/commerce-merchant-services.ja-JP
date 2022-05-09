@@ -2,18 +2,18 @@
 title: 支払いオプション
 description: 支払いオプションを設定して、店舗の顧客が利用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
 
 # 支払いオプション
 
-Adobe CommerceとMagento Open Source [!DNL Payment Services]、複数の支払いオプションを使用できます。 これらの支払いオプションは、次の方法で設定できます。
+を使用 [!DNL Adobe Commerce] および [!DNL Magento Open Source] [!DNL Payment Services]、複数の支払いオプションを使用できます。 これらの支払いオプションは、次の方法で設定できます。
 
-* [ダッシュボード](configure-dashboard.md)
+* [ホーム](payments-home.md)
 * [ストア設定](configure-admin.md) （従来の支払いオプションまたはマルチストア設定に推奨）
 
 支払い方法ごとに、チェックアウトプロセスの場所に応じて異なる行動があります。
@@ -31,13 +31,13 @@ Adobe CommerceとMagento Open Source [!DNL Payment Services]、複数の支払�
 
 [!UICONTROL Credit Card Fields] クレジットカードまたはデビットカードの支払い方法に対して、簡単で安全なチェックアウトを提供します。 買い物客がクレジットカードのフィールドを使用してチェックアウトする際、名前、請求先住所、クレジットカードまたはデビットカードの情報を入力して、注文をおこないます。 顧客情報は、購入セッション中に安全に使用され、チェックアウトフローをシームレスに導きます。
 
-次の項目を設定できます。 [!UICONTROL Credit Card Fields] をクリックします。 詳しくは、 [設定 [!DNL Payment Services]](configure-dashboard.md#configure-credit-card-fields) を参照してください。
+次の項目を設定できます。 [!UICONTROL Credit Card Fields] をクリックします。 詳しくは、 [設定 [!DNL Payment Services]](settings.md#configure-credit-card-fields) を参照してください。
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons]: PayPal を使用して購入を完了し、買い物客の配送先住所、請求先住所、支払いの詳細を保存して後で使用します。 買い物客は、以前に PayPal に保存または提供された任意の支払い方法を使用できます。
 
-次の項目を設定できます。 [!DNL PayPal Smart Buttons] をクリックします。  詳しくは、 [設定 [!DNL Payment Services]](configure-dashboard.md#configure-paypal-smart-buttons) を参照してください。
+次の項目を設定できます。 [!DNL PayPal Smart Buttons] をクリックします。  詳しくは、 [設定 [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) を参照してください。
 
 ### PayPal ボタン
 

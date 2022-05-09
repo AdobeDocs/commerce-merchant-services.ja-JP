@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] リリースノート"'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '529'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 1%
 
 ## v1.1.0
 
-![新規](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) は、Adobe CommerceおよびMagento Open Sourceのバージョン 2.4.0 ～ 2.4.4 と互換性があるようになりました。
+![新規](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) は現在、 [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 から 2.4.4。
 
-![新規](../assets/new.svg)<!-- Issue PAY-2682 --> この [!DNL Payment Services] Adobe CommerceとMagento Open Sourceの拡張機能は、カナダの商人が利用できます。 商人は次のいずれかで支払の構成を表示できます： [フランス語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) または [英語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
+![新規](../assets/new.svg)<!-- Issue PAY-2682 --> この [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、カナダの商人が利用できます。 商人は次のいずれかで支払の構成を表示できます： [フランス語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) または [英語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
 ![新規](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] サポート [カナダドル (CAD)](overview.md#accepted-credit-cards-and-currencies) クレジットカードと Paypal を使用します。 買い物客は、買い物をする店舗のロケールに応じて、好みの言語で買い物体験をすることができます。
 
@@ -53,13 +53,13 @@ ht-degree: 1%
 
 ## v1.0.0
 
-![新規](../assets/new.svg)<!-- Issue PAY-2127 --> GA リリース。 [支払いサービス](https://marketplace.magento.com/magento-payment-services.html) は、Adobe CommerceおよびMagento Open Sourceのバージョン 2.4.0 から 2.4.3-p1 に対応しました。
+![新規](../assets/new.svg)<!-- Issue PAY-2127 --> GA リリース。 [支払いサービス](https://marketplace.magento.com/magento-payment-services.html) は現在、 [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 から 2.4.3-p1。
 
-![新規](../assets/new.svg)<!-- Issue PAY-124 --> この [!DNL Payment Services] Adobe CommerceとMagento Open Sourceの拡張機能は、 [Adobe Commerce an cloud infrastructure](install.md#magento-commerce-cloud) または [オンプレミス](install.md#on-premises) インスタンス。 これらのメソッドでは、コマンドラインインターフェイスを使用する必要があります。
+![新規](../assets/new.svg)<!-- Issue PAY-124 --> この [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 次のどちらかに対してインストールできます。 [[!DNL Adobe Commerce] クラウドインフラストラクチャ](install.md#magento-commerce-cloud) または [オンプレミス](install.md#on-premises) インスタンス。 これらのメソッドでは、コマンドラインインターフェイスを使用する必要があります。
 
 ![新規](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] を支持する [サンドボックスアカウント](onboard.md#enable-sandbox-testing) これにより、マーチャントは拡張機能をテストモードで評価できます。
 
-![新規](../assets/new.svg)<!-- Issue PAY-666 --> 商人は [支払いサービスの設定](configure-admin.md) 基本的な支払い動作を含む拡張（サンドボックスまたは実稼動環境間の切り替えなど）。
+![新規](../assets/new.svg)<!-- Issue PAY-666 --> 商人は [支払いサービスの設定](settings.md) 基本的な支払い動作を含む拡張（サンドボックスまたは実稼動環境間の切り替えなど）。
 
 ![新規](../assets/new.svg)<!-- Issue PAY-780 --> 買い物客は [!DNL Payment Services] または、注文を電話で受け取り、 [注文全体を作成する](create-order.md) 管理者に問い合わせます。
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ![新規](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] は、任意の商人に適合した階層型価格（TPV に基づく）をサポートします。
 
-![新規](../assets/new.svg)<!-- Issue PAY-1443 --> PayPal のボタンと CC フィールドの外観と操作性を [支払いサービス](https://devdocs.magento.com/payment-services/customize-buttons-messaging.html) 拡張子。
+![新規](../assets/new.svg)<!-- Issue PAY-1443 --> PayPal のボタンと CC フィールドの外観と操作性を [支払いサービス](payments-options.md) 拡張子。
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [誤ったコンポーザーキー](https://support.magento.com/hc/en-us/articles/4406603542541) 拡張機能のインストール中に、ユーザーは [認証](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正しい `MAGEID`.
 

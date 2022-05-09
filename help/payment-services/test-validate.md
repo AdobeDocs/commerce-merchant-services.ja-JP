@@ -2,16 +2,16 @@
 title: テストと検証
 description: テストと検証は、 [!DNL Payment Services] 機能が期待どおりに動作し、顧客に最適な支払いオプションを提供する
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
 # テストと検証
 
-公開する前に [!DNL Payment Services] Adobe Commerceと買い物客のMagento Open Sourceについては、サンドボックス環境でテストすることをお勧めします。 _および_ 実稼動環境で テストと検証は、 [!DNL Payment Services] 機能は期待どおりに動作し、お客様の店舗や顧客に最適な支払いオプションを提供します。
+公開する前に [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 買い物客にとって、サンドボックス環境でテストすることをお勧めします。 _および_ 実稼動環境で テストと検証は、 [!DNL Payment Services] 機能は期待どおりに動作し、お客様の店舗や顧客に最適な支払いオプションを提供します。
 
 ## サンドボックス環境でテスト
 

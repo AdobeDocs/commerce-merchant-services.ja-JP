@@ -4,16 +4,16 @@ description: '"[!DNL Payment Services] は、店舗の注文件数と支払い�
 role: User
 feature: Payments
 level: Intermediate
-source-git-commit: eb8fdba65b4b64730d0ad4fa6e0c9b64bdadc7df
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 # 財務報告
 
-[!DNL Payment Services] Adobe CommerceとMagento Open Sourceの場合は、包括的なレポートを使用して、店舗の注文と支払いを明確に把握できます。
+[!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗の注文件数と支払い数を明確に把握できるよう、包括的なレポートを提供します。
 
 ![財務レポートビュー](assets/reports-view.png)
 

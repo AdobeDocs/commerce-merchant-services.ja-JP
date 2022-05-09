@@ -4,16 +4,16 @@ description: インスタンスとの接続 [!DNL Payment Services] 機能を使
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # オンボード [!DNL Payment Services]
 
-を使用し始めるには、以下を実行します。 [!DNL Payment Services] Adobe CommerceとMagento Open Sourceの場合は、インスタンスと支払い機能を接続するためのオンボーディング手順をいくつか実行する必要があります。
+を使用し始めるには、以下を実行します。 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source]の場合は、インスタンスと支払い機能を接続するためのオンボーディング手順をいくつか実行する必要があります。
 
 ## オンボーディングフロー
 

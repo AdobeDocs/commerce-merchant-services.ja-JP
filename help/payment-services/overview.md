@@ -1,19 +1,19 @@
 ---
 title: の概要 [!DNL Payment Services]
-description: インストールと使用の方法を学ぶ [!DNL Payment Services] Adobe CommerceおよびMagento Open Sourceの Web サイト向けの自動、堅牢、安全な支払い処理ソリューション。
+description: インストールと使用の方法を学ぶ [!DNL Payment Services] お客様の [!DNL Adobe Commerce] および [!DNL Magento Open Source] web サイト。
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # の概要 [!DNL Payment Services]
 
-[!DNL Payment Services] Adobe CommerceとMagento Open Sourceの自動セルフサービスソリューションは、サンドボックステストやシンプルなセットアップを含み、コマース Web サイトの堅牢で安全な支払い処理を提供します。
+[!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、サンドボックステストやシンプルなセットアップを含む、自動セルフサービスソリューションで、コマース Web サイトの堅牢で安全な支払い処理を提供します。
 
 ![[!DNL Payment Services] 拡張機能の管理ビュー](assets/admin-view.png)
 
@@ -36,14 +36,13 @@ ht-degree: 0%
 [!DNL Payment Services] は、オンラインチェックアウト用のワンストップショップです（決済、返金から支払いを受けるまで）。 購入者に最適なエクスペリエンスを作成するために必要なインサイトと制御を提供する強力なツールを提供します。
 
 * [**オンボーディング**](onboard.md) — このプロセスは、商用サインアップ、技術的な設定、権限、サンドボックス環境の設定、ライブ支払いの有効化の手順をガイドします。
-* [**支払いチェックアウト**](configure-dashboard.md) — お客様に最適な支払い方法として、地域固有の適切な支払い方法を使用します。
 * [**支払いオプション**](payments-options.md) — 支払いオプションを設定して、店舗（またはマルチストア）の顧客が利用できる方法をカスタマイズします。
 * **キャッシュフロー管理財務報告** — 同期 [支払詳細](order-payment-status.md) 処理済数量、支払残高、および詳細に対する完全な透明性を得るための注文と [トランザクションレベルのレポート](payouts.md) 財務上の調整の場合。
 * **透明性の高い価格設定** — 価格は明確で前もって設定されています。何が見えるかは、得るものです。
 
 ## 使用可否
 
-[!DNL Payment Services] は、Adobe CommerceとMagento Open Sourceで使用できます。 この [!DNL Payment Services] 拡張機能は、Adobe Commerceバージョン 2.4.x と互換性があります。
+[!DNL Payment Services] は、次の場所で使用できます： [!DNL Adobe Commerce] および [!DNL Magento Open Source]. この [!DNL Payment Services] 拡張機能は、 [!DNL Adobe Commerce] バージョン 2.4.x.
 
 詳しくは、 [ライフサイクルポリシー](https://devdocs.magento.com/release/lifecycle-policy.html){target=&quot;_blank&quot;} および [[!DNL Payment Services] リリースノート](release-notes.md) 詳細なリリースおよびバージョン固有の情報に関するページ
 
