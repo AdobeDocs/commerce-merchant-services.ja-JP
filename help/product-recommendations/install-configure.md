@@ -1,16 +1,17 @@
 ---
 title: インストールと設定
 description: インストール、更新、アンインストールの方法を説明します [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
+source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # インストールと設定
 
-の導入 [!DNL Product Recommendations] ストアフロントと管理者には、モジュールをインストールし、Commerce Services コネクタを設定する必要があります。 アップデートがリリースされると、インストールを最新バージョンで簡単に更新できます。
+の導入 [!DNL Product Recommendations] をストアフロントと管理者に送信するには、モジュールをインストールし、 [Commerce Services コネクタ](../landing/saas.md). アップデートがリリースされると、インストールを最新バージョンで簡単に更新できます。
 
 - [インストール](#install)
 - [設定](#configure)
@@ -47,11 +48,11 @@ composer require magento/module-visual-product-recommendations
 
 ## 設定 [!DNL Product Recommendations] {#configure}
 
-インストール後、 `magento/product-recommendations` モジュールの場合、 [Commerce Services コネクタ](https://docs.magento.com/user-guide/configuration/services/saas.html) API キーを指定し、SaaS データ領域を選択することで、データを削除できます。
+インストール後、 `magento/product-recommendations` モジュールの場合、 [Commerce Services コネクタ](https://docs.magento.com/user-guide/configuration/services/saas.html) API キーを指定し、SaaS データ領域を選択する。
 
 カタログの書き出しが正しく実行されていることを確認するには、 [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) ジョブと [indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) が実行中で、 `Product Feed` indexer は次のように設定されています： `Update by Schedule`.
 
-API キーを使用して Commerce Services に正常にリンクし、SaaS データスペースを指定すると、カタログ同期が開始され、 [検証](verify.md) その行動データがストアフロントに送信されます。
+API キーを使用して Commerce Services に正常にリンクし、SaaS データスペースを指定すると、カタログの同期が開始されます。 その後、 [確認](verify.md) その行動データがストアフロントに送信されます。
 
 ## の更新 [!DNL Product Recommendations] インストール {#update}
 

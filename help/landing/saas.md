@@ -2,9 +2,9 @@
 title: Commerce Services コネクタ
 description: API キーと秘密鍵を使用して、Adobe CommerceまたはMagento Open Sourceインスタンスをサービスに統合する方法について説明します。
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,6 @@ API キーと秘密鍵は、 [!DNL Commerce] 一意の [!DNL Commerce] ID (MageI
 1. 以下 **Magento** タブ、選択 **API ポータル** サイドバーに表示されます。
 
 1. 次の _環境_ メニュー、選択 **実稼動** または **サンドボックス**.
-
-   >[!NOTE]
-   >
-   > の場合 [!DNL _製品Recommendations_] および [!DNL _ライブ検索_]&#x200B;を選択します。 **実稼動**. 実稼動用キーを使用すると、実稼動用データスペースと非実稼動用データスペースにアクセスできます。 サンドボックスキーは、これらのサービスには使用されません。
 
 1. 名前を _API キー_ 「 」セクションで、「 」をクリックします。 **新規追加**.
 
