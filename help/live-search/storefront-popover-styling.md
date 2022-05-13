@@ -2,16 +2,16 @@
 title: ポップオーバー要素のスタイル設定
 description: ライブ検索ストアフロントポップオーバーのカスタマイズに関するテクニカルノート。
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-# ポップオーバー要素のスタイル設定
+# スタイル設定 [!DNL Popover] 要素
 
-この [ストアフロントポップオーバー](storefront-popover.md) 常に製品を表示 `name` および `price`の場合、フィールドの選択は設定できません。 ただし、ポップオーバー要素は CSS クラスを使用してスタイルを設定できます。 例えば、次の宣言では、ポップオーバーコンテナとフッターの背景色を変更します。
+この [[!DNL storefront popover]](storefront-popover.md) 常に製品を表示 `name` および `price`の場合、フィールドの選択は設定できません。 しかし、 [!DNL popover] 要素は、CSS クラスを使用してスタイルを設定できます。 例えば、次の宣言では、 [!DNL popover] コンテナとフッター。
 
 ```css
 .livesearch.popover-container {
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## コンテナの表示
 
-の親コンポーネント `.livesearch.popover-container` が `.search-autocomplete`.  この `.active` クラスは、コンテナの表示を示します。 この `.active` クラスは、ポップオーバーが開いている場合に条件付きで追加されます。
+の親コンポーネント `.livesearch.popover-container` が `.search-autocomplete`.  この `.active` クラスは、コンテナの表示を示します。 この `.active` クラスは条件付きで [!DNL popover] が開いている。
 
 ```css
 .search-autocomplete.active   /* visible */
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## クラスセレクター
 
-次のクラスセレクターを使用して、ポップオーバー内のコンテナ、提案および製品要素のスタイルを設定できます。
+次のクラスセレクターを使用して、 [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 `.livesearch.popover-container`
 
-![ポップオーバーコンテナ](assets/livesearch-popover-container.png)
+![[!DNL Popover] コンテナ](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ## 変更したテーマの使用 {#working-with-modified-theme}
 
-ストアフロントポップオーバーは、カスタマイズした [テーマ](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) が *Luma*. この `top.search` ブロックを `header-wrapper` の `Magento_Search` モジュールは変更できません。
+この [!DNL storefront popover] カスタマイズされた [テーマ](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) が *Luma*. この `top.search` ブロックを `header-wrapper` の `Magento_Search` モジュールは変更できません。
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -97,9 +97,9 @@ ht-degree: 0%
 </referenceContainer>
 ```
 
-## ポップオーバーの無効化
+## の無効化 [!DNL popover]
 
-ポップオーバーを無効にし、標準を復元するには [クイック検索](https://docs.magento.com/user-guide/catalog/search-quick.html) 機能には、次のコマンドを入力します。
+を無効にするには、以下を実行します。 [!DNL popover] 標準に戻す [クイック検索](https://docs.magento.com/user-guide/catalog/search-quick.html) 機能には、次のコマンドを入力します。
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

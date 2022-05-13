@@ -2,9 +2,9 @@
 title: Live Search リリースノート
 description: Adobe Commerceのライブ検索の最新のリリース情報です。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: a3a52af6cd907b2b8734a5dd3ca7df71158db190
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '676'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 * ![新規](../assets/new.svg) - [!DNL Live Search] Adobe Commerce 2.4.4 を実行するインストールで、PHP 8.1 がサポートされるようになりました。
 * ![新規](../assets/new.svg) - `Magento_ElasticsearchCatalogPermissionsGraphQl` モジュールは、インストール時に無効になるモジュールのリストに追加されます。
-* ![新規](../assets/new.svg) - [ストアフロントポップオーバー](quick-tour.md) は、 *管理者*.
+* ![新規](../assets/new.svg) - [[!DNL storefront popover]](quick-tour.md) は、 *管理者*.
 * ![新規](../assets/new.svg)  — ベータ版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 互換性 [!DNL Live Search].
 * ![新規](../assets/new.svg) - [!DNL Live Search] インストールプロセスは、高度なプロセス変更で更新されます。
 * ![修正点](../assets/fix.svg) - [詳細検索](https://docs.magento.com/user-guide/catalog/search-advanced.html) storefront フッターからリンクが削除されました。
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 * ![修正点](../assets/fix.svg) - [カスタム価格属性](https://docs.magento.com/user-guide/stores/attributes-input-types.html) が [ファセット]({% link live-search/facets-add.md %})。
 * ![修正点](../assets/fix.svg)  — 次の場合にエラーが発生する問題を修正しました。 [通貨記号](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) が使用可能です。
-* ![修正点](../assets/fix.svg) - [ストアフロントポップオーバー](storefront-popover.md) 今は [特別価格](https://docs.magento.com/user-guide/catalog/product-price-special.html) （最終価格の最小値）を指定できます。
+* ![修正点](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 今は [特別価格](https://docs.magento.com/user-guide/catalog/product-price-special.html) （最終価格の最小値）を指定できます。
 
 ## [!DNL Live Search] 1.3.0
 
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 * ![新規](../assets/new.svg) - [パフォーマンス](performance.md) レポートダッシュボードでは、買い物客が使用する検索用語に関するインサイトを得ることができます。
 * ![新規](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) では、イベント公開および購読サービス、指標を含む、共通のデータレイヤーにアクセスできます。
-* ![修正点](../assets/fix.svg) - [ストアフロントポップオーバー](https://devdocs.magento.com/live-search/storefront-popover.html) 新しい `active` クラス `.search-autocomplete` 表示/非表示を制御するコンテナ。
+* ![修正点](../assets/fix.svg) - [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) 新しい `active` クラス `.search-autocomplete` 表示/非表示を制御するコンテナ。
 * ![修正点](../assets/fix.svg)  — 店頭では、 [検索語句](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) フッターリンクが削除され、そのキャッシュが無効になっている [!DNL Live Search] インストール。
 * ![バグ](../assets/bug.svg)  — 検索アダプタのパッチは、重複する製品を処理します。
 * ![バグ](../assets/bug.svg) - [!DNL Live Search] サポート [単一ソース](https://docs.magento.com/user-guide/catalog/inventory-sources.html) （物理）複数の（仮想）在庫場所 [在庫](https://docs.magento.com/user-guide/catalog/inventory-stock.html). 現時点では、複数の在庫ソースはサポートされていません。
@@ -63,7 +63,7 @@ ht-degree: 1%
 * Adobe Commerce for Cloud(ECE) との互換性：2.4.x
 * 安定性：安定
 
-* ![新規](../assets/new.svg)  — ストアフロント [ポップオーバー](storefront-popover.md) 「検索」ボックスに買い物客タイプのクエリとして、上位の検索結果の推奨製品とサムネール画像を表示します。
+* ![新規](../assets/new.svg) - [[!DNL Storefront popover]](storefront-popover.md) 「検索」ボックスに買い物客タイプのクエリとして、上位の検索結果の推奨製品とサムネール画像を表示します。
 * ![新規](../assets/new.svg)  — コマース *管理者* キーボードの操作が行われない時間が長く続く間、セッションは開いたままになる
 * ![新規](../assets/new.svg) - [!DNL Live Search] オンボーディング後、が自動的に有効になります
 * ![修正点](../assets/fix.svg)  — 初期インデックス作成時間が 1 時間未満です

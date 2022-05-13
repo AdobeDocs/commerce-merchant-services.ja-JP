@@ -2,9 +2,9 @@
 title: ライブ検索ガイドの概要
 description: Adobe Commerceのライブ検索は、驚くほど高速で、超関連性が高く、直感的な検索エクスペリエンスを提供します。
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 5f83b72c18490a6829ef30064f75c5d963bd93be
+source-git-commit: 2676c363182d0b7cb02d15d1093066b1ad4e7b87
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ライブ検索には、管理者向けの次の 3 つの領域があります。
 
-* ストアフロント：CSS スタイルを使用したストアフロントポップオーバーのカスタマイズ。
+* ストアフロント：CSS スタイルを使用した [!DNL storefront popover].
 * 管理者：この領域を使用して、設定と設定にアクセスします。
 * コマンドラインインターフェイス：このツールを使用して、インストールおよびバックエンドの設定タスクを実行します。
 
