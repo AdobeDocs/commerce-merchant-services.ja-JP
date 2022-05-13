@@ -2,9 +2,9 @@
 title: シノニムのタイプ
 description: 1 方向および 2 方向のライブ検索のシノニムは、キーワードの定義を拡張します。
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
+source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 0%
 ### キーワードマッピング
 
 この手法では、同義語ではなく、検索可能な製品属性を使用して、製品間のキーワードベースの関連付けを作成します。 その結果、マッピングされた製品が別の製品の検索結果に表示される場合があります。 詳しくは、 [検索結果](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### 単一語を使用
+
+シノニム用語に複数の単語が含まれる場合、単語間の空白は、別の同義語として扱われます。 例えば、「時間」を「watch」のシノニムとして定義した場合、「時間」と「piece」は別の同義語として扱われます。
 
 ### 単数形および複数形の使用
 
