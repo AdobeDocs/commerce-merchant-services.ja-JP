@@ -2,9 +2,9 @@
 title: のオンボーディング [!DNL Express Checkout] Adobe Commerce拡張機能
 description: 詳しくは、 [!DNL Express Checkout] は、Adobe Commerceインスタンスと、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,10 @@ Adobe Commerceの標準チェックアウトオプションについて詳しく
 を有効にするには、以下を実行します。 [!DNL Express Checkout] Adobe Commerce拡張機能の場合：
 
 1. クリック **設定を保存**.
+1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
 ## お問い合わせ
 
-オンボーディングプロセスは、すべての [!DNL Express Checkout] 機能。 サポートが必要な場合は、Adobe Commerceサポートにお問い合わせください。
+オンボーディングプロセスは、 [!DNL Express Checkout] 機能。 連絡先 [!DNL Adobe Commerce] 担当のSlackを通じたエンジニアリングチーム [Adobeベータプログラムチャネル](http://adobe-beta-programs.slack.com/) 何か助けが必要な場合は
 
 詳しくは、 [テストと検証](../express-checkout/testing.md) トピックを参照してください。

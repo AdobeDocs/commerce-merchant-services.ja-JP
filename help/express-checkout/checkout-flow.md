@@ -2,9 +2,9 @@
 title: チェックアウトフロー
 description: の概要 [!DNL Express Checkout] Adobe Commerceのフロー。
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -113,4 +113,4 @@ ht-degree: 0%
 
 ## お問い合わせ
 
-サポートが必要な場合は、Adobe Commerceサポートにお問い合わせください。
+連絡先 [!DNL Adobe Commerce] 担当のSlackを通じたエンジニアリングチーム [Adobeベータプログラムチャネル](http://adobe-beta-programs.slack.com/) 何か助けが必要な場合は
