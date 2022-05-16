@@ -1,10 +1,10 @@
 ---
-title: ライブ検索ガイドの概要
-description: Adobe Commerceのライブ検索は、驚くほど高速で、超関連性が高く、直感的な検索エクスペリエンスを提供します。
+title: '"[!DNL Live Search] ガイドの概要»'
+description: '"[!DNL Live Search] Adobe Commerceからは、素早く、超関連性が高く、直感的な検索エクスペリエンスを提供します。」'
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 2676c363182d0b7cb02d15d1093066b1ad4e7b87
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---

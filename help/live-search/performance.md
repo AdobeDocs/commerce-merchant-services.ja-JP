@@ -1,10 +1,10 @@
 ---
-title: パフォーマンス
-description: ライブ検索のパフォーマンスダッシュボードでは、買い物客が使用する検索用語に関するインサイトを得ることができます。
+title: '"Performance"'
+description: 「 [!DNL Live Search] パフォーマンスダッシュボードは、買い物客が使用する検索用語に関するインサイトを提供します。」
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---

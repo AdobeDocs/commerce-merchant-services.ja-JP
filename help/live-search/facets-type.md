@@ -1,10 +1,10 @@
 ---
-title: ファセットのタイプ
-description: ライブ検索ファセットは動的で、関連する場合はフィルターリストに表示されます。
+title: 「ファセットのタイプ」
+description: '"[!DNL Live Search] ファセットは動的で、関連する場合はフィルターリストに表示されます。」'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---

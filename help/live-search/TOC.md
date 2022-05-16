@@ -1,27 +1,27 @@
 ---
-user-guide-title: ライブ検索ガイド
-user-guide-description: このガイドでは、Adobe Commerceのライブ検索を使用する手順を詳しく説明します。
-breadcrumb-title: ライブ検索ガイド
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+user-guide-title: '"[!DNL Live Search] ガイド»'
+user-guide-description: このガイドでは、 [!DNL Live Search] Adobe Commerceから」
+breadcrumb-title: '"[!DNL Live Search] ガイド»'
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '72'
 ht-degree: 2%
 
 ---
 
-# コマースのライブ検索 {#live-search}
+# [!DNL Live Search] （コマース用） {#live-search}
 
 - [ガイドの概要](guide-overview.md)
-- [ライブ検索の概要](overview.md)
+- [の概要 [!DNL Live Search]](overview.md)
 - [リリースノート](release-notes.md)
 - オンボーディングライブ検索 {#onboard}
    - [オンボーディングの概要](onboarding-overview.md)
-   - [ライブ検索のインストール](install.md)
-- ライブ検索ストアフロント {#live-search-storefront}
+   - [インストール [!DNL Live Search]](install.md)
+- [!DNL Live Search] ストアフロント {#live-search-storefront}
    - [クイックツアー](quick-tour.md)
-   - [ストアフロントポップオーバー](storefront-popover.md)
-   - [ポップオーバー要素のスタイル設定](storefront-popover-styling.md)
-- ライブ検索管理者{#live-search-admin}
+   - [ストアフロント [!DNL Popover]](storefront-popover.md)
+   - [スタイル設定 [!DNL Popover] 要素](storefront-popover-styling.md)
+- [!DNL Live Search] 管理者{#live-search-admin}
    - [Workspace](workspace.md)
    - [パフォーマンス](performance.md)
    - ファセット {#facets}

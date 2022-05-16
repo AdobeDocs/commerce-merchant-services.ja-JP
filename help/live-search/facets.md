@@ -1,10 +1,10 @@
 ---
-title: ファセット
-description: ライブ検索ファセットでは、属性値の複数のディメンションが検索条件として使用されます。
+title: '"ファセット"'
+description: '"[!DNL Live Search] ファセットでは、複数の属性値のディメンションを検索条件として使用します。"'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---

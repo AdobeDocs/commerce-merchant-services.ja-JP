@@ -1,10 +1,10 @@
 ---
-title: ファセットに関するテクニカルノート
-description: ライブ検索ファセットの使用に関する技術メモです。
+title: 「ファセットに関するテクニカルノート」
+description: 「 [!DNL Live Search] ファセット」
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: e53fb13b98684757b8081b2e19dd33d925e8ce5d
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---

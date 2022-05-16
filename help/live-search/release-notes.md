@@ -1,10 +1,10 @@
 ---
-title: Live Search リリースノート
-description: Adobe Commerceのライブ検索の最新のリリース情報です。
+title: '"[!DNL Live Search] リリースノート"'
+description: 「 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '672'
 ht-degree: 1%
 
 ---

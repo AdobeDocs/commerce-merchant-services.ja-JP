@@ -1,10 +1,10 @@
 ---
-title: ライブ検索のインストール
-description: Adobe Commerceから Live Search をインストール、更新、アンインストールする方法を説明します。
+title: '"インストール [!DNL Live Search]"'
+description: インストール、更新、アンインストールの方法 [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: ec68feaebc911c097bd643aabfc61ec586a7e099
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
