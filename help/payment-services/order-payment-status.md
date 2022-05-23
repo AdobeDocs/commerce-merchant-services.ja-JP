@@ -4,9 +4,9 @@ description: 注文の支払ステータスレポートを使用して、注文�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,16 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、 [!DNL 
 1. 次をクリック： **[!UICONTROL Order dates]** カレンダーセレクターフィルター。
 1. 適用可能な日付範囲を選択します。
 1. グリッドで指定した日付の注文支払ステータスを表示します。
+
+## 列の表示と非表示を切り替える
+
+「受注支払ステータス」レポートには、デフォルトで、使用可能なすべての情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
+
+1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 次をクリック： _列設定_ アイコン (![列設定アイコン](assets/column-settings.png)) をクリックします。
+1. レポートに表示する列をカスタマイズするには、リストの列をオンまたはオフにします。
+
+   注文の支払い状況レポートには、列設定メニューで行った変更がすぐに表示されます。 列の環境設定は保存され、レポート表示から移動しても有効なままになります。
 
 ## ステータスの表示
 
