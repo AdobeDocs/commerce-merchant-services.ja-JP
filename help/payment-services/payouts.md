@@ -4,9 +4,9 @@ description: 支払額、処理済数量および財務調整の取引レベル�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: 4554ea65ded73e9552f307ff51e0e7eff64cd2e9
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 ![財務レポートビュー](assets/reports-view.png)
 
 ペイアウトレポートは、総合的なペイアウト情報を一目で表示し、支払金額、処理済数量、財務調整のトランザクションレベルに関する詳細なレポートを完全に透明化できます。
+
+>[!NOTE]
+>
+>ペイアウトレポートには、キャプチャされた注文のみが表示されます。支払いアクションは、 [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) — または [次のように指定 `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
 複数のビューを開いて、注文と支払いを相互参照したり、勘定を調整したりする必要はありません。 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] では、これらすべてのアクションを 1 か所（ペイアウトレポート）から実行し、ペイアウトを効率的に表示および管理できます。
 
@@ -106,7 +110,7 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、ライ�
 | [!UICONTROL Provider] | 支払いプロバイダー |
 | [!UICONTROL Provider trans] | トランザクション ID |
 | [!UICONTROL Trans date] | トランザクションが開始された日時 |
-| [!UICONTROL Type] | トランザクションタイプ —*[!UICONTROL PAYMENT]*, *[!UICONTROL AUTH]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>詳しくは、 [トランザクションタイプ](#transaction-types) を参照してください。 |
+| [!UICONTROL Type] | トランザクションタイプ —*[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>詳しくは、 [トランザクションタイプ](#transaction-types) を参照してください。 |
 | [!UICONTROL Status] | トランザクションの現在のステータス —*[!UICONTROL SUCCESS]*, *[!UICONTROL DENIED]*, *[!UICONTROL PENDING]* |
 | [!UICONTROL Code] | クレジット (*CR*) または借方 (*DR*) |
 | [!UICONTROL Reference ID] | このイベントが関連する元のトランザクション ID |
