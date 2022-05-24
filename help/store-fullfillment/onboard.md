@@ -3,7 +3,7 @@ title: 「 」をオンボード[!DNL Store Fulfillment]"
 description: コマースインスタンスを [!DNL Store Fulfillment Manager] サービスを使用するには、いくつかのオンボーディング手順を完了します。
 role: User, Admin
 level: Intermediate
-source-git-commit: 24639b75d3c629856fbb8fc74e7eb072d4197815
+source-git-commit: f3148d575088fff3b4178f3c03e9d45ce461fbe2
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 1%
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## 前提条件
 
-* **コマースアカウント情報** — ダウンロードとインストール [!DNL Channel Manager] にはが必要です [コマースアカウント](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 に対する所有者または管理者アクセス権を持つアカウント ID と資格情報が必要です [!DNL Adobe Commerce] または [!DNL Magento Open Source] インスタンス。
+* **コマースアカウント情報** — インストール [!DNL Store Fulfillment by Walmart Technologies] にはが必要です [コマースアカウント](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 に対する所有者または管理者アクセス権を持つアカウント ID と資格情報が必要です [!DNL Adobe Commerce] または [!DNL Magento Open Source] インスタンス。
 
 * の場合 [!DNL Adobe Commerce] クラウドインフラストラクチャプロジェクトでは、ソフトウェアインストーラーは、 [!DNL Commerce] インスタンス：
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
       詳しくは、 [ユーザーアクセスを管理](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-* **Store Fulfilment by Walmart Technologies ソフトウェアアーカイブへのアクセスで、Store Fulfilment ソリューションをAdobe Commerceインスタンスにインストール** — お客様のアカウント担当者が、拡張機能のインストールファイルへのアクセス権を提供できます。
+* **Store Fulfilment by Walmart Technologies ソフトウェアアーカイブ（.zip ファイル）にアクセスして、Adobe Commerceインスタンスに Store Fulfilment ソリューションをインストールします** — お客様のアカウント担当者が、拡張機能のインストールファイルへのアクセス権を提供できます。
 
 * **Composer と[!DNL Commerce CLI]**  — 参照 [一般的な CLI のインストール](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;}」を参照してください。 [!DNL Adobe Commerce] および [!DNL Magento Open Source] プラットフォーム。
 
