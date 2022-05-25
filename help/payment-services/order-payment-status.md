@@ -4,9 +4,9 @@ description: 注文の支払ステータスレポートを使用して、注文�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,18 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、 [!DNL 
 
    注文の支払いステータスレポートデータが更新され、 *[!UICONTROL Update complete]* 確認が表示され、最新の情報がグリッドに表示されます。
 
+## 争議の表示
+
+店舗の注文に関する紛争を表示し、PayPal Resolution Center にアクセスして、注文の支払い状況レポート内から対処を行うことができます。
+
+1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 次に移動： **[!UICONTROL Disputes column]**.
+1. 特定の注文に関する紛争を表示し、 [紛争の状況](#order-payment-status-information).
+1. 次の文字列で始まる紛争 ID のリンクをクリックします。 _PP-D-_) をクリックして、 [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. 必要に応じて、紛争に対して適切な措置をとる。
+
+   順序の争議をステータス別に並べ替えるには、「争議」列ヘッダーをクリックします。
+
 ## 注文の支払いステータスをダウンロード
 
 デフォルトの 30 日間のステータスを表示しているか、カスタマイズされた期間を表示しているかに関わらず、すべてのステータスを含む.csv ファイルを注文の支払いステータス表示グリッドに表示してダウンロードできます。
@@ -171,7 +183,7 @@ These order payment status timeframes are currently available in [!DNL Payment S
 | [!UICONTROL Refund Status] | 注文の返金のステータス（返品、RMA、クレジット・メモからの情報など）:   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]*&#x200B;または *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | 注文の払い戻し済み金額の合計 |
 | [!UICONTROL Cur] | 注文に対して払い戻された金額の通貨タイプ |
-| [!UICONTROL Dispute Status] | オーダーに関する紛争のステータス（紛争やチャージバックからの情報）*[!UICONTROL New]*, *[!UICONTROL Representment]*, *[!UICONTROL Accepted]*, *[!UICONTROL Pre-arbitration received]*, *[!UICONTROL Arbitration]*&#x200B;または *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | オーダーに関する紛争のステータス（紛争やチャージバックからの情報）*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]*&#x200B;または *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | 注文のコマーストランザクションで使用される支払い方法 |
 | [!UICONTROL Website] | 注文元の Web サイト |
 | [!UICONTROL Store] | 注文が行われた店舗 |
