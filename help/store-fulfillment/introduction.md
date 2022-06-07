@@ -4,9 +4,9 @@ description: «学ぶ方法 [!DNL Store Fulfillment for Adobe Commerce by Walmar
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Store Fulfilment for Adobe Commerce by Walmart Commerce Technologies は、 [!DN
 
 ## Store Fulfilment 拡張機能
 
-Store Fulfilment 拡張機能はAdobe Commerceと統合されているので、管理者からAdobe Commerce操作および顧客インターフェイスの設定を管理できます。
+ネイティブAdobe Commerce機能のサポートと強化
 
 * シンプル、構成可能、グループ化、バンドル、仮想のほとんどの製品タイプをサポート
 
@@ -39,11 +39,11 @@ Store Fulfilment 拡張機能はAdobe Commerceと統合されているので、�
 
 * ERP、OMS、WMS などの POS（販売時点管理）マーチャントシステムと統合し、在庫管理を実現
 
-* Luma テーマとの完全な互換性。
+* Luma テーマとの完全な互換性
 
-* ヘッドレスと Venia ストアフロントの GraphQL サポートを提供します。
+* ヘッドレスおよび Venia ストアフロント用の GraphQL のサポートを提供
 
-* Walmart Commerce Technology の Store Assist アプリをサポートします。 このアプリは、顧客が受け取りに来た際に、顧客に商品を迅速かつ正確に受け取ることができるように、適切な店内の従業員のハンドヘルドデバイスに直接受け取り注文を送信します。
+* Walmart Commerce Technology の Store Assist アプリをサポートします。 このアプリは、顧客がチェックイン時に顧客に商品を迅速かつ正確に選び、ステージングし、顧客に渡すことができるように、適切な店内の従業員のハンドヘルドデバイスに直接ピックアップ注文を送信します。
 
 ## ストアアシストアプリ
 
@@ -61,7 +61,7 @@ iOSおよび Android™デバイス用の Store Assist App は、Walmart Commerc
 
 店舗の達成は、Adobe Commerceを強化し、ショッピングエクスペリエンスの向上と達成ワークフローの合理化を実現する次の機能を追加することで、次の機能を提供します。
 
-* **ストアの場所の選択 (SLS)**-Adobe Commerce製品、買い物かご、チェックアウトインターフェイスに、店舗ピックアップオプション、在庫の可用性、店舗セレクターを追加します。
+* **ストアの場所の選択 (SLS)** — ネイティブチェックアウトに加えて、製品ページと買い物かごページにストアピックアップオプション、在庫の可用性、ストアセレクターを表示します。
 
 * **在庫の可用性**- Adobe Commerce Inventory managementに製品およびグローバル構成オプションを追加し、ストアレベルの在庫割り当てをサポートして、ローカルでのタイムリーな達成を促します。
 
