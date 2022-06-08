@@ -2,9 +2,9 @@
 title: テスト用サンドボックスの設定
 description: PayPal Sandbox アカウントを使用して [!DNL Payment Services] テストモードの
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ PayPal サンドボックスのオンボーディングが承認されると、�
 
 >[!IMPORTANT]
 >
->次の同意を取り消した場合： [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] お客様の支払い処理（お客様の PayPal アカウント設定）に関して、お客様のストア内の注文を次の手順で処理することはできません： [!DNL Payment Services].
+>次の同意を取り消した場合： [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] お客様の支払い処理（お客様の PayPal アカウント設定）に関して、お客様のストア内の注文を次の手順で処理することはできません： [!DNL Payment Services]. お使いの支払いサービスホームに、取り消された同意に関するアラートが表示されます。 アラートを閉じるには、 **[!UICONTROL Do not show again]**.
 
 ## 連絡先電話番号を有効にする
 

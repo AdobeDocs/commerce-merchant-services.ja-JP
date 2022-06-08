@@ -2,9 +2,9 @@
 title: 有効にする [!DNL Payment Services] 本番用
 description: を有効にしてオンボーディングプロセスを完了します。 [!DNL Payment Services] 実稼動用。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Payments Services 拡張機能が [インストール済み](install.md)、イ�
 
    >[!IMPORTANT]
    >
-   >次の同意を取り消した場合： [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] お客様の支払い処理（お客様の PayPal アカウント設定）に関して、お客様のストア内の注文を次の手順で処理することはできません： [!DNL Payment Services].
+   >次の同意を取り消した場合： [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] お客様の支払い処理（お客様の PayPal アカウント設定）に関して、お客様のストア内の注文を次の手順で処理することはできません： [!DNL Payment Services]. お使いの支払いサービスホームに、取り消された同意に関するアラートが表示されます。
 
 ## Adobeからの支払い権限の要求
 
@@ -115,7 +115,7 @@ A _実稼動商人 ID_ が自動生成され、 [設定](configure-admin.md). �
 
 >[!IMPORTANT]
 >
->次の同意を取り消した場合： [!DNL Payment Services] お客様の支払い処理（お客様の PayPal アカウント設定）に関して、お客様のストア内の注文を次の手順で処理することはできません： [!DNL Payment Services]. 支払処理を再度有効にする場合は、オンボーディングを再度完了する必要があります。
+>次の同意を取り消した場合： [!DNL Payment Services] お客様の支払い処理（お客様の PayPal アカウント設定）に関して、お客様のストア内の注文を次の手順で処理することはできません： [!DNL Payment Services]. 支払処理を再度有効にする場合は、オンボーディングを再度完了する必要があります。 お使いの支払いサービスホームに、取り消された同意に関するアラートが表示されます。
 
 ## 本番でテスト
 
