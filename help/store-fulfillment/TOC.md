@@ -1,13 +1,13 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: このガイドでは、Adobe CommerceまたはMagento Open Sourceストア用のストアフルフィルメントサービスのインストールと設定に関する詳細情報を提供します。
-breadcrumb-title: Store Fulfilment by Walmart Technologies ガイド
+user-guide-description: Adobe Commerceストアのストアフルフィルメントのインストール、設定、使用に関する詳細情報
+breadcrumb-title: Adobe Commerceのフルフィルメントを保存
 index: false
 hidden: true
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 3%
+source-wordcount: '84'
+ht-degree: 2%
 
 ---
 
@@ -16,15 +16,27 @@ ht-degree: 3%
 
 - [ガイドの概要](guide-overview.md)
 - [の概要 [!DNL Store Fulfillment]](introduction.md)
+- [Store Assist ワークフロー](store-assist-modules.md)
+- [要件](solution-requirements.md)
 - [リリースノート](release-notes.md)
 - オンボードストアの達成 {#onboarding}
    - [オンボーディングの概要](onboard.md)
-   - [インストール](install.md)
-   - [サービス接続とセットアップ](connect-set-up-service.md)
-   - [テストとデプロイメント](test-deploy.md)
-- 機能の設定 {#configuration}
+   - [拡張機能のインストール](install.md)
+   - [ストアの達成を接続](connect-set-up-service.md)
+   - [テストとデプロイ](test-and-deploy.md)
+- [設定の概要](service-config-settings-overview.md)
+- ストア設定 {#store-configuration}
    - [一般設定](enable-general.md)
    - [セールスメール](sales-emails.md)
+   - [マーチャントストアソース](merchant-store-configuration.md)
    - [製品在庫管理](product-stock.md)
-   - [ストアソース](store-sources.md)
+   - [Inventory managementソース転送](inventory-stock-transfer.md)
+   - [複数の Web サイト/範囲](multi-site-and-scope-config.md)
+- システム設定 {#system-configuration}
    - [バックグラウンドプロセス](background-processes.md)
+   - [ストアの場所とマッピングの設定](store-location-map-provider-setup.md)
+   - [エクスペリエンス設定のチェックイン](check-in-experience-setup.md)
+   - [ユーザー設定](user-setup.md)
+   - [アプリ設定](app-setup.md)
+
+

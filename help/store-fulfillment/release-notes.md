@@ -1,17 +1,17 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Technologies] リリースノート'''
-description: すべての [!DNL Store Fulfillment by Walmart Technologies] リリース。
+title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] リリースノート'''
+description: すべての [!DNL Store Fulfillment by Walmart Commerce Technologies] リリース。
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: df045a8d2089bbaf2c13015cfa05c16842bd2b3f
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '56'
+ht-degree: 8%
 
 ---
 
 # リリースノート
 
-以下のリリースノートでは、 [!DNL Store Fulfillment Services by Walmart Technologies] およびを含めます。
+以下のリリースノートでは、 [!DNL Store Fulfillment Services by Walmart Commerce Technologies] およびを含めます。
 
 ![新規](../assets/new.svg) 新機能
 ![修正された問題](../assets/fix.svg) 修正点および改善点

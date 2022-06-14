@@ -1,21 +1,21 @@
 ---
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] ガイドの概要`'
-description: に関する包括的な情報 [!DNL Store Fulfillment] (Adobe CommerceおよびMagento Open Source管理者向け )
+description: に関する包括的な情報 [!DNL Store Fulfillment] Adobe Commerce管理者向け（インストールとオンボーディングを含む）
 seo-title: Adobe Commerce Store Fulfillment Guide
-seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Technologies] services with Adobe Commerce or Magento Open Source.
+seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
 # [!DNL Store Fulfillment] ガイドの概要
 
-このガイドは、Adobe CommerceとMagento Open Sourceの管理者を対象としています。 のインストールとオンボーディングに関する詳細情報が含まれます。 [!DNL Store Fulfillment by Walmart Technologies]、およびサービスの設定と管理。 ここでは、コマースのコア設定と機能に関する基本的な知識を前提としています。
+このガイドは、Adobe Commerceの管理者を対象としています。 のインストールとオンボーディングに関する詳細情報が含まれます。 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]、およびサービスの設定と管理。 ここでは、主なAdobe Commerceの設定と機能に関する基本的な知識を前提としています。
 
-[!DNL Store Fulfillment] には、コマース管理者向けの次の 2 つの領域があります。
+[!DNL Store Fulfillment] には、Adobe Commerce管理者向けの 2 つの領域があります。
 
 * 管理者：この領域を使用して、設定 UI にアクセスします。
 * コマンドラインインターフェイスは次のようになります。このツールを使用して、インストールおよびバックエンドの設定タスクを実行します。
@@ -23,16 +23,16 @@ ht-degree: 0%
 このガイドでは、以下について説明します。
 
 * すべて [!DNL Store Fulfillment] — 管理者で実行される特定のタスク。
-* すべて [!DNL Store Fulfillment] — コマースコマンドラインを使用して実行される特定のタスク
+* すべて [!DNL Store Fulfillment]Adobe Commerceコマンドラインを使用して行う特定のタスク
 
-このガイドでは、Adobe CommerceとMagento Open Sourceの主な機能については説明しません。
+このガイドでは、Adobe Commerceの主な機能については説明しません。
 
 ## その他のドキュメント
 
 | ガイド | 説明 |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [Adobe Commerce 2.4 ユーザーガイド](https://docs.magento.com/user-guide/) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャント中心のドキュメント |
-| [Adobe Commerce 2.4 開発者ガイド](https://devdocs.magento.com/) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けドキュメント |
+|-----------------------------------------------------------------------|----------------------------------------------------------------------------|
+| [Adobe Commerce 2.4 ユーザーガイド](https://docs.magento.com/user-guide/) | 両Adobe Commerce向けのマーチャント中心のドキュメント |
+| [Adobe Commerce 2.4 開発者ガイド](https://devdocs.magento.com/) | Adobe Commerceの構築とカスタマイズに使用する開発者向けドキュメント |
 
 ## サポート
 

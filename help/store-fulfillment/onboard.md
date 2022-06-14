@@ -1,93 +1,58 @@
 ---
-title: オンボーディングの概要
-description: '" [!DNL Commerce] インスタンスから [!DNL Store Fulfillment Manager] サービスを使用するには、いくつかのオンボーディング手順を完了する必要があります。」'
+title: ストアフルフィルメントサービスのオンボーディングの概要
+description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 role: User, Admin
 level: Intermediate
-exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 1%
+source-wordcount: '363'
+ht-degree: 0%
 
 ---
 
-# オンボーディングの概要
+# ストアフルフィルメントのオンボーディングの概要
 
-コマースインスタンスに拡張機能をインストールし、API 接続を設定することで、Onboard Store のフルフィルメントを実行します。 これらの接続を使用すると、コマースインスタンス、在庫管理用のサードパーティシステム、Store Assist アプリ間の通信とデータの同期が可能になります。
+の基本を学ぶ [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 次のコンポーネントを設定、設定および有効化する。
 
-オンボーディングが完了したら、コマース管理者からソリューションを設定および管理します
+- **Store Fulfilment 拡張機能** — このサードパーティの拡張機能をAdobe Commerceインスタンスにインストールして設定します。 インストール後、管理者からサポートするストアフルフィルメントソリューションを設定および管理できます [!DNL buy online, pickup in store] (BOPIS) シナリオが Commerce ストアフロントに表示されます。
 
-![[!DNL Store Fulfillment Service] 管理ビューの設定](assets/store-fulfillment-admin-home.png)
+   ![[!DNL Store Fulfillment Service] 管理ビューの設定](assets/store-fulfillment-admin-home.png)
 
-## オンボーディングの概要
+- **受渡勘定の保存** — 有効化プロセス中に、アカウントマネージャがストアフルフィルメントアカウントを作成し、アカウント情報と認証情報を提供します。 これらの資格情報は、Adobe Commerceとストアフルフィルメントソリューション間の接続を有効にするために必要です。
 
-1. Adobe Commerceの Store Fulfilment by Walmart Technologies 拡張機能をインストールします。
+- **ストアアシストアプリ** — ストアをエンドツーエンドのストアフルフィルメントワークフローと関連付けて、モバイルデバイスからの BOPIS 注文を管理します。 Store Associates は Walmart の [!DNL Store Assist] (iOSおよび Android デバイス用 ) アプリのオンボーディングプロセスは、Walmart Commerce Technology Client Center が別のプロセスとして管理します。 しかし、 [一部のアプリ設定](user-setup.md) は、Adobe Commerce Admin から入力されます。
 
-1. 管理者から、ソリューションを有効にし、統合の一般的な設定とアクティブな機能を完了し、オンボーディング取得フォームに入力してフルフィルメントサービスに接続します。
+   | Store Assist App — はじめに表示 | Store Assist App — モジュールビュー |
+   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+   | ![[!DNL Store Assist App Getting Started] モバイルデバイスで表示](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] モバイルデバイス上](assets/store-assist-orders-small.png) |
 
-1. 配信方法を設定します。
 
-1. ソースを物理ストアとして設定し、カタログで製品を設定します。
 
-1. オンラインでの購入、店頭 (BOPIS) トランザクションに関する顧客のコミュニケーションを管理する電子メールテンプレートを選択および設定します。
 
-1. Store Assist アプリのユーザーとロールを作成します。
+## プロビジョニング手順
 
-1. データをフルフィルメントサービスに同期するバックグラウンドプロセスのスケジュールを設定します。
+- **新規登録[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]** — の新規登録フォームに入力します [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)または、Adobe Commerceのアカウントマネージャーにお問い合わせください。
 
-## 要件
+- **ストアフルフィルメントのプロビジョニングリクエストを開始します** — 担当のアカウントマネージャーから提供された取り込みフォームに入力し、プロビジョニングプロセスの開始に必要な情報を入力します。
 
-ソリューションをインストール、デプロイ、および使用するには、次の要件を満たす必要があります。
+- **ストアフルフィルメントアカウントの資格情報を取得** — ストアフルフィルメントアカウントを作成したら、ストアフルフィルメントソリューションをAdobe Commerceと統合するために必要な資格情報を受け取ります。
 
-* **コマースアカウント情報** — インストール [!DNL Channel Manager] にはが必要です [コマースアカウント](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 に対する所有者または管理者アクセス権を持つアカウント ID と資格情報が必要です [!DNL Adobe Commerce] インスタンス。
+- **[ソースコードをダウンロードして、 [!DNL Store Fulfillment] 拡張](install.md)**
 
-* の場合 [!DNL Adobe Commerce] クラウドインフラストラクチャプロジェクトでは、ソフトウェアインストーラーが Cloud プロジェクトに管理者アクセス権を持っている必要があります。 詳しくは、 [ユーザーアクセスを管理](https://devdocs.magento.com/cloud/project/user-admin.html).
+## オンボーディング手順
 
-* **Store Fulfilment ソリューションをインストールするための Store Fulfilment by Walmart Technologies ソフトウェアアーカイブ（.zip ファイル）へのアクセス** — オンボーディングとイネーブルメントのプロセス中に、お客様のアカウント担当者がインストールファイルへのダウンロードアクセスを提供します。
+1. [Adobe Commerceの Store Fulfilment 拡張機能のインストール](install.md).
 
-* **Composer と[!DNL Commerce CLI]** — 参照 [一般的な CLI のインストール](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;}」を参照してください。 [!DNL Adobe Commerce] および [!DNL Magento Open Source] プラットフォーム。
+1. 管理者から、 [解決策を有効にする](enable-general.md).
 
-* [!DNL Inventory Management] Adobe Commerce andMagento Open Sourceの拡張
+1. [Adobe Commerce管理者からの Store Fulfilment 拡張機能の設定](service-config-settings-overview.md).
 
-   Inventory management拡張機能をAdobe CommerceおよびMagento Open Sourceインスタンスにインストールし、有効にする必要があります。 通常、この拡張機能は、Adobe Commerce 2.3.x 以降にデフォルトでインストールされ、有効になっています。 詳しくは、 [Inventory managementのインストール](https://devdocs.magento.com/extensions/inventory-management/) ( Adobe Commerce開発者向けドキュメント )。
+1. [接続 [!DNL Store Fulfillment] 指定されたストアフルフィルメント資格情報を使用して、サービスを実行します。](connect-set-up-service.md)
 
-## プラットフォームとバージョンの要件
+1. [Store Assist アプリのユーザーとロールの作成](user-setup.md)
 
-この [!DNL Store Fulfillment] ソリューションは、次のプラットフォームでAdobe Commerceのお客様が利用できます。
+1. [ウォルマートの [!DNL Store Assist] を目的のデバイスに追加します。 このアプリは、App Store(iOS) と Play ストア (Android) の両方で利用できます](app-setup.md)
 
-* Adobe Commerce on cloud infrastructure (ECE)
-* Adobe Commerceオンプレミス (EE)
+のインストール、設定、オンボーディングの完了、およびへのアクセス権の取得が完了したら、 [!DNL Store Assist] アプリで、以下を実行できます。 [オーダーとテストの作成を開始](test-and-deploy.md).
 
-Store Fulfilment ソリューションは、次のソフトウェアバージョンと互換性があります。
 
-**ソフトウェアの互換性**
-
-| **ソフトウェア** | **最小バージョン** | **最大バージョン** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.4 |
-| コンポーザー | 1.x | 2.x |
-| MariaDB | 10.2 | 10.4 |
-| MySQL | 5.7 | 8.0 |
-| PHP | 7.4 | 8.1 |
-
-詳細な要件については、 Adobe Commerceを確認してください [必要システム構成](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) （開発者向けドキュメント）を参照してください。
-
-### ビジネス要件
-
-店舗フルフィルメントソリューションを実装するには、お客様のビジネスが次の最低基準を満たしている必要があります。
-
-* 米国ベースの企業のみ
-
-* B2C 小売業者、CPG メーカーが D2C を販売、または D2C を販売しているか、中小企業に販売しているディストリビューター
-
-* 少なくとも 1 つの物理ストアまたは倉庫
-
-* Inventory management for Adobe Commerce（旧 MSI）で製品インベントリを管理
-
-* マーチャント在庫のシンジケート機能
-
-* Wi-Fi の可用性を、ストアフルフィルメントソリューションをサポートするすべての場所に保存
-
-* 店舗および倉庫関連者は、個人または商人が提供するiOSまたは Android モバイルデバイスの勤務中にアクセスできます
-
-* Store Fulfilment ソリューションを使用して管理される製品には、SKU または UPC 製品コードを含む製品属性が必要です

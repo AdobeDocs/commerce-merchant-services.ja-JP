@@ -1,12 +1,12 @@
 ---
 title: «の概要 [!DNL Store Fulfillment]"
-description: «学ぶ方法 [!DNL Store Fulfillment for Adobe Commerce by Walmart Technologies] は、顧客向けにオンラインでの購入、店舗での受け取り (BOPIS) をサポートします。 Store Assist モバイルを使用して、BOPIS の達成と注文処理を合理化し、店舗関連者と Commerce の顧客に提供します。」
+description: «学ぶ方法 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] は、顧客向けにオンラインでの購入、店舗での受け取り (BOPIS) をサポートします。 Store Assist モバイルを使用して、BOPIS の達成と注文処理を合理化し、店舗関連者と Commerce の顧客に提供します。」
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Store Fulfilment for Adobe Commerce by Walmart Commerce Technologies は、 [!DNL Commerce] ストアは、優れた購入をオンラインで提供し、店舗 (BOPIS) の顧客体験を受け取る。
 
-![Walmart Technologies 管理者構成によるフルフィルメントの保存](assets/store-fulfillment-admin-home.png)
+![フルフィルメントソリューションAdobe管理者構成を保存](assets/store-fulfillment-admin-home.png)
 
 また、店舗フルフィルメントは、コンバージョン率、平均注文額、顧客満足度を高めながらコストを削減できるエンドツーエンドのフルフィルメントワークフローも提供します。 このワークフローには次の内容が含まれます。
 
