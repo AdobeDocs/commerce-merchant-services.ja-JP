@@ -1,14 +1,15 @@
 ---
 title: ストアのフルフィルメントの構成の概要
-description: ストアフルフィルメントソリューションで使用可能な管理者構成設定カテゴリと、その構成方法について説明します。
+description: ストアフルフィルメントソリューションが提供する拡張フルフィルメント機能をカスタマイズするために使用できる管理者構成設定の種類と、構成を完了する手順へのリンクについて説明します。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
+
 
 # ストアのフルフィルメントの構成の概要
 
@@ -26,10 +27,9 @@ Adobe Commerce管理では、Walmart Commerce Technologies による Store Fulfi
 | [複数の Web サイト/範囲の設定](multi-site-and-scope-config.md) | 複数の Web サイト/ストア範囲の在庫と配信方法を設定します。 | いいえ |
 | [バックグラウンドプロセスシステム設定](background-processes.md) | フルフィルメント・サービスとのデータ同期に使用するバックグラウンド・プロセスのスケジュールを構成します。 | いいえ |
 | [ストアの場所とマッピングの設定](store-location-map-provider-setup.md) | 距離プロバイダーを使用して小売店を検索し、この情報を SLS マップに表示する機能を設定します | はい |
-| [Check-In Experience Setup](store-location-map-provider-setup.md) | チェックインプロセス中に利用可能な車の色と車の製造オプションを設定 | はい |
+| [Check-In Experience Setup](check-in-experience-setup.md) | チェックインプロセス中に利用可能な車の色と車の製造オプションを設定 | はい |
 | [ユーザー設定](user-setup.md) | Store Assist アプリを使用するストア関連者のユーザーアカウント、役割、および権限を管理します。 スコープ。 | はい |
 | [アプリ設定](app-setup.md) | オンボーディングプロセスを完了するために必要な Store Assist App の利用可能な設定を確認します。 これらの設定は、Adobe Commerce Admin からは設定できません。 | はい |
-
 
 ## 設定の参照を使用
 

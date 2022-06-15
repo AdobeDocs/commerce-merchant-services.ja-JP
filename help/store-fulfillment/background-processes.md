@@ -1,17 +1,18 @@
 ---
-title: バックグラウンドプロセス
-description: '次のスケジュールを設定： [!DNL Store Fulfillment] データをフルフィルメントサービスと同期する際に使用するバックグラウンドプロセス»                   '
+title: バックグラウンドプロセスの設定
+description: '次のスケジュールを設定： [!DNL Store Fulfillment] データをフルフィルメントサービスと同期する際に使用するバックグラウンドプロセス」                   '
 role: User, Admin
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
 
-# バックグラウンドプロセス設定
+
+# バックグラウンドプロセスの設定
 
 ストアフルフィルメント統合では、最適なパフォーマンスとスケールを実現するために、バックグラウンドプロセスとメッセージキューを使用します。 を使用して、Adobe Commerceストア用の環境を構築します。 [デプロイメント変数](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) 自動的に開始 [メッセージキューランナー](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html).
 
@@ -19,9 +20,6 @@ ht-degree: 0%
 
 ## ストアの達成の予定タスクを管理
 
-管理者から、に移動します。 **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks)> Cron configuration options for group:store_fulfillment]**.
-
+管理者から、に移動します。 **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
 ストアフルフィルメントサービスのデフォルト設定を確認します。 注文処理の量とリソースの可用性に応じて、これらの設定を調整する必要が生じる場合があります。
-
-

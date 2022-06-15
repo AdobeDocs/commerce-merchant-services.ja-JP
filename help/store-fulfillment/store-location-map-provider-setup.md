@@ -1,11 +1,11 @@
 ---
-title: ストアの場所とマッピングのシステム構成
-description: ストアフロント UI でストアの場所のマッピングをサポートするように距離プロバイダーを設定します。
+title: 場所とマッピングシステムの構成を保存
+description: ストアフロント UI でストアの場所のマッピングをサポートするように距離プロバイダーを設定します。 店舗フルフィルメントソリューションでは、小売店舗の検索と、エンドツーエンドのフルフィルメントワークフローのその他のマッピングおよびスケジュール機能を有効にする距離プロバイダが必要です。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,3 @@ ht-degree: 0%
    - を **Google API キー**.
 
    - 設定 **[!UICONTROL Computation Mode]** から `Driving` および **[!UICONTROL Value]** から `Distance`
-

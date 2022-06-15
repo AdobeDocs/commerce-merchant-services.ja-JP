@@ -3,9 +3,9 @@ title: ストアフルフィルメントソリューションの接続
 description: Adobe Commerce統合を作成し承認し、ストアフルフィルメントアカウント資格情報をAdobe Commerceサービス設定に追加することで、Adobe Commerceとストアフルフィルメントソリューション間の接続を確立します。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Adobe Commerceをストアフルフィルメントサービスと統合するに
 
 取り込みフォームを完了すると、Walmart Store Fulfilment アカウントが作成されます。 次の資格情報が使用可能になったら、受け取ります。
 
-- [!DNL Merchant I]D
+- [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]

@@ -1,15 +1,16 @@
 ---
 title: セールスメール
-description: 注文プロセスと受注プロセスの間に顧客や管理者と通信し、管理者を保存するために、トランザクション電子メールテンプレートの設定を行います。
+description: 店舗受取注文の受取プロセス中に、顧客および店舗管理者とのコミュニケーションのためのトランザクション電子メールテンプレートを設定します。
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
 
 ---
+
 
 # セールスメール
 

@@ -1,17 +1,17 @@
 ---
-title: サービス要件
-description: 「 [!DNL Store Fulfillment Manager] service"
+title: 達成要件を保存
+description: 「 [!DNL Store Fulfillment solution]."
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 3%
 
 ---
 
 
-# Adobe Commerceの店舗達成の要件
+# Adobe Commerceの達成要件を保存
 
 Adobe Commerceの Store Fulfilment ソリューションをインストールして有効にするには、次の技術要件とビジネス要件を満たす必要があります。
 
@@ -40,9 +40,9 @@ Store Fulfilment ソリューションは、次のソフトウェアバージョ
 
 店舗フルフィルメントソリューションを実装するには、お客様のビジネスが次の最低基準を満たしている必要があります。
 
-* 米国ベースの企業のみ
+* 米国を拠点とする企業のみ
 
-* B2C 小売業者、CPG メーカーが D2C を販売、または D2C を販売しているか、中小企業に販売しているディストリビューター
+* B2C 小売業者、CPG メーカーが D2C を販売、または D2C を販売する販売業者や中小企業に販売する販売業者
 
 * 少なくとも 1 つの物理ストアまたは倉庫
 

@@ -3,7 +3,7 @@ title: ストアのフルフィルメントのテストとデプロイ
 description: テスト計画を作成して、店舗達成機能を検証します。 テストでは、在庫同期 API、取り消された注文のエンドツーエンドのフルフィルメントワークフロー、ストアフルフィルメントアプリのユーザー管理、および顧客チェックインエクスペリエンスをカバーします。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
@@ -55,9 +55,6 @@ ht-degree: 0%
 | Adobe Commerce Frontend | 製品タイプ | 顧客、管理者 |
 | フロントエンドチェックアウト</br>チェックインフォーム | チェックインエクスペリエンス | 顧客、管理者 |
 | ストアアシストアプリ | 注文</br>選択</br>ステージ</br>と引き渡し | ストアの関連付け |
-
-
-
 
 ### インベントリ API の同期
 
@@ -639,8 +636,6 @@ Adobe Commerceの製品タイプのテストシナリオでは、顧客が様々
 </tbody>
 </table>
 
-
-
 ## デプロイ
 
 ソリューションが設定され、仕様に合わせてテストされたことを確認したら、ステージングから実稼動にデプロイする準備が整います。
@@ -650,7 +645,6 @@ Adobe Commerceの製品タイプのテストシナリオでは、顧客が様々
 >[!TIP]
 >
 >クラウドインフラストラクチャプロジェクト上のAdobe Commerceのデプロイメントのガイドライン、チェックリスト、ベストプラクティスについては、 [ストアをデプロイ](https://devdocs.magento.com/cloud/live/stage-prod-live.html) ( Adobe Commerce開発者向けドキュメント )。
-
 
 
 

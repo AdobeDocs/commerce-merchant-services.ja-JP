@@ -1,10 +1,10 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: Adobe Commerceストアのストアフルフィルメントのインストール、設定、使用に関する詳細情報
+user-guide-description: Adobe Commerceストアのストアフルフィルメントのインストール、設定、使用に関する詳細情報。
 breadcrumb-title: Adobe Commerceのフルフィルメントを保存
 index: false
 hidden: true
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 - [ガイドの概要](guide-overview.md)
 - [の概要 [!DNL Store Fulfillment]](introduction.md)
-- [Store Assist ワークフロー](store-assist-modules.md)
+- [Store Assist Workflows](store-assist-modules.md)
 - [要件](solution-requirements.md)
 - [リリースノート](release-notes.md)
 - オンボードストアの達成 {#onboarding}
@@ -28,7 +28,7 @@ ht-degree: 2%
 - ストア設定 {#store-configuration}
    - [一般設定](enable-general.md)
    - [セールスメール](sales-emails.md)
-   - [マーチャントストアソース](merchant-store-configuration.md)
+   - [マーチャントストア（ソース）](merchant-store-configuration.md)
    - [製品在庫管理](product-stock.md)
    - [Inventory managementソース転送](inventory-stock-transfer.md)
    - [複数の Web サイト/範囲](multi-site-and-scope-config.md)
@@ -37,6 +37,6 @@ ht-degree: 2%
    - [ストアの場所とマッピングの設定](store-location-map-provider-setup.md)
    - [エクスペリエンス設定のチェックイン](check-in-experience-setup.md)
    - [ユーザー設定](user-setup.md)
-   - [アプリ設定](app-setup.md)
+   - [アプリの設定](app-setup.md)
 
 

@@ -1,16 +1,17 @@
 ---
-title: 複数の Web サイトおよび範囲設定
+title: 複数の Web サイトおよび範囲の設定
 description: 複数の Web サイトやストア範囲の在庫と配信方法を設定します。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-# 複数の Web サイトおよび範囲設定
+
+# 複数の Web サイトおよび範囲の設定
 
 次の設定が可能です。 [範囲](https://docs.magento.com/user-guide/configuration/scope.html) 複数の web サイト、ストア、ストアの表示を収容するいくつかの要素の場合：
 

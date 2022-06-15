@@ -1,9 +1,9 @@
 ---
 title: ストアフルフィルメントサービスのオンボーディングの概要
-description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
+description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項に関する情報を提供します。」'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -26,9 +26,6 @@ ht-degree: 0%
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
    | ![[!DNL Store Assist App Getting Started] モバイルデバイスで表示](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] モバイルデバイス上](assets/store-assist-orders-small.png) |
 
-
-
-
 ## プロビジョニング手順
 
 - **新規登録[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]** — の新規登録フォームに入力します [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)または、Adobe Commerceのアカウントマネージャーにお問い合わせください。
@@ -47,12 +44,11 @@ ht-degree: 0%
 
 1. [Adobe Commerce管理者からの Store Fulfilment 拡張機能の設定](service-config-settings-overview.md).
 
-1. [接続 [!DNL Store Fulfillment] 指定されたストアフルフィルメント資格情報を使用して、サービスを実行します。](connect-set-up-service.md)
+1. [接続 [!DNL Store Fulfillment] 指定されたストアフルフィルメント資格情報を使用したサービス](connect-set-up-service.md).
 
-1. [Store Assist アプリのユーザーとロールの作成](user-setup.md)
+1. [Store Assist アプリのユーザーとロールの作成](user-setup.md).
 
-1. [ウォルマートの [!DNL Store Assist] を目的のデバイスに追加します。 このアプリは、App Store(iOS) と Play ストア (Android) の両方で利用できます](app-setup.md)
+1. [ウォルマートの [!DNL Store Assist] を目的のデバイスに追加します。 このアプリは、App Store(iOS) と Play ストア (Android) の両方で利用できます](app-setup.md).
 
 のインストール、設定、オンボーディングの完了、およびへのアクセス権の取得が完了したら、 [!DNL Store Assist] アプリで、以下を実行できます。 [オーダーとテストの作成を開始](test-and-deploy.md).
-
 

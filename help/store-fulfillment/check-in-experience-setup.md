@@ -3,9 +3,9 @@ title: エクスペリエンス設定のチェックイン
 description: 受け取り注文フォームを完了した顧客がカーブサイドの受け取りを行う場合に、カーメーカーとモデルの選択を設定します。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 0%
 
 # エクスペリエンス設定のチェックイン
 
-店舗フルフィルメントソリューションの受け取りワークフローには、顧客が買い物体験の間に入力する受け取り注文フォームが含まれています。 このフォームは、車の説明の入力を必要とするようにカスタマイズできます。 顧客のチェックインプロセス中にこの情報を含めると、ストアは、短縮された受け取り注文を迅速かつ正確に配信するのに役立ちます。
+店舗フルフィルメントソリューションの受け取りワークフローには、顧客が買い物体験の間に入力する受け取り注文フォームが含まれています。 このフォームは、車の説明の入力を必要とするようにカスタマイズできます。
+
+顧客のチェックイン要求に車の説明情報を含めると、店舗の担当者は迅速かつ正確にキャーブ側のピックアップ注文を提供するのに役立ちます。
 
 ![[!DNL Check-In Experience Car Make] および [!DNL Model] カーブサイドピックアップの設定](assets/checkin-system-settings-car-options.png)
 
@@ -23,10 +25,3 @@ ht-degree: 0%
 - **[!UICONTROL System]> チェックイン > 車の色**
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)
-
-
-
-
-
-
-

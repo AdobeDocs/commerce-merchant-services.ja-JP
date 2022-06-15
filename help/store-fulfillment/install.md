@@ -1,25 +1,26 @@
 ---
 title: インストール
-description: 説明を追加
+description: '" [!DNL Store Fulfillment solution] PHP 用の Composer を使用するAdobe Commerceストアフロントの場合。"'
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
 
+
 # インストール
 
-初期インストールの完了 [!DNL Store Fulfillment] 実稼動環境以外の環境の拡張で、キューマネージャーが実行され、例外の処理を許可するようにキャッシュが設定されています。 Adobe Commerceインスタンスの動作と保守に関するベストプラクティスを確実に実施するには、お使いの環境に他の開発ツールを含める必要があります。
+最初のインストールを完了する [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 実稼動環境以外の環境の拡張で、キューマネージャーが実行され、例外の処理を許可するようにキャッシュが設定されています。 Adobe Commerceインスタンスの動作と保守に関するベストプラクティスを確実に実施するための開発ツールが、開発環境に含まれていることを確認します。
 
 ## 前提条件
 
 以下を確認します。 [要件](solution-requirements.md) をインストールする前に、Store Fulfilment ソリューションに関する情報を収集し、必要な情報を収集します。 [!DNL Store Fulfillment] Adobe Commerceの拡張機能。
 
-Store Fulfilment for Adobe Commerce拡張機能のプレリリース版またはベータ版をインストールしている場合は、現在のバージョンをインストールする前に削除してください。
+Store Fulfilment for Adobe Commerce拡張機能のプレリリース版またはベータ版をインストールしている場合は、次のコマンドを使用して削除してから、現在のバージョンをインストールしてください。
 
 ```terminal
 rm -rf composer.lock vendor/walmart &&
@@ -38,9 +39,9 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Adobe Commerceでサードパーティの拡張機能をインストールした経験** — 参照は、 Adobe Commerceのドキュメントを参照してください。
 
-   - [クラウドインフラストラクチャインスタンス上のAdobe Commerceの拡張機能のインストール](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)
+   - [クラウドインフラストラクチャインスタンス上のAdobe Commerceの拡張機能のインストール](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
-   - [Adobe Commerceオンプレミスインスタンスの拡張機能のインストール](https://devdocs.magento.com/extensions/install/)
+   - [Adobe Commerceオンプレミスインスタンスの拡張機能のインストール](https://devdocs.magento.com/extensions/install/).
 
 ### 手順 1:拡張機能バンドルのダウンロード
 
@@ -79,7 +80,7 @@ Composer を使用して、インストールのソースディレクトリを�
    composer config repositories.artifacts artifact artifacts/
    ```
 
-1. Store Fulfilment Services 拡張機能の追加先 `composer.json`
+1. Store Fulfilment Services 拡張機能の追加先 `composer.json`.
 
    ```bash
    composer require walmart/magento-bopis-metapackage:1.0.0
@@ -128,7 +129,7 @@ Adobe Commerceサーバーから、Store Fulfilment Services 拡張機能のモ�
 
 1. サーバーにログインします。
 
-   クラウドインフラストラクチャ上のAdobe Commerceにインストールする場合は、SSH を使用してリモート環境にログインします。
+   クラウドインフラストラクチャ上のAdobe Commerceでのインストールの場合、 [SSH を使用してリモート環境にログイン](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. ストアフルフィルメントサービスモジュールが有効になっていることを確認します。
 
@@ -182,7 +183,7 @@ Adobe Commerceサーバーから、Store Fulfilment Services 拡張機能のモ�
 
 ### その他の手順
 
-必要に応じて、 [設定:static-content: デプロイ](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy) 静的ビューファイルを実稼動環境にデプロイする CLI コマンド。
+必要に応じて、 `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` 静的ビューファイルを実稼動環境にデプロイする CLI コマンド。
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -193,4 +194,3 @@ php bin/magento setup:static-content:deploy -f
 >[!NOTE]
 >
 >詳しくは、 [Adobe Commerceでの静的コンテンツデプロイのベストプラクティス](https://support.magento.com/hc/en-us/articles/360031624091) ( Adobe Commerceヘルプセンター )
-
