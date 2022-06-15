@@ -2,9 +2,9 @@
 title: '"チェックアウトフロー"'
 description: 「 [!DNL Quick Checkout] Adobe Commerceの流れだ」
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 0%
 - 発送方法
 - 支払い方法の確認
 
-詳しくは、 [トラブルシューティング](../quick-checkout/troubleshooting.md) トピックを参照してください。
+既存のAdobe Commerceユーザーとして注文する際に問題が発生した場合は、 [クイックチェックアウトに関する問題のトラブルシューティング](https://support.magento.com/hc/en-us/articles/6909450342541) 記事をAdobe Commerce Help Center で参照してください。
 
 >[!NOTE]
 >
