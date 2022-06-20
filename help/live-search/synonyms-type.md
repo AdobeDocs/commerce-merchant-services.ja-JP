@@ -2,9 +2,9 @@
 title: シノニムのタイプ
 description: 「片道と双方向 [!DNL Live Search] 「類義語」は、キーワードの定義を拡張します。
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,13 @@ ht-degree: 0%
 
 ライブ検索のシノニムを最大限に活用するには、次のベストプラクティスに注意してください。
 
-### キーワードマッピング
+### 「ストップワード」の回避
 
-この手法では、同義語ではなく、検索可能な製品属性を使用して、製品間のキーワードベースの関連付けを作成します。 その結果、マッピングされた製品が別の製品の検索結果に表示される場合があります。 詳しくは、 [検索結果](https://docs.magento.com/user-guide/catalog/search-results.html).
+ライブ検索では、次のような類義語から一般的な英語の「ストップワード」を除外します。
+
+a, a, and, a, a, at, a, a, a, a, a, a, a, a, a, in, in, i, it, no, on, on, on, on, os, a, the, ther, ther, the, ther, the, this, to, to, as, a
+
+ストップワードを使用すると、シノニムがより意味のあるものになるわけではありませんが、処理するデータの量が増えます。
 
 ### 単一語を使用
 
@@ -46,3 +50,7 @@ ht-degree: 0%
 ### 一貫性
 
 カタログでの用語の使用方法に一致します。 地域による使用方法の違いや、業界内の違いが生じる場合があることに注意してください。
+
+### キーワードマッピング
+
+この手法では、同義語ではなく、検索可能な製品属性を使用して、製品間のキーワードベースの関連付けを作成します。 その結果、マッピングされた製品が別の製品の検索結果に表示される場合があります。 詳しくは、 [検索結果](https://docs.magento.com/user-guide/catalog/search-results.html).
