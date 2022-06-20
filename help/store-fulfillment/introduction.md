@@ -4,9 +4,9 @@ description: «学ぶ方法 [!DNL Store Fulfillment for Adobe Commerce by Walmar
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,8 @@ iOSおよび Android™デバイス用の Store Assist App は、Walmart Commerc
 * **トランザクション E メール** — の管理機能を拡張します。 [!UICONTROL Sales Emails] オンラインで購入する電子メールテンプレートを追加するには、店舗でのトランザクションをピックアップします。 このテンプレートは、注文の受け取りプロセス中に、顧客と店舗の関連者間のリアルタイム通信をサポートします。
 
 * **柔軟な達成** — 拡張 [!DNL Commerce] バックオーダー、数量減額および一部受注履行の処理シナリオをサポートし、これらのシナリオをサポートするために必要なキャンセルおよびクレジット・メモを容易にする機能。
+
+>[!TIP]
+>
+> ストアフルフィルメントソリューションの簡単なデモについては、 [ストアの達成の概要](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) 次の場所で使用可能： _Adobe CommerceのビデオとTutorials_.
+
