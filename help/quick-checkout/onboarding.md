@@ -2,9 +2,9 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ ht-degree: 0%
 
 ## 拡張機能を有効にする
 
-1. の _管理者_ サイドバー、次に移動 **ストア** > **設定** > **チェックアウト** をクリックして、「チェックアウト管理者設定」ページにアクセスします。
+1. の _管理者_ サイドバー、移動 **ストア** > _設定_ > **設定**.
+1. 左側のパネルで、を展開します。 **セールス** を選択し、 **チェックアウト**.
 
    ![クイックチェックアウト](assets/admin-view.png)
 
