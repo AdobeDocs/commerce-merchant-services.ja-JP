@@ -1,19 +1,19 @@
 ---
 title: Commerce Services コネクタ
-description: API キーと秘密鍵を使用して、Adobe CommerceまたはMagento Open Sourceインスタンスをサービスに統合する方法について説明します。
+description: 実稼働用 API キーとサンドボックス API キーを使用して、Adobe CommerceまたはMagento Open Sourceインスタンスをサービスに統合する方法について説明します。
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
+source-git-commit: 42cb709f4699fcdd56df7ca02466ab416f01cab2
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-一部のAdobe CommerceおよびMagento Open Source機能は、 [!DNL Commerce Services]  SaaS（サービスとしてのソフトウェア）としてデプロイされます。 これらのサービスを使用するには、 [!DNL Commerce] API キーと秘密鍵を使用するインスタンスと、 [設定](https://docs.magento.com/user-guide/configuration/services/saas.html). 設定が必要なのは 1 回だけです。
+一部のAdobe CommerceおよびMagento Open Source機能は、 [!DNL Commerce Services]  SaaS（サービスとしてのソフトウェア）としてデプロイされます。 これらのサービスを使用するには、 [!DNL Commerce] 実稼働用とサンドボックス API キーを使用し、 [設定](https://docs.magento.com/user-guide/configuration/services/saas.html). 設定が必要なのは 1 回だけです。
 
-## 利用可能なサービス
+## 利用可能なサービス {#availableservices}
 
 以下に、 [!DNL Commerce] でアクセスできる機能 [!DNL Commerce Services Connector]:
 
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 ## 資格情報 {#apikey}
 
-API キーと秘密鍵は、 [!DNL Commerce] 一意の [!DNL Commerce] ID (MageID)。 次のようなサービスの使用権限の検証に合格するには： [!DNL Product Recommendations] または [!DNL Live Search]を使用する場合、マーチャントの組織のライセンス所有者は、アカウントが正常である限り、API キーのセットを生成できます。 キーは、ライセンス所有者に代わってプロジェクトと環境を管理するシステムインテグレーターまたは開発チームと「知っておく必要がある」という理由で共有できます。 また、ソリューションインテグレーターは、 [!DNL Commerce Services]. ソリューションインテグレーターの場合、 [!DNL Commerce] パートナー契約は、API キーを生成する必要があります。
+実稼働用とサンドボックス API キーは、 [!DNL Commerce] 一意の [!DNL Commerce] ID (MageID)。 次のようなサービスの使用権限の検証に合格するには： [!DNL Product Recommendations] または [!DNL Live Search]を使用する場合、マーチャントの組織のライセンス所有者は、アカウントが正常である限り、API キーのセットを生成できます。 キーは、ライセンス所有者に代わってプロジェクトと環境を管理するシステムインテグレーターまたは開発チームと「知っておく必要がある」という理由で共有できます。 また、ソリューションインテグレーターは、 [!DNL Commerce Services]. ソリューションインテグレーターの場合、 [!DNL Commerce] パートナー契約は、API キーを生成する必要があります。
 
-### API キーと秘密鍵の生成 {#genapikey}
+### 実稼働環境とサンドボックス API キーを生成する {#genapikey}
 
 1. にログインします。 [!DNL Commerce] アカウント [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}。
 
@@ -55,7 +55,9 @@ API キーと秘密鍵は、 [!DNL Commerce] 一意の [!DNL Commerce] ID (MageI
 
 1. クリック **ダウンロード** 次に、 **キャンセル**.
 
-   この **API キー** 「 」セクションに API キーが表示されるようになりました。 API キーと秘密鍵の両方が必要な場合は、 [SaaS プロジェクトを選択または作成する](#createsaasenv).
+1. 各環境（実稼動およびサンドボックス）に対して、上記の手順を繰り返します。
+
+   この **API キー** 「 」セクションに API キーが表示されるようになりました。 実稼動用キーとサンドボックスキーの両方が必要な場合は、 [SaaS プロジェクトを選択または作成する](#createsaasenv).
 
 ## SaaS 設定 {#saasenv}
 
@@ -71,35 +73,37 @@ API キーと秘密鍵は、 [!DNL Commerce] 一意の [!DNL Commerce] ID (MageI
 
 >[!NOTE]
 >
-> 次の項目が表示されない場合、 **[!UICONTROL Commerce Services Connector]** セクション [!DNL Commerce] 設定するには、 [!DNL Commerce] 目的の [!DNL Commerce] サービス： [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
+> 次の項目が表示されない場合、 **[!UICONTROL Commerce Services Connector]** セクション [!DNL Commerce] 設定するには、 [!DNL Commerce] 目的の [[!DNL Commerce] サービス](#availableservices).
 
 SaaS プロジェクトを選択または作成するには、 [!DNL Commerce] からの API キー [!DNL Commerce] お客様の店舗のライセンス所有者。
 
-1. の _管理者_ サイドバー、移動 **ストア** > _設定_ > **設定**.
+1. の _管理者_ サイドバー、移動 **システム** /サービス/ **Commerce Services コネクタ**.
 
-1. 左側のパネルで、を展開します。 **サービス** を選択します。 **Commerce Services コネクタ**.
-
-1. 内 _API キー_ 」セクションで、 **実稼動 API キー** そして **実稼動用秘密鍵**.
+1. 内 _サンドボックス API キー_ および _実稼動 API キー_ セクションで、キー値を貼り付けます。
 
    秘密鍵には、 `----BEGIN PRIVATE KEY---` キーの先頭と `----END PRIVATE KEY----` 秘密鍵の最後に。
 
-1. クリック **設定を保存**.
+1. クリック **保存**.
 
-API キーに関連付けられている SaaS プロジェクトは、 **SaaS プロジェクト** フィールドに入力します。
+キーに関連付けられている SaaS プロジェクトは、 **プロジェクト** フィールド **SaaS 識別子** 」セクションに入力します。
 
-1. SaaS プロジェクトが存在しない場合は、「 **プロジェクトを作成**. 次に、 **プロジェクト名** 「 」フィールドに、SaaS プロジェクトの名前を入力します。
+1. SaaS プロジェクトが存在しない場合は、「 **プロジェクトを作成**. 次に、 **プロジェクト** 「 」フィールドに、SaaS プロジェクトの名前を入力します。
 
    SaaS プロジェクトを作成する場合、 [!DNL Commerce] によって、に応じて 1 つ以上の SaaS データスペースが生成されます [!DNL Commerce] ライセンス：
    - Adobe Commerce - 1 つの実稼動データ領域2 つのテスト用データスペース
    - Magento Open Source- 1 つの実稼動データ領域テストデータスペースなし
 
-1. を選択します。 **SaaS データ容量** を [!DNL Commerce] ストア。
+1. を選択します。 **データスペース** を [!DNL Commerce] ストア。
 
 >[!WARNING]
 >
 > マイアカウントの API ポータルセクションで新しいキーを生成する場合は、管理者設定で API キーを直ちに更新してください。 新しいキーを生成し、Admin で更新しない場合、SaaS 拡張機能は機能しなくなり、有用なデータが失われます。
 
-SaaS プロジェクト名またはデータスペース名を変更するには、 **このプロジェクトの名前を変更** または **データスペース名を変更** それぞれ
+SaaS プロジェクト名またはデータスペース名を変更するには、 **名前を変更**.
+
+## IMS 組織（オプション） {#organizationid}
+
+( この機能は、今後のAdobe Experience Platformとの統合のためのものです )。 Adobe CommerceインスタンスをAdobe Experience Platformに接続するには、Adobe IDを使用してAdobeアカウントにログインします。 ログインすると、Adobeアカウントに関連付けられている IMS 組織がこのセクションに表示されます。
 
 ## カタログの同期
 

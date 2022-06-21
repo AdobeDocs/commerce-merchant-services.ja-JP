@@ -1,9 +1,10 @@
 ---
 title: リリースノート
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
+source-git-commit: 78f469dda853a6f46394d5969f879100cf22f8bb
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
@@ -25,6 +26,11 @@ ht-degree: 0%
 開発者向けドキュメントを参照してください。 [製品の互換性の詳細](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x および 2.4.x
+
+## magento/product-recommendations の 4.0.0
+
+* ![新規](../assets/new.svg)  — 追加済み [対応指標](create.md) を使用すると、各レコメンデーションタイプのトレーニングの進行状況を視覚化できます。
+* ![新規](../assets/new.svg)  — これはメジャーバージョンリリースです。 必ず [編集](install-configure.md#update) 根 `composer.json` ファイルを作成します。 また、このリリースでは、Product Recommendationsのインストールと設定時に、2 つの API キーを指定する必要があります。 [実稼働キーとサンドボックスキー](../landing/saas.md).
 
 ## magento/product-recommendations の 3.3.7
 
