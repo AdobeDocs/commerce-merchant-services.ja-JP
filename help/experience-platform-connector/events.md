@@ -1,9 +1,9 @@
 ---
 title: イベント
 description: どのイベントがデータをキャプチャし、完全なスキーマ定義を確認するかを説明します。
-source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+source-git-commit: 0b349ee75fac305e6ba5ea6eb74a76eb8ce1976a
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 イベント名をクリックすると、完全なスキーマ定義が表示されます。
 
 | イベント | タイプ |
-|---|---|---|
+|---|---|
 | [買い物かごに追加](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts) | ストアフロント |
 | [買い物かごを表示](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts) | ストアフロント |
 | [ページを表示](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts) | ストアフロント |

@@ -1,7 +1,7 @@
 ---
 title: カスタムイベントの作成
 description: Adobe Commerceのデータを他のAdobeDX 製品に接続するカスタムイベントの作成方法を説明します。
-source-git-commit: f167002e1aa401d223f0830954ab09b66017476e
+source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Experience Platformエッジ内：
 
 >[!NOTE]
 >
-> カスタムイベントを使用すると、OOTB Adobe Analyticsレポートに影響を与える場合があります。
+> カスタムイベントを使用すると、デフォルトのAdobe Analyticsレポートに影響を与える場合があります。
 
 ## イベントの上書きの処理（カスタム属性）
 
@@ -104,4 +104,4 @@ Experience Platformエッジ内：
 
 >[!NOTE]
 >
-> カスタム属性を使用したイベントの上書きは、OOTB Adobe Analyticsレポートに影響を与える可能性があります。
+> カスタム属性を使用したイベントの上書きは、デフォルトのAdobe Analyticsレポートに影響を与える可能性があります。
