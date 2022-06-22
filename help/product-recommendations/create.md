@@ -2,9 +2,9 @@
 title: 新しいレコメンデーションを作成
 description: 製品レコメンデーション単位の作成方法を説明します。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
+source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ _推奨単位_
 
    各ページタイプに対して最大 5 つのアクティブなレコメンデーション単位を作成でき、Page Builder に対して最大 25 個のレコメンデーション単位を作成できます。 制限に達すると、ページタイプがグレー表示になります。
 
-   ![レコメンデーション名](assets/create-recommendation.png)
-   _レコメンデーション名とプレースメント_
+   ![レコメンデーション名とページ](assets/create-recommendation.png)
+   _レコメンデーション名とページ配置_
 
 1. 内 _レコメンデーションタイプを選択_ セクションで、 [レコメンデーションのタイプ](type.md) 選択したページに表示する 一部のページでは、 [配置](placement.md) のレコメンデーションは、特定のタイプに制限されます。
 
@@ -54,10 +54,10 @@ _推奨単位_
 
    上記の要因に基づいて、準備値が計算されて表示されます。 レコメンデーションタイプは、準備値が 75%以上の場合、デプロイの準備ができていると見なされます。 レコメンデーションタイプは、準備が 50%以上の場合、部分的に準備完了と見なされます。 最後に、レコメンデーションタイプは、準備値が 50%未満の場合、デプロイの準備ができていないと見なされます。
 
-1. 内 _ストアフロント表示ラベル_ セクションに、 [ラベル](placement.md#recommendation-labels) 買い物客に表示される「トップセラー」など。
-
-   ![レコメンデーション名](assets/create-recommendation-select-type.png)
+   ![レコメンデーションタイプ](assets/create-recommendation-select-type.png)
    _レコメンデーションタイプ_
+
+1. 内 _ストアフロント表示ラベル_ セクションに、 [ラベル](placement.md#recommendation-labels) 買い物客に表示される「トップセラー」など。
 
 1. 内 _製品数を選択_ 「 」セクションの場合は、スライダーを使用して、レコメンデーション単位に表示する商品の数を指定します。
 
@@ -72,12 +72,12 @@ _推奨単位_
 
    この _位置を選択_ 「 」セクションには、選択したページタイプ用に作成されたすべてのレコメンデーション（存在する場合）が表示されます。
 
-   ![レコメンデーション名](assets/create-recommendation-select-placement.png)
-   _レコメンデーションタイプ_
+   ![レコメンデーションの順序](assets/create-recommendation-select-placement.png)
+   _ページでのレコメンデーションの注文_
 
 1. （オプション） _フィルター_ セクション [フィルターの適用](filters.md) を使用して、レコメンデーションユニットに表示する製品を制御できます。
 
-   ![レコメンデーション名](assets/create-recommendation-select-placement.png)
+   ![レコメンデーションフィルター](assets/create-recommendation-filter-products.png)
    _レコメンデーション製品フィルター_
 
 1. 完了したら、次のいずれかをクリックします。
