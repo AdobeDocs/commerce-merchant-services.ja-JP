@@ -2,7 +2,7 @@
 title: '"チェックアウトページ"'
 description: 「Adobe Commerceのチェックアウトページの概要」
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -28,4 +28,4 @@ Adobe Commerceの標準チェックアウトページについて詳しくは、
 >
 > 最初の手順が完了すると、チェックアウトには、チェックアウトの合計と対応するサイドバー情報が表示されます。
 
-詳しくは、 [チェックアウトフロー](../quick-checkout/onboarding.md) トピックを参照してください [!DNL Quick Checkout] フロー。
+詳しくは、 [チェックアウトフロー](../quick-checkout/checkout-flow.md) トピックを参照してください [!DNL Quick Checkout] フロー。
