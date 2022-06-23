@@ -4,9 +4,9 @@ description: '" [!DNL Store Fulfillment solution] PHP 用の Composer を使用�
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Walmart Commerce Technologies ソフトウェアアーカイブ（.zip ファイル）による Store Fulfilment へのアクセス** — オンボーディングとイネーブルメントのプロセス中に、アカウントマネージャーと協力して、Store Fulfilment 拡張機能のインストールファイルにアクセスします。
 
-- **Adobe Commerceアカウント情報**- [!DNL Store Fulfillment] ソリューションには [コマースアカウント](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 に対する所有者または管理者アクセス権を持つアカウント ID と資格情報が必要です [!DNL Adobe Commerce] プロジェクト。
+- **Adobe Commerceアカウント情報**- [!DNL Store Fulfillment] ソリューションには [[!DNL Commerce] アカウント](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 に対する所有者または管理者アクセス権を持つアカウント ID と資格情報が必要です [!DNL Adobe Commerce] プロジェクト。
 
 - の場合 [!DNL Adobe Commerce] クラウドインフラストラクチャプロジェクトでは、ソフトウェアインストーラーが Cloud プロジェクトに管理者アクセス権を持っている必要があります。 詳しくは、 [ユーザーアクセスを管理](https://devdocs.magento.com/cloud/project/user-admin.html).
 
 - **Composer と[!DNL Commerce CLI]** — 参照 [一般的な CLI のインストール](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} を参照してください。 [!DNL Adobe Commerce] プラットフォーム。
 
-- **Adobe Commerceでサードパーティの拡張機能をインストールした経験** — 参照は、 Adobe Commerceのドキュメントを参照してください。
+- **Adobe Commerceでサードパーティの拡張機能をインストールした経験** — 参照については、 Adobe Commerceのドキュメントを参照してください。
 
    - [クラウドインフラストラクチャインスタンス上のAdobe Commerceの拡張機能のインストール](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
@@ -94,7 +94,8 @@ Composer を使用して、インストールのソースディレクトリを�
 
 次を使用してインストールを完了します： `bin/magento setup:upgrade` をクリックして、データベースのスキーマとデータを、ストアフルフィルメントソリューションをサポートする変更で更新します。
 
->注意：
+>[!NOTE]
+>
 >Adobe Commerce on cloud infrastructure プロジェクトの場合、拡張機能を登録する必要はありません。 代わりに、前の手順で行ったコードの変更をコミットし、環境ブランチにプッシュします。 データベーススキーマとデータを更新するコマンドは、クラウドのビルドおよびデプロイメントプロセス中に自動的に実行されます。
 
 ### 手順 5:インストールの完了
@@ -183,7 +184,7 @@ Adobe Commerceサーバーから、Store Fulfilment Services 拡張機能のモ�
 
 ### その他の手順
 
-必要に応じて、 `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` 静的ビューファイルを実稼動環境にデプロイする CLI コマンド。
+必要に応じて、 [設定:static-content:デプロイ](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target=&quot;_blank&quot;} 静的ビューファイルを実稼動環境にデプロイするための CLI コマンド。
 
 ```terminal
 php bin/magento setup:static-content:deploy -f

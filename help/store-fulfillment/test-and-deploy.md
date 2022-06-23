@@ -3,13 +3,13 @@ title: ストアのフルフィルメントのテストとデプロイ
 description: テスト計画を作成して、店舗達成機能を検証します。 テストでは、在庫同期 API、取り消された注文のエンドツーエンドのフルフィルメントワークフロー、ストアフルフィルメントアプリのユーザー管理、および顧客チェックインエクスペリエンスをカバーします。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerceのストアフルフィルメントのテストとデプロイ
 
@@ -136,7 +136,6 @@ ht-degree: 0%
 </td>
 <td>
 <ul>
-<td>
 <li>注文履歴を次で更新： <code>We refunded $X online. Transaction ID: transactionID</code> および <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>注文ステータスは <code>Closed</code>. （今すぐ PAYMENT REVIEW を設定しました。）</li>
 <li>Adobe Commerceで作成されたクレジットメモ。 （cron が動作するまで待ちます）。</li>
@@ -449,7 +448,7 @@ Adobe Commerceの製品タイプのテストシナリオでは、顧客が様々
 
 - 代替ピックアップ連絡先 — 追加するワークフローを確認します。 [!UICONTROL Alternate Pickup Contact] および選択 [!UICONTROL Preferred Contact] 店舗受取注文。
 
-- チェックインフォーム — 店舗受取注文のチェックイン要求を送信するワークフローを確認します。
+- 「チェックインフォーム」(Check-in form) — 店舗受取注文のチェックイン要求を送信するワークフローを検証します。
 
 **機能領域：** 買い物かごのチェックアウト、受け取り注文のチェックインフォーム</br>
 **役割：** 管理者、顧客、ストア関連付け</br>
@@ -566,7 +565,7 @@ Adobe Commerceの製品タイプのテストシナリオでは、顧客が様々
 </tr>
 <tr>
 <td>
-<strong>単一注文ピッキングハッピーパス、カーブサイドピックアップ</strong></td>
+<strong>単一注文ピッキング — ハッピーパス、カーブサイドピックアップ</strong></td>
 <td>単数品目と複数数量品目を選択します。 選択を解除し、（ステージングを含む）選択を妨げます。
 </td>
 <td>
@@ -645,22 +644,3 @@ Adobe Commerceの製品タイプのテストシナリオでは、顧客が様々
 >[!TIP]
 >
 >クラウドインフラストラクチャプロジェクト上のAdobe Commerceのデプロイメントのガイドライン、チェックリスト、ベストプラクティスについては、 [ストアをデプロイ](https://devdocs.magento.com/cloud/live/stage-prod-live.html) ( Adobe Commerce開発者向けドキュメント )。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

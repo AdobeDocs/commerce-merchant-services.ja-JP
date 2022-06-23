@@ -3,13 +3,13 @@ title: 場所とマッピングシステムの構成を保存
 description: ストアフロント UI でストアの場所のマッピングをサポートするように距離プロバイダーを設定します。 店舗フルフィルメントソリューションでは、小売店舗の検索と、エンドツーエンドのフルフィルメントワークフローのその他のマッピングおよびスケジュール機能を有効にする距離プロバイダが必要です。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # ストアの場所とマッピングの設定
 
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 距離プロバイダを設定するには：
 
-1. 次の [!UICONTROL Stores > General] 管理者の設定で、「マップ」コンテンツタイプにGoogle Maps 統合を追加します。
+1. 次の **[!UICONTROL Stores > General]** 管理者の設定で、「マップ」コンテンツタイプにGoogle Maps 統合を追加します。
 
    - に移動します。 **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
    - Google API キーを **[!UICONTROL Google Maps API Key]** フィールドに入力します。
 
-1. 次の [!UICONTROL Stores > Inventory] 「管理」で、「ストアフルフィルメント」の距離プロバイダを選択します。
+1. 次の **[!UICONTROL Stores > Inventory]** 「管理」で、「ストアフルフィルメント」の距離プロバイダを選択します。
 
    - に移動します。 **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 

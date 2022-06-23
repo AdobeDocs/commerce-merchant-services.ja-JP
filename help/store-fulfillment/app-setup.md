@@ -4,9 +4,9 @@ description: 設定 [!DNL Store Assist] エンドツーエンドの店舗フル�
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Store Assist アプリには、次の 2 種類の設定が必要です。
 
    - **手渡しプロセス**- Store Associate が顧客に注文を行う場合（例えば、顧客の署名が必要な場合や、顧客 ID の確認を要求するメッセージを表示する場合）は、オプションのプロセスを有効にします。
 
-   - **ハンドオフ時に項目却下を有効にする** — 注文の受け渡し中に、顧客が注文項目を返却またはキャンセルできるようにします。
+   - **ハンドオフ時に項目却下を有効にする** — 顧客が注文の受け渡し中に注文項目を返却またはキャンセルできるようにします。
    Walmart Commerce Technologies Client Services チームと協力して、Store Assist App のフロントエンド設定を完了します。
 
 ## アプリのダウンロードとインストール
@@ -67,7 +67,7 @@ Store Assist アプリの設定が完了すると、Store Associates は、モ�
 
 - Store Associates のログインには次の情報が必要です。
 
-   - Store Assist アカウントに関連付けられた会社名
+   - **[!UICONTROL Company name]** Store Assist アカウントに関連付けられています
 
-   - Store Assist アカウント資格情報（アカウントのユーザー名とパスワードの資格情報）。
+   - **Store Assist アカウントの資格情報**：ユーザー名とパスワードの資格情報。
    Adobe Commerce管理者は、ユーザーアカウントを作成し、ストアの場所を持つ Store Assist App ユーザーアカウントに対する権限を設定できます [店内ピックアップ](merchant-store-configuration.md#pickup-location-configuration) が管理ストア設定で有効になっている。
