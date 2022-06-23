@@ -1,15 +1,15 @@
 ---
 title: アプリ設定
-description: '「 [!DNL Store Assist] エンドツーエンドの店舗フルフィルメントワークフローとプロセスを管理し、オンラインで購入し、店舗注文を受け取るアプリケーション。 '
+description: 設定 [!DNL Store Assist] エンドツーエンドの店舗フルフィルメントワークフローとプロセスを管理するアプリは、オンラインで購入し、店舗注文で受け取ります。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
+source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
-
 
 # アプリ設定
 
@@ -55,14 +55,15 @@ Store Assist アプリには、次の 2 種類の設定が必要です。
    - **手渡しプロセス**- Store Associate が顧客に注文を行う場合（例えば、顧客の署名が必要な場合や、顧客 ID の確認を要求するメッセージを表示する場合）は、オプションのプロセスを有効にします。
 
    - **ハンドオフ時に項目却下を有効にする** — 注文の受け渡し中に、顧客が注文項目を返却またはキャンセルできるようにします。
-
    Walmart Commerce Technologies Client Services チームと協力して、Store Assist App のフロントエンド設定を完了します。
 
 ## アプリのダウンロードとインストール
 
 Store Assist アプリの設定が完了すると、Store Associates は、モバイルデバイスから Store Assist アプリをダウンロード、インストールし、ログインできます。
 
-- Store Assist アプリをからダウンロードします。 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390) またはGoogle Playストア
+- モバイルデバイスが [ハードウェアとソフトウェアの要件](solution-requirements.md#store-assist-app-requirements) を参照してください。
+
+- Store Assist アプリをからダウンロードします。 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} または [Google Playストア](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}。
 
 - Store Associates のログインには次の情報が必要です。
 
@@ -70,4 +71,3 @@ Store Assist アプリの設定が完了すると、Store Associates は、モ�
 
    - Store Assist アカウント資格情報（アカウントのユーザー名とパスワードの資格情報）。
    Adobe Commerce管理者は、ユーザーアカウントを作成し、ストアの場所を持つ Store Assist App ユーザーアカウントに対する権限を設定できます [店内ピックアップ](merchant-store-configuration.md#pickup-location-configuration) が管理ストア設定で有効になっている。
-
