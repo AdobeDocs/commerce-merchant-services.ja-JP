@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] 家に
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
+source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,9 @@ ht-degree: 0%
 1. チェックアウト時に表示される支払い方法の名前を変更するには、 **[!UICONTROL Checkout title]** フィールドに入力します。
 1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)，切り替え **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
 1. デバッグモードを有効にするには、 **[!UICONTROL Debug Mode]** セレクター。
+
+   デバッグモードを有効にすると、クレジットカードの支払いに関する追加のデバッグ情報が `var/log/payment.log` ファイル。 この情報は、特定の支払いに関する詳細な情報を提供し、トラブルシューティングに役立てることができます。
+
 1. クリック **[!UICONTROL Save]**.
 
    変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
@@ -88,6 +91,9 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 
 1. 次の手順で [後で支払うメッセージ](payments-options.md#pay-later-button)、切り替え **[!UICONTROL Display Pay Later message]** オプション。
 1. デバッグモードを有効にするには、 **[!UICONTROL Debug Mode]** セレクター。
+
+   デバッグモードを有効にすると、PayPal の支払いに関する追加のデバッグ情報が `var/log/payment.log` ファイル。 この情報は、特定の支払いに関する詳細な情報を提供し、トラブルシューティングに役立てることができます。
+
 1. クリック **[!UICONTROL Save]**.
 
    変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
