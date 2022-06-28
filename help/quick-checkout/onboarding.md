@@ -2,7 +2,7 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
+source-git-commit: ac55bf6354c8f5569ad83dc0ac2671b34c98d303
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 支払いプロバイダーの設定
 
-お客様の支払いサービスプロバイダーに接続するには、 [プロセッサー設定](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target=&quot;_blank&quot;} 開発者 [!DNL Bolt] ページ。
+お客様の支払いサービスプロバイダーに接続するには、 [プロセッサー設定](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target=&quot;_blank&quot;} 開発者 [!DNL Bolt] ページ。
 
 ## 拡張機能を有効にする
 
