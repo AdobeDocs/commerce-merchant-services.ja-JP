@@ -2,10 +2,10 @@
 title: '"[!DNL Payment Services] リリースノート"'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 6fc2db2ff842244af6a3c52b575b26233540931b
+source-git-commit: 44e1f7dce951f9244498565eccaebd70328d91e4
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +17,41 @@ ht-degree: 1%
 ![修正された問題](../assets/fix.svg) 修正点および改善点
 ![既知の問題](../assets/bug.svg) 既知の問題
 
+通常のバージョン管理された機能リリース以外でリリースされた機能の変更および修正については、ホストされたサービスの更新の節を参照してください。
+
 詳しくは、 [今後のリリース](https://devdocs.magento.com/release/) を参照してください。
 
-詳しくは、 [可用性](https://devdocs.magento.com/release/availability.html) 製品の互換性について詳しくは、開発者向けドキュメントを参照してください。
+詳しくは、 [使用可否](https://devdocs.magento.com/release/availability.html) 製品の互換性について詳しくは、開発者向けドキュメントを参照してください。
+
+## v1.2.0
+
+_2022 年 6 月 30 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3264 --> 以前は、ログインしたユーザーが自分のアカウントにデフォルトの住所以外の別の請求先/配送先住所を選択した場合、チェックアウトに失敗していました。 この問題を修正し、選択した請求先/配送先住所（デフォルトの保存済み住所ではなく）が送信され、チェックアウトが正常に完了しました。
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3314 --> PayPal のスマートボタンをチェックアウト用に無効にした場合、エラーは表示されません。
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3330 --> ゲストユーザーがダッシュを含む電話番号を入力した場合に、チェックアウト中に支払いが失敗することはなくなりました。
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Commerce Services の資格情報が無効な場合、 [!DNL Payment Services] これで、管理画面にホームが表示されます。 資格情報エラーが表示され、資格情報が無効であることが警告されます。
+
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] は現在、 [`commerce-data-export` v101.20 以降](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0)：と互換性がないレンダリングをおこないます。 [[!DNL Channel manager] 拡張](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+
+### ホストされるサービスの更新
+
+これらのリリースノートでは、現在の v1.2.0 リリースとホストサービスの以前の 1.1.0 リリースとの間で発生し、通常のバージョン管理機能リリース以外でリリースされた機能の変更点と修正点について説明します。
+
+![新規](../assets/new.svg)<!-- Issue PAY-1720 --> 店舗注文に関する紛争は、 [注文の支払い状況レポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). PayPal Resolution Center には、 [!DNL Payment Services] 紛争に対する訴えを起こす。
+
+![新規](../assets/new.svg)<!-- Issue PAY-2854 --> 次のユーザーエクスペリエンスの改善： [!DNL Payment Services] ホームには、現在の継承レベルで設定を変更する機能や、ヘッダーとナビゲーションの表示を改善する機能が含まれています。
+
+![新規](../assets/new.svg)<!-- Issue PAY-2854 --> サンドボックスモードから実稼動モードに切り替えた場合や、保存されていない更新を含むビューから移動しようとすると、警告が表示されるようになりました。
+
+![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 ## v1.1.0
+
+_2022 年 3 月 31 日_
 
 ![新規](../assets/new.svg)<!-- Issue PAY-2127 --> GA リリース —[!DNL Payment Services] 今 [～と互換性がある [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 ～ 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -47,6 +77,8 @@ ht-degree: 1%
 
 ## v1.0.0
 
+_2021 年 11 月 30 日_
+
 ![新規](../assets/new.svg)<!-- Issue PAY-2127 --> GA リリース —[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) は現在、 [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 から 2.4.3-p1。
 
 ![新規](../assets/new.svg)<!-- Issue PAY-124 --> この [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 次のどちらかに対してインストールできます。 [[!DNL Adobe Commerce] クラウドインフラストラクチャ](install.md#adobe-commerce-on-cloud-infrastructure) または [オンプレミス](install.md#on-premises) インスタンス。 これらのメソッドでは、コマンドラインインターフェイスを使用する必要があります。
@@ -61,7 +93,7 @@ ht-degree: 1%
 
 ![新規](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] は、あらゆる商人に合わせた、総処理量に基づく柔軟な階層型価格設定をサポートします。
 
-![新規](../assets/new.svg)<!-- Issue PAY-1443 --> 簡単に [外観をカスタマイズする](payments-options.md) の PayPal スマートボタンと、Payment Services 拡張機能用のクレジットカードフィールド。
+![新規](../assets/new.svg)<!-- Issue PAY-1443 --> 簡単に [外観をカスタマイズする](payments-options.md) / PayPal スマートボタンとクレジットカードフィールド [!DNL Payment Services] 拡張子。
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [誤ったコンポーザーキー](https://support.magento.com/hc/en-us/articles/4406603542541) 拡張機能のインストール中に、ユーザーは [認証](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正しい `MAGEID`.
 
