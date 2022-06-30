@@ -1,9 +1,10 @@
 ---
-title: 「 [!DNL Quick Checkout] 管理者»
-description: 管理者は、 [!DNL Quick Checkout] 管理者から直接、助けを必要とする顧客のための商人によって。」
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+title: で注文を作成 [!DNL Quick Checkout] 管理者
+description: 管理者は、 [!DNL Quick Checkout] を管理者から直接開きます。
+exl-id: 52cb8afb-fb23-468d-94b4-9f9142c54ce0
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '194'
 ht-degree: 1%
 
 ---
@@ -26,4 +27,4 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
-> Early Adopter Program (EAP) の間、ユーザーは OTP ログインを使用して送料と支払いの詳細を自動的に入力することはできません。
+> ユーザーは、OTP ログインを使用して、すべての送料および支払いの詳細を自動的に入力することはできません。

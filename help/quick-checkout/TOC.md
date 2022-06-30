@@ -3,9 +3,9 @@ user-guide-title: '"[!DNL Quick Checkout] Adobe Commerce」'
 user-guide-description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングと設定に成功した方法に役立ちます。」
 breadcrumb-title: Merchant Services ガイド
 hide: true
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '63'
 ht-degree: 3%
 
 ---
@@ -24,6 +24,9 @@ ht-degree: 3%
    - [開発者情報](developer.md)
 - チェックアウト {#manage-checkout}
    - [チェックアウトページ](checkout-page.md)
-   - [チェックアウトフロー](checkout-flow.md)
+   - チェックアウトオプション {#checkout-options}
+      - [チェックアウトフロー](checkout-flow.md)
+      - [ユーザーチェックアウトをボルト](checkout-bolt.md)
+      - [Adobe Commerce user checkout](checkout-adobe-commerce.md)
    - [支払い方法](payment-methods.md)
-   - [管理での注文の作成](create-order-admin.md)
+- [管理での注文の作成](create-order-admin.md)

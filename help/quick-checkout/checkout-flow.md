@@ -2,9 +2,9 @@
 title: '"チェックアウトフロー"'
 description: 「 [!DNL Quick Checkout] Adobe Commerceの流れだ」
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -39,73 +39,8 @@ ht-degree: 0%
 
 この [!DNL Quick Checkout] では、チェックアウトフロー中に複数の使用例を使用できます。
 
-- 登録済みのゲストユーザー [!DNL Bolt] アカウント
-- 新しいを使用するゲストユーザー [!DNL Bolt] アカウント
-- を持つ、または登録していない既存のAdobe Commerceユーザー [!DNL Bolt] アカウント
-
-## ゲストユーザーのチェックアウト：仕組み
-
-ゲストのチェックアウトエクスペリエンスは、ログインしたエクスペリエンスとは異なります。 買い物客がチェックアウトに電子メールアドレスを入力すると、 [!DNL Quick Checkout] を検証して既存の [!DNL Bolt] アカウント
-
-### 登録済み [!DNL Bolt] アカウント
-
-次の場合、 [!DNL Bolt] アカウントが見つかった場合、買い物客は次の項目を使用して続行します [!DNL Quick Checkout] シームレスなチェックアウトエクスペリエンス：
-
-1. これに送信する 1 回限りのパスワード (OTP) を入力します [!DNL Bolt] アカウントの電子メールアドレスまたはモバイル ( [!DNL Bolt] アカウント
-1. ログイン後、 [!DNL Bolt] アカウントに入力すると、チェックアウトの詳細が自動的に入力されます。
-
-   - 配送先情報
-   - 支払い方法
-
-1. 発注。
-
->[!TIP]
->
-> ゲストユーザーが注文をおこない、Adobe Commerceに登録できます。
-
-### 新規 [!DNL Bolt] アカウント
-
-指定しない場合 [!DNL Bolt] アカウントが見つかった場合、買い物客はデフォルトの標準のAdobe Commerceチェックアウトを続行し、買い物客は注文に必要なすべての詳細を提供します。
-
-- 配送および請求情報
-- 発送方法
-- 支払い方法の確認
-- 登録するチェックボックスが表示されます [!DNL Bolt] チェックアウトを早めてからオーダーします。 利用規約に同意して、 [!DNL Bolt] アカウント
-
-   ![記憶する [!DNL Bolt]](assets/checked-bolt.png)
-
-- ゲストユーザーが注文をおこない、Adobe Commerceに登録できます。
-
-## 既存のAdobe Commerceユーザー：仕組み
-
-ユーザーが [!DNL Quick Checkout] を参照してください。
-
-買い物客がチェックアウトに電子メールアドレスを入力すると、 [!DNL Quick Checkout] を検証して既存の [!DNL Bolt] アカウント
-
-### 登録済み [!DNL Bolt] Adobe Commerceユーザーのアカウント
-
-次の場合、 [!DNL Bolt] アカウントが見つかった場合、買い物客はデフォルトの標準のAdobe Commerceチェックアウトを続行し、買い物客は必要なすべての詳細を提供してから、順序を変更します。
-
-- 配送および請求情報
-- 発送方法
-- 支払い方法の確認
-
-既存のAdobe Commerceユーザーとして注文する際に問題が発生した場合は、 [クイックチェックアウトに関する問題のトラブルシューティング](https://support.magento.com/hc/en-us/articles/6909450342541) 記事をAdobe Commerce Help Center で参照してください。
-
->[!NOTE]
->
-> ユーザーが [!DNL Bolt] アカウントと電子メールは、Adobe Commerceに登録されたものとして表示されず、1 回限りのパスワード (OTP) ログインがトリガーされます。 詳しくは、 [登録済み [!DNL Bolt] アカウント](#registered-bolt-account) フロー。
-
-### 新規 [!DNL Bolt] アカウント
-
-指定しない場合 [!DNL Bolt] アカウントが見つかった場合、買い物客はデフォルトのAdobe Commerceチェックアウトを続行し、保存された情報から必要なすべての詳細を選択して注文をおこないます。
-
-- 配送および請求情報
-- 発送方法
-- 支払い方法の確認
-- 登録するチェックボックスが表示されます [!DNL Bolt] チェックアウトを早めてからオーダーします。 利用規約に同意して、 [!DNL Bolt] アカウント
-
-   ![記憶する [!DNL Bolt]](assets/checked-bolt.png)
+- [ゲストユーザー](../quick-checkout/checkout-adobe-commerce.md) 登録された、または新しい [!DNL Bolt] アカウント
+- 既存の [Adobe Commerceユーザー](../quick-checkout/checkout-adobe-commerce.md) 登録を受けている/登録を受けていない [!DNL Bolt] アカウント
 
 ## お問い合わせ
 
