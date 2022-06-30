@@ -1,9 +1,10 @@
 ---
 title: ヘッドレス
 description: の統合方法を説明します [!DNL Product Recommendations] ヘッドレスな店の前に
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 1. [インストール](install-configure.md) の [!DNL Product Recommendations] モジュール。
 
-1. をインストールして使用する [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 撃つ [行動イベント](https://devdocs.magento.com/recommendations/events.html).
+1. をインストールして使用する [Adobe Commerce Storefront Event SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 撃つ [行動イベント](https://devdocs.magento.com/recommendations/events.html).
 
    返す必要のある最小イベント数 [!DNL Product Recommendations] 結果：
 
@@ -43,7 +44,7 @@ ht-degree: 0%
    | `rec-click` | recommendation-unit |
    | `rec-add-to-cart-click` | recommendation-unit（買い物かごに追加ボタンが recommendations テンプレートに存在する場合） |
 
-1. イベントが発生したら、 [ストアフロントイベントコレクター](https://devdocs.magento.com/shared-services/storefront-event-collector.html) イベントを処理してAdobe Senseiに送信する
+1. イベントが発生したら、 [Adobe Commerce Storefront イベントコレクター](https://devdocs.magento.com/shared-services/storefront-event-collector.html) イベントを処理してAdobe Senseiに送信する
 
 1. 行動データを収集した後、 [作成](create.md) [!DNL Product Recommendations] 」と入力します。
 

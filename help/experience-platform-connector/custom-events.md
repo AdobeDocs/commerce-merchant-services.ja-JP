@@ -1,16 +1,17 @@
 ---
 title: カスタムイベントの作成
 description: Adobe Commerceのデータを他のAdobeDX 製品に接続するカスタムイベントの作成方法を説明します。
-source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
+exl-id: 5a754106-c66a-4280-9896-6d065df8a841
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # カスタムイベントの作成
 
-次の項目を拡張することができます。 [イベントプラットフォーム](events.md) 独自のストアフロントイベントを作成して、自社の業界固有のデータを収集する。 カスタムイベントを作成して設定すると、 [Magentoストアフロントイベントコレクター](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+次の項目を拡張することができます。 [イベントプラットフォーム](events.md) 独自のストアフロントイベントを作成して、自社の業界固有のデータを収集する。 カスタムイベントを作成して設定すると、 [Adobe Commerce Event Collector](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
 
 ## カスタムイベントの処理
 

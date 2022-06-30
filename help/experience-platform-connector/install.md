@@ -1,9 +1,10 @@
 ---
 title: Adobe CommerceからのAdobe Experience Platform Connector のインストールと設定
 description: Adobe CommerceからAdobe Experience Platform Connector をインストール、設定、更新およびアンインストールする方法について説明します。
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,29 +18,15 @@ ht-degree: 0%
 1. Experience Platformコネクタのメタパッケージをインストールします。
 
    ```bash
-   composer require magento/platform-connector
+   composer require magento/experience-platform-connector
    ```
 
-   このメタパッケージには、次のモジュールが含まれます。
+   このメタパッケージには、次のモジュールと拡張機能が含まれています。
 
-   * `module-platform-connector-admin`  — 管理 UI を更新します
-   * `module-platform-connector` - `ImsOrgId` および `datastreamId` (Magentoストアフロントイベント SDK)
-
-1. Commerce Data Services 拡張機能をインストールして、プロファイルとチェックアウトイベントを含めます。
-
-   ```bash
-   composer require magento/data-services
-   ```
-
-   Commerce Data Services 拡張機能は、ストアフロントイベントの属性コンテキストを提供します。 例えば、チェックアウトイベントが発生した場合、買い物かごに入った品目数に関する情報と、それらの品目の製品属性データが含まれます。
-
-1. コマースサービスコネクタをインストールします。
-
-   ```bash
-   composer require magento/commerce-services
-   ```
-
-   Commerce Service コネクタを使用すると、Adobe Commerceインスタンスを [Adobe Commerce SaaS](../landing/saas.md) Adobe Experience Platformに
+   * `module-platform-connector-admin` - Datastream ID を設定できるように管理 UI を更新しました
+   * `module-platform-connector` - `ImsOrgId` および `datastreamId` ( Adobe Commerce Storefront Event SDK の )
+   * `data-services`  — ストアフロントイベントの属性コンテキストを提供します。 例えば、チェックアウトイベントが発生した場合、買い物かごに入った品目数に関する情報と、それらの品目の製品属性データが含まれます。
+   * `commerce-services` - Adobe Commerceインスタンスをに接続します [Adobe Commerce SaaS](../landing/saas.md) IMS 組織 ID を使用し、サンドボックスおよび実稼動 API キーとAdobe Experience Platformに対してを使用する。
 
 1. （オプション）を含めるには [!DNL Live Search] データ（検索イベントを含む）は、 [[!DNL Live Search]](../live-search/install.md) 拡張子。
 
@@ -48,7 +35,7 @@ ht-degree: 0%
 Experience Platformコネクタを更新するには、コマンドラインで次の操作を実行します。
 
 ```bash
-composer update magento/platform-connector --with-dependencies
+composer update magento/experience-platform-connector --with-dependencies
 ```
 
 1.0.0 から 2.0.0 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
@@ -60,7 +47,7 @@ composer update magento/platform-connector --with-dependencies
    ```json
    "require": {
       ...
-      "magento/platform-connector": "^2.0",
+      "magento/experience-platform-connector": "^2.0",
       ...
     }
    ```
@@ -68,7 +55,7 @@ composer update magento/platform-connector --with-dependencies
 1. **保存** `composer.json`. 次に、コマンドラインから次の操作を実行します。
 
    ```bash
-   composer update magento/platform-connector –-with-dependencies
+   composer update magento/experience-platform-connector –-with-dependencies
    ```
 
 ## Experience Platformコネクタのアンインストール {#uninstall}
