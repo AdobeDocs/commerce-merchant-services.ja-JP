@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] リリースノート"'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 44e1f7dce951f9244498565eccaebd70328d91e4
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ _2022 年 3 月 31 日_
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-2742 --> ストア表示レベルで、Venmo などの利用可能な支払い方法を有効または無効にできるようになりました。 以前は、Web サイトごとに支払い方法を設定することができました。
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-2277 --> 選択的に [個々の PayPal スマートボタンの有効化または無効化](settings.md#paypal-smart-buttons).
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-2277 --> 選択的に [個々の PayPal スマートボタンの有効化または無効化](settings.md#payment-buttons).
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-2561 --> 以前に削除した製品は、 _注文を確認_ ページ。
 
