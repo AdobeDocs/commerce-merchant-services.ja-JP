@@ -1,9 +1,10 @@
 ---
 title: ガイドの概要
 description: Adobe Commerce用Adobe Experience Platform Connector が [!DNL Commerce] インスタンスを他のAdobe Experience Cloud製品に追加します。
-source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
+exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -23,10 +24,13 @@ Experience Platformコネクタを使用するには、まず次の操作を行�
 アクセス権が付与された場合：
 
 1. [ログイン](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) をAdobeアカウントに追加します。
-1. 以下を見てください： [組織](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). 組織 ID は、プロビジョニングされた組織の会社に関連付けられたExperience CloudID です。 この ID は 24 文字の英数字から成る文字列で、その後に@AdobeOrg（必須）が続きます。
-1. データストリームワークスペースへのアクセスと [データストリームの作成](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en).
+1. 以下を見てください： [組織](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). 組織 ID は、プロビジョニングされた組織の会社に関連付けられたExperience CloudID です。 この ID は 24 文字の英数字から成る文字列で、その後にが続きます（必須） `@AdobeOrg`.
+1. を作成または更新します。 [XDM スキーマ](update-xdm.md) コマース固有のフィールドグループを持つ
+1. [データストリームの作成](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) を選択し、コマース固有の **フィールドグループ**.
 
-組織 ID とデータストリームは、Adobe CommerceインスタンスをAdobe Experience Platformに接続する際に使用されます。
+>[!NOTE]
+>
+> 組織 ID とデータストリームは、Adobe CommerceインスタンスをAdobe Experience Platformに接続するために使用されます。
 
 ## 次の手順
 
