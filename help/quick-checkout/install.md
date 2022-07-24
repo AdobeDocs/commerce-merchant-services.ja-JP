@@ -2,9 +2,9 @@
 title: '" [!DNL Quick Checkout] for Adobe Commerce extension"'
 description: 次の手順に従って、 [!DNL Quick Checkout] Adobe Commerceプロジェクトに」
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+source-git-commit: d6cb5ae5437f78cacb0208269598896f5d8523d0
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ## 最小安定性設定を更新
 
-拡張機能をインストールする前に、 `minimum-stability` ～に対する要求 `RC` （リリース候補）を `composer.json` ファイルを参照してください。 IDE またはお気に入りのテキストエディタ（Visual Studio Code や Sublime Text など）を使用できます。
+拡張機能をインストールする前に、 `minimum-stability` フィールドの `composer.json` ファイルが `"stable"`:
 
-を `composer.json` ファイル、変更 `"minimum-stability": "stable"` から `"minimum-stability": "RC"`.
+`"minimum-stability": "stable"`
 
 ## 拡張機能のインストール
 
