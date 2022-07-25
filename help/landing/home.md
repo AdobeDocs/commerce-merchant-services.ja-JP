@@ -5,10 +5,10 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: ドキュメント
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: 688cfa8eb7a871453c7a26a442ceb54ee78b2fd9
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 1%
+source-wordcount: '474'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
     <strong>[!DNL Product Recommendations]</strong></a>
     </div>
     <p>(Adobe Commerceのみ )<br><em>買い物客の行動、人気の傾向、製品の類似性などに基づいて、AI によるレコメンデーションを追加します。</em></p>
-    <br>
+    </br>
   </td>
   <td valign="top">
       <img alt="[!DNL Live Search]" src="assets/live-search.png" />
@@ -34,7 +34,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
     <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>
     </div>
     <p>(Adobe Commerceのみ )<br><em>B2C の買い物客向けに、よりスマートで迅速で関連性の高い結果を提供する、AI を利用したこの検索ツールを実装します。</em></p>
-    <br>
+    </br>
   </td>
 </tr>
 <tr>
@@ -44,14 +44,32 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
     <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>[!DNL Payment Services]</strong></a>
     </div>
     <em>無利子支払いの分割、支払い処理、注文、請求書に関する単一のビューを管理ダッシュボードで簡単に提供することで、顧客満足度を高めます。</em>
-    <br>
+    </br>
   </td>
     <td valign="top">
        <img alt="Amazon セールスチャネル" src="assets/amazon-channel.png" />
     <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
     <strong>[!DNL Amazon Sales Channel]</strong></a>
     </div>
-    <p><em>単一のプラットフォームで、B2B および B2C のお客様向けのマルチチャネルコマースエクスペリエンスを構築します。 カタログから支払い、フルフィルメントまで、この将来性の高いテクノロジーにより、無限に柔軟で拡張可能で拡張性の高いコマースプラットフォームが提供されます。</em></p>
+    <p><em>お客様の店舗を世界最大のインターネットショッピング先と統合します。 このサービスは、Commerce をAmazonのセラーセントラルアカウントと接続し、カタログと注文データの自動化と同期の両方を提供することで、Amazonのセールスを有効にします。 1 つのコマースダッシュボードを使用して、すべてのAmazonリストを完全に管理し、シンプルまたはインテリジェントな価格ルールを実装し、注文と在庫を維持します。</em></p>
+    </br>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png"/>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"><strong>[!DNL Channel Manager]</strong></a>
+    </div>
+    <em>Adobe CommerceまたはMagento Open Sourceの製品カタログを Walmart Marketplace に統合することで、売上を増やし、新規顧客にリーチし、営業を合理化し、時間を節約できます。 店舗管理者と運営スタッフが、Walmart Marketplace の販売、在庫、製品価格をコマース環境からシームレスに管理できるようにします。</em>
+    </br>
+  </td>
+    <td valign="top">
+       <img alt="ストアの達成" src="assets/store-fulfillment-landing-graphic.png"/>
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
+    <strong>[!DNL Store Fulfillment]</strong></a>
+    </div>
+    <p>(Adobe Commerceのみ )<br><em>モバイルデバイスを通じて可能なエンドツーエンドのシームレスなオムニチャネルフルフィルメントワークフローを提供することで、優れた購入をオンラインで提供し、店舗での顧客体験 (BOPIS) を獲得し、店舗従業員の生産性を最大化します。</em></p>
     <br>
   </td>
 </tr>
@@ -74,3 +92,6 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 * 追加済み [[!DNL Payment Services] ガイド](/help/payment-services/guide-overview.md) 新しい marketplace 拡張機能およびホストされているサービス v1.0.0 の最新情報を入力します。
 * この [!DNL Live Search] [パフォーマンスレポートダッシュボード](/help/live-search/performance.md) では、買い物客が使用する検索用語の効果に関するインサイトを提供します。
 * での B2B サポートの追加 [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
+* 追加された [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) Walmart Marketplace の販売を管理する顧客の [!DNL Commerce] インスタンス。
+* 追加された [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) オンラインでの購入を改善したいお客様は、店舗 (BOPIS) での顧客体験を受け取り、店舗およびキューブサイドでのピックアップ用に、モバイル対応のシームレスなオムニチャネルフルフィルメントワークフローを提供します。
+
