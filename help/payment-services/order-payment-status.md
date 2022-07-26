@@ -4,9 +4,9 @@ description: 注文の支払ステータスレポートを使用して、注文�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
+source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -73,14 +73,14 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、 [!DNL 
 
 データソースの選択は、次のように動作します。
 
-* を使用するストアがない場合は、 [!DNL Payment Services] ライブモードでは、データソースの選択はデフォルトでに設定されます。 [!UICONTROL Sandbox]_.
+* を使用するストアがない場合は、 [!DNL Payment Services] ライブモードでは、データソースの選択はデフォルトでに設定されます。 _[!UICONTROL Sandbox]_.
 * を使用するストア（1 つ以上）がある場合 [!DNL Payment Services] ライブモードでは、データソースの選択はデフォルトでに設定されます。 _[!UICONTROL Live]_.
 * レポートの書き出しは、常にデータソースの選択に従います。
 
 のデータソースを選択するには、以下を実行します。 [!UICONTROL Order Payment Status] レポート：
 
 1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. クリック **[!UICONTROL Data source]** を選択し、 _[!UICONTROL Live]_または [!UICONTROL Sandbox]_.
+1. クリック **[!UICONTROL Data source]** を選択し、 _[!UICONTROL Live]_または_[!UICONTROL Sandbox]_.
 
    レポート結果は、選択したデータソースに基づいて再生成されます。
 
@@ -105,11 +105,23 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、 [!DNL 
 
 ## ステータスの表示
 
+注文の支払いステータスレポートビューには、各支払いサービス注文に関する包括的な取引ステータスと支払いステータス情報が表示されます。
+
+### トランザクションステータス
+
 デフォルトでは、30 日間の注文支払いステータスがグリッドに表示されます。
 
 左右にスクロールして表示します [注文の支払い状況情報](#column-descriptions)（受注日、承認日、請求済み、発送済み、支払いステータスなど）。
 
 検索で返された行数、またはデフォルトの 30 日間の注文支払いステータスに表示される行数は、注文日カレンダーセレクターフィルターの横にある注文の支払いステータス表示グリッドの上に表示されます。
+
+### 支払ステータス
+
+「支払ステータス」列には、すべての支払の現在のステータスが表示されます。 A `Capture failed` 支払いには、赤いアラートステータスと `Voided` 支払いには、灰色のアラートステータスが表示されます。
+
+### 返金ステータス
+
+返金ステータス列には、返金に関する現在のステータスが表示されます。 A `Capture failed` 支払いには、赤いアラートステータスと `Voided` 支払いには、灰色のアラートステータスが表示されます。
 
 ## レポートデータを更新
 
