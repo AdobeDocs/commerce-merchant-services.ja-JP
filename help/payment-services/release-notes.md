@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] リリースノート"'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
+source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ _2022 年 6 月 30 日_
 ### ホストされるサービスの更新
 
 これらのリリースノートでは、現在の v1.2.0 リリースとホストサービスの以前の 1.1.0 リリースとの間で発生し、通常のバージョン管理機能リリース以外でリリースされた機能の変更点と修正点について説明します。
+
+![新規](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay が PayPal のスマートボタンとして利用できるようになりました。 この [支払いオプション](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) を使用すると、お客様はデバイスでタッチ ID を使用してApple Pay を使用できます。この ID は、iOSまたはmacOSデバイスに保存されているクレジットカードおよびデビットカードの支払い資格情報を使用します。
 
 ![新規](../assets/new.svg)<!-- Issue PAY-1720 --> 店舗注文に関する紛争は、 [注文の支払い状況レポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). PayPal Resolution Center には、 [!DNL Payment Services] 紛争に対する訴えを起こす。
 
