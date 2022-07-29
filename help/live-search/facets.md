@@ -2,9 +2,9 @@
 title: '"ファセット"'
 description: '"[!DNL Live Search] ファセットでは、複数の属性値のディメンションを検索条件として使用します。"'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 |--- |--- |
 | [カテゴリの表示設定](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | アンカー — `Yes` |
 | [属性プロパティ](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [カタログ入力タイプ](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
-| 属性ストアフロントのプロパティ | レイヤーナビゲーションで使用 — `Filterable (with results)` |
+| 属性ストアフロントのプロパティ | 検索結果のレイヤーナビゲーションで使用 — `Yes` |
 
 ## デフォルトの属性値
 
