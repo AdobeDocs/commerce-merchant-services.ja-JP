@@ -2,9 +2,9 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
+source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 - [!DNL Publishable key]:フロントエンドがとやり取りする際に使用するキー [!DNL Bolt] API
 - [!DNL Signing secret]:から受信した要求の署名検証に使用されます [!DNL Bolt].
 
-![クイックチェックアウト](assets/account-credentials.png)
+   ![クイックチェックアウト](assets/account-credentials.png)
 
 詳しくは、 [[!DNL Bolt] 環境の詳細](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;} ページ：キーと署名の秘密鍵について [!DNL Bolt] の [!DNL Quick Checkout] 拡張子。
 
@@ -73,6 +73,13 @@ ht-degree: 0%
 1. の _管理者_ サイドバー、移動 **ストア** > _設定_ > **設定**.
 1. 左側のパネルで、を展開します。 **セールス** を選択し、 **チェックアウト**.
 1. 内 [!DNL Quick Checkout] 表示、設定 **有効にする** から `Yes`.
+
+![クイックチェックアウト](assets/quick-checkout-view-no-enable.png)
+
+>[!CAUTION]
+>
+> クイックチェックアウトフィールドは、 **有効にする** が `Yes`.
+
 1. 使用するメソッド（サンドボックスまたは実稼動）を選択します。
 
    - テストおよび開発のためのサンドボックス
@@ -80,7 +87,7 @@ ht-degree: 0%
 
 1. 一意の API を指定した後で資格情報を検証し、 [!DNL Publishable keys].
 
-![クイックチェックアウト](assets/extension-view.png)
+![クイックチェックアウト](assets/quick-checkout-main-view.png)
 
 >[!CAUTION]
 >
