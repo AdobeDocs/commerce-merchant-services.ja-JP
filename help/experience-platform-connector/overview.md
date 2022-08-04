@@ -2,9 +2,9 @@
 title: ガイドの概要
 description: Adobe Commerce用Adobe Experience Platform Connector が [!DNL Commerce] インスタンスを他のAdobe Experience Cloud製品に追加します。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,15 @@ Experience Platformコネクタを使用するには、まず次の操作を行�
 - のインストール [Experience Platformコネクタ拡張](install.md).
 
    Experience Platformコネクタ拡張機能は、サーバーのコマンドラインからインストールされ、Adobe Commerceインストールに as a [サービス](../landing/saas.md). 処理が完了すると、Experience Platformコネクタが **システム** 下のメニュー **サービス** 内 [!DNL Commerce] _管理者_.
+- [買い物客プロファイルのアップロード](profile.md) Adobe Experience Platformのストアフロントデータを特定の買い物客に関連付けて、買い物体験を向上させることができます。
 
 ## 対象ユーザ
 
 このガイドは、Adobe Commerceの店舗データを他のAdobeDX 製品に接続する必要があるAdobe Commerceの商人を対象にしています。
+
+### PWA Studioサポート
+
+詳しくは、 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) ドキュメントを参照してください。Experience PlatformストアフロントでのPWA Studioコネクタの使用方法に関する情報です。
 
 ## 既知の問題
 
