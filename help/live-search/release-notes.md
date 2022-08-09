@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] リリースノート"'
 description: 「 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 097f8af7a1e3e904c69d3a7fe52cb0db5b1b4c23
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,29 @@ ht-degree: 1%
 * ![新規](../assets/new.svg)  — 新機能
 * ![修正点](../assets/fix.svg)  — 修正点および改善点
 * ![バグ](../assets/bug.svg)  — 既知の問題
+
+## [!DNL Live Search] 2.0.3
+
+* Adobe Commerce(EE) との互換性：2.4.x
+* Adobe Commerce for Cloud(ECE) との互換性：2.4.x
+* 安定性：安定
+
+* ![新規](../assets/new.svg)  — ライブ検索で、カテゴリ権限、共有カタログ、お客様グループ固有の価格設定を遵守することで、B2B 機能がサポートされるようになりました。
+
+これらの機能にアクセスするには、マーチャントは Live Search 拡張機能バージョン 2.0.3 以降をアップグレードする必要があります。
+
+実稼動環境にプッシュする前に、アップグレードおよびテストをおこなうことをお勧めします。 テスト環境の結果を確認した後、オフピーク時に実稼動環境のアップグレードを検討します。
+
+>[!NOTE]
+>
+>B2B のサポートは、8 月 9 日からバックエンドサービスで段階的に追加され、8 月末までに移行が完了する予定です。 ライブ検索拡張機能がアップグレードされない場合、ストアフロントは引き続き正常に機能しますが、B2B 機能は使用されません。
+
+### 既知の制限事項/バグ：
+
+* ![バグ](../assets/bug.svg)  — 提案は、顧客グループに表示できない製品をソースとしています。
+* ![バグ](../assets/bug.svg) - 「デフォルトの共有カタログ」に追加しない場合、製品は表示されません。
+* PWA Studioのライブ検索を使用する B2B は、PWA Studioがサポートを追加するまで使用できません。
+* 製品の上書きおよび製品属性フィードには、管理者の実行が必要な同期の問題が発生する場合があります `bin/magento indexer:reset` および `bin/magento indexer:reindex` をクリックして正しく同期し直してください。
 
 ## [!DNL Live Search] 2.0
 

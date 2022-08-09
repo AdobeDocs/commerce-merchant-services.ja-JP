@@ -2,9 +2,9 @@
 title: '"ファセット"'
 description: '"[!DNL Live Search] ファセットでは、複数の属性値のディメンションを検索条件として使用します。"'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
+source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,12 @@ ht-degree: 0%
 
 ファセット設定のカテゴリと製品属性の要件は、レイヤー化されたナビゲーションで使用されるフィルタリング可能な属性と似ています。 各属性のストアフロントプロパティは、に設定する必要があります。 `filterable (with results)`.
 
-* を使用してファセットとして設定できる属性は最大 100 個までです。 [!DNL Live Search].
-* [!DNL Live Search] 最大 300 個の属性のインデックスをフィルタリング可能/検索可能/並べ替え可能として作成し、検索で表示できます。
+ライブ検索では、最大で次のものをサポートします。
+
+* ファセットとして設定された 100 個の属性
+* 50 個の並べ替え可能な属性
+* 200 個のフィルター可能な属性
+* 200 個の検索可能な属性
 
 | 設定 | 説明 |
 |--- |--- |
