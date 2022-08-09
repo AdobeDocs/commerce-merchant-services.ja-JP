@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] リリースノート"'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
+source-git-commit: 2c3211d5a6574f84fa499608f5ef0cb8c6ffcfed
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,14 @@ ht-degree: 0%
 詳しくは、 [今後のリリース](https://devdocs.magento.com/release/) を参照してください。
 
 詳しくは、 [使用可否](https://devdocs.magento.com/release/availability.html) 製品の互換性について詳しくは、開発者向けドキュメントを参照してください。
+
+## v1.3.0
+
+_2022 年 8 月 10 日_
+
+![新規](../assets/new.svg)<!-- Issue PAY-XX --> GA リリース —[!DNL Payment Services] 今 [～と互換性がある [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 ～ 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay は、モバイルおよびデスクトップ上の Safari ブラウザー v15.5 と互換性があるようになりました。
 
 ## v1.2.0
 

@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] 家に
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 89fa175b70a2b4b37d5999dedc56a7e41ae28b7d
+source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 
       >[!NOTE]
       >
-      > Apple Pay は、サンドボックスモードに対してデフォルトで有効になっていますが、 [は、Apple Developer アカウントを持っている必要があります](test-validate.md#test-in-sandbox-environment) （偽のクレジットカードと請求情報を含む）をテストします。 Apple Pay を実稼働モードで使用する準備が整ったら、 [テストと検証](test-validate.md)を使用する場合は、セールスに連絡して、ライブストアに対して有効にします。
+      > Apple Pay を使用するには [は、Apple Developer アカウントを持っている必要があります](test-validate.md#test-in-sandbox-environment) （偽のクレジットカードと請求情報を含む）をテストします。 サンドボックスでApple Pay を使用する準備が整ったら、 *または* 実稼動モード（任意の完了後） [テストと検証](test-validate.md)を使用する場合は、営業担当者に連絡して、ライブストアで有効にしてもらってください。
 
 1. デバッグモードを有効にするには、 **[!UICONTROL Debug Mode]** セレクター。
 1. クリック **[!UICONTROL Save]**.
