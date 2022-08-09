@@ -4,9 +4,9 @@ description: 設定 [!DNL Store Assist] エンドツーエンドの店舗フル�
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Store Assist アプリの設定が完了すると、Store Associates は、モ�
 
 - モバイルデバイスが [ハードウェアとソフトウェアの要件](solution-requirements.md#store-assist-app-requirements) を参照してください。
 
-- Store Assist アプリをからダウンロードします。 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} または [Google Playストア](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}。
+- Store Assist アプリをからダウンロードします。 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} または [Google Playストア](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}。
 
 - Store Associates のログインには次の情報が必要です。
 
