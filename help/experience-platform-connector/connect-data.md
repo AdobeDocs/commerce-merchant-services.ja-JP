@@ -1,9 +1,10 @@
 ---
 title: コマースデータをAdobe Experience Platformに接続
 description: コマースデータをAdobe Experience Platformに接続する方法を説明します。
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Datastream ID を使用すると、Adobe Experience Platformから他のAdobeDX 
 | IMS Org（グローバル） | AdobeDX 製品を購入した組織に属する ID。 この ID は、Adobe CommerceインスタンスをAdobe Experience Platformにリンクします。 |
 | データストリーム ID （ストアレビュー） | Adobe Experience Platformから他のAdobeDX 製品にデータを送信できるようにする ID。 この ID は、特定のAdobe Commerceインスタンス内の特定の storeView に関連付けることができます。 |
 
-Experience Platformコネクタ拡張機能がインストールされ、Adobe CommerceとAdobe Experience Platformの間にリンクが作成され、データストリーム ID が指定されました。 [!DNL Commerce] データがAdobe Experience Platform edge および他のAdobeDX 製品に送られ始めます。
+Experience Platformコネクタ拡張機能がインストールされ、Adobe CommerceとAdobe Experience Platform間のリンクが作成され、Datastream ID が指定されると、Commerce データがAdobe Experience Platformエッジおよび他のAdobeDX 製品に送られ始めます。
 
 ## エッジでのコマースデータ
 

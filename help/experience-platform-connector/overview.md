@@ -1,17 +1,17 @@
 ---
 title: ガイドの概要
-description: Adobe Commerce用Adobe Experience Platform Connector が [!DNL Commerce] インスタンスを他のAdobe Experience Cloud製品に追加します。
+description: Adobe Commerce用Adobe Experience Platformコネクタは、コマースインスタンスを他のAdobe Experience Cloud製品に接続します。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
 
 # Experience Platformコネクタの概要
 
-Experience Platformコネクタ拡張機能を使用すると、Adobe CommerceのマーチャントがAdobe Experience Platform Edge にデータを送信して、Adobe AnalyticsやAdobe Targetなどの他のAdobe Experience Cloud製品でそのデータを使用できるようになります [!DNL Commerce] データ。 接続する [!DNL Commerce] Adobe Experience Cloudの他の製品に対するデータを使用すると、サイトでのユーザー行動の分析、AB テストの実行、パーソナライズされたキャンペーンの作成などのタスクを実行できます。
+Experience Platformコネクタ拡張機能を使用すると、Adobe CommerceのマーチャントがAdobe Experience Platform Edge にデータを送信し、Adobe AnalyticsやAdobe Targetなどの他のAdobe Experience Cloud製品がそのコマースデータを使用できるようになります。 コマースデータをAdobe Experience Cloud内の他の製品に接続することで、サイトでのユーザー行動の分析、AB テストの実行、パーソナライズされたキャンペーンの作成などのタスクを実行できます。
 
 ストアフロントイベントは、買い物客のインタラクションをキャプチャします ( 例： `View Page`, `View Product`, `Add to Cart`など。 取り込まれたデータには、個人を特定できる情報 (PII) は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は厳密に匿名化されます。 [詳細情報](https://www.adobe.com/privacy/experience-cloud.html). 詳しくは、 [storefront イベント](events.md).
 
@@ -36,7 +36,7 @@ Experience Platformコネクタを使用するには、まず次の操作を行�
 
 - のインストール [Experience Platformコネクタ拡張](install.md).
 
-   Experience Platformコネクタ拡張機能は、サーバーのコマンドラインからインストールされ、Adobe Commerceインストールに as a [サービス](../landing/saas.md). 処理が完了すると、Experience Platformコネクタが **システム** 下のメニュー **サービス** 内 [!DNL Commerce] _管理者_.
+   Experience Platformコネクタ拡張機能は、サーバーのコマンドラインからインストールされ、Adobe Commerceインストールに as a [サービス](../landing/saas.md). 処理が完了すると、Experience Platformコネクタが **システム** 下のメニュー **サービス** （コマース内） _管理者_.
 - [買い物客プロファイルのアップロード](profile.md) Adobe Experience Platformのストアフロントデータを特定の買い物客に関連付けて、買い物体験を向上させることができます。
 
 ## 対象ユーザ
@@ -54,8 +54,8 @@ Experience Platformコネクタを使用するには、まず次の操作を行�
 - B2B モジュールがインストールされているAdobe Commerce Enterprise Edition では、検索イベントはサポートされていません。
 - ストアフロントデータは、Adobe Experience Platform Edge に接続した後、Adobe Commerceから様々な宛先に到達するまでに約 1 時間かかります。
 
-## サポート
+このガイドに記載されていない情報や質問がある場合は、次のリソースを使用してください。
 
-このガイドに記載されていない情報や質問がある場合は、次のSlackチャネルに投稿してください。
-
-- `#beacon-ama`
+- [ヘルプセンター](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
+- [サポートチケット](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} — 追加のヘルプを受け取るには、チケットを送信します。
+- Slack時： `#beacon-ama`

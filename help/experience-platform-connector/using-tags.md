@@ -1,9 +1,10 @@
 ---
 title: Adobe Experience Platformタグを使用したコマースデータの収集
 description: Adobe Experience Platformタグを使用してコマースデータを収集する方法を説明します。
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
+source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2138'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ _Experience Platform付きコネクタのデータフロー_
 
 コマースイベントデータを収集するには：
 
-- のインストール [Adobe Commerce Event SDK](https://www.npmjs.com/package/@adobe/magento-storefront-events-sdk). PHP ストアフロントについては、 [インストール](install.md) トピック。 PWA Studioストアフロントについては、 [PWA Studioガイド](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
+- のインストール [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). PHP ストアフロントについては、 [インストール](install.md) トピック。 PWA Studioストアフロントについては、 [PWA Studioガイド](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
    >[!NOTE]
    >
@@ -161,7 +162,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **名前**: `Account email`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
-   - **[オプション] パス**: `accountContext.accountEmail`
+   - **[オプション] パス**: `accountContext.emailAddress`
 
 1. アカウントタイプ：
 
@@ -210,7 +211,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **名前**: `Account email`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
-   - **[オプション] パス**: `accountContext.accountEmail`
+   - **[オプション] パス**: `accountContext.emailAddress`
 
 1. アカウントタイプ：
 
@@ -259,7 +260,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **名前**: `Account email`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
-   - **[オプション] パス**: `accountContext.accountEmail`
+   - **[オプション] パス**: `accountContext.emailAddress`
 
 1. アカウントタイプ：
 
@@ -344,12 +345,23 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.sku`
 
-1. 通貨コード：
+1. 製品の通貨：
 
-   - **名前**: `Currency code`
+   - **名前**: `Product currency`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.pricing.currencyCode`
+
+1. 通貨コード：
+
+   - **名前**: `Currency code`
+   - **拡張**: `Core`
+   - **データ要素タイプ**: `Custom Code`
+   - **編集画面を開く**:
+
+   ```bash
+   return _satellite.getVar('product currency') || _satellite.getVar('storefront').storeViewCurrencyCode
+   ```
 
 1. 特別価格：
 
@@ -370,7 +382,11 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **名前**: `Product price`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
-   - **編集画面を開く**: `return _satellite.getVar('product regular price') || _satellite.getVar('product special price')`
+   - **編集画面を開く**:
+
+   ```bash
+   return _satellite.getVar('product regular price') || _satellite.getVar('product special price')
+   ```
 
 1. 製品表示：
 
@@ -414,7 +430,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **編集画面を開く**:
 
    ```bash
-   `return _satellite.getVar('search input').phrase;`
+   return _satellite.getVar('search input').phrase;
    ```
 
 1. 検索入力の並べ替え
@@ -517,7 +533,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **編集画面を開く**:
 
    ```bash
-   return _satellite.getVar('search result').productCount;
+   return _satellite.getVar('search result').products.length;
    ```
 
 1. 検索結果の製品：
@@ -712,13 +728,13 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **編集画面を開く**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -898,13 +914,13 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **編集画面を開く**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -1058,13 +1074,13 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **編集画面を開く**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,

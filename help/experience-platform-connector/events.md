@@ -2,16 +2,16 @@
 title: イベント
 description: どのイベントがデータをキャプチャし、完全なスキーマ定義を確認するかを説明します。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 # Experience Platformコネクタイベント
 
-以下に、 [!DNL Commerce] イベントコネクタ拡張機能をインストールするとExperience Platformが使用できます。 これらのイベントで収集されたデータは、Adobe Experience Platform Edge に送信されます。 また、 [カスタムイベント](custom-events.md) 標準で提供されていない追加データを収集する場合。
+次に、Commerce Connector 拡張機能をインストールする際に使用できる CommerceExperience Platformを示します。 これらのイベントで収集されたデータは、Adobe Experience Platform Edge に送信されます。 また、 [カスタムイベント](custom-events.md) 標準で提供されていない追加データを収集する場合。
 
 イベント名をクリックすると、完全なスキーマ定義が表示されます。
 

@@ -2,16 +2,16 @@
 title: カスタムイベントの作成
 description: Adobe Commerceのデータを他のAdobeDX 製品に接続するカスタムイベントの作成方法を説明します。
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # カスタムイベントの作成
 
-次の項目を拡張することができます。 [イベントプラットフォーム](events.md) 独自のストアフロントイベントを作成して、自社の業界固有のデータを収集する。 カスタムイベントを作成して設定すると、 [Adobe Commerce Event Collector](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+次の項目を拡張することができます。 [イベントプラットフォーム](events.md) 独自のストアフロントイベントを作成して、自社の業界固有のデータを収集する。 カスタムイベントを作成して設定すると、 [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## カスタムイベントの処理
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 例：
 
-MSE SDK を通じて公開されたカスタムイベント：
+Adobe Commerce Events SDK を通じて公開されたカスタムイベント：
 
 ```javascript
 mse.publish.custom({
@@ -53,7 +53,7 @@ Experience Platformエッジ内：
 
 例：
 
-MSE SDK を介して公開されたオーバーライドを含む製品表示：
+Adobe Commerce Events SDK で公開された上書きを含む製品表示：
 
 ```javascript
 mse.publish.productPageView({
@@ -78,7 +78,7 @@ Experience Platformエッジ内：
 }
 ```
 
-MSE SDK を使用して公開されたAdobe Commerceの製品表示が、次のように上書きされます。
+Adobe Commerce Events SDK で公開されたAdobe Commerceの製品表示が、次のように上書きされます。
 
 ```javascript
 mse.publish.productPageView({

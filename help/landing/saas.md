@@ -2,9 +2,9 @@
 title: Commerce Services コネクタ
 description: 実稼働用 API キーとサンドボックス API キーを使用して、Adobe CommerceまたはMagento Open Sourceインスタンスをサービスに統合する方法について説明します。
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: e8a63cc24db8a5e37c03c9cd40f0807b0b77b620
+source-git-commit: e7b12a80d6c4ec18ec784fd674363a728ee73a67
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 0%
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe CommerceとMagento Open Source |
 | [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe CommerceとMagento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [Experience Platformコネクタ](/help/experience-platform-connector/overview.md) | Adobe Commerce |
 
 ## アーキテクチャ
 
@@ -105,7 +106,7 @@ SaaS プロジェクト名またはデータスペース名を変更するには
 
 ## IMS 組織（オプション） {#organizationid}
 
-( この機能は、今後のAdobe Experience Platformとの統合のためのものです )。 Adobe CommerceインスタンスをAdobe Experience Platformに接続するには、Adobe IDを使用してAdobeアカウントにログインします。 ログインすると、Adobeアカウントに関連付けられている IMS 組織がこのセクションに表示されます。
+Adobe CommerceインスタンスをAdobe Experience Platformに接続するには、Adobe IDを使用してAdobeアカウントにログインします。 ログインすると、Adobeアカウントに関連付けられている IMS 組織がこのセクションに表示されます。
 
 ## カタログの同期
 
