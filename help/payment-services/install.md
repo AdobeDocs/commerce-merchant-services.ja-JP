@@ -2,28 +2,38 @@
 title: インストール [!DNL Payment Services]
 description: Payments Services 拡張機能をインストールします。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 647848c58213ea7f85d8a2c025146aa065042433
+source-git-commit: 43599d041899251f7716e215284b6eff9312943d
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
 # インストール [!DNL Payment Services]
 
-のインストール [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、 [!DNL Payment Services].
+のダウンロードとインストール [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、 [!DNL Payment Services].
 
 ![[!DNL Payment Services] 拡張機能の管理ビュー](assets/admin-view.png)
 
-この [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、MagentoID([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 登録プロセスで提供されます。 Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に `auth.json` ファイル。
+## 拡張機能のダウンロード
 
-詳しくは、 [認証キーの取得](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) を参照してください。
+まず、から拡張機能をダウンロードする必要があります。 [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) インストールする前に
 
-この拡張機能をインストールするには、次の 2 つの方法があります。 [[!DNL Adobe Commerce] クラウドインフラストラクチャ](install.md#adobe-commerce-on-cloud-infrastructure) または [オンプレミス](install.md#on-premises) インストール。 これらの方法では、CLI（コマンドラインインターフェイス）を使用する必要があります。
+1. 次に移動： [Commerce Marketplaceの Payment Services 拡張](https://marketplace.magento.com/magento-payment-services.html).
+1. エディションとバージョンを選択するには、切り替えます。 **[!UICONTROL Edition]** および **[!UICONTROL Your store version]** を選択します。
+1. クリック **[!UICONTROL Add to Cart]**.
+1. チェックアウトを完了し、「 **[!UICONTROL Place Order]**.
+1. 注文の確認と詳細については、Marketplace のダウンロードに関連する電子メールを確認してください。
 
 ## 拡張機能のインストール
 
-次をインストールできます： [!DNL Payment Services] 両方の [!DNL Adobe Commerce] クラウドインフラストラクチャおよびオンプレミスインスタンス上
+次をインストールできます： [!DNL Payment Services] 両方の [!DNL Adobe Commerce] MagentoID ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)) が登録プロセスで提供され、Composer のキーを使用しています。 [!DNL Magento] オープンソースのお客様はオンプレミスの手順を使用します。
+
+Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に `auth.json` ファイル。
+
+詳しくは、 [認証キーの取得](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) を参照してください。
+
+詳しくは、 [拡張機能のインストール](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) 拡張機能をダウンロードしてインストールする前に考慮すべき事項の詳細については、を参照してください。
 
 ### [!DNL Adobe Commerce] クラウドインフラストラクチャ
 
@@ -45,9 +55,9 @@ ht-degree: 0%
 
 1. 変更をコミットしてプッシュします。
 
-### オンプレミス
+### オンプレミスおよびその他の設定
 
-このメソッドは、 [!DNL Payment Services] オンプレミスインスタンスの拡張。
+このメソッドは、 [!DNL Payment Services] オンプレミスインスタンスの拡張および [!DNL Magento] オープンソースのお客様。
 
 1. 拡張機能を取得するには、次のコマンドを実行します。
 
@@ -63,7 +73,7 @@ ht-degree: 0%
 
    この `composer update` コマンドはすべての依存関係を更新します。 すべての依存関係を同時に更新しない場合は、代わりに次のコマンドを使用します。 `composer require magento/payment-services`.
 
-1. アップグレード [!DNL Adobe Commerce]:
+1. インスタンスをアップグレードします。
 
    ```bash
    bin/magento setup:upgrade
@@ -76,7 +86,7 @@ ht-degree: 0%
    ```
 
 1. 変更をコミットします。
-1. コミット済みのコードがデプロイされていることを確認するには、オンプレミスインスタンスを更新します。
+1. コミット済みのコードが確実にデプロイされるようにするには、インスタンスを更新します。
 
 ## 拡張機能のアップグレード
 

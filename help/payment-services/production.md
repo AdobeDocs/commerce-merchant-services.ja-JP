@@ -2,7 +2,7 @@
 title: 有効にする [!DNL Payment Services] 本番用
 description: を有効にしてオンボーディングプロセスを完了します。 [!DNL Payment Services] 実稼動用。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
@@ -11,7 +11,11 @@ ht-degree: 0%
 
 # 有効にする [!DNL Payment Services] 本番用
 
-Payments Services 拡張機能が [インストール済み](install.md)、インスタンスが [構成済みおよび接続済み](connect.md)、および [サンドボックスの設定](sandbox.md) テストが完了したら、サービスを本番環境に移行し、 [オンボーディングプロセス](onboard.md).
+サービスを実稼動環境に移行し、 [オンボーディングプロセス](onboard.md)、このトピックの手順に従って、次の操作をおこないます。
+
+* [インストール](install.md) Payment Services 拡張機能
+* [設定と接続](connect.md) インスタンス
+* [設定](sandbox.md) および [テスト](test-validate.md) サンドボックス
 
 ## 設定 [!DNL Payment Services] 支払い方法
 

@@ -2,106 +2,47 @@
 title: インスタンスに接続
 description: API キーと秘密鍵を使用して Commerce インスタンスに接続し、設定でデータ領域を指定します。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
 
 # インスタンスに接続
 
-[!DNL Payment Services] は、Commerce Services を利用し、SaaS（サービスとしてのソフトウェア）としてデプロイされます。 API キーと秘密鍵を使用してコマースインスタンスに接続し、設定でデータ領域を指定します。 この接続は 1 回だけ設定します。
+[!DNL Payment Services] は、Commerce Services を利用し、SaaS（サービスとしてのソフトウェア）としてデプロイされます。 API キーと秘密鍵を使用してコマースインスタンスに接続し、 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **この接続は 1 回だけ設定します。**
 
-詳しくは、 [Commerce Services コネクタ](https://docs.magento.com/user-guide/system/saas.html){target=&quot;_blank&quot;}（このサービスの詳細については、コアユーザーガイドを参照）。
+* 次の場合： *インスタンスは既に接続されています* API 資格情報を取得して使用し、Commerce Services を設定すると、次に進むことができます。 [テストサンドボックスの設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
+* まだ *インスタンスに接続する必要があります*&#x200B;については、このトピックの情報を参照してください。 [API 資格情報の取得](#obtain-api-credentials) および [コマースサービスの設定](#configure-commerce-services).
+* 次の場合、 *インスタンスが接続されているかどうかが不明*&#x200B;に移動します。 **システム** /サービス/ **Commerce Services コネクタ** および [!UICONTROL Sandbox Keys] および [!UICONTROL Production Keys] セクション、 *プロジェクト* および *データスペース* フィールド [!UICONTROL SaaS Identifier] 」セクションに入力します。 これらの値が存在する場合、インスタンスは接続されます。
 
 ## API 資格情報の取得
 
-Commerce SaaS サービスを使用するには、インスタンスの API キーを使用する必要があります。この API キーは、 [マイアカウントダッシュボード](https://account.magento.com/customer/account/login){target=&quot;_blank&quot;}。 1 つの Commerce アカウントに対して、2 つの異なる API キーペアを作成できます。1 つはサンドボックス用、もう 1 つは実稼動用（ライブ支払い）ですが、一度に 1 つのペアのみがアクティブに使用できます。
+Commerce SaaS サービスを使用するには、サンドボックスと実稼働の両方でインスタンスの API キー（Commerce 公開 API キーと秘密鍵）を使用する必要があります。この API キーは、 [マイアカウントダッシュボード](https://account.magento.com/customer/account/login). [キーペア](https://docs.magento.com/user-guide/configuration/services/saas.html) コマースアカウント（sandbox 用と実稼動用）用に作成できますが、一度に 1 つのペアのみ使用できます。
 
 >[!NOTE]
 >
->へのアクセスに関するヘルプが必要 [!UICONTROL My Account] ダッシュボード？ 詳しくは、 [コマースアカウントの作成](https://docs.magento.com/user-guide/magento/magento-account-create.html){target=&quot;_blank&quot;}（コアユーザーガイド）。
+>へのアクセスに関するヘルプが必要 [!UICONTROL My Account] ダッシュボード？ 詳しくは、 [コマースアカウントの作成](https://docs.magento.com/user-guide/magento/magento-account-create.html).
 
-特定の API キーペアは、環境内のすべてのコマースサービスで有効です。お使いのコマースインスタンス用に既にコマースサービスが設定されている場合、API キーペアは既に管理者に存在します。 プライベート API キーが失われた場合は、新しい API キーペアを生成し、管理の Commerce Services 設定に適用する必要があります。
+公開 API キーは作成後、常にマイアカウントダッシュボードで使用できます。 必要に応じてコピーまたは削除できます。 秘密鍵 API キーは、サンドボックスまたは実稼動用に公開 API キーを作成すると表示されます。このダイアログボックスは、その後のダイアログボックスからコピーまたは保存する場合にのみ使用でき、後でアクセスすることはできません。
 
-サンドボックス環境または実稼動環境の API キーを生成する方法については、 [Commerce Services コネクタ](https://docs.magento.com/user-guide/system/saas.html){target=&quot;_blank&quot;}（コアユーザーガイド）。
+特定の API キーペアは、環境内のすべての Commerce Services で有効です。そのため、お使いのインスタンスに対して既に Commerce Services が設定されている場合、API キーペアは Commerce Services Connector に既に存在します。
 
->[!IMPORTANT]
->
->API キーペアを再生成して SaaS 識別子を変更すると、このインスタンスで使用されるすべての Commerce Services が別のデータストアに接続され、アクセス（以前に保存されたデータを含む）が失われます。 API キーペアを再生成せず、アクティブな実稼働インスタンスで SaaS Identifier を変更することをお勧めします。
+API キーが失われた場合、新しい API キーペアを [生成済み](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) および [適用](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) を追加します。 間違ったキーが設定されているか、設定に存在しない場合は、アカウントが検証されなかったことを通知するアカウント検証エラーダイアログが Payment Services に表示されます。
 
-### コマース API キーと秘密鍵
+参照先 [API を使用する使用可能な Commerce Services のリスト](https://docs.magento.com/user-guide/system/saas.html#available-services).
 
-一部 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 機能は、SaaS（サービスとしてのソフトウェア）としてデプロイされます。これは、Commerce Services と呼ばれます。 これらのサービスを使用するには、API キーと秘密鍵を使用してコマースインスタンスをこれらのサービスに接続し、 [設定](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}。
-
-画像 ID で識別されるコマースアカウントを作成する際に、コマース API キーと秘密鍵を生成できます。 次のようなコマースサービスを使用するには： [!DNL Payment Services], [!DNL Product Recommendations]または [!DNL Live Search]に設定されている場合、ライセンス所有者が使用権限の検証に合格するには、これらのキーを生成する必要があります。 これらのキーは、ライセンス所有者に代わってプロジェクトと環境を管理するシステムインテグレーターまたは開発チームに渡すことができます。 ソリューションインテグレーターの場合は、お客様自身のニーズに合わせてこれらのサービスを使用する権利も与えられます。 この場合、コマースパートナー契約の署名者がキーを生成する必要があります。
-
-### API キーと秘密鍵の生成
-
-1. 次の場所にあるコマースアカウントにログインします。 [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login).
-1. 以下 **[!UICONTROL Magento]** タブ、選択 **[!UICONTROL API Portal]** サイドバーに表示されます。
-1. 次の _[!UICONTROL Environment]_メニュー、選択&#x200B;**[!UICONTROL Sandbox]**を、**[!UICONTROL Production]**.
-
-   >[!IMPORTANT]
-   >
-   >両方の環境に API キーが必要です。
-
-1. 名前を _[!UICONTROL API Keys]_「 」セクションで、「 」をクリックします。**[!UICONTROL Add New]**.
-
-   これにより、新しいキーをダウンロードするためのダイアログが開きます。
-
-   >[!IMPORTANT]
-   >
-   >このダイアログは、鍵をコピーまたはダウンロードする唯一の機会です。
-
-1. クリック **[!UICONTROL Download]** 次に、 **[!UICONTROL Cancel]**.
-
-   この _[!UICONTROL API Keys]_「 」セクションに API キーが表示されるようになりました。
-
-1. SaaS プロジェクトを選択または作成する際に、API キーと秘密鍵の両方をコピーします。
-
-   詳しくは、 [SaaS](https://docs.magento.com/user-guide/system/saas.html){target=&quot;_blank&quot;} （コアユーザーガイド）を参照してください。
-
-同じ API キーを複数のインスタンスで使用することもできますが、各インスタンスには独自の SaaS データ容量が必要です。
-
-SaaS プロジェクトを作成すると、Commerce は、Commerce ライセンスに応じて、1 つ以上の SaaS データスペースを生成します。
-
-* [!DNL Adobe Commerce] - 1 つの実稼動データ領域2 つのテスト用データスペース
-* [!DNL Magento Open Source] - 1 つの実稼動データ領域テストデータスペースなし
-
-### SaaS プロジェクトの設定
-
->[!NOTE]
->
->次の項目が表示されない場合、 _[!UICONTROL Commerce Services Connector]_「 」セクションで、目的のコマースサービス用のコマースモジュール（例： ）をインストールする必要があります。 [[!DNL Payment Services]](install.md).
-
-SaaS プロジェクトを選択または作成するには、ストアの Commerce ライセンスホルダーから Commerce API キーをリクエストします。
-
-1. の _管理者_ サイドバー、移動 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
-1. 左側のパネルで、を展開します。 **[!UICONTROL Services]** を選択します。 **[!UICONTROL Commerce Services Connector]**.
-1. 内 _[!UICONTROL API Keys]_「 」セクションに、キー値を貼り付けます。
-
-   >[!IMPORTANT]
-   >
-   >両方にキー値を追加 **[!UICONTROL sandbox]** および **[!UICONTROL production]** 環境。
-
-1. クリック **[!UICONTROL Save Config]**.
-
-   保存すると、API キーに関連付けられた SaaS プロジェクトがある場合は、それらのプロジェクトが _[!UICONTROL SaaS Project]_フィールド_[!UICONTROL SaaS Identifier]_ 」セクションに入力します。
-
-1. SaaS プロジェクトが存在しない場合は、「 **[!UICONTROL Create Project]**. 次に、 **[!UICONTROL Project Name]** フィールドに入力します。
-1. コマースストアの現在の設定に使用するには、 **[!UICONTROL SaaS Data Space]**.
+サンドボックス環境または実稼動環境の API キーを生成する方法については、 [資格情報](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
->
->マイアカウントの API ポータルセクションでキーを再生成する場合は、管理設定で API キーを直ちに更新してください。 新しいキーを生成し、管理で更新しない場合、SaaS 拡張機能は機能しなくなり、有用なデータが失われます。
-
-名前は、 **[!UICONTROL Rename this Project]** または **[!UICONTROL Rename Data Space]** ボタンを設定します。
+>API キーペアを再生成しないことをお勧めします *および* アクティブな実稼動インスタンスの SaaS 識別子やデータ領域を変更します。 変更されたインスタンスのデータは失われます。
 
 ## コマースサービスを設定
 
-オンボーディングの最初の手順 [!DNL Payment Services] は、管理者でコマースサービスを設定するためのものです。
+同じ API キーをインスタンス全体で使用できますが、各インスタンスには独自の API キーが必要です [SaaS データ容量](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+資格情報を取得したら、SaaS プロジェクトと Saas Data Space を設定できます。
 
 1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
 1. クリック **[!UICONTROL Configure Commerce Services]**.
@@ -110,4 +51,4 @@ SaaS プロジェクトを選択または作成するには、ストアの Comme
 
    管理者の設定領域に移動します。 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**をクリックして、Commerce Services コネクタを設定します。
 
-1. コマースサービスを設定するには、 [コマースサービス](https://docs.magento.com/user-guide/system/saas.html#createsaasenv){target=&quot;_blank&quot;}。
+1. コマースサービスを設定するには、 [SaaS 設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).

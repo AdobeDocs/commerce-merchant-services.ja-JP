@@ -2,9 +2,9 @@
 title: テスト用サンドボックスの設定
 description: PayPal Sandbox アカウントを使用して [!DNL Payment Services] テストモードの
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
+source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -13,22 +13,20 @@ ht-degree: 0%
 
 Sandbox のオンボーディングを開始する前に、無料の PayPal Developer アカウントにサインアップし、マーチャント（オンボーディングに使用）と買い物客アカウント（チェックアウトのテストに使用）の両方を作成する必要があります。 必要に応じて、複数の開発者アカウントを作成できます。
 
-PayPal Sandbox アカウントを使用すると、 [!DNL Payment Services] テストモードの PayPal では、PayPal Developer Portal で生成されたビジネスサンドボックステストアカウント、電子メール、およびパスワードをサンドボックスのオンボーディングに使用する必要があります。 サンドボックスのオンボーディングプロセス中に別のアカウントを作成しないでください。
+PayPal Sandbox アカウントを使用すると、 [!DNL Payment Services] テストモードの PayPal では、PayPal Developer Portal で生成されたビジネスサンドボックステストアカウント、電子メール、およびパスワードをサンドボックスのオンボーディングに使用する必要があります。 *サンドボックスのオンボーディングプロセス中に別のアカウントを作成しないでください。*
 
-サンドボックス PayPal のオンボーディングプロセス中にアカウントを作成した場合は、メールを検証できないので、オンボーディングサンドボックスをリセットする必要があります。
-
-Sandbox アカウントをリセットするには：
-
-1. クリック **[!UICONTROL Reset sandbox]**. 詳しくは、 [PayPal ビジネスサンドボックスアカウントの作成](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account) ドキュメントを参照してください。
-1. クリック **[!UICONTROL Sandbox onboarding]** 次の手順を完了します。
+## サンドボックスのオンボーディング
 
 サンドボックスのオンボーディングを完了するには：
 
 1. 次に移動： [PayPal 開発者アカウントページ](https://developer.paypal.com/developer/accounts/).
-1. クリック **[!UICONTROL Log in to Home]** 既存の資格情報を使用して PayPal Developers アカウントにログインするか、 **新規登録** をクリックしてアカウントを作成します。
+1. クリック **[!UICONTROL Log in to Home]** 既存の PayPal Developer Portal 生成ビジネスサンドボックステストアカウントを使用してログインするか、 **新規登録** をクリックしてアカウントを作成します。
 1. PayPal Sandbox アカウントの作成：
    1. に移動します。 _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. クリック **[!UICONTROL Create account]**.
+
+      PayPal のオンボーディングプロセス中に PayPal サンドボックスアカウントを作成した場合は、 [オンボーディングサンドボックスをリセット](#reset-your-sandbox-account) 電子メールを確認できない場合があります。
+
    1. 選択 **[!UICONTROL Business]** を「アカウントタイプ」として選択し、 **[!UICONTROL Create]**.
    1. 内 _[!UICONTROL Sandbox Accounts]_」セクションで、_[!UICONTROL Manage accounts]_ 作成したサンドボックスアカウントの列。
    1. クリック **[!UICONTROL View/edit account]**.
@@ -42,11 +40,11 @@ Sandbox アカウントをリセットするには：
 
    このオプションは、のサンドボックスオンボーディングをまだ完了していない場合に表示されます。 [!DNL Payment Services].
 
-   サンドボックスマーチャント ID が自動生成され、 [設定](settings.md). この ID を変更または変更しないでください。
+   サンドボックスマーチャント ID は自動生成され、次の場所に入力されます。 [設定](settings.md). この ID を変更または変更しないでください。
 
    PayPal アカウントを接続して支払いの受け入れを開始するための PayPal ウィンドウが表示されます。
 
-1. ビジネスアカウントの E メールアドレスとお住まいの国または地域を入力し、 **[!UICONTROL Next]**.
+1. PayPal ビジネスアカウント（PayPal サンドボックスアカウントではない）とお住まいの国または地域のメールアドレスを入力し、 **[!UICONTROL Next]**.
 
    ![PayPal — 支払いに PayPal アカウントを接続](assets/paypal-connectacct.png)
 
@@ -60,6 +58,15 @@ PayPal サンドボックスのオンボーディングが承認されると、�
 >[!IMPORTANT]
 >
 >次の同意を取り消した場合： [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] お客様の支払い処理（お客様の PayPal アカウント設定）に関して、お客様のストア内の注文を次の手順で処理することはできません： [!DNL Payment Services]. お使いの支払いサービスホームに、取り消された同意に関するアラートが表示されます。 アラートを閉じるには、 **[!UICONTROL Do not show again]**.
+
+### Sandbox アカウントをリセット
+
+PayPal のオンボーディングプロセス中に PayPal サンドボックスアカウントを作成した場合は、オンボーディングサンドボックスをリセットする必要があります。リセットしないと、メールを検証できないからです。
+
+Sandbox アカウントをリセットするには：
+
+1. クリック **[!UICONTROL Reset sandbox]**. [PayPal ビジネスサンドボックスアカウントの作成](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
+1. クリック **[!UICONTROL Sandbox onboarding]** 次の手順を完了します。
 
 ## 連絡先電話番号を有効にする
 
