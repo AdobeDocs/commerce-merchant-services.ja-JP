@@ -2,9 +2,9 @@
 title: Adobe Experience Platformタグを使用したコマースデータの収集
 description: Adobe Experience Platformタグを使用してコマースデータを収集する方法を説明します。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
+source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    ![新規データ要素の作成](assets/create-new-data-elements.png)
    _新規データ要素の作成_
 
-1. 設定 **名前** から `Sign out`.
+1. 設定 **名前** から `sign out`.
 
 1. 設定 **拡張** から `Adobe Experience Platform Web SDK`.
 
@@ -76,16 +76,22 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    ![サインアウト値の更新](assets/signout-value.png)
    _サインアウト値の更新_
 
+1. 選択 **保存**.
+
 1. ルールの作成：
 
    ![新規ルールの作成](assets/create-new-rule.png)
    _新規ルールの作成_
+
+1. 選択 **追加** under **イベント**.
 
 1. 設定 **拡張** から `Adobe Client Data Layer`.
 
 1. 設定 **イベントタイプ** から `Data Pushed`.
 
 1. 選択 **特定のイベント** そして、 **登録するイベント/キー** から `sign-out`.
+
+1. 選択 **変更を保持** をクリックして新しいルールを保存します。
 
 1. アクションを追加します。
 
@@ -159,36 +165,44 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. アカウントの電子メール：
 
-   - **名前**: `Account email`
+   - **名前**: `account email`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `accountContext.emailAddress`
 
 1. アカウントタイプ：
 
-   - **名前**: `Account type`
+   - **名前**: `account type`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `accountContext.accountType`
 
 1. アカウント ID :
 
-   - **名前**: `Account ID`
+   - **名前**: `account id`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス***: `accountContext.accountId`
 
 1. ログイン：
 
-   - **名前**: `Sign in`
+   - **名前**: `sign in`
    - **拡張**: `Adobe Experience Platform Web SDK`
    - **データ要素タイプ**: `XDM object`
+   - **フィールドグループ**: `person` > `accountID`
+   - **アカウント ID**: **値** = `%account id%`
+   - **フィールドグループ**: `person` > `accountType`
+   - **アカウントタイプ**: **値** = `%account type%`
+   - **フィールドグループ**: `person` > `personalEmailID`
+   - **個人の電子メールアドレス**: **値** = `%account email%`
+   - **フィールドグループ**: `personalEmail` > `address`
+   - **住所**: **値** = `%account email%`
    - **フィールドグループ**: `userAccount` > `login`
    - **訪問者ログイン**: **値** = `1`
 
 #### ルール 
 
-- **名前**: `Sign in`
+- **名前**: `sign in`
 - **拡張**: `Adobe Client Data Layer`
 - **イベントタイプ**: `Data Pushed`
 - **特定のイベント**: `sign-in`
@@ -198,7 +212,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **拡張**: `Adobe Experience Platform Web SDK`
 - **アクションタイプ**: `Send event`
 - **タイプ**: `userAccount.login`
-- **XDM データ**: `%sign-in%`
+- **XDM データ**: `%sign in%`
 
 ### createAccount {#createaccount}
 
@@ -208,30 +222,38 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. アカウントの電子メール：
 
-   - **名前**: `Account email`
+   - **名前**: `account email`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `accountContext.emailAddress`
 
 1. アカウントタイプ：
 
-   - **名前**: `Account type`
+   - **名前**: `account type`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `accountContext.accountType`
 
 1. アカウント ID :
 
-   - **名前**: `Account ID`
+   - **名前**: `account id`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
-   - **[オプション] パス***: `accountContext.accountId`
+   - **[オプション] パス**: `accountContext.accountId`
 
 1. アカウントを作成：
 
    - **名前**: `Create account`
    - **拡張**: `Adobe Experience Platform Web SDK`
    - **データ要素タイプ**: `XDM object`
+   - **フィールドグループ**: `person` > `accountID`
+   - **アカウント ID**: **値** = `%account id%`
+   - **フィールドグループ**: `person` > `accountType`
+   - **アカウントタイプ**: **値** = `%account type%`
+   - **フィールドグループ**: `person` > `personalEmailID`
+   - **個人の電子メールアドレス**: **値** = `%account email%`
+   - **フィールドグループ**: `personalEmail` > `address`
+   - **住所**: **値** = `%account email%`
    - **フィールドグループ**: `userAccount` > `createProfile`
    - **アカウントプロファイルの作成**: **値** = `1`
 
@@ -257,30 +279,38 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. アカウントの電子メール：
 
-   - **名前**: `Account email`
+   - **名前**: `account email`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `accountContext.emailAddress`
 
 1. アカウントタイプ：
 
-   - **名前**: `Account type`
+   - **名前**: `account type`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `accountContext.accountType`
 
 1. アカウント ID :
 
-   - **名前**: `Account ID`
+   - **名前**: `account id`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
-   - **[オプション] パス***: `accountContext.accountId`
+   - **[オプション] パス**: `accountContext.accountId`
 
 1. アカウントを編集：
 
    - **名前**: `Edit account`
    - **拡張**: `Adobe Experience Platform Web SDK`
    - **データ要素タイプ**: `XDM object`
+   - **フィールドグループ**: `person` > `accountID`
+   - **アカウント ID**: **値** = `%account id%`
+   - **フィールドグループ**: `person` > `accountType`
+   - **アカウントタイプ**: **値** = `%account type%`
+   - **フィールドグループ**: `person` > `personalEmailID`
+   - **個人の電子メールアドレス**: **値** = `%account email%`
+   - **フィールドグループ**: `personalEmail` > `address`
+   - **住所**: **値** = `%account email%`
    - **フィールドグループ**: `userAccount` > `updateProfile`
    - **アカウントプロファイルの作成**: **値** = `1`
 
@@ -306,17 +336,17 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. ページ名：
 
-   - **名前**: `Page name`
+   - **名前**: `page name`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `pageContext.pageName`
 
 #### ルール 
 
-- **名前**: `Page view`
+- **名前**: `page view`
 - **拡張**: `Adobe Client Data Layer`
 - **イベントタイプ**: `Data Pushed`
-- **特定のイベント**: `Core-Library Loaded`
+- **特定のイベント**: `page-view`
 
 ##### アクション
 
@@ -333,28 +363,28 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 製品名：
 
-   - **名前**: `Product name`
+   - **名前**: `product name`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.name`
 
 1. 製品 SKU:
 
-   - **名前**: `Product sku`
+   - **名前**: `product sku`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.sku`
 
 1. 製品の通貨：
 
-   - **名前**: `Product currency`
+   - **名前**: `product currency`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.pricing.currencyCode`
 
 1. 通貨コード：
 
-   - **名前**: `Currency code`
+   - **名前**: `currency code`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -365,21 +395,21 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 特別価格：
 
-   - **名前**: `Special price`
+   - **名前**: `special price`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.pricing.specialPrice`
 
 1. 定価：
 
-   - **名前**: `Regular price`
+   - **名前**: `regular price`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.pricing.regularPrice`
 
 1. 製品価格：
 
-   - **名前**: `Product price`
+   - **名前**: `product price`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -390,14 +420,24 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 製品表示：
 
-   - **名前**: `Product view`
+   - **名前**: `product view`
    - **拡張**: `Adobe Experience Platform Web SDK`
    - **データ要素タイプ**: `XDM object`
    - **フィールドグループ**: `productListItems`. 選択 **個々の項目を指定** をクリックし、 **項目を追加** 」ボタンをクリックします。 このビューは PDP 用なので、1 つの項目を入力できます。
+   - **フィールドグループ**: `productListItems` > `name`
+   - **名前**: **値** = `%product name%`
+   - **フィールドグループ**: `productListItems` > `SKU`
+   - **SKU**: **値** = `%product sku%`
+   - **フィールドグループ**: `productListItems` > `priceTotal`
+   - **価格合計**: **値** = `%product price%`
+   - **フィールドグループ**: `productListItems` > `currencyCode`
+   - **通貨コード**: **値** = `%currency code%`
+   - **フィールドグループ**: `commerce` > `productViews` > `value`
+   - **値**: **値** = `1`
 
 #### ルール 
 
-- **名前**: `Product view`
+- **名前**: `product view`
 - **拡張**: `Adobe Client Data Layer`
 - **イベントタイプ**: `Data Pushed`
 - **特定のイベント**: `product-page-view`
@@ -417,14 +457,14 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 入力を検索
 
-   - **名前**: `Search input`
+   - **名前**: `search input`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `searchInputContext.units[0]`
 
 1. 入力フレーズを検索
 
-   - **名前**: `Search input phrase`
+   - **名前**: `search input phrase`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -435,7 +475,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 検索入力の並べ替え
 
-   - **名前**: `Search input sort`
+   - **名前**: `search input sort`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -454,7 +494,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 入力フィルターを検索
 
-   - **名前**: `Search input filters`
+   - **名前**: `search input filters`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -488,7 +528,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 検索リクエスト：
 
-   - **名前**: `Search request`
+   - **名前**: `search request`
    - **拡張**: `Adobe Experience Platform Web SDK`
    - **データ要素タイプ**: `XDM object`
    - **フィールドグループ**: `siteSearch` > `phrase`
@@ -500,7 +540,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 #### ルール 
 
-- **名前**: `Search request sent`
+- **名前**: `search request sent`
 - **拡張**: `Adobe Client Data Layer`
 - **イベントタイプ**: `Data Pushed`
 - **特定のイベント**: `search-request-sent`
@@ -520,14 +560,14 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 検索結果：
 
-   - **名前**: `Search results`
+   - **名前**: `search results`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `searchResultsContext.units[0]`
 
 1. 製品の検索結果数：
 
-   - **名前**: `Search result number of products`
+   - **名前**: `search result number of products`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -538,7 +578,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 検索結果の製品：
 
-   - **名前**: `Search result products`
+   - **名前**: `search result products`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -556,7 +596,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 検索結果の候補：
 
-   - **名前**: `Search result products`
+   - **名前**: `search result products`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -570,19 +610,21 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 検索応答：
 
-   - **名前**: `Search response`
+   - **名前**: `search response`
    - **拡張**: `Adobe Experience Platform Web SDK`
    - **データ要素タイプ**: `XDM object`
    - **フィールドグループ**: `siteSearch` > `suggestions`. 選択 **オブジェクト全体を提供**.
+   - **データ要素**: `%search result suggestions%`
    - **フィールドグループ**: `siteSearch` > `numberOfResults`
    - **値**: `%search result number of products%`
    - **フィールドグループ**: `productListItems`. 選択 **オブジェクト全体を提供**.
+   - **データ要素**: `%search result products%`
    - **フィールドグループ**: `searchResponse` > `value`
    - **値**: **値** = `1`
 
 #### ルール 
 
-- **名前**: `Search Response Received`
+- **名前**: `search response received`
 - **拡張**: `Adobe Client Data Layer`
 - **イベントタイプ**: `Data Pushed`
 - **特定のイベント**: `search-response-received`
@@ -602,42 +644,42 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 製品名：
 
-   - **名前**: `Product name`
+   - **名前**: `product name`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.name`
 
 1. 製品 sku:
 
-   - **名前**: `Product sku`
+   - **名前**: `product sku`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.sku`
 
 1. 通貨コード：
 
-   - **名前**: `Currency code`
+   - **名前**: `currency code`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.pricing.currencyCode`
 
 1. 製品の特別価格：
 
-   - **名前**: `Product special price`
+   - **名前**: `product special price`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.pricing.specialPrice`
 
 1. 商品の定価：
 
-   - **名前**: `Product regular price`
+   - **名前**: `product regular price`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.pricing.regularPrice`
 
 1. 製品価格：
 
-   - **名前**: `Product price`
+   - **名前**: `product price`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -648,14 +690,14 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 買い物かご：
 
-   - **名前**: `Cart`
+   - **名前**: `cart`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `shoppingCartContext`
 
 1. 買い物かご ID :
 
-   - **名前**: `Cart id`
+   - **名前**: `cart id`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -666,18 +708,26 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 買い物かごに追加：
 
-   - **名前**: `Add to cart`
+   - **名前**: `add to cart`
    - **拡張**: `Adobe Experience Platform Web SDK`
    - **データ要素タイプ**: `XDM object`
    - **フィールドグループ**: `productListItems`. 選択 **個々の項目を指定** をクリックし、 **項目を追加** 」ボタンをクリックします。 このビューは PDP 用なので、1 つの項目を入力できます。
+   - **フィールドグループ**: `productListItems` > `name`
+   - **名前**: **値** = `%product name%`
+   - **フィールドグループ**: `productListItems` > `SKU`
+   - **SKU**: **値** = `%product sku%`
+   - **フィールドグループ**: `productListItems` > `priceTotal`
+   - **価格合計**: **値** = `%product price%`
+   - **フィールドグループ**: `productListItems` > `currencyCode`
+   - **通貨コード**: **値** = `%currency code%`
    - **フィールドグループ**: `commerce` > `cart` > `cartID`
    - **買い物かご ID**: **値** = `%cart id%`
-   - **フィールドグループ**: `commerce` > `productListAdds` > `id`
-   - **一意の識別子**: **値** = `1`
+   - **フィールドグループ**: `commerce` > `productListAdds` > `value`
+   - **値**: **値** = `1`
 
 #### ルール 
 
-- **名前**: `Add to cart`
+- **名前**: `add to cart`
 - **拡張**: `Adobe Client Data Layer`
 - **イベントタイプ**: `Data Pushed`
 - **特定のイベント**: `add-to-cart`
@@ -697,21 +747,21 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. ストアフロント：
 
-   - **名前**: `Storefront`
+   - **名前**: `storefront`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `storefrontInstanceContext`
 
 1. 買い物かご：
 
-   - **名前**: `Cart`
+   - **名前**: `cart`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `shoppingCartContext`
 
 1. 買い物かご ID :
 
-   - **名前**: `Cart id`
+   - **名前**: `cart id`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -722,7 +772,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 製品リスト項目：
 
-   - **名前**: `Product list items:`
+   - **名前**: `product list items:`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -757,18 +807,19 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 買い物かごを表示：
 
-   - **名前**: `View cart`
+   - **名前**: `view cart`
    - **拡張**: `Adobe Experience Platform Web SDK`
    - **データ要素タイプ**: `XDM object`
    - **フィールドグループ**: `productListItems`. の場合 `productListItems`、事前に計算された複数の項目を指定できます。 選択 **productListItems** > **配列全体の入力**.
+   - **データ要素**: `%product list items%`
    - **フィールドグループ**: `commerce` > `cart` > `cartID`
    - **買い物かご ID**: **値** = `%cart id%`
-   - **フィールドグループ**: `commerce` > `productListAdds` > `id`
-   - **一意の識別子**: **値** = `1`
+   - **フィールドグループ**: `commerce` > `productListViews` > `value`
+   - **値**: **値** = `1`
 
 #### ルール 
 
-- **名前**: `View cart`
+- **名前**: `view cart`
 - **拡張**: `Adobe Client Data Layer`
 - **イベントタイプ**: `Data Pushed`
 - **特定のイベント**: `shopping-cart-view`
@@ -788,42 +839,42 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 製品名：
 
-   - **名前**: `Product name`
+   - **名前**: `product name`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.name`
 
 1. 製品 sku:
 
-   - **名前**: `Product sku`
+   - **名前**: `product sku`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.sku`
 
 1. 通貨コード：
 
-   - **名前**: `Currency code`
+   - **名前**: `currency code`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.pricing.currencyCode`
 
 1. 製品の特別価格：
 
-   - **名前**: `Product special price`
+   - **名前**: `product special price`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.pricing.specialPrice`
 
 1. 商品の定価：
 
-   - **名前**: `Product regular price`
+   - **名前**: `product regular price`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.pricing.regularPrice`
 
 1. 製品価格：
 
-   - **名前**: `Product price`
+   - **名前**: `product price`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -834,14 +885,14 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 買い物かご：
 
-   - **名前**: `Cart`
+   - **名前**: `cart`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `shoppingCartContext`
 
 1. 買い物かご ID :
 
-   - **名前**: `Cart id`
+   - **名前**: `cart id`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -852,18 +903,26 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 買い物かごから削除：
 
-   - **名前**: `Remove from cart`
+   - **名前**: `remove from cart`
    - **拡張**: `Adobe Experience Platform Web SDK`
    - **データ要素タイプ**: `XDM object`
    - **フィールドグループ**: `productListItems`. 選択 **個々の項目を指定** をクリックし、 **項目を追加** 」ボタンをクリックします。 このビューは PDP 用なので、1 つの項目を入力できます。
+   - **フィールドグループ**: `productListItems` > `name`
+   - **名前**: **値** = `%product name%`
+   - **フィールドグループ**: `productListItems` > `SKU`
+   - **SKU**: **値** = `%product sku%`
+   - **フィールドグループ**: `productListItems` > `priceTotal`
+   - **価格合計**: **値** = `%product price%`
+   - **フィールドグループ**: `productListItems` > `currencyCode`
+   - **通貨コード**: **値** = `%currency code%`
    - **フィールドグループ**: `commerce` > `cart` > `cartID`
    - **買い物かご ID**: **値** = `%cart id%`
-   - **フィールドグループ**: `commerce` > `productListRemovals`
-   - **一意の識別子**: **値** = `1`
+   - **フィールドグループ**: `commerce` > `productListRemovals` > `value`
+   - **値**: **値** = `1`
 
 #### ルール 
 
-- **名前**: `Remove from cart`
+- **名前**: `remove from cart`
 - **拡張**: `Adobe Client Data Layer`
 - **イベントタイプ**: `Data Pushed`
 - **特定のイベント**: `remove-from-cart`
@@ -883,21 +942,21 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. ストアフロント：
 
-   - **名前**: `Storefront`
+   - **名前**: `storefront`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `storefrontInstanceContext`
 
 1. 買い物かご：
 
-   - **名前**: `Cart`
+   - **名前**: `cart`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `shoppingCartContext`
 
 1. 買い物かご ID :
 
-   - **名前**: `Cart id`
+   - **名前**: `cart id`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -908,7 +967,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 製品リスト項目：
 
-   - **名前**: `Product list items`
+   - **名前**: `product list items`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -943,18 +1002,19 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. チェックアウトを開始：
 
-   - **名前**: `Initiate checkout`
+   - **名前**: `initiate checkout`
    - **拡張**: `Adobe Experience Platform Web SDK`
    - **データ要素タイプ**: `XDM object`
    - **フィールドグループ**: `productListItems`. の場合 `productListItems`、事前に計算された複数の項目を指定できます。 選択 **productListItems** > **配列全体の入力**.
+   - **データ要素**: `%product list items%`
    - **フィールドグループ**: `commerce` > `cart` > `cartID`
    - **買い物かご ID**: **値** = `%cart id%`
-   - **フィールドグループ**: `commerce` > `checkouts`
-   - **一意の識別子**: **値** = `1`
+   - **フィールドグループ**: `commerce` > `checkouts` > `value`
+   - **値**: **値** = `1`
 
 #### ルール 
 
-- **名前**: `Initiate checkout`
+- **名前**: `initiate checkout`
 - **拡張**: `Adobe Client Data Layer`
 - **イベントタイプ**: `Data Pushed`
 - **特定のイベント**: `initiate-checkout`
@@ -974,21 +1034,21 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. ストアフロント：
 
-   - **名前**: `Storefront`
+   - **名前**: `storefront`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `storefrontInstanceContext`
 
 1. 買い物かご：
 
-   - **名前**: `Cart`
+   - **名前**: `cart`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `shoppingCartContext`
 
 1. 買い物かご ID :
 
-   - **名前**: `Cart id`
+   - **名前**: `cart id`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -999,14 +1059,14 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 注文：
 
-   - **名前**: `Order`
+   - **名前**: `order`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `orderContext`
 
 1. コマース注文：
 
-   - **名前**: `Commerce order`
+   - **名前**: `commerce order`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -1042,7 +1102,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 発送の注文：
 
-   - **名前**: ` Order shipping`
+   - **名前**: `order shipping`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -1057,7 +1117,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. プロモーション ID :
 
-   - **名前**: `Promotion id`
+   - **名前**: `promotion id`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -1068,7 +1128,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 製品リスト項目：
 
-   - **名前**: `Product list items`
+   - **名前**: `product list items`
    - **拡張**: `Core`
    - **データ要素タイプ**: `Custom Code`
    - **編集画面を開く**:
@@ -1103,14 +1163,15 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 1. 発注：
 
-   - **名前**: `Place order`
+   - **名前**: `place order`
    - **拡張**: `Adobe Experience Platform Web SDK`
    - **データ要素タイプ**: `XDM object`
    - **フィールドグループ**: `productListItems`. の場合 `productListItems`、事前に計算された複数の項目を指定できます。 選択 **productListItems** > **配列全体の入力**.
+   - **データ要素**: `%product list items%`
    - **フィールドグループ**: `commerce` > `order`
    - **一意の識別子**: **値** = `%commerce order%`
    - **フィールドグループ**: `commerce` > `shipping`
-   - **一意の識別子**: **値** = ` %order shipping%`
+   - **一意の識別子**: **値** = `%order shipping%`
    - **フィールドグループ**: `commerce` > `promotionID`
    - **プロモーション ID**: **値** = `%promotion id%`
    - **フィールドグループ**: `commerce` > `purchases` > `value`
@@ -1118,7 +1179,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 #### ルール 
 
-- **名前**: `Place order`
+- **名前**: `place order`
 - **拡張**: `Adobe Client Data Layer`
 - **イベントタイプ**: `Data Pushed`
 - **特定のイベント**: `place-order`
