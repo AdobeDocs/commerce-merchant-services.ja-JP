@@ -2,10 +2,10 @@
 title: '''[!DNL Quick Checkout] リリースノート'''
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 6162141e1ddf4428126178bd172e8d9bd250c485
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '320'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,17 @@ ht-degree: 0%
 
 詳しくは、 [可用性](https://devdocs.magento.com/release/availability.html) 製品の互換性について詳しくは、開発者向けドキュメントを参照してください。
 
+## v1.1.0
+
+_2022 年 8 月 13 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-375 --> のユーザーエクスペリエンスの改善 [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 拡張機能が有効になっている場合に表示および検証されるパラメーターのみを含めるようになりました。
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-349 --> 既存の配送先住所と Bolt ウォレットの互換性を改善しました。
+
 ## v1.0.0
+
+_2022 年 8 月 10 日_
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-341 --> GA リリース —[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) は、Adobe Commerceバージョン 2.4.1 ～ 2.4.4 と互換性があるようになりました。
 
@@ -41,4 +51,6 @@ ht-degree: 0%
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-288 --> カスタム [ユーザーセッションの有効期間](user-session-lifetime.md) 対象 [!DNL Quick Checkout] Adobe Commerce
 
-![既知の問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 使用 [誤ったコンポーザーキー](https://support.magento.com/hc/en-us/articles/6909450342541) ～の設置中に [!DNL Quick Checkout] ユーザーが [認証](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正しい `MAGEID`.
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-375 --> のユーザーエクスペリエンスの改善 [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) を使用すると、必要なパラメーターがすべて指定された場合に設定を保存できます。
+
+![既知の問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 共通 [トラブルシューティング](https://support.magento.com/hc/en-us/articles/6909450342541) インストール中の問題 [!DNL Quick Checkout].

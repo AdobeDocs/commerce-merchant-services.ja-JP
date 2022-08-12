@@ -2,9 +2,9 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## でアカウントを作成 [!DNL Bolt]
 
-を設定する前に [!DNL Quick Checkout] Adobe Commerce Admin で、 [サンドボックス](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} および [実稼動](https://merchant.bolt.com/register){target=&quot;_blank&quot;} マーチャントアカウント [!DNL Bolt]. アカウントを作成するために必要なすべての詳細を指定します。 [!DNL Bolt].
+を設定する前に [!DNL Quick Checkout] Adobe Commerce Admin で、 [サンドボックス](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} および [実稼動](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} マーチャントアカウント [!DNL Bolt]. アカウントを作成するために必要なすべての詳細を指定します。 [!DNL Bolt].
 
 詳しくは、 [テストと検証](../quick-checkout/testing.md) トピックを参照してください。
 
