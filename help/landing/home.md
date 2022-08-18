@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: ドキュメント
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 24a82d4ccf492237f50a7cb08d8c0bcf57b43a61
+source-git-commit: 9dd9564a45aa1de13bbdaed81d79fe136b55cb68
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -79,18 +79,18 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 
 この [Commerce Services コネクタ](saas.md) は、API キーと秘密鍵を使用して、Adobe CommerceまたはMagento Open Sourceインスタンスの統合を提供します。 データサービス (Adobe Commerceのみ ) の場合は、設定でデータスペースも指定できます。
 
-## カタログの同期
+## カタログサービス
 
-カタログデータ ( 製品Recommendationsおよびライブ検索 ) を使用するサービスの場合、 [カタログ同期](catalog-sync.md) プロセスは、サービスを最新の状態に保つために、Commerce Services から Commerce Services に製品データを継続的にエクスポートします。
+カタログサービスは、商品詳細ページや商品リストページなど、商品関連のコンテンツをすばやく完全にストアフロントにレンダリングするための、豊富な読み取り専用カタログデータを提供します。 パフォーマンスを向上させ、拡張性を向上させ、コンバージョンを増やしながら、顧客に最適化された製品エクスペリエンスを提供します。
 
 ## 新機能
 
 次の項目は、ドキュメントに対する最近の変更です。
 
-* 更新された [!DNL Live Search] リリースノート： [2.0 リリース](/help/live-search/release-notes.md).
-* の節を追加しました (_境界としきい値_) を [インストール [!DNL Live Search]](/help/live-search/install.md) トピック。
-* 追加済み [[!DNL Payment Services] ガイド](/help/payment-services/guide-overview.md) 新しい marketplace 拡張機能およびホストされているサービス v1.0.0 の最新情報を入力します。
-* この [!DNL Live Search] [パフォーマンスレポートダッシュボード](/help/live-search/performance.md) では、買い物客が使用する検索用語の効果に関するインサイトを提供します。
-* での B2B サポートの追加 [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
-* 追加された [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) Walmart Marketplace の販売を管理する顧客の [!DNL Commerce] インスタンス。
-* 追加された [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) オンラインでの購入を改善したいお客様は、店舗 (BOPIS) での顧客体験を受け取り、店舗およびキューブサイドでのピックアップ用に、モバイル対応のシームレスなオムニチャネルフルフィルメントワークフローを提供します。
+* *支払いサービス*— [拡張機能のダウンロード](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension)を使用して、 [Commerce Services コネクタへの接続](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html)、および [追加された情報](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) を追加します。
+* 利用可能になりました。—[カタログサービス](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) Adobe Commerce
+* *ライブ検索* — に新しい情報を追加しました。 [ライブ検索のインストール](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) および [オンボーディングの概要](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) 新しいモジュールで導入された OpenSearch 検索エンジンに関するトピック (Adobe Commerce v2.4.6 でのリリース用 )。
+* *Experience Platformコネクタ* — トピックを追加しました [タグの使用について](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) とトピック [買い物客プロファイルのアップロード方法について](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) プロファイルを作成し、AEP タグを使用する方法を説明するトピックです。
+* *クイックチェックアウト* — 改善済み [オンボーディングトピック](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 手順を並べ替え、Admin UI に存在する最新の製品変更を含める。
+* *支払いサービス*—[Apple Pay を利用可能](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) （支払いサービス）。
+* *Experience Platformコネクタ* — 新しい [XDM スキーマの更新に関するトピック](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) をAdobe Commerce固有のフィールド名に置き換えます。
