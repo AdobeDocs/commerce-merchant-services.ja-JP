@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] 家に
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
+source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,8 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
       >
       > Apple Pay を使用するには [は、Apple Developer アカウントを持っている必要があります](test-validate.md#test-in-sandbox-environment) （偽のクレジットカードと請求情報を含む）をテストします。 サンドボックスでApple Pay を使用する準備が整ったら、 *または* 実稼動モード（任意の完了後） [テストと検証](test-validate.md)を使用する場合は、営業担当者に連絡して、ライブストアで有効にしてもらってください。
 
+      支払いボタンや PayPal Pay Later メッセージの表示/非表示を切り替えると、設定ページの下部にその設定の視覚的なプレビューが表示されます。
+
 1. デバッグモードを有効にするには、 **[!UICONTROL Debug Mode]** セレクター。
 1. クリック **[!UICONTROL Save]**.
 
@@ -145,6 +147,9 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 1. 次の手順で **[!UICONTROL Shape]**&#x200B;を選択します。 `Pill` または `Rect`.
 1. ボタンの高さセレクターを有効にするには、 **[!UICONTROL Responsive button height]** セレクター。
 1. 次の手順で **[!UICONTROL Label]**」で、目的のラベルオプションを選択します。
+
+   レイアウト、色、形状、高さ、ラベルの設定オプションを変更すると、その設定の視覚的なプレビューが設定ページの下部に表示されます。
+
 1. クリック **[!UICONTROL Save]**.
 
    変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。

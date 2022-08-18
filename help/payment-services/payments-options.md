@@ -2,9 +2,9 @@
 title: 支払いオプション
 description: 支払いオプションを設定して、店舗の顧客が利用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
+source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ ht-degree: 0%
 お客様は、デバイスでタッチ ID を使用して、 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/):iOSまたはmacOSデバイスに保存されているクレジットカードおよびデビットカードの支払い資格情報を利用します。
 
 この [!DNL Apple Pay] ボタンが製品ページ、ミニカート、買い物かご、チェックアウトビューに表示されます。
+
+>[!NOTE]
+>
+> Apple Pay を使用するには、営業担当者に問い合わせて、ライブストアに対して有効にしてもらってください。
 
 ### [!DNL Pay Later] ボタン
 
