@@ -2,9 +2,9 @@
 title: ガイドの概要
 description: Adobe Commerce用Adobe Experience Platformコネクタは、コマースインスタンスを他のAdobe Experience Cloud製品に接続します。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
+source-git-commit: 2fb44e73a76ad4e1433b2abd88be1304e7e10596
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 Experience Platformコネクタ拡張機能を使用すると、Adobe CommerceのマーチャントがAdobe Experience Platform Edge にデータを送信し、Adobe AnalyticsやAdobe Targetなどの他のAdobe Experience Cloud製品がそのコマースデータを使用できるようになります。 コマースデータをAdobe Experience Cloud内の他の製品に接続することで、サイトでのユーザー行動の分析、AB テストの実行、パーソナライズされたキャンペーンの作成などのタスクを実行できます。
 
 ストアフロントイベントは、買い物客のインタラクションをキャプチャします ( 例： `View Page`, `View Product`, `Add to Cart`など。 取り込まれたデータには、個人を特定できる情報 (PII) は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は厳密に匿名化されます。 [詳細情報](https://www.adobe.com/privacy/experience-cloud.html). 詳しくは、 [storefront イベント](events.md).
+
+Experience Platformコネクタは、次の場所にあるコマース管理に表示されます。 **システム** /サービス/ **Experience Platformコネクタ**.
+
+![Experience Platformコネクタ拡張機能の管理ビュー](assets/epc-adminui.png)
 
 ## Experience Platformコネクタ使用の前提条件 {#prereqs}
 
