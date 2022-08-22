@@ -1,14 +1,15 @@
 ---
-title: 概要
-description: '"[!DNL Product Recommendations] は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。」'
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+title: の概要 [!DNL Product Recommendations]
+description: '''[!DNL Product Recommendations] は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。」'
+exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-# 概要
+# の概要 [!DNL Product Recommendations]
 
 製品レコメンデーションは、コンバージョンの増加、売上高の増加、買い物客のエンゲージメントの促進に使用できる、強力なマーケティングツールです。 Adobe Commerceの製品レコメンデーションを活用した場合： [Adobe Sensei](https://www.adobe.com/sensei.html)：人工知能と機械学習アルゴリズムを使用して、集計された訪問者データを深く分析します。 このデータをAdobe Commerceカタログと組み合わせると、非常に魅力的で関連性が高く、パーソナライズされたエクスペリエンスを提供します。
 
@@ -31,3 +32,9 @@ ht-degree: 0%
 - 次の領域に基づいて、9 つの異なるインテリジェントレコメンデーションタイプから選択します。買い物客ベース、品目ベース、人気度ベース、トレンド、類似性ベース
 - 行動データを使用して、ショッパーのストアフロントジャーニー全体を通じてレコメンデーションをパーソナライズします
 - 各レコメンデーションに関連する主要指標を測定し、レコメンデーションの影響を理解するのに役立ちます
+
+## [!DNL Product Recommendations] デモ
+
+詳しくは、このビデオをご覧ください。 [!DNL Product Recommendations]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)

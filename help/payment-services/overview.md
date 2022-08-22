@@ -4,9 +4,9 @@ description: インストールと使用の方法を学ぶ [!DNL Payment Service
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -67,3 +67,9 @@ ht-degree: 0%
 1. 有効化 [!DNL Payment Services] ライブモードでライブ支払いの処理を開始します。
 
 すべての手順を確認し、オンボーディングプロセスを開始するには、 [オンボード [!DNL Payment Services]](onboard.md).
+
+## [!DNL Payment Services] デモ
+
+詳しくは、このビデオをご覧ください。 [!DNL Payment Services]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)
