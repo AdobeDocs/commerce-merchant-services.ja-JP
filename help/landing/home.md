@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: ドキュメント
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 9dd9564a45aa1de13bbdaed81d79fe136b55cb68
+source-git-commit: 4fcab515a816c03320fa035df3e9f6dfdd8643a9
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 
 ## カタログサービス
 
-カタログサービスは、商品詳細ページや商品リストページなど、商品関連のコンテンツをすばやく完全にストアフロントにレンダリングするための、豊富な読み取り専用カタログデータを提供します。 パフォーマンスを向上させ、拡張性を向上させ、コンバージョンを増やしながら、顧客に最適化された製品エクスペリエンスを提供します。
+この [カタログサービス](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) は、豊富な読み取り専用カタログデータを提供し、製品の詳細ページや製品リストページなど、製品関連のコンテンツをストアフロントですばやく完全にレンダリングできます。 パフォーマンスを向上させ、拡張性を向上させ、コンバージョンを増やしながら、顧客に最適化された製品エクスペリエンスを提供します。
 
 ## 新機能
 
