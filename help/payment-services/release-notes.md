@@ -2,7 +2,7 @@
 title: '"[!DNL Payment Services] リリースノート"'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4489fb72eb6b6066aa2a1360d5d8c9af533e99ee
+source-git-commit: 36eafb5729910440d257ab2d89d16f6b8f01aa68
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -22,6 +22,32 @@ ht-degree: 0%
 詳しくは、 [今後のリリース](https://devdocs.magento.com/release/) を参照してください。
 
 詳しくは、 [使用可否](https://devdocs.magento.com/release/availability.html) 製品の互換性について詳しくは、開発者向けドキュメントを参照してください。
+
+## ホストされるサービスの更新
+
+これらのリリースノートでは、ホストされているサービスの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
+
++++ホストされたサービスの更新
+
+_2022 年 8 月 31 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3629 --> 新しい商人が初めて支払サービスホームにアクセスすると、ページの更新を必要とせずに、ページが即座に読み込まれてコンテンツが表示されるようになりました。
+
+_2021 年 8 月 10 日_
+
+![新規](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay が PayPal のスマートボタンとして利用できるようになりました。 この [支払いオプション](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) を使用すると、iOSまたはmacOSデバイスでタッチ ID 機能を使用してApple Pay を選択できます。 Apple Pay は、デバイスに保存されたクレジットカードおよびデビットカードの支払資格情報を使用して支払を処理します。
+
+_2021 年 6 月 29 日_
+
+![新規](../assets/new.svg)<!-- Issue PAY-1720 --> 店舗注文に関する紛争は、 [注文の支払い状況レポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). PayPal Resolution Center に直接アクセスして、紛争に対する対処を行うことができます。 [!DNL Payment Services].
+
+![新規](../assets/new.svg)<!-- Issue PAY-2854 --> 次のユーザーエクスペリエンスの改善： [!DNL Payment Services] ホームには、現在の継承レベルで設定を変更する機能や、ヘッダーとナビゲーションの表示を改善する機能が含まれます。
+
+![新規](../assets/new.svg)<!-- Issue PAY-2854 --> サンドボックスモードから実稼動モードに切り替えた場合や、保存されていない更新を含むビューから移動しようとすると、警告が表示されるようになりました。
+
+![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
+
++++
 
 ## v1.3.0
 
@@ -46,20 +72,6 @@ _2022 年 6 月 30 日_
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Commerce Services の資格情報が無効な場合、 [!DNL Payment Services] これで、管理画面にホームが表示されます。 資格情報エラーが表示され、資格情報が無効であることが警告されます。
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] は現在、 `commerce-data-export` v101.20 以降 ( [[!DNL Channel manager] 拡張](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
-
-### ホストされるサービスの更新
-
-これらのリリースノートでは、現在の v1.2.0 リリースとホストサービスの以前の 1.1.0 リリースとの間で発生し、通常のバージョン管理機能リリース以外でリリースされた機能の変更点と修正点について説明します。
-
-![新規](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay が PayPal のスマートボタンとして利用できるようになりました。 この [支払いオプション](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) を使用すると、お客様はデバイスでタッチ ID を使用してApple Pay を使用できます。この ID は、iOSまたはmacOSデバイスに保存されているクレジットカードおよびデビットカードの支払い資格情報を使用します。
-
-![新規](../assets/new.svg)<!-- Issue PAY-1720 --> 店舗注文に関する紛争は、 [注文の支払い状況レポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). PayPal Resolution Center には、 [!DNL Payment Services] 紛争に対する訴えを起こす。
-
-![新規](../assets/new.svg)<!-- Issue PAY-2854 --> 次のユーザーエクスペリエンスの改善： [!DNL Payment Services] ホームには、現在の継承レベルで設定を変更する機能や、ヘッダーとナビゲーションの表示を改善する機能が含まれています。
-
-![新規](../assets/new.svg)<!-- Issue PAY-2854 --> サンドボックスモードから実稼動モードに切り替えた場合や、保存されていない更新を含むビューから移動しようとすると、警告が表示されるようになりました。
-
-![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 ## v1.1.0
 
