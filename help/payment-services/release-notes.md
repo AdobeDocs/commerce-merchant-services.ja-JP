@@ -2,7 +2,7 @@
 title: '"[!DNL Payment Services] リリースノート"'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 36eafb5729910440d257ab2d89d16f6b8f01aa68
+source-git-commit: 1f88c66d0c12dcde2c8fdde1dd3b4838ae6d462d
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -48,6 +48,12 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v1.3.1
+
+_2022 年 9 月 7 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3663 --> これで、マーチャントのストアが非グローバル通貨で許可された注文を取得すると、取得プロセスが完了し、エラーは表示されません。
 
 ## v1.3.0
 
