@@ -1,8 +1,8 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] リリースノート'''
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] リリースノート'
 description: すべての [!DNL Store Fulfillment by Walmart Commerce Technologies] リリース」
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 ![修正された問題](../assets/fix.svg) 修正点および改善点
 ![既知の問題](../assets/bug.svg) 既知の問題
 
-## v1.0.1
+## v1.1.0
 
 ![修正された問題](../assets/fix.svg) <!-- Issue WM-x -->を簡素化し、 [チェックインエクスペリエンス設定](check-in-experience-setup.md) デフォルトの車のメーカーとモデルの選択を追加することにより、Store Assist アプリ用に。 以前のバージョンでは、商人は車の製造とモデルの選択を手動で設定する必要がありました。
 
@@ -31,4 +31,4 @@ ht-degree: 0%
 
 ## ストアアシストアプリ
 
-Store Assist アプリの新しいリリースについて詳しくは、 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} または [Google Playストア](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}。
+Store Assist アプリの新しいリリースについて詳しくは、 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} または [Google Playストア](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}。
