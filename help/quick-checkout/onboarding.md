@@ -2,9 +2,9 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # [!DNL Quick Checkout] オンボーディング
 
 を使い始めるには、以下を実行します。 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合、インスタンスをアドビのチェックアウト機能に接続するには、いくつかのオンボーディング手順を実行する必要があります。
+
+![クイックチェックアウト](assets/overview-admin-panel.png)
 
 1. [拡張機能の取得](#get-extension).
 1. [での実稼動またはサンドボックスマーチャントアカウントの作成 [!DNL Bolt]](#create-account-with-bolt). ID を検証するために必要な情報をすべて入力します。
@@ -21,6 +23,16 @@ ht-degree: 0%
 1. [サービス設定を定義](#complete-admin-configuration) を設定するには、以下を実行します。 [!DNL Quick Checkout] 拡張子。
 1. [「設定を保存」をクリックします。](#enable-live-quick-checkout) ボタンをクリックして拡張機能を有効にします。
 1. 範囲をに切り替え **メイン Web サイト** および [「コールバック URL を設定」をクリックします。](#check-shopper-valid-account) 」ボタンをクリックします。
+
+Gainsight が有効な場合、トリガー **ツアーに参加する** ボタン [!DNL Quick Checkout] 管理パネル：概要 [!DNL Quick Checkout] Adobe Commerceの場合：
+
+1. の _管理者_ サイドバー、移動 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** /詳細：
+
+   ![クイックチェックアウト](assets/gainsight-admin.png)
+
+Gainsight が有効になっていない場合は、オンボーディング手順を続行します。
+
+詳しくは、 [[!DNL Quick Checkout] 管理パネル](../quick-checkout/admin-panel.md) トピックを参照してください。
 
 >[!NOTE]
 >
