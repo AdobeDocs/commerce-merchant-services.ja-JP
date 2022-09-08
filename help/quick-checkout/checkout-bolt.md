@@ -1,10 +1,10 @@
 ---
-title: チェックアウトフロー
+title: 「Adobe Commerceのチェックアウトフロー」
 description: の概要 [!DNL Quick Checkout] Adobe Commerceの Bolt ユーザーのフロー。
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

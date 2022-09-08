@@ -1,10 +1,10 @@
 ---
-title: '''[!DNL Quick Checkout] リリースノート'''
+title: '[!DNL Quick Checkout] リリースノート'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,28 @@ ht-degree: 1%
 詳しくは、 [今後のリリース](https://devdocs.magento.com/release/) を参照してください。
 
 詳しくは、 [可用性](https://devdocs.magento.com/release/availability.html) 製品の互換性について詳しくは、開発者向けドキュメントを参照してください。
+
+## v1.2.0
+
+_2022 年 9 月 9 日_
+
+![新規](../assets/new.svg)<!-- Issue BOLT-341 --> GA リリース —[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) は、Adobe Commerceバージョン 2.4.5 と互換性があります。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] Adobe Commerce版およびMagento Open Source版では、 [管理パネルビュー](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) と、拡張機能の設定と使用に必要なすべての情報を含んでいます。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-364 --> 管理者ユーザー [ユーザーの役割と権限を設定できます](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) 他のユーザーが [!DNL Quick Checkout] 管理パネル。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] 管理パネルに、次のような特定のセクションを含むページヘッダーが追加されました。 **概要**, **レポート**、および **設定**.
+
+![新規](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] 管理パネルにより、Gainsight を利用した機能ツアーを提供するようこそウィジェットが追加されます。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [管理パネルビュー](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) を組み込む **設定** API と公開可能なキーが [設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 表示
+
+![新規](../assets/new.svg)<!-- Issue BOLT-380 --> [!DNL Quick Checkout] [管理パネルビュー](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) を組み込む **リソース** オンボーディングステージに応じて変わるセクション。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-381 --> [!DNL Quick Checkout] [管理パネルビュー](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) を含む **ヘルプとサポート** 」セクションに入力します。
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-369 --> この [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) フッターに拡張機能のバージョンが表示されるようになりました。
 
 ## v1.1.0
 
