@@ -1,8 +1,8 @@
 ---
-title: '"[!DNL Payment Services] リリースノート"'
+title: "[!DNL Payment Services] リリースノート"
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1f88c66d0c12dcde2c8fdde1dd3b4838ae6d462d
+source-git-commit: 4e6bf72033495683491b0c59a544d1474f6c1486
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -28,6 +28,10 @@ ht-degree: 0%
 これらのリリースノートでは、ホストされているサービスの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
 
 +++ホストされたサービスの更新
+
+_2022 年 9 月 13 日_
+
+![新規](../assets/new.svg)<!-- Issue PAY-3705 --> この `increment_id` は、外部 ERP システムでの支払いの調整に使用できるようになりました。 これは、 [`custom_id` _および_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system)。PayPal Webhook と、支払のマーチャント活動の詳細の両方に表示されます。
 
 _2022 年 8 月 31 日_
 
