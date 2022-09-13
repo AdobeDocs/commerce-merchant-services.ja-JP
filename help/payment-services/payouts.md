@@ -4,9 +4,9 @@ description: 支払額、処理済数量および財務調整の取引レベル�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 4554ea65ded73e9552f307ff51e0e7eff64cd2e9
+source-git-commit: 27d280fb9f49715a455ff55279416f7df4ada56d
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,64 @@ ht-degree: 0%
 
 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗の注文件数と支払い数を明確に把握できるよう、包括的なレポートを提供します。
 
-![財務レポートビュー](assets/reports-view.png)
+![財務レポートビュー](assets/reports-view-new.png)
 
-ペイアウトレポートは、総合的なペイアウト情報を一目で表示し、支払金額、処理済数量、財務調整のトランザクションレベルに関する詳細なレポートを完全に透明化できます。
+2 つのペイアウトレポート表示を使用して、すべてのペイアウトに関する詳細情報を確認できます。
+
+* **[ペイアウトのデータビジュアライゼーションビュー](#payouts-data-visualization-view)** — 支払サービスホームで使用可能なグラフ。支払レポートビューから 1 日あたりの集計金額を視覚的に表します。
+* **[ペイアウトレポート表示](#payouts-report-view)** — すべてのトランザクションの詳細な支払情報を表示するペイアウトで使用可能なレポート
+
+「支払」ビューには、総合的な支払情報が一目で表示され、支払金額、処理済数量、財務調整のトランザクション・レベルに関する詳細なレポートを完全に透明化できます。
 
 >[!NOTE]
 >
->ペイアウトレポートには、キャプチャされた注文のみが表示されます。支払いアクションは、 [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) — または [次のように指定 `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
+>ペイアウトレポートには、キャプチャされた注文のみが表示されます ( 支払いアクションは [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) — または [次のように指定 `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
-複数のビューを開いて、注文と支払いを相互参照したり、勘定を調整したりする必要はありません。 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] では、これらすべてのアクションを 1 か所（ペイアウトレポート）から実行し、ペイアウトを効率的に表示および管理できます。
+## ペイアウトのデータビジュアライゼーションビュー
+
+支払データのビジュアライゼーションビューは、支払サービスホームで使用できます。 詳細な表から、1 日あたりの集計された金額を視覚的に表したものです [ペイアウトレポート表示](#payouts-report-view).
+
+の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** を使用すると、時間の経過に伴うクレジットとデビットおよび移動平均のデータ視覚化チャートを確認できます。
+
+![管理者でのデータの視覚化の配分](assets/payouts-data.png)
+
+クリック **[!UICONTROL View Report]** 詳細な表に移動するには [ペイアウトレポート表示](#payouts-report-view).
+
+### トランザクション期間のカスタマイズ
+
+デフォルトでは、30 日間のトランザクションが表示されます。
+
+ペイアウトデータのビジュアライゼーション表示で、日付範囲を選択して、表示するペイアウトトランザクションの期間をカスタマイズできます。
+
+1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. ペイアウトデータビジュアライゼーションビューは、ペイアウトセクションに表示されます。
+1. 次をクリック： **[!UICONTROL Range]** セレクターフィルター。
+1. 該当する日付範囲（30 日、15 日、7 日）を選択します。
+1. 指定した日付のトランザクション情報を表示します。
+
+### トランザクション情報
+
+選択した日付範囲のトランザクション金額は、ペイアウトのデータビジュアライゼーションビューの左側に表示されます。 選択した日付範囲の日付がビューの下部に表示されます。 特定の日付に支払いがなかった場合、その日付は表示されません。
+
+ペイアウトデータのビジュアライゼーションビューには、次の情報が含まれています。
+
+| データ | 説明 |
+| ------------ | -------------------- |
+| [!UICONTROL Transaction amount] | 指定した期間のトランザクションの金額範囲。Y 軸のデータ（左） |
+| 日付範囲 | 指定した期間の日付範囲。X 軸のデータ（下） |
+| クレジット | 指定した期間の支払い |
+| 借方 | 指定した期間のデビット（返金） |
+| 移動平均 | 指定した期間の各日付の平均支払額を表します |
+| 範囲のネット | 指定した期間（範囲）の純支払額 |
+
+## ペイアウトレポート表示
+
+ペイアウトレポートビューは、支払サービスのペイアウトビューで使用できます。 ストアのペイアウトに関する利用可能な情報がすべて含まれます。 この [ペイアウトのデータビジュアライゼーションビュー](#payouts-data-visualization-view) 支払サービスホームは、このより詳細なレポートビューで、1 日あたりの集計金額を視覚的に表したものです。
+
+の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** 詳細な表形式のペイアウトレポートビューを表示するには、次の手順に従います。
+
+![管理での支払トランザクション](assets/payouts-report-new.png)
+
+このトピックのセクションごとに、このビューを設定して、表示するデータを最適に表示できます。
 
 管理のペイアウトレポート内で、リンクされたコマース注文およびトランザクション ID、トランザクション金額、トランザクションごとの支払い方法などを確認します。
 
@@ -33,15 +82,9 @@ ht-degree: 0%
 >
 >この表に示すデータは降順 (`DESC`) デフォルトでは、 `TRANS DATE`. この `TRANS DATE` は、トランザクションが開始された日時です。
 
-## 使用可否
+### データソースを選択
 
-の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-
-![管理での支払トランザクション](assets/payouts-report.png)
-
-## データソースを選択
-
-ペイアウトレポート表示で、データソースを選択できます。_[!UICONTROL Live]_または [!UICONTROL Sandbox]_ — レポートの結果を表示する
+ペイアウトレポート表示で、データソースを選択できます。_[!UICONTROL Live]_または_[!UICONTROL Sandbox]_ — レポートの結果を表示する対象です。
 
 ![データソースの選択](assets/datasource.png)
 
@@ -56,38 +99,38 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、ライ�
 「受注支払ステータス」レポートのデータ・ソースを選択する手順は、次のとおりです。
 
 1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. クリック **[!UICONTROL Data source]** を選択し、 _[!UICONTROL Live]_または [!UICONTROL Sandbox]_.
+1. クリック **[!UICONTROL Data source]** を選択し、 _[!UICONTROL Live]_または_[!UICONTROL Sandbox]_.
 
    レポート結果は、選択したデータソースに基づいて再生成されます。
 
-## トランザクションの表示
+### トランザクションの表示
 
-デフォルトでは、30 日間のトランザクションがグリッドに表示されます。
+デフォルトでは、30 日間のトランザクションが表示されます。
 
 検索で返された行数、またはデフォルトの 30 日間のトランザクションで表示される行数は、トランザクション日付カレンダーセレクターフィルターの横にあるペイアウト表示グリッドの上に表示されます。
 
 左右にスクロールして表示します [支払トランザクションごとの情報](#column-descriptions) 日次レポート（トランザクション日、参照 ID、請求書番号、支払い方法の詳細を含む）
 
-### トランザクション期間のカスタマイズ
+#### トランザクション期間のカスタマイズ
 
-「支払」ビューでは、特定の日付を入力するか、日付選択ツールから日付範囲を選択することで、表示する支払トランザクションの期間をカスタマイズできます。
+ペイアウトレポートビューでは、特定の日付を入力するか、日付選択ツールから日付範囲を選択することで、表示するペイアウトトランザクションの期間をカスタマイズできます。
 
 1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
 1. 「トランザクション日」カレンダーセレクターフィルターをクリックします。
 1. 適用可能な日付範囲を選択します。
 1. 指定した日付のグリッドにペイアウトステータスが表示されます。
 
-## 列の表示と非表示を切り替える
+### 列の表示と非表示を切り替える
 
-ペイアウトレポートには、デフォルトで利用可能な最も多くの情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
+ペイアウトレポートビューには、デフォルトで利用可能な最も多くの情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
 
 1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
 1. 次をクリック： _列設定_ アイコン (![列設定アイコン](assets/column-settings.png)) をクリックします。
 1. レポートに表示する列をカスタマイズするには、リストの列をオンまたはオフにします。
 
-   ペイアウトレポートには、列設定メニューで行った変更がすぐに表示されます。 列の環境設定は保存され、レポート表示から移動しても有効なままになります。
+   ペイアウトレポートビューには、列設定メニューで行った変更がすぐに表示されます。 列の環境設定は保存され、レポート表示から移動しても有効なままになります。
 
-## トランザクションをダウンロード
+### トランザクションをダウンロード
 
 ペイアウト表示グリッドに表示されるすべてのトランザクションを含む.csv ファイルをダウンロードできます。
 
@@ -96,10 +139,6 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、ライ�
 1. 次をクリック： _ダウンロード_ (![](assets/icon-download.png)) アイコンをクリックします。
 
 支払トランザクションは.csv 形式でダウンロードされます。
-
-## トランザクション情報
-
-ペイアウトビューには、グリッドに表示される各トランザクションに関する詳細な情報が表示されます。
 
 ### 列の説明
 
@@ -115,8 +154,8 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、ライ�
 | [!UICONTROL Code] | クレジット (*CR*) または借方 (*DR*) |
 | [!UICONTROL Reference ID] | このイベントが関連する元のトランザクション ID |
 | [!UICONTROL Invoice] | トランザクションの請求書 ID （注文ごとに 1 つ） |
-| [!UICONTROL Commerce order] | コマース注文 ID <br> <br>関連する [注文情報](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}、ID をクリックします。 |
-| [!UICONTROL Commerce trans] | コマーストランザクション ID <br> <br>関連する [トランザクション情報](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}、ID をクリックします。 |
+| [!UICONTROL Commerce order] | コマース注文 ID <br> <br>関連する [注文情報](https://docs.magento.com/user-guide/sales/orders.html)、「ID」をクリックします。 |
+| [!UICONTROL Commerce trans] | コマーストランザクション ID |
 | [!UICONTROL Pay method] | クレジットカードのタイプ —*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]* — および関連するカードプロバイダー ( *ビザ* または *MasterCard*) |
 | [!UICONTROL Trans amt] | トランザクションの金額 |
 | [!UICONTROL Cur] | トランザクション金額の通貨単位 |
