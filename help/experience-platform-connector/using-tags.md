@@ -2,9 +2,9 @@
 title: Adobe Experience Platformタグを使用したコマースデータの収集
 description: Adobe Experience Platformタグを使用してコマースデータを収集する方法を説明します。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
+source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2504'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 以下に説明する各Adobe Commerceイベントに対して、上記の手順をタグで繰り返します。
 
-### 使用可能なイベント
+## 使用可能なイベント
 
 以下の各イベントについて、上記の手順に従ってAdobe Commerceイベントを XDM にマッピングします。
 
@@ -130,6 +130,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - [&#39;placeOrder&#39;](#placeorder)
 
 ### signOut {#signout}
+
+買い物客がサインアウトを試みたときにトリガーされます。
 
 #### データ要素
 
@@ -158,6 +160,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **XDM データ**: `%sign-out%`
 
 ### signIn {#signin}
+
+買い物客がログインしようとしたときにトリガーされます。
 
 #### データ要素
 
@@ -216,6 +220,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 ### createAccount {#createaccount}
 
+買い物客がアカウントを作成しようとしたときにトリガーされます。
+
 #### データ要素
 
 次のデータ要素を作成します。
@@ -272,6 +278,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **XDM データ**: `%create account%`
 
 ### editAccount {#editaccount}
+
+買い物客がアカウントを編集しようとしたときにトリガーされます。
 
 #### データ要素
 
@@ -330,6 +338,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 ### pageView {#pageview}
 
+ページが読み込まれたときにトリガーされます。
+
 #### データ要素
 
 次のデータ要素を作成します。
@@ -357,6 +367,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 ### productView {#productview}
 
+製品ページが読み込まれたときにトリガーされます。
+
 #### データ要素
 
 次のデータ要素を作成します。
@@ -374,6 +386,13 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.sku`
+
+1. 製品画像 URL:
+
+   - **名前**: `product image`
+   - **拡張**: `Adobe Client Data Layer`
+   - **データ要素タイプ**: `Data Layer Computed State`
+   - **[オプション] パス**: `productContext.mainImageUrl`
 
 1. 製品の通貨：
 
@@ -432,6 +451,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **価格合計**: **値** = `%product price%`
    - **フィールドグループ**: `productListItems` > `currencyCode`
    - **通貨コード**: **値** = `%currency code%`
+   - **フィールドグループ**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **値** = `%product image%`
    - **フィールドグループ**: `commerce` > `productViews` > `value`
    - **値**: **値** = `1`
 
@@ -450,6 +471,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **XDM データ**: `%product view%`
 
 ### searchRequestSent {#searchrequestsent}
+
+「入力時に検索」ポップオーバーのイベントおよび検索結果ページのイベントによってトリガーされます。
 
 #### データ要素
 
@@ -554,6 +577,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 ### searchResponseReceived {#searchresponsereceived}
 
+「入力時に検索」ポップオーバーまたは検索結果ページの結果がライブ検索で返された場合にトリガーされます。
+
 #### データ要素
 
 次のデータ要素を作成します。
@@ -608,6 +633,13 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    return suggestions;
    ```
 
+1. 製品画像 URL:
+
+   - **名前**: `product image`
+   - **拡張**: `Adobe Client Data Layer`
+   - **データ要素タイプ**: `Data Layer Computed State`
+   - **[オプション] パス**: `productContext.mainImageUrl`
+
 1. 検索応答：
 
    - **名前**: `search response`
@@ -618,6 +650,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **フィールドグループ**: `siteSearch` > `numberOfResults`
    - **値**: `%search result number of products%`
    - **フィールドグループ**: `productListItems`. 選択 **オブジェクト全体を提供**.
+   - **フィールドグループ**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **値** = `%product image%`
    - **データ要素**: `%search result products%`
    - **フィールドグループ**: `searchResponse` > `value`
    - **値**: **値** = `1`
@@ -637,6 +671,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **XDM データ**: `%search response%`
 
 ### addToCart {#addtocart}
+
+買い物かごに製品が追加されたとき、または買い物かご内の製品の数量が増加するたびにトリガーされます。
 
 #### データ要素
 
@@ -669,6 +705,13 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.pricing.specialPrice`
+
+1. 製品画像 URL:
+
+   - **名前**: `product image`
+   - **拡張**: `Adobe Client Data Layer`
+   - **データ要素タイプ**: `Data Layer Computed State`
+   - **[オプション] パス**: `productContext.mainImageUrl`
 
 1. 商品の定価：
 
@@ -719,6 +762,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **フィールドグループ**: `productListItems` > `priceTotal`
    - **価格合計**: **値** = `%product price%`
    - **フィールドグループ**: `productListItems` > `currencyCode`
+   - **フィールドグループ**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **値** = `%product image%`
    - **通貨コード**: **値** = `%currency code%`
    - **フィールドグループ**: `commerce` > `cart` > `cartID`
    - **買い物かご ID**: **値** = `%cart id%`
@@ -741,6 +786,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 ### viewCart {#viewcart}
 
+買い物かごのページが読み込まれたときにトリガーされます。
+
 #### データ要素
 
 次のデータ要素を作成します。
@@ -752,12 +799,19 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `storefrontInstanceContext`
 
-1. 買い物かご：
+1. 製品画像 URL:
 
+   - **名前**: `product image`
+   - **拡張**: `Adobe Client Data Layer`
+   - **データ要素タイプ**: `Data Layer Computed State`
+   - **[オプション] パス**: `productContext.mainImageUrl`
+   1. 買い物かご：
    - **名前**: `cart`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `shoppingCartContext`
+
+
 
 1. 買い物かご ID :
 
@@ -812,12 +866,14 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **データ要素タイプ**: `XDM object`
    - **フィールドグループ**: `productListItems`. の場合 `productListItems`、事前に計算された複数の項目を指定できます。 選択 **productListItems** > **配列全体の入力**.
    - **データ要素**: `%product list items%`
+   - **フィールドグループ**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **値** = `%product image%`
    - **フィールドグループ**: `commerce` > `cart` > `cartID`
    - **買い物かご ID**: **値** = `%cart id%`
    - **フィールドグループ**: `commerce` > `productListViews` > `value`
    - **値**: **値** = `1`
 
-#### ルール 
+#### ルール
 
 - **名前**: `view cart`
 - **拡張**: `Adobe Client Data Layer`
@@ -832,6 +888,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **XDM データ**: `%view cart%`
 
 ### removeFromCart {#removefromcart}
+
+買い物かごから製品が削除されたとき、または買い物かご内の製品の量が減少するたびにトリガーされます。
 
 #### データ要素
 
@@ -936,6 +994,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 ### initiateCheckout {#initiatecheckout}
 
+買い物客がチェックアウトボタンをクリックしたときにトリガーされます。
+
 #### データ要素
 
 次のデータ要素を作成します。
@@ -946,6 +1006,13 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `storefrontInstanceContext`
+
+1. 製品画像 URL:
+
+   - **名前**: `product image`
+   - **拡張**: `Adobe Client Data Layer`
+   - **データ要素タイプ**: `Data Layer Computed State`
+   - **[オプション] パス**: `productContext.mainImageUrl`
 
 1. 買い物かご：
 
@@ -1007,6 +1074,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **データ要素タイプ**: `XDM object`
    - **フィールドグループ**: `productListItems`. の場合 `productListItems`、事前に計算された複数の項目を指定できます。 選択 **productListItems** > **配列全体の入力**.
    - **データ要素**: `%product list items%`
+   - **フィールドグループ**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **値** = `%product image%`
    - **フィールドグループ**: `commerce` > `cart` > `cartID`
    - **買い物かご ID**: **値** = `%cart id%`
    - **フィールドグループ**: `commerce` > `checkouts` > `value`
@@ -1028,6 +1097,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 ### placeOrder {#placeorder}
 
+買い物客が注文したときにトリガーされます。
+
 #### データ要素
 
 次のデータ要素を作成します。
@@ -1038,6 +1109,13 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `storefrontInstanceContext`
+
+1. 製品画像 URL:
+
+   - **名前**: `product image`
+   - **拡張**: `Adobe Client Data Layer`
+   - **データ要素タイプ**: `Data Layer Computed State`
+   - **[オプション] パス**: `productContext.mainImageUrl`
 
 1. 買い物かご：
 
@@ -1168,6 +1246,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **データ要素タイプ**: `XDM object`
    - **フィールドグループ**: `productListItems`. の場合 `productListItems`、事前に計算された複数の項目を指定できます。 選択 **productListItems** > **配列全体の入力**.
    - **データ要素**: `%product list items%`
+   - **フィールドグループ**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **値** = `%product image%`
    - **フィールドグループ**: `commerce` > `order`
    - **一意の識別子**: **値** = `%commerce order%`
    - **フィールドグループ**: `commerce` > `shipping`
