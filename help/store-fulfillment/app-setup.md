@@ -4,9 +4,9 @@ description: 設定 [!DNL Store Assist] エンドツーエンドの店舗フル�
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Store Assist アプリには、次の 2 種類の設定が必要です。
 
    - **ストアからのキャンセル** — オーダーをストアからキャンセルできるかどうか、およびキャンセル権限を持つロールを指定します
 
-   - **注文のクリーンアップウィンドウ** — 選択した受注が再在庫されるまでにステージングに残る予定ピックアップ時間（3 日間など）を指定します。
+   - **注文のクリーンアップウィンドウ** — 経過時間を指定します。 [推定ピックアップリードタイム](enable-general.md#delivery-method-title-configuration) 選択した注文は、再在庫される前（3 日間など）にステージングに残ります。 デフォルト値は 7 日です。 この設定をオンにした場合、この時間が経過すると、オーダーは自動的にキャンセルされます。 商品が再入荷され、商人はキャンセルメールを受け取ります。
 
    - アプリ内の指示（選択、ステージング、ハンドオフ）をすべてカスタマイズします。
 

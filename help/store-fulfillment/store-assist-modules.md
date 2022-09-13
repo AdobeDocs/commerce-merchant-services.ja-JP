@@ -1,15 +1,15 @@
 ---
-title: 「Store Assist Fulfilment Workflows」
-description: 「Store Assist App で使用できるピック、ステージ、ハンドオフ、注文の各モジュールについて説明します。 これらのモジュールは、BOPIS 注文のエンドツーエンドのストアフルフィルメントワークフローを有効にします。 Store Associates は、これらのモジュールを使用して、顧客に対する受け取り注文を管理および配信します。」
+title: Store Assist Fulfilment Workflows
+description: Store Assist App で使用できるピック、ステージ、ハンドオフ、注文の各モジュールについて説明します。 これらのモジュールは、BOPIS 注文のエンドツーエンドのストアフルフィルメントワークフローを有効にします。 Store Associates は、これらのモジュールを使用して、顧客に対する受取注文を管理および配信します。
 role: User
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
-
 
 # Store Assist Fulfilment Workflows
 
@@ -17,7 +17,7 @@ Store Assist アプリは、店舗注文で受け取る、オンライン購入�
 
 - **[選択](#pick-module)** — すべての順序付けされたアイテムとツールを完全に表示し、適切なアイテムと適切な数量が選択されていることを確認します。 店舗担当者は、効率を高めるために、1 つまたは複数の注文を同時に選択できます。
 
-- **[ステージ](#stage-module)** — 顧客が店舗を訪れる際に注文がおこなわれる場所を入力し、Store Associates が注文の引き渡しのために簡単に見つけられるようにします
+- **[ステージ](#stage-module)** — 顧客が店舗に移動する際に注文がおこなわれる場所を入力し、Store Associates が注文の引き渡しのために、顧客を簡単に見つけられるようにします。
 
 - **[ハンドオフ](#hand-off-module)** — 顧客がストアに到着した後にリアルタイムで通知を受け取り、待ち時間と受け渡しの順序をシームレスに最小限に抑えます
 
@@ -65,3 +65,5 @@ Pick モジュールは、顧客が注文したアイテムを検索してスキ
 ## 注文モジュール
 
 「受注」モジュールでは、既存のすべての受注とそのステータスが表示されます。 お客様が注文を確認するために電話をかけると、Store Associates は注文モジュールから番号を検索または検索することで、情報をすばやく見つけることができます。
+
+Store Associates は、Store Assist アプリの注文ページから注文をキャンセルすることもできます。
