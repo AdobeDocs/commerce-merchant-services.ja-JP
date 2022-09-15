@@ -1,13 +1,13 @@
 ---
-title: 「オンボーディングとインストール」
-description: インストール方法 [!DNL Catalog Service]"
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: オンボーディングとインストール
+description: インストール方法を学ぶ [!DNL Catalog Service]
+exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
+source-git-commit: 595d7644374b066b7608748cf09df1c41bf0eaee
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
-
 
 # オンボーディングとインストール
 
@@ -46,19 +46,19 @@ ht-degree: 0%
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
-   }
+    "magento/composer-root-update-plugin": "^2.0.2",
+    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
+    "magento/saas-export": "^101.4.0",
+    "magento/commerce-data-export": "^101.3.1",
+    "magento/commerce-data-export-ee": "^101.3.1",
+    "magento/services-id": "^3.0.1",
+    "magento/services-connector": "1.2.1"
+    }
    ```
 
    <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
 
-1. 依存関係を更新し、拡張機能をインストールします。
+1. 新しい設定をローカルでテストし、依存関係を更新します。
 
    ```bash
    composer update
@@ -66,7 +66,7 @@ ht-degree: 0%
 
    このコマンドは、すべての依存関係を更新します。
 
-1. 変更をコミットしてプッシュします。
+1. 変更をコミットしてプッシュ `composer.json` および `composer.lock`.
 
 ### オンプレミス
 
@@ -110,4 +110,8 @@ ht-degree: 0%
 
 インストール後 [!DNL Catalog Service]を設定する場合、 [Commerce Services コネクタ](../landing/saas.md) API キーを指定し、SaaS データ領域を選択する。
 
-カタログの書き出しが正しく実行されていることを確認するには、 [cron ジョブ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) そして [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行中で、製品フィードインデクサーが「スケジュール別に更新」に設定されている。
+カタログの書き出しが正しく実行されていることを確認するには、次の手順を実行します。
+
+- 確認 [cron ジョブ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) が実行中です。
+- を確認します。 [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行中です。
+- 次を確認します。 `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`、および `Product Variant Feed` インデクサーは次のように設定されます。 `Update by Schedule`.
