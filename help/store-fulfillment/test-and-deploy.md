@@ -4,9 +4,9 @@ description: テスト計画を作成して、店舗達成機能を検証しま�
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ ht-degree: 0%
 <tr>
 <td><strong>新規注文プッシュ、API 同期 — 顧客注文</strong></td>
 <td>顧客が店舗受取注文を送信します。</td>
-<td><ul><li>管理順序ビューで、 <strong>Adobe Commerce管理者ユーザー</strong> 注文同期ステータスがに更新されたことを確認します。 <code>Sent</code></li><li>注文の詳細ログには、メッセージが含まれます <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>管理順序ビューで、 <strong>Adobe Commerce管理者ユーザー</strong> 注文同期ステータスがに更新されたことを確認します。 <code>Sent</code></li><li>注文の詳細ログには、メッセージが含まれます <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>新規注文プッシュ、API 同期 — 管理者が注文を送信</strong></td>
 <td>Adobe Commerce <strong>管理者</strong> 受取注文を送信します。</td>
-<td><ul><li>注文管理ビューで、注文の同期ステータスが次のように更新されます。 <code>Sent</code>.</li><li>注文の詳細ログには、メッセージが含まれます <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>注文管理ビューで、注文の同期ステータスが次のように更新されます。 <code>Sent</code>.</li><li>注文の詳細ログには、メッセージが含まれます <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>新規受注プッシュ、例外キュー<strong></td>
@@ -161,7 +161,7 @@ ht-degree: 0%
 <li>注文返金メールの受け取り： <code>$x amount was refunded</code></li>
 <li>注文ステータスは <code>Processing</code>.</li>
 <li>Adobe Commerceで作成されたクレジットメモ（cron が機能するまでお待ちください）。</li>
-<li>一部の品目が選択されていない場合は、 [!UICONTROL Ready for Pickup] nilpick または refund セクションを含む電子メールが表示されます。 <code>DISPLAY COMMENT HISTORY</code> 表示 <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>一部の品目が選択されていない場合は、 [!UICONTROL Ready for Pickup] nil pick または refund セクションを含む e メールが表示されます。 <code>DISPLAY COMMENT HISTORY</code> 表示 <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> フラグが <code>true</code>.</li>
 </ul>
 </td>
@@ -566,25 +566,25 @@ Adobe Commerceの製品タイプのテストシナリオでは、顧客が様々
 <tr>
 <td>
 <strong>単一注文ピッキング — ハッピーパス、カーブサイドピックアップ</strong></td>
-<td>単数品目と複数数量品目を選択します。 選択を解除し、（ステージングを含む）選択を妨げます。
+<td>単数品目と複数数量品目を選択します。 nil を選択せず、（ステージングを含む）カーブサイドピックアップを行いません。
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>複数注文ピッキング — ハッピーパス、カーブサイドピックアップ</strong></td>
-<td>単一品目と複数品目。 ニックアップなし、（ステージングを含む）カーブサイドピックアップ</td>
+<td>単一品目と複数品目。 nil を選択しない、およびカーブサイドピックアップ（ステージングを使用）</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>単一注文ピッキング — ハッピーパスの店内ピックアップ</strong></td>
-<td>単一品目と複数品目。 受け取りなし、受け取りの格納（ステージングを含む）</td>
+<td>単一品目と複数品目。 nil を選択せず、（ステージングを含む）受け取りを格納します</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>複数注文ピッキング — ハッピーパス、店舗でのピックアップ</strong></td>
-<td>単数品目と複数数量品目を選択します。 選択を解除し、（ステージングを含む）選択を妨げます。</td>
+<td>単数品目と複数数量品目を選択します。 nil を選択せず、（ステージングを含む）カーブサイドピックアップを行いません。</td>
 <td></td>
 </tr>
 <tr>

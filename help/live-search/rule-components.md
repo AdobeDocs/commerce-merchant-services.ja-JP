@@ -1,10 +1,10 @@
 ---
-title: '"ルールコンポーネント"'
+title: "ルールコンポーネント"
 description: «詳細 [!DNL Live Search] ルールのコンポーネントと演算子を使用します。"
 exl-id: 4065aec3-a8d4-4d55-b939-16ad7b0f33ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 要件
 
-シンプルなルールでは、1 つの条件と 1 つのイベントを使用できますが、複雑なルールでは、最大 25 個のイベントをトリガーする 10 個の条件を使用できます。
+単純なルールには 1 つの条件と 1 つのイベントを含めることができますが、複雑なルールには最大 25 個のイベントをトリガーする 10 個の条件を含めることができます。
 ルールには次のものが含まれます。
 
 * 最大 10 個の条件

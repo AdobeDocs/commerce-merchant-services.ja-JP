@@ -1,17 +1,17 @@
 ---
-title: '"[!DNL Quick Checkout] 前提条件"'
+title: "[!DNL Quick Checkout] 前提条件"
 description: 「システムが、 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合」
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # [!DNL Quick Checkout] 前提条件
 
-この [!DNL Quick Checkout] は、Magento Open SourceおよびAdobe Commerceのバージョンと互換性があります `>= 2.4.1-p1`.
+この [!DNL Quick Checkout] 次と互換性がある [!DNL Magento Open Source] およびAdobe Commerceバージョン `>= 2.4.1-p1`.
 
 詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) トピックを参照してください。
 

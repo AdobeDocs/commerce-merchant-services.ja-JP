@@ -2,9 +2,9 @@
 title: インストール [!DNL Payment Services]
 description: Payments Services 拡張機能をインストールします。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 43599d041899251f7716e215284b6eff9312943d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 拡張機能のインストール
 
-次をインストールできます： [!DNL Payment Services] 両方の [!DNL Adobe Commerce] MagentoID ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)) が登録プロセスで提供され、Composer のキーを使用しています。 [!DNL Magento] オープンソースのお客様はオンプレミスの手順を使用します。
+次をインストールできます： [!DNL Payment Services] 両方の [!DNL Adobe Commerce] ご使用のコマースアカウントにリンクされているクラウドインフラストラクチャおよびオンプレミスインスタンス上 [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 登録プロセスで提供されます。 [!DNL Magento Open Source] お客様はオンプレミスの手順を使用します。
 
 Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に `auth.json` ファイル。
 
@@ -57,7 +57,7 @@ Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に 
 
 ### オンプレミスおよびその他の設定
 
-このメソッドは、 [!DNL Payment Services] オンプレミスインスタンスの拡張および [!DNL Magento] オープンソースのお客様。
+このメソッドは、 [!DNL Payment Services] オンプレミスインスタンスの拡張および [!DNL Magento Open Source] 顧客。
 
 1. 拡張機能を取得するには、次のコマンドを実行します。
 
@@ -114,7 +114,7 @@ Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に 
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-コンポーザーのキーが、 [!DNL Payment Services] 登録。
+Composer のキーが `MageID` 次の場合に使用 [!DNL Payment Services] 登録。
 
 どの Composer キーが設定されているかを確認するには：
 
@@ -130,7 +130,7 @@ Could not find a matching version of package magento/payment-services. Check the
    cat /path/to/auth.json
    ```
 
-1. 詳しくは、 [MagentoID に関連付けられているキー](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. 詳しくは、 [コマースアカウントに関連付けられているキー `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### PHP のメモリが不足しています
 

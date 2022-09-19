@@ -2,16 +2,16 @@
 title: '"[!DNL Quick Checkout] Adobe Commerce開発者向け情報»'
 description: '"[!DNL Quick Checkout] 開発者情報」'
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # [!DNL Quick Checkout] 開発者情報
 
-このトピックには、Adobe CommerceとMagento Open Sourceコードを緊密に連携し、 [!DNL Quick Checkout] 拡張子。
+このトピックには、Adobe Commerceおよび [!DNL Magento Open Source] コードを作成し、 [!DNL Quick Checkout] 拡張子。
 
 ## 拡張ポイント
 

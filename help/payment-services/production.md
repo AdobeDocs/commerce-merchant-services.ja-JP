@@ -2,9 +2,9 @@
 title: 有効にする [!DNL Payment Services] 本番用
 description: を有効にしてオンボーディングプロセスを完了します。 [!DNL Payment Services] 実稼動用。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. クリック **[!UICONTROL Enable Payment Services]**.
 
-   このオプションは、まだ設定していない場合は表示されます [!DNL Payment Services] を使用して、1 つ以上のMagentoweb サイトの支払い方法。
+   このオプションは、まだ設定していない場合は表示されます [!DNL Payment Services] を 1 つ以上の web サイトの支払い方法として使用できます。
 
    ホームビューの設定領域に移動し、関連するオプションが展開されます (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) を使用し、 [!DNL Payment Services] オプション [支払方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}。
 

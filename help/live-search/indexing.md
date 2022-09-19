@@ -2,7 +2,7 @@
 title: '"[!DNL Live Search] インデックス作成»'
 description: «学ぶ方法 [!DNL Live Search] 製品属性プロパティのインデックスを作成します。"
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 2835209ad881db388894c5b1da213312436d3550
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -11,7 +11,13 @@ ht-degree: 0%
 
 # インデックス作成
 
-製品属性プロパティ（メタデータ）は、カタログでの属性の使用方法、ストアでの属性の外観と動作、データ転送操作に含まれるデータを決定します。 属性メタデータの範囲は次のとおりです。 `website/store/store view`.
+製品属性プロパティ（メタデータ）によって、次のことが決まります。
+
+* カタログでの属性の使用方法
+* ストア内での外観と動作
+* データ転送操作に含まれるデータ
+
+属性メタデータの範囲は次のとおりです。 `website/store/store view`.
 
 この [!DNL Live Search] API を使用すると、クライアントは [storefront プロパティ](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` に設定 `Yes` ( Adobe Commerce Admin ) 有効にした場合、 `Search Weight` および `Visible in Advanced Search` を属性に設定できます。
 
@@ -61,7 +67,7 @@ ht-degree: 0%
 
 1. 更新された製品は、Adobe Commerceインスタンスからカタログサービスに同期されます。
 1. インデックス作成サービスは、カタログサービスから製品の更新を継続的に探します。 カタログサービスに到着すると、更新された製品のインデックスが作成されます。
-1. 製品のアップデートがで利用可能になるまで、最大 15 分かかる場合があります。 [!DNL Live Search].
+1. 製品のアップデートがで利用できるようになるまで、最大 15 分かかる場合があります。 [!DNL Live Search].
 
 ## クライアント検索
 

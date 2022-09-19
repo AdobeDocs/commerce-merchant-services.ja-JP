@@ -1,10 +1,10 @@
 ---
-title: '"ルール"'
+title: "ルール"
 description: '"[!DNL Live Search] ルールは、ロジックとアクションを組み合わせて、買い物体験を形成します。」'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,4 +19,4 @@ ht-degree: 0%
 * イベント — 条件が満たされたときに実行されるアクション。
 * 詳細 — ルールの名前、およびオプションの時間枠と説明。
 
-複数の条件とアクションを組み合わせたり、特定の期間、ルールをアクティブにするようにスケジュールしたりできます。
+複数の条件とアクションを組み合わせたり、特定の期間に対してルールをアクティブにするようにスケジュールしたりできます。

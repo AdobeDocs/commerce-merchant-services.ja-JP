@@ -4,9 +4,9 @@ description: 店舗受取注文の受取プロセス中に、顧客および店�
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>受け取り用メールコピーメソッドの注文準備ができました</strong></td>
-<td>使用する電子メール「カーボンコピー」の送信方法。</td>
+<td>使用する E メールコピー方法 (CCC)。</td>
 <td>ストア表示</td>
 <td>いいえ</td>
 </tr>
@@ -136,7 +136,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>送信はメールコピーメソッドを取得済みです</strong></td>
-<td>使用する電子メール「カーボンコピー」の送信方法。</td>
+<td>使用する E メールコピー方法 (CCC)。</td>
 <td>ストア表示</td>
 <td>いいえ</td>
 </tr>
@@ -185,7 +185,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>Send Order Delayed Copy メソッド</strong></td>
-<td>使用する電子メール「カーボンコピー」の送信方法。</td>
+<td>使用する E メールコピー方法 (CCC)。</td>
 <td>ストア表示</td>
 <td>いいえ</td>
 </tr>
@@ -236,7 +236,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>注文キャンセル済みコピーメソッドの送信</strong></td>
-<td>使用する電子メール「カーボンコピー」の送信方法。</td>
+<td>使用する E メールコピー方法 (CCC)。</td>
 <td>ストア表示</td>
 <td>いいえ</td>
 </tr>
@@ -292,7 +292,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>注文の一部キャンセルされたコピーメソッドを送信</strong></td>
-<td>使用する電子メール「カーボンコピー」の送信方法。</td>
+<td>使用する E メールコピー方法 (CCC)。</td>
 <td>ストア表示</td>
 <td>いいえ</td>
 </tr>

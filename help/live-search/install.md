@@ -1,10 +1,10 @@
 ---
-title: '"インストール [!DNL Live Search]"'
+title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法 [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ API キーと秘密鍵の生成については、 [Commerce Services コネク�
 
 ### 今後の製品アップデート
 
-最初の同期の後、増分製品の更新がストアフロント検索で使用できるようになるまで、最大 15 分かかる場合があります。 詳しくは、 [インデックス作成 — 製品アップデートのストリーミング](indexing.md).
+最初の同期の後、製品の増分更新がストアフロント検索で使用できるようになるまで、最大 15 分かかる場合があります。 詳しくは、 [インデックス作成 — 製品アップデートのストリーミング](indexing.md).
 
 ## 接続をテストする {#test-connection}
 
