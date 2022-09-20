@@ -2,7 +2,7 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8f7fa990b422e77c1b3c1d801faefac1d0ae8e01
+source-git-commit: 41f42054a495fb815e6dcf0f2ef371bbd2c98701
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -115,3 +115,9 @@ ht-degree: 0%
 - 確認 [cron ジョブ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) が実行中です。
 - を確認します。 [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行中です。
 - 次を確認します。 `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`、および `Product Variant Feed` インデクサーは次のように設定されます。 `Update by Schedule`.
+
+## [!DNL Catalog Service] デモ
+
+詳しくは、このビデオをご覧ください。 [!DNL Catalog Service] インストールとテスト：
+
+>[!VIDEO](https://video.tv.adobe.com/v/3409390?quality=12&learn=on)
