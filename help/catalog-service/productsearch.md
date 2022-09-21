@@ -1,9 +1,9 @@
 ---
 title: productSearch クエリ
 description: 「Adobe Commerce Catalog Service の「productSearch」GraphQL クエリのリファレンスガイド。」
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # productSearch クエリ
 
-Adobe Commerceのカタログサービス `productSearch` クエリでは、LiveSearch を使用して、入力として指定された SKU に関する詳細を返すことができます。 このクエリは [`productSearch` クエリ](https://devdocs.magento.com//live-search/product-search.html)を返す場合、LiveSearch は `productView` オブジェクト。 詳しくは、 [`productSearch` クエリ](https://devdocs.magento.com//live-search/product-search.html) トピックを参照してください。
+Adobe Commerceのカタログサービス `productSearch` クエリでは、ライブ検索を使用して、入力として指定された SKU に関する詳細を返すことができます。 このクエリは [`productSearch` クエリ](https://devdocs.magento.com//live-search/product-search.html)に値を指定しない場合、ライブ検索は `productView` オブジェクト。 詳しくは、 [`productSearch` クエリ](https://devdocs.magento.com//live-search/product-search.html) トピックを参照してください。
 
 ## 構文
 
@@ -32,7 +32,7 @@ productSearch(
 | ヘッダー | 説明 |
 |--- | ---|
 | `Magento-Customer-Group` | ストアフロントクライアントの場合、この値は `dataservices_customer_group` cookie. |
-| `Magento-Environment-Id` | この値は、 **システム** > **Commerce Services コネクタ** > **SaaS 識別子** > **データスペース ID** または、 `bin/magento config:show services_connector/services_id/environment_id` コマンドを使用します。 |
+| `Magento-Environment-Id` | この値は、 `bin/magento config:show services_connector/services_id/environment_id` コマンドを使用します。 詳しくは、 [コマースサービス](https://docs.magento.com/user-guide/configuration/services/saas.html) |
 | `Magento-Store-Code` | アクティブなストア表示に関連付けられたストアに割り当てられたコード。 例： `main_website_store`. |
 | `Magento-Store-View-Code` | アクティブなストア表示に割り当てられたコード。 例： `default`. |
 | `Magento-Website-Code` | アクティブなストア表示に関連付けられた Web サイトに割り当てられたコード。 例： `base`. |
