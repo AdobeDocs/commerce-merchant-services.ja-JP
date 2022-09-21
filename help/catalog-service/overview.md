@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service]"'
-description: '"[!DNL Catalog Service] for Adobe Commerceは、ネイティブのAdobe Commerce GraphQL クエリよりも、製品表示ページと製品リストページのコンテンツをよりすばやく取得する方法を提供します。」'
-source-git-commit: eb2242ac99cfaef4ed75936a1b5cc800cc451c83
+title: '[!DNL Catalog Service]'
+description: '''[!DNL Catalog Service] Adobe Commerceの場合は、ネイティブのAdobe Commerce GraphQL クエリよりも、製品表示ページと製品リストページのコンテンツをよりすばやく取得できます。'
+exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] Adobe Commerce
 
@@ -48,5 +48,3 @@ Adobe Commerceには 2 つの GraphQL システムがあります。 コア Grap
 ## 実装
 
 インストールプロセスでは、 [Commerce Services コネクタ](../landing/saas.md). それが完了したら、次の手順では、システムインテグレーターがストアフロントコードを更新し、 [!DNL Catalog Service] クエリ。 すべて [!DNL Catalog Service] クエリは GraphQL ゲートウェイにルーティングされます。 URL は、オンボーディングプロセス中に提供されます。
-
-[Adobe Commerce Devdocs](https://devdocs.magento.com/catalog-service/index.html) コアと [!DNL Catalog Service] クエリ。 各クエリの参照情報も含まれます。

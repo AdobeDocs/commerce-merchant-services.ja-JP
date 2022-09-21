@@ -3,10 +3,10 @@ user-guide-title: '"[!DNL Catalog Service] ガイド»'
 user-guide-description: このガイドでは、 [!DNL Catalog Service] Adobe Commerce」
 breadcrumb-title: '"[!DNL Catalog Service] ガイド»'
 hide: true
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '30'
+ht-degree: 6%
 
 ---
 
@@ -15,4 +15,7 @@ ht-degree: 0%
 - [ガイドの概要](guide-overview.md)
 - [の概要 [!DNL Catalog Service]](overview.md)
 - [オンボーディングとインストール](installation.md)
+- [製品クエリ](products.md)
+- [productSearch クエリ](productsearch.md)
+- [refineProduct クエリ](refine-product.md)
 - [リリースノート](release-notes.md)
