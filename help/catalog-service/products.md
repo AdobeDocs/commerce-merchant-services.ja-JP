@@ -1,9 +1,9 @@
 ---
 title: 製品クエリ
 description: 「Adobe Commerce Catalog Service の「products」GraphQL クエリのリファレンスガイドです。」
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 製品クエリ
 
-Adobe Commerceのカタログサービス `products` クエリを実行すると、入力として指定された SKU に関する詳細が返されます。 このクエリは [`products` クエリ](https://devdocs.magento.com//guides/v2.4/graphql/queries/products.html) コアAdobe CommerceとMagento Open Sourceで提供される統合環境には、いくつかの違いがあります。
+Adobe Commerceのカタログサービス `products` クエリを実行すると、入力として指定された SKU に関する詳細が返されます。 このクエリは [`products` クエリ](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) コアAdobe CommerceとMagento Open Sourceで提供される統合環境には、いくつかの違いがあります。
 
 カタログサービスクエリでは、1 つ以上の SKU 値を入力として必要とします。 このクエリは主に、次のタイプのコンテンツをレンダリングするための情報を取得するように設計されています。
 

@@ -1,9 +1,9 @@
 ---
 title: productSearch クエリ
 description: 「Adobe Commerce Catalog Service の「productSearch」GraphQL クエリのリファレンスガイド。」
-source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # productSearch クエリ
 
-Adobe Commerceのカタログサービス `productSearch` クエリでは、ライブ検索を使用して、入力として指定された SKU に関する詳細を返すことができます。 このクエリは [`productSearch` クエリ](https://devdocs.magento.com//live-search/product-search.html)に値を指定しない場合、ライブ検索は `productView` オブジェクト。 詳しくは、 [`productSearch` クエリ](https://devdocs.magento.com//live-search/product-search.html) トピックを参照してください。
+Adobe Commerceのカタログサービス `productSearch` クエリでは、ライブ検索を使用して、入力として指定された SKU に関する詳細を返すことができます。 このクエリは [`productSearch` クエリ](https://devdocs.magento.com/live-search/product-search.html)に値を指定しない場合、ライブ検索は `productView` オブジェクト。 詳しくは、 [`productSearch` クエリ](https://devdocs.magento.com/live-search/product-search.html) トピックを参照してください。
 
 ## 構文
 
