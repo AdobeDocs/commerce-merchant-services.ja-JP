@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] Adobe Commerceの場合は、ネイティブのAdobe Commerce GraphQL クエリよりも、製品表示ページと製品リストページのコンテンツをよりすばやく取得できます。'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: dfe3d9b8738ea68257831c445f1f0b2c8c8b6859
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Adobe Commerceには 2 つの GraphQL システムがあります。 コア Grap
 
 >[!NOTE]
 >
->ゲートウェイは、 [!DNL Live Search] および [!DNL Product Recommendations]. このリリースでは、 [!DNL Catalog Service] 両方の製品の有効なライセンスキーがある場合、同じエンドポイントからのライブ検索クエリ。 ただし、2 つの製品からのクエリは、現在、応答データを共有していません。
+>ゲートウェイは、Product Recommendationsとの将来の統合のためのものです。 このリリースでは、 [!DNL Catalog Service] および [!DNL Live Search] 両方の製品の有効なライセンスキーがある場合は、同じエンドポイントからの federated クエリ。
 
 コアとサービスの GraphQL システムは、互いに直接通信しません。 各システムには異なる URL からアクセスし、呼び出しには異なるヘッダー情報が必要です。 2 つの GraphQL システムは、一緒に使用するように設計されています。 この [!DNL Catalog Service] GraphQL システムは、製品ストアフロントをより迅速に体験できるように、コアシステムを強化します。
 
