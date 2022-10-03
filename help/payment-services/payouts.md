@@ -4,7 +4,7 @@ description: 支払額、処理済数量および財務調整の取引レベル�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗の注文件数と支払い数を明確に把握できるよう、包括的なレポートを提供します。
 
-![財務レポートビュー](assets/reports-view-new.png)
+![財務レポートビュー](assets/report-view.png)
 
 2 つのペイアウトレポート表示を使用して、すべてのペイアウトに関する詳細情報を確認できます。
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** を使用すると、時間の経過に伴うクレジットとデビットおよび移動平均のデータ視覚化チャートを確認できます。
 
-![管理者でのデータの視覚化の配分](assets/payouts-data.png)
+![管理者でのデータの視覚化の配分](assets/payouts-report.png)
 
 クリック **[!UICONTROL View Report]** 詳細な表に移動するには [ペイアウトレポート表示](#payouts-report-view).
 
