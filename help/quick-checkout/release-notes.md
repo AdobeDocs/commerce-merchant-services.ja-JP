@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] リリースノート'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '644'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,24 @@ ht-degree: 1%
 詳しくは、 [今後のリリース](https://devdocs.magento.com/release/) を参照してください。
 
 詳しくは、 [可用性](https://devdocs.magento.com/release/availability.html) 製品の互換性について詳しくは、開発者向けドキュメントを参照してください。
+
+## 管理パネルのアップデート
+
+これらのリリースノートでは、管理パネルの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
+
++++管理パネルのアップデート
+
+_2022 年 10 月 6 日_
+
+![新規](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] 管理パネルの統合 [Gainsight を活用した機能ツアー](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+
+![新規](../assets/new.svg)<!-- Issue BOLT-377 --> この **レポート** 」タブをクリックします。 [!DNL Quick Checkout] 管理パネルには、近日中に利用可能になる予定の図とレポート情報の概要が含まれています。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-377 --> この **レポート** 」タブをクリックします。 [!DNL Quick Checkout] 管理パネルには、近日中に利用可能になる図およびレポート情報のフィルター日付範囲が表示されます。
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) フッターに react アプリのバージョンが表示されるようになりました。
+
++++
 
 ## v1.2.0
 
