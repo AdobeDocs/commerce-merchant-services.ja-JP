@@ -2,10 +2,10 @@
 title: リリースノート
 description: Adobe CommerceのAdobe Experience Platformコネクタの最新のリリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
+source-git-commit: b41428a7e86b09bee5273828e58c5db6601e7a09
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 6%
+source-wordcount: '114'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +17,14 @@ ht-degree: 6%
 * ![修正点](../assets/fix.svg)  — 修正点および改善点
 * ![バグ](../assets/bug.svg)  — 既知の問題
 
-## Experience Platformコネクタ 1.0.0
+## 2.0.0
+
+* ![新規](../assets/new.svg)  — 新しい [storefront イベント](events.md): `openCart` および `removeFromCart`
+* ![新規](../assets/new.svg)  — のサポートを追加しました [AEM storefront](overview.md#aem-support)
+* ![新規](../assets/new.svg)  — 次の場合に独自の AEP Web SDK を指定する機能が追加されました。 [接続](connect-data.md) Adobe CommerceインスタンスからExperience Platform
+* ![修正点](../assets/fix.svg)  — データストリーム ID をストレビューではなく Web サイトにスコープする必要があるように、データストリームスコープの要件を更新しました
+
+## 1.0.0
 
 * ![新規](../assets/new.svg)  — 一般リリース (GA)
 

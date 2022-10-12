@@ -2,9 +2,9 @@
 title: ガイドの概要
 description: Experience Platformコネクタを使用してAdobe CommerceデータをAdobe Experience Platformに統合する方法について説明します。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,10 @@ Experience Platformコネクタを使用するには、次が必要です。
 ### PWA Studioサポート
 
 詳しくは、 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) ドキュメントを参照してください。Experience PlatformストアフロントでのPWA Studioコネクタの使用方法に関する情報です。
+
+### AEMサポート {#aem-support}
+
+詳しくは、 [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) AEM-Product Connector を使用して、Experience Platformレンダリングの製品ページからExperience Platformに storefront イベントデータを送信する方法を説明するドキュメントです。
 
 このガイドに記載されていない情報や質問がある場合は、次のリソースを使用してください。
 

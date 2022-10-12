@@ -1,10 +1,10 @@
 ---
 title: イベント
-description: 各イベントが取り込むデータと、完全なスキーマ定義の表示について説明します。
+description: 各イベントが取り込むデータを説明します。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 589d22f488572411b6632ac37d7bc5b752f72e2d
+source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1977'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,19 @@ ht-degree: 0%
 
 次に、Commerce Connector 拡張機能をインストールする際に使用できる CommerceExperience Platformを示します。 これらのイベントで収集されたデータは、Adobe Experience Platform Edge に送信されます。 また、 [カスタムイベント](custom-events.md) 標準で提供されていない追加データを収集する場合。
 
-以下のイベントで収集されるデータに加えて、 [追加データ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) Adobe Experience Platform Web SDK によって提供されます。
+以下のイベントで収集されるデータに加えて、 [その他のデータ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) Adobe Experience Platform Web SDK によって提供されます。
 
 >[!NOTE]
 >
->すべてのイベントに `personID` フィールド。人物の一意の ID です。
+>すべてのストアフロントイベントには、 `personID` フィールド。人物の一意の ID です。
 
 ## addToCart
 
-製品が買い物かごに追加されたとき、または買い物かご内の製品の数量が増加したときにトリガーされます。 [フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+製品が買い物かごに追加されたとき、または買い物かご内の製品の数量が増加したときにトリガーされます。
+
+### XDM イベント名
+
+`commerce.productListAdds`
 
 ### タイプ
 
@@ -34,10 +38,71 @@ ht-degree: 0%
 | フィールド | 説明 |
 |---|---|
 | `productListAdds` | 製品が買い物かごに追加されたかどうかを示します。 値： `1` は、製品が追加されたことを示します。 |
+| `productListItems` | 買い物かごに追加された製品の配列 |
 | `SKU` | 在庫管理単位。 商品の一意の ID。 |
 | `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | すべての割引と税金が適用された後の、この注文の合計 |
-| `quantity` | 顧客が製品の必要と示した数量 |
+| `priceTotal` | 製品品目の合計価格 |
+| `quantity` | 買い物かごに追加された製品単位数 |
+| `discountAmount` | 適用された割引額を示します |
+| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
+| `productImageUrl` | 製品のメイン画像 URL |
+| `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
+| `cartID` | 顧客の買い物かごを識別する一意の ID |
+
+## openCart
+
+新しい買い物かごが作成されたとき（製品が空の買い物かごに追加されたとき）にトリガーされます。
+
+### XDM イベント名
+
+`commerce.productListOpens`
+
+### タイプ
+
+ストアフロント
+
+### 収集されたデータ
+
+次の表に、このイベントで収集されるデータを示します。
+
+| フィールド | 説明 |
+|---|---|
+| `productListOpens` | 買い物かごが作成されたかどうかを示します。 値： `1` は、買い物かごが作成されたことを示します。 |
+| `productListItems` | 買い物かごに追加された製品の配列 |
+| `SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `name` | 製品の表示名または人間が読み取り可能な名前 |
+| `priceTotal` | 製品品目の合計価格 |
+| `quantity` | 買い物かごに追加された製品単位数 |
+| `discountAmount` | 適用された割引額を示します |
+| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
+| `productImageUrl` | 製品のメイン画像 URL |
+| `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
+| `cartID` | 顧客の買い物かごを識別する一意の ID |
+
+## removeFromCart
+
+製品が削除されるたびに、または買い物かご内の製品の数量が減らされるたびにトリガーされます。
+
+### XDM イベント名
+
+`commerce.productListRemovals`
+
+### タイプ
+
+ストアフロント
+
+### 収集されたデータ
+
+次の表に、このイベントで収集されるデータを示します。
+
+| フィールド | 説明 |
+|---|---|
+| `productListRemovals` | 製品が買い物かごから削除されたかどうかを示します。 値： `1` 製品が買い物かごから削除されたことを示します。 |
+| `productListItems` | 買い物かごから削除された製品の配列 |
+| `SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `name` | 製品の表示名または人間が読み取り可能な名前 |
+| `priceTotal` | 製品品目の合計価格 |
+| `quantity` | 買い物かごから削除された製品単位の数 |
 | `discountAmount` | 適用された割引額を示します |
 | `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
 | `productImageUrl` | 製品のメイン画像 URL |
@@ -46,7 +111,11 @@ ht-degree: 0%
 
 ## shoppingCartView
 
-買い物かごのページが読み込まれたときにトリガーされます。 [フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+買い物かごのページが読み込まれたときにトリガーされます。
+
+### XDM イベント名
+
+`commerce.productListViews`
 
 ### タイプ
 
@@ -59,11 +128,11 @@ ht-degree: 0%
 | フィールド | 説明 |
 |---|---|
 | `productListViews` | 製品リストが表示されたかどうかを示します |
-| `productListItems` | 買い物かごに追加された製品の配列 |
+| `productListItems` | 買い物かごに含まれる製品の配列 |
 | `SKU` | 在庫管理単位。 商品の一意の ID。 |
 | `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | すべての割引と税金が適用された後の、この注文の合計 |
-| `quantity` | 顧客が製品の必要と示した数量 |
+| `priceTotal` | 製品品目の合計価格 |
+| `quantity` | 買い物かご内の製品単位数 |
 | `discountAmount` | 適用された割引額を示します |
 | `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
 | `productImageUrl` | 製品のメイン画像 URL |
@@ -72,7 +141,11 @@ ht-degree: 0%
 
 ## pageView
 
-ページが読み込まれたときにトリガーされます。 [フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+ページが読み込まれたときにトリガーされます。
+
+### XDM イベント名
+
+`web.webpagedetails.pageViews`
 
 ### タイプ
 
@@ -88,7 +161,11 @@ ht-degree: 0%
 
 ## productPageView
 
-製品ページが読み込まれたときにトリガーされます。 [フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+製品ページが読み込まれたときにトリガーされます。
+
+### XDM イベント名
+
+`commerce.productViews`
 
 ### タイプ
 
@@ -101,10 +178,10 @@ ht-degree: 0%
 | フィールド | 説明 |
 |---|---|
 | `productViews` | 製品が表示されたかどうかを示します |
-| `productListItems` | 買い物かごに追加された製品の配列 |
+| `productListItems` | 買い物かごに含まれる製品の配列 |
 | `SKU` | 在庫管理単位。 商品の一意の ID。 |
 | `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | すべての割引と税金が適用された後の、この注文の合計 |
+| `priceTotal` | 製品品目の合計価格 |
 | `discountAmount` | 適用された割引額を示します |
 | `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
 | `productImageUrl` | 製品のメイン画像 URL |
@@ -112,7 +189,11 @@ ht-degree: 0%
 
 ## startCheckout
 
-買い物客がチェックアウトボタンをクリックしたときにトリガーされます。 [フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+買い物客がチェックアウトボタンをクリックしたときにトリガーされます。
+
+### XDM イベント名
+
+`commerce.checkouts`
 
 ### タイプ
 
@@ -125,11 +206,11 @@ ht-degree: 0%
 | フィールド | 説明 |
 |---|---|
 | `checkouts` | チェックアウトプロセス中にアクションが発生したかどうかを示します |
-| `productListItems` | 買い物かごに追加された製品の配列 |
+| `productListItems` | 買い物かごに含まれる製品の配列 |
 | `SKU` | 在庫管理単位。 商品の一意の ID。 |
 | `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | すべての割引と税金が適用された後の、この注文の合計 |
-| `quantity` | 顧客が製品の必要と示した数量 |
+| `priceTotal` | 製品品目の合計価格 |
+| `quantity` | 買い物かご内の製品単位数 |
 | `discountAmount` | 適用された割引額を示します |
 | `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
 | `productImageUrl` | 製品のメイン画像 URL |
@@ -138,7 +219,11 @@ ht-degree: 0%
 
 ## completeCheckout
 
-買い物客が注文したときにトリガーされます。 [フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+買い物客が注文したときにトリガーされます。
+
+### XDM イベント名
+
+`commerce.order`
 
 ### タイプ
 
@@ -163,11 +248,11 @@ ht-degree: 0%
 | `shippingMethod` | 顧客が選択した送料方法（標準配送、即時配送、店頭受け取りなど） |
 | `shippingAmount` | 買い物かご内の品目の合計送料 |
 | `promotionID` | プロモーションの一意の識別子（存在する場合） |
-| `productListItems` | 買い物かごに追加された製品の配列 |
+| `productListItems` | 買い物かごに含まれる製品の配列 |
 | `SKU` | 在庫管理単位。 商品の一意の ID。 |
 | `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | すべての割引と税金が適用された後の、この注文の合計 |
-| `quantity` | 顧客が製品の必要と示した数量 |
+| `priceTotal` | 製品品目の合計価格 |
+| `quantity` | 買い物かご内の製品単位数 |
 | `discountAmount` | 適用された割引額を示します |
 | `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 注文の合計に使用する通貨コード。 |
 | `productImageUrl` | 製品のメイン画像 URL |
@@ -175,11 +260,15 @@ ht-degree: 0%
 
 ## signIn
 
-買い物客がログインしようとしたときにトリガーされます。 [フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+買い物客がログインしようとしたときにトリガーされます。
 
 >[!NOTE]
 >
 > このイベントは、特定のアクションが試行されるとトリガーされます。 アクションが成功したことは示されません。
+
+### XDM イベント名
+
+`userAccount.login`
 
 ### タイプ
 
@@ -201,11 +290,15 @@ ht-degree: 0%
 
 ## signOut
 
-買い物客がサインアウトを試みたときにトリガーされます。 [フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+買い物客がサインアウトを試みたときにトリガーされます。
 
 >[!NOTE]
 >
 > このイベントは、特定のアクションが試行されるとトリガーされます。 アクションが成功したことは示されません。
+
+### XDM イベント名
+
+`userAccount.logout`
 
 ### タイプ
 
@@ -223,11 +316,15 @@ ht-degree: 0%
 
 ## createAccount
 
-買い物客がアカウントを作成しようとしたときにトリガーされます。 [フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+買い物客がアカウントを作成しようとしたときにトリガーされます。
 
 >[!NOTE]
 >
 > このイベントは、特定のアクションが試行されるとトリガーされます。 アクションが成功したことは示されません。
+
+### XDM イベント名
+
+`userAccount.createProfile`
 
 ### タイプ
 
@@ -250,11 +347,15 @@ ht-degree: 0%
 
 ## editAccount
 
-買い物客がアカウントを編集しようとしたときにトリガーされます。 [フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+買い物客がアカウントを編集しようとしたときにトリガーされます。
 
 >[!NOTE]
 >
 > このイベントは、特定のアクションが試行されるとトリガーされます。 アクションが成功したことは示されません。
+
+### XDM イベント名
+
+`userAccount.updateProfile`
 
 ### タイプ
 
@@ -293,11 +394,13 @@ ht-degree: 0%
 - 前のページに移動します。
 - 別のページに移動
 
-[フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
-
 >[!NOTE]
 >
 >B2B モジュールがインストールされているAdobe Commerce Enterprise Edition では、検索イベントはサポートされていません。
+
+### XDM イベント名
+
+`searchRequest`
 
 ### タイプ
 
@@ -323,11 +426,13 @@ ht-degree: 0%
 
 「入力時に検索」ポップオーバーまたは検索結果ページの結果がライブ検索で返された場合にトリガーされます。
 
-[フルスキーマ](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
-
 >[!NOTE]
 >
 >B2B モジュールがインストールされているAdobe Commerce Enterprise Edition では、検索イベントはサポートされていません。
+
+### XDM イベント名
+
+`searchResponse`
 
 ### タイプ
 
@@ -342,4 +447,4 @@ ht-degree: 0%
 | `searchResponse` | 検索応答を受信したかどうかを示します |
 | `suggestions` | カタログに存在し、検索クエリに類似する製品とカテゴリの名前を含む文字列の配列。 |
 | `numberOfResults` | 返された製品の数 |
-| `productListItems` | 買い物かごに追加された製品の配列。 次を含む `SKU`（在庫管理単位）及び `name` 製品の名前（表示名または人間が読み取り可能な名前）。 |
+| `productListItems` | 買い物かごに含まれる製品の配列。 次を含む `SKU`（在庫管理単位）及び `name` 製品の名前（表示名または人間が読み取り可能な名前）。 |
