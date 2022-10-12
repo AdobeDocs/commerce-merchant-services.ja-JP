@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] 家に
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 785528d5940af28fa8bf6873d636b40d8e7bc05f
+source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,9 @@ ht-degree: 0%
 
 カスタマイズ可能 [!DNL Payment Services] の設定が役に立ちます。 [!DNL Payment Services] ホーム。
 
-を設定するには、以下を実行します。 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] クリック **[!UICONTROL Settings]**. これらの設定オプションは、 _[!UICONTROL Payment mode]_～に入る_[!UICONTROL Settings]_ > _[!UICONTROL General]_.
+を設定するには、以下を実行します。 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] クリック **[!UICONTROL Settings]**. これらの設定オプションは、 _[!UICONTROL Payment mode]_フィールド[_&#x200B;一般&#x200B;_設定オプション](#general-configuration-options).
 
->[!IMPORTANT]
->
-> マルチストアまたはレガシー設定については、 [管理での設定](configure-admin.md) トピック。
+マルチストアまたはレガシー設定については、 [管理での設定](configure-admin.md).
 
 ## 一般設定の指定
 
@@ -106,7 +104,7 @@ Web サイトで支払いサービスが有効になったので、支払い機�
 
    変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
 
-1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
+1. [キャッシュをフラッシュ](#flush-the-cache).
 
 #### 設定オプション
 
@@ -141,13 +139,13 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
       > Apple Pay を使用するには [は、Apple Developer アカウントを持っている必要があります](test-validate.md#test-in-sandbox-environment) （偽のクレジットカードと請求情報を含む）をテストします。 サンドボックスでApple Pay を使用する準備が整ったら、 *または* 実稼動モード（任意の完了後） [テストと検証](test-validate.md)を使用する場合は、営業担当者に連絡して、ライブストアで有効にしてもらってください。
 
       支払いボタンや PayPal Pay Later メッセージの表示/非表示を切り替えると、設定ページの下部にその設定の視覚的なプレビューが表示されます。
-
+git
 1. デバッグモードを有効にするには、 **[!UICONTROL Debug Mode]** セレクター。
 1. クリック **[!UICONTROL Save]**.
 
    変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
 
-1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
+1. [キャッシュをフラッシュ](#flush-the-cache).
 
 #### 設定オプション
 
@@ -187,7 +185,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 
    変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
 
-1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
+1. [キャッシュをフラッシュ](#flush-the-cache).
 
 次の項目を設定できます。 [!DNL PayPal Smart Buttons] スタイル設定 [（管理者の従来の設定）](configure-admin.md#configure-paypal-smart-buttons) またはここに [!DNL Payment Services Home]. 詳しくは、 [PayPal のボタンスタイルガイド](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) を参照してください。
 
@@ -203,6 +201,17 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 | [!UICONTROL Height] | ストア表示 | 支払いボタンの高さを定義します。 デフォルト値：なし |
 | [!UICONTROL Label] | ストア表示 | 支払いボタンに表示されるラベルを定義します。 オプション： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
+## キャッシュをフラッシュ
+
+設定を _設定_&#x200B;例えば、Apple Pay、Venmo、PayPal PayLater の各ボタンを切り替える場合は、ストアに最新の設定が表示されるように、手動でキャッシュをフラッシュします。
+
+1. の _管理者_ サイドバー、移動 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. クリック **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
+
+キャッシュ管理テーブルのキャッシュタイプに `INVALIDATED` のステータスになっている場合は、ストアにその項目の最新の設定が表示されない可能性があります。 キャッシュをフラッシュしてストアを更新し、最新の設定を表示します。
+
+ストアで正しい設定が表示されていることを確認するには、定期的に [キャッシュをフラッシュ](https://docs.magento.com/user-guide/system/cache-management.html).
+
 ## 複数の PayPal アカウントを使用
 
 支払いサービスでは、 **1 つ** ウェブサイトレベルのマーチャントアカウント。 例えば、複数の国 ( 異なる [通貨](https://docs.magento.com/user-guide/stores/currency.html)) またはAdobe Commerceをビジネスの一部に使用したいが、使用しない場合 *すべて*&#x200B;複数の PayPal アカウントを使用するようにマーチャントアカウントを設定することができます。
@@ -210,3 +219,4 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 詳しくは、 [サイト、ストア、および表示範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) web サイト、ストア、ストア表示の階層に関する詳細。
 
 セールス担当者が新しい [範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) お客様のマーチャントアカウントに対して、PayPal を使用して追加サイトをオンボーディングし、設定した PayPal ボタンがサイトに表示されるようにします。 Web サイトに複数の PayPal アカウントを使用する方法については、セールス担当者にお問い合わせください。
+

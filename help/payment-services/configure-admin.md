@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] ストア設定の
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,6 @@ ht-degree: 0%
 カスタマイズ可能 [!DNL Payment Services] を必要に応じて管理者の設定オプションを使用できます。
 
 設定時に [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 管理者では、これらの設定は、 _[!UICONTROL Method]_～の分野_[!UICONTROL General Configuration]_. 設定フィールドで行った変更は、 _[!UICONTROL Method]_「選択」(selection) — メソッドを切り替えても、選択はリセットされません。
-
-詳しくは、 [[!UICONTROL General Configuration] セクション](#general-configuration) を参照してください。
 
 ## 一般設定
 
@@ -38,6 +36,7 @@ ht-degree: 0%
    >お使いの _[!UICONTROL Sandbox Merchant ID]_および_[!UICONTROL Production Merchant ID]_ は自動生成され、サンドボックスや実稼動のオンボーディングが完了すると、該当するフィールドに存在します。 これらの ID を削除または変更しないでください。
 
 1. クリック **[!UICONTROL Save Config]** 変更を保存します。
+1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
 ### 設定オプション
 
@@ -64,6 +63,7 @@ ht-degree: 0%
 1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)を選択します。 **[!UICONTROL Authorize]** または **許可してキャプチャ**.
 1. の場合 **デバッグモード**&#x200B;選択 `Yes` デバッグモードを有効にする ( または `No` 無効にする )。
 1. クリック **[!UICONTROL Save Config]** 変更を保存します。
+1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
 #### 設定オプション
 
@@ -92,6 +92,7 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 1. を無効にするには、以下を実行します。 [後で支払うメッセージ](payments-options.md#pay-later-button) （必要に応じて）、 `No` 対象 **[!UICONTROL Display Pay Later Message]**.
 1. デバッグモードを有効にするには、 `Yes` の **[!UICONTROL Debug Mode]** (`No` 無効にします )。
 1. 変更を保存するには、 **[!UICONTROL Save Config]** .
+1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
 ### 設定オプション
 
@@ -119,3 +120,7 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 | [!UICONTROL Height] | ストア表示 | PayPal のスマートボタンの高さを定義します。 デフォルト値：なし |
 | [!UICONTROL Label] | ストア表示 | PayPal のスマートボタンに表示されるラベルを定義します。 オプション： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 | [!UICONTROL Tagline] | ストア表示 | タグラインを有効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+
+## キャッシュをフラッシュ
+
+設定を変更した場合、 [キャッシュを手動でフラッシュする](/help/payment-services/settings.md#flush-the-cache) ストアに最新の設定が表示されるようにします。
