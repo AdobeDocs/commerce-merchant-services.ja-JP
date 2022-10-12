@@ -2,22 +2,40 @@
 title: '[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
 
 # [!DNL Catalog Service] リリースノート
 
-{{catalog-service-beta}}
-
 これらのリリースノートでは、の最新バージョンについて説明します [!DNL Catalog Service] およびを含めます。
 
 * ![新規](../assets/new.svg)  — 新機能
 * ![修正点](../assets/fix.svg)  — 修正点および改善点
 * ![バグ](../assets/bug.svg)  — 既知の問題
+
+## V1.0 リリース
+
+リリース日：2022-10-04 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：一般公開
+
+![新規](../assets/new.svg)  — バンドルされた製品とグループ化された製品をサポートするようになりました。
+![新規](../assets/new.svg) - B2B 表示の上書きを追加しました。 製品が検索可能になり、特定の顧客グループ用に買い物かごに追加できるようになりました。
+![修正点](../assets/fix.svg)  — サービスの安定性が向上し、パフォーマンスが向上しました。
+
+### 既知の制限事項
+
+以下の機能は、まだサポートされていません。
+
+* 価格帯
+* バリアントがカタログから削除された場合、更新は受け取りません
+* 動的属性ペイロードの最大サイズは 9 MB 未満です
+* バンドル製品の固定価格
+* グループ化された製品の合計価格
+* 仮想、ダウンロード可能、ギフトカードの製品タイプのサポート
+* 最小広告価格 (MAP)
 
 ## 0.3 リリース — ベータ+
 

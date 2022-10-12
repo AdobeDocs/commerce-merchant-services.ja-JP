@@ -2,7 +2,7 @@
 title: '''[!DNL Catalog Service] ガイドの概要`'
 description: '''[!DNL Catalog Service for Adobe Commerce] では、ネイティブのAdobe Commerce GraphQL クエリよりも速く、製品表示ページと製品リストページのコンテンツを取得できます。」'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
@@ -10,8 +10,6 @@ ht-degree: 0%
 ---
 
 # [!DNL Catalog Service] ガイドの概要
-
-{{catalog-service-beta}}
 
 このガイドは、Adobeの管理者を対象としています [!DNL Commerce]. 以下に関する一般情報が含まれます。 [!DNL Catalog Service]（オンボーディングとインストールを含む） コアに関する基本的な理解を前提としています。 [!DNL Commerce] 設定と機能に関する情報です。
 
