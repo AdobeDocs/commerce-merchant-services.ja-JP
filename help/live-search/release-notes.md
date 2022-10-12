@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] リリースノート"
 description: 「 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 974c77fb427f85058bb2c59d8e3818cb7c148e04
+source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '931'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,8 @@ ht-degree: 1%
 
 * ![バグ](../assets/bug.svg)  — 提案は、顧客グループに表示できない製品をソースとしています。
 * ![バグ](../assets/bug.svg) - 「デフォルトの共有カタログ」に追加しない場合、製品は表示されません。
+* ![バグ](../assets/bug.svg)  — 製品が属性を使用して設定され、応答で「いいえ」バケットが返された場合でも、検索アダプターはブール製品属性の「いいえ」バケットをレンダリングしません。
+* 一部の製品およびクエリでは英語以外の結果が返される場合がありますが、複数言語のクエリは現在サポートされていません。
 * PWA Studioのライブ検索を使用する B2B は、PWA Studioがサポートを追加するまで使用できません。
 * 製品の上書きおよび製品属性フィードには、管理者の実行が必要な同期の問題が発生する場合があります `bin/magento indexer:reset` および `bin/magento indexer:reindex` をクリックして正しく同期し直してください。
 * カタログ権限/共有カタログ/B2B 機能を有効または無効にした場合、 `catalog_data_exporter_product_overrides` インデクサーが更新されず、誤って `valid`. 用途 `bin/magento saas:resync --feed=productOverrides` をクリックして問題を修正します。
