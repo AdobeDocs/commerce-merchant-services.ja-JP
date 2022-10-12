@@ -4,7 +4,7 @@ description: 注文の支払ステータスレポートを使用して、注文�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗の注文件数と支払い数を明確に把握できるよう、包括的なレポートを提供します。
 
-![財務レポートビュー](assets/report-view.png)
+![財務レポートビュー](assets/reports-justpayouts.png)
 
 注文の支払ステータスレポートは、特定の注文がキャッシュ・プロセス・フローの注文内のどこにあるかを容易に把握するのに役立ちます。 このレポートでは、注文の支払い状況をすばやく確認し、潜在的な問題を特定できます。
 
