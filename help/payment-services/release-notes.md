@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] リリースノート"
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,12 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v1.4.1
+
+_2022 年 10 月 15 日_
+
+![新規](../assets/new.svg)<!-- Issue PAY-3766 --> 顧客の支払い方法が拒否された場合、表示されるエラーメッセージの内容がよりわかりやすくなります。 お客様に、支払い情報を再入力して、もう一度やり直すか、別の支払い方法を試すか、拒否された取引について銀行に問い合わせるよう勧めます。
 
 ## v1.4.0
 
