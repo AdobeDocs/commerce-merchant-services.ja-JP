@@ -2,7 +2,7 @@
 title: '[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 1%
@@ -13,17 +13,17 @@ ht-degree: 1%
 
 これらのリリースノートでは、の最新バージョンについて説明します [!DNL Catalog Service] およびを含めます。
 
-* ![新規](../assets/new.svg)  — 新機能
-* ![修正点](../assets/fix.svg)  — 修正点および改善点
-* ![バグ](../assets/bug.svg)  — 既知の問題
+* ![新規](../assets/new.svg) 新機能
+* ![修正点](../assets/fix.svg) 修正点および改善点
+* ![バグ](../assets/bug.svg) 既知の問題
 
 ## V1.0 リリース
 
 リリース日：2022-10-04 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：一般公開
 
-![新規](../assets/new.svg)  — バンドルされた製品とグループ化された製品をサポートするようになりました。
-![新規](../assets/new.svg) - B2B 表示の上書きを追加しました。 製品が検索可能になり、特定の顧客グループ用に買い物かごに追加できるようになりました。
-![修正点](../assets/fix.svg)  — サービスの安定性が向上し、パフォーマンスが向上しました。
+![新規](../assets/new.svg) バンドルされた製品とグループ化された製品をサポートするようになりました。
+![新規](../assets/new.svg) B2B 表示の上書きを追加しました。 製品が検索可能になり、特定の顧客グループ用に買い物かごに追加できるようになりました。
+![修正点](../assets/fix.svg) サービスの安定性が向上し、パフォーマンスが向上しました。
 
 ### 既知の制限事項
 
@@ -41,10 +41,10 @@ ht-degree: 1%
 
 リリース日：2022-09-12 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：ベータ版
 
-![新規](../assets/new.svg)  — バリエーションをサポートする画像：製品画像は、選択したオプションに基づいて返されます
-![新規](../assets/new.svg) ・物価支援の役割：特定の顧客グループのメンバーのみが製品の価格を表示できるようにする
-![修正点](../assets/fix.svg) ・サービスの安定性及び性能の向上
-![新規](../assets/new.svg)  — 製品がカタログから削除された場合は、アップデートを受け取ります
+![新規](../assets/new.svg) バリアント用の画像でサポートされる内容：製品画像は、選択したオプションに基づいて返されます
+![新規](../assets/new.svg) 価格支援の役割：特定の顧客グループのメンバーのみが製品の価格を表示できるようにする
+![修正点](../assets/fix.svg) サービスの安定性とパフォーマンスの向上
+![新規](../assets/new.svg) 製品がカタログから削除されると、更新を受け取ります
 
 ### 既知の制限事項
 
@@ -59,7 +59,8 @@ ht-degree: 1%
 
 リリース日：2022-08-09 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：ベータ版
 
-* ![新規](../assets/new.svg) - `products` および `refineProduct` クエリは次のデータを返します。
+![新規](../assets/new.svg) この `products` および `refineProduct` クエリは次のデータを返します。
+
 * 定義済み（システム）の製品属性。
 * 動的な製品属性を選択し、役割でフィルターします（製品の表示ページ/製品リストページ）。
 * 製品オプション。
