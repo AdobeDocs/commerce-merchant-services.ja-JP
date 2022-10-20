@@ -2,9 +2,9 @@
 title: Adobe Experience Platformタグを使用したコマースデータの収集
 description: Adobe Experience Platformタグを使用してコマースデータを収集する方法を説明します。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - [&#39;searchRequestSent&#39;](#searchrequestsent)
 - [&#39;searchResponseReceived&#39;](#searchresponsereceived)
 - [&#39;addToCart&#39;](#addtocart)
+- [&#39;openCart&#39;](#opencart)
 - [&#39;viewCart&#39;](#viewcart)
 - [&#39;removeFromCart&#39;](#removefromcart)
 - [&#39;initiateCheckout&#39;](#initiatecheckout)
@@ -783,6 +784,39 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **アクションタイプ**: `Send event`
 - **タイプ**: `commerce.productListAdds`
 - **XDM データ**: `%add to cart%`
+
+### openCart {#opencart}
+
+新しい買い物かごが作成されたときにトリガーされます。これは、製品が空の買い物かごに追加されたときに発生します。
+
+#### データ要素
+
+次のデータ要素を作成します。
+
+1. 買い物かごを開く：
+
+   - **名前**: `open cart`
+   - **拡張**: `Adobe Experience Platform Web SDK`
+   - **データ要素タイプ**: `XDM object`
+   - **フィールドグループ**: `commerce` > `productListOpens` > `value`
+   - **値**: **値** = `1`
+   - **フィールドグループ**: `commerce` > `cart` > `cartID`
+   - **買い物かご ID**: **値** = `%cart id%`
+   - **フィールドグループ**: `productListItems`. の場合 `productListItems`、複数の項目を事前に計算できます。 選択 **productListItems** > **アレイ全体を提供**.
+
+#### ルール 
+
+- **名前**: `open cart`
+- **拡張**: `Adobe Client Data Layer`
+- **イベントタイプ**: `Data Pushed`
+- **特定のイベント**: `open-cart`
+
+##### アクション
+
+- **拡張**: `Adobe Experience Platform Web SDK`
+- **アクションタイプ**: `Send event`
+- **タイプ**: `commerce.productListOpens`
+- **XDM データ**: `%open cart%`
 
 ### viewCart {#viewcart}
 

@@ -2,7 +2,7 @@
 title: リリースノート
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## Adobe Commerce 2.3.x および 2.4.x
 
-## magento/product-recommendations の 4.0.0
+### magento/product-recommendations の 4.0.0
 
 * ![新規](../assets/new.svg)  — 追加済み [対応指標](create.md) を使用すると、各レコメンデーションタイプのトレーニングの進行状況を視覚化できます。
 * ![新規](../assets/new.svg)  — これはメジャーバージョンリリースです。 必ず [編集](install-configure.md#update) 根 `composer.json` ファイルを作成します。 また、このリリースでは、Product Recommendationsのインストールと設定時に、2 つの API キーを指定する必要があります。 [実稼働キーとサンドボックスキー](../landing/saas.md).
@@ -36,12 +36,12 @@ ht-degree: 0%
 
 * この `websiteCode` 値にアンダースコア (_) が含まれる場合、誤って値が返されます。
 
-## magento/product-recommendations の 3.3.7
+### magento/product-recommendations の 3.3.7
 
 * ![新規](../assets/new.svg) - PHP 8.1 のサポートを追加
 * ![新規](../assets/new.svg)  — 画像のサイズ変更が改善され、参照表示テンプレートで異なるサイズの画像が一貫して処理されるようになりました。
 
-## magento/product-recommendations の 3.3.6
+### magento/product-recommendations の 3.3.6
 
 * ![新規](../assets/new.svg)  — 最適化済み [!DNL Product Recommendations] 依存関係を明示的にリストしてメタパッケージ化
 

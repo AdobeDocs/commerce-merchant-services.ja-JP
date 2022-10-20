@@ -2,9 +2,9 @@
 title: イベント
 description: 各イベントが取り込むデータを説明します。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1987'
 ht-degree: 0%
 
 ---
@@ -447,4 +447,7 @@ ht-degree: 0%
 | `searchResponse` | 検索応答を受信したかどうかを示します |
 | `suggestions` | カタログに存在し、検索クエリに類似する製品とカテゴリの名前を含む文字列の配列。 |
 | `numberOfResults` | 返された製品の数 |
-| `productListItems` | 買い物かごに含まれる製品の配列。 次を含む `SKU`（在庫管理単位）及び `name` 製品の名前（表示名または人間が読み取り可能な名前）。 |
+| `productListItems` | 買い物かごに含まれる製品の配列。 |
+| `SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `name` | 製品の表示名または人間が読み取り可能な名前 |
+| `productImageUrl` | 製品のメイン画像 URL |
