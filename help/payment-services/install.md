@@ -2,9 +2,9 @@
 title: インストール [!DNL Payment Services]
 description: Payments Services 拡張機能をインストールします。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に 
 1. 依存関係を更新し、拡張機能をインストールします。
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   この `composer update` コマンドはすべての依存関係を更新します。 すべての依存関係を同時に更新しない場合は、代わりに次のコマンドを使用します。 `composer require magento/payment-services`.
+   以下を使用： `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
 
 1. 変更をコミットしてプッシュします。
 
@@ -68,10 +68,10 @@ Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に 
 1. 依存関係を更新し、拡張機能をインストールします。
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   この `composer update` コマンドはすべての依存関係を更新します。 すべての依存関係を同時に更新しない場合は、代わりに次のコマンドを使用します。 `composer require magento/payment-services`.
+   以下を使用： `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
 
 1. インスタンスをアップグレードします。
 
@@ -95,10 +95,10 @@ Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に 
 1. パッケージの最新バージョンを取得するには：
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   この `composer update` コマンドはすべての依存関係を更新します。 すべての依存関係を同時に更新しない場合は、代わりに次のコマンドを使用します。 `composer update magento/payment-services`.
+   以下を使用： `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
 
 1. 変更をコミットしてプッシュします。
 
@@ -114,7 +114,7 @@ Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に 
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Composer のキーが `MageID` 次の場合に使用 [!DNL Payment Services] 登録。
+Composer のキーが有効で、他のコンポーザーパッケージへのアクセス権があることをMagentoします。
 
 どの Composer キーが設定されているかを確認するには：
 
