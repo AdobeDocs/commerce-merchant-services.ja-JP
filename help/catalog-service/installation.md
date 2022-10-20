@@ -2,18 +2,14 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 41f42054a495fb815e6dcf0f2ef371bbd2c98701
+source-git-commit: 683b599e183f1269cdd6c3772d1b33c43cf1156e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
 # オンボーディングとインストール
-
-パートナーやお客様は、 [!DNL Catalog Service] (2022 年 8 月 9 日にリリースされたAdobe Commerceベータ版 ) 参加するには、以下を読み、当社に同意する必要があります。 [Adobe Commerce Beta プログラムの用語](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
-
-契約に署名したら、 [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 公開Slackチャネル。 アドビは、 [!DNL Catalog Service] ベータ版。
 
 ## 前提条件
 
@@ -55,8 +51,6 @@ ht-degree: 0%
     "magento/services-connector": "1.2.1"
     }
    ```
-
-   <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
 
 1. 新しい設定をローカルでテストし、依存関係を更新します。
 
