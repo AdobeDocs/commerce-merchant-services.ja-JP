@@ -4,8 +4,8 @@ user-guide-description: Adobe Commerce および Magento Open Source に拡張�
 title: Adobe Commerce 向けサービス
 source-git-commit: d95d692376310aa785e8a397a62bece7d7f1164e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '95'
+ht-degree: 30%
 
 ---
 
