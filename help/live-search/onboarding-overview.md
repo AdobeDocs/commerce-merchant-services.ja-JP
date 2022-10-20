@@ -2,9 +2,9 @@
 title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,20 @@ ht-degree: 0%
 * Adobe Commerceデータベースの製品のインデックスのみを作成します
 * CMS ページのインデックスを作成しない
 
-### シノニム
-
-* [!DNL Live Search] 1 回につき 200 個まで同義語を管理できます `Data Space ID`.
-
 ### クエリ
 
 * [!DNL Live Search] では、カテゴリツリーの完全な分類にアクセスできず、一部の階層的ナビゲーション検索シナリオがその範囲を超えています。
 * [!DNL Live Search] は、クエリに一意の GraphQL エンドポイントを使用して、インテリジェントなファセット設定や、ユーザータイプでの検索などの機能をサポートします。 ただし、 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)の場合は、いくつかの違いがあり、一部のフィールドは現時点で完全に互換性がない可能性があります。
+
+### ルール
+
+* データスペース ID あたりのルールの最大数は 50 です。
+* ルールあたりの条件の最大数は 10 です。
+* ルールあたりのイベントの最大数は 25 です。
+
+### シノニム
+
+* [!DNL Live Search] 1 回につき 200 個まで同義語を管理できます `Data Space ID`.
 
 ### PWAベータリリース
 
