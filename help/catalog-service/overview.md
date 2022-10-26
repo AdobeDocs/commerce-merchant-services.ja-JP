@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] Adobe Commerceの場合は、ネイティブのAdobe Commerce GraphQL クエリよりも、製品表示ページと製品リストページのコンテンツをよりすばやく取得できます。'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
+source-git-commit: 7ab545b8e3d9a795be7ff43246e102b366ad94bd
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ Adobe Commerceには 2 つの GraphQL システムがあります。 コア Grap
 
 コア GraphQL システムでは、PWAが Commerce アプリケーションにリクエストを送信し、各リクエストを受信して処理し、場合によっては複数のサブシステムを介してリクエストを送信した後、ストアフロントに応答を返します。 このラウンドトリップは、ページ読み込み時間が遅くなり、コンバージョン率が低下する可能性があります。
 
-[!DNL Catalog Service] は別の GraphQL ゲートウェイにクエリを送信します。 サービスは、製品の詳細と関連情報（製品の属性、バリアント、価格、カテゴリなど）を含む別のデータベースにアクセスします。 サービスは、インデックス化を通じて、データベースをAdobe Commerceと同期させます。
+[!DNL Catalog Service] は、フェデレーテッド GraphQL ゲートウェイサービスです。 サービスは、製品の詳細と関連情報（製品の属性、バリアント、価格、カテゴリなど）を含む別のデータベースにアクセスします。 サービスは、インデックス化を通じて、データベースをAdobe Commerceと同期させます。
 このサービスはアプリケーションとの直接通信をバイパスするので、リクエストと応答サイクルの待ち時間を短縮できます。
 
 >[!NOTE]
 >
->ゲートウェイは、Product Recommendationsとの将来の統合のためのものです。 このリリースでは、 [!DNL Catalog Service] および [!DNL Live Search] 両方の製品の有効なライセンスキーがある場合は、同じエンドポイントからの federated クエリ。
+>ゲートウェイは、Product Recommendationsとの将来の統合のためのものです。 このリリースでは、 [!DNL Catalog Service Federated GraphQL] そして [!DNL Live Search] 両方の製品の有効なライセンスキーがある場合は、同じエンドポイントからの federated クエリ。
 
 コアとサービスの GraphQL システムは、互いに直接通信しません。 各システムには異なる URL からアクセスし、呼び出しには異なるヘッダー情報が必要です。 2 つの GraphQL システムは、一緒に使用するように設計されています。 この [!DNL Catalog Service] GraphQL システムは、製品ストアフロントをより迅速に体験できるように、コアシステムを強化します。
 
