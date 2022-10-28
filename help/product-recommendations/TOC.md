@@ -2,10 +2,10 @@
 user-guide-title: '"[!DNL Product Recommendations] ガイド»'
 user-guide-description: このガイドでは、 [!DNL Product Recommendations] Adobe Commerceから
 breadcrumb-title: '"[!DNL Product Recommendations] ガイド»'
-source-git-commit: 100bd28a68991cda2db3a327d3c3916517c33366
+source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 4%
+source-wordcount: '51'
+ht-degree: 3%
 
 ---
 
@@ -30,3 +30,8 @@ ht-degree: 4%
    - [レコメンデーションタイプ](type.md)
    - [フィルター](filters.md)
    - [配置とラベル](placement.md)
+- [!DNL Product Recommendations] 開発者 {#developer}
+   - [概要](development-overview.md)
+   - [データを収集](events.md)
+   - [編集](customize.md)
+   - [Cookie 制限の処理](setting-cookie.md)
