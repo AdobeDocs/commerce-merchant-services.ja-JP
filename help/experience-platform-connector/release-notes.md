@@ -2,7 +2,7 @@
 title: リリースノート
 description: Adobe CommerceのAdobe Experience Platformコネクタの最新のリリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 3%
@@ -27,12 +27,14 @@ Experience Platformコネクタで使用される拡張機能に関する機能�
 
 これらのリリースノートでは、Experience Platformコネクタで使用される拡張機能に関する機能変更および修正点について説明します。
 
-+++ホストされたサービスの更新
++++サポートされるサービスの更新
 
 _2022 年 10 月 13 日_
 
 * ![新規](../assets/new.svg) - 2 つ追加 [storefront イベント](events.md): `openCart` および `removeFromCart` をAdobe Commerce Storefront Events SDK およびコレクターに追加しました。
 * ![新規](../assets/new.svg)  — のサポートを追加しました [AEM storefront](overview.md#aem-support)
+
++++
 
 ## 2.0.0
 
