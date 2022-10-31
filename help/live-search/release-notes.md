@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] リリースノート"
 description: 「 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
+source-wordcount: '1114'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,22 @@ ht-degree: 1%
 * ![新規](../assets/new.svg)  — 新機能
 * ![修正点](../assets/fix.svg)  — 修正点および改善点
 * ![バグ](../assets/bug.svg)  — 既知の問題
+
+## [!DNL Live Search] 2.0.4
+
+* Adobe Commerce(EE) との互換性：2.4.x
+* Adobe Commerce for Cloud(ECE) との互換性：2.4.x
+* 安定性：安定
+
+* ![新規](../assets/new.svg)  — ライブ検索で、管理の「在庫切れの製品を表示」設定によるフィルタリングがサポートされるようになりました。 「在庫切れの製品を表示」が false に設定されている場合、 `inStock = true` がフィルターに追加されます。
+* ![修正点](../assets/fix.svg)  — パフォーマンスを向上させるために、ライブ検索ポップアップから「候補」ブロックが削除されました。 機能を置き換える場合、データは GraphQL 経由で渡されます。
+* ![修正点](../assets/fix.svg) - `categories` および `categoryPath` 置き換えられた `categoryIds` カテゴリのフィルタリング用。 詳しくは、 [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) トピック。
+* ![修正点](../assets/fix.svg)  — 以前は、B2B 会社に関連付けられているユーザーが検索をおこなうと、誤った顧客グループコードを受け取っていました。 ライブ検索で正しい値が返されるようになりました。
+* ![修正点](../assets/fix.svg)  — 以前は、存在しない語句を検索する場合、ライブ検索はエラーを返していました。 そのバグは修正されました。
+
+これらの機能にアクセスするには、マーチャントは Live Search 拡張機能バージョン 2.0.4 以降をアップグレードする必要があります。
+
+実稼動環境にプッシュする前に、アップグレードおよびテストをおこなうことをお勧めします。 テスト環境の結果を確認した後、オフピーク時に実稼動環境のアップグレードを検討します。
 
 ## [!DNL Live Search] 2.0.3
 
