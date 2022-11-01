@@ -2,9 +2,9 @@
 title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法 [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -251,7 +251,7 @@ composer update magento/live-search --with-dependencies
 |--- |--- |
 | `module-live-search` | マーチャントがファセット設定、シノニム、クエリルールなどの検索設定を設定でき、読み取り専用の GraphQL プレイグラウンドにアクセスして、 *管理者*. |
 | `module-live-search-adapter` | ストアフロントからにリクエストをルーティングします [!DNL Live Search] 結果がストアフロントに表示されます。 <br /> — カテゴリ参照 — ストアフロントからリクエストをルーティングします。 [上部ナビゲーション](https://docs.magento.com/user-guide/catalog/navigation-top.html) を検索サービスに追加します。<br /> — グローバル検索 — リクエストを [クイック検索](https://docs.magento.com/user-guide/catalog/search-quick.html) 店頭の右上にある箱 [!DNL Live Search] サービス。 |
-| `module-live-search-storefront-popover` | 「入力に応じて検索」ポップオーバーは、標準のクイック検索に代わり、動的な製品の提案と上位の検索結果のサムネールを返します。 |
+| `module-live-search-storefront-popover` | 「入力に応じて検索」ポップオーバーは、標準のクイック検索に代わり、上位の検索結果のデータとサムネールを返します。 |
 
 ## [!DNL Live Search] 依存 {#dependencies}
 
