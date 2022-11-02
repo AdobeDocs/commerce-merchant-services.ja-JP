@@ -2,7 +2,7 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -99,7 +99,9 @@ Gainsight が有効になっていない場合は、オンボーディング手�
 
 1. 一意の API を指定した後で資格情報を検証し、 [!DNL Publishable keys].
 
-![クイックチェックアウト](assets/quick-checkout-main-view.png)
+![クイックチェックアウト](assets/quick-checkout-main-view-react.png)
+
+詳しくは、 [設定](../quick-checkout/settings-quick-checkout.md) の設定オプションの詳細については、トピックを参照してください。 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合
 
 >[!CAUTION]
 >
