@@ -2,10 +2,10 @@
 title: '[!DNL Quick Checkout] リリースノート'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: dd9131059030f687dfff44b379dc0e8ddbb9f32f
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 1%
+source-wordcount: '888'
+ht-degree: 0%
 
 ---
 
@@ -27,17 +27,39 @@ ht-degree: 1%
 
 +++管理パネルのアップデート
 
+_2022 年 11 月 3 日_
+
+![新規](../assets/new.svg)<!-- Issue BOLT-293 --> さて、 [レポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 」タブをクリックします。 [!DNL Quick Checkout] 管理パネルには、ストアのチェックアウトエクスペリエンス統計のグラフとレポート情報が表示されます。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-422 --> この [_概要_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) 「レポート」トピックセクションの「 」セクションには、ストアのチェックアウトパフォーマンスに関する詳細情報が表示されます。これには、平均チェックアウト時間、チェックアウト中に作成された新しいアカウント、チェックアウトの中断などが含まれます。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-423 --> この [_トレンド_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-trends) 「レポート」タブの「 」セクションには、チェックアウト時に作成されたアカウントタイプおよび新しいアカウント別にフィルタリングしたチェックアウトエクスペリエンスのトレンドが表示されます。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-439 --> この **レポート** タブ表示 [デフォルトのフィルタープリセット](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#filter-data) を使用して、特定のデータ範囲を表示できます。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-433 --> これで、 _データがありません_ リクエストがデータを返さない場合のグラフに関する警告
+
+![新規](../assets/new.svg)<!-- Issue BOLT-473 --> 次の機能を使用してユーザーエクスペリエンスを改善： [!DNL Quick Checkout] 管理パネルには、 [チェックアウトトラッキング](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) Adobe Commerceがレポート情報を Bolt と共有できるようにする設定。
+
 _2022 年 10 月 6 日_
 
-![新規](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] 管理パネルの統合 [Gainsight を活用した機能ツアー](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+![新規](../assets/new.svg)<!-- Issue BOLT-379 --> さて、新しい商人が [!DNL Quick Checkout] 初めての管理パネル [Gainsight を活用した機能ツアー](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) が表示されます。
 
-![新規](../assets/new.svg)<!-- Issue BOLT-377 --> この **レポート** 」タブをクリックします。 [!DNL Quick Checkout] 管理パネルには、近日中に利用可能になる予定の図とレポート情報の概要が含まれています。
+![新規](../assets/new.svg)<!-- Issue BOLT-377 --> この **レポート** 」タブをクリックします。 [!DNL Quick Checkout] 管理パネルにグラフとレポート分析が表示されます。
 
-![新規](../assets/new.svg)<!-- Issue BOLT-377 --> この **レポート** 」タブをクリックします。 [!DNL Quick Checkout] 管理パネルには、近日中に利用可能になる図およびレポート情報のフィルター日付範囲が表示されます。
+![新規](../assets/new.svg)<!-- Issue BOLT-377 --> この **レポート** 」タブをクリックします。 [!DNL Quick Checkout] 管理パネルには、グラフおよびレポート分析用の日付範囲およびフィルタープリセットが表示されます。
 
-![修正された問題](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) フッターに react アプリのバージョンが表示されるようになりました。
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-369 --> さて、 [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) フッターにアプリのバージョンを表示します。
 
 +++
+
+## v1.3.0
+
+_2022 年 11 月 3 日_
+
+![新規](../assets/new.svg)<!-- Issue BOLT-293 --> さて [!DNL Quick Checkout] には、 [チェックアウトトラッキング](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) Adobe Commerceがレポート情報を Bolt と共有できるようにする設定。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-461 --> これで、 [!DNL Quick Checkout] 次の場合は管理パネル [チェックアウトトラッキング](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 設定が無効です。
 
 ## v1.2.0
 
@@ -51,7 +73,7 @@ _2022 年 9 月 9 日_
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] 管理パネルに、次のような特定のセクションを含むページヘッダーが追加されました。 **概要**, **レポート**、および **設定**.
 
-![新規](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] 管理パネルにより、Gainsight を利用した機能ツアーを提供するようこそウィジェットが追加されます。
+![新規](../assets/new.svg)<!-- Issue BOLT-379 --> 新しい商人が [!DNL Quick Checkout] 機能ツアーを提供するようこそウィジェットが初めて表示されるときの管理パネル。
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [管理パネルビュー](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) を組み込む **設定** API と公開可能なキーが [設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 表示
 
