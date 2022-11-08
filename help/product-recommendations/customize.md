@@ -1,9 +1,10 @@
 ---
 title: カスタマイズ
 description: 製品のレコメンデーションをカスタマイズする方法を説明します。
-source-git-commit: 478c5bf7d7830d971c576ce50ff0bf3ffd4fe9e5
+exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
+source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -110,7 +111,7 @@ ht-degree: 0%
 
 例えば、店舗で一部のオーガニック製品を販売している場合、それらの製品に対してカスタム属性を設定し、 `Organic = Yes`. ストアフロントでこの属性値にアクセスして、これらの製品がRecommendationsに表示されたときに特別な視覚的処理を行うことができるようにする必要がある場合があります。 同様に、これらのカスタム製品属性値にアクセスすると、サイトのプレゼンテーションレイヤーで製品にバッジを付けたり、カスタムロジックを駆動したりできます。
 
-![バッジを追加](assets/unit.png)
+![バッジを追加](assets/unit-custom.png)
 
 ページでレコメンデーション単位をレンダリングする際にカスタム製品属性が使用可能であることを確認するには、 `Used in Product Listing` プロパティを `Yes` 内 [製品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) ページを管理者に表示します。
 
