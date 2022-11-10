@@ -2,10 +2,10 @@
 title: リリースノート
 description: Adobe CommerceのAdobe Experience Platformコネクタの最新のリリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
+source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,6 +35,12 @@ _2022 年 10 月 13 日_
 * ![新規](../assets/new.svg)  — のサポートを追加しました [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.0.1
+
+_2022 年 11 月 11 日_
+
+* ![修正された問題](../assets/fix.svg) - Adobe Experience Platformコンテキストは、Storefront イベントコレクターと Storefront イベント SDK が正常に読み込まれた後にのみ設定されるようになりました。
 
 ## 2.0.0
 
