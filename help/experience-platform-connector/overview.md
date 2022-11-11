@@ -2,9 +2,9 @@
 title: ガイドの概要
 description: Experience Platformコネクタを使用してAdobe CommerceデータをAdobe Experience Platformに統合する方法について説明します。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: a316b92f75cb227d0c58af07482f9d37568af7ca
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -50,5 +50,5 @@ Experience Platformコネクタを使用するには、次が必要です。
 
 このガイドに記載されていない情報や質問がある場合は、次のリソースを使用してください。
 
-- [ヘルプセンター](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
-- [サポートチケット](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} — 追加のヘルプを受け取るには、チケットを送信します。
+- [ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target=&quot;_blank&quot;}
+- [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target=&quot;_blank&quot;} — 追加のヘルプを受け取るには、チケットを送信します。
