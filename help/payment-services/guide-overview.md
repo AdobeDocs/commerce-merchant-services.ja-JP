@@ -4,9 +4,9 @@ description: に関する包括的な情報 [!DNL Payment Services] 対象 [!DNL
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 834faafdc35280908dfd468b3527b9f6cbe5e024
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -40,5 +40,5 @@ ht-degree: 0%
 
 ![ヘルプリソース](assets/help-resources.png)
 
-* [ヘルプセンター](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}— [!DNL Payment Services] — 関連のトラブルシューティング記事。
-* [サポートチケット](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} — 追加のヘルプを受け取るには、チケットを送信します。
+* [ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=en)— [!DNL Payment Services]ナレッジベース内の関連するトラブルシューティング記事。
+* [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) — 追加のヘルプを受け取るには、チケットを送信します。
