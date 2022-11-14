@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] リリースノート'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: dd9131059030f687dfff44b379dc0e8ddbb9f32f
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -115,4 +115,4 @@ _2022 年 8 月 10 日_
 
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-375 --> のユーザーエクスペリエンスの改善 [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) を使用すると、必要なパラメーターがすべて指定された場合に設定を保存できます。
 
-![既知の問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 共通 [トラブルシューティング](https://support.magento.com/hc/en-us/articles/6909450342541) インストール中の問題 [!DNL Quick Checkout].
+![既知の問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 共通 [トラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) インストール中の問題 [!DNL Quick Checkout].

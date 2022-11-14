@@ -2,7 +2,7 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -142,6 +142,6 @@ Adobe Commerceの標準チェックアウトオプションについて詳しく
 
 オンボーディングプロセスは、 [!DNL Express Checkout] 機能。
 
-を通じてAdobe Commerceサポートに問い合わせる [Adobe Commerce Help Center](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) 何か助けが必要な場合は
+を通じてAdobe Commerceサポートに問い合わせる [Adobe Commerce Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) 何か助けが必要な場合は
 
 詳しくは、 [テストと検証](../quick-checkout/testing.md) トピックを参照してください。

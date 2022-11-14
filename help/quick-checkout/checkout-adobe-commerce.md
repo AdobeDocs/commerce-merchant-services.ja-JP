@@ -2,9 +2,9 @@
 title: "Adobe Commerceユーザーのチェックアウトフロー"
 description: 「 [!DNL Quick Checkout] Adobe Commerceユーザーのフロー。」
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 買い物客がチェックアウト前にAdobe Commerceにログインしている場合、 [!DNL Bolt] OTP ポップアップはチェックアウト時には表示されません。
 
-既存のAdobe Commerceユーザーとして注文する際に問題が発生した場合は、 [クイックチェックアウトに関する問題のトラブルシューティング](https://support.magento.com/hc/en-us/articles/6909450342541) 記事をAdobe Commerce Help Center で参照してください。
+既存のAdobe Commerceユーザーとして注文する際に問題が発生した場合は、 [クイックチェックアウトに関する問題のトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 記事をAdobe Commerce Help Center で参照してください。
 
 ## 新規 [!DNL Bolt] アカウント
 
