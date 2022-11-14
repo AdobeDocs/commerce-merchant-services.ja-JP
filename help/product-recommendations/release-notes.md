@@ -2,9 +2,9 @@
 title: リリースノート
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 リリースノートには、以下の更新が含まれています [!DNL Product Recommendations] モジュール：
 
-* 2021 年 3 月現在 [!DNL Product Recommendations] は、 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) ストアフロント
 * [!DNL Product Recommendations] メタパッケージ： `magento/product-recommendations`
 * でのページビルダーのサポート [!DNL Product Recommendations] （オプション）モジュール： `magento/module-page-builder-product-recommendations`
 * の視覚的類似性レコメンデーションタイプのサポート [!DNL Product Recommendations] （オプション）モジュール： `magento/module-visual-product-recommendations`
@@ -26,6 +25,10 @@ ht-degree: 0%
 開発者向けドキュメントを参照してください。 [製品の互換性の詳細](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x および 2.4.x
+
+### magento/product-recommendations の 4.0.1
+
+* ![修正点](../assets/fix.svg)  — 以前は、表示通貨がデフォルト以外の通貨に切り替えられると、製品Recommendationsにエラーが表示されていました。 通貨の切り替えが正しく機能するようになりました。
 
 ### magento/product-recommendations の 4.0.0
 
