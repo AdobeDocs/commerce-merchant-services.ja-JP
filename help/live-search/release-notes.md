@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] リリースノート"
 description: 「 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
+source-git-commit: 87b60e28e45466bf4271953c6704a53e6d43d73a
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 0%
+source-wordcount: '1166'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,18 @@ ht-degree: 0%
 * ![新規](../assets/new.svg)  — 新機能
 * ![修正点](../assets/fix.svg)  — 修正点および改善点
 * ![バグ](../assets/bug.svg)  — 既知の問題
+
+## [!DNL Live Search] 2.0.5
+
+* Adobe Commerce(EE) との互換性：2.4.x
+* Adobe Commerce for Cloud(ECE) との互換性：2.4.x
+* 安定性：安定
+
+* ![修正点](../assets/fix.svg)  — ネットワークの問題が原因で SDK リソースを使用できない場合、ライブ検索でエラーが発生していました。 このバグを修正しました。
+
+これらの機能にアクセスするには、マーチャントは Live Search 拡張機能バージョン 2.0.5 以降をアップグレードする必要があります。
+
+実稼動環境にプッシュする前に、アップグレードおよびテストすることをお勧めします。 テスト環境の結果を確認した後、オフピーク時に実稼動環境のアップグレードを検討します。
 
 ## [!DNL Live Search] 2.0.4
 
@@ -30,8 +42,6 @@ ht-degree: 0%
 * ![修正点](../assets/fix.svg)  — 以前は、存在しない語句を検索する場合、ライブ検索はエラーを返していました。 そのバグは修正されました。
 
 これらの機能にアクセスするには、マーチャントは Live Search 拡張機能バージョン 2.0.4 以降をアップグレードする必要があります。
-
-実稼動環境にプッシュする前に、アップグレードおよびテストをおこなうことをお勧めします。 テスト環境の結果を確認した後、オフピーク時に実稼動環境のアップグレードを検討します。
 
 ## [!DNL Live Search] 2.0.3
 
