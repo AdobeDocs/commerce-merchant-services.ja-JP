@@ -2,9 +2,9 @@
 title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
+source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ ht-degree: 0%
 
 ### インデックス作成
 
-* ストア表示あたり最大 300 個の製品属性のインデックス
-* Adobe Commerceデータベースの製品のインデックスのみを作成します
-* CMS ページのインデックスを作成しない
+* ストア表示あたり最大 300 個の製品属性のインデックスを作成します。
+* Adobe Commerceデータベースの製品のインデックスのみを作成します。
+* CMS ページはインデックス化されません。
 
 ### クエリ
 
@@ -45,13 +45,13 @@ ht-degree: 0%
 
 ### ルール
 
-* データスペース ID あたりのルールの最大数は 50 です。
+* ストアビューあたりのルールの最大数は 50 です。
 * ルールあたりの条件の最大数は 10 です。
 * ルールあたりのイベントの最大数は 25 です。
 
 ### シノニム
 
-* [!DNL Live Search] 1 回につき 200 個まで同義語を管理できます `Data Space ID`.
+* [!DNL Live Search] は、1 つのストアビューにつき最大 200 個のシノニムを管理できます。
 
 ### PWAベータリリース
 
