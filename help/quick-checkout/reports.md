@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Quick Checkout] レポート»'
-description: '"[!DNL Quick Checkout] は、包括的なレポート情報を提供します。」'
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '[!DNL Quick Checkout] レポート'
+description: '[!DNL Quick Checkout] は、包括的なレポート情報を提供します。'
+exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
-
 
 # レポート
 
@@ -28,9 +28,9 @@ ht-degree: 0%
 | グラフ | 説明 |
 |---|---|
 | [!UICONTROL Checkout abandonment] | 購入を完了せずにチェックアウトプロセスを終了した訪問者の割合。 |
-| [!UICONTROL Checkout abandonment breakdown] | チェックアウトの中断を訪問者のタイプで割ります。 オプション： [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | チェックアウトの中断を訪問者のタイプで割ります。 ツールチップは、ボルトとゲストの間のパーセンテージの差を示します。 オプション： [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | 訪問者がチェックアウトプロセスを完了するまでの平均時間。 |
-| [!UICONTROL Average checkout time breakdown] | 平均チェックアウト時間を訪問者のタイプで割った値です。 オプション： [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Average checkout time breakdown] | 平均チェックアウト時間を訪問者のタイプで割った値です。 ツールチップは、ボルトとゲストの間のパーセンテージの差を示します。 オプション： [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | 注文を訪問者のタイプで割った値です。 オプション： [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
 ## トレンドレポート
@@ -55,4 +55,3 @@ ht-degree: 0%
 |---|---|
 | [!UICONTROL Preset] | 特定の範囲のデータを表示するために使用できるデフォルトのプリセットを表示するドロップダウン。 デフォルトでは：過去 30 日間 |
 | [!UICONTROL Date range] | 選択した日付に応じて特定の範囲のデータを選択できるドロップダウン。 |
-
