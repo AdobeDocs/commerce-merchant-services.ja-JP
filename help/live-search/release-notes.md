@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] リリースノート"
 description: 「 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 87b60e28e45466bf4271953c6704a53e6d43d73a
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 * ![修正点](../assets/fix.svg)  — 修正点および改善点
 * ![バグ](../assets/bug.svg)  — 既知の問題
 
-## [!DNL Live Search] 2.0.5
+## [!DNL Live Search] 2.0.5 {#205}
 
 * Adobe Commerce(EE) との互換性：2.4.x
 * Adobe Commerce for Cloud(ECE) との互換性：2.4.x
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 実稼動環境にプッシュする前に、アップグレードおよびテストすることをお勧めします。 テスト環境の結果を確認した後、オフピーク時に実稼動環境のアップグレードを検討します。
 
-## [!DNL Live Search] 2.0.4
+## [!DNL Live Search] 2.0.4 {#204}
 
 * Adobe Commerce(EE) との互換性：2.4.x
 * Adobe Commerce for Cloud(ECE) との互換性：2.4.x
@@ -43,7 +43,9 @@ ht-degree: 1%
 
 これらの機能にアクセスするには、マーチャントは Live Search 拡張機能バージョン 2.0.4 以降をアップグレードする必要があります。
 
-## [!DNL Live Search] 2.0.3
+実稼動環境にプッシュする前に、アップグレードおよびテストをおこなうことをお勧めします。 テスト環境の結果を確認した後、オフピーク時に実稼動環境のアップグレードを検討します。
+
+## [!DNL Live Search] 2.0.3 {#203}
 
 * Adobe Commerce(EE) との互換性：2.4.x
 * Adobe Commerce for Cloud(ECE) との互換性：2.4.x
@@ -69,7 +71,7 @@ ht-degree: 1%
 * 製品の上書きおよび製品属性フィードには、管理者の実行が必要な同期の問題が発生する場合があります `bin/magento indexer:reset` および `bin/magento indexer:reindex` をクリックして正しく同期し直してください。
 * カタログ権限/共有カタログ/B2B 機能を有効または無効にした場合、 `catalog_data_exporter_product_overrides` インデクサーが更新されず、誤って `valid`. 用途 `bin/magento saas:resync --feed=productOverrides` をクリックして問題を修正します。
 
-## [!DNL Live Search] 2.0
+## [!DNL Live Search] 2.0 {#20}
 
 * Adobe Commerce(EE) との互換性：2.4.x
 * Adobe Commerce for Cloud(ECE) との互換性：2.4.x
@@ -86,7 +88,7 @@ ht-degree: 1%
 * ![バグ](../assets/bug.svg)  — 次の製品属性は、ではサポートされていません [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) PWAのベータリリースに関連して使用する場合： `description`, `name`, `short_description`
 * ![バグ](../assets/bug.svg)  — 用PWAのベータリリース [!DNL Live Search] はをサポートしていません [イベント処理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
-## [!DNL Live Search] 1.3.1
+## [!DNL Live Search] 1.3.1 {#131}
 
 * Adobe Commerce(EE) との互換性：2.4.x
 * Adobe Commerce for Cloud(ECE) との互換性：2.4.x
@@ -96,7 +98,7 @@ ht-degree: 1%
 * ![修正点](../assets/fix.svg)  — 次の場合にエラーが発生する問題を修正しました。 [通貨記号](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) が使用可能です。
 * ![修正点](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 今は [特別価格](https://docs.magento.com/user-guide/catalog/product-price-special.html) （最終価格の最小値）を指定できます。
 
-## [!DNL Live Search] 1.3.0
+## [!DNL Live Search] 1.3.0 {#130}
 
 * Adobe Commerce(EE) との互換性：2.4.x
 * Adobe Commerce for Cloud(ECE) との互換性：2.4.x
@@ -109,7 +111,7 @@ ht-degree: 1%
 * ![バグ](../assets/bug.svg)  — 検索アダプタのパッチは、重複する製品を処理します。
 * ![バグ](../assets/bug.svg) - [!DNL Live Search] サポート [単一ソース](https://docs.magento.com/user-guide/catalog/inventory-sources.html) （物理）複数の（仮想）在庫場所 [在庫](https://docs.magento.com/user-guide/catalog/inventory-stock.html). 現時点では、複数の在庫ソースはサポートされていません。
 
-## [!DNL Live Search] 1.2.0
+## [!DNL Live Search] 1.2.0 {#120}
 
 * Adobe Commerce(EE) との互換性：2.4.x
 * Adobe Commerce for Cloud(ECE) との互換性：2.4.x
@@ -124,7 +126,7 @@ ht-degree: 1%
 * ![修正点](../assets/fix.svg) - [!DNL Live Search] 検索条件に空の並べ替え順の値が含まれる場合にエラーがスローされなくなりました。
 * ![修正点](../assets/fix.svg)  — 属性コードに「to」または「from」の文字列が含まれる場合、範囲フィルタリングが壊れなくなりました
 
-## [!DNL Live Search] 1.1.0
+## [!DNL Live Search] 1.1.0 {#110}
 
 * Adobe Commerce(EE) との互換性：2.4.x
 * Adobe Commerce for Cloud(ECE) との互換性：2.4.x

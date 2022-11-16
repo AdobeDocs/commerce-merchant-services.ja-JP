@@ -2,9 +2,9 @@
 title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -62,9 +62,6 @@ ht-degree: 0%
 ### 現時点ではサポートされていません
 
 * この [詳細検索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 次の場合、モジュールは無効になります： [!DNL Live Search] がインストールされ、ストアフロントフッターの「詳細検索」リンクは削除されます。
-* [顧客グループ](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [カスタム価格グループ](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * 使用する複数の在庫場所 [MCOM](https://docs.magento.com/user-guide/mcom.html) またはその他の OMS 拡張
-* [統合 B2B 機能](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 * 製品の価格は含まれません [付加価値税](https://docs.magento.com/user-guide/tax/vat.html) (VAT)。
-* 在庫切れの製品は、 [在庫オプション](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) 設定。
