@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] ストア設定の
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ ht-degree: 0%
 1. 内 _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL Credit Card Fields]_ 」セクションに入力します。
 1. の場合 **[!UICONTROL Title]**、（必要に応じて）テキストを入力して、チェックアウト時に表示される支払い方法の名前を変更します。
 1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)を選択します。 **[!UICONTROL Authorize]** または **許可してキャプチャ**.
+1. の場合 **[!UICONTROL Show on checkout page]**&#x200B;選択 `Yes` :「チェックアウト」ページのクレジットカードフィールドを有効または無効にします。
+1. の場合 **[!UICONTROL Vault Enabled]**&#x200B;選択 `Yes` チェックアウト用のクレジットカード保管を有効にする。
 1. の場合 **デバッグモード**&#x200B;選択 `Yes` デバッグモードを有効にする ( または `No` 無効にする )。
 1. クリック **[!UICONTROL Save Config]** 変更を保存します。
 1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。

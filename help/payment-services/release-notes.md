@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] リリースノート"
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,19 @@ _2021 年 6 月 29 日_
 
 +++
 
+## v1.5.0
+
+_2022 年 11 月 19 日_
+
+![新規](../assets/new.svg)<!-- Issue PAY-3880 --> 買い物客は今、 [チェックアウト時にクレジットカード情報を保管（保存）](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 同じ商人アカウント内の同じ店舗または別の店舗に対して後での購入で使用する
+
+![新規](../assets/new.svg)<!-- Issue PAY-3950 --> 商人が [即時購入コマース機能](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) 買い物客が ( [入金済みクレジットカード情報](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) をクリックして、チェックアウトを迅速に行います。
+
 ## v1.4.1
 
 _2022 年 10 月 15 日_
 
-![新規](../assets/new.svg)<!-- Issue PAY-3766 --> 顧客の支払い方法が拒否された場合、表示されるエラーメッセージの内容がよりわかりやすくなります。 お客様に、支払い情報を再入力して、もう一度やり直すか、別の支払い方法を試すか、拒否された取引について銀行に問い合わせるよう勧めます。
+![修正点](../assets/fix.svg)<!-- Issue PAY-3766 --> 顧客の支払い方法が拒否された場合、表示されるエラーメッセージの内容がよりわかりやすくなります。 お客様に、支払い情報を再入力して、もう一度やり直すか、別の支払い方法を試すか、拒否された取引について銀行に問い合わせるよう勧めます。
 
 ## v1.4.0
 

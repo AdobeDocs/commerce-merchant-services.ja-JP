@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] 家に
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 カスタマイズ可能 [!DNL Payment Services] の設定が役に立ちます。 [!DNL Payment Services] ホーム。
 
-を設定するには、以下を実行します。 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] クリック **[!UICONTROL Settings]**. これらの設定オプションは、 _[!UICONTROL Payment mode]_フィールド[_&#x200B;一般&#x200B;_設定オプション](#general-configuration-options).
+を設定するには、以下を実行します。 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] クリック **[!UICONTROL Settings]**. これらの設定オプションは、 _[!UICONTROL Payment mode]_フィールド[_&#x200B;一般&#x200B;_設定オプション](#configure-general-settings).
 
 マルチストアまたはレガシー設定については、 [管理での設定](configure-admin.md).
 
@@ -65,12 +65,12 @@ ht-degree: 0%
 1. クリック **[!UICONTROL Save]**.
 1. Web サイトまたはストア表示に設定されたデフォルト以外のソフト記述子を作成するには、次の手順を実行します。
    1. Web サイトまたはストア表示を、 **[!UICONTROL Scope]** ソフト記述子を作成するドロップダウンメニュー。
-   1. 切り替え *オフ* **[!UICONTROL Use website]** ( または **[!UICONTROL Use default]**（選択した範囲に応じて異なります）。
+   1. 切り替え _オフ_ **[!UICONTROL Use website]** ( または **[!UICONTROL Use default]**（選択した範囲に応じて異なります）。
    1. テキストフィールドにカスタムテキストを追加します。
    1. クリック **[!UICONTROL Save]**.
-1. Web サイトまたはストアに対して有効にするには、デフォルトのソフト記述子を表示します *または* 親 web サイトに使用されるソフト記述子：
+1. Web サイトまたはストアに対して有効にするには、デフォルトのソフト記述子を表示します _または_ 親 web サイトに使用されるソフト記述子：
    1. Web サイトまたはストア表示を、 **[!UICONTROL Scope]** 既存のソフト記述子を有効にするドロップダウンメニュー。
-   1. 切り替え *オン* **[!UICONTROL Use website]** ( または **[!UICONTROL Use default]**（選択した範囲に応じて異なります）。
+   1. 切り替え _オン_ **[!UICONTROL Use website]** ( または **[!UICONTROL Use default]**（選択した範囲に応じて）。
    1. クリック **[!UICONTROL Save]**.
 
    変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
@@ -89,16 +89,28 @@ ht-degree: 0%
 
 Web サイトで支払いサービスが有効になったので、支払い機能とストアフロント表示のデフォルト設定を変更できます。
 
+1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![ホームビュー](assets/payment-services-menu-small.png)
+
+1. クリック **[!UICONTROL Settings]**. 詳しくは、 [の概要 [!DNL Payment Services] ホーム](payments-home.md) を参照してください。
+1. 支払いオプションを設定 [クレジットカード](#credit-card-fields), [支払ボタン](#payment-buttons)、および [ボタンのスタイル](#button-style)、以降のセクションに従って。
+
 ### クレジットカードのフィールド
 
 この _[!UICONTROL Credit Card Fields]_設定は、クレジットカードまたはデビットカードの支払い方法のためのシンプルでセキュアなチェックアウトオプションを提供します。
 
 詳しくは、 [支払いオプション](payments-options.md#credit-card-fields) を参照してください。
 
+1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![ホームビュー](assets/payment-services-menu-small.png)
+
 1. ストア表示を選択します ( **[!UICONTROL Scope]** 支払い方法を有効にするドロップダウンメニュー。
 1. チェックアウト時に表示される支払い方法の名前を変更するには、 **[!UICONTROL Checkout title]** フィールドに入力します。
 1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)，切り替え **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
 1. チェックアウトページのクレジットカードフィールドを有効または無効にするには、 **[!UICONTROL Show on checkout page]** セレクター。
+1. 有効または無効にするには [カード保管](#card-vaulting)、切り替え **[!UICONTROL Vault enabled]** セレクター。
 1. デバッグモードを有効または無効にするには、 **[!UICONTROL Debug Mode]** セレクター。
 1. クリック **[!UICONTROL Save]**.
 
@@ -113,6 +125,7 @@ Web サイトで支払いサービスが有効になったので、支払い機�
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション： [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} （指定した支払い方法） オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページに表示するクレジットカードフィールドを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | web サイト | クレジットカードの保管を有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 支払いボタン
@@ -136,10 +149,10 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 
       >[!NOTE]
       >
-      > Apple Pay を使用するには [は、Apple Developer アカウントを持っている必要があります](test-validate.md#test-in-sandbox-environment) （偽のクレジットカードと請求情報を含む）をテストします。 サンドボックスでApple Pay を使用する準備が整ったら、 *または* 実稼動モード（任意の完了後） [テストと検証](test-validate.md)を使用する場合は、営業担当者に連絡して、ライブストアで有効にしてもらってください。
+      > Apple Pay を使用するには [は、Apple Developer アカウントを持っている必要があります](test-validate.md#test-in-sandbox-environment) （偽のクレジットカードと請求情報を含む）をテストします。 サンドボックスでApple Pay を使用する準備が整ったら、 _または_ 実稼動モード（任意の完了後） [テストと検証](test-validate.md)を使用する場合は、営業担当者に連絡して、ライブストアで有効にしてもらってください。
 
       支払いボタンや PayPal Pay Later メッセージの表示/非表示を切り替えると、設定ページの下部にその設定の視覚的なプレビューが表示されます。
-git
+
 1. デバッグモードを有効にするには、 **[!UICONTROL Debug Mode]** セレクター。
 1. クリック **[!UICONTROL Save]**.
 
@@ -212,11 +225,18 @@ git
 
 ストアで正しい設定が表示されていることを確認するには、定期的に [キャッシュをフラッシュ](https://docs.magento.com/user-guide/system/cache-management.html).
 
+## カードの保管
+
+顧客が自分のアカウントにクレジットカード情報を格納（保存）して、将来の購入に使用できる機能を有効にすることができます。
+
+でのカードの保管を有効または無効にします。 [クレジットカードフィールドの設定](#credit-card-fields).
+
+詳しくは、 [クレジットカードの保管](vaulting.md) ヴォールティングの詳細については、を参照してください。
+
 ## 複数の PayPal アカウントを使用
 
-支払いサービスでは、 **1 つ** ウェブサイトレベルのマーチャントアカウント。 例えば、複数の国 ( 異なる [通貨](https://docs.magento.com/user-guide/stores/currency.html)) またはAdobe Commerceをビジネスの一部に使用したいが、使用しない場合 *すべて*&#x200B;複数の PayPal アカウントを使用するようにマーチャントアカウントを設定することができます。
+支払いサービスでは、 **1 つ** ウェブサイトレベルのマーチャントアカウント。 例えば、複数の国 ( 異なる [通貨](https://docs.magento.com/user-guide/stores/currency.html)) またはAdobe Commerceをビジネスの一部に使用したいが、使用しない場合 _すべて_&#x200B;複数の PayPal アカウントを使用するようにマーチャントアカウントを設定することができます。
 
 詳しくは、 [サイト、ストア、および表示範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) web サイト、ストア、ストア表示の階層に関する詳細。
 
 セールス担当者が新しい [範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) お客様のマーチャントアカウントに対して、PayPal を使用して追加サイトをオンボーディングし、設定した PayPal ボタンがサイトに表示されるようにします。 Web サイトに複数の PayPal アカウントを使用する方法については、セールス担当者にお問い合わせください。
-

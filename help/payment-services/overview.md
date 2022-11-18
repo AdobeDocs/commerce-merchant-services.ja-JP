@@ -4,9 +4,9 @@ description: インストールと使用の方法を学ぶ [!DNL Payment Service
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
 * [**支払いオプション**](payments-options.md) — 支払いオプションを設定して、店舗（またはマルチストア）の顧客が利用できる方法をカスタマイズします。
 * **キャッシュフロー管理財務報告** — 同期 [支払詳細](order-payment-status.md) 処理済数量、支払残高、および詳細に対する完全な透明性を得るための注文と [トランザクションレベルのレポート](payouts.md) 財務上の調整の場合。
 * **透明性の高い価格設定** — 価格は明確で前もって設定されています。何が見えるかは、得るものです。
+* **効率的なチェックアウトエクスペリエンス** — 迅速でシンプルなチェックアウトに対する障壁を取り除き、常連客を作成し、 [カード保管](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) および [即時購入](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (Adobe Commerceの場合はデフォルトで有効 ) 機能です。
 
 ## 使用可否
 
