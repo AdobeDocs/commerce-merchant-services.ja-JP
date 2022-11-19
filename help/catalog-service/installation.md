@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c740e75c9fe12b062683fa957d0c6623d8180e4f
+source-git-commit: ea4b386d7e378b30641e623cb190923dc50563d8
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,6 @@ ht-degree: 0%
    bin/magento cache:clean
    ```
 
-
 ## カタログサービスと API メッシュ
 
 この [API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 開発者は、AdobeI/O を使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
@@ -103,7 +102,16 @@ API メッシュをカタログサービスで使用する最初の手順は、A
 AdobeI/O でメッシュを設定したら、次のコマンドを実行して新しいメッシュを接続します。
 
 ```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph"
+aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
+```
+
+場所 `variables.json` は、AdobeI/O に一般的に使用される値を保存する個別のファイルです。
+例えば、API キーはファイル内に保存できます。
+
+```json
+{
+    "CATALOG_SERVICE_API_KEY":"your_api_key"
+}
 ```
 
 このコマンドを実行した後、API メッシュを介してカタログサービスを実行する必要があります。

@@ -2,10 +2,10 @@
 title: '[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
+source-git-commit: d84996bc76a44b39aeaee7f8b0ed4973fbe5de37
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 1%
+source-wordcount: '465'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,21 @@ ht-degree: 1%
 * ![新規](../assets/new.svg) 新機能
 * ![修正点](../assets/fix.svg) 修正点および改善点
 * ![バグ](../assets/bug.svg) 既知の問題
+
+## V1.1 リリース
+
+リリース日：2022-11-18 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：一般公開
+
+![新規](../assets/new.svg) カタログサービスでAdobeの [API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/).
+![修正点](../assets/fix.svg) API の拡張性と全体的なパフォーマンスが向上しました。
+
+### 既知の制限事項
+
+以下の機能は、まだサポートされていません。
+
+* 価格帯
+* バリアントがカタログから削除された場合、更新は受け取りません
+* 動的属性ペイロードの最大サイズは 9 MB です
 
 ## V1.0 リリース
 
