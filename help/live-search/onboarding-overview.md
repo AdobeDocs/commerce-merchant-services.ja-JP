@@ -2,7 +2,7 @@
 title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 ### クエリ
 
 * [!DNL Live Search] では、カテゴリツリーの完全な分類にアクセスできず、一部の階層的ナビゲーション検索シナリオがその範囲を超えています。
-* [!DNL Live Search] は、クエリに一意の GraphQL エンドポイントを使用して、インテリジェントなファセット設定や、ユーザータイプでの検索などの機能をサポートします。 ただし、 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)の場合は、いくつかの違いがあり、一部のフィールドは現時点で完全に互換性がない可能性があります。
+* [!DNL Live Search] は、クエリに一意の GraphQL エンドポイントを使用して、インテリジェントなファセット設定や、ユーザータイプでの検索などの機能をサポートします。 ただし、 [MagentoGraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)の場合は、いくつかの違いがあり、一部のフィールドは現時点で完全に互換性がない可能性があります。
 
 ### ルール
 
