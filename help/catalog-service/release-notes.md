@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: d84996bc76a44b39aeaee7f8b0ed4973fbe5de37
+source-git-commit: 624c959119958f9fdd15d3d9559092c35d079c2c
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,20 @@ ht-degree: 0%
 
 以下の機能は、まだサポートされていません。
 
+* 定価で製品をバンドル
+* バリアントがカタログから削除された場合、更新は受け取りません。
+* 動的属性ペイロードの最大サイズは 9 MB です。
+* グループ製品価格。 単純な製品価格で計算できます。
+* 画像配列では、最初の画像のみに役割が含まれます。
+* カラースウォッチ
+* 製品 URL を使用して製品の詳細ページを読み込む。
+
+GraphQL API を使用すると、次の制限を解決できます。
+
+* 最小広告価格
 * 価格帯
-* バリアントがカタログから削除された場合、更新は受け取りません
-* 動的属性ペイロードの最大サイズは 9 MB です
+* ダウンロード可能な製品とギフトカード
+* カテゴリ (`categories` および `categoryList`)
 
 ## V1.0 リリース
 
