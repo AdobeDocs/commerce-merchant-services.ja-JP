@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] リリースノート"
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,14 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v1.5.1
+
+_2022 年 11 月 24 日_
+
+![新規](../assets/new.svg)<!-- Issue PAY-3923 --> 支払いサービスで、未使用のエンドポイントを追跡、フィルタリングまたは廃止するためのリクエストのバージョン番号がユーザーエージェントヘッダーに含まれるようになりました。
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3968 --> スマートボタンを使用して製品ページから注文が行われた場合、支払サービスで注文データが正しく表示されるようになりました。
 
 ## v1.5.0
 
