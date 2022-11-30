@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] レポート'
 description: '[!DNL Quick Checkout] は、包括的なレポート情報を提供します。'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
-source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
+source-git-commit: bdfac90aa221f39dfc53eee833c473c7dcb0a042
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 有効にする必要があります [**チェックアウトの追跡**](../quick-checkout/settings-quick-checkout.md) を使用して、Adobe Commerceがチェックアウト情報を Bolt と共有できるようにすることをお勧めします。 デフォルトでは、この設定オプションはに設定されています。 **はい**. このオプションが無効な場合 ( **いいえ**) が含まれる場合、レポートは影響を受けます。
+> Adobe Commerceがチェックアウト情報を Bolt と共有できるようにするには、 [**チェックアウトの追跡**](../quick-checkout/settings-quick-checkout.md)  設定は管理で有効にする必要があります。 デフォルトでは、この設定オプションはに設定されています。 **はい**. このオプションが **いいえ**&#x200B;に値を指定しない場合、レポートに影響が出ます。 Bolt は、東部標準時 (EST) の午前 3 時に、レポート情報を 1 日に 1 回更新します。
 
 ## 概要レポート
 
