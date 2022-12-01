@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] リリースノート'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ ht-degree: 0%
 これらのリリースノートでは、管理パネルの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
 
 +++管理パネルのアップデート
+
+_2022 年 11 月 31 日_
+
+![新規](../assets/new.svg)<!-- Issue BOLT-502 --> さて、 [レポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) タブには、新しい「昨年」プリセットがあります。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-471 --> のユーザーエクスペリエンスの改善 [!DNL Quick Checkout] 管理パネルに詳細情報を表示： [ツールチップ](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-514 --> のユーザーエクスペリエンスの改善 [!DNL Quick Checkout] 管理パネルには、正しい合計注文数、色の一貫性、すべてのグラフの正しい凡例が表示されます。
 
 _2022 年 11 月 3 日_
 
@@ -52,6 +60,16 @@ _2022 年 10 月 6 日_
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-369 --> さて、 [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) フッターにアプリのバージョンを表示します。
 
 +++
+
+## v1.4.0
+
+_2022 年 11 月 31 日_
+
+![新規](../assets/new.svg)<!-- Issue BOLT-513 --> これで、Adobe Commerceの顧客がチェックアウトプロセス中にストアにログインし、Bolt アカウントを持っている場合に、買い物客の Bolt アカウントにログインするためのオプションが表示されます。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-512 --> 新しい設定では、ログインした買い物客が Bolt にログインできるかどうかを自動的に検出します。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-480 --> 新しい設定 ( [!DNL Quick Checkout] 管理パネルでは、デフォルトのナビゲーションフローを **送料** Bolt のお客様がログインした後にページを開きます。 デフォルトでは、 **支払い** ページ。
 
 ## v1.3.0
 

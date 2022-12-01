@@ -2,9 +2,9 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -132,11 +132,23 @@ Adobe Commerceの標準チェックアウトオプションについて詳しく
 1. 範囲をに切り替えます。 **メイン Web サイト**.
 1. 次をクリック： **コールバック URL の設定** 」ボタンをクリックします。 これにより、 [!DNL Bolt] をクリックして、買い物客がアカウントを持っているかどうかを判断します。 存在する場合は、OTP ポップアップが表示されます。
 
->[!CAUTION]
->
-> スコープを **メイン Web サイト** は、適切な URL が設定されていることを確認します。 各 Web サイトには複数のドメインを含めることができます。
+   >[!CAUTION]
+   >
+   > スコープを **メイン Web サイト** は、適切な URL が設定されていることを確認します。 各 Web サイトには複数のドメインを含めることができます。
 
 詳しくは、 [サイト、ストア、および表示範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;} のトピックを参照してください。Adobe Commerceのスコープの詳細については、こちらを参照してください。
+
+## サービス設定の指定
+
+![クイックチェックアウト](assets/service-settings.png)
+
+1. 設定 **チェックアウトの追跡を有効にする** から `Yes`.
+
+   >[!CAUTION]
+   >
+   > このオプションを無効にすると、Adobe Commerceはチェックアウトトラッキング情報を Bolt と共有できないので、レポートに影響を与えます。
+
+1. を選択します。 **ログイン後の次のステージ** オプションを使用して、ユーザーがログインした後にナビゲーションフローを変更できます。 デフォルトでは、 **支払い** ページ。
 
 ## お問い合わせ
 

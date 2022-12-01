@@ -2,9 +2,9 @@
 title: "Adobe Commerceユーザーのチェックアウトフロー"
 description: 「 [!DNL Quick Checkout] Adobe Commerceユーザーのフロー。」
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 > 「Bolt OTP」ポップアップは、買い物客がチェックアウトページにいる場合にのみ表示されます。 買い物客は、そのポップアップウィンドウを閉じて、Bolt へのログインをオプトアウトできます。
 
-買い物客がチェックアウト前にAdobe Commerceにログインしている場合、 [!DNL Bolt] OTP ポップアップはチェックアウト時には表示されません。
+買い物客がチェックアウト前にAdobe Commerceにログインしている場合、 [!DNL Bolt] OTP ポップアップはチェックアウト時には表示されませんが、買い物客が Bolt Wallet にアクセスするためにログインすることを勧めるメッセージが表示されます。
 
 既存のAdobe Commerceユーザーとして注文する際に問題が発生した場合は、 [クイックチェックアウトに関する問題のトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 記事をAdobe Commerce Help Center で参照してください。
 
