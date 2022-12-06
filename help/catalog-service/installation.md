@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 4604aacc19d7740c63b39134bd9f4c146479ac8f
+source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -114,15 +114,25 @@ ht-degree: 0%
    bin/magento cache:clean
    ```
 
+## カタログの書き出しを設定
+
+インストール後 [!DNL Catalog Service]を設定する場合、 [Commerce Services コネクタ](../landing/saas.md) API キーを指定し、SaaS データ領域を選択する。
+
+カタログの書き出しが正しく実行されていることを確認するには、次の手順を実行します。
+
+- 確認 [cron ジョブ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) が実行中です。
+- を確認します。 [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行中です。
+- 次を確認します。 `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`、および `Product Variant Feed` インデクサーは次のように設定されます。 `Update by Schedule`.
+
 ## カタログサービスと API メッシュ
 
-この [API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 開発者は、AdobeI/O を使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
+この [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 開発者は、AdobeI/O を使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
 
 API メッシュをカタログサービスで使用する最初の手順は、API メッシュをインスタンスに接続することです。 詳しい手順については、 [メッシュを作成する](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
 設定を完了するには、 [AdobeIO CLI パッケージ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) インストール済み
 
-AdobeI/O でメッシュを設定したら、次のコマンドを実行して新しいメッシュを接続します。
+AdobeI/O でメッシュを設定したら、次のコマンドを実行して、 `CommerceCatalogServiceGraph` メッシュにソースを設定します。
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
@@ -137,17 +147,7 @@ aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 }
 ```
 
-このコマンドを実行した後、API メッシュを介してカタログサービスを実行する必要があります。
-
-## カタログの書き出しを設定
-
-インストール後 [!DNL Catalog Service]を設定する場合、 [Commerce Services コネクタ](../landing/saas.md) API キーを指定し、SaaS データ領域を選択する。
-
-カタログの書き出しが正しく実行されていることを確認するには、次の手順を実行します。
-
-- 確認 [cron ジョブ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) が実行中です。
-- を確認します。 [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行中です。
-- 次を確認します。 `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`、および `Product Variant Feed` インデクサーは次のように設定されます。 `Update by Schedule`.
+このコマンドを実行した後、API メッシュを介してカタログサービスを実行する必要があります。 次を実行できます。 `aio api-mesh:get` コマンドを使用して、更新したメッシュの設定を表示します。
 
 ## [!DNL Catalog Service] デモ
 
