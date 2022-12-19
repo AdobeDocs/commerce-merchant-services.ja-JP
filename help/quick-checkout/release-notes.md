@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] リリースノート'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 0%
 これらのリリースノートでは、管理パネルの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
 
 +++管理パネルのアップデート
+
+_2022 年 12 月 14 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-524 --> この [!DNL Quick Checkout] 管理パネルに、正しい合計注文件数と更新されたレポート情報が表示されるようになりました。
 
 _2022 年 11 月 31 日_
 
