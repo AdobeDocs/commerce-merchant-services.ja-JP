@@ -1,10 +1,10 @@
 ---
 title: '''[!DNL Catalog Service] ガイドの概要`'
-description: '''[!DNL Catalog Service for Adobe Commerce] では、ネイティブのAdobe Commerce GraphQL クエリよりも速く、製品表示ページと製品リストページのコンテンツを取得できます。」'
+description: '''[!DNL Catalog Service for Adobe Commerce] 「では、ネイティブのAdobe Commerce GraphQLクエリよりも速く、製品表示ページと製品リストページのコンテンツを取得できます。」'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 * Adobe [!DNL Commerce] システム管理者がサービスをインストールし、保守します。 [!DNL Catalog Service] には、標準の管理者ユーザー向けの管理 UI や機能はありません。
 
-* インテグレーターは GraphQL クエリを作成し、フロントエンドクライアントを使用するストアフロントに統合します。
+* インテグレーターはGraphQLクエリを作成し、フロントエンドクライアントを使用するストアフロントに統合します。
 
 ## その他のドキュメント
 
@@ -26,6 +26,12 @@ ht-degree: 0%
 | [Adobe Commerce 2.4 ユーザーガイド](https://docs.magento.com/user-guide/) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャント中心のドキュメント |
 | [Adobe Commerce 2.4 開発者ガイド](https://devdocs.magento.com/) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けドキュメント |
 
-## お問い合わせ
+## サポート
 
-オンボーディングプロセスは、 [!DNL Catalog Service] 機能。 のAdobe Commerceエンジニアリングチームに問い合わせてください [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 公開Slackチャネルを参照してください。
+この [オンボーディングプロセス](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) は、 [!DNL Catalog Service] 機能。
+
+このガイドに記載されていない情報や質問がある場合は、次のリソースを使用してください。
+
+* [ヘルプセンター](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy)  — カタログサービスに関するトラブルシューティング記事を参照してください。
+* [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)  — 追加のヘルプを受け取るには、チケットを送信します。
+* Adobe Commerceエンジニアリングチームや、 [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 公開Slackチャネルを最新の状態にする必要があります。
