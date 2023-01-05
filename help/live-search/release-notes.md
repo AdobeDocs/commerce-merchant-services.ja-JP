@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] リリースノート"
 description: 「 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
+source-git-commit: 4566727b4e672033997491bcaf075c48e2a55cc8
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1004'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
 * 安定性：安定
 
 * ![新規](../assets/new.svg)  — ライブ検索で、管理の「在庫切れの製品を表示」設定によるフィルタリングがサポートされるようになりました。 「在庫切れの製品を表示」が false に設定されている場合、 `inStock = true` がフィルターに追加されます。
-* ![修正点](../assets/fix.svg)  — パフォーマンスを向上させるために、ライブ検索ポップアップから「候補」ブロックが削除されました。 機能を置き換える場合、データは GraphQL 経由で渡されます。
+* ![修正点](../assets/fix.svg)  — パフォーマンスを向上させるために、ライブ検索ポップアップから「候補」ブロックが削除されました。 この機能を置き換える場合でも、データはGraphQL経由で渡されます。
 * ![修正点](../assets/fix.svg) - `categories` および `categoryPath` 置き換えられた `categoryIds` カテゴリのフィルタリング用。 詳しくは、 [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) トピック。
 * ![修正点](../assets/fix.svg)  — 以前は、B2B 会社に関連付けられているユーザーが検索をおこなうと、誤った顧客グループコードを受け取っていました。 ライブ検索で正しい値が返されるようになりました。
 * ![修正点](../assets/fix.svg)  — 以前は、存在しない語句を検索する場合、ライブ検索はエラーを返していました。 そのバグは修正されました。
@@ -56,20 +56,6 @@ ht-degree: 1%
 これらの機能にアクセスするには、マーチャントは Live Search 拡張機能バージョン 2.0.3 以降をアップグレードする必要があります。
 
 実稼動環境にプッシュする前に、アップグレードおよびテストをおこなうことをお勧めします。 テスト環境の結果を確認した後、オフピーク時に実稼動環境のアップグレードを検討します。
-
->[!NOTE]
->
->B2B のサポートは、8 月 9 日からバックエンドサービスで段階的に追加され、8 月末までに移行が完了する予定です。 ライブ検索拡張機能がアップグレードされない場合、ストアフロントは引き続き正常に機能しますが、B2B 機能は使用されません。
-
-### 既知の制限事項/バグ：
-
-* ![バグ](../assets/bug.svg)  — 提案は、顧客グループに表示できない製品をソースとしています。
-* ![バグ](../assets/bug.svg) - 「デフォルトの共有カタログ」に追加しない場合、製品は表示されません。
-* ![バグ](../assets/bug.svg)  — 製品が属性を使用して設定され、応答で「いいえ」バケットが返された場合でも、検索アダプターはブール製品属性の「いいえ」バケットをレンダリングしません。
-* 一部の製品およびクエリでは英語以外の結果が返される場合がありますが、複数言語のクエリは現在サポートされていません。
-* PWA Studioのライブ検索を使用する B2B は、PWA Studioがサポートを追加するまで使用できません。
-* 製品の上書きおよび製品属性フィードには、管理者の実行が必要な同期の問題が発生する場合があります `bin/magento indexer:reset` および `bin/magento indexer:reindex` をクリックして正しく同期し直してください。
-* カタログ権限/共有カタログ/B2B 機能を有効または無効にした場合、 `catalog_data_exporter_product_overrides` インデクサーが更新されず、誤って `valid`. 用途 `bin/magento saas:resync --feed=productOverrides` をクリックして問題を修正します。
 
 ## [!DNL Live Search] 2.0 {#20}
 
