@@ -2,9 +2,9 @@
 user-guide-title: '"[!DNL Live Search] ガイド»'
 user-guide-description: このガイドでは、 [!DNL Live Search] Adobe Commerceから」
 breadcrumb-title: '"[!DNL Live Search] ガイド»'
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '68'
 ht-degree: 2%
 
 ---
@@ -39,10 +39,8 @@ ht-degree: 2%
    - ルール {#rules}
       - [概要](rules.md)
       - [ルールワークスペース](rules-workspace.md)
-      - [ルールコンポーネント](rule-components.md)
       - [ルールを追加](rules-add.md)
       - [ルールを管理](rules-manage.md)
-      - [テクニカルノート](rule-technical-notes.md)
    - [設定](settings.md)
    - [インデックス作成](indexing.md)
 - [フィードバック](feedback.md)
