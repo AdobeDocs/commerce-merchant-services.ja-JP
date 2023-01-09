@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: ドキュメント
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: bbc97eff4cd0c5b544df34061a1e156e72b91d18
+source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
   </td>
     </tr>
 <tr>
-    <td valign="top">
+    <td valign="top" width="200px">
        <img alt="ストアの達成" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>ストアの達成</strong></a> <br><em>(Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>ストアの達成</strong></a></br>
     <div>優れた購入をオンラインで提供し、店舗での顧客体験 (BOPIS) を獲得し、モバイルデバイスを通じて可能な包括的なフルフィルメントワークフローを提供することで、従業員の生産性を最大化します。</div>
   </td>
    </tr>
