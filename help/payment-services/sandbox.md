@@ -2,7 +2,7 @@
 title: テスト用サンドボックスの設定
 description: PayPal Sandbox アカウントを使用して [!DNL Payment Services] テストモードの
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
+source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -20,9 +20,9 @@ PayPal Sandbox アカウントを使用すると、 [!DNL Payment Services] テ�
 サンドボックスのオンボーディングを完了するには：
 
 1. 次に移動： [PayPal 開発者アカウントページ](https://developer.paypal.com/developer/accounts/).
-1. クリック **[!UICONTROL Log in to Home]** 既存の PayPal Developer Portal 生成ビジネスサンドボックステストアカウントを使用してログインするか、 **新規登録** をクリックしてアカウントを作成します。
+1. クリック **[!UICONTROL Log in to Dashboard]** 既存の PayPal Developer Portal 生成ビジネスサンドボックステストアカウントを使用してログインするか、 **新規登録** をクリックしてアカウントを作成します。
 1. PayPal Sandbox アカウントの作成：
-   1. に移動します。 _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
+   1. に移動します。 _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. クリック **[!UICONTROL Create account]**.
 
       PayPal のオンボーディングプロセス中に PayPal サンドボックスアカウントを作成した場合は、 [オンボーディングサンドボックスをリセット](#reset-your-sandbox-account) 電子メールを確認できない場合があります。

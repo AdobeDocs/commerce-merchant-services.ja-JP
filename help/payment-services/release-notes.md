@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] リリースノート"
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
+source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ _2022 年 12 月 22 日_
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 支払い方法が拒否された場合の支払いサービスの請求を改善しました。
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-3999 --> 支払いサービスで、PayPal のスマートボタンが [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} チェックアウトページ用のカスタムテンプレート。
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services で、 [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} チェックアウトページ用のカスタムテンプレート。 以前は、ミニカートがボタンを断続的に表示していました。
 
 ## v1.5.1
 
