@@ -4,9 +4,9 @@ description: のプロビジョニングとオンボーディングの要件 [!D
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -22,19 +22,19 @@ Adobe Commerceの Store Fulfilment ソリューションをインストールし
 - Adobe Commerce on cloud infrastructure (ECE)
 - Adobe Commerceオンプレミス (EE)
 
-Store Fulfilment ソリューションは、次のソフトウェアバージョンと互換性があります。
+Store Fulfilment ソリューションは、 *ソフトウェアの互換性* 表。
 
 **ソフトウェアの互換性**
 
 | **ソフトウェア** | **最小バージョン** | **最大バージョン** |
 |----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.4 |
+| Adobe Commerce | 2.4.0 | 2.4.5 |
 | コンポーザー | 1.x | 2.x |
 | MariaDB | 10.2 | 10.4 |
 | MySQL | 5.7 | 8.0 |
 | PHP | 7.4 | 8.1 |
 
-詳細な要件については、 Adobe Commerceを確認してください [必要システム構成](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) （開発者向けドキュメント）を参照してください。
+詳細な要件については、 Adobe Commerceを確認してください [必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 内 *Adobe Commerce Installation Guide*.
 
 ## Store Assist アプリの要件
 
@@ -52,7 +52,7 @@ Store Fulfilment ソリューションは、次のソフトウェアバージョ
 
 ## ビジネス要件
 
-店舗フルフィルメントソリューションを実装するには、お客様のビジネスが次の最低基準を満たしている必要があります。
+ストアフルフィルメントソリューションを実装するには、お客様のビジネスが次の最小基準を満たしている必要があります。
 
 - 米国を拠点とする企業のみ
 
