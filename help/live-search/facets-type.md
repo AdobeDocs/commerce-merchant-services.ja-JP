@@ -2,9 +2,9 @@
 title: 「ファセットのタイプ」
 description: '"[!DNL Live Search] ファセットは動的で、関連する場合はフィルターリストに表示されます。」'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 用にレンダリングされるファセット [!DNL Commerce] storefront は、検索アダプタによって処理され、要求をルーティングして結果をストアフロントにレンダリングします。 すべて [!DNL Commerce] storefront ファセットは、対応する属性に割り当てられている入力タイプに関係なく、1 回の選択オプションでアルファベット順に並べ替えられます。 ストアフロントで使用できるファセットは、現在のテーマに従ってレンダリングされ、レイヤーナビゲーションの表示に対するカスタマイズが反映されます。
 
-これに対して、 [頭のない](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/webapi-vision.html) の実装は API によって処理され、追加のオプションをサポートします。 ヘッドレスファセットは、アルファベット順またはカウント順に並べ替えることができ、単一選択または複数選択のオプションを持つことができます。
+これに対して、 [頭のない](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) の実装は API によって処理され、追加のオプションをサポートします。 ヘッドレスファセットは、アルファベット順またはカウント順に並べ替えることができ、単一選択または複数選択のオプションを持つことができます。
 
 ### タイプを選択
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ### ファセットラベル
 
-の場合 [!DNL Commerce] ストアフロントの場合、ファセットラベルは [*属性プロパティ*](https://docs.magento.com/user-guide/stores/attribute-product-create.html). 複数のビューを持つ店舗の場合、追加のラベルを以下で定義できます。 *ラベルを管理*. ヘッドレス実装の場合、ラベルは [Faceting Workspace](faceting-workspace.md).
+の場合 [!DNL Commerce] ストアフロントの場合、ファセットラベルは [*属性プロパティ*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). 複数のビューを持つ店舗の場合、追加のラベルを以下で定義できます。 *ラベルを管理*. ヘッドレス実装の場合、ラベルは [Faceting Workspace](faceting-workspace.md).
 
 ### 並べ替えタイプ
 

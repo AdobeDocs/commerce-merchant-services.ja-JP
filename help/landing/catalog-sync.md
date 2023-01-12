@@ -2,16 +2,16 @@
 title: カタログ同期
 description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services] サービスを最新の状態に保つための継続的なベースで
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # カタログ同期
 
-Adobe CommerceおよびMagento Open Sourceは、インデクサーを使用してカタログデータをテーブルにコンパイルします。 プロセスは、次を通じて自動的にトリガーされます： [イベント](https://docs.magento.com/user-guide/system/index-management-events.html) 製品価格や在庫レベルの変更など。
+Adobe CommerceおよびMagento Open Sourceは、インデクサーを使用してカタログデータをテーブルにコンパイルします。 プロセスは、次を通じて自動的にトリガーされます： [イベント](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 製品価格や在庫レベルの変更など。
 
 カタログ同期プロセスは 1 時間ごとに実行され、 [!DNL Commerce] カタログデータを使用するサービス。 カタログ同期で、 [!DNL Commerce] サーバーから [!DNL Commerce] サービスを継続的に更新し、サービスを最新の状態に保ちます。 例： [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) では、現在のカタログ情報が必要で、正しい名前、価格、可用性を使用してレコメンデーションを正確に返すことができます。 以下を使用して、 _カタログ同期_ 同期プロセスを監視および管理するためのダッシュボード [コマンドラインインターフェイス](#resynccmdline) を使用して、カタログの同期と製品データのインデックス再作成を行います。 [!DNL Commerce] サービス。
 

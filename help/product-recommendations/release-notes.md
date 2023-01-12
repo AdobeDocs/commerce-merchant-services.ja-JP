@@ -2,9 +2,9 @@
 title: リリースノート
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 * ![新規](../assets/new.svg)  — 新機能
 * ![修正点](../assets/fix.svg)  — 修正点および改善点
 
-開発者向けドキュメントを参照してください。 [製品の互換性の詳細](https://devdocs.magento.com/release/availability.html).
+開発者向けドキュメントを参照してください。 [製品の互換性の詳細](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Adobe Commerce 2.3.x および 2.4.x
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 ### magento/product-recommendations の 3.3.5
 
 * ![新規](../assets/new.svg)  — 追加済み [B2B サポート](onboarding.md#b2bsupport) 製品のRecommendations
-* ![新規](../assets/new.svg)  — に新しいフィードを追加しました [カタログデータを同期](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) コマンドラインからコマースサービスに
+* ![新規](../assets/new.svg)  — に新しいフィードを追加しました [カタログデータを同期](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) コマンドラインからコマースサービスに
 
 ### magento/product-recommendations の 3.3.3
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ### magento/product-recommendations の 3.2.5
 
-* ![新規](../assets/new.svg) -Magentoサービスの名前をに変更しました [コマースサービス](https://docs.magento.com/user-guide/system/saas.html) 管理での使いやすさの向上
+* ![新規](../assets/new.svg) -Magentoサービスの名前をに変更しました [コマースサービス](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 管理での使いやすさの向上
 
 ### magento/product-recommendations の 3.2.4
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 ### magento/product-recommendations の 3.2.2
 
 * ![新規](../assets/new.svg)  — 次の機能を追加しました。 [レコメンデーション結果のプレビュー](create.md) 作成時に その場合は、モジュールを最新バージョンに更新する必要が生じる可能性があります。
-* ![新規](../assets/new.svg)  — 次の機能を追加しました。 [監視と管理](https://docs.magento.com/user-guide/system/catalog-sync.html) 管理者からのカタログ同期プロセス。
+* ![新規](../assets/new.svg)  — 次の機能を追加しました。 [監視と管理](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 管理者からのカタログ同期プロセス。
 * ![新規](../assets/new.svg)  — 追加済み [フィルター](filters.md) を使用して、レコメンデーションに表示する製品を制御できます。
 * ![新規](../assets/new.svg)  — が追加されました [視覚的類似性](type.md#visualsim) レコメンデーションタイプ。
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 ### magento/product-recommendations の 3.1.0
 
-* ![新規](../assets/new.svg)  — 次の機能を追加しました。 [再同期](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) コマンドラインを介してカタログを SaaS サービスに送信する。
+* ![新規](../assets/new.svg)  — 次の機能を追加しました。 [再同期](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) コマンドラインを介してカタログを SaaS サービスに送信する。
 * ![新規](../assets/new.svg)  — データベーステーブルのプレフィックスのサポートを追加しました
 * ![修正点](../assets/fix.svg) - PHP 7.1 のサポートを削除しました。
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
 ### Page Builder の magento/module-page-builder-product-recommendations の 1.0.3
 
-* ![新規](../assets/new.svg)  — ページビルダーのサポート。 Page Builder の統合により、Page Builder が作成したコンテンツ上の任意の場所に、正確かつ詳細にレコメンデーション単位を配置できます。 見出しとレコメンデーション単位自体のスタイルを設定することもできます。 に移動します。 [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) を参照してください。
+* ![新規](../assets/new.svg)  — ページビルダーのサポート。 Page Builder の統合により、Page Builder が作成したコンテンツ上の任意の場所に、正確かつ詳細にレコメンデーション単位を配置できます。 見出しとレコメンデーション単位自体のスタイルを設定することもできます。 に移動します。 [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) を参照してください。
 
 ### magento/product-recommendations の 2.0.0
 
@@ -164,4 +164,4 @@ ht-degree: 0%
 詳しくは、以下を参照してください。 [!DNL Product Recommendations] および [!DNL Product Recommendations] 開発：
 
 * [ユーザーガイド](overview.md)
-* [開発者向けドキュメント](https://devdocs.magento.com/recommendations/product-recs.html)
+* [開発者向けドキュメント](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

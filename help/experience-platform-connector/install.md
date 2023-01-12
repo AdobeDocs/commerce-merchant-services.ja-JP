@@ -2,9 +2,9 @@
 title: Adobe CommerceからのAdobe Experience Platform Connector のインストールと設定
 description: Adobe CommerceからAdobe Experience Platform Connector をインストール、設定、更新およびアンインストールする方法について説明します。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -64,4 +64,4 @@ composer update magento/experience-platform-connector --with-dependencies
 
 ## Experience Platformコネクタのアンインストール {#uninstall}
 
-Experience Platformコネクタをアンインストールするには、 [モジュールのアンインストール](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+Experience Platformコネクタをアンインストールするには、 [モジュールのアンインストール](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

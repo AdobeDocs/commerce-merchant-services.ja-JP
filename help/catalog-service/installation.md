@@ -2,7 +2,7 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 この [!DNL Catalog Service] は、Commerce アカウントにリンクされた Composer キーと共にインストールされます [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 登録プロセスで提供されます。 Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に `auth.json` ファイル。
 
-詳しくは、 [認証キーの取得](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) を参照してください。
+詳しくは、 [認証キーの取得](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) を参照してください。
 
 ### Adobe Commerce an cloud infrastructure
 

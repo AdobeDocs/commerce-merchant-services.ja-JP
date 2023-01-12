@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] ガイドの概要`'
 description: '''[!DNL Catalog Service for Adobe Commerce] 「では、ネイティブのAdobe Commerce GraphQLクエリよりも速く、製品表示ページと製品リストページのコンテンツを取得できます。」'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 | ガイド | 説明 |
 |------ | ----------- |
-| [Adobe Commerce 2.4 ユーザーガイド](https://docs.magento.com/user-guide/) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャント中心のドキュメント |
-| [Adobe Commerce 2.4 開発者ガイド](https://devdocs.magento.com/) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けドキュメント |
+| [Adobe Commerce 2.4 ユーザーガイド](https://experienceleague.adobe.com/docs/commerce.html) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャント中心のドキュメント |
+| [Adobe Commerce 2.4 開発者ガイド](https://developer.adobe.com/commerce/docs) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けドキュメント |
 
 ## サポート
 

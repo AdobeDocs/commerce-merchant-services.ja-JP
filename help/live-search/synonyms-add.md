@@ -1,10 +1,10 @@
 ---
 title: シノニムの追加
-description: '"追加 [!DNL Live Search] 検索リクエストへの応答を改善する同義語。"'
+description: "追加 [!DNL Live Search] 検索リクエストへの応答を改善する同義語。"
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 ## 手順 1:シノニムを追加
 
 1. 管理者で、に移動します。 **マーケティング** / SEO と検索 > **[!DNL Live Search]**.
-1. 複数のストアの場合は、 **範囲** から [ストア表示](https://docs.magento.com/user-guide/configuration/scope.html) ここで、シノニム設定が適用されます。
+1. 複数のストアの場合は、 **範囲** から [ストア表示](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) ここで、シノニム設定が適用されます。
 1. 次をクリック： **シノニム** タブをクリックします。
 1. 次をクリック： **シノニムを追加** 」ボタンをクリックします。
 

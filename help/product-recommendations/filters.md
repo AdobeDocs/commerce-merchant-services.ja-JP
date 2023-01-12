@@ -1,9 +1,10 @@
 ---
 title: 製品をフィルタ
 description: 製品をレコメンデーションとして使用するかどうかを含める、または除外する条件を定義します。
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ Adobe Commerceは、レコメンデーション単位に設定できないデフ
 
 ### カテゴリ
 
-製品のカテゴリに基づくフィルターでは、直接カテゴリの割り当てとそのサブカテゴリを使用します。 例えば、カテゴリの除外条件を有効にする場合などです。 `Gear` に割り当てられた製品を除外 `Gear` そして、次のようなサブカテゴリがすべて `Gear/Bags` または `Gear/Fitness Equipment`. B2B マーチャントの場合、カテゴリフィルタは、 [顧客固有の製品カテゴリ](https://docs.magento.com/user-guide/catalog/category-permissions.html) 設定済みです。
+製品のカテゴリに基づくフィルターでは、直接カテゴリの割り当てとそのサブカテゴリを使用します。 例えば、カテゴリの除外条件を有効にする場合などです。 `Gear` に割り当てられた製品を除外 `Gear` そして、次のようなサブカテゴリがすべて `Gear/Bags` または `Gear/Fitness Equipment`. B2B マーチャントの場合、カテゴリフィルタは、 [顧客固有の製品カテゴリ]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) 設定済みです。
 
 Adobe Commerceでは、ページタイプにレコメンデーションをデプロイする際に、次のカテゴリフィルター設定を使用することをお勧めします。
 
@@ -67,11 +68,11 @@ Adobe Commerceでは、ページタイプにレコメンデーションをデプ
 
 ### 価格
 
-製品価格に基づくフィルターでは、最終価格を使用して比較が実行されます。 最終的な価格には、匿名の買い物客が利用できる割引や特別価格が含まれます。 B2B 商人の場合、表示される価格は [顧客固有のグループ価格](https://docs.magento.com/user-guide/catalog/pricing-advanced.html#customer-group-price) 設定済みです。
+製品価格に基づくフィルターでは、最終価格を使用して比較が実行されます。 最終的な価格には、匿名の買い物客が利用できる割引や特別価格が含まれます。 B2B 商人の場合、表示される価格は [顧客固有のグループ価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) 設定済みです。
 
 ### 在庫ステータス
 
 次の除外フィルターを使用して、在庫ステータスに基づいて製品を除外できます。
 
 - 在庫切れ — （除外のみ）在庫切れの製品を除外します。
-- 在庫が少ない — （除外のみ）在庫が少ない製品を除外します。 在庫ステータスは、 _X の左しきい値のみ_ 値 [在庫設定](https://docs.magento.com/user-guide/configuration/catalog/inventory.html).
+- 在庫が少ない — （除外のみ）在庫が少ない製品を除外します。 在庫ステータスは、 _X の左しきい値のみ_ 値 [在庫設定](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

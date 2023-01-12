@@ -1,9 +1,10 @@
 ---
 title: 実装ワークフロー
 description: を正しく実装する手順を説明します。 [!DNL Product Recommendations] 店の前に
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 766e1191-0330-4515-9331-e45318539dc9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ ht-degree: 0%
 
    の導入 [!DNL Product Recommendations] 2 つのメインが必要です [データソース](type.md):カタログと行動。 買い物客のアクションが取り込まれて分析されるのは実稼動環境のみなので、できるだけ早く実稼動環境でデータ収集を開始することが最善の方法です。 [学ぶ](behavioral-data.md) Adobe Senseiが機械学習モデルをトレーニングする方法により、より高品質なレコメンデーションが得られます。 さらなるメリットとして、実稼動環境で行動データの収集を開始する際に、次の操作を実行できます [レコメンデーションを取得](verify.md) 実稼動以外の環境で動作する際に、この実稼動データに基づいて その後、実稼動環境で収集された実際の買い物客のデータに基づいて計算される様々なレコメンデーションをテストし、テストして試すことができます。
 
-   データ収集を実稼動環境にデプロイするには、次の手順を実行する必要があります [インストールと設定](install-configure.md) の [!DNL Product Recommendations] モジュールに [API キー](https://docs.magento.com/user-guide/system/saas.html#apikey).
+   データ収集を実稼動環境にデプロイするには、次の手順を実行する必要があります [インストールと設定](install-configure.md) の [!DNL Product Recommendations] モジュールに [API キー](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -42,7 +43,7 @@ ht-degree: 0%
    >
    > テンプレートをカスタマイズすることで、スタイルシートを指定したり、レコメンデーションユニットがページ上に表示される場所を上書きしたりできます。
 
-   詳しくは、 [カスタマイズ](https://devdocs.magento.com/recommendations/customize.html) 開発者向けドキュメントで、この手順の完了方法を確認してください。
+   詳しくは、 [カスタマイズ](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) 開発者向けドキュメントで、この手順の完了方法を確認してください。
 
 1. **実稼動以外の環境でのレコメンデーションのテスト**
 

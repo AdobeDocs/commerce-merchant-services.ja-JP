@@ -2,9 +2,9 @@
 title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法 [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 次の操作を実行します。
 
-1. 確認 [cron ジョブ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) および [indexers](https://docs.magento.com/user-guide/system/index-management.html) が実行中です。
+1. 確認 [cron ジョブ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) および [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) が実行中です。
 
 1. 要件を満たすオンボーディング方法を選択し、指示に従います。
 
@@ -68,7 +68,7 @@ ht-degree: 0%
    >
    > データのインデックスが作成され、同期されている間は、検索およびカテゴリの参照操作はストアフロントで使用できません。 カタログのサイズによっては、プロセスに少なくとも 1 時間かかる場合があります `cron` データの同期先として実行 [!DNL Live Search] サービス。
 
-1. 次の点を確認します。 [indexers](https://docs.magento.com/user-guide/system/index-management.html) が `Update by Schedule`:
+1. 次の点を確認します。 [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) が `Update by Schedule`:
 
    * 製品フィード
    * 製品バリアントフィード
@@ -116,7 +116,7 @@ ht-degree: 0%
 
    [!DNL Elasticsearch] は、 [!DNL Live Search] サービスは、カタログデータを同期し、製品のインデックスをバックグラウンドで作成します。
 
-1. 次の点を確認します。 [indexers](https://docs.magento.com/user-guide/system/index-management.html) が `Update by Schedule`:
+1. 次の点を確認します。 [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) が `Update by Schedule`:
 
    * 製品フィード
    * 製品バリアントフィード
@@ -128,7 +128,7 @@ ht-degree: 0%
 
    の後にファセットを追加できます。 `cron` 製品および属性フィードを実行し、属性メタデータをに書き出します。 [!DNL Live Search] サービス。
 
-1. データのインデックスが作成され、同期されるまで 1 時間以上待ちます。 次に、 [GraphQL プレイグラウンド](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) をデフォルトのクエリに置き換えて、以下を検証します。
+1. データのインデックスが作成され、同期されるまで 1 時間以上待ちます。 次に、 [GraphQL遊び場](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) をデフォルトのクエリに置き換えて、以下を検証します。
 
    * 返される製品数は、ストア表示で期待される数に近い数です。
    * ファセットが返されます。
@@ -243,14 +243,14 @@ composer update magento/live-search --with-dependencies
 
 ## アンインストール [!DNL Live Search] {#uninstall}
 
-アンインストールするには [!DNL Live Search]（を参照） [モジュールのアンインストール](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+アンインストールするには [!DNL Live Search]（を参照） [モジュールのアンインストール](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
 
 ## [!DNL Live Search] パッケージ {#packages}
 
 | パッケージ | 説明 |
 |--- |--- |
-| `module-live-search` | マーチャントがファセット設定、シノニム、クエリルールなどの検索設定を設定でき、読み取り専用の GraphQL プレイグラウンドにアクセスして、 *管理者*. |
-| `module-live-search-adapter` | ストアフロントからにリクエストをルーティングします [!DNL Live Search] 結果がストアフロントに表示されます。 <br /> — カテゴリ参照 — ストアフロントからリクエストをルーティングします。 [上部ナビゲーション](https://docs.magento.com/user-guide/catalog/navigation-top.html) を検索サービスに追加します。<br /> — グローバル検索 — リクエストを [クイック検索](https://docs.magento.com/user-guide/catalog/search-quick.html) 店頭の右上にある箱 [!DNL Live Search] サービス。 |
+| `module-live-search` | マーチャントがファセット設定、シノニム、クエリルールなどの検索設定を行えるようにし、読み取り専用のGraphQLプレイグラウンドにアクセスして、 *管理者*. |
+| `module-live-search-adapter` | ストアフロントからにリクエストをルーティングします [!DNL Live Search] 結果がストアフロントに表示されます。 <br /> — カテゴリ参照 — ストアフロントからリクエストをルーティングします。 [上部ナビゲーション](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) を検索サービスに追加します。<br /> — グローバル検索 — リクエストを [クイック検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 店頭の右上にある箱 [!DNL Live Search] サービス。 |
 | `module-live-search-storefront-popover` | 「入力に応じて検索」ポップオーバーは、標準のクイック検索に代わり、上位の検索結果のデータとサムネールを返します。 |
 
 ## [!DNL Live Search] 依存 {#dependencies}

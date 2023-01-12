@@ -2,9 +2,9 @@
 title: ファセットの管理
 description: 「既存の [!DNL Live Search] ファセット」
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. ファセットラベルを編集するには、次のいずれかの操作を行います。
 
-   * の [!DNL Commerce] ストアフロント、編集 [属性ラベル](https://docs.magento.com/user-guide/stores/attributes-product.html).
+   * の [!DNL Commerce] ストアフロント、編集 [属性ラベル](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * ヘッドレス実装の場合は、最初の列の値をクリックし、必要に応じてテキストを編集します。
 
    ![ラベルを編集](assets/facet-edit-label.png)

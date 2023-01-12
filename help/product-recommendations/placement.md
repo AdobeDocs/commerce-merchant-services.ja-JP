@@ -1,9 +1,10 @@
 ---
 title: 配置とラベル
 description: サイトの様々なページにレコメンデーションを配置できる場所と、各レコメンデーションタイプで頻繁に使用されるラベルの提案について説明します。
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+exl-id: e1025138-49dc-4833-92bb-27e8e415d724
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -58,4 +59,4 @@ _検索結果の上にレコメンデーションを表示_
 | 製品の詳細 | メインコンテンツの下部（デフォルト） | 最も頻繁に閲覧された<br>最も多く購入された<br>買い物かごに最も多く追加されました<br>これを閲覧し、それを閲覧した<br>これを見て、購入したもの<br>これを購入し、それを購入しました<br>その他の関連ヘルプ<br>トレンド<br>視覚的類似性 |
 | 買い物かご | メインコンテンツの下部（デフォルト） | 最も頻繁に閲覧された<br>最も多く購入された<br>買い物かごに最も多く追加されました<br>これを閲覧し、それを閲覧した<br>これを見て、購入したもの<br>これを購入し、それを購入しました<br>その他の関連ヘルプ<br>トレンド |
 | 確認 | メインコンテンツの下部（デフォルト） | 最も頻繁に閲覧された<br>最も多く購入された<br>買い物かごに最も多く追加されました<br>これを閲覧し、それを閲覧した<br>これを見て、購入したもの<br>これを購入し、それを購入しました<br>その他の関連ヘルプ<br>トレンド |
-| Page Builder | [ドラッグ&amp;ドロップ](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html#add-an-existing-recommendation-unit) コンテンツタイプを配置するには | 最も頻繁に閲覧された<br>最も多く購入された<br>買い物かごに最も多く追加されました<br>お勧め<br>トレンド |
+| Page Builder | [ドラッグ&amp;ドロップ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) コンテンツタイプを配置するには | 最も頻繁に閲覧された<br>最も多く購入された<br>買い物かごに最も多く追加されました<br>お勧め<br>トレンド |

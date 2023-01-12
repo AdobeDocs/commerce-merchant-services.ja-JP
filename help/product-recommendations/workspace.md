@@ -2,9 +2,9 @@
 title: Workspace
 description: 製品レコメンデーションのパフォーマンスを設定、管理および監視する方法について説明します。
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ _Recommendations Workspace_
 
 ## 範囲の設定
 
-最初は [範囲](https://docs.magento.com/user-guide/stores/websites-stores-views.html) の値は、すべてのレコメンデーション設定で `Default Store View`. コマースインストールに複数のストア表示が含まれる場合は、 **範囲** から [ストア表示](https://docs.magento.com/user-guide/configuration/scope.html) レコメンデーションが適用される場所。
+最初は [範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) の値は、すべてのレコメンデーション設定で `Default Store View`. コマースインストールに複数のストア表示が含まれる場合は、 **範囲** から [ストア表示](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) レコメンデーションが適用される場所。
 
 ## 指標の日付範囲の設定
 

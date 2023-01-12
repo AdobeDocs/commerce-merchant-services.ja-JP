@@ -2,16 +2,16 @@
 title: 設定
 description: ソースの変更方法を学ぶ [!DNL Product Recommendations] データと、視覚的なレコメンデーションを有効にする方法を説明します。
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
 # 設定
 
-次の場合： [SaaS データ領域の設定](https://docs.magento.com/user-guide/configuration/services/saas.html) Recommendationsの場合、SaaS データスペースは、カタログデータとストアフロント行動データを収集します。 [Adobe Sensei](https://www.adobe.com/sensei.html) はそのデータを分析し、製品Recommendationsを提供するために使用される製品関連付けを計算します。
+次の場合： [SaaS データ領域の設定](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) Recommendationsの場合、SaaS データスペースは、カタログデータとストアフロント行動データを収集します。 [Adobe Sensei](https://www.adobe.com/sensei.html) はそのデータを分析し、製品Recommendationsを提供するために使用される製品関連付けを計算します。
 
 テストまたはステージング用の非実稼動環境では、通常、現実的な製品のレコメンデーションを提供するストアフロントの行動データの量や質がありません。 実際の買い物客の規模に応じた行動は、実稼動環境でのみ取り込むことができます。 この問題を解決するために、Adobe Commerceでは、実稼動環境の製品レコメンデーションを、他の非実稼動 SaaS データスペースと共に使用できます。 実稼動以外の環境で実際のストアフロントデータを使用すると、買い物客が表示するレコメンデーションをプレビューし、様々なレコメンデーションタイプや配置の場所を試すことができます。 異なる SaaS データスペースからのRecommendationsは、買い物客はプレビューできますが、クリックはできません。
 

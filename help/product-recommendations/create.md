@@ -2,9 +2,9 @@
 title: 新しいレコメンデーションを作成
 description: 製品レコメンデーション単位の作成方法を説明します。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ _推奨単位_
 
 1. の _管理者_ サイドバー、移動 **マーケティング** > _プロモーション_ > **製品Recommendations** 表示する _製品Recommendations_ ワークスペース。
 
-1. 次を指定： [ストア表示](https://docs.magento.com/user-guide/configuration/scope.html) レコメンデーションを表示する場所です。
+1. 次を指定： [ストア表示](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) レコメンデーションを表示する場所です。
 
    >[!NOTE]
    >
-   > ページビルダーのレコメンデーション単位は、デフォルトのストア表示に対してのみ作成できます。 Page Builder を使用して製品レコメンデーションを作成する方法について詳しくは、 [コンテンツを追加 — 製品Recommendations](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > ページビルダーのレコメンデーション単位は、デフォルトのストア表示に対してのみ作成できます。 Page Builder を使用して製品レコメンデーションを作成する方法について詳しくは、 [コンテンツを追加 — 製品Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. クリック **レコメンデーションを作成**.
 
@@ -37,7 +37,7 @@ _推奨単位_
    - 製品の詳細
    - 買い物かご
    - 確認
-   - [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html)
+   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    各ページタイプに対して最大 5 つのアクティブなレコメンデーション単位を作成でき、Page Builder に対して最大 25 個のレコメンデーション単位を作成できます。 制限に達すると、ページタイプがグレー表示になります。
 

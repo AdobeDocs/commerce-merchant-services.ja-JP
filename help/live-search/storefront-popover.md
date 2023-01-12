@@ -1,17 +1,17 @@
 ---
-title: '"[!DNL Storefront Popover]"'
+title: "[!DNL Storefront Popover]"
 description: 「 [!DNL Live Search storefront popover] は、推奨される製品とサムネールを動的に返します。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
 
 # [!DNL Storefront Popover]
 
-条件 [!DNL Live Search] が [インストール済み](install.md), a [!DNL popover] 買い物客が [検索](https://docs.magento.com/user-guide/catalog/search-quick.html) ボックス 文字を入力するたびに、 [!DNL popover] が更新され、上位の検索結果の推奨製品とサムネール画像が表示されます。
+条件 [!DNL Live Search] が [インストール済み](install.md), a [!DNL popover] 買い物客が [検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ボックス 文字を入力するたびに、 [!DNL popover] が更新され、上位の検索結果の推奨製品とサムネール画像が表示されます。
 
 [!DNL Live Search] 2 文字以上のクエリの結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 「入力中の検索」クエリの文字数は設定できません。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 検索可能な属性
 
-ターゲットを絞り込んだ結果を生成するには、 [検索可能な](https://docs.magento.com/user-guide/stores/attributes-product.html#storefront-properties) (`searchable=true`) 製品属性。 適切性を確保するために、明確で簡潔な意味を持つコンテンツが含まれている場合にのみ属性を検索可能にします。 より正確でなく長いテキストを含む属性（例： ）を使用しないでください。 `description`は、デフォルトで検索が有効になっていますが、検索結果の精度を下げることができます。 例えば、ある人が「ショート」を検索し、説明に「ショートスリーブ」という語句が含まれるシャツがある場合、シャツは検索結果に含まれます。
+ターゲットを絞り込んだ結果を生成するには、 [検索可能な](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) 製品属性。 適切性を確保するために、明確で簡潔な意味を持つコンテンツが含まれている場合にのみ属性を検索可能にします。 より正確でなく長いテキストを含む属性（例： ）を使用しないでください。 `description`は、デフォルトで検索が有効になっていますが、検索結果の精度を下げることができます。 例えば、ある人が「ショート」を検索し、説明に「ショートスリーブ」という語句が含まれるシャツがある場合、シャツは検索結果に含まれます。
 
 次の属性は常に検索可能です。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## [!DNL Popover] ページサイズ
 
-ページサイズ [!DNL popover] は、返すオートコンプリートされた製品のライン数を決定します。 以前は、ページサイズは 6 行にハードコードされていました。 ただし、 `page_size` の値は現在、 *管理者*. ライブ検索のインストール中に、 `page_size` 値が [カタログ検索](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` 設定。
+ページサイズ [!DNL popover] は、返すオートコンプリートされた製品のライン数を決定します。 以前は、ページサイズは 6 行にハードコードされていました。 ただし、 `page_size` の値は現在、 *管理者*. ライブ検索のインストール中に、 `page_size` 値が [カタログ検索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` 設定。
 
 デフォルトでは、「カタログ検索 — オートコンプリートの上限」の値は 8 行（または行）に設定されています。 ページサイズを変更するには [!DNL popover]、次の操作を実行します。
 

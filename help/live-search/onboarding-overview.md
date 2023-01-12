@@ -2,9 +2,9 @@
 title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 ### クエリ
 
 * [!DNL Live Search] では、カテゴリツリーの完全な分類にアクセスできず、一部の階層的ナビゲーション検索シナリオがその範囲を超えています。
-* [!DNL Live Search] は、クエリに一意の GraphQL エンドポイントを使用して、インテリジェントなファセット設定や、ユーザータイプでの検索などの機能をサポートします。 ただし、 [MagentoGraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)の場合は、いくつかの違いがあり、一部のフィールドは現時点で完全に互換性がない可能性があります。
+* [!DNL Live Search] は、一意のGraphQLエンドポイントをクエリに使用して、インテリジェントなファセット設定や、ユーザー入力として検索などの機能をサポートします。 ただし、 [MagentoGraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)の場合は、いくつかの違いがあり、一部のフィールドは現時点で完全に互換性がない可能性があります。
 
 ### ルール
 
@@ -56,12 +56,12 @@ ht-degree: 0%
 ### PWAベータリリース
 
 * 現在の Live Search のベータPWA実装では、ネイティブの Commerce ストアフロントを使用した Live Search よりも検索結果を返すのに、より多くの処理時間が必要です。
-* のPWAのベータリリース [!DNL Live Search] はをサポートしていません [イベント処理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
-* 以下の製品属性は、のベータ版リリースと関連して使用された場合、GraphQL ではサポートされません。 [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
+* のPWAのベータリリース [!DNL Live Search] はをサポートしていません [イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* 以下の製品属性は、のベータ版リリースとの関連で使用された場合、GraphQLでサポートされません。 [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
 ### 現時点ではサポートされていません
 
-* この [詳細検索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 次の場合、モジュールは無効になります： [!DNL Live Search] がインストールされ、ストアフロントフッターの「詳細検索」リンクは削除されます。
-* [カスタム価格グループ](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* 使用する複数の在庫場所 [MCOM](https://docs.magento.com/user-guide/mcom.html) またはその他の OMS 拡張
-* 製品の価格は含まれません [付加価値税](https://docs.magento.com/user-guide/tax/vat.html) (VAT)。
+* この [詳細検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 次の場合、モジュールは無効になります： [!DNL Live Search] がインストールされ、ストアフロントフッターの「詳細検索」リンクは削除されます。
+* [カスタム価格グループ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-group.html)
+* 使用する複数の在庫場所 [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) またはその他の OMS 拡張
+* 製品の価格は含まれません [付加価値税](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT)。

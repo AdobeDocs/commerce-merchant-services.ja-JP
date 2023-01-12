@@ -1,9 +1,10 @@
 ---
 title: ステージング環境でテスト
 description: 使用方法を学ぶ [!DNL Product Recommendations] をテスト目的でステージング環境の実稼動環境から削除します。
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ Adobe Commerceを使用すると、実稼動環境からレコメンデーショ
 
 1. をデプロイします。 `magento/product-recommendations` モジュールを、カタログデータが実稼動カタログに似ている非実稼動環境に追加します。
 
-1. 非実稼動用のデータスペース ID の 1 つを [設定](https://docs.magento.com/user-guide/configuration/services/saas.html) 」と入力します。
+1. 非実稼動用のデータスペース ID の 1 つを [設定](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 」と入力します。
 
 1. ストアフロントをクリックして、実際の買い物客の動作を模倣し、データを自分で生成します（または自動化スクリプトを作成します）。 テストを通じて、実稼動以外の環境で行動イベントを生成します。 これらのイベントは、レコメンデーションを促進する製品の親和性の生成に使用されます。 テストの場合、 [!DNL Commerce] では、次のレコメンデーションタイプの操作を示しています。
 

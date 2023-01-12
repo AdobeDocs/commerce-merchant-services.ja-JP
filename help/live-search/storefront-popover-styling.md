@@ -2,9 +2,9 @@
 title: 「スタイル設定」 [!DNL Popover] エレメント»
 description: " [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 .search-autocomplete          /* not visible */
 ```
 
-ストアフロント要素のスタイル設定について詳しくは、 [カスケードスタイルシート (CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) 内 [フロントエンド開発者ガイド](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+ストアフロント要素のスタイル設定について詳しくは、 [カスケードスタイルシート (CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) 内 [フロントエンド開発者ガイド](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## クラスセレクター
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ## 変更したテーマの使用 {#working-with-modified-theme}
 
-この [!DNL storefront popover] カスタマイズされた [テーマ](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) が *Luma*. この `top.search` ブロックを `header-wrapper` の `Magento_Search` モジュールは変更できません。
+この [!DNL storefront popover] カスタマイズされた [テーマ](https://developer.adobe.com/commerce/frontend-core/guide/themes/) が *Luma*. この `top.search` ブロックを `header-wrapper` の `Magento_Search` モジュールは変更できません。
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## の無効化 [!DNL popover]
 
-を無効にするには、以下を実行します。 [!DNL popover] 標準に戻す [クイック検索](https://docs.magento.com/user-guide/catalog/search-quick.html) 機能には、次のコマンドを入力します。
+を無効にするには、以下を実行します。 [!DNL popover] 標準に戻す [クイック検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 機能には、次のコマンドを入力します。
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

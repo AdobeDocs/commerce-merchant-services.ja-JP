@@ -2,9 +2,9 @@
 title: の概要 [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。」'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 製品のレコメンデーションと製品の関係
 
-オンラインショッピングの複雑さが変化し続ける中、ストアフロントに最適なのは、多くの場合、複数の主要テクノロジーの組み合わせです。 両方を使用 [!DNL Product Recommendations] および [製品の関係](https://docs.magento.com/user-guide/marketing/product-relationships.html) を使用すると、製品をより柔軟にプロモートできます。 以下を利用して、 [!DNL Product Recommendations] Adobe Senseiが活用し、レコメンデーションをインテリジェントに自動化しました。 次に、 [関連する製品ルール](https://docs.magento.com/user-guide/marketing/product-related-rules.html) 手動で介入し、ターゲットの買い物客セグメントに対して特定のレコメンデーションがおこなわれていること、または特定のビジネス目標を満たす必要がある場合。
+オンラインショッピングの複雑さが変化し続ける中、ストアフロントに最適なのは、多くの場合、複数の主要テクノロジーの組み合わせです。 両方を使用 [!DNL Product Recommendations] および [製品の関係](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) を使用すると、製品をより柔軟にプロモートできます。 以下を利用して、 [!DNL Product Recommendations] Adobe Senseiが活用し、レコメンデーションをインテリジェントに自動化しました。 次に、 [関連する製品ルール](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) 手動で介入し、ターゲットの買い物客セグメントに対して特定のレコメンデーションがおこなわれていること、または特定のビジネス目標を満たす必要がある場合。
 
 製品レコメンデーションを使用すると、次のことができます。
 

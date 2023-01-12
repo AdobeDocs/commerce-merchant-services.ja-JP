@@ -2,9 +2,9 @@
 title: "ルールを追加"
 description: 「 [!DNL Live Search] ルール」
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 手順 1:ルールを追加
 
 1. 管理者で、に移動します。 **マーケティング** / SEO と検索 > **ライブ検索**.
-1. を **範囲** 識別する [ストア表示](https://docs.magento.com/user-guide/configuration/scope.html) ルールを適用する場所
+1. を **範囲** 識別する [ストア表示](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) ルールを適用する場所
 1. 次をクリック： **ルール** タブをクリックします。
 1. クリック **ルールを追加** をクリックして、ルールエディターを起動します。
 

@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] インデックス作成»'
 description: «学ぶ方法 [!DNL Live Search] 製品属性プロパティのインデックスを作成します。"
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 属性メタデータの範囲は次のとおりです。 `website/store/store view`.
 
-この [!DNL Live Search] API を使用すると、クライアントは [storefront プロパティ](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` に設定 `Yes` ( Adobe Commerce Admin ) 有効にした場合、 `Search Weight` および `Visible in Advanced Search` を属性に設定できます。
+この [!DNL Live Search] API を使用すると、クライアントは [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` に設定 `Yes` ( Adobe Commerce Admin ) 有効にした場合、 `Search Weight` および `Visible in Advanced Search` を属性に設定できます。
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ## クライアント検索
 
-この [!DNL Live Search] API を使用すると、クライアントは、 [storefront プロパティ](https://docs.magento.com/user-guide/catalog/product-attributes.html), *製品リストの並べ替えに使用します* から `Yes`. テーマに応じて、この設定により、属性が [並べ替え基準](https://docs.magento.com/user-guide/catalog/navigation.html) カタログページのページネーションコントロール。 最大 300 個の製品属性を [!DNL Live Search]を [storefront プロパティ](https://docs.magento.com/user-guide/stores/attributes-product.html) 検索可能でフィルタリング可能な
+この [!DNL Live Search] API を使用すると、クライアントは、 [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *製品リストの並べ替えに使用します* から `Yes`. テーマに応じて、この設定により、属性が [並べ替え基準](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) カタログページのページネーションコントロール。 最大 300 個の製品属性を [!DNL Live Search]を [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 検索可能でフィルタリング可能な
 インデックスメタデータは、インデックス作成パイプラインに保存され、検索サービスからアクセスできます。
 
 ![[!DNL Live Search] インデックスメタデータ API 図](assets/index-metadata-api.svg)

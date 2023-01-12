@@ -1,17 +1,17 @@
 ---
-title: '"ファセット"'
-description: '"[!DNL Live Search] ファセットでは、複数の属性値のディメンションを検索条件として使用します。"'
+title: "ファセット"
+description: "[!DNL Live Search] ファセットでは、複数の属性値のディメンションを検索条件として使用します。"
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # ファセット
 
-ファセット化は、属性値の複数のディメンションを検索基準として使用する、高パフォーマンスのフィルタリングの方法です。 ファセット検索は似ていますが、標準よりも「かなり賢い」です [層状ナビゲーション](https://docs.magento.com/user-guide/catalog/navigation-layered.html). 使用可能なフィルターのリストは、 [フィルター可能な属性](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) 検索結果に返された製品の数。
+ファセット化は、属性値の複数のディメンションを検索基準として使用する、高パフォーマンスのフィルタリングの方法です。 ファセット検索は似ていますが、標準よりも「かなり賢い」です [層状ナビゲーション](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). 使用可能なフィルターのリストは、 [フィルター可能な属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) 検索結果に返された製品の数。
 
 ![フィルター済みの検索結果](assets/storefront-search-results-run.png)
 
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 | 設定 | 説明 |
 |--- |--- |
-| [カテゴリの表示設定](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | アンカー — `Yes` |
-| [属性プロパティ](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [カタログ入力タイプ](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
+| [カテゴリの表示設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | アンカー — `Yes` |
+| [属性プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [カタログ入力タイプ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | 属性ストアフロントのプロパティ | 検索結果のレイヤーナビゲーションで使用 — `Yes` |
 
 ## デフォルトの属性値
 
-次の製品属性には、 [storefront プロパティ](https://docs.magento.com/user-guide/stores/attributes-product.html) が [!DNL Live Search] デフォルトで有効になっています。
+次の製品属性には、 [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) が [!DNL Live Search] デフォルトで有効になっています。
 
 | プロパティ | Storefront プロパティ | 属性 |
 |---|---|---|

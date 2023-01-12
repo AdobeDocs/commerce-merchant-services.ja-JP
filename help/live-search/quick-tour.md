@@ -1,10 +1,10 @@
 ---
-title: '"クイックツアー"'
+title: "クイックツアー"
 description: 「ちょっと見てみましょう [!DNL Live Search] 店の前から」
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 入力に応じて検索
 
-[!DNL Live Search] は、提案された製品と、上位の検索結果のサムネール画像を使用して、 [ポップオーバー](storefront-popover.md) 買い物客が [検索](https://docs.magento.com/user-guide/catalog/search-quick.html) ボックス この [製品の詳細](https://docs.magento.com/user-guide/quick-tour/product-page.html) 買い物客が提案または注目すべき製品をクリックすると、ページが表示されます。 A _すべて表示_ リンクは、ポップオーバーのフッターに、検索結果ページを表示します。
+[!DNL Live Search] は、提案された製品と、上位の検索結果のサムネール画像を使用して、 [ポップオーバー](storefront-popover.md) 買い物客が [検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ボックス この [製品の詳細](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) 買い物客が提案または注目すべき製品をクリックすると、ページが表示されます。 A _すべて表示_ リンクは、ポップオーバーのフッターに、検索結果ページを表示します。
 
 [!DNL Live Search] は、2 文字以上のクエリに対する「入力時に検索」の結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 クエリの文字数は設定できません。 ポップオーバーには、次のフィールドが含まれます。 `name`, `sku`、および `category_ids`.
 

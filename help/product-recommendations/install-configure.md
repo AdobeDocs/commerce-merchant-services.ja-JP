@@ -2,9 +2,9 @@
 title: インストールと設定
 description: インストール、更新、アンインストールの方法を説明します [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 74176c054f05742bc47e4cf2b4e1ea4e057dcba9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-有効にする [!DNL Product Recommendations] ページビルダーで、既存のアクティブな [レコメンデーション単位](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) ページ、ブロック、動的ブロックなど、ページビルダーで作成されたすべてのコンテンツに追加できます。
+有効にする [!DNL Product Recommendations] ページビルダーで、既存のアクティブな [レコメンデーション単位](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) ページ、ブロック、動的ブロックなど、ページビルダーで作成されたすべてのコンテンツに追加できます。
 
 >[!NOTE]
 >
@@ -52,9 +52,9 @@ composer require magento/module-visual-product-recommendations
 
 ## 設定 [!DNL Product Recommendations] {#configure}
 
-インストール後、 `magento/product-recommendations` モジュールの場合、 [Commerce Services コネクタ](https://docs.magento.com/user-guide/configuration/services/saas.html) API キーを指定し、SaaS データ領域を選択する。
+インストール後、 `magento/product-recommendations` モジュールの場合、 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) API キーを指定し、SaaS データ領域を選択する。
 
-カタログの書き出しが正しく実行されていることを確認するには、 [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) ジョブと [indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) が実行中で、 `Product Feed` indexer は次のように設定されています： `Update by Schedule`.
+カタログの書き出しが正しく実行されていることを確認するには、 [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) ジョブと [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行中で、 `Product Feed` indexer は次のように設定されています： `Update by Schedule`.
 
 API キーを使用して Commerce Services に正常にリンクし、SaaS データスペースを指定すると、カタログの同期が開始されます。 その後、 [確認](verify.md) その行動データがストアフロントに送信されます。
 
@@ -104,4 +104,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## アンインストール [!DNL Product Recommendations] {#uninstall}
 
-必要に応じて、 [uninstall](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html) 製品レコメンデーションモジュール。
+必要に応じて、 [uninstall](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) 製品レコメンデーションモジュール。

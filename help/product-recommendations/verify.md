@@ -2,9 +2,9 @@
 title: イベントコレクションを検証
 description: 行動データがAdobe Commerceに送信されていることを確認する方法を説明します。
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ _イベントが発生していることを確認します。_
 
 1. 下にスクロールして、 **コンテキストデータ _n_**. でストアフロントインスタンスを探します。**スキーマ**.
 
-1. を確認します。 [SaaS データ容量 ID](https://docs.magento.com/user-guide/configuration/services/saas.html) が正しく設定されている。
+1. を確認します。 [SaaS データ容量 ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) が正しく設定されている。
 
 ![Snowplow フィルター](assets/snowplow-filter.png)
 _Snowplow フィルター_
@@ -62,8 +62,8 @@ _Snowplow フィルター_
 
 ## イベントが正しく実行されていることを確認する
 
-指標に使用されるイベントが正しく実行されていることを確認するには、 `impression-render`, `view`、および `rec-click` イベントを Snowplow Analytics Debugger に追加しました。 詳しくは、 [イベントの完全なリスト](https://devdocs.magento.com/recommendations/events.html).
+指標に使用されるイベントが正しく実行されていることを確認するには、 `impression-render`, `view`、および `rec-click` イベントを Snowplow Analytics Debugger に追加しました。 詳しくは、 [イベントの完全なリスト](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >
-> If [Cookie 制限モード](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) が有効になっている場合、Adobe Commerceは買い物客の同意を得るまで行動データを収集しません。 「Cookie Restriction Mode」が無効になっている場合、行動データはデフォルトで収集されます。
+> If [Cookie 制限モード](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、Adobe Commerceは買い物客の同意を得るまで行動データを収集しません。 「Cookie Restriction Mode」が無効になっている場合、行動データはデフォルトで収集されます。

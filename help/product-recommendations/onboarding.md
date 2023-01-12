@@ -2,9 +2,9 @@
 title: オンボーディング
 description: での要件とサポートされるプラットフォームについて説明します。 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 ### B2B サポート {#b2bsupport}
 
-B2B ストアフロントでは、多くの場合、買い物客や顧客グループごとに製品の表示と価格を指示する複雑なロジックが必要です。 [!DNL Product Recommendations] now [サポート](release-notes.md) この機能は、次の点に従って動作します。 [カテゴリ権限](https://docs.magento.com/user-guide/catalog/category-permissions.html), [共有カタログ](https://docs.magento.com/user-guide/catalog/catalog-shared.html)、および [顧客グループ固有の価格](https://docs.magento.com/user-guide/catalog/pricing-advanced.html). 例えば、小売顧客セグメントで特定のカテゴリを非表示にしている場合、そのセグメントの買い物客には、そのカテゴリにある製品のレコメンデーションは表示されません。 また、特定の顧客グループや会社用に共有カタログを定義すると、それらの買い物客は、アクセス可能な製品のレコメンデーションのみを表示します。 すべての推奨商品は、各買い物客の顧客グループに基づく、正しい顧客グループ固有の価格を反映しています。
+B2B ストアフロントでは、多くの場合、買い物客や顧客グループごとに製品の表示と価格を指示する複雑なロジックが必要です。 [!DNL Product Recommendations] now [サポート](release-notes.md) この機能は、次の点に従って動作します。 [カテゴリ権限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [共有カタログ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)、および [顧客グループ固有の価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). 例えば、小売顧客セグメントで特定のカテゴリを非表示にしている場合、そのセグメントの買い物客には、そのカテゴリにある製品のレコメンデーションは表示されません。 また、特定の顧客グループや会社用に共有カタログを定義すると、それらの買い物客は、アクセス可能な製品のレコメンデーションのみを表示します。 すべての推奨商品は、各買い物客の顧客グループに基づく、正しい顧客グループ固有の価格を反映しています。

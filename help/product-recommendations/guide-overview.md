@@ -1,11 +1,12 @@
 ---
-title: '"[!DNL Product Recommendations] ガイドの概要»'
+title: '''[!DNL Product Recommendations] ガイドの概要`'
 description: に関する包括的な情報 [!DNL Product Recommendations] Adobe Commerce管理者向け（インストールとオンボーディングを含む）
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
-source-git-commit: 46b27458ec7105692cacfca91a62938fd25c8095
+exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -30,12 +31,12 @@ ht-degree: 0%
 
 | ガイド | 説明 |
 |------ | ----------- |
-| [Adobe Commerce 2.4 ユーザーガイド](https://docs.magento.com/user-guide/) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャント中心のドキュメント |
-| [Adobe Commerce 2.4 開発者ガイド](https://devdocs.magento.com/) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けドキュメント |
+| [Adobe Commerce 2.4 ユーザーガイド](https://experienceleague.adobe.com/docs/commerce.html) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャント中心のドキュメント |
+| [Adobe Commerce 2.4 開発者ガイド](https://developer.adobe.com/commerce/docs) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けドキュメント |
 
 ## サポート
 
 このガイドに記載されていない情報や質問がある場合は、次のリソースを使用してください。
 
 * [ヘルプセンター](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}— [!DNL Product Recommendations] — 関連のトラブルシューティング記事。
-* [サポートチケット](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} — 追加のヘルプを受け取るには、チケットを送信します。
+* [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket){target=&quot;_blank&quot;} — 追加のヘルプを受け取るには、チケットを送信します。

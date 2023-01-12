@@ -2,9 +2,9 @@
 title: シノニムのタイプ
 description: 「片道と双方向 [!DNL Live Search] 「類義語」は、キーワードの定義を拡張します。
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ a, a, and, a, a, at, a, a, a, a, a, a, a, a, a, in, in, i, it, no, on, on, on, o
 
 ### キーワードマッピング
 
-この手法では、同義語ではなく、検索可能な製品属性を使用して、製品間のキーワードベースの関連付けを作成します。 その結果、マッピングされた製品が別の製品の検索結果に表示される場合があります。 詳しくは、 [検索結果](https://docs.magento.com/user-guide/catalog/search-results.html).
+この手法では、同義語ではなく、検索可能な製品属性を使用して、製品間のキーワードベースの関連付けを作成します。 その結果、マッピングされた製品が別の製品の検索結果に表示される場合があります。 詳しくは、 [検索結果](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
