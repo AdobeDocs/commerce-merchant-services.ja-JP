@@ -1,10 +1,10 @@
 ---
 title: '[!DNL Catalog Service]'
-description: '''[!DNL Catalog Service] Adobe Commerceの場合は、ネイティブのAdobe Commerce GraphQL クエリよりも、製品表示ページと製品リストページのコンテンツをよりすばやく取得できます。'
+description: '''[!DNL Catalog Service] for Adobe Commerceは、ネイティブのAdobe Commerce GraphQLクエリよりも、製品表示ページと製品リストページのコンテンツをよりすばやく取得する方法を提供します。'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: 55036065c686553bc530bb7a4fe46fcec1bd9ee8
+source-git-commit: 489de0f56cba06620c334e2b17040b32a72968ef
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
@@ -18,36 +18,36 @@ ht-degree: 0%
 * 検索結果ページ
 * 製品カルーセル
 * 製品比較ページ
-* 買い物かご、注文、ウィッシュリストのページなど、製品データをレンダリングするその他のページ
+* 買い物かご、注文、ウィッシュリストページなど、製品データをレンダリングするその他のページ
 
-この [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) 製品データをリクエストして受け取る。 GraphQL は、フロントエンドクライアントがAdobe Commerceなどのバックエンドで定義されたアプリケーションプログラミングインターフェイス (API) との通信に使用するクエリ言語です。 GraphQL は軽量で、システムインテグレーターが各応答の内容と順序を指定できるので、一般的な通信方法です。
+この [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) 製品データをリクエストして受け取る。 GraphQLは、フロントエンドクライアントがAdobe Commerceなどのバックエンドで定義されたアプリケーションプログラミングインターフェイス (API) との通信に使用するクエリ言語です。 GraphQLは軽量で、システムインテグレーターが各応答の内容と順序を指定できるので、一般的な通信方法です。
 
-Adobe Commerceには 2 つの GraphQL システムがあります。 コア GraphQL システムは、様々なクエリ（読み取り操作）と変異（書き込み操作）を提供し、買い物客が製品、顧客アカウント、買い物かご、チェックアウトなど、様々な種類のページを操作できるようにします。 ただし、製品情報を返すクエリは、速度に対して最適化されていません。 サービス GraphQL システムは、製品と関連情報に対してのみクエリを実行できます。 これらのクエリは、類似のコアクエリよりもパフォーマンスが高くなります。
+Adobe Commerceには 2 つのGraphQLシステムがあります。 コアGraphQLシステムは様々なクエリ（読み取り操作）と変異（書き込み操作）を提供し、買い物客が製品、顧客アカウント、買い物かご、チェックアウトなど、様々な種類のページを操作できるようにします。 ただし、製品情報を返すクエリは、速度に対して最適化されていません。 サービスGraphQLシステムは、製品と関連情報に対してのみクエリを実行できます。 これらのクエリは、類似のコアクエリよりもパフォーマンスが高くなります。
 
 これらのクエリを実行するには、https://catalog-service.adobe.io/graphqlのゲートウェイにクエリを送信します。
 
 ## アーキテクチャ
 
-次の図に、2 つの GraphQL システムを示します。
+次の図に、2 つのGraphQLシステムを示します。
 
 ![カタログのアーキテクチャ図](assets/catalog-service-architecture.png)
 
-コア GraphQL システムでは、PWAが Commerce アプリケーションにリクエストを送信し、各リクエストを受信して処理し、場合によっては複数のサブシステムを介してリクエストを送信した後、ストアフロントに応答を返します。 このラウンドトリップは、ページ読み込み時間が遅くなり、コンバージョン率が低下する可能性があります。
+コアGraphQLシステムでは、PWAが Commerce アプリケーションにリクエストを送信します。このアプリケーションは、各リクエストを受信して処理し、場合によっては複数のサブシステムを介してリクエストを送信した後、ストアフロントに応答を返します。 このラウンドトリップは、ページ読み込み時間が遅くなり、コンバージョン率が低下する可能性があります。
 
-[!DNL Catalog Service] は、フェデレーテッド GraphQL ゲートウェイサービスです。 サービスは、製品の詳細と関連情報（製品の属性、バリアント、価格、カテゴリなど）を含む別のデータベースにアクセスします。 サービスは、インデックス化を通じて、データベースをAdobe Commerceと同期させます。
+[!DNL Catalog Service] は、ストアフロントサービスゲートウェイです。 サービスは、製品の詳細と関連情報（製品の属性、バリアント、価格、カテゴリなど）を含む別のデータベースにアクセスします。 サービスは、インデックス化を通じて、データベースをAdobe Commerceと同期させます。
 このサービスはアプリケーションとの直接通信をバイパスするので、リクエストと応答サイクルの待ち時間を短縮できます。
 
 >[!NOTE]
 >
->ゲートウェイは、Product Recommendationsとの将来の統合のためのものです。 このリリースでは、 [!DNL Catalog Service Federated GraphQL] そして [!DNL Live Search] 両方の製品の有効なライセンスキーがある場合は、同じエンドポイントからの federated クエリ。
+>ゲートウェイは、Product Recommendationsとの将来の統合のためのものです。 このリリースでは、 [!DNL Catalog Service GraphQL] そして [!DNL Live Search] 両方の製品の有効なライセンスキーがある場合は、同じエンドポイントからのクエリ。
 
-コアとサービスの GraphQL システムは、互いに直接通信しません。 各システムには異なる URL からアクセスし、呼び出しには異なるヘッダー情報が必要です。 2 つの GraphQL システムは、一緒に使用するように設計されています。 この [!DNL Catalog Service] GraphQL システムは、製品ストアフロントをより迅速に体験できるように、コアシステムを強化します。
+コアシステムとサービスGraphQLシステムは、互いに直接通信しません。 各システムには異なる URL からアクセスし、呼び出しには異なるヘッダー情報が必要です。 2 つのGraphQLシステムは、一緒に使用するように設計されています。 この [!DNL Catalog Service] GraphQLシステムは、製品のストアフロントエクスペリエンスを高速化するために、コアシステムを強化します。
 
-オプションでを実装できます。 [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/) Adobe Developerを使用して、2 つのAdobe Commerce GraphQL システムを、プライベートおよびサードパーティの API や他のソフトウェアインターフェイスと統合する場合。 メッシュを設定して、各エンドポイントにルーティングされた呼び出しに、ヘッダーに正しい認証情報が含まれるようにすることができます。
+オプションでを実装できます。 [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/) 2 つのAdobe Commerce GraphQLシステムを、Adobe Developerを使用するプライベートおよびサードパーティの API や他のソフトウェアインターフェイスと統合する場合。 メッシュを設定して、各エンドポイントにルーティングされた呼び出しに、ヘッダーに正しい認証情報が含まれるようにすることができます。
 
 ## アーキテクチャの詳細
 
-次の節では、2 つの GraphQL システムの違いをいくつか説明します。
+次の節では、2 つのGraphQLシステムの違いについて説明します。
 
 ### スキーマ管理
 
@@ -71,4 +71,4 @@ Adobe Commerceには 2 つの GraphQL システムがあります。 コア Grap
 
 ## 実装
 
-インストールプロセスでは、 [Commerce Services コネクタ](../landing/saas.md). それが完了したら、次の手順では、システムインテグレーターがストアフロントコードを更新し、 [!DNL Catalog Service] クエリ。 すべて [!DNL Catalog Service] クエリは GraphQL ゲートウェイにルーティングされます。 URL は、オンボーディングプロセス中に提供されます。
+インストールプロセスでは、 [Commerce Services コネクタ](../landing/saas.md). それが完了したら、次の手順では、システムインテグレーターがストアフロントコードを更新し、 [!DNL Catalog Service] クエリ。 すべて [!DNL Catalog Service] クエリはGraphQLゲートウェイにルーティングされます。 URL は、オンボーディングプロセス中に提供されます。

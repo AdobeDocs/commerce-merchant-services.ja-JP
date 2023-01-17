@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 624c959119958f9fdd15d3d9559092c35d079c2c
+source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,34 @@ ht-degree: 0%
 * ![新規](../assets/new.svg) 新機能
 * ![修正点](../assets/fix.svg) 修正点および改善点
 * ![バグ](../assets/bug.svg) 既知の問題
+
+## V1.3 リリース
+
+リリース日：2023-1-17 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：一般公開
+
+![新規](../assets/new.svg) オンボーディングエクスペリエンスをシンプル化し、改善しました。
+![新規](../assets/new.svg) 実稼動前のテストで、新しい顧客サンドボックスエンドポイントを使用できます。
+![新規](../assets/new.svg) 仮想製品のサポートが追加されました。
+![修正点](../assets/fix.svg) API の拡張性とパフォーマンスの向上。
+
+### 既知の制限事項
+
+以下の機能は、まだサポートされていません。
+
+* 定価で製品をバンドル
+* バリアントがカタログから削除された場合、更新は受け取りません。
+* 動的属性ペイロードの最大サイズは 9 MB です。
+* グループ製品価格。 単純な製品価格で計算できます。
+* 画像配列では、最初の画像のみに役割が含まれます。
+* カラースウォッチ
+* 製品 URL を使用して製品の詳細ページを読み込む。
+
+GraphQL API を使用すると、次の制限を解決できます。
+
+* 最小広告価格
+* 価格帯
+* ダウンロード可能な製品とギフトカード
+* カテゴリ (`categories` および `categoryList`)
 
 ## V1.1 リリース
 
