@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Quick Checkout] ユーザー設定»'
-description: 次の項目を表示するためのユーザーの役割および権限を設定します： [!DNL Quick Checkout] 管理パネル」
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+title: '[!DNL Quick Checkout] ユーザー設定'
+description: ユーザーの役割と、 [!DNL Quick Checkout] 管理パネル。
+exl-id: 76393840-8312-41bb-8447-412849815169
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Quick Checkout] ユーザー設定
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 1. の _管理者_ サイドバー、移動 **[!UICONTROL System]** /権限 > **[!UICONTROL User Roles]**.
 
-   ![ユーザーの役割](assets/user-roles.png)
+   ![ユーザーの役割](assets/user-roles-small.png)
 
 1. 内 _役割_ 表示、クリック **新しいロールの追加**
 1. を選択します。 [!DNL Quick Checkout] リソース：

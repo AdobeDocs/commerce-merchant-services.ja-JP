@@ -2,9 +2,9 @@
 title: "Adobe Commerceユーザーのチェックアウトフロー"
 description: 「 [!DNL Quick Checkout] Adobe Commerceユーザーのフロー。」
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 次の場合、 [!DNL Bolt] アカウントはチェックアウト中に見つかり、買い物客は引き続き [!DNL Quick Checkout] シームレスなチェックアウトエクスペリエンス：
 
-1. これに送信する 1 回限りのパスワード (OTP) を入力します [!DNL Bolt] アカウントの電子メールアドレスまたはモバイル（次に応じる） [ユーザーの環境設定 [!DNL Bolt] アカウント](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}。
+1. これに送信する 1 回限りのパスワード (OTP) を入力します [!DNL Bolt] アカウントの電子メールアドレスまたはモバイル（次に応じる） [ユーザーの環境設定 [!DNL Bolt] アカウント](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
 ![OTP ポップアップ](assets/pop-up.png)
 
@@ -39,6 +39,19 @@ ht-degree: 0%
 買い物客がチェックアウト前にAdobe Commerceにログインしている場合、 [!DNL Bolt] OTP ポップアップはチェックアウト時には表示されませんが、買い物客が Bolt Wallet にアクセスするためにログインすることを勧めるメッセージが表示されます。
 
 既存のAdobe Commerceユーザーとして注文する際に問題が発生した場合は、 [クイックチェックアウトに関する問題のトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 記事をAdobe Commerce Help Center で参照してください。
+
+### 自動ログイン
+
+自動ログインを [!DNL Quick Checkout] ユーザー。 設定を有効にすると、チェックアウト時にユーザーに自動的にログインできます。
+
+1. の _管理者_ サイドバー、次に移動 **ストア** > **設定** > **チェックアウト** をクリックして、一般的な「チェックアウト管理者設定」ページにアクセスします。
+1. 内 _サービス設定_ セクション [!DNL Quick Checkout]、自動ログインの設定に必要なすべての詳細を指定します。
+
+詳しくは、 [[!DNL Quick Checkout] サービス設定の構成](../quick-checkout/onboarding.md#configure-service-settings) トピックを参照してください。
+
+>[!NOTE]
+>
+> 次の場合に初めてログイン **自動ログイン** が有効になっている場合、ポップアップウィンドウを受け入れて承認するには、ユーザーの同意が必要です。
 
 ## 新規 [!DNL Bolt] アカウント
 

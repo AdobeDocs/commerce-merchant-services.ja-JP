@@ -2,9 +2,9 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Gainsight が有効になっていない場合は、オンボーディング手�
 
 ## でアカウントを作成 [!DNL Bolt]
 
-を設定する前に [!DNL Quick Checkout] Adobe Commerce Admin で、 [サンドボックス](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} および [実稼動](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} マーチャントアカウント [!DNL Bolt]. アカウントを作成するために必要なすべての詳細を指定します。 [!DNL Bolt].
+を設定する前に [!DNL Quick Checkout] Adobe Commerce Admin で、 [サンドボックス](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  ～の商人口座 [!DNL Bolt]. アカウントを作成するために必要なすべての詳細を指定します。 [!DNL Bolt].
 
 詳しくは、 [テストと検証](../quick-checkout/testing.md) トピックを参照してください。
 
@@ -70,7 +70,7 @@ Gainsight が有効になっていない場合は、オンボーディング手�
 
    ![クイックチェックアウト](assets/account-credentials.png)
 
-詳しくは、 [[!DNL Bolt] 環境の詳細](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;} ページ：キーと署名の秘密鍵について [!DNL Bolt] の [!DNL Quick Checkout] 拡張子。
+詳しくは、 [[!DNL Bolt] 環境の詳細](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} キーと署名の秘密鍵についての詳細は、次のページを参照してください： [!DNL Bolt] の [!DNL Quick Checkout] 拡張子。
 
 >[!CAUTION]
 >
@@ -78,7 +78,7 @@ Gainsight が有効になっていない場合は、オンボーディング手�
 
 ## 支払いプロバイダーの設定
 
-お客様の支払いサービスプロバイダーに接続するには、 [プロセッサー設定](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target=&quot;_blank&quot;} 開発者 [!DNL Bolt] ページ。
+お客様の支払いサービスプロバイダーに接続するには、 [プロセッサー設定](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target="_blank"} 開発者 [!DNL Bolt] ページ。
 
 ## 拡張機能を有効にする
 
@@ -99,7 +99,7 @@ Gainsight が有効になっていない場合は、オンボーディング手�
 
 1. 一意の API を指定した後で資格情報を検証し、 [!DNL Publishable keys].
 
-![クイックチェックアウト](assets/quick-checkout-main-view-react.png)
+![クイックチェックアウト](assets/quick-checkout-main-view.png)
 
 詳しくは、 [設定](../quick-checkout/settings-quick-checkout.md) の設定オプションの詳細については、トピックを参照してください。 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合
 
@@ -136,7 +136,7 @@ Adobe Commerceの標準チェックアウトオプションについて詳しく
    >
    > スコープを **メイン Web サイト** は、適切な URL が設定されていることを確認します。 各 Web サイトには複数のドメインを含めることができます。
 
-詳しくは、 [サイト、ストア、および表示範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;} のトピックを参照してください。Adobe Commerceのスコープの詳細については、こちらを参照してください。
+詳しくは、 [サイト、ストア、および表示範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target="_blank"} Adobe Commerceのスコープの詳細については、トピックを参照してください。
 
 ## サービス設定の指定
 
@@ -149,6 +149,7 @@ Adobe Commerceの標準チェックアウトオプションについて詳しく
    > このオプションを無効にすると、Adobe Commerceはチェックアウトトラッキング情報を Bolt と共有できないので、レポートに影響を与えます。
 
 1. を選択します。 **ログイン後の次のステージ** オプションを使用して、ユーザーがログインした後にナビゲーションフローを変更できます。 デフォルトでは、 **支払い** ページ。
+1. 次の場合に定義 [!DNL Quick Checkout] 許可 **自動ログイン** チェックアウト時に。 デフォルトでは、 [!DNL Bolt] ネットワーク。
 
 ## お問い合わせ
 

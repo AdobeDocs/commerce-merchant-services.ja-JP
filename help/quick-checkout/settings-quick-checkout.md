@@ -2,9 +2,9 @@
 title: の設定 [!DNL Quick Checkout] Adobe Commerce拡張機能
 description: の設定オプションについて説明します。 [!DNL Quick Checkout] およびは、拡張機能のオンボーディングとセットアップに成功する方法を示しています。
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 1. の _管理者_ サイドバー、移動 **ストア** > _設定_ > **設定**.
 1. 左側のパネルで、を展開します。 **セールス** を選択し、 **チェックアウト**.
 
-   ![クイックチェックアウト](assets/quick-checkout-main-view-admin.png)
+   ![クイックチェックアウト](assets/configuration-view.png)
 
 詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) の設定方法の詳細に関するトピック [!DNL Quick Checkout] Adobe Commerce
 
@@ -52,9 +52,11 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション： [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} （指定した支払い方法） オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Enable checkout tracking] | web サイト | Adobe Commerceがチェックアウトのトラッキング情報を Bolt と共有するかどうかを定義します。 デフォルトで有効です。 無効にした場合、レポートは影響を受けます。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Next Stage After Login Mode] | web サイト | 顧客がログインした後にナビゲーションフローを変更する。 オプション： [!UICONTROL Payment] / [!UICONTROL Shipping] |
+| [!UICONTROL Automatic Login Enabled] | web サイト | 次の場合に定義 [!DNL Quick Checkout] では、チェックアウト時の自動ログインを許可します。 デフォルトで有効です。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Automatic Login Network] | web サイト | 顧客が自動的にログインするネットワークを選択します。 既定で Bolt が有効になっています。 オプション： [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
 {style=&quot;table-layout:auto&quot;}

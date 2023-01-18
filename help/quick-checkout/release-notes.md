@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] リリースノート'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,20 @@ _2022 年 10 月 6 日_
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-369 --> さて、 [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) フッターにアプリのバージョンを表示します。
 
 +++
+
+## v1.5.0
+
+_2023 年 1 月 19 日_
+
+![新規](../assets/new.svg)<!-- Issue BOLT-522 --> 新しい設定を有効/無効にして、 [買い物客](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) は自動的に Bolt にログインできます。
+
+![新規](../assets/new.svg)<!-- Issue BOLT-523 --> 新しい設定を有効/無効にすると、商人は買い物客を両方のネットワークに自動的にログインできるか、Bolt ネットワークにのみログインできるかを指定できます。
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-542 --> 次の場合のユーザーエクスペリエンスの改善 [Bolt アカウントへのカードまたは住所の保存](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 買い物客が電子メールを提供したとき。
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-550 --> のユーザーエクスペリエンスの改善 [自動ログイン](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) Bolt ユーザが電子メールを入力したとき。
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-544 --> の互換性の改善 [コールバック URL](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) と [マルチサイト](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) Bolt 内
 
 ## v1.4.0
 
