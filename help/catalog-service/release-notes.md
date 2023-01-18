@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
+source-git-commit: d377aac8fd42d8c9b1fc0ab6673a6965f50cf452
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 * カラースウォッチ
 * 製品 URL を使用して製品の詳細ページを読み込む。
 
-GraphQL API を使用すると、次の制限を解決できます。
+Core GraphQL API を使用すると、次の制限を解決できます。
 
 * 最小広告価格
 * 価格帯
