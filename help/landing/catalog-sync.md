@@ -2,9 +2,9 @@
 title: カタログ同期
 description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services] サービスを最新の状態に保つための継続的なベースで
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: fe5bbceb7f443e7b177ecd4812b981d6e7fd0a6b
+source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Adobe CommerceおよびMagento Open Sourceは、インデクサーを使用し�
 
 >[!NOTE]
 >
-> この _カタログ同期_ ダッシュボードは、Product Recommendationsサービスがインストールされている場合にのみ使用できます。
+> この _カタログ同期_ ダッシュボードは、 _製品Recommendations_ モジュールがインストールされ、その機能に関連するデータ投影のみを反映します。 などの他のコマースサービスのサポート _ライブ検索_ および _カタログサービス_ は将来の予定です。
 
 カタログ同期ダッシュボードにアクセスするには、「 **システム** > _データ転送_ > **カタログ同期**.
 
