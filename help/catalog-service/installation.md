@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 55c35e7775505ab9f6a61a458b6cd6fa4c7f1702
+source-git-commit: 3cf7959ece051c82a0f9ed1125571f223427923e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ bin/magento cache:clean
 
 カタログサービスをインストールした後、 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) API キーを指定し、SaaS データ空間を選択する。
 
-SaaS 設定が完了したら、『カタログ同期ガイド』に従って、初期データ同期を実行します。
+SaaS 設定が完了したら、 [カタログ同期](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) ガイド。
 
 カタログの書き出しが正しく実行されていることを確認するには、次の手順を実行します。
 
