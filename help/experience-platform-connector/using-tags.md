@@ -2,16 +2,16 @@
 title: Adobe Experience Platformタグを使用したコマースデータの収集
 description: Adobe Experience Platformタグを使用してコマースデータを収集する方法を説明します。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2522'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Platformタグを使用したコマースデータの収集
 
-Experience Platformコネクタを使用してストアフロントイベントの公開と購読をおこなうことはできますが、一部のマーチャントは、既にデータ収集ソリューション ( [Adobe Experience Platformタグ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=en). これらのマーチャントに対して、Adobe Commerceでは、Adobe Commerce Event SDK を使用するExperience Platformコネクタで公開専用のオプションが提供されています。
+Experience Platformコネクタを使用してストアフロントイベントの公開と購読をおこなうことはできますが、一部のマーチャントは、既にデータ収集ソリューション ( [Adobe Experience Platformタグ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). これらのマーチャントに対して、Adobe Commerceでは、Adobe Commerce Event SDK を使用するExperience Platformコネクタで公開専用のオプションが提供されています。
 
 ![Experience Platformコネクタのデータフロー](assets/tags-data-flow.png)
 _Experience Platform付きコネクタのデータフロー_
@@ -32,7 +32,7 @@ _Experience Platform付きコネクタのデータフロー_
 
 Commerce ストアフロントデータをAdobe Experience Platformにマッピングするには、Adobe Experience Platformタグ内から次を設定してインストールします。
 
-1. [タグプロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en) (Adobe Experience Platform Data Collection) を参照してください。
+1. [タグプロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (Adobe Experience Platform Data Collection) を参照してください。
 
 1. の下 **オーサリング**&#x200B;を選択します。 **拡張機能** 次の拡張機能をインストールして設定します。
 
@@ -130,7 +130,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - [&#39;initiateCheckout&#39;](#initiatecheckout)
 - [&#39;placeOrder&#39;](#placeorder)
 
-### signOut {#signout}
+### signOut
 
 買い物客がサインアウトを試みたときにトリガーされます。
 
@@ -160,7 +160,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `userAccount.logout`
 - **XDM データ**: `%sign-out%`
 
-### signIn {#signin}
+### signIn
 
 買い物客がログインしようとしたときにトリガーされます。
 
@@ -219,7 +219,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `userAccount.login`
 - **XDM データ**: `%sign in%`
 
-### createAccount {#createaccount}
+### createAccount
 
 買い物客がアカウントを作成しようとしたときにトリガーされます。
 
@@ -278,7 +278,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `userAccount.createProfile`
 - **XDM データ**: `%create account%`
 
-### editAccount {#editaccount}
+### editAccount
 
 買い物客がアカウントを編集しようとしたときにトリガーされます。
 
@@ -337,7 +337,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `userAccount.updateProfile`
 - **XDM データ**: `%edit account%`
 
-### pageView {#pageview}
+### pageView
 
 ページが読み込まれたときにトリガーされます。
 
@@ -366,7 +366,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `web.webPageDetails.pageViews`
 - **XDM データ**: `%page view%`
 
-### productView {#productview}
+### productView
 
 製品ページが読み込まれたときにトリガーされます。
 
@@ -471,7 +471,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `commerce.productViews`
 - **XDM データ**: `%product view%`
 
-### searchRequestSent {#searchrequestsent}
+### searchRequestSent
 
 「入力時に検索」ポップオーバーのイベントおよび検索結果ページのイベントによってトリガーされます。
 
@@ -576,7 +576,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `searchRequest`
 - **XDM データ**: `%search request%`
 
-### searchResponseReceived {#searchresponsereceived}
+### searchResponseReceived
 
 「入力時に検索」ポップオーバーまたは検索結果ページの結果がライブ検索で返された場合にトリガーされます。
 
@@ -671,7 +671,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `searchResponse`
 - **XDM データ**: `%search response%`
 
-### addToCart {#addtocart}
+### addToCart
 
 買い物かごに製品が追加されたとき、または買い物かご内の製品の数量が増加するたびにトリガーされます。
 
@@ -785,7 +785,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `commerce.productListAdds`
 - **XDM データ**: `%add to cart%`
 
-### openCart {#opencart}
+### openCart
 
 新しい買い物かごが作成されたときにトリガーされます。これは、製品が空の買い物かごに追加されたときに発生します。
 
@@ -818,7 +818,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `commerce.productListOpens`
 - **XDM データ**: `%open cart%`
 
-### viewCart {#viewcart}
+### viewCart
 
 買い物かごのページが読み込まれたときにトリガーされます。
 
@@ -921,7 +921,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `commerce.productListViews`
 - **XDM データ**: `%view cart%`
 
-### removeFromCart {#removefromcart}
+### removeFromCart
 
 買い物かごから製品が削除されたとき、または買い物かご内の製品の量が減少するたびにトリガーされます。
 
@@ -1026,7 +1026,7 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `commerce.productListRemovals`
 - **XDM データ**: `%remove from cart%`
 
-### initiateCheckout {#initiatecheckout}
+### initiateCheckout
 
 買い物客がチェックアウトボタンをクリックしたときにトリガーされます。
 
@@ -1129,13 +1129,20 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `commerce.checkouts`
 - **XDM データ**: `%initiate checkout%`
 
-### placeOrder {#placeorder}
+### placeOrder
 
 買い物客が注文したときにトリガーされます。
 
 #### データ要素
 
 次のデータ要素を作成します。
+
+1. アカウントの電子メール：
+
+   - **名前**: `account email`
+   - **拡張**: `Adobe Client Data Layer`
+   - **データ要素タイプ**: `Data Layer Computed State`
+   - **[オプション] パス**: `accountContext.emailAddress`
 
 1. ストアフロント：
 
@@ -1290,6 +1297,9 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **プロモーション ID**: **値** = `%promotion id%`
    - **フィールドグループ**: `commerce` > `purchases` > `value`
    - **値**: **値** = `1`
+   - **個人の電子メールアドレス**: **値** = `%account email%`
+   - **フィールドグループ**: `personalEmail` > `address`
+   - **住所**: **値** = `%account email%`
 
 #### ルール 
 
@@ -1307,19 +1317,16 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 
 ## ID の設定
 
-Experience Platformコネクタプロファイルは、 `personID` そして `personalEmail` XDM エクスペリエンスイベントの ID フィールド。 
+Experience Platformコネクタプロファイルは、 `identityMap` そして `personalEmail` XDM エクスペリエンスイベントの ID フィールド。 
 
 異なるフィールドを使用する以前の設定がある場合は、これらを引き続き使用できます。 Experience Platformコネクタのプロファイル ID フィールドを設定するには、次のフィールドを設定する必要があります。
 
-- `personalEmail`  — アカウントイベントのみ — アカウントイベントについて上記の手順に従います。
-- `personID`  — その他のすべてのイベント：
-
-   - 既にキャプチャしている場合 `ECID` タグで、 `personID` (Adobe Experience Platform Web SDK ルールの `%ECID%`.
-   - キャプチャするには `ECID` タグで、 **カスタムコード** アクションを追加し、 [タグドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/accessing-the-ecid.html). 次の例を参照してください。
+- `personalEmail`  — アカウントイベントのみ — 前述の手順に従います。 [アカウントイベント](#createaccount)
+- `identityMap`  — その他のすべてのイベント。 次の例を参照してください。
 
 ### 例
 
-次の画像は、 `pageView` イベント `personID` Experience Platformコネクタ：
+次の手順で、 `pageView` イベント `identityMap` Experience Platformコネクタ：
 
 1. ECID のカスタムコードを使用してデータ要素を設定します。
 
@@ -1328,13 +1335,24 @@ Experience Platformコネクタプロファイルは、 `personID` そして `pe
 
 1. ECID カスタムコードの追加：
 
-   ![データ要素に ECID を設定するコード](assets/code-to-set-ecid.png)
-   _データ要素に ECID を設定するコード_
+   ```javascript
+   return alloy("getIdentity").then((result) => {
+       var identityMap = {
+           ECID: [
+           {
+               id: ecid,
+               primary: true
+           }
+           ]
+       };
+     _satelite.setVar("identityMap", identityMap);
+   });
+   ```
 
-1. ECID として設定された personID を使用して XDM スキーマを更新します。
+1. XDM スキーマをで更新 `identityMap` ECID として設定：
 
-   ![personID を ECID として設定](assets/set-personid-as-ecid.png)
-   _personID を ECID として設定_
+   ![ECID として identityMap を設定](assets/identity-map-data-element.png)
+   _ECID として identityMap を設定_
 
 1. ECID を取得するルールアクションを定義します。
 
@@ -1343,7 +1361,7 @@ Experience Platformコネクタプロファイルは、 `personID` そして `pe
 
 ## 同意の設定
 
-Adobe CommerceおよびExperience Platformコネクタのデータ収集に関する同意は、デフォルトで有効になっています。 オプトアウトは、 [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). を使用する場合は、ここで説明する手順に従うことができます。 `mg_dnt` 同意を管理する この [Adobe Experience Platform Web SDK ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en) には、同意を管理するためのその他のオプションがいくつかあります。
+Adobe CommerceおよびExperience Platformコネクタのデータ収集に関する同意は、デフォルトで有効になっています。 オプトアウトは、 [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). を使用する場合は、ここで説明する手順に従うことができます。 `mg_dnt` 同意を管理する この [Adobe Experience Platform Web SDK ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) には、同意を管理するためのその他のオプションがいくつかあります。
 
 1. の作成 **コアカスタムコード** データ要素 (`%do not track cookie%`) `mg_dnt` cookie:
 
