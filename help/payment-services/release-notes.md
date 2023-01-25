@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] リリースノート"
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
+source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1445'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 1%
 これらのリリースノートでは、ホストされているサービスの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
 
 +++ホストされたサービスの更新
+
+_2023 年 1 月 26 日_
+
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-4102 --> 支払いサービスの新規インストールでコマースサービスを構成できず、支払いサービスが操作不可になっています。 この問題を修正するには、Payment Services 拡張機能をバージョン 1.5.3 に更新してください。
 
 _2022 年 9 月 13 日_
 
@@ -53,13 +57,19 @@ _2021 年 6 月 29 日_
 
 +++
 
+## v1.5.3
+
+_2022 年 1 月 26 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-4102 --> 後方互換性のない既知の問題の修正をリリースしました。 このリリースでは、サービス ID 拡張バージョンが最新の安定したバージョンにロックされ、新しい支払いサービスのインストールでコマースサービスを構成できるようになります。
+
 ## v1.5.2
 
 _2022 年 12 月 22 日_
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 支払い方法が拒否された場合の支払いサービスの請求を改善しました。
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services で、 [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} チェックアウトページ用のカスタムテンプレート。 以前は、ミニカートがボタンを断続的に表示していました。
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services で、 [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} チェックアウトページのカスタムテンプレート。 以前は、ミニカートがボタンを断続的に表示していました。
 
 ## v1.5.1
 
