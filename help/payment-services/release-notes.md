@@ -2,7 +2,7 @@
 title: "[!DNL Payment Services] リリースノート"
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
+source-git-commit: 275390c001e5b57ea7545af58643c97c26b98f25
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 1%
@@ -59,7 +59,7 @@ _2021 年 6 月 29 日_
 
 ## v1.5.3
 
-_2022 年 1 月 26 日_
+_2023 年 1 月 26 日_
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-4102 --> 後方互換性のない既知の問題の修正をリリースしました。 このリリースでは、サービス ID 拡張バージョンが最新の安定したバージョンにロックされ、新しい支払いサービスのインストールでコマースサービスを構成できるようになります。
 
