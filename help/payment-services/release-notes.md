@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Payment Services] リリースノート"
+title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 275390c001e5b57ea7545af58643c97c26b98f25
+source-git-commit: 4bd3e4bb791ac3688206dd2d671bae5c47dfa7c8
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,6 +56,12 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v1.5.4
+
+_2023 年 1 月 30 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-4110 --> 購入者が製品ページ、ミニカート、買い物かごのスマートボタンを使用して注文できなかった問題を修正しました。 購入者は注文を正常に完了できるようになりました。
 
 ## v1.5.3
 
