@@ -2,9 +2,9 @@
 title: カタログ同期
 description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services] サービスを最新の状態に保つための継続的なベースで
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ Adobe CommerceおよびMagento Open Sourceは、インデクサーを使用し�
 
 ### 同期が実行されていません
 
-同期がスケジュールに従って実行されていない場合、または何も同期されていない場合は、 [ナレッジベース](https://support.magento.com/hc/en-us/articles/360042224851).
+同期がスケジュールに従って実行されていない場合、または何も同期されていない場合は、 [ナレッジベース](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### 同期に失敗しました
 
-カタログ同期のステータスが **失敗**、 [サポートチケット](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
+カタログ同期のステータスが **失敗**、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## コマンドラインインターフェイス {#resynccmdline}
 

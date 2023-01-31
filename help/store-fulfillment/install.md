@@ -1,12 +1,12 @@
 ---
 title: インストール
-description: '" [!DNL Store Fulfillment solution] PHP 用の Composer を使用するAdobe Commerceストアフロントの場合。"'
+description: " [!DNL Store Fulfillment solution] PHP 用の Composer を使用するAdobe Commerceストアフロントの場合。"
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Walmart Commerce Technologies ソフトウェアアーカイブ（.zip ファイル）による Store Fulfilment へのアクセス** — オンボーディングとイネーブルメントのプロセス中に、アカウントマネージャーと協力して、Store Fulfilment 拡張機能のインストールファイルにアクセスします。
 
-- **Adobe Commerceアカウント情報**- [!DNL Store Fulfillment] ソリューションには [[!DNL Commerce] アカウント](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 に対する所有者または管理者アクセス権を持つアカウント ID と資格情報が必要です [!DNL Adobe Commerce] プロジェクト。
+- **Adobe Commerceアカウント情報**- [!DNL Store Fulfillment] ソリューションには [[!DNL Commerce] アカウント](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. に対する所有者または管理者アクセス権を持つアカウント ID と資格情報が必要です [!DNL Adobe Commerce] プロジェクト。
 
 - の場合 [!DNL Adobe Commerce] クラウドインフラストラクチャプロジェクトでは、ソフトウェアインストーラーが Cloud プロジェクトに管理者アクセス権を持っている必要があります。 詳しくは、 [ユーザーアクセスを管理](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-- **Composer と[!DNL Commerce CLI]** — 参照 [一般的な CLI のインストール](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} を参照してください。 [!DNL Adobe Commerce] プラットフォーム。
+- **Composer と[!DNL Commerce CLI]** — 参照 [一般的な CLI のインストール](https://devdocs.magento.com/extensions/install/){target="_blank"} を参照してください。 [!DNL Adobe Commerce] プラットフォーム。
 
 - **Adobe Commerceでサードパーティの拡張機能をインストールした経験** — 参照については、 Adobe Commerceのドキュメントを参照してください。
 
@@ -184,7 +184,7 @@ Adobe Commerceサーバーから、Store Fulfilment Services 拡張機能のモ�
 
 ### その他の手順
 
-必要に応じて、 [設定:static-content:デプロイ](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target=&quot;_blank&quot;} 静的ビューファイルを実稼動環境にデプロイするための CLI コマンド。
+必要に応じて、 [設定:static-content:デプロイ](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} 静的ビューファイルを実稼動環境にデプロイする CLI コマンド。
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -194,4 +194,4 @@ php bin/magento setup:static-content:deploy -f
 
 >[!NOTE]
 >
->詳しくは、 [Adobe Commerceでの静的コンテンツデプロイのベストプラクティス](https://support.magento.com/hc/en-us/articles/360031624091) ( Adobe Commerceヘルプセンター )
+>詳しくは、 [Adobe Commerceでの静的コンテンツデプロイのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) ( Adobe Commerceヘルプセンター )

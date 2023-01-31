@@ -4,9 +4,9 @@ description: 有効にする一般設定を構成します [!DNL Store Fulfillme
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2541'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ API 関連の例外がファイアウォールまたはキャッシュを通じ�
 
 >[!TIP]
 >
->Adobe Commerceのオンプレミスでのインストールの場合は、システム管理者に、 `var/log/walmart-bopis.log` ファイルのサイズを最小限に抑えます。 Adobe Commerceのオンプレミスでのインストールについては、 [対数の回転](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) 内 _Adobe Commerce Installation Guide_. Adobe Commerce on cloud infrastructure プロジェクトについては、 [ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Adobe Commerceのオンプレミスでのインストールの場合は、システム管理者に、 `var/log/walmart-bopis.log` ファイルのサイズを最小限に抑えます。 Adobe Commerceのオンプレミスでのインストールについては、 [対数の回転](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) 内 _Adobe Commerce Installation Guide_. Adobe Commerce on cloud infrastructure プロジェクトについては、 [ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>

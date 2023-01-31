@@ -2,9 +2,9 @@
 title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法 [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ API キーと秘密鍵の生成については、 [Commerce Services コネク�
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-その他のヘルプについては、 [[!DNL Live Search] カタログが同期されていません](https://support.magento.com/hc/en-us/articles/4405637804301-Live-search-catalog-not-synchronized) 」を参照してください。
+その他のヘルプについては、 [[!DNL Live Search] カタログが同期されていません](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) 」を参照してください。
 
 ### 今後の製品アップデート
 

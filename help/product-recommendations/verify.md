@@ -2,16 +2,16 @@
 title: イベントコレクションを検証
 description: 行動データがAdobe Commerceに送信されていることを確認する方法を説明します。
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # イベントコレクションを検証
 
-後 [インストールと設定](install-configure.md) の `magento/product-recommendations` モジュールの両方に属している場合は、行動データがAdobe Commerceに送信されていることを確認できます。 Chrome で利用可能な開発者ツールを使用するか、Snowplow Chrome 拡張機能をインストールできます。 追加のヘルプが必要な場合は、 [トラブルシューティング [!DNL Product Recommendations] モジュール](https://support.magento.com/hc/en-us/articles/360042224851) 」を参照してください。
+後 [インストールと設定](install-configure.md) の `magento/product-recommendations` モジュールの両方に属している場合は、行動データがAdobe Commerceに送信されていることを確認できます。 Chrome で利用可能な開発者ツールを使用するか、Snowplow Chrome 拡張機能をインストールできます。 追加のヘルプが必要な場合は、 [トラブルシューティング [!DNL Product Recommendations] モジュール](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 」を参照してください。
 
 ## Chrome の開発者ツールを使用した検証
 

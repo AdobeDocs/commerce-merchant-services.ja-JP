@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] ガイドの概要`'
 description: '''[!DNL Catalog Service for Adobe Commerce] 「では、ネイティブのAdobe Commerce GraphQLクエリよりも速く、製品表示ページと製品リストページのコンテンツを取得できます。」'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,6 @@ ht-degree: 0%
 
 このガイドに記載されていない情報や質問がある場合は、次のリソースを使用してください。
 
-* [ヘルプセンター](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy)  — カタログサービスに関するトラブルシューティング記事を参照してください。
-* [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)  — 追加のヘルプを受け取るには、チケットを送信します。
+* [ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) を参照してください。
+* [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)  — 追加のヘルプを受け取るには、チケットを送信します。
 * Adobe Commerceエンジニアリングチームや、 [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 公開Slackチャネルを最新の状態にする必要があります。

@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] ガイドの概要»'
 description: '"[!DNL Live Search] Adobe Commerceからは、素早く、超関連性が高く、直感的な検索エクスペリエンスを提供します。」'
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ ht-degree: 0%
 
 このガイドに記載されていない情報や質問がある場合は、次のリソースを使用してください。
 
-[ヘルプセンター](https://support.magento.com/hc/en-us)  — ライブ検索に関するトラブルシューティング記事を参照してください。
-[サポートチケット](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket)  — 追加のヘルプを受け取るには、チケットを送信します。
+[ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)  — ライブ検索に関するトラブルシューティング記事を参照してください。
+[サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)  — 追加のヘルプを受け取るには、チケットを送信します。
 
 サポートチケットを送信する前に、コマンドラインから次のコマンドを実行して、現在インストールされているライブ検索のバージョンを確認します。
 
