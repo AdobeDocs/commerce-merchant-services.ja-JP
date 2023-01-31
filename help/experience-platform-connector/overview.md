@@ -2,9 +2,9 @@
 title: ガイドの概要
 description: Experience Platformコネクタを使用してAdobe CommerceデータをAdobe Experience Platformに統合する方法について説明します。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: a316b92f75cb227d0c58af07482f9d37568af7ca
+source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -30,15 +30,15 @@ Experience Platformコネクタを使用するには、次が必要です。
 ## オンボーディング手順
 
 1. [インストール](install.md) Experience Platformコネクタ拡張
-1. [ログイン](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) をAdobeアカウントに追加し、 [表示](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 組織 ID。 組織 ID は、プロビジョニングされた組織の会社に関連付けられたExperience CloudID です。 この ID は 24 文字の英数字から成る文字列で、その後にが続きます（必須） `@AdobeOrg`.
+1. [ログイン](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) をAdobeアカウントに追加し、 [表示](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 組織 ID。 組織 ID は、プロビジョニングされた組織の会社に関連付けられたExperience CloudID です。 この ID は 24 文字の英数字から成る文字列で、その後にが続きます（必須） `@AdobeOrg`.
 1. [接続](connect-data.md) Adobe CommerceインスタンスをAdobe Experience Platformに追加します。
 1. [作成または更新](update-xdm.md) コマース固有のフィールドグループを持つ XDM スキーマ。
-1. [データストリームの作成](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) をクリックし、コマース固有のフィールドグループを含む XDM スキーマを選択します。
-1. （オプション） [買い物客プロファイルのアップロード](profile.md) Adobe Experience Platformのストアフロントデータを特定の買い物客に関連付けて、買い物体験を向上させることができます。
+1. [データセットの作成](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 作成または更新したスキーマに基づいて
+1. [データストリームの作成](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) をクリックし、コマース固有のフィールドグループを含む XDM スキーマを選択します。
 
 ## 対象ユーザ
 
-このガイドは、Adobe Commerceストアフロントデータを他のAdobeDX 製品に接続するAdobe Commerceの商人を対象としています。
+このガイドは、Adobe Commerceデータを他のAdobeDX 製品に接続するAdobe Commerceのマーチャント向けに設計されています。
 
 ### PWA Studioサポート
 
@@ -50,5 +50,5 @@ Experience Platformコネクタを使用するには、次が必要です。
 
 このガイドに記載されていない情報や質問がある場合は、次のリソースを使用してください。
 
-- [ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target=&quot;_blank&quot;}
-- [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target=&quot;_blank&quot;} — 追加のヘルプを受け取るには、チケットを送信します。
+- [ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 追加のヘルプを受け取るには、チケットを送信します。
