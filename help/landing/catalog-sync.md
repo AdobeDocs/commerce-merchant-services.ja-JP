@@ -2,9 +2,9 @@
 title: カタログ同期
 description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services] サービスを最新の状態に保つための継続的なベースで
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Adobe CommerceおよびMagento Open Sourceは、インデクサーを使用し�
 
 >[!NOTE]
 >
-> コマンドラインからデータの再同期をトリガーすると、データが更新されるまで最大 1 時間かかる場合があります。
+> データ同期を初めて実行する場合は、 `productattributes` 最初にフィードを開き、次に `productoverrides`、実行前 `products` フィード。
 
 コマンドオプション：
 
@@ -130,6 +130,8 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 - `variants` — 色やサイズなど、設定可能な製品の製品バリエーション。
 - `productattributes` — 製品属性 ( 例： `activity`, `gender`, `tops`, `bottoms`など
 - `productoverrides` — カテゴリ権限に基づく価格やカタログ表示ルールなど、お客様固有の価格やカタログ表示ルール
+
+コマンドラインからデータの再同期をトリガーする場合、データが更新されるまで最大 1 時間かかる場合があります。
 
 ### 例
 
