@@ -2,9 +2,9 @@
 title: "Adobe Commerceユーザーのチェックアウトフロー"
 description: 「 [!DNL Quick Checkout] Adobe Commerceユーザーのフロー。」
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,9 @@ ht-degree: 0%
 
 既存のAdobe Commerceユーザーとして注文する際に問題が発生した場合は、 [クイックチェックアウトに関する問題のトラブルシューティング](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 記事をAdobe Commerce Help Center で参照してください。
 
-### 自動ログイン
+## 自動ログイン
+
+自動ログインコンポーネントは、買い物客がアクティブな Bolt セッションを持っているかどうかを検出し、買い物客を自動的にログインします。 これにより、買い物客が以前のセッションでアカウント検出と 1 回限りのパスコード (OTP) の手順をスキップします。
 
 自動ログインを [!DNL Quick Checkout] ユーザー。 設定を有効にすると、チェックアウト時にユーザーに自動的にログインできます。
 

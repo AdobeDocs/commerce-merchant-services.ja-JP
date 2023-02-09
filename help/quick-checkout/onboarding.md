@@ -2,9 +2,9 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,10 @@ Adobe Commerceの標準チェックアウトオプションについて詳しく
 
 1. を選択します。 **ログイン後の次のステージ** オプションを使用して、ユーザーがログインした後にナビゲーションフローを変更できます。 デフォルトでは、 **支払い** ページ。
 1. 次の場合に定義 [!DNL Quick Checkout] 許可 **自動ログイン** チェックアウト時に。 デフォルトでは、 [!DNL Bolt] ネットワーク。
+
+   >[!NOTE]
+   >
+   > 詳しくは、 [Bolt&#39;s Enable Automatic Login documentation](https://help.bolt.com/products/embedded/direct-api/auto-login/) を参照してください。
 
 ## お問い合わせ
 

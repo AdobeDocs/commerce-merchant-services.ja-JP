@@ -1,10 +1,10 @@
 ---
-title: '[!DNL Quick Checkout] リリースノート'
+title: '''[!DNL Quick Checkout] リリースノート`'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,14 @@ _2022 年 10 月 6 日_
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-369 --> さて、 [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) フッターにアプリのバージョンを表示します。
 
 +++
+
+## v1.6.0
+
+_2023 年 2 月 10 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-567 --> 次の場合のユーザーエクスペリエンスの改善 [注文の実施](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) の使用 [店内配信](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) メソッドの [!DNL Quick Checkout] 無効。
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-569 --> ログアウト機能を改善し、買い物客が次の操作を実行できるようにしました。 [Bolt Network からログアウトする](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
 
 ## v1.5.0
 

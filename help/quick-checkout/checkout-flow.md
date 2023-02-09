@@ -2,7 +2,7 @@
 title: 「Adobe Commerceのチェックアウトフロー」
 description: 「 [!DNL Quick Checkout] Adobe Commerceの流れだ」
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -19,6 +19,10 @@ ht-degree: 0%
 1. チェックアウトに進みます。
 
 ![チェックアウト](assets/proceed-checkout.png)
+
+>[!NOTE]
+>
+> マーチャントに対する自動ログインを有効にすることができます。 詳しくは、 [Bolt&#39;s Enable Automatic Login トピック](https://help.bolt.com/products/embedded/direct-api/auto-login/) を参照してください。
 
 1. プロンプトが表示されたら、 [!DNL Bolt] アカウント
 1. これに送信する 1 回限りのパスワード (OTP) を入力します [!DNL Bolt] アカウントの電子メールアドレスまたは電話番号。
