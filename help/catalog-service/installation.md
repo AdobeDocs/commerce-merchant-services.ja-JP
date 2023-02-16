@@ -2,14 +2,24 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: ce5e37c470bb93dc7bc2301ead0789adcf9ab995
+source-git-commit: 242060d94700efc018a520d2d680c0f47a0cb915
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
 
 # オンボーディングとインストール
+
+カタログサービスプロセスのチュートリアルを参照してください。
+
+パート 1:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415599)
+
+パート 2:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415600)
 
 ## 前提条件
 
