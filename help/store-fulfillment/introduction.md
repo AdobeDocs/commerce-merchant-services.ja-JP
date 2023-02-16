@@ -4,9 +4,9 @@ description: «学ぶ方法 [!DNL Store Fulfillment for Adobe Commerce by Walmar
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 1157fe71dbef07f9db835a5a399f9304af550a86
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Store Fulfilment for Adobe Commerce by Walmart Commerce Technologies は、 [!DN
 
 * Luma テーマとの完全な互換性
 
-* ヘッドレスおよび Venia ストアフロント用の GraphQL のサポートを提供
+* PWAとヘッドレスストアフロントの部分的な互換性
 
 * Walmart Commerce Technologies の Store Assist アプリをサポートします。 このアプリは、選択した店舗の場所にある従業員のハンドヘルドデバイスに、受け取り注文情報を直接配信します。 この情報を利用して、顧客が店舗に到着した際に、顧客に対して迅速かつ正確にアイテムを選択、ステージング、ハンドオフできます。
 
