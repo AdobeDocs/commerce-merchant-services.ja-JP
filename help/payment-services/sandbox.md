@@ -2,9 +2,9 @@
 title: テスト用サンドボックスの設定
 description: PayPal Sandbox アカウントを使用して [!DNL Payment Services] テストモードの
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,8 @@ PayPal Sandbox アカウントを使用すると、 [!DNL Payment Services] テ�
 
    PayPal アカウントを接続して支払いの受け入れを開始するための PayPal ウィンドウが表示されます。
 
-1. PayPal ビジネスアカウント（PayPal サンドボックスアカウントではない）とお住まいの国または地域のメールアドレスを入力し、 **[!UICONTROL Next]**.
+1. 手順 3 で生成した PayPal Sandbox アカウントの電子メールとパスワード（PayPal のビジネスアカウント情報ではなく）、およびお住まいの国や地域を入力します。
+1. クリック **[!UICONTROL Next]**.
 
    ![PayPal — 支払いに PayPal アカウントを接続](assets/paypal-connectacct.png)
 
