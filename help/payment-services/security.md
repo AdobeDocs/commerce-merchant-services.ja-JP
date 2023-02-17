@@ -2,9 +2,9 @@
 title: セキュリティとコンプライアンス
 description: サイトのセキュリティとコンプライアンス要件を確認します。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -17,23 +17,37 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce] および [!DNL Magento Open Source] いくつかのセキュリティ機能のサポートが含まれています。
 
-詳しくは、 [セキュリティ](https://docs.magento.com/user-guide/stores/security.html)セキュリティのベストプラクティスを確認し、管理者セッションと資格情報の管理、CAPTCHA の実装、Web サイト制限の管理の方法を学ぶためのコアユーザーガイドの {target=&quot;_blank&quot;}。
+詳しくは、 [セキュリティ](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} セキュリティのベストプラクティスを確認し、管理者セッションと資格情報の管理、CAPTCHA の実装、web サイト制限の管理の方法を学ぶためのコアユーザーガイドです。
 
 ## PCI コンプライアンス
 
 決済カード業界 (PCI) は、インターネットを介してクレジットカードによる支払いを受け入れる企業に対して一連の要件を定めました。 安全な環境の維持に加え、顧客のクレジットカード情報を扱う商人は、いくつかの標準的なガイドラインに従う責任を負います。
 
-詳しくは、 [PCI コンプライアンスガイドライン](https://docs.magento.com/user-guide/stores/compliance-pci.html){target=&quot;_blank&quot;} を参照してください。
+詳しくは、 [PCI コンプライアンスガイドライン](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} を参照してください。
 
-商人が [自己評価アンケート (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target=&quot;_blank&quot;}。カード所有者データのセキュリティを評価するための自己検証ツールです。
+商人が [自己評価アンケート (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}：カード所有者データのセキュリティを評価するための自己検証ツールです。
 
 ### クレジットカードのフィールド
 
 クレジットカードフィールドを使用すると、PCI 規制のデータはサービスを通じて渡されません。 データの保存や保守を行う必要がなく、PCI への準拠に関する懸念が大幅に軽減されます。
 
+### 3DS
+
+PCI 3-D セキュア (3DS) は、オンラインでクレジットカードを購入する際に、クレジットカード発行者との購入者認証を可能にします。 この追加のセキュリティ層は、オンライン詐欺を防ぐのに役立ち、EU（欧州連合）コンプライアンス規制の一部として必要です。
+
+[!UICONTROL Payment Services] は、3DS 機能を提供し、商人が EU 規制に準拠し、店舗での顧客や商人の不正行為を防ぐことを可能にします。
+
+3DS への準拠が必要な EU または英国内の商人の場合は、手動で 3DS をオンにする必要があります ( `Off` デフォルトで ) [設定](settings.md#credit-card-fields).
+
+マーチャント/店舗担当者が購入者に対して行った注文は、3DS コンプライアンス対策で構成されていません。
+
+詳しくは、 [3DS の設定](settings.md#3ds) を参照してください。
+
 ### カードの保管
 
 買い物客が [クレジットカード情報を保管する（「保存する」）](vaulting.md) 店舗での今後の購入については、最小限のクレジットカード情報が買い物客（最後の 4 桁、カードの有効期限、カードのブランド）と共有されます。 クレジットカード情報は、支払いプロバイダーと共に保存されます。 カードの有効期限が切れたり、保存された情報が不要になった場合は、その情報を削除して、支払いプロバイダーが情報を保存しなくすることができます。
+
+詳しくは、 [クレジットカードの保管](vaulting.md) を参照してください。
 
 ### PayPal スマートボタン
 

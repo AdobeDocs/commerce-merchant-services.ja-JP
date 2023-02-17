@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] ストア設定の
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,10 @@ ht-degree: 0%
 1. 内 _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL Credit Card Fields]_ 」セクションに入力します。
 1. の場合 **[!UICONTROL Title]**、（必要に応じて）テキストを入力して、チェックアウト時に表示される支払い方法の名前を変更します。
 1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)を選択します。 **[!UICONTROL Authorize]** または **許可してキャプチャ**.
-1. の場合 **[!UICONTROL Show on checkout page]**&#x200B;選択 `Yes` :「チェックアウト」ページのクレジットカードフィールドを有効または無効にします。
+1. の場合 **[!UICONTROL Show on checkout page]**&#x200B;選択 `Yes` をクリックして、「チェックアウト」ページのクレジットカードフィールドを有効にします。
 1. の場合 **[!UICONTROL Vault Enabled]**&#x200B;選択 `Yes` チェックアウト用のクレジットカード保管を有効にする。
-1. の場合 **デバッグモード**&#x200B;選択 `Yes` デバッグモードを有効にする ( または `No` 無効にする )。
+1. の場合 **[!UICONTROL Debug Mode]**&#x200B;選択 `Yes` デバッグモードを有効にする ( または `No` 無効にする )。
+1. 有効にするには **[!UICONTROL 3DS Secure authentication]** (`Off` デフォルトでは選択 `Always` または `When required`.
 1. クリック **[!UICONTROL Save Config]** 変更を保存します。
 1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
@@ -72,7 +73,10 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション： [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} （指定した支払い方法） オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | web サイト | 「チェックアウト」ページのクレジットカードフィールドを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault Enabled] | web サイト | クレジットカードの保管を有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL 3DS Secure authentication] | web サイト | 有効または無効 [3DS セキュア認証](security.md#3ds). オプション： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ## [!DNL PayPal Smart Buttons]
@@ -101,7 +105,7 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
-| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} （指定した支払い方法） オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | web サイト | 買い物かご、製品ページ、ミニ買い物かごおよびチェックアウトフローの「後で支払う」メッセージを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Venmo Enabled] | ストア表示 | 支払いボタンが表示される Venmo 支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Apple Pay Enabled] | ストア表示 | 支払いボタンが表示される「Apple支払」支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
@@ -126,3 +130,4 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 ## キャッシュをフラッシュ
 
 設定を変更した場合、 [キャッシュを手動でフラッシュする](/help/payment-services/settings.md#flush-the-cache) ストアに最新の設定が表示されるようにします。
+

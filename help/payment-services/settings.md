@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] 家に
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ## 支払いオプションを設定
 
-Web サイトで支払いサービスが有効になったので、支払い機能とストアフロント表示のデフォルト設定を変更できます。
+これで、を有効にしました。 [!UICONTROL Payment Services] web サイトでは、支払い機能とストアフロント表示のデフォルト設定を変更できます。
 
 1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -109,6 +109,7 @@ Web サイトで支払いサービスが有効になったので、支払い機�
 1. ストア表示を選択します ( **[!UICONTROL Scope]** 支払い方法を有効にするドロップダウンメニュー。
 1. チェックアウト時に表示される支払い方法の名前を変更するには、 **[!UICONTROL Checkout title]** フィールドに入力します。
 1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)，切り替え **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
+1. 有効にするには [3DS セキュア認証](security.md#3ds) (`Off` （デフォルト）切り替え **[!UICONTROL 3DS Secure authentication]** セレクター `Always` または `When required`.
 1. チェックアウトページのクレジットカードフィールドを有効または無効にするには、 **[!UICONTROL Show on checkout page]** セレクター。
 1. 有効または無効にするには [カード保管](#card-vaulting)、切り替え **[!UICONTROL Vault enabled]** セレクター。
 1. デバッグモードを有効または無効にするには、 **[!UICONTROL Debug Mode]** セレクター。
@@ -123,9 +124,10 @@ Web サイトで支払いサービスが有効になったので、支払い機�
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション： [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} （指定した支払い方法） オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL 3DS Secure authentication] | web サイト | 有効または無効 [3DS セキュア認証](security.md#3ds). オプション： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページに表示するクレジットカードフィールドを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | web サイト | クレジットカードの保管を有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | web サイト | 有効または無効 [クレジットカードの保管](#card-vaulting). オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 支払いボタン
@@ -165,7 +167,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
-| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} （指定した支払い方法） オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on checkout page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] をチェックアウトページに追加します。 オプション： [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] 製品の詳細ページに表示されます。 オプション： [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] をクリックします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
@@ -231,12 +233,21 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 
 でのカードの保管を有効または無効にします。 [クレジットカードフィールドの設定](#credit-card-fields).
 
-詳しくは、 [クレジットカードの保管](vaulting.md) ヴォールティングの詳細については、を参照してください。
+詳しくは、 [クレジットカードの保管](vaulting.md) を参照してください。
+
+## 3DS
+
+3DS は、店舗での不正行為から顧客や商人を保護し、EU（欧州連合）標準への準拠を可能にします。
+
+での 3DS の有効/無効を切り替えます。 [クレジットカードフィールドの設定](#credit-card-fields).
+
+詳しくは、 [3DS のセキュリティ](security.md#3ds) を参照してください。
 
 ## 複数の PayPal アカウントを使用
 
-支払いサービスでは、 **1 つ** ウェブサイトレベルのマーチャントアカウント。 例えば、複数の国 ( 異なる [通貨](https://docs.magento.com/user-guide/stores/currency.html)) またはAdobe Commerceをビジネスの一部に使用したいが、使用しない場合 _すべて_&#x200B;複数の PayPal アカウントを使用するようにマーチャントアカウントを設定することができます。
+In [!UICONTROL Payment Services]の場合、内で複数の PayPal アカウントを使用できます **1 つ** ウェブサイトレベルのマーチャントアカウント。 例えば、複数の国 ( 異なる [通貨](https://docs.magento.com/user-guide/stores/currency.html)) またはAdobe Commerceをビジネスの一部に使用したいが、使用しない場合 _すべて_&#x200B;複数の PayPal アカウントを使用するようにマーチャントアカウントを設定することができます。
 
 詳しくは、 [サイト、ストア、および表示範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) web サイト、ストア、ストア表示の階層に関する詳細。
 
 セールス担当者が新しい [範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) お客様のマーチャントアカウントに対して、PayPal を使用して追加サイトをオンボーディングし、設定した PayPal ボタンがサイトに表示されるようにします。 Web サイトに複数の PayPal アカウントを使用する方法については、セールス担当者にお問い合わせください。
+
