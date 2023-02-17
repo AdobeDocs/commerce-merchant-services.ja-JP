@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] ストア設定の
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 0%
 1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)を選択します。 **[!UICONTROL Authorize]** または **許可してキャプチャ**.
 1. の場合 **[!UICONTROL Show on checkout page]**&#x200B;選択 `Yes` をクリックして、「チェックアウト」ページのクレジットカードフィールドを有効にします。
 1. の場合 **[!UICONTROL Vault Enabled]**&#x200B;選択 `Yes` チェックアウト用のクレジットカード保管を有効にする。
+1. の場合 **[!UICONTROL Vault Enabled in Admin]**&#x200B;選択 `Yes` マーチャントが、アウトに保存されたクレジットカードを使用して顧客に対する注文を作成できるようにする。
 1. の場合 **[!UICONTROL Debug Mode]**&#x200B;選択 `Yes` デバッグモードを有効にする ( または `No` 無効にする )。
 1. 有効にするには **[!UICONTROL 3DS Secure authentication]** (`Off` デフォルトでは選択 `Always` または `When required`.
 1. クリック **[!UICONTROL Save Config]** 変更を保存します。
@@ -73,9 +74,10 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション： [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | web サイト | 「チェックアウト」ページのクレジットカードフィールドを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault Enabled] | web サイト | クレジットカードの保管を有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | ストア表示 | 有効または無効 [クレジットカードの保管](vaulting.md). オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled in Admin] | ストア表示 | の機能を有効または無効にします [マーチャントが管理で顧客の注文を完了する](vaulting.md) 跳ね上げられた支払い方法を使用して オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL 3DS Secure authentication] | web サイト | 有効または無効 [3DS セキュア認証](security.md#3ds). オプション： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 

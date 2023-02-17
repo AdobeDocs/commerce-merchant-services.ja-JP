@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] 家に
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,7 @@ ht-degree: 0%
 1. 有効にするには [3DS セキュア認証](security.md#3ds) (`Off` （デフォルト）切り替え **[!UICONTROL 3DS Secure authentication]** セレクター `Always` または `When required`.
 1. チェックアウトページのクレジットカードフィールドを有効または無効にするには、 **[!UICONTROL Show on checkout page]** セレクター。
 1. 有効または無効にするには [カード保管](#card-vaulting)、切り替え **[!UICONTROL Vault enabled]** セレクター。
+1. 有効または無効にするには [管理者の管理者の支払い方法](#card-vaulting) （管理者が管理者に対し、管理者が自分の vault の支払い方法で顧客の注文を完了するために）、 **[!UICONTROL Show vaulted methods in Admin]** セレクター。
 1. デバッグモードを有効または無効にするには、 **[!UICONTROL Debug Mode]** セレクター。
 1. クリック **[!UICONTROL Save]**.
 
@@ -127,7 +128,8 @@ ht-degree: 0%
 | [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | web サイト | 有効または無効 [3DS セキュア認証](security.md#3ds). オプション： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページに表示するクレジットカードフィールドを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | web サイト | 有効または無効 [クレジットカードの保管](#card-vaulting). オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | ストア表示 | 有効または無効 [クレジットカードの保管](vaulting.md). オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | ストア表示 | 管理でマーチャントが顧客の注文を完了する機能を有効または無効にします [跳ね上げ式の支払い方法を使用する](vaulting.md). オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 支払いボタン
@@ -230,6 +232,8 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 ## カードの保管
 
 顧客が自分のアカウントにクレジットカード情報を格納（保存）して、将来の購入に使用できる機能を有効にすることができます。
+
+また、管理でカードヴォールティングを使用して、既存顧客に対する以降の注文を完了することもできます。
 
 でのカードの保管を有効または無効にします。 [クレジットカードフィールドの設定](#credit-card-fields).
 
