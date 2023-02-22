@@ -2,7 +2,7 @@
 title: '''[!DNL Quick Checkout] リリースノート`'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: d0d205b394a772ca84ffb561d0695bd79144f2c6
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -64,6 +64,12 @@ _2022 年 10 月 6 日_
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-369 --> さて、 [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) フッターにアプリのバージョンを表示します。
 
 +++
+
+## v1.7.0
+
+_2023 年 2 月 23 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue AC-8002 --> を使用して注文を行う際のユーザーエクスペリエンスの改善 [Multishipping](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) メソッド。 この機能により、チェックアウト時に支払い方法を [!DNL Quick Checkout] が有効になっている。
 
 ## v1.6.0
 
