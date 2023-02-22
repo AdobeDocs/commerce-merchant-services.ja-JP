@@ -1,17 +1,17 @@
 ---
-title: 注文の支払いステータスレポート
+title: 注文支払ステータスレポート
 description: 注文の支払ステータスレポートを使用して、注文の支払ステータスを確認し、潜在的な問題を特定します。
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 注文の支払いステータスレポート
+# 注文支払ステータスレポート
 
 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗の注文件数と支払い数を明確に把握できるよう、包括的なレポートを提供します。
 
@@ -33,11 +33,11 @@ ht-degree: 0%
 
 この [!DNL Payment Services] モジュールは、注文データを使用し、他のソース（PayPal を含む）からの集計された支払いデータと組み合わせて、意味のある非常に有用なレポートを提供します。
 
-注文データは、支払いサービスでエクスポートおよび保持されます。 次の場合： [注文のステータスを変更または追加する](https://docs.magento.com/user-guide/sales/order-status-custom.html){target=&quot;_blank&quot;} または [ストア表示の編集](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target=&quot;_blank&quot;}, [ストア](https://docs.magento.com/user-guide/stores/store-information.html){target=&quot;_blank&quot;} または Web サイト名では、このデータと支払いデータが組み合わされ、注文の支払い状況レポートに組み合わされた情報が入力されます。
+注文データは、支払いサービスでエクスポートおよび保持されます。 次の場合： [注文のステータスを変更または追加する](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}または Web サイト名を入力すると、そのデータと支払いデータが結合され、注文の支払いステータスレポートに結合された情報が入力されます。
 
 このプロセスには、次の 2 つの手順があります。
 
-1. インデックスは、データを変更します `ON SAVE` （注文情報またはストア情報が変更されるたびに）または `BY SCHEDULE` （事前設定された Cron スケジュールに基づく）、 [インデックス管理](https://docs.magento.com/user-guide/system/index-management.html){target=&quot;_blank&quot;}（管理）。
+1. インデックスは、データを変更します `ON SAVE` （注文情報またはストア情報が変更されるたびに）または `BY SCHEDULE` （事前設定された Cron スケジュールに基づく）、 [インデックス管理](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} 」と入力します。
 
    デフォルトでは、データのインデックス作成がおこなわれます `ON SAVE`：つまり、注文、注文ステータス、ストア表示、ストアまたは Web サイトで何かが変更された場合には、そのたびに再インデックス化処理がおこなわれます。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ただし、デフォルトでは、インデックスの再作成は `ON SAVE` モードの場合は、 `BY SCHEDULE` モード。 この `BY SCHEDULE` インデックスは cron スケジュールで 1 分間実行され、変更されたデータはデータの変更から 2 分以内に注文ステータスレポートに表示されます。 このスケジュールされたインデックス再作成により、（各注文がおこなわれるのではなく）スケジュールに基づいて発生するので、特に大量の受信注文がある場合に、ストアの負担を軽減できます。
 
-インデックスモードを変更できます。`ON SAVE` または `BY SCHEDULE`—[管理者](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;}。
+インデックスモードを変更できます。`ON SAVE` または `BY SCHEDULE`—[管理者](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
 データエクスポートを設定する方法については、 [コマンドライン設定](configure-cli.md#configure-data-export).
 
@@ -181,10 +181,10 @@ These order payment status timeframes are currently available in [!DNL Payment S
 
 | 列 | 説明 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | コマース注文 ID<br> <br>関連する [注文情報](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}、ID をクリックします。 |
+| [!UICONTROL Order ID] | コマース注文 ID<br> <br>関連する [注文情報](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}、「ID」をクリックします。 |
 | [!UICONTROL Order Date] | 注文日のタイムスタンプ |
 | [!UICONTROL Authorized Date] | 支払承認の日付タイムスタンプ |
-| [!UICONTROL Order Status] | 現在のコマース [注文ステータス](https://docs.magento.com/user-guide/sales/order-status.html){target=&quot;_blank&quot;} |
+| [!UICONTROL Order Status] | 現在のコマース [注文ステータス](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
 | [!UICONTROL Invoiced] | 注文の請求書ステータス —*[!UICONTROL No]*, *[!UICONTROL Partial]*&#x200B;または *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | 注文の発送ステータス —*[!UICONTROL No]*, *[!UICONTROL Partial]*&#x200B;または *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | 注文の総計金額 |

@@ -1,15 +1,15 @@
 ---
-title: 有効にする [!DNL Payment Services] 本番用
+title: 有効にする [!DNL Payment Services] 実稼動用
 description: を有効にしてオンボーディングプロセスを完了します。 [!DNL Payment Services] 実稼動用。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 有効にする [!DNL Payment Services] 本番用
+# 有効にする [!DNL Payment Services] 実稼動用
 
 サービスを実稼動環境に移行し、 [オンボーディングプロセス](onboard.md)、このトピックの手順に従って、次の操作をおこないます。
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
    このオプションは、まだ設定していない場合は表示されます [!DNL Payment Services] を 1 つ以上の web サイトの支払い方法として使用できます。
 
-   ホームビューの設定領域に移動し、関連するオプションが展開されます (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) を使用し、 [!DNL Payment Services] オプション [支払方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}。
+   ホームビューの設定領域に移動し、関連するオプションが展開されます (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) を使用し、 [!DNL Payment Services] オプション [支払方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_，設定&#x200B;**[!UICONTROL Enable]**から `Yes`.
 1. 設定 **[!UICONTROL Payment Action]**、両方 _[!UICONTROL Credit Card Fields]_および_[!UICONTROL PayPal Smart Buttons]_&#x200B;を次のいずれかに変更します。
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Save]**.
 1. クリック **[!UICONTROL Go to Payment Services]** 戻る [!DNL Payment Services] ホーム。
-1. [キャッシュをクリア](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}。
+1. [キャッシュをクリア](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    設定を変更するたびに、クリアを実行する必要があります。
 
@@ -107,7 +107,7 @@ A _実稼動商人 ID_ が自動生成され、 [設定](configure-admin.md). �
 1. ホームで、 **[!UICONTROL Settings]** をクリックします。 詳しくは、 [ホーム](payments-home.md) を参照してください。
 1. 内 _[!UICONTROL General Configuration]_セクションセット&#x200B;**[!UICONTROL Payment mode]**から `Production`.
 1. クリック **[!UICONTROL Save]**.
-1. [キャッシュをクリア](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}。
+1. [キャッシュをクリア](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >

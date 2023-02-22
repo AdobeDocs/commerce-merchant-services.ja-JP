@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] コマンドライ
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >コマンドにインデクサを指定しない場合、すべてのインデクサは同じ値に更新されます。 特定のインデクサを変更する場合は、コマンドでそのインデクサをリストする必要があります。
 
-インデクサーのモードを手動で変更する方法について詳しくは、 [インデクサーの設定](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target=&quot;_blank&quot;}（開発者向けドキュメント）。 管理者で変更する方法については、 [インデックス管理](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;}（コアユーザーガイド）。
+インデクサーのモードを手動で変更する方法について詳しくは、 [インデクサーの設定](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} 」を参照してください。
 
 ### 手動でデータを再インデックス
 
-データが自動的に発生するのを待つ代わりに、手動でデータのインデックスを再作成できます。 詳しくは、 [再インデックス](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target=&quot;_blank&quot;} in [インデクサーの管理](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target=&quot;_blank&quot;} を参照してください。
+データが自動的に発生するのを待つ代わりに、手動でデータのインデックスを再作成できます。 詳しくは、 [再インデックス](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} を参照してください。
 
 条件 `BY SCHEDULE` モードが設定されている場合、システムは変更されたエンティティをトラッキングし、cron ジョブは設定されたスケジュールに基づいて、変更されたエンティティのインデックスを更新します。 詳しくは、 [コマンドラインから cron を実行します。](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [cron の設定と実行](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) を参照してください。
 

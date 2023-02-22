@@ -1,15 +1,15 @@
 ---
-title: クレジットカードの保管
+title: クレジットカード保管
 description: 買い物客は、後で購入する際に、クレジットカードの詳細を確認（保存）できます。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
-source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-# クレジットカードの保管
+# クレジットカード保管
 
 1 回限りの顧客を、クレジットカードの保管機能を備えた常連客に変換します。 買い物客は、チェックアウト時にクレジットカードの資格情報を保存 (「vault」) して、同じ商人アカウント内で後の購入で使用することができます。
 

@@ -4,9 +4,9 @@ description: 支払額、処理済数量および財務調整の取引レベル�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -154,8 +154,8 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、ライ�
 | [!UICONTROL Code] | クレジット (*CR*) または借方 (*DR*) |
 | [!UICONTROL Reference ID] | このイベントが関連する元のトランザクション ID |
 | [!UICONTROL Invoice] | トランザクションの請求書 ID （注文ごとに 1 つ） |
-| [!UICONTROL Commerce order] | コマース注文 ID <br> <br>関連する [注文情報](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}、ID をクリックします。 |
-| [!UICONTROL Commerce trans] | コマーストランザクション ID <br> <br>関連する [トランザクション情報](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}、ID をクリックします。 |
+| [!UICONTROL Commerce order] | コマース注文 ID <br> <br>関連する [注文情報](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}、「ID」をクリックします。 |
+| [!UICONTROL Commerce trans] | コマーストランザクション ID <br> <br>関連する [トランザクション情報](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}、「ID」をクリックします。 |
 | [!UICONTROL Pay method] | クレジットカードのタイプ —*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]* — および関連するカードプロバイダー ( *ビザ* または *MasterCard*) |
 | [!UICONTROL Trans amt] | トランザクションの金額 |
 | [!UICONTROL Cur] | トランザクション金額の通貨単位 |
@@ -184,19 +184,19 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、ライ�
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | 注文に対して買い手と売り手の間で移動されるお金 |
 | [!UICONTROL AUTH] | 承認および承認無効トランザクション |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | チャージバック手数料とチャージバック手数料の取り消しトランザクション |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | パートナー手数料、支払手数料、手数料取消取引 |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | 銀行口座または損失勘定からの回収 |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |
