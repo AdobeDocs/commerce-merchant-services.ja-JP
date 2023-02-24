@@ -1,8 +1,8 @@
 ---
-title: '''[!DNL Quick Checkout] (Adobe Commerce Admin Panel 用 )'
-description: 詳しくは、 [!DNL Quick Checkout] 管理パネルは、拡張機能のオンボーディング、設定、視覚化を成功におこなう方法に役立ちます。
+title: '''[!DNL Quick Checkout] (Adobe Commerce管理パネル用 )'
+description: 詳しくは、 [!DNL Quick Checkout] Admin Panel は、拡張機能のオンボーディング、設定、視覚化を成功させる方法を支援します。
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%

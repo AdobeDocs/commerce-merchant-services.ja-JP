@@ -2,7 +2,7 @@
 title: の設定 [!DNL Quick Checkout] Adobe Commerce拡張機能
 description: の設定オプションについて説明します。 [!DNL Quick Checkout] およびは、拡張機能のオンボーディングとセットアップに成功する方法を示しています。
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%

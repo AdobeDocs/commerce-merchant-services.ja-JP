@@ -2,7 +2,7 @@
 title: '[!DNL Quick Checkout] ユーザー設定'
 description: ユーザーの役割と、 [!DNL Quick Checkout] 管理パネル。
 exl-id: 76393840-8312-41bb-8447-412849815169
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%

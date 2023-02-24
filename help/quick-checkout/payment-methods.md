@@ -1,15 +1,15 @@
 ---
-title: '"支払い方法"'
+title: "支払い方法"
 description: 「 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合」
 exl-id: 7d151477-5932-4ec0-b729-dbda6b49e6da
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] 互換支払い方法
+# [!DNL Quick Checkout] 互換性のある支払い方法
 
 商人が [!DNL Quick Checkout]:
 

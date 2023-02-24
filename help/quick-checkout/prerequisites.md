@@ -2,9 +2,9 @@
 title: "[!DNL Quick Checkout] 前提条件"
 description: 「システムが、 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合」
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 696aa03404fe270f13835b451b56759675d49778
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '126'
 ht-degree: 1%
 
 ---

@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] リリースノート`'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d0d205b394a772ca84ffb561d0695bd79144f2c6
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,12 @@ _2022 年 10 月 6 日_
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-369 --> さて、 [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) フッターにアプリのバージョンを表示します。
 
 +++
+
+## v1.8.0
+
+_2023 年 2 月 25 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-592 --> を [管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) using [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) 支払い方法として。 この機能を使用すると、顧客は、チェックアウト時にBraintreeを支払い方法として注文を行うことができます。 [!DNL Quick Checkout] が有効になっている。
 
 ## v1.7.0
 

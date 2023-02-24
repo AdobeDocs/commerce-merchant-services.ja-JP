@@ -2,7 +2,7 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
