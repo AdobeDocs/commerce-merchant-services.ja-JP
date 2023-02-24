@@ -1,9 +1,10 @@
 ---
 title: データを収集
 description: イベントが商品レコメンデーションのデータを収集する方法を説明します。
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+exl-id: b827d88c-327f-4986-8239-8f1921d8383c
+source-git-commit: 0392077939436f0d2b1c37f403f5365c87f3215e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
