@@ -1,15 +1,15 @@
 ---
-title: Workspace
+title: '''[!DNL Product Recommendations] ワークスペース`'
 description: 製品レコメンデーションのパフォーマンスを設定、管理および監視する方法について説明します。
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
-# Workspace
+# [!DNL Product Recommendations] Workspace
 
 この [!DNL Product Recommendations] workspace には、以前に設定したレコメンデーションのリストと、各レコメンデーションの成功を追跡するのに役立つ指標が表示されます。 リストは、最終日、週または月の指標を計算するように設定できます。 指標を使用して、レコメンデーションユニットの表示やクリックの頻度に基づいて実用的なインサイトを作成したり、レコメンデーションのパフォーマンスを分析したりできます。
 
