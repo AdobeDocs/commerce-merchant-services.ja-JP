@@ -1,15 +1,15 @@
 ---
 title: ユーザー設定
-description: 'Adobe Commerceのストアフルフィルメントソリューションをサポートするために、Inventory managementソースをマーチャントストアとして強化しました。 '
+description: Adobe Commerceのストアフルフィルメントソリューションをサポートするために、Inventory managementソースをマーチャントストアとして強化しました。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: eb735bef-c339-4d0b-b3e7-10328915725b
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
 
 ---
-
 
 # ユーザー設定
 

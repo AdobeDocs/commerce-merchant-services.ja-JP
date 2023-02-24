@@ -4,16 +4,16 @@ description: のプロビジョニングとオンボーディングの要件 [!D
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 2%
 
 ---
 
-# Adobe Commerceの達成要件を保存
+# Adobe Commerceの達成要件の保存
 
-Adobe Commerceの Store Fulfilment ソリューションをインストールして有効にするには、次の技術要件とビジネス要件を満たす必要があります。
+以下の節では、Adobe Commerceの Store Fulfilment ソリューションをインストールして有効にするための技術要件とビジネス要件について説明します。
 
 ## プラットフォームとソフトウェアのバージョン要件
 
@@ -56,7 +56,7 @@ Store Fulfilment ソリューションは、 *ソフトウェアの互換性* �
 
 - 米国を拠点とする企業のみ
 
-- B2C 小売業者、CPG メーカーが D2C を販売、または D2C を販売する販売業者や中小企業に販売する販売業者
+- B2C（消費者向け）小売業者、消費者パッケージ商品 (CPG) 消費者に直接販売する製造業者 (D2C)、または消費者や中小企業に直接販売する販売業者
 
 - 少なくとも 1 つの物理ストアまたは倉庫
 

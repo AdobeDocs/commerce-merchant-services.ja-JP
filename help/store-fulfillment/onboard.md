@@ -1,12 +1,12 @@
 ---
 title: ストアフルフィルメントサービスのオンボーディングの概要
-description: '''[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項について説明します。'''
+description: '[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項について説明します。'
 role: User, Admin
 level: Intermediate
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---

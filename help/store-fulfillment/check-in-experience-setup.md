@@ -1,17 +1,17 @@
 ---
-title: エクスペリエンス設定のチェックイン
-description: 受け取り注文フォームを完了した顧客がカーブサイドの受け取りを行う場合に、カーメーカーとモデルの選択を設定します。
+title: Check-In Experience Setup
+description: 受取注文フォームを完了した顧客がカーブ側の受取顧客が利用できる車の製造とモデルの選択を設定します。
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
-# エクスペリエンス設定のチェックイン
+# Check-In Experience Setup
 
 お客様がカーブサイドピックアップに到着した場合、受け取り注文フォームを使用してチェックインし、位置、車種、車種に関する情報を提供します。 この情報は、Store Assist アプリを通じて Store Associates に送信されるので、キューブ側の受け取り注文を迅速に配信できます。
 

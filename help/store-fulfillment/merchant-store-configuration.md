@@ -1,9 +1,10 @@
 ---
-title: Merchant ストアの設定
-description: 'マーチャントストアとしてInventory managementソースを強化しました。 '
+title: マーチャントストアの設定
+description: マーチャントストアとしてInventory managementソースを強化しました。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 0%
@@ -141,10 +142,3 @@ Merchant Stores の設定を管理者から管理します。 **[!UICONTROL Stor
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | チェックイン中に、顧客に対して車両による識別が必要かどうかを指定します。</br></br>有効にすると、顧客は到着時に車両のメーカーを指定するよう求められます。 無効にした場合、顧客はこの入力をスキップできます。 | グローバル | いいえ |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | チェックイン時に、顧客からの追加情報の収集をサポートするかどうかを指定します。 | グローバル | いいえ |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | チェックイン中に、顧客に追加情報が必要かどうかを指定します。 </br></br>有効にすると、お客様は到着時に追加情報を入力するよう求められます。 無効にした場合、顧客はこの入力をスキップできます。 | グローバル | いいえ |
-
-
-
-
-
-
-

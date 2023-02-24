@@ -4,7 +4,7 @@ description: «学ぶ方法 [!DNL Store Fulfillment for Adobe Commerce by Walmar
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 1157fe71dbef07f9db835a5a399f9304af550a86
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -78,4 +78,5 @@ iOSおよび Android™デバイス用の Store Assist アプリは、 [!DNL Wal
 >[!TIP]
 >
 > ストアフルフィルメントソリューションの簡単なデモについては、 [ストアの達成の概要](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) 次の場所で使用可能： _Adobe CommerceのビデオとTutorials_.
+
 

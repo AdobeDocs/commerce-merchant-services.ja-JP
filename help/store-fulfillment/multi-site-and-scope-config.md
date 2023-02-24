@@ -3,13 +3,13 @@ title: 複数の Web サイトおよび範囲の設定
 description: 複数の Web サイトやストア範囲の在庫と配信方法を設定します。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
-
 
 # 複数の Web サイトおよび範囲の設定
 

@@ -3,16 +3,17 @@ title: ストアフルフィルメントソリューションの接続
 description: Adobe Commerce統合を作成し承認し、ストアフルフィルメントアカウント資格情報をAdobe Commerceサービス設定に追加することで、Adobe Commerceとストアフルフィルメントソリューション間の接続を確立します。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 # ストアフルフィルメントソリューションの接続
 
-管理者から必要な認証資格情報と接続データを設定して、Adobe Commerceとストアフルフィルメントサービス間の接続を確立します。
+必要な認証資格情報と接続データをAdobe Commerce管理者に追加して、Store Fulfilment Services をAdobe Commerceに接続します。
 
 - **[設定 [!DNL Commerce integration settings]](#create-the-commerce-integration)** — ストアフルフィルメントサービス用のAdobe Commerce統合を作成し、ストアフルフィルメントサーバーからの受信リクエストを認証するアクセストークンを生成します。
 
@@ -47,7 +48,7 @@ Adobe Commerceをストアフルフィルメントサービスと統合するに
 
 ## ストアフルフィルメントアカウント資格情報の設定
 
-取り込みフォームを完了すると、Walmart Store Fulfilment アカウントが作成されます。 次の資格情報が使用可能になったら、受け取ります。
+取り込みフォームを完了すると、Walmart Store Fulfilment アカウントが作成されます。 次の資格情報が使用可能になると、受け取ります。
 
 - [!DNL Merchant ID]
 - [!DNL Consumer ID]
@@ -59,7 +60,7 @@ Adobe Commerceをストアフルフィルメントサービスと統合するに
 
 >[!NOTE]
 >
->アカウントの作成プロセスが完了するまでに時間がかかる場合があります。 資格情報を待つ間、 [ストアフルフィルメントソリューションの設定を確認し、他の設定を構成します](service-config-settings-overview.md).
+>アカウントの作成プロセスが完了するまでに時間がかかる場合があります。 資格情報を待つ間、 [ストアフルフィルメントソリューションの他の設定の確認と構成](service-config-settings-overview.md).
 
 ### ストアフルフィルメントに接続するための資格情報を追加
 
@@ -76,11 +77,3 @@ Adobe Commerceをストアフルフィルメントサービスと統合するに
 >[!NOTE]
 >
 >資格情報が無効な場合は、各環境に対して正しい値を入力したことを確認し、再検証します。 接続で問題が解決しない場合は、アカウント担当者にお問い合わせください。
-
-
-
-
-
-
-
-

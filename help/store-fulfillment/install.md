@@ -4,9 +4,9 @@ description: " [!DNL Store Fulfillment solution] PHP 用の Composer を使用�
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 1. アーカイブファイルを新しいディレクトリに抽出します。
 
-1. ファイルの一覧を確認して、抽出したファイルを確認します。
+1. ファイルの一覧を確認し、ファイルが正常に抽出されたことを確認します。
 
    ```
    ../var/www/html/artifacts]$ ls -a
@@ -194,4 +194,5 @@ php bin/magento setup:static-content:deploy -f
 
 >[!NOTE]
 >
->詳しくは、 [Adobe Commerceでの静的コンテンツデプロイのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) ( Adobe Commerceヘルプセンター )
+>詳しくは、 [Adobe Commerceでの静的コンテンツデプロイのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) 記事をAdobe Commerce Help Center で参照してください。
+

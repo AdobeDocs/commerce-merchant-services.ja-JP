@@ -4,14 +4,14 @@ description: 設定 [!DNL Store Assist] エンドツーエンドの店舗フル�
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
-# アプリ設定
+# アプリの設定
 
 Store Assist は、Walmart Commerce Technologies を活用したフルフィルメント・ア・サービス (FaaS) プラットフォーム・アプリです。 デスクトップアプリケーションは、ストア内フルフィルメント機能を提供し、 [!DNL buy online, pick up in store] (BOPIS) 注文。 店舗アシストを使用すると、店舗関連者は、顧客が注文した品目を確認し、正しい品目を迅速に選択し、顧客に対する店舗内またはキューブサイドのピックアップ配信の履行注文を設定できます。
 
@@ -63,11 +63,11 @@ Store Assist アプリを設定した後、Store Associates は、モバイル�
 
 - モバイルデバイスが [ハードウェアとソフトウェアの要件](solution-requirements.md#store-assist-app-requirements) を参照してください。
 
-- Store Assist アプリをからダウンロードします。 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} または [Google Playストア](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}。
+- Store Assist アプリをからダウンロードします。 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
 - Store Associates のログインには次の情報が必要です。
 
    - **[!UICONTROL Company name]** Store Assist アカウントに関連付けられています
 
    - **Store Assist アカウントの資格情報**：ユーザー名とパスワードの資格情報。
-   Adobe Commerce管理者は、ユーザーアカウントを作成し、 [!DNL Store Assist app] ストアの場所に [店内ピックアップ](merchant-store-configuration.md#pickup-location-configuration) が管理ストア設定で有効になっている。
+   Adobe Commerce管理者は、 [!DNL Store Assist app] を持つすべてのストアの場所のユーザーアカウント [店内ピックアップ](merchant-store-configuration.md#pickup-location-configuration) が管理ストア設定で有効になっている。
