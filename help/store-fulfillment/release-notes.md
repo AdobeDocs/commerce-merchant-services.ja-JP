@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] リリースノート'
+title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] リリースノート`'
 description: すべての [!DNL Store Fulfillment by Walmart Commerce Technologies] リリース」
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 3%
+source-wordcount: '180'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 3%
 ![新規](../assets/new.svg) 新機能
 ![修正された問題](../assets/fix.svg) 修正点および改善点
 ![既知の問題](../assets/bug.svg) 既知の問題
+
+## v1.3.0
+
+<!-- Add release notes when version 1.3.0 is released -->
 
 ## v1.2.0
 
@@ -50,4 +54,4 @@ ht-degree: 3%
 
 ## ストアアシストアプリ
 
-Store Assist アプリの新しいリリースについて詳しくは、 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} または [Google Playストア](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}。
+Store Assist アプリの新しいリリースについて詳しくは、 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.

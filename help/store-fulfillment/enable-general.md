@@ -4,7 +4,7 @@ description: 有効にする一般設定を構成します [!DNL Store Fulfillme
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -86,7 +86,7 @@ ht-degree: 0%
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
 <td>ソリューションを有効または無効にします。 有効な場合は、ストアフルフィルメント機能を設定および使用し、Adobe Commerceストアと [!DNL Store Fulfillment] サービス。 無効にすると、すべてのストアフルフィルメント機能が無効になり、Adobe Commerceとストアフルフィルメントサービス間の通信が行われなくなります。 注文情報を処理または受け取ることができません。</td>
-<td>グローバル</td>
+<td>Web サイト</td>
 <td>はい</td>
 </tr>
 </tbody>
