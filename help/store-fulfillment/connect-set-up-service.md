@@ -4,9 +4,9 @@ description: Adobe Commerce統合を作成し承認し、ストアフルフィ�
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 必要な認証資格情報と接続データをAdobe Commerce管理者に追加して、Store Fulfilment Services をAdobe Commerceに接続します。
 
-- **[設定 [!DNL Commerce integration settings]](#create-the-commerce-integration)** — ストアフルフィルメントサービス用のAdobe Commerce統合を作成し、ストアフルフィルメントサーバーからの受信リクエストを認証するアクセストークンを生成します。
+- **[設定 [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)** — ストアフルフィルメントサービス用のAdobe Commerce統合を作成し、ストアフルフィルメントサーバーからの受信リクエストを認証するアクセストークンを生成します。
 
 - **[ストアフルフィルメントサービスのアカウント資格情報を構成](#configure-store-fulfillment-account-credentials)**- Adobe Commerceをストアフルフィルメントアカウントに接続するための資格情報を追加します。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Adobe Commerce統合の作成
 
-Adobe Commerceをストアフルフィルメントサービスと統合するには、コマース統合を作成し、ストアフルフィルメントサーバーからの要求を認証するために使用できるアクセストークンを生成します。
+Adobe Commerceをストアフルフィルメントサービスと統合するには、コマース統合を作成し、ストアフルフィルメントサーバーからの要求を認証するために使用できるアクセストークンを生成します。 また、Adobe Commerceを更新する必要があります [!UICONTROL Consumer Settings] 防ぐオプション `The consumer isn't authorized to access %resources.` Adobe Commerceからへのリクエストの応答エラー [!DNL Store Fulfillment] サービス。
 
 1. 管理者から、ストアの達成の統合を作成します。
 
@@ -41,10 +41,16 @@ Adobe Commerceをストアフルフィルメントサービスと統合するに
 
 1. アカウントマネージャーと協力して、ストアの達成側の設定を完了し、統合を承認します。
 
+1. Adobe Commerceの有効化 [!UICONTROL Consumer Settings] 選択肢 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
->[!NOTE]
+   - 管理者から、に移動します。 **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+
+   - を [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] 選択肢 **[!UICONTROL Yes]**.
+
+>[!IMPORTANT]
 >
->詳しい手順については、 [統合](https://docs.magento.com/user-guide/system/integrations.html) 内 _Adobe Commerce User Guide_.
+> 統合トークンは、環境に固有です。 別の環境のソースデータを使用して環境のデータベースを復元する場合（ステージング環境からの本番データの復元など）は、 `oauth_token` 統合トークンの詳細が復元操作中に上書きされないように、データベースエクスポートのテーブル。
+
 
 ## ストアフルフィルメントアカウント資格情報の設定
 

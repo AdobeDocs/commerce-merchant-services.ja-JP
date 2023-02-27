@@ -4,9 +4,9 @@ description: 有効にする一般設定を構成します [!DNL Store Fulfillme
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2440'
 ht-degree: 0%
 
 ---
@@ -337,39 +337,6 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
 <td>パスワードが必要な変更までに、パスワードが有効である日数を示します。 このオプションを無効にするには、空のままにします。</td>
-<td>グローバル</td>
-<td>いいえ</td>
-</tr>
-</tbody>
-</table>
-
-### 二段階認証
-
-<table>
-<thead>
-<tr>
-<td><strong>フィールド</strong></td>
-<td><strong>説明</strong></td>
-<td><strong>範囲</strong></td>
-<td><strong>必須</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>ストア関連の二段階認証を有効または無効にします。 有効にすると、ストアの関連付けは、認証プロバイダーによって生成された 1 回限りのパスワードの入力を求められます。</td>
-<td>グローバル</td>
-<td>いいえ</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>2 要素認証の実施ポリシーを設定します。<br></br><strong>[!UICONTROL Optional]</strong>:プロバイダーが設定されていない場合、ストアアソシエートは、2 要素認証をバイパスできます。<br></br><strong>[!UICONTROL Mandatory]</strong>:ストア関連付けは、2 要素認証を完了するために必要です。</td>
-<td>グローバル</td>
-<td>いいえ</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>ストア関連付けを提供する 1 つ以上の認証プロバイダーサービスを選択します。 2 要素認証と認証を設定するには、ストア担当者がモバイルデバイスにインストールされている利用可能なプロバイダーの 1 つから認証アプリをインストールする必要があります。</td>
 <td>グローバル</td>
 <td>いいえ</td>
 </tr>

@@ -4,9 +4,9 @@ description: 「 [!DNL Store Fulfillment solution] Adobe Commerce Inventory mana
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Inventory management Source Transfer
 
 この [!DNL Store Fulfillment] ソリューションはネイティブのAdobe Commerce Inventory managementを使用します。 デフォルトでは、 [!DNL Commerce] 設定により、すべての web インベントリがデフォルトの在庫に割り当てられ、追加のソースを割り当てることはできません。 Web サイトには 1 つの在庫しか割り当てられないので、マーチャントは新しい在庫を設定し、必要に応じて、適切な範囲に割り当てられたソースにデフォルトの在庫を転送する必要があります。 その後、新しい在庫にソースを割り当てることができます。
+
+>[!IMPORTANT]
+>
+>マーチャントは、グループおよびバンドルの製品タイプに含まれるすべての製品のデフォルトのソースを維持する必要があります。 これらの製品には、在庫品目の最小数量しきい値を満たし、在庫ステータスを含む在庫数量が必要です。 [!UICONTROL In Stock].
 
 これらの設定の変更は、次の 3 つのことを実現するのに役立ちます。
 
