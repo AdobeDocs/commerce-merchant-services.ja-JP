@@ -2,9 +2,9 @@
 title: インストールと設定
 description: インストール、更新、アンインストールの方法を説明します [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ composer require magento/product-recommendations
 
 ### Page Builder サポートの追加 {#pbsupport}
 
-[!DNL Product Recommendations] の場合、Page Builder はオプションのモジュールで、別途インストールされます。 使用する [!DNL Product Recommendations] ページビルダーで、次のコマンドを実行してモジュールをインストールします。
+[!DNL Product Recommendations] for Page Builder はオプションのモジュールで、別途インストールされます。 使用する [!DNL Product Recommendations] ページビルダーで、次のコマンドを実行してモジュールをインストールします。
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
@@ -38,9 +38,7 @@ composer require magento/module-page-builder-product-recommendations
 
 有効にする [!DNL Product Recommendations] ページビルダーで、既存のアクティブな [レコメンデーション単位](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) ページ、ブロック、動的ブロックなど、ページビルダーで作成されたすべてのコンテンツに追加できます。
 
->[!NOTE]
->
->[!DNL Page Builder] レコメンデーション単位は、デフォルトのストア表示に対してのみ作成できます。
+詳しくは、 [使用 [!DNL Product Recommendations] Page Builder コンテンツを使用](page-builder.md) を参照してください。
 
 ### 視覚的類似性レコメンデーションタイプの追加 {#vissimsupport}
 
