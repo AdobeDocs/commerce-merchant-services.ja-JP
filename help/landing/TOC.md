@@ -1,11 +1,11 @@
 ---
-user-guide-title: Adobe Commerce 向けサービス
-user-guide-description: Adobe Commerce および Magento Open Source に拡張機能を提供するホストサービスのドキュメントとリソース。
-title: Adobe Commerce 向けサービス
+user-guide-title: Adobe Commerce向けサービス
+user-guide-description: Adobe CommerceおよびMagento Open Sourceに拡張機能を提供するホストサービスのドキュメントとリソース。
+title: Adobe Commerce向けサービス
 source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 23%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
