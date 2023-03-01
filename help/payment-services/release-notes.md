@@ -2,7 +2,7 @@
 title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 09d79c80a53355ac113067b1b7ae3dca68a98f20
+source-git-commit: 61bce569fb2a761ec2956ea240d61b1ad2b3a3e2
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 0%
@@ -61,9 +61,9 @@ _2021 年 6 月 29 日_
 
 _2023 年 2 月 18 日_
 
-![新規](../assets/fix.svg)<!-- Issue PAY-3540 --> 追加済み [欧州連合 (EU) および英国で取引を行う商人向けの PCI 3DS コンプライアンス機能](security.md#3ds). この追加のセキュリティ層は、購入者にクレジットカード発行者の認証を要求するので、オンライン詐欺を防ぐのに役立ち、EU（欧州連合）コンプライアンス規制の一部として必要になります。
+![新規](../assets/new.svg)<!-- Issue PAY-3540 --> 追加済み [欧州連合 (EU) および英国で取引を行う商人向けの PCI 3DS コンプライアンス機能](security.md#3ds). この追加のセキュリティ層は、購入者にクレジットカード発行者の認証を要求するので、オンライン詐欺を防ぐのに役立ち、EU（欧州連合）コンプライアンス規制の一部として必要になります。
 
-![新規](../assets/fix.svg)<!-- Issue PAY-3609 --> 次の機能を追加しました。 [管理でのカードの保管を有効にする](vaulting.md#use-vaulting-in-the-admin). これにより、マーチャントは管理者の顧客に対して、ヴォールトされた支払い方法を使用して注文を作成できます。
+![新規](../assets/new.svg)<!-- Issue PAY-3609 --> 次の機能を追加しました。 [管理でのカードの保管を有効にする](vaulting.md#use-vaulting-in-the-admin). これにより、マーチャントは管理者の顧客に対して、ヴォールトされた支払い方法を使用して注文を作成できます。
 
 ## v1.5.4
 
