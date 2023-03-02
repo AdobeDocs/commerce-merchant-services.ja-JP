@@ -2,9 +2,9 @@
 title: テストと検証
 description: テストと検証は、 [!DNL Payment Services] 機能が期待どおりに動作し、顧客に最適な支払いオプションを提供する
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 PayPal のクレジットカードジェネレーターを使用して [ランダムクレジットカード情報を生成](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) テスト用。
 
-Apple Pay をサンドボックスモードでテストするには、 [Apple Developer Account](https://developer.apple.com/programs/enroll/)（偽のクレジットカードと請求情報を含む）
+Apple Pay をサンドボックスモードでテストするには、 [Apple sandbox テスターアカウント](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)（偽のクレジットカードと請求情報を含む）
 
 >[!NOTE]
 >
