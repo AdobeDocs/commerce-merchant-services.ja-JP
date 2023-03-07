@@ -2,9 +2,9 @@
 title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法 [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ ht-degree: 0%
 
 このシナリオでは、ストアフロント操作は、 [!DNL Live Search] サービスは、カタログ内のすべての製品のインデックスを作成します。 インストール時に、 [!DNL Live Search] モジュールが有効になり、 [!DNL Elasticsearch] モジュールが無効になっています。
 
->[!TIP]
+>[!NOTE]
 >
->入力エラーを避けるには、コードボックスの右端にマウスポインターを置いて、 [!UICONTROL **コピー**] リンクし、コマンドラインに貼り付けます。
+>2023 年 3 月の時点で、ライブ検索はバージョン 2.4.4 以降のみをサポートします。
 
-1. 次を使用せずにAdobe Commerce 2.4.x をインストール [!DNL Live Search].
+1. 次を使用せずにAdobe Commerce 2.4.4 以降をインストール [!DNL Live Search].
 
 1. 次の手順で `live-search` package で、コマンドラインから次のコマンドを実行します。
 

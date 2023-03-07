@@ -2,9 +2,9 @@
 title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 ## 要件 {#requirements}
 
-* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.x
-* PHP 7.3 / 7.4 / 8.1
+* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.4 以上
+* PHP 8.1, 8.2
 * [!DNL Composer]
 
 ### サポートされるプラットフォーム
 
-* Adobe Commerceオンプレミス (EE) :2.4.x
-* Adobe Commerce on Cloud (ECE) :2.4.x
+* Adobe Commerceオンプレミス (EE) :2.4.4 以上
+* Adobe Commerce on Cloud (ECE) :2.4.4 以上
 
 ## 境界としきい値
 

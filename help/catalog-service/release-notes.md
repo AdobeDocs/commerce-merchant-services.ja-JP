@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] リリースノート`'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 2767de477e274c1855d21d6e678cc6139ff4faa4
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,6 @@ ht-degree: 0%
 ![新規](../assets/new.svg) 追加済み [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL機能
 ![修正点](../assets/fix.svg) パフォーマンスと API の拡張性が向上しました。
 
-### V1.4 リリース
-
-リリース日：2023-2-7 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：一般公開
-
-![新規](../assets/new.svg) インストール手順を簡単にするカタログサービスのメタパッケージを公開しました。
-![修正点](../assets/fix.svg) API の拡張性とパフォーマンスの向上。
-
 #### 既知の制限事項
 
 以下の機能は、まだサポートされていません。
@@ -50,7 +43,13 @@ Core GraphQL API を使用すると、次の制限を解決できます。
 * 最小広告価格
 * 価格帯
 * ダウンロード可能な製品とギフトカード
-* カテゴリ (`categories` および `categoryList`)
+
+### V1.4 リリース
+
+リリース日：2023-2-7 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：一般公開
+
+![新規](../assets/new.svg) インストール手順を簡単にするカタログサービスのメタパッケージを公開しました。
+![修正点](../assets/fix.svg) API の拡張性とパフォーマンスの向上。
 
 ### V1.3 リリース
 
