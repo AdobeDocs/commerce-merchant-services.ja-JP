@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 242060d94700efc018a520d2d680c0f47a0cb915
+source-git-commit: 747cf01eb9c270a727c970c4dec7dbec64a884fe
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -27,14 +27,14 @@ ht-degree: 0%
 
 ### ソフトウェア要件
 
-- Adobe Commerce 2.4.x
-- PHP 8.1
+- Adobe Commerce 2.4.4 以降
+- PHP 8.1, 8.2
 - コンポーザー：2.x
 
 ### サポートされるプラットフォーム
 
-- Adobe Commerce on cloud infrastructure:2.4.x
-- Adobe Commerceオンプレミス：2.4.x
+- Adobe Commerce on cloud infrastructure:2.4.4 以上
+- Adobe Commerceオンプレミス：2.4.4 以上
 
 ## 環境
 

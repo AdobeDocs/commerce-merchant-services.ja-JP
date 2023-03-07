@@ -3,10 +3,10 @@ user-guide-title: '"[!DNL Catalog Service] ガイド»'
 user-guide-description: このガイドでは、 [!DNL Catalog Service] Adobe Commerce」
 breadcrumb-title: '"[!DNL Catalog Service] ガイド»'
 hide: true
-source-git-commit: ce07de2e22fc75e5b22a7db08f9f753a6c3567a3
+source-git-commit: 2914110e28d618455eeade6bb93e9382fbbccf10
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 3%
+source-wordcount: '75'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 3%
 - [の概要 [!DNL Catalog Service]](overview.md)
 - [オンボーディングとインストール](installation.md)
 - GraphQLクエリ {#graphql}
+   - [カテゴリクエリ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)
    - [製品クエリ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
    - [productSearch クエリ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/)
    - [refineProduct クエリ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)
