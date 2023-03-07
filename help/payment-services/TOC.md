@@ -5,7 +5,7 @@ breadcrumb-title: '[!DNL Payment Services] ガイド'
 index: true
 source-git-commit: 28bf1a8e9758acbe3415fd270476ad8cc4dcbf17
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
