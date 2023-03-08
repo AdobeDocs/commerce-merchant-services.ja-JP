@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] リリースノート`'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ ht-degree: 0%
 
 ### V1.5 リリース
 
-リリース日：2023-3-6 Adobe Commerce(EE) との互換性：2.4.4 以降Adobe Commerce for Cloud(ECE) との互換性：2.4.4 以上の安定性：一般公開
+_2023 年 3 月 7 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg) 追加済み [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL機能
 ![修正点](../assets/fix.svg) パフォーマンスと API の拡張性が向上しました。
@@ -46,14 +48,18 @@ Core GraphQL API を使用すると、次の制限を解決できます。
 
 ### V1.4 リリース
 
-リリース日：2023-2-7 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：一般公開
+_2023 年 2 月 8 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg) インストール手順を簡単にするカタログサービスのメタパッケージを公開しました。
 ![修正点](../assets/fix.svg) API の拡張性とパフォーマンスの向上。
 
 ### V1.3 リリース
 
-リリース日：2023-1-17 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：一般公開
+_2023 年 1 月 18 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg) オンボーディングエクスペリエンスをシンプル化し、改善しました。
 ![新規](../assets/new.svg) 実稼動前のテストで、新しい顧客サンドボックスエンドポイントを使用できます。
@@ -62,14 +68,18 @@ Core GraphQL API を使用すると、次の制限を解決できます。
 
 ### V1.1 リリース
 
-リリース日：2022-11-18 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：一般公開
+_2022 年 11 月 19 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg) カタログサービスでAdobeの [API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/).
 ![修正点](../assets/fix.svg) API の拡張性と全体的なパフォーマンスが向上しました。
 
 ### V1.0 リリース
 
-リリース日：2022-10-04 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：一般公開
+_2022 年 10 月 5 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg) バンドルされた製品とグループ化された製品をサポートするようになりました。
 ![新規](../assets/new.svg) B2B 表示の上書きを追加しました。 製品が検索可能になり、特定の顧客グループ用に買い物かごに追加できるようになりました。
@@ -81,7 +91,9 @@ Core GraphQL API を使用すると、次の制限を解決できます。
 
 ### 0.3 リリース — ベータ+
 
-リリース日：2022-09-12 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：ベータ版
+_2022 年 9 月 13 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg) バリアント用の画像でサポートされる内容：製品画像は、選択したオプションに基づいて返されます
 ![新規](../assets/new.svg) 価格支援の役割：特定の顧客グループのメンバーのみが製品の価格を表示できるようにする
@@ -90,7 +102,9 @@ Core GraphQL API を使用すると、次の制限を解決できます。
 
 ### ベータリリース
 
-リリース日：2022-08-09 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce for Cloud(ECE) との互換性：2.4.x の安定性：ベータ版
+_2022 年 8 月 10 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg) この `products` および `refineProduct` クエリは次のデータを返します。
 
