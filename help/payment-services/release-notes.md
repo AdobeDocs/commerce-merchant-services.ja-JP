@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 61bce569fb2a761ec2956ea240d61b1ad2b3a3e2
+source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ _2021 年 6 月 29 日_
 
 _2023 年 2 月 18 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 ![新規](../assets/new.svg)<!-- Issue PAY-3540 --> 追加済み [欧州連合 (EU) および英国で取引を行う商人向けの PCI 3DS コンプライアンス機能](security.md#3ds). この追加のセキュリティ層は、購入者にクレジットカード発行者の認証を要求するので、オンライン詐欺を防ぐのに役立ち、EU（欧州連合）コンプライアンス規制の一部として必要になります。
 
 ![新規](../assets/new.svg)<!-- Issue PAY-3609 --> 次の機能を追加しました。 [管理でのカードの保管を有効にする](vaulting.md#use-vaulting-in-the-admin). これにより、マーチャントは管理者の顧客に対して、ヴォールトされた支払い方法を使用して注文を作成できます。
@@ -69,17 +71,23 @@ _2023 年 2 月 18 日_
 
 _2023 年 1 月 30 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-4110 --> 購入者が製品ページ、ミニカート、買い物かごのスマートボタンを使用して注文できなかった問題を修正しました。 購入者は注文を正常に完了できるようになりました。
 
 ## v1.5.3
 
 _2023 年 1 月 26 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-4102 --> 後方互換性のない既知の問題の修正をリリースしました。 このリリースでは、サービス ID 拡張バージョンが最新の安定したバージョンにロックされ、新しい支払いサービスのインストールでコマースサービスを構成できるようになります。
 
 ## v1.5.2
 
 _2022 年 12 月 22 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 支払い方法が拒否された場合の支払いサービスの請求を改善しました。
 
@@ -89,6 +97,8 @@ _2022 年 12 月 22 日_
 
 _2022 年 11 月 24 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 ![新規](../assets/new.svg)<!-- Issue PAY-3923 --> 支払いサービスで、未使用のエンドポイントを追跡、フィルタリングまたは廃止するためのリクエストのバージョン番号がユーザーエージェントヘッダーに含まれるようになりました。
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3968 --> スマートボタンを使用して製品ページから注文が行われた場合、支払サービスで注文データが正しく表示されるようになりました。
@@ -96,6 +106,8 @@ _2022 年 11 月 24 日_
 ## v1.5.0
 
 _2022 年 11 月 19 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg)<!-- Issue PAY-3880 --> 買い物客は今、 [チェックアウト時にクレジットカード情報を保管（保存）](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 同じ商人アカウント内の同じ店舗または別の店舗に対して後での購入で使用する
 
@@ -105,11 +117,15 @@ _2022 年 11 月 19 日_
 
 _2022 年 10 月 15 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 ![修正点](../assets/fix.svg)<!-- Issue PAY-3766 --> 顧客の支払い方法が拒否された場合、表示されるエラーメッセージの内容がよりわかりやすくなります。 お客様に、支払い情報を再入力して、もう一度やり直すか、別の支払い方法を試すか、拒否された取引について銀行に問い合わせるよう勧めます。
 
 ## v1.4.0
 
 _2022 年 9 月 31 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg)<!-- Issue PAY-784 --> 支払いサービスには、 [複数の PayPal ビジネスアカウントを使用する](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). これにより、マーチャントは異なる通貨を使用して複数の国で店舗を運営したり、ビジネスの一部にAdobe Commerceを使用したりできます。
 
@@ -123,11 +139,15 @@ _2022 年 9 月 31 日_
 
 _2022 年 9 月 7 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3663 --> これで、マーチャントのストアが非グローバル通貨で許可された注文を取得すると、取得プロセスが完了し、エラーは表示されません。
 
 ## v1.3.0
 
 _2022 年 8 月 10 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg)<!-- Issue PAY-XX --> GA リリース —[!DNL Payment Services] 今 [～と互換性がある [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 ～ 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -136,6 +156,8 @@ _2022 年 8 月 10 日_
 ## v1.2.0
 
 _2022 年 6 月 30 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay は、モバイルおよびデスクトップ上の Safari ブラウザー v15.5 と互換性がありません。 Safari バージョン 15.5 を使用している場合、Apple Pay でチェックアウトを完了できません。
 
@@ -152,6 +174,8 @@ _2022 年 6 月 30 日_
 ## v1.1.0
 
 _2022 年 3 月 31 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg)<!-- Issue PAY-2127 --> GA リリース —[!DNL Payment Services] 今 [～と互換性がある [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 ～ 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -178,6 +202,8 @@ _2022 年 3 月 31 日_
 ## v1.0.0
 
 _2021 年 11 月 30 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg)<!-- Issue PAY-2127 --> GA リリース —[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) は現在、 [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 から 2.4.3-p1。
 
