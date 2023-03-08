@@ -2,9 +2,9 @@
 title: 支払いオプション
 description: 支払いオプションを設定して、店舗の顧客が利用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 31665f90909ce2364579fc7f9c97087e2376c0a6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Apple Pay を使用するには、営業担当者またはアカウントマネージャーに連絡して、ライブストアで有効にしてもらってください。
+> Apple Pay を使用するには、営業担当者またはAdobeアカウントチームに連絡して、ライブストアで有効にしてもらってください。
 
 ### [!DNL Pay Later] ボタン
 
