@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] リリースノート`'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: a10b09a5bc2b46f531a7bad298a2976e2d25ec63
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -69,17 +69,23 @@ _2022 年 10 月 6 日_
 
 _2023 年 2 月 25 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-592 --> を [管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) using [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) 支払い方法として。 この機能を使用すると、顧客は、チェックアウト時にBraintreeを支払い方法として注文を行うことができます。 [!DNL Quick Checkout] が有効になっている。
 
 ## v1.7.0
 
 _2023 年 2 月 23 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 ![修正された問題](../assets/fix.svg)<!-- Issue AC-8002 --> を使用して注文を行う際のユーザーエクスペリエンスの改善 [Multishipping](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) メソッド。 この機能により、チェックアウト時に支払い方法を [!DNL Quick Checkout] が有効になっている。
 
 ## v1.6.0
 
 _2023 年 2 月 10 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-567 --> 次の場合のユーザーエクスペリエンスの改善 [注文の実施](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) の使用 [店内配信](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) メソッドの [!DNL Quick Checkout] 無効。
 
@@ -88,6 +94,8 @@ _2023 年 2 月 10 日_
 ## v1.5.0
 
 _2023 年 1 月 19 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-522 --> 新しい設定を有効/無効にして、 [買い物客](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) は自動的に Bolt にログインできます。
 
@@ -103,6 +111,8 @@ _2023 年 1 月 19 日_
 
 _2022 年 11 月 31 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 ![新規](../assets/new.svg)<!-- Issue BOLT-513 --> これで、Adobe Commerceの顧客がチェックアウトプロセス中にストアにログインし、Bolt アカウントを持っている場合に、買い物客の Bolt アカウントにログインするためのオプションが表示されます。
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-512 --> 新しい設定では、ログインした買い物客が Bolt にログインできるかどうかを自動的に検出します。
@@ -113,6 +123,8 @@ _2022 年 11 月 31 日_
 
 _2022 年 11 月 3 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 ![新規](../assets/new.svg)<!-- Issue BOLT-293 --> さて [!DNL Quick Checkout] には、 [チェックアウトトラッキング](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) Adobe Commerceがレポート情報を Bolt と共有できるようにする設定。
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-461 --> これで、 [!DNL Quick Checkout] 次の場合は管理パネル [チェックアウトトラッキング](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 設定が無効です。
@@ -120,6 +132,8 @@ _2022 年 11 月 3 日_
 ## v1.2.0
 
 _2022 年 9 月 9 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-341 --> GA リリース —[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) は、Adobe Commerceバージョン 2.4.5 と互換性があります。
 
@@ -143,6 +157,8 @@ _2022 年 9 月 9 日_
 
 _2022 年 8 月 13 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-375 --> のユーザーエクスペリエンスの改善 [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 拡張機能が有効になっている場合に表示および検証されるパラメーターのみを含めるようになりました。
 
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-349 --> 既存の配送先住所と Bolt ウォレットの互換性を改善しました。
@@ -150,6 +166,8 @@ _2022 年 8 月 13 日_
 ## v1.0.0
 
 _2022 年 8 月 10 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-341 --> GA リリース —[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) は、Adobe Commerceバージョン 2.4.1 ～ 2.4.4 と互換性があるようになりました。
 
