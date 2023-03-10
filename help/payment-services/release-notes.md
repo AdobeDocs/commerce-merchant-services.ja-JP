@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
+source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,26 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v2.0.0
+
+_2023 年 3 月 11 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+![新規](../assets/new.svg)<!-- Issue PAY-4152 --> PHP 8.2 およびAdobe Commerce 2.4.6 のサポートを追加しました。PHP 7.x とは互換性がありません。
+
+## v1.6.1
+
+_2023 年 3 月 11 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+![修正点](../assets/fix.svg)<!-- Issue PAY-4226 --> 新しい支払いサービスマーチャントが管理でチェックアウトを使用できない問題を修正しました。 支払いサービスは、以前はコマース顧客 ID を使用していましたが、新規顧客には存在しません。
+
+![修正点](../assets/fix.svg)<!-- Issue PAY-4205 --> 指定した配送先住所の州が、チェックアウト時に [PayPal オプション](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). 現在は、顧客は、マーチャントの税設定でデフォルトとして設定されたもの以外の州に注文を発送することができます。
+
+![修正点](../assets/fix.svg)<!-- Issue PAY-4202 --> お客様がカード保管機能を使用して、店舗の購入を完了したり、保管された支払い方法を削除したりできない問題を修正しました [の使用 `Authorize and Capture` 支払手続](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). 以前は、お客様が Vault に保存されたクレジットカードの使用または変更を試みると、「Provider Vault ID not found」（プロバイダー Vault ID が見つかりません）というエラーが表示されていました。
 
 ## v1.6.0
 
