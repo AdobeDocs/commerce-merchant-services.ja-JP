@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] リリースノート`'
 description: 「 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
+source-git-commit: 94e5d59061477440e62a8f1eb055090e0179d395
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,17 @@ _2023 年 3 月 15 日_
 
 ## 以前のバージョン
 
-+++2.0.4 以前
++++2.0.5 以前
+
+## [!DNL Live Search] 2.0.5 {#205}
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+* ![修正点](../assets/fix.svg)  — ネットワークの問題が原因で SDK リソースを使用できない場合、ライブ検索でエラーが発生していました。 このバグは修正されました。
+
+これらの機能にアクセスするには、マーチャントは Live Search 拡張機能バージョン 2.0.5 以降をアップグレードする必要があります。
+
+実稼動環境にプッシュする前に、アップグレードおよびテストすることをお勧めします。 テスト環境の結果を確認した後、オフピーク時に実稼動環境のアップグレードを検討します。
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
