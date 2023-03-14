@@ -2,9 +2,9 @@
 title: "ルールワークスペース"
 description: 「 [!DNL Live Search] ルールワークスペース」を参照してください。
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -30,20 +30,14 @@ Adobe Commerceインストールに複数のストア表示が含まれる場合
 1. 右上隅で、 **表示/非表示** ![列セレクター](assets/btn-show-hide-columns.png) 列。
 表示される列は、オプションメニューで青いチェックマークが付きます。 ルール名は、非表示にできない唯一の列です。
 
-   ![ルールワークスペース](assets/rules-workspace-show-hide-columns.png)
-
 1. メニューで、次のいずれかの操作を行います。
 
    * 非表示の列を表示するには、チェックマークの付いていない任意の列名をクリックします。
    * 表示される列を非表示にするには、チェックマークの付いた任意の列名をクリックします。
 
-   ![ルールワークスペース](assets/rules-workspace-all-columns.png)
-
 ## ステータスでルールをフィルター
 
 1. ストアに多数のルールがある場合は、ステータスでルールをフィルタリングして、リストを短縮できます。 デフォルトでは、「ルール」リストにすべてのルールが表示されます。
-
-   ![ルール — ステータスでフィルター](assets/rules-workspace-filter-status.png)
 
 1. 特定のステータス設定を持つルールのみをリストするには、 **ステータス** を次のいずれかに変更します。
 
@@ -51,8 +45,6 @@ Adobe Commerceインストールに複数のストア表示が含まれる場合
    * アクティブ
    * 非アクティブ
    * 予定
-
-   ![ルール — ステータスでフィルター](assets/rules-workspace-filter-status-active.png)
 
 ## 名前でルールを検索
 

@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] 設定»'
 description: 次のような価格ファセットの範囲と間隔を設定： [!DNL Live Search] ファセット」
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 価格ファセットのグループ化の設定
 
-1. 管理者で、に移動します。 **マーケティング** > *SEO と検索* > **ライブ検索**.
+1. 管理者で、に移動します。 **マーケティング** > *SEO と検索* > **[!DNL Live Search]**.
 1. の **設定** 下のタブ *価格のファセット設定*、次の操作を実行します。
    * 次を入力します。 **選択の数**&#x200B;または価格グループを使用できるようにします。 最大 50 個の価格グループを定義できます。
    * 次を入力します。 **間隔の値**&#x200B;または各グループの価格範囲。 最大値は 10,000 です。

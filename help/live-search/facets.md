@@ -2,9 +2,9 @@
 title: "ファセット"
 description: "[!DNL Live Search] ファセットでは、複数の属性値のディメンションを検索条件として使用します。"
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ファセット設定のカテゴリと製品属性の要件は、レイヤー化されたナビゲーションで使用されるフィルタリング可能な属性と似ています。 各属性のストアフロントプロパティは、に設定する必要があります。 `filterable (with results)`.
 
-ライブ検索では、最大で次のものをサポートします。
+[!DNL Live Search] は以下をサポートします。
 
 * ファセットとして設定された 100 個の属性
 * 50 個の並べ替え可能な属性
@@ -29,7 +29,7 @@ ht-degree: 0%
 | 設定 | 説明 |
 |--- |--- |
 | [カテゴリの表示設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | アンカー — `Yes` |
-| [属性プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [カタログ入力タイプ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
+| [属性プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [カタログ入力タイプ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` （ウィジェットのみ）、 `Text swatch` （ウィジェットのみ） |
 | 属性ストアフロントのプロパティ | 検索結果のレイヤーナビゲーションで使用 — `Yes` |
 
 ## デフォルトの属性値
@@ -71,7 +71,7 @@ ht-degree: 0%
 |--- |--- |--- |
 | allow_open_amount | はい | フィルタリング可能（結果を含む） |
 | 説明 | はい | いいえ |
-| name | はい | いいえ |
+| 名前 | はい | いいえ |
 | 価格 | はい | フィルタリング可能（結果を含む） |
 | short_description | はい | いいえ |
 | sku | はい | いいえ |

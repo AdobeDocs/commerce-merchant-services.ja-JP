@@ -2,16 +2,16 @@
 title: シノニムの追加
 description: "追加 [!DNL Live Search] 検索リクエストへの応答を改善する同義語。"
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # シノニムの追加
 
-ライブ検索のシノニムに独自の厳選されたリストを追加して、顧客エンゲージメントを高めます。 [!DNL Live Search] 1 回につき 200 個まで同義語を管理できます `Data Space ID`.
+独自にキュレーションしたリストを追加して、顧客エンゲージメントを増やす [!DNL Live Search] シノニム。 [!DNL Live Search] 1 回につき 200 個まで同義語を管理できます `Data Space ID`.
 
 ![[!DNL Live Search] 同義語](assets/synonym-workspace.png)
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
    ![一方向のシノニムを追加](assets/synonym-add-one-way.png)
 
-1. 次を入力します。 **キーワード** および **拡張** 用語。 複数の用語はコンマで区切ります。
+1. 次を入力します。 **キーワード** および **拡張** キーワード。 複数の用語はコンマで区切ります。
 
    ![一方向シノニムの例](assets/synonym-add-one-way-example.png)
 
@@ -63,10 +63,8 @@ ht-degree: 0%
 
 ## 手順 3:変更を公開
 
-1. シノニムが完了したら、 **変更を公開**.
+1. シノニムが完成したら、 **変更を公開**.
 1. 更新がストアフロントで利用できるようになるまで、最大 2 時間待ちます。
-
-![変更を公開](assets/synonym-publish.png)
 
 ## フィールドの説明
 

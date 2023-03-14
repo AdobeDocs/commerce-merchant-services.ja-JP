@@ -2,7 +2,7 @@
 title: '"[!DNL Live Search] インデックス作成»'
 description: «学ぶ方法 [!DNL Live Search] 製品属性プロパティのインデックスを作成します。"
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%

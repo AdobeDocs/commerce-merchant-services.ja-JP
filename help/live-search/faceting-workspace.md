@@ -2,9 +2,9 @@
 title: "Faceting Workspace"
 description: 「 [!DNL Live Search] ワークスペースをファセット化」
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ Adobe Commerceインストールに複数のストア表示が含まれる場合
    * ピン留め
    * 動的
 
-   ![ワークスペースの Faceting](assets/facets-filter-by.png)
-
 ## ファセットを追加
 
 1. クリック **ファセットを追加**.
@@ -40,7 +38,6 @@ Adobe Commerceインストールに複数のストア表示が含まれる場合
 | 列 | 説明 |
 |--- |--- |
 | （最初の列） | 固定されたファセットと動的ファセットを [ラベル](facets-type.md) 買い物客に表示される |
-| タイプを選択 | この [選択方法](facets-type.md) 対応する製品属性に割り当てられる。 この `single select` タイプはすべてに使用されます [!DNL Commerce] ストアフロント ヘッドレス実装の場合、 `multi-select` 型は論理演算子 (`or` または `and`) を使用して、返される製品のセットを判断します。 |
 | 並べ替えタイプ | この [並べ替え順](facets-type.md) ファセット値の。 ファセットはすべての [!DNL Commerce] ストアフロント の場合 [頭のない] 実装、ファセットはアルファベット順またはカウント順に並べ替えることができます。 オプション：アルファベット順、カウント（ヘッドレスのみ） |
 | 最大値 | ストアフロントでフィルターとして使用できるファセット値の数（最大 10）。 |
 

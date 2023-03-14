@@ -1,10 +1,10 @@
 ---
-title: '"Performance"'
+title: "Performance"
 description: 「 [!DNL Live Search] パフォーマンスダッシュボードは、買い物客が使用する検索用語に関するインサイトを提供します。」
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,10 @@ ht-degree: 0%
    * 1 つの日付を指定するには、カレンダー上の日付をダブルクリックします。
    * 日付の範囲を指定するには、カレンダーの最初と最後の日付をクリックします。
 
-   ![パフォーマンスレポート期間](assets/performance-calendar.png)
+>[!NOTE]
+>
+>パフォーマンスダッシュボードは 12 時間ごとに更新されます。
 
-1. 表示するレポートタブをクリックします。
-
-   ![パフォーマンスの人気のある結果](assets/performance-popular-results.png)
 
 ## フィールドの説明
 

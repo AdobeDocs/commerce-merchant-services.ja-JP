@@ -1,7 +1,7 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] 「for Adobe Commerceは、共通のGraphQLエンドポイントを使用して複数のデータソースを統合する方法を提供します。」'
-source-git-commit: bdceeeeb1ed58c4ffbc87bee24c1eb3754b1cde9
+source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -72,7 +72,6 @@ API メッシュを使用すると、外部のデータソースを使用してA
               "Magento-Website-Code": "{context.headers['magento-website-code']}",
               "Magento-Store-Code": "{context.headers['magento-store-code']}",
               "Magento-Environment-Id": "{context.headers['magento-environment-id']}",
-              "x-api-key": "storefront-catalog-apollo",
               "Magento-Customer-Group": "{context.headers['magento-customer-group']}"
             },
             "schemaHeaders": {

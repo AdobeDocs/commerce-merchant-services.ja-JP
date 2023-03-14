@@ -2,16 +2,16 @@
 title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法 [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
 
 # インストール [!DNL Live Search]
 
-ライブ検索は、Extension Marketplace の拡張機能としてAdobeされます。 次の期間の後 [!DNL Live Search] モジュール（カタログモジュールを依存関係として使用）がインストールされ、設定されます。 [!DNL Commerce] は、SaaS サービスとの検索およびカタログデータの共有を開始します。 この時点で *管理者* ユーザーは、検索ファセット、シノニムおよびマーチャンダイジングルールを設定、カスタマイズおよび管理できます。
+[!DNL Live Search] は、Marketplace の拡張機能としてAdobeされます。 次の期間の後 [!DNL Live Search] モジュール（カタログモジュールを依存関係として使用）がインストールされ、設定されます。 [!DNL Commerce] は、SaaS サービスとの検索およびカタログデータの共有を開始します。 この時点で *管理者* ユーザーは、検索ファセット、シノニムおよびマーチャンダイジングルールを設定、カスタマイズおよび管理できます。
 
 このトピックでは、次の操作の手順を説明します。
 
@@ -56,8 +56,7 @@ ht-degree: 0%
 1. 次のコマンドを実行して無効にします [!DNL Elasticsearch] および関連するモジュール、およびインストール [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
-   Magento_ElasticsearchCatalogPermissionsGraphQl
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -86,15 +85,15 @@ ht-degree: 0%
 
 ## 方法 2:インストールElasticsearch {#method-2}
 
+>[!IMPORTANT]
+>
+>2023 年 8 月のElasticsearch7 のサポート終了のお知らせにより、すべてのAdobe Commerceのお客様は OpenSearch 2.x 検索エンジンに移行することをお勧めします。 製品のアップグレード中に検索エンジンを移行する方法については、 [OpenSearch への移行](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) 内 _アップグレードガイド_.
+
 このオンボーディング方法は、 [!DNL Live Search] 移動先：
 
 * 既存の実稼動 [!DNL Commerce] インストール
 
 このシナリオでは、 [!DNL Elasticsearch] ストアフロントからの検索リクエストを一時的に管理し、 [!DNL Live Search] サービスは、通常のストアフロント操作を中断することなく、バックグラウンドですべての製品のインデックスを作成します。 [!DNL Elasticsearch] が無効で、 [!DNL Live Search] すべてのカタログデータのインデックスが作成され、同期された後に有効になります。
-
->[!TIP]
->
->入力エラーを避けるには、コードボックスの右端にマウスポインターを置いて、 [!UICONTROL **コピー**] リンクし、コマンドラインに貼り付けます。
 
 1. 次の手順で `live-search` package で、コマンドラインから次のコマンドを実行します。
 
@@ -209,9 +208,9 @@ composer show magento/module-live-search | grep version
 composer update magento/live-search --with-dependencies
 ```
 
-1.0.0 から 2.0.0 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
+2.0.0 から 3.0.1 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
 
-1. 現在 `magento/live-search` のバージョンが `1.3.1` または以下のバージョンにアップグレードしている `2.0.0` 以降の場合は、アップグレードの前に次のコマンドを実行します。
+1. 現在 `magento/live-search` のバージョンが `2.0.3` または以下のバージョンにアップグレードしている `3.0.0` 以降の場合は、アップグレードの前に次のコマンドを実行します。
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +229,7 @@ composer update magento/live-search --with-dependencies
    ```json
    "require": {
       ...
-      "magento/live-search": "^2.0",
+      "magento/live-search": "^3.0",
       ...
     }
    ```
@@ -259,6 +258,6 @@ composer update magento/live-search --with-dependencies
 
 | 依存関係 | 説明 |
 |--- |--- |
-| モジュールの書き出し | 以下のモジュールは、カタログデータを収集し、同期します。<br />`saas-export`<br />`module-bundle-product-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter` |
-| `services-connector` | Commerce Services への接続を設定するために必要です。 |
-| `module-services-id` | Commerce Services への接続を設定するために必要です。 |
+| モジュールの書き出し | 以下のモジュールは、カタログデータを収集し、同期します。<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
+| `data-services` | Commerce Services への接続を設定するために必要です。 |
+| `services-id` | Commerce Services への接続を設定するために必要です。 |

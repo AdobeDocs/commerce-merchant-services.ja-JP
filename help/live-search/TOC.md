@@ -2,10 +2,10 @@
 user-guide-title: '"[!DNL Live Search] ガイド»'
 user-guide-description: このガイドでは、 [!DNL Live Search] Adobe Commerceから」
 breadcrumb-title: '"[!DNL Live Search] ガイド»'
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 2%
+source-wordcount: '96'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 2%
    - [オンボーディングの概要](onboarding-overview.md)
    - [インストール [!DNL Live Search]](install.md)
 - [!DNL Live Search] ストアフロント {#live-search-storefront}
+   - [製品リストページウィジェット](plp-styling.md)
    - [クイックツアー](quick-tour.md)
    - [ストアフロント [!DNL Popover]](storefront-popover.md)
    - [スタイル設定 [!DNL Popover] 要素](storefront-popover-styling.md)
@@ -41,6 +42,9 @@ ht-degree: 2%
       - [ルールワークスペース](rules-workspace.md)
       - [ルールを追加](rules-add.md)
       - [ルールを管理](rules-manage.md)
+   - [コマース設定](configuration.md)
    - [設定](settings.md)
    - [インデックス作成](indexing.md)
-- [フィードバック](feedback.md)
+- GraphQLクエリ {#graphql}
+   - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
+   - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

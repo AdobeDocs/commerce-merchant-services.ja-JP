@@ -2,9 +2,9 @@
 title: ファセットの管理
 description: 「既存の [!DNL Live Search] ファセット」
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,10 @@ ht-degree: 0%
    ![ピンおよび動的ファセット](assets/facets-pinned-unpinned.png)
 
 ## 固定されたファセットを移動
+
+>[!NOTE]
+>
+>ピンされたファセットの順序は、ヘッドレス実装でのみサポートされます。 順序付きファセットが必要な場合は、 [!DNL Live Search] PLP ウィジェット。
 
 ピンされたファセットの順序は、行を別の位置に移動することで変更できます。 固定されたファセットには *移動* アイコン (![移動セレクター](assets/btn-move.png)) を行の先頭に配置します。 ピンされたファセットとは異なり、動的ファセットは移動できません。
 

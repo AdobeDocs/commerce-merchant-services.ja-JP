@@ -2,9 +2,9 @@
 title: シノニムのタイプ
 description: 「片道と双方向 [!DNL Live Search] 「類義語」は、キーワードの定義を拡張します。
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 ## ベストプラクティス
 
-ライブ検索のシノニムを最大限に活用するには、次のベストプラクティスに注意してください。
+を最大限に活用するために、次のベストプラクティスに留意してください。 [!DNL Live Search] シノニム。
 
 ### 「ストップワード」の回避
 
-ライブ検索では、次のような類義語から一般的な英語の「ストップワード」を除外します。
+[!DNL Live Search] 次のような類義語から一般的な英語の「ストップワード」を除外します。
 
 a, a, and, a, a, at, a, a, a, a, a, a, a, a, a, in, in, i, it, no, on, on, on, on, os, a, the, ther, ther, the, ther, the, this, to, to, as, a
 
