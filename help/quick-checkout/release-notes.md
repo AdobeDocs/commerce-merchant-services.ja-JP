@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] リリースノート`'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: a10b09a5bc2b46f531a7bad298a2976e2d25ec63
+source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -70,6 +70,8 @@ _2022 年 10 月 6 日_
 _2023 年 2 月 25 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+![新規](../assets/new.svg)<!-- Issue BOLT-520 --> GA リリース —[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) は、Adobe Commerce Cloudバージョン 2.4.6 以降にプリインストールされるようになりました。
 
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-592 --> を [管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) using [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) 支払い方法として。 この機能を使用すると、顧客は、チェックアウト時にBraintreeを支払い方法として注文を行うことができます。 [!DNL Quick Checkout] が有効になっている。
 
