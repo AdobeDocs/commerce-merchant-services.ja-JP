@@ -2,7 +2,7 @@
 title: 製品をフィルタ
 description: 製品をレコメンデーションとして使用するかどうかを含める、または除外する条件を定義します。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Adobe Commerceは、レコメンデーション単位に設定できないデフ
 
 ### カテゴリ
 
-製品のカテゴリに基づくフィルターでは、直接カテゴリの割り当てとそのサブカテゴリを使用します。 例えば、カテゴリの除外条件を有効にする場合などです。 `Gear` に割り当てられた製品を除外 `Gear` そして、次のようなサブカテゴリがすべて `Gear/Bags` または `Gear/Fitness Equipment`. B2B マーチャントの場合、カテゴリフィルタは、 [顧客固有の製品カテゴリ]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) 設定済みです。
+製品のカテゴリに基づくフィルターでは、直接カテゴリの割り当てとそのサブカテゴリを使用します。 例えば、カテゴリの除外条件を有効にする場合などです。 `Gear` に割り当てられた製品を除外 `Gear` そして、次のようなサブカテゴリがすべて `Gear/Bags` または `Gear/Fitness Equipment`. B2B マーチャントの場合、カテゴリフィルタは、 [顧客固有の製品カテゴリ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) 設定済みです。
 
 Adobe Commerceでは、ページタイプにレコメンデーションをデプロイする際に、次のカテゴリフィルター設定を使用することをお勧めします。
 

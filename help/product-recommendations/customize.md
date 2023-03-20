@@ -2,9 +2,9 @@
 title: カスタマイズ
 description: 製品のレコメンデーションをカスタマイズする方法を説明します。
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
-source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
+source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
    >
    >のファイル名 `layout` ストアでサードパーティの拡張機能を使用する場合は、ディレクトリが異なる可能性があります。
 
-1. 次に、 `catalog_product_view.xml` ファイルを作成して、商品の詳細ページの商品の画像の後にレコメンデーション単位を表示するようにします。 この XML ファイルをカスタマイズする前に、ファイルを見て、変更する必要のあるセクションを理解しておきましょう。
+1. を変更します。 `catalog_product_view.xml` ファイルを作成して、商品の詳細ページの商品の画像の後にレコメンデーション単位を表示するようにします。 この XML ファイルをカスタマイズする前に、ファイルを見て、変更する必要のあるセクションを理解しておきましょう。
 
    ```xml
    <?xml version="1.0"?>
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 1. 別のコンテンツブロックを指定して、このファイルを変更します。
 
-   参照ブロックを変更します `name` から `main.content` から `product.info.media`.
+   参照ブロックを変更する `name` から `main.content` から `product.info.media`.
 
    ```xml
    <?xml version="1.0"?>

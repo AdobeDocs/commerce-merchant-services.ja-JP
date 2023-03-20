@@ -2,7 +2,7 @@
 title: ヘッドレス
 description: の統合方法を説明します [!DNL Product Recommendations] ヘッドレスな店の前に
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ht-degree: 0%
    | `impression-render` | recommendation-unit |
    | `view` | recommendation-unit |
    | `rec-click` | recommendation-unit |
-   | `rec-add-to-cart-click` | recommendation-unit（買い物かごに追加ボタンが recommendations テンプレートに存在する場合） |
+   | `rec-add-to-cart-click` | recommendation-unit（recommendations テンプレートに「買い物かごに追加」ボタンが存在する場合） |
 
 1. イベントが発生したら、 [Adobe Commerce Storefront イベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) イベントを処理してAdobe Senseiに送信する
 

@@ -2,9 +2,9 @@
 title: '''[!DNL Product Recommendations] リリースノート`'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1068'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,21 @@ ht-degree: 0%
 
 ## 現在のメジャーバージョン
 
+### magento/product-recommendations の 5.0.0
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+![新規](../assets/new.svg) Adobe Commerce 2.4.6 をサポートするように製品Recommendationsを更新しました。
+![新規](../assets/new.svg) これはメジャーバージョンのリリースです。 [編集](install-configure.md#update) 根 `composer.json` ファイルを作成します。
+
+#### 既知の制限事項
+
+* この `websiteCode` 値にアンダースコア (_) が含まれる場合、誤って値が返されます。
+
+### 以前のバージョン
+
++++4.0.1 以前
+
 ### magento/product-recommendations の 4.0.1
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
@@ -42,10 +57,6 @@ ht-degree: 0%
 #### 既知の制限事項
 
 * この `websiteCode` 値にアンダースコア (_) が含まれる場合、誤って値が返されます。
-
-### 以前のバージョン
-
-+++3.3.7 以前
 
 ### magento/product-recommendations の 3.3.7
 

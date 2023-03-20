@@ -1,7 +1,8 @@
 ---
 title: 製品のRecommendations Administrator Development
 description: 製品のRecommendationsアーキテクチャと開発機能の概要です。
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
