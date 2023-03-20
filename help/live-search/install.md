@@ -2,9 +2,9 @@
 title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法 [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
+source-git-commit: cccdcfe28150d929d9ff7de4459bbfef941860a4
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -237,7 +237,7 @@ composer update magento/live-search --with-dependencies
 1. **保存** `composer.json`. 次に、コマンドラインから次の操作を実行します。
 
    ```bash
-   composer update magento/live-search –-with-dependencies
+   composer update magento/live-search --with-dependencies
    ```
 
 ## アンインストール [!DNL Live Search] {#uninstall}
