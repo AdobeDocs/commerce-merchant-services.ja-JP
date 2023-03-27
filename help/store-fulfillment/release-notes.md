@@ -2,10 +2,10 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] リリースノート`'
 description: すべての [!DNL Store Fulfillment by Walmart Commerce Technologies] リリース」
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 258820e9591f3f47e74c4c9497376fd34512334a
+source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,8 @@ ht-degree: 1%
 
 ## v1.3.0
 
-リリース日：2023-02-27 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce(ECE) の互換性：2.4.x の安定性：一般公開
+*2023 年 2 月 28 日*
+[!BADGE 互換性]{type=Informative tooltip="互換性"}<br>Adobe Commerceバージョン 2.4.0 ～ 2.4.5
 
 このリリースには、次の更新が含まれています。
 
@@ -27,7 +28,8 @@ ht-degree: 1%
 
 ## v1.2.0
 
-リリース日：2022-09-27 Adobe Commerce(EE) との互換性：2.4.x とAdobe Commerce(ECE) の互換性：2.4.x の安定性：一般公開
+*2022 年 9 月 28 日*
+[!BADGE 互換性]{type=Informative tooltip="互換性"}<br>Adobe Commerceバージョン 2.4.0 ～ 2.4.5
 
 このリリースには、次の更新が含まれています。
 
@@ -36,13 +38,19 @@ ht-degree: 1%
 
 ## v1.1.0
 
-リリース日：2022-07-15 Adobe Commerce(EE) との互換性：2.4.0～2.4.4Adobe Commerce(ECE) との互換性：2.4.0～2.4.4 安定性：一般公開
+*2022 年 7 月 16 日*
+[!BADGE 互換性]{type=Informative tooltip="互換性"}<br>Adobe Commerceバージョン 2.4.0 ～ 2.4.4
+
+安定性：一般公開
 
 ![新規](../assets/fix.svg)<!-- WMTP-731 --> を簡素化し、 [チェックインエクスペリエンス設定](check-in-experience-setup.md) デフォルトの車のメーカーとモデルの選択を追加することにより、Store Assist アプリ用に。 以前のバージョンでは、商人は車の製造とモデルの選択を手動で設定する必要がありました。
 
 ## v1.0.0
 
-リリース日：2022-03-04 Adobe Commerce(EE) との互換性：2.4.0～2.4.4Adobe Commerce(ECE) との互換性：2.4.0～2.4.4 安定性：一般公開
+*2022 年 3 月 5 日*
+[!BADGE 互換性]{type=Informative tooltip="互換性"}<br>Adobe Commerceバージョン 2.4.0 ～ 2.4.4
+
+安定性：一般公開
 
 ## ストアアシストアプリ
 
