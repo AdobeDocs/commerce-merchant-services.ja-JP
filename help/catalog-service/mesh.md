@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] 「for Adobe Commerceは、共通のGraphQLエンドポイントを使用して複数のデータソースを統合する方法を提供します。」'
-source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
+source-git-commit: 1c377a9e5ad5d403e97d4dc7aa9c29c01ab8c819
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,11 @@ aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 
 このコマンドを実行した後、API メッシュを介してカタログサービスを実行する必要があります。 次を実行できます。 `aio api-mesh:get` コマンドを使用して、更新したメッシュの設定を表示します。
 
-## API メッシュの使用
+## API メッシュの例
 
 API メッシュを使用すると、外部のデータソースを使用してAdobe Commerceインスタンスを強化できます。 また、既存のコマースデータを設定して新しい機能を有効にする場合にも使用できます。
+
+### 階層価格を有効化
 
 この例では、API Mesh を使用して、Adobe Commerceの階層価格を有効にします。
 を `name `, `endpoint`、および `x-api-key` 値。
@@ -126,7 +128,7 @@ API メッシュを使用すると、外部のデータソースを使用してA
 
 設定が完了したら、メッシュに対して階層型の価格を問い合わせます。
 
-```json
+```graphql
 query {
   products(skus: ["24-MB04"]) {
     sku
@@ -149,6 +151,98 @@ query {
         }
       }
     }
+  }
+}
+```
+
+### エンティティ ID を取得する
+
+このメッシュは、 `entityId` を ProductView インターフェイスに追加します。 を `name `, `endpoint`、および `x-api-key` 値。
+
+```json
+{
+    "meshConfig": {
+      "sources": [
+        {
+          "name": "<Commerce Instance Name>",
+          "handler": {
+            "graphql": {
+              "endpoint": "<Adobe Commerce GraphQL endpoint>"
+            }
+          },
+          "transforms": [
+              {
+                  "prefix": {
+                      "includeRootOperations": true,
+                        "value": "Core_"
+                  }
+              }
+          ]
+        },
+        {
+          "name": "CommerceCatalogServiceGraph",
+          "handler": {
+            "graphql": {
+              "endpoint": "https://catalog-service.adobe.io/graphql",
+              "operationHeaders": {
+                "Magento-Store-View-Code": "{context.headers['magento-store-view-code']}",
+                "Magento-Website-Code": "{context.headers['magento-website-code']}",
+                "Magento-Store-Code": "{context.headers['magento-store-code']}",
+                "Magento-Environment-Id": "{context.headers['magento-environment-id']}",
+                "x-api-key": "<YOUR_CATALOG_SERVICE_API_KEY>",
+                "Magento-Customer-Group": "{context.headers['magento-customer-group']}"
+              },
+              "schemaHeaders": {
+                "x-api-key": "<YOUR_CATALOG_SERVICE_API_KEY>"
+              }
+            }
+          }
+        }
+      ],
+      "additionalTypeDefs": "extend interface ProductView {\n  entityId: String\n}\n extend type SimpleProductView {\n  entityId: String\n}\n extend type ComplexProductView {\n  entityId: String\n}\n",
+      "additionalResolvers": [
+        {  
+            "targetTypeName": "ComplexProductView",
+            "targetFieldName": "entityId",
+            "sourceName": "MagentoCore",
+            "sourceTypeName": "Query",
+            "sourceFieldName": "Core_products",
+            "requiredSelectionSet": "{ sku\n }",
+            "sourceSelectionSet": "{\n    items {\n  sku\n uid\n  }\n    }",
+            "sourceArgs": {
+                "filter.sku.eq": "{root.sku}"
+            },
+            "result": "items[0].uid",
+            "resultType": "String"
+          },
+          {
+            "targetTypeName": "SimpleProductView",
+            "targetFieldName": "entityId",
+            "sourceName": "MagentoCore",
+            "sourceTypeName": "Query",
+            "sourceFieldName": "Core_products",
+            "requiredSelectionSet": "{ sku\n }",
+            "sourceSelectionSet": "{\n items {\n  sku\n uid\n }}",
+            "sourceArgs": {
+                "filter.sku.eq": "{root.sku}"
+            },
+            "result": "items[0].uid",
+            "resultType": "String"
+          }
+      ]
+    }
+  }
+```
+
+`entityId` これで、次の項目を照会できるようになりました。
+
+```graphql
+query {
+  products(skus: ["MH07"]){
+    sku
+    name
+    id
+    entityId
   }
 }
 ```

@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] リリースノート`'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 ## 現在のメジャーバージョン
 
-### V1.5 リリース
+### V1.6 リリース
 
-_2023 年 3 月 7 日_
+_2023 年 3 月 29 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg) 追加済み [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL機能
-![修正点](../assets/fix.svg) パフォーマンスと API の拡張性が向上しました。
+![新規](../assets/new.svg) スウォッチを [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) クエリ。
+![新規](../assets/new.svg) を取得する機能を追加しました。 `entityId` using [API メッシュ](mesh.md).
 
 #### 既知の制限事項
 
@@ -37,14 +37,21 @@ _2023 年 3 月 7 日_
 * 動的属性ペイロードの最大サイズは 9 MB です。
 * グループ製品価格。 単純な製品価格で計算できます。
 * 画像配列では、最初の画像のみに役割が含まれます。
-* カラースウォッチ
-* 製品 URL を使用して製品の詳細ページを読み込む。
 
-Core GraphQL API を使用すると、次の制限を解決できます。
+API Mesh と Core GraphQL API を使用して、次の制限を解決できます。
 
 * 最小広告価格
-* 価格帯
+* [価格帯](mesh.md)
 * ダウンロード可能な製品とギフトカード
+
+### V1.5 リリース
+
+_2023 年 3 月 7 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+![新規](../assets/new.svg) 追加済み [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL機能
+![修正点](../assets/fix.svg) パフォーマンスと API の拡張性が向上しました。
 
 ### V1.4 リリース
 
