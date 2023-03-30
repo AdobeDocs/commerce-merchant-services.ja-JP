@@ -2,9 +2,9 @@
 title: Adobe CommerceからのAdobe Experience Platform Connector のインストールと設定
 description: Adobe CommerceからAdobe Experience Platform Connector をインストール、設定、更新およびアンインストールする方法について説明します。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ Experience Platformコネクタ拡張機能は、サーバーのコマンドラ�
 
 Experience Platformコネクタは、 [Adobe市場](https://marketplace.magento.com/magento-experience-platform-connector.html).
 
+![Adobe Commerce用 B2B](../assets/b2b.svg) B2B マーチャントの場合は、別の拡張機能をインストールする必要があります。 この拡張機能は、B2B 固有のイベントのサポートを追加します。 [詳細情報](#install-the-b2b-extension).
+
 1. 次の手順で `experience-platform-connector` package で、コマンドラインから次のコマンドを実行します。
 
    ```bash
@@ -27,12 +29,22 @@ Experience Platformコネクタは、 [Adobe市場](https://marketplace.magento.
 
    このメタパッケージには、次のモジュールと拡張機能が含まれています。
 
-   * `module-platform-connector-admin` - Admin UI を更新し、特定のAdobe Commerceインスタンスのデータストリーム ID を選択できるようにしました
-   * `module-platform-connector` - `Organization ID` および `datastreamId` （Storefront Events SDK の）
+   * `module-experience-connector-admin` - Admin UI を更新し、特定のAdobe Commerceインスタンスのデータストリーム ID を選択できるようにしました
+   * `module-experience-connector` - `Organization ID` および `datastreamId` （Storefront Events SDK の）
    * `data-services`  — ストアフロントイベントの属性コンテキストを提供します。 例えば、チェックアウトイベントが発生した場合、買い物かごに入った品目数に関する情報と、それらの品目の製品属性データが含まれます。
    * `services-id` - Adobe Commerceインスタンスをに接続します [Adobe Commerce SaaS](../landing/saas.md) サンドボックスおよび実稼動 API キーとAdobe Experience Platformへの IMS 組織 ID の取得を使用する
 
 1. （オプション）を含めるには [!DNL Live Search] データ（検索イベントを含む）は、 [[!DNL Live Search]](../live-search/install.md) 拡張子。
+
+### B2B 拡張機能のインストール
+
+B2B マーチャントの場合は、次の拡張機能をインストールして、 [購買依頼リスト](events.md#b2b-events) イベントデータ。
+
+をダウンロードします。 `magento/experience-platform-connector-b2b` コマンドラインから次のコマンドを実行して、拡張機能を設定します。
+
+```bash
+composer require magento/experience-platform-connector-b2b
+```
 
 ## Experience Platformコネクタの更新 {#update}
 
@@ -40,6 +52,12 @@ Experience Platformコネクタを更新するには、コマンドラインで�
 
 ```bash
 composer update magento/experience-platform-connector --with-dependencies
+```
+
+B2B 商人の場合は次のようになります。
+
+```bash
+composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
 1.0.0 から 2.0.0 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
@@ -61,6 +79,12 @@ composer update magento/experience-platform-connector --with-dependencies
    ```bash
    composer update magento/experience-platform-connector –-with-dependencies
    ```
+
+B2B 商人の場合は次のようになります。
+
+```bash
+composer update magento/experience-platform-connector-b2b --with-dependencies
+```
 
 ## Experience Platformコネクタのアンインストール {#uninstall}
 

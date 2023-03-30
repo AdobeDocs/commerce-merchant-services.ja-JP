@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe CommerceのAdobe Experience Platformコネクタの最新のリリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 57d0d0604e871a0d8a76bfd2c006250b55f0eeb1
+source-git-commit: 735fd14fad22826b04320644e120d296de19a211
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Experience Platformコネクタで使用される拡張機能に関する機能�
 
 詳しくは、 [今後のリリース](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) を参照してください。
 
-詳しくは、 [使用可否](https://experienceleague.adobe.com/docs/commerce-operations/release/availability.html) 製品の互換性については、を参照してください。
+開発者向けドキュメントを参照してください。 [製品の互換性の詳細](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## サポートされるサービスの更新
 
@@ -29,12 +29,24 @@ Experience Platformコネクタで使用される拡張機能に関する機能�
 
 +++サポートされるサービスの更新
 
+_2023 年 3 月 31 日_
+
+* ![新規](../assets/new.svg)  — という新しい拡張機能が追加されました。 `data-services-b2b` を含む [購買依頼リスト・イベント](events.md#b2b-events) B2B 商人向け
+* ![新規](../assets/new.svg)  — が追加されました `uniqueIdentifier` ～に向かって [検索](events.md#search-events) イベント。 この新しいフィールドを使用すると、マーチャントは、どの検索リクエストをどの検索応答に対応させるかを相互に参照できます。
+
 _2022 年 10 月 13 日_
 
 * ![新規](../assets/new.svg) - 2 つ追加 [storefront イベント](events.md): `openCart` および `removeFromCart` をAdobe Commerce Storefront Events SDK およびコレクターに追加しました。
 * ![新規](../assets/new.svg)  — のサポートを追加しました [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.2.0
+
+_2023 年 3 月 31 日_
+
+* ![新規](../assets/new.svg)  — バンドルされた `commerce-data-export` および `saas-export` 依存関係 `experience-platform-connector` 拡張子。 以前は、これらの依存関係を個別にインストールする必要がありました。 これらの依存関係は、マーチャント設定と共に、サーバ側での [バックオフィスイベント](events.md#back-office-events).
+* ![新規](../assets/new.svg)  — という新しいバックオフィスイベントが追加されました [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
@@ -46,7 +58,7 @@ _2023 年 2 月 29 日_
 
 _2023 年 1 月 18 日_
 
-* ![新規](../assets/new.svg)  — 更新された [Experience Platformコネクタ管理](connect-data.md) 独自の AEP Web SDK(alloy) を指定できます。 また、バックオフィスのベータ版プログラムに登録した商人が [バックオフィスのイベントデータ](connect-data.md#data-collection) をエッジに追加します。 これらのイベントには、 [注文ステータス情報](events.md#beta-order-status-events) 注文について（注文が行われたか、キャンセルされたか、返金されたか、または発送されたかなど）。 バックオフィスベータプログラムに参加したい場合は、 [drios@adobe.com](mailto:drios@adobe.com).
+* ![新規](../assets/new.svg)  — 更新された [Experience Platformコネクタ管理](connect-data.md) 独自の AEP Web SDK(alloy) を指定できます。 また、バックオフィスのベータ版プログラムに登録した商人が [バックオフィスのイベントデータ](connect-data.md#data-collection) をエッジに追加します。 これらのイベントには、 [注文ステータス情報](events.md#beta-order-status-events) 注文について（注文が行われたか、キャンセルされたか、返金されたか、または発送されたかなど）。
 * ![修正点](../assets/fix.svg) 次を使用してに変更 `identityMap` の代わりに `personID` エッジにプッシュされたデータのプライマリ id を設定する際に使用します。
 
 ## 2.0.1

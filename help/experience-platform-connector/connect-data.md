@@ -2,9 +2,9 @@
 title: コマースデータをAdobe Experience Platformに接続
 description: コマースデータをAdobe Experience Platformに接続する方法を説明します。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,9 @@ Adobe CommerceインスタンスをAdobe Experience Platformに接続するに�
 
 ## データ収集
 
->[!NOTE]
->
->弊社のバックオフィスベータプログラムにすでに登録されているマーチャントの場合、バックオフィスイベントを有効にするチェックボックスが表示されます。 バックオフィスベータプログラムに参加したい場合は、 [drios@adobe.com](mailto:drios@adobe.com).
+内 **データ収集** 「 」セクションでは、収集してExperience Platformedge に送信するデータのタイプを指定します。 AEP Web SDK と組織 ID が有効である限り、デフォルトでは、ストアフロントイベントが自動的に送信されます。 詳しくは、イベントのトピックを参照してください [店頭](events.md#storefront-events) および [バックオフィス](events.md#back-office-events) イベント。
 
-内 **データ収集** 「 」セクションでは、収集してExperience Platformedge に送信するデータのタイプを指定します。 AEP Web SDK と組織 ID が有効である限り、デフォルトでは、ストアフロントイベントが自動的に送信されます。 詳しくは、イベントのトピックを参照してください [店頭](events.md#storefront-events) および [バックオフィス](events.md#beta-order-status-events) イベント。
-
-![ベータExperience Platformコネクタの設定](assets/epc-config-beta.png)
+![Experience Platformコネクタの設定](assets/epc-config-dc.png)
 
 >[!NOTE]
 >
@@ -64,7 +60,7 @@ Adobe CommerceインスタンスをAdobe Experience Platformに接続するに�
 | AEP Web SDK が既にサイトにデプロイされているか。 | 独自の AEP Web SDK をサイトにデプロイした場合は、このチェックボックスを選択します。 |
 | AEP Web SDK 名（グローバル） | 既にサイトにExperience PlatformWeb SDK がデプロイされている場合は、このフィールドにその SDK の名前を指定します。 これにより、Storefront Event Collector および Storefront Event SDK は、Experience PlatformコネクタによってデプロイされたExperience Platformではなく、Web SDK を使用できます。 サイトにExperience PlatformWeb SDK がデプロイされていない場合、このフィールドを空白のままにすると、Experience Platformコネクタがデプロイします。 |
 | ストアフロントイベント | 組織 ID とデータストリーム ID が有効である限り、デフォルトでオンになります。 Storefront イベントは、サイトを閲覧する買い物客から匿名化された行動データを収集します。 |
-| バックオフィスイベント（ベータ版） | オンにすると、イベントペイロードには、注文が発行されたか、キャンセルされたか、返金されたか、発送されたかなど、匿名化された注文ステータス情報が含まれます。 |
+| バックオフィスイベント | オンにすると、イベントペイロードには、注文が発行されたか、キャンセルされたか、返金されたか、発送されたかなど、匿名化された注文ステータス情報が含まれます。 |
 | Datastream ID (Website) | Adobe Experience Platformから他のAdobeDX 製品にデータを送信できるようにする ID。 この ID は、特定のAdobe Commerceインスタンス内の特定の Web サイトに関連付ける必要があります。 独自のExperience PlatformWeb SDK を指定する場合は、このフィールドにデータストリーム ID を指定しないでください。 Experience Platformコネクタは、その SDK に関連付けられたデータストリーム ID を使用し、このフィールドで指定されたデータストリーム ID を無視します（存在する場合）。 |
 
 Experience Platformコネクタ拡張機能がインストールされ、Adobe CommerceとAdobe Experience Platform間のリンクが作成され、Datastream ID が指定されると、Commerce データがAdobe Experience Platformエッジおよび他のAdobeDX 製品に送られ始めます。
@@ -73,7 +69,7 @@ Experience Platformコネクタ拡張機能がインストールされ、Adobe C
 >
 > エッジから他のAdobeDX 製品へのデータの流れに要する時間は異なる場合があります。
 
-## エッジでのコマースデータ
+## データがExperience Platformに送信されていることを確認
 
 コマースデータがAdobe Experience Platform Edge に送信されると、次のようなレポートを作成できます。
 

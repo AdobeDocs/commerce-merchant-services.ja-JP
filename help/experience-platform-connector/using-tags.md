@@ -2,9 +2,9 @@
 title: Adobe Experience Platformタグを使用したコマースデータの収集
 description: Adobe Experience Platformタグを使用してコマースデータを収集する方法を説明します。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2535'
 ht-degree: 0%
 
 ---
@@ -559,6 +559,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **値**:まだ利用できません
    - **フィールドグループ**: `siteSearch` > `sort`. 選択 **オブジェクト全体を提供**.
    - **フィールドグループ**: `siteSearch` > `filter`. 選択 **オブジェクト全体を提供**.
+   - **フィールドグループ**: `searchRequest` > `id`
+   - **一意の識別子**: **値** = `%search request ID%`
    - **フィールドグループ**: `searchRequest` > `value`
    - **値**: **値** = `1`
 
@@ -654,6 +656,8 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **フィールドグループ**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **値** = `%product image%`
    - **データ要素**: `%search result products%`
+   - **フィールドグループ**: `searchResponse` > `id`
+   - **一意の識別子**: **値** = `%search response ID%`
    - **フィールドグループ**: `searchResponse` > `value`
    - **値**: **値** = `1`
 
@@ -1361,7 +1365,7 @@ Experience Platformコネクタプロファイルは、 `identityMap` そして 
 
 ## 同意の設定
 
-Adobe CommerceおよびExperience Platformコネクタのデータ収集に関する同意は、デフォルトで有効になっています。 オプトアウトは、 [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). を使用する場合は、ここで説明する手順に従うことができます。 `mg_dnt` 同意を管理する この [Adobe Experience Platform Web SDK ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) には、同意を管理するためのその他のオプションがいくつかあります。
+Adobe CommerceおよびExperience Platformコネクタのデータ収集に関する同意は、デフォルトで有効になっています。 オプトアウトは、 [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). を使用する場合は、ここで説明する手順に従うことができます。 `mg_dnt` 同意を管理する この [Adobe Experience Platform Web SDK ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) には、同意を管理するためのその他のオプションがいくつかあります。
 
 1. の作成 **コアカスタムコード** データ要素 (`%do not track cookie%`) `mg_dnt` cookie:
 
