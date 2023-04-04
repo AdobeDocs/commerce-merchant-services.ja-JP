@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Page Builder] 統合'
 description: '''使用方法を学ぶ [!DNL Product Recommendations] の単位を指定します。'
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 59ec1a212fbc9ef48658b29cace083e3fb645185
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # [!DNL Page Builder] 統合
 
 製品Recommendationsは、サイトにデプロイする Page Builder コンテンツ内に統合できます。
+
+>[!NOTE]
+>
+> ネイティブのページビルダーページでは、最大 25 のレコメンデーション単位を使用できます。 非ネイティブの Page Builder ページは、最大 5 つのレコメンデーション単位を持つことができます。 詳しくは、 [新しいレコメンデーションを作成](create.md) を参照してください。
 
 ## 製品Recommendationsと Page Builder コンテンツの使用
 
