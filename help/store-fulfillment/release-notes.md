@@ -2,9 +2,9 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] リリースノート`'
 description: すべての [!DNL Store Fulfillment by Walmart Commerce Technologies] リリース」
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
+source-git-commit: 8cc951721b43df393d58bd55338cf026261db752
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '178'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 2%
 ## v1.3.0
 
 *2023 年 2 月 28 日*
-[!BADGE 互換性]{type=Informative tooltip="互換性"}<br>Adobe Commerceバージョン 2.4.0 ～ 2.4.5
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 このリリースには、次の更新が含まれています。
 
@@ -29,7 +30,8 @@ ht-degree: 2%
 ## v1.2.0
 
 *2022 年 9 月 28 日*
-[!BADGE 互換性]{type=Informative tooltip="互換性"}<br>Adobe Commerceバージョン 2.4.0 ～ 2.4.5
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 このリリースには、次の更新が含まれています。
 
@@ -39,7 +41,8 @@ ht-degree: 2%
 ## v1.1.0
 
 *2022 年 7 月 16 日*
-[!BADGE 互換性]{type=Informative tooltip="互換性"}<br>Adobe Commerceバージョン 2.4.0 ～ 2.4.4
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 安定性：一般公開
 
@@ -48,7 +51,8 @@ ht-degree: 2%
 ## v1.0.0
 
 *2022 年 3 月 5 日*
-[!BADGE 互換性]{type=Informative tooltip="互換性"}<br>Adobe Commerceバージョン 2.4.0 ～ 2.4.4
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 安定性：一般公開
 
