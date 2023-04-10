@@ -2,9 +2,9 @@
 title: XDM スキーマへのフィールドグループの追加
 description: XDM スキーマにAdobe Commerce固有のフィールドグループを追加する方法を説明します。
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: 90356cc593653cf4583da86bc29d69112fc948ba
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
    - 参照キー
    - 個人の連絡先の詳細
    - コマースの詳細
-   - Adobe Analytics Experience Event Commerce(Adobe Analyticsにデータを送信する場合 )
-   - 人物識別子
+   - Adobe Analytics ExperienceEvent Commerce(Adobe Analyticsにデータを送信する場合 )
+   - ID マップ
 
    >[!NOTE]
    >
@@ -32,4 +32,10 @@ ht-degree: 0%
 
    XDM スキーマにコマース固有のフィールドグループが含まれ、コマースストアフロントから収集されたデータが生成されます [イベント](events.md) は XDM で表されます。
 
-1. [データストリームの作成](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) をクリックし、コマース固有のフィールドグループを含む XDM スキーマを選択します。
+1. [データセットの作成](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 作成または更新したスキーマに基づいて
+
+   データセットは、スキーマ（列）とフィールド（行）を含むテーブルなど、データの集まりのストレージと管理の構成体です。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
+
+1. [データストリームの作成](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) をクリックし、コマース固有のフィールドグループと対応するデータセットを含む XDM スキーマを選択します。
+
+   データストリームは、収集したデータをデータセットに転送します。 データは、選択したスキーマに基づいて、データセット内に表されます。
