@@ -2,9 +2,9 @@
 title: イベント
 description: 各イベントが取り込むデータを説明します。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
@@ -338,7 +338,7 @@ ht-degree: 0%
 | フィールド | 説明 |
 |---|---|
 | `searchRequest` | 検索リクエストが送信されたかどうかを示します |
-| `uniqueIdentifier` | この特定の検索リクエストの一意の ID |
+| `id` | この特定の検索リクエストの一意の ID |
 | `filter` | 検索結果を制限するためにフィルターが適用されたかどうかを示します |
 | `attribute` （フィルター） | 項目を検索結果に含めるかどうかを決定するために使用される項目のファセット |
 | `value` | 検索結果に含まれる項目を決定するために使用される属性値 |
@@ -365,7 +365,7 @@ ht-degree: 0%
 | フィールド | 説明 |
 |---|---|
 | `searchResponse` | 検索応答を受信したかどうかを示します |
-| `uniqueIdentifier` | この特定の検索応答の一意の ID |
+| `id` | この特定の検索応答の一意の ID |
 | `suggestions` | カタログに存在し、検索クエリに類似する製品とカテゴリの名前を含む文字列の配列。 |
 | `numberOfResults` | 返された製品の数 |
 | `productListItems` | 買い物かごに含まれる製品の配列。 |
@@ -391,8 +391,10 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 
 | フィールド | 説明 |
 |---|---|
-| `requisitionListOpens` | 値： `1` 購買依頼リストが開かれたことを示します |
-| `requisitionList` | 一意の `ID` , `name`、および `description` 要求リストの |
+| `requisitionList` | 顧客が作成した購買依頼リストのプロパティ |
+| `ID` | 購買依頼リストの一意の ID |
+| `name` | 顧客が指定した購買依頼リストの名前 |
+| `description` | 顧客が指定した購買依頼リストの説明 |
 
 ### addToRequisitionList
 
@@ -410,8 +412,10 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 
 | フィールド | 説明 |
 |---|---|
-| `requisitionListAdds` | 値： `1` 製品が購買依頼リストに追加されたことを示します |
-| `requisitionList` | 一意の `ID`,  `name`、および `description` 要求リストの |
+| `requisitionList` | 顧客が作成した購買依頼リストのプロパティ |
+| `ID` | 購買依頼リストの一意の ID |
+| `name` | 顧客が指定した購買依頼リストの名前 |
+| `description` | 顧客が指定した購買依頼リストの説明 |
 | `productListItems` | 購買依頼リストに追加された製品の配列 |
 | `name` | 製品の表示名または人間が読み取り可能な名前 |
 | `SKU` | 在庫管理単位。 商品の一意の ID。 |
@@ -419,6 +423,7 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 | `priceTotal` | 製品品目の合計価格 |
 | `discountAmount` | 適用された割引額を示します |
 | `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用される通貨コード |
+| `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
 
 ### removeFromRequisitionList
 
@@ -432,8 +437,10 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 
 | フィールド | 説明 |
 |---|---|
-| `requisitionListRemovals` | 値： `1` 製品が購買依頼リストから削除されたことを示します |
-| `requisitionList` | 一意の `ID`、および `description` 要求リストの |
+| `requisitionList` | 顧客が作成した購買依頼リストのプロパティ |
+| `ID` | 購買依頼リストの一意の ID |
+| `name` | 顧客が指定した購買依頼リストの名前 |
+| `description` | 顧客が指定した購買依頼リストの説明 |
 | `productListItems` | 購買依頼リストに追加された製品の配列 |
 | `name` | 製品の表示名または人間が読み取り可能な名前 |
 | `SKU` | 在庫管理単位。 商品の一意の ID。 |
