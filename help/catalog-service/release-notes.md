@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] リリースノート`'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
+source-git-commit: 47163a83d3c79abe7718121492970e34ffbf3643
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,20 @@ ht-degree: 0%
 
 ## 現在のメジャーバージョン
 
-### V1.6 リリース
+### V1.7 リリース
 
-_2023 年 3 月 29 日_
+_2023 年 4 月 13 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg) スウォッチを [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) クエリ。
-![新規](../assets/new.svg) を取得する機能を追加しました。 `entityId` using [API メッシュ](mesh.md).
+![新規](../assets/new.svg) カタログサービスで、削除された製品のバリアントをクリーンアップするようになりました。
+![修正点](../assets/fix.svg) インフラストラクチャの拡張性とパフォーマンスの向上。
 
 #### 既知の制限事項
 
 以下の機能は、まだサポートされていません。
 
 * 定価で製品をバンドル
-* バリアントがカタログから削除された場合、更新は受け取りません。
 * 動的属性ペイロードの最大サイズは 9 MB です。
 * グループ製品価格。 単純な製品価格で計算できます。
 * 画像配列では、最初の画像のみに役割が含まれます。
@@ -43,6 +42,15 @@ API Mesh と Core GraphQL API を使用して、次の制限を解決できま�
 * 最小広告価格
 * [価格帯](mesh.md)
 * ダウンロード可能な製品とギフトカード
+
+### V1.6 リリース
+
+_2023 年 3 月 29 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+![新規](../assets/new.svg) スウォッチを [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) クエリ。
+![新規](../assets/new.svg) を取得する機能を追加しました。 `entityId` using [API メッシュ](mesh.md).
 
 ### V1.5 リリース
 
