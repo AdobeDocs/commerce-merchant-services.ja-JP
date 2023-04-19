@@ -2,9 +2,9 @@
 title: "ルール"
 description: '"[!DNL Live Search] ルールは、ロジックとアクションを組み合わせて、買い物体験を形成します。」'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -71,4 +71,4 @@ ht-degree: 0%
 ## カテゴリルールとカテゴリ製品の割り当て
 
 [!DNL Live Search] では、カテゴリでフィルタリングできます。
-ただし、Adobe Commerceでは、 [カテゴリ製品の割り当て](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). このタイプのカテゴリは、実行時に作成され、カテゴリデータベースに存在しません。 したがって、L[!DNL Live Search] このカテゴリの種類を読み取ったり使用したりできません。
+ただし、Adobe Commerceでは、 [カテゴリ製品の割り当て](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). このタイプのカテゴリは、実行時に作成され、カテゴリデータベースに存在しません。 したがって [!DNL Live Search] このカテゴリの種類を読み取ったり使用したりできません。
