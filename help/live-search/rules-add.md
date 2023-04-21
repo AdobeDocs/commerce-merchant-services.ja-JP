@@ -2,9 +2,9 @@
 title: "ルールを追加"
 description: 「 [!DNL Live Search] ルール」
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
+source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -102,6 +102,10 @@ ht-degree: 0%
    ![ルール — 一致](assets/rule-event-pin-product.png)
 
 また、ピンアイコンをクリックして、製品を現在の位置にピン留めすることもできます。 省略記号コンテキストメニューを使用して、「上にピン」または「下にピン」を選択します。
+
+>[!NOTE]
+>
+>ピン留めできるのは、クエリで返される製品のみです。
 
 または、イベントは手動で設定できます。
 
