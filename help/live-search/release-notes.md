@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] リリースノート`'
 description: 「 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 94e5d59061477440e62a8f1eb055090e0179d395
+source-git-commit: 6371d737ef9591e4ad647650c9c9974dbd8b4555
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 ![新規](../assets/new.svg) 新機能
 ![修正点](../assets/fix.svg) 修正点および改善点
 ![バグ](../assets/bug.svg) 既知の問題
+
+
+_2023 年 4 月 26 日_
+
+![新規](../assets/new.svg) ライブ検索のお客様は、新しい [SaaS 価格インデクサー](../price-index/index.md).
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -54,8 +59,8 @@ _2023 年 3 月 15 日_
 * その他のマイナーなバグ修正とパフォーマンスの更新
 
 
-* ![バグ](../assets/bug.svg) - 「お勧め」によるランキングは、Live Search ウィジェット内でのみサポートされています。 デフォルトの LUMA およびPWA検索機能ではサポートされていません。
-* ![バグ](../assets/bug.svg)  — カスタム価格属性ファセットは LUMA では正しくレンダリングされませんが、API はそれらに対して適切にフィルタリングします。
+* ![バグ](../assets/bug.svg) - 「お勧め」によるランキングは、Live Search ウィジェット内でのみサポートされています。 デフォルトの Luma およびPWA検索機能ではサポートされていません。
+* ![バグ](../assets/bug.svg)  — カスタム価格属性ファセットは Luma では正しくレンダリングされませんが、API はそれらに対して適切にフィルタリングします。
 
 マーチャントは [!DNL Live Search] これらの機能にアクセスするには、拡張機能バージョン 3.0.1 以降を参照してください。
 

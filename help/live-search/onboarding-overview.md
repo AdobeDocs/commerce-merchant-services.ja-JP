@@ -2,9 +2,9 @@
 title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
+source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,10 @@ ht-degree: 0%
 ### シノニム
 
 * [!DNL Live Search] は、1 つのストアビューにつき最大 200 個のシノニムを管理できます。
+
+## 価格インデクサー
+
+ライブ検索のお客様は、 [SaaS 価格インデクサー](../price-index/index.md)：価格変更の更新と同期時間を高速化します。
 
 ### PWAサポート
 

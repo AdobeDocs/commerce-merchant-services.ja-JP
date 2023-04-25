@@ -2,9 +2,9 @@
 title: カタログ同期
 description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services] サービスを最新の状態に保つための継続的なベースで
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Adobe CommerceおよびMagento Open Sourceは、インデクサーを使用し�
 1. 内 _データの再同期_ セクションで、 [!UICONTROL Resync].
 
    [!DNL Commerce] 次のスケジュール済み同期ウィンドウ中にカタログを同期します。 カタログのサイズによっては、この操作に時間がかかる場合があります。
+
 
 ## 同期されたカタログ製品
 
@@ -132,6 +133,14 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 - `productoverrides` — カテゴリ権限に基づく価格やカタログ表示ルールなど、お客様固有の価格やカタログ表示ルール
 
 コマンドラインからデータの再同期をトリガーする場合、データが更新されるまで最大 1 時間かかる場合があります。
+
+次を使用する場合： [SaaS 価格のインデックス作成](../price-index/index.md) 再同期が必要な場合は、次のコマンドを実行します。
+
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
+```
 
 ### 例
 

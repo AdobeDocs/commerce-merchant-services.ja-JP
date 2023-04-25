@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] インデックス作成»'
 description: «学ぶ方法 [!DNL Live Search] 製品属性プロパティのインデックスを作成します。"
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,11 @@ ht-degree: 0%
 
 この [!DNL Live Search] API を使用すると、クライアントは [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` に設定 `Yes` ( Adobe Commerce Admin ) 有効にした場合、 `Search Weight` および `Visible in Advanced Search` を属性に設定できます。
 
+[!DNL Live Search] 削除済みの製品または次に設定された製品のインデックスを作成しない `Not Visible Individually`.
+
 >[!NOTE]
 >
->[!DNL Live Search] 削除済みの製品または次に設定された製品のインデックスを作成しない `Not Visible Individually`.
+> 次を使用してコマースを行う顧客： [!DNL Live Search] は、Web サイト上で迅速な価格変更の更新と同期時間を活用できます。 [SaaS 価格インデクサー](../price-index/index.md).
 
 ## パイプラインのインデックス作成
 

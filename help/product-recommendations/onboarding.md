@@ -2,9 +2,9 @@
 title: オンボーディング
 description: での要件とサポートされるプラットフォームについて説明します。 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: fbc7feb29f3633eddbf521f41fc35a10a63dc564
+source-git-commit: 1bc15171e4e7402d808af3631b8b6d000d4fd3f2
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ ht-degree: 0%
 [!DNL Product Recommendations] は、Page Builder コンテンツタイプとしてページに追加できます。 Page Builder サポートを製品Recommendationsに追加するには、 [インストールと設定](install-configure.md).
 
 詳しくは、 [[!DNL Page Builder] 統合](page-builder.md) 追加方法の手順 [!DNL Product Recommendations] into [!DNL Page Builder] コンテンツ。
+
+## SaaS 価格のインデックス作成
+
+製品レコメンデーションのお客様が [SaaS 価格のインデックス作成](../price-index/index.md)：価格変更の更新と同期時間を短縮します。
 
 ### B2B サポート {#b2bsupport}
 
