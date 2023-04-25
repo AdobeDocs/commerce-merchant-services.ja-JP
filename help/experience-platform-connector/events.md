@@ -2,9 +2,9 @@
 title: イベント
 description: 各イベントが取り込むデータを説明します。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
+source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
-source-wordcount: '4592'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,11 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `eventType` | この時系列レコードの主なイベントタイプ。次に例を示します。 `userAccount.login` |
 | `person` | 個々のアクター、連絡先、または所有者 |
 | `accountID` | ユーザーアカウント ID をキャプチャします |
-| `personalEmailID` | 個人用電子メールの一意の識別子を指定します |
+| `accountType` | ユーザーアカウントタイプをキャプチャします（例： ）。 `Personal` または `Company`該当する場合は、 |
+| `personalEmailID` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
+| `personalEmail` | 連絡先の詳細をキャプチャします — 電子メールと関連情報 |
 | `address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
 | `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します |
 | `login` | 訪問者がログインしようとしたかどうかを示します |
@@ -260,7 +261,6 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `eventType` | この時系列レコードの主なイベントタイプ。次に例を示します。 `userAccount.logout` |
 | `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します |
 | `logout` | 訪問者がログアウトしようとしたかどうかを示します |
 
@@ -280,11 +280,11 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `eventType` | この時系列レコードの主なイベントタイプ。次に例を示します。 `account.createProfile` |
 | `person` | 個々のアクター、連絡先、または所有者 |
 | `accountID` | ユーザーアカウント ID をキャプチャします |
 | `accountType` | ユーザーアカウントタイプをキャプチャします（例： ）。 `Personal` または `Company`該当する場合は、 |
-| `personalEmailID` | 個人用電子メールの一意の識別子を指定します |
+| `personalEmailID` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
+| `personalEmail` | 連絡先の詳細をキャプチャします — 電子メールと関連情報 |
 | `address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
 | `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します |
 | `createProfile` | ユーザーがアカウントプロファイルを作成したかどうかを示します |
@@ -305,12 +305,11 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `eventType` | この時系列レコードの主なイベントタイプ。次に例を示します。 `account.updateProfile` |
 | `person` | 個々のアクター、連絡先、または所有者 |
 | `accountID` | ユーザーアカウント ID をキャプチャします |
 | `accountType` | ユーザーアカウントタイプをキャプチャします（例： ）。 `Personal` または `Company`該当する場合は、 |
-| `personalEmailID` | 個人用電子メールの一意の識別子を指定します |
-| `personalEmail` | 個人の電子メールアドレスを指定 |
+| `personalEmailID` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
+| `personalEmail` | 連絡先の詳細をキャプチャします — 電子メールと関連情報 |
 | `address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
 | `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します |
 | `updateProfile` | ユーザーがアカウントプロファイルを更新したかどうかを示します |
