@@ -4,9 +4,9 @@ description: すべてのコマースサービスのリリースノートのコ�
 seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: ba0a3c10ffb90ca2d6e77367d4292600c37b2489
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 0%
 <table>
   <tbody>
     <tr>
-      <td><strong>Adobe Commerce向けサービス</strong>
-        <p>Adobe CommerceおよびMagento Open Source拡張機能として利用できる革新的なコマースサービスの最新の改善点について説明します。</p>
+      <td><strong>コマースサービス</strong>
+        <p>拡張機能として利用可能な革新的なコマースサービスに対する最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">AmazonSales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">カタログサービス</a></li>
@@ -31,11 +31,16 @@ ht-degree: 0%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">ストアの達成</a></li>
           </ul>
         </td>
-      <td><strong>データと統合サービス</strong>
-        <p>コマースサービスが他のサービスと接続できるようにするデータおよび統合サービスの最新の改善点と、拡張機能および製品のAdobe範囲の拡大について説明します。</p>
+      <td><strong>統合サービス</strong>
+        <p>コマースサービスが他のサービスや拡張機能および製品との接続を可能にする、統合サービスの最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platformコネクタ</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">サービスコネクタ</a></li>
+          </ul>
+      </td>
+      <td><strong>データサービス</strong>
+        <p>コマースサービスで製品データを管理するためのデータサービスの最新の改善点について説明します。</p>
+          <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">カタログ同期</a></li>
           </ul>
       </td>

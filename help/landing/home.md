@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: ドキュメント
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
+source-git-commit: 63f6b5f33e3a8457420703d292d1eb341949af04
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,13 @@ ht-degree: 0%
 # Adobe Commerce Services ガイド
 
 Adobeは、マーチャントがビジネスの主要なコンポーネントをサポートするのに役立つ、コマース、統合、データサービスのコレクションを提供します。
+
+>[!BEGINSHADEBOX 「リリース情報」]
+
+詳しくは、 [ドキュメントの新機能](whats-new.md) または [リリースノート](release-notes-all.md) 各コマースサービス用の
+>[!ENDSHADEBOX]
+
+## コマースサービス
 
 <table>
 <tr>
@@ -76,6 +83,34 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
    </tr>
 </table>
 
-## サービスに接続
+## データサービス
 
-この [Commerce Services コネクタ](saas.md) は、API キーと秘密鍵を使用して、Adobe CommerceまたはMagento Open Sourceインスタンスの統合を提供します。 データサービス (Adobe Commerceのみ ) の場合は、設定でデータスペースも指定できます。
+<table>
+<tr>
+  <td valign="top" width="200">
+      <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
+    <div>Adobe CommerceとAdobe Experience Platform Edge の間の接続を活用して、Adobe AnalyticsやAdobe Targetなどの他のAdobe Experience Cloud製品用のコマースデータを利用します。</div>
+  </td>
+   </tr>
+<tr>
+   <td valign="top" width="200">
+       <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
+   <td valign="top">
+   <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
+    <div>Commerce Services コネクタは、API キーと秘密鍵を使用して、Adobe CommerceまたはMagento Open Sourceインスタンス用の統合を提供します。 データサービス (Adobe Commerceのみ ) の場合は、設定でデータスペースも指定できます。</div>
+  </td>
+   </tr>
+</table>
+
+## 統合サービス
+
+<table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
+    <div>カタログ同期では、サービスを最新の状態に保つために、コマースサーバーからコマースサービスに製品データをエクスポートします。 製品価格や在庫レベルの変更などのイベントによってトリガーされるインデクサーは、カタログデータをコンパイルします。 このプロセスは、「カタログ同期」ダッシュボードまたはコマンドラインインターフェイスを使用して監視および管理できます。</div>
+  </td>
+</tr>
+</table>

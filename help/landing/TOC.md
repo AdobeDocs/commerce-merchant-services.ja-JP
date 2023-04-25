@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce向けサービス
 user-guide-description: Adobe CommerceおよびMagento Open Sourceに拡張機能を提供するホストサービスのドキュメントとリソース。
 title: Adobe Commerce向けサービス
-source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
+source-git-commit: 2a3bd519eb4bb581d8394bed4e22305ea6878052
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Adobe Commerceドキュメントのサービス {#user-guides}
 
 - [概要](home.md)
+- リリース情報 {#release-information}
+   - [リリースノート](/help/landing/release-notes-all.md)
+   - [ドキュメントの新機能](/help/landing/whats-new.md)
 - コマースサービス {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
@@ -26,6 +29,3 @@ ht-degree: 0%
    - [サービスコネクタ](/help/landing/saas.md)
 - データサービス {#data-services}
    - [カタログ同期](/help/landing/catalog-sync.md)
-- リリース情報 {#release-information}
-   - [リリースノート](/help/landing/release-notes-all.md)
-   - [ドキュメントの新機能](/help/landing/whats-new.md)
