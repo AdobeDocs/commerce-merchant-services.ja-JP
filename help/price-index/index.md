@@ -3,9 +3,10 @@ title: SaaS 価格インデックス作成
 description: SaaS 価格インデックス作成を使用したパフォーマンスの向上
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
-source-git-commit: c13e836541c8f04c9621802e482754a483ef0a21
+exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
+source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -43,9 +44,11 @@ SaaS 価格のインデックス作成を使用するには、次が必要です
 
 SaaS 価格インデックス作成では、機能を提供するために一連のモジュールを使用します。 必要なモジュールのリストは、ストアの設定に応じて少し異なる場合があります。
 
-これら 2 つのモジュールは、新しいフィードを管理者に追加します。 これらのフィードは、価格計算に必要なデータを SaaS インデクサーに転送し、PHP のコア価格インデクサーを無視します。
+これらのモジュールは、管理者に新しいフィードを追加します。 これらのフィードは、価格計算に必要なデータを SaaS インデクサーに転送し、PHP のコア価格インデクサーを無視します。
 
 ```
+magento/module-product-override-price-remover
+magento/module-bundle-product-override-data-exporter
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
