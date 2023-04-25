@@ -2,7 +2,7 @@
 title: セキュリティとコンプライアンス
 description: サイトのセキュリティとコンプライアンス要件を確認します。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: bfce1cb702d634647022a92669d704dd82fe41e6
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -38,6 +38,10 @@ PCI 3-D セキュア (3DS) は、オンラインでクレジットカードを�
 [!UICONTROL Payment Services] は、3DS 機能を提供し、商人が EU 規制に準拠し、店舗での顧客や商人の不正行為を防ぐことを可能にします。
 
 3DS への準拠が必要な EU または英国内の商人の場合は、手動で 3DS をオンにする必要があります ( `Off` デフォルトで ) [設定](settings.md#credit-card-fields).
+
+>[!NOTE]
+>
+>3DS の要件は、ビジネスとカード所有者の銀行が [欧州経済圏](https://www.efta.int/eea) (EEA) と英国。 米国の商人は 3DS を必要としませんが、必要に応じて取引に対して有効にできます。
 
 マーチャント/店舗担当者が購入者に対して行った注文は、3DS コンプライアンス対策で構成されていません。
 

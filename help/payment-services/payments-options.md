@@ -2,9 +2,9 @@
 title: 支払いオプション
 description: 支払いオプションを設定して、店舗の顧客が利用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 31665f90909ce2364579fc7f9c97087e2376c0a6
+source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ ht-degree: 0%
 有効にする [クレジットカードの保管](#vaulting) 店舗で買い物客が後で迅速なチェックアウトを行うために、クレジットカード情報を逃がす（保存する）ことを許可するため。
 
 次の項目を設定できます。 [!UICONTROL Credit Card Fields] をクリックします。 詳しくは、 [設定](settings.md#credit-card-fields) を参照してください。
+
+また、クレジットカードフィールドのレイアウト、幅、高さ、外側のスタイルを変更することもできます。 詳しくは、 [PayPal ドキュメント](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) を参照してください。
 
 ## [!DNL PayPal Smart Buttons]
 
