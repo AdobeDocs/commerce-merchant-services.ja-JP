@@ -4,16 +4,16 @@ description: SaaS 価格インデックス作成を使用したパフォーマ�
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
+source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
 # SaaS 価格インデックス作成
 
-SaaS 価格のインデックス作成は、価格の変更が送信された後に顧客の Web サイトに反映されるまでの時間を短縮します。 このオプションモジュールを使用すると、大規模で複雑なカタログを持つマーチャントや、複数の Web サイトや顧客グループを持つマーチャントが、価格の変化をより迅速かつ継続的に処理できます。
+SaaS 価格のインデックス作成は、価格の変更が送信後に SaaS 顧客の Web サイトに反映されるまでに要する時間を短縮します。 このオプションモジュールを使用すると、大規模で複雑なカタログを持つマーチャントや、複数の Web サイトや顧客グループを持つマーチャントが、価格の変化をより迅速かつ継続的に処理できます。
 
 パイプラインの最大のボトルネック：インデックス作成や価格計算などの計算負荷の高いプロセスは、PHP のコアからAdobeのクラウドインフラストラクチャに移行されました。 これにより、マーチャントはリソースを迅速に拡張して、価格のインデクス化に要する時間を短縮し、その変更を Web サイトに迅速に反映できます。
 
@@ -47,8 +47,8 @@ SaaS 価格インデックス作成では、機能を提供するために一連
 これらのモジュールは、管理者に新しいフィードを追加します。 これらのフィードは、価格計算に必要なデータを SaaS インデクサーに転送し、PHP のコア価格インデクサーを無視します。
 
 ```
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
+magento/module-saas-price
+magento/module-saas-scopes
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```

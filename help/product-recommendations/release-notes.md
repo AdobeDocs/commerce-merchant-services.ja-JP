@@ -2,9 +2,9 @@
 title: '''[!DNL Product Recommendations] リリースノート`'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 5b6a3c2dc15d41e5245cbf62ed736022f48281fa
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,12 @@ ht-degree: 0%
 * でのページビルダーのサポート [!DNL Product Recommendations] （オプション）モジュール： `magento/module-page-builder-product-recommendations`
 * の視覚的類似性レコメンデーションタイプのサポート [!DNL Product Recommendations] （オプション）モジュール： `magento/module-visual-product-recommendations`
 
+現在のメジャーリリースバージョンがサポートされています。 古いバージョンのリリースノートは参照用に提供されています。
 リリースノートには次の内容が含まれます。
 
 ![新規](../assets/new.svg) 新機能
 ![修正点](../assets/fix.svg) 修正点および改善点
+![バグ](../assets/bug.svg) 既知の問題
 
 開発者向けドキュメントを参照してください。 [製品の互換性の詳細](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 

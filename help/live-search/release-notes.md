@@ -2,16 +2,18 @@
 title: '''[!DNL Live Search] リリースノート`'
 description: 「 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 6371d737ef9591e4ad647650c9c9974dbd8b4555
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] リリースノート
 
-これらのリリースノートでは、の最新バージョンについて説明します [!DNL Live Search] およびを含めます。
+これらのリリースノートでは、の最新バージョンについて説明します [!DNL Live Search].
+現在のメジャーリリースバージョンがサポートされています。 古いバージョンのリリースノートは参照用に提供されています。
+更新内容は次のとおりです。
 
 ![新規](../assets/new.svg) 新機能
 ![修正点](../assets/fix.svg) 修正点および改善点

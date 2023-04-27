@@ -2,16 +2,18 @@
 title: '''[!DNL Catalog Service] リリースノート`'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] リリースノート
 
-これらのリリースノートでは、の最新バージョンについて説明します [!DNL Catalog Service] およびを含めます。
+これらのリリースノートでは、の最新バージョンについて説明します [!DNL Catalog Service].
+現在のメジャーリリースバージョンがサポートされています。 古いバージョンのリリースノートは参照用に提供されています。
+更新内容は次のとおりです。
 
 ![新規](../assets/new.svg) 新機能
 ![修正点](../assets/fix.svg) 修正点および改善点
