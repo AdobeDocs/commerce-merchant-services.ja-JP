@@ -2,9 +2,9 @@
 title: の概要 [!DNL Live Search]
 description: '"[!DNL Live Search] Adobe Commerceからは、素早く、超関連性が高く、直感的な検索エクスペリエンスを提供します。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
-source-git-commit: 126cc4e050d8b37e784d1a5d925374fbd686af55
+source-git-commit: 5319c1474346ed3eb3cd2cf097813b00d8f56503
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -22,3 +22,5 @@ ht-degree: 0%
 詳しくは、このビデオをご覧ください。 [!DNL Live Search]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+ライブ検索の使用方法と設定方法に関する詳細なビデオについては、 [の完全なデモ [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/live-search-full-demonstration.html) トピック。
