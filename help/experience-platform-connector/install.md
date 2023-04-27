@@ -2,9 +2,9 @@
 title: Adobe CommerceからのAdobe Experience Platform Connector のインストールと設定
 description: Adobe CommerceからAdobe Experience Platform Connector をインストール、設定、更新およびアンインストールする方法について説明します。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 898d49cbeb4711862a47693a0d608b74730dc845
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,12 @@ ht-degree: 0%
 
 ## 拡張機能のインストール
 
-Experience Platformコネクタ拡張機能は、サーバーのコマンドラインからインストールされ、Adobe Commerceインストールに as a [サービス](../landing/saas.md). プロセスが完了したら、 **Experience Platformコネクタ** が **システム** 下のメニュー **サービス** （コマース内） _管理者_.
+Experience Platformコネクタ拡張機能は、 [Adobe市場](https://marketplace.magento.com/magento-experience-platform-connector.html). サーバーのコマンドラインからこの拡張機能をインストールすると、AEM Analytics の AEM as a Adobe Commerceインストールに接続されます。 [サービス](../landing/saas.md). プロセスが完了したら、 **Experience Platformコネクタ** および **Commerce Services コネクタ** 次の場所に表示される： **システム** 下のメニュー **サービス** （コマース内） _管理者_.
 
-Experience Platformコネクタは、 [Adobe市場](https://marketplace.magento.com/magento-experience-platform-connector.html).
+>[!NOTE]
+>
+>![Adobe Commerce用 B2B](../assets/b2b.svg) B2B マーチャントの場合は、別の拡張機能をインストールする必要があります。 この拡張機能は、B2B 固有のイベントのサポートを追加します。 [詳細情報](#install-the-b2b-extension).
 
-![Adobe Commerce用 B2B](../assets/b2b.svg) B2B マーチャントの場合は、別の拡張機能をインストールする必要があります。 この拡張機能は、B2B 固有のイベントのサポートを追加します。 [詳細情報](#install-the-b2b-extension).
 
 1. 次の手順で `experience-platform-connector` package で、コマンドラインから次のコマンドを実行します。
 
@@ -80,11 +81,11 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
    composer update magento/experience-platform-connector –-with-dependencies
    ```
 
-B2B 商人の場合は次のようになります。
+   B2B 商人の場合は次のようになります。
 
-```bash
-composer update magento/experience-platform-connector-b2b --with-dependencies
-```
+   ```bash
+   composer update magento/experience-platform-connector-b2b --with-dependencies
+   ```
 
 ## Experience Platformコネクタのアンインストール {#uninstall}
 

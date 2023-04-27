@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe CommerceのAdobe Experience Platformコネクタの最新のリリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 735fd14fad22826b04320644e120d296de19a211
+source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '345'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Experience Platformコネクタで使用される拡張機能に関する機能の変更および修正点については、 **サポートされるサービスの更新**.
 
-詳しくは、 [今後のリリース](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) を参照してください。
+詳しくは、 [今後のリリース](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) を参照してください。
 
 開発者向けドキュメントを参照してください。 [製品の互換性の詳細](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -45,6 +45,8 @@ _2022 年 10 月 13 日_
 
 _2023 年 3 月 31 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 * ![新規](../assets/new.svg)  — バンドルされた `commerce-data-export` および `saas-export` 依存関係 `experience-platform-connector` 拡張子。 以前は、これらの依存関係を個別にインストールする必要がありました。 これらの依存関係は、マーチャント設定と共に、サーバ側での [バックオフィスイベント](events.md#back-office-events).
 * ![新規](../assets/new.svg)  — という新しいバックオフィスイベントが追加されました [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
@@ -52,24 +54,32 @@ _2023 年 3 月 31 日_
 
 _2023 年 2 月 29 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 * ![新規](../assets/new.svg)  — すべてのExperience Platformコネクタモジュールに対する PHP 8.2 のサポートを追加
 
 ## 2.1.0
 
 _2023 年 1 月 18 日_
 
-* ![新規](../assets/new.svg)  — 更新された [Experience Platformコネクタ管理](connect-data.md) 独自の AEP Web SDK(alloy) を指定できます。 また、バックオフィスのベータ版プログラムに登録した商人が [バックオフィスのイベントデータ](connect-data.md#data-collection) をエッジに追加します。 これらのイベントには、 [注文ステータス情報](events.md#beta-order-status-events) 注文について（注文が行われたか、キャンセルされたか、返金されたか、または発送されたかなど）。
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+* ![新規](../assets/new.svg)  — 更新された [Experience Platformコネクタ管理](connect-data.md) 独自の AEP Web SDK(alloy) を指定できます。
 * ![修正点](../assets/fix.svg) 次を使用してに変更 `identityMap` の代わりに `personID` エッジにプッシュされたデータのプライマリ id を設定する際に使用します。
 
 ## 2.0.1
 
 _2022 年 11 月 11 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 * ![修正された問題](../assets/fix.svg) - Adobe Experience Platformコンテキストは、Storefront イベントコレクターと Storefront イベント SDK が正常に読み込まれた後にのみ設定されるようになりました。
 
 ## 2.0.0
 
 _2022 年 10 月 13 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 * ![新規](../assets/new.svg)  — 次の場合に独自の AEP Web SDK を指定する機能が追加されました。 [接続](connect-data.md) Adobe CommerceインスタンスからExperience Platform
 * ![修正点](../assets/fix.svg)  — データストリーム ID をストレビューではなく Web サイトにスコープする必要があるように、データストリームスコープの要件を更新しました
@@ -78,11 +88,6 @@ _2022 年 10 月 13 日_
 
 _2022 年 8 月 10 日_
 
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
 * ![新規](../assets/new.svg)  — 一般リリース (GA)
-
-## ドキュメント
-
-詳しくは、以下を参照してください。
-
-* [Adobe Commerce開発者向けドキュメント](https://devdocs.magento.com/)
-* [Adobe Commerce User Guide](https://docs.magento.com/user-guide/)

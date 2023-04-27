@@ -2,9 +2,9 @@
 title: Adobe Experience Platformタグを使用したコマースデータの収集
 description: Adobe Experience Platformタグを使用してコマースデータを収集する方法を説明します。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
+source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -1319,14 +1319,16 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
 - **タイプ**: `commerce.order`
 - **XDM データ**: `%place order%`
 
-## ID の設定
+## ストアフロントイベントで ID を設定
 
-Experience Platformコネクタプロファイルは、 `identityMap` そして `personalEmail` XDM エクスペリエンスイベントの ID フィールド。 
+ストアフロントイベントには、 `personalEmail` （アカウントイベントの場合）および `identityMap` （その他のすべてのストアフロントイベント用）フィールド。 Experience Platformコネクタは、これら 2 つのフィールドに基づいてプロファイルを結合して生成します。 ただし、各フィールドには、プロファイルを作成するための様々な手順があります。
 
-異なるフィールドを使用する以前の設定がある場合は、これらを引き続き使用できます。 Experience Platformコネクタのプロファイル ID フィールドを設定するには、次のフィールドを設定する必要があります。
+>[!NOTE]
+>
+>異なるフィールドを使用する以前の設定がある場合は、これらを引き続き使用できます。
 
-- `personalEmail`  — アカウントイベントのみ — 前述の手順に従います。 [アカウントイベント](#createaccount)
-- `identityMap`  — その他のすべてのイベント。 次の例を参照してください。
+- `personalEmail`  — アカウントイベントにのみ適用されます。 概要を説明した手順、ルール、およびアクションに従います [上](#createaccount)
+- `identityMap`  — その他すべてのストアフロントイベントに適用されます。 次の例を参照してください。
 
 ### 例
 
@@ -1337,7 +1339,7 @@ Experience Platformコネクタプロファイルは、 `identityMap` そして 
    ![カスタムコードを使用したデータ要素の設定](assets/set-custom-code-ecid.png)
    _カスタムコードを使用したデータ要素の設定_
 
-1. ECID カスタムコードの追加：
+1. 選択 [!UICONTROL Open Editor] 次のカスタムコードを追加します。
 
    ```javascript
    return alloy("getIdentity").then((result) => {
@@ -1346,6 +1348,12 @@ Experience Platformコネクタプロファイルは、 `identityMap` そして 
            {
                id: ecid,
                primary: true
+           }
+           ],
+           email: [
+           {
+               id: email,
+               primary: false
            }
            ]
        };
@@ -1362,6 +1370,43 @@ Experience Platformコネクタプロファイルは、 `identityMap` そして 
 
    ![ECID を取得](assets/rule-retrieve-ecid.png)
    _ECID を取得_
+
+## バックオフィスイベントで ID を設定
+
+ECID を使用してプロファイル情報を識別し、リンクするストアフロントイベントとは異なり、バックオフィスイベントデータは SaaS ベースなので、ECID は使用できません。 バックオフィスイベントの場合は、電子メールを使用して買い物客を一意に識別する必要があります。 この節では、電子メールを使用してオフィスのイベントデータを ECID にリンクする方法を学びます。
+
+1. ID マップ要素を作成します。
+
+   ![バックオフィスの ID マップ](assets/custom-code-backoffice.png)
+   _バックオフィスの ID マップを作成_
+
+1. 選択 [!UICONTROL Open Editor] 次のカスタムコードを追加します。
+
+```javascript
+const IdentityMap = {
+  "ECID": [
+    {
+      id:  _satellite.getVar('ECID'),
+      primary: true,
+    },
+  ],
+};
+ 
+if (_satellite.getVar('account email')) {
+    IdentityMap.email = [
+        {
+            id: _satellite.getVar('account email'),
+            primary: false,
+        },
+    ];
+}
+return IdentityMap;
+```
+
+1. この新しい要素を各要素に追加 `identityMap` フィールドに入力します。
+
+   ![各 identityMap を更新](assets/add-element-back-office.png)
+   _各 identityMap を更新_
 
 ## 同意の設定
 

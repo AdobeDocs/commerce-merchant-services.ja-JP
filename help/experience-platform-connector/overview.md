@@ -2,18 +2,18 @@
 title: ガイドの概要
 description: Experience Platformコネクタを使用してAdobe CommerceデータをAdobe Experience Platformに統合する方法について説明します。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
+source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Experience Platformコネクタの概要
 
-Experience Platformコネクタ拡張機能を使用すると、Adobe CommerceのマーチャントがAdobe Experience Platform Edge にデータを送信し、Adobe AnalyticsやAdobe Targetなどの他のAdobe Experience Cloud製品がそのコマースデータを使用できるようになります。 コマースデータをAdobe Experience Cloud内の他の製品に接続することで、サイトでのユーザー行動の分析、AB テストの実行、パーソナライズされたキャンペーンの作成などのタスクを実行できます。
+Experience Platformコネクタ拡張機能を使用すると、Adobe Commerceのマーチャントが [店頭](events.md#storefront-events) および [バックオフィス](events.md#back-office-events) Adobe AnalyticsやAdobe Targetなどの他のAdobe Experience Cloud製品がそのコマースデータを使用できるように、Adobe Experience Platform Edge にデータを送信します。 コマースデータをAdobe Experience Cloud内の他の製品に接続することで、サイトでのユーザー行動の分析、AB テストの実行、パーソナライズされたキャンペーンの作成などのタスクを実行できます。
 
-[ストアフロントイベント](events.md) 買い物客のインタラクションのキャプチャ `View Page`, `View Product`, `Add to Cart`など。 取り込まれたデータには、個人を特定できる情報 (PII) は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は厳密に匿名化されます。 [詳細情報](https://www.adobe.com/privacy/experience-cloud.html).
+[ストアフロントイベント](events.md#storefront-events) 買い物客のインタラクションのキャプチャ `View Page`, `View Product`, `Add to Cart`、および [購買依頼リスト](events.md#b2b-events) 情報（B2B 商人用） [バックオフィス](events.md#back-office-events) イベントは、注文が発行されたか、取り消されたか、返金されたか、発送されたか、完了したかなど、注文のステータスに関する情報をキャプチャします。 取り込まれたデータには、個人を特定できる情報 (PII) は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は厳密に匿名化されます。 [詳細情報](https://www.adobe.com/privacy/experience-cloud.html).
 
 Experience Platformコネクタは、次の場所にあるコマース管理に表示されます。 **システム** /サービス/ **Experience Platformコネクタ**.
 
@@ -21,10 +21,11 @@ Experience Platformコネクタは、次の場所にあるコマース管理に�
 
 ## 前提条件 {#prereqs}
 
-Experience Platformコネクタを使用するには、次が必要です。
+Experience Platformコネクタを使用するには、次の条件を満たす必要があります。
 
 - Adobe Commerce 2.4.3 以降
 - Adobe IDと組織 ID
+- [Adobeクライアントデータレイヤー (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html). ストアフロントイベントデータを収集するには、ACDL が必要です。
 - 他のAdobeDX 製品の使用権限
 
 ## オンボーディング手順
