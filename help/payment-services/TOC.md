@@ -1,9 +1,9 @@
 ---
-user-guide-title: '[!DNL Payment Services] ガイド'
-user-guide-description: このガイドでは、のインストールと設定に関する詳細情報を提供します [!DNL Payment Services] の [!DNL Adobe Commerce] または [!DNL Magento Open Source] ストア。
-breadcrumb-title: '[!DNL Payment Services] ガイド'
+user-guide-title: '"[!DNL Payment Services] ガイド»'
+user-guide-description: このガイドでは、インストールと設定に関する詳細な情報を提供します [!DNL Payment Services] の [!DNL Adobe Commerce] または [!DNL Magento Open Source] 保存する。」
+breadcrumb-title: '"[!DNL Payment Services] ガイド»'
 index: true
-source-git-commit: 28bf1a8e9758acbe3415fd270476ad8cc4dcbf17
+source-git-commit: 6976c357ad268d7383306a1ffb407d128b951b30
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%
