@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] リリースノート`'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ ht-degree: 0%
 これらのリリースノートでは、管理パネルの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
 
 +++管理パネルのアップデート
+
+_2023 年 4 月 26 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-452 --> この [!DNL Quick Checkout] **ツアーを見る** ボタンにカーソルを合わせると、クリック可能なハンドカーソルが表示されるようになりました。
+
+_2023 年 4 月 20 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-596 --> この [!DNL Quick Checkout] 日付を ISO 8601 形式に解析する際、レポートページに新しいアカウントのグラフが正しく表示されるようになりました。
 
 _2022 年 12 月 14 日_
 

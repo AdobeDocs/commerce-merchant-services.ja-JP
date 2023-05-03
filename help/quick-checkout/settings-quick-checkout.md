@@ -2,9 +2,9 @@
 title: の設定 [!DNL Quick Checkout] Adobe Commerce拡張機能
 description: の設定オプションについて説明します。 [!DNL Quick Checkout] およびは、拡張機能のオンボーディングとセットアップに成功する方法を示しています。
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 1. の _管理者_ サイドバー、移動 **ストア** > _設定_ > **設定**.
 1. 左側のパネルで、を展開します。 **セールス** を選択し、 **チェックアウト**.
 
-   ![クイックチェックアウト](assets/configuration-view.png)
+   ![クイックチェックアウト](assets/config-new-logo-view.png)
 
 詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) の設定方法の詳細に関するトピック [!DNL Quick Checkout] Adobe Commerce
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 | [!UICONTROL Enable] | web サイト | 有効または無効 [!DNL Quick Checkout] を設定します。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Method] | web サイト | のメソッドまたは環境を設定します。 [!DNL Quick Checkout]. オプション： [!UICONTROL Sandbox] / [!UICONTROL Production] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## アカウント資格情報
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 | [!UICONTROL Publishable key] | web サイト | フロントエンドがとやり取りする際に使用するキー [!DNL Bolt] API |
 | [!UICONTROL Signing secret] | web サイト | から受信した要求の署名検証に使用されます [!DNL Bolt]. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## サービス設定
 
@@ -59,4 +59,4 @@ ht-degree: 0%
 | [!UICONTROL Automatic Login Enabled] | web サイト | 次の場合に定義 [!DNL Quick Checkout] では、チェックアウト時の自動ログインを許可します。 デフォルトで有効です。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Automatic Login Network] | web サイト | 顧客が自動的にログインするネットワークを選択します。 既定で Bolt が有効になっています。 オプション： [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
