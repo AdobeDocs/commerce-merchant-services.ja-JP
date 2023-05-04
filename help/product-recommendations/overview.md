@@ -2,9 +2,9 @@
 title: の概要 [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。」'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 5359c737cc90135ab0db5c32aebcb0bb131d3671
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 製品のレコメンデーションは、「この製品を閲覧したお客様も閲覧した」など、ラベルの付いた単位としてストアフロントで表示されます。 ストア表示全体でレコメンデーションを作成、管理およびデプロイするには、Adobe Commerce Admin から直接おこなえます。
 
+ストアフロントがPWA Studioを使用して実装されている場合は、 [PWA文書](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). React や Vue JS などのカスタムフロントエンドテクノロジーを使用する場合は、 [統合](headless.md) [!DNL Product Recommendations] 頭のない店の前に
+
 >[!NOTE]
 >
-> ストアフロントがPWA Studioを使用して実装されている場合は、 [PWA文書](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). React や Vue JS などのカスタムフロントエンドテクノロジーを使用する場合は、 [統合](headless.md) [!DNL Product Recommendations] 頭のない店の前に
+>ヘッドレス実装またはカスタム実装を開発するには、様々な方法があります。 このガイドでは、PWA Studioを使用した方法の 1 つについて説明します。 すべてのシナリオや結果をカバーするわけではありません。
 
 ## プライバシー
 

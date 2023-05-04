@@ -2,9 +2,9 @@
 title: ヘッドレス
 description: の統合方法を説明します [!DNL Product Recommendations] ヘッドレスな店の前に
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,13 @@ ht-degree: 0%
 
 統合可能な [!DNL Product Recommendations] ～を使ってヘッドレスな店頭で [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) または React や Vue JS などのカスタムフロントエンドテクノロジー。
 
+カスタムおよびヘッドレスインテグレーターは、推奨される実装として、これらの Luma とPWAの手順を参照してください。 ヘッドレスソリューションに Product Recommendationsを実装するには、様々な方法があります。このドキュメントでは、すべてのシナリオについて説明するわけではありません。 インテグレーターは、実装のイベンティング、デザイン、テストについて説明する必要があります。
+
 [!DNL Product Recommendations] 必要 [行動およびカタログデータ](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) を操作します。 ヘッドレス実装では、カタログデータ同期プロセスは変わりませんが、行動データ収集には変更が必要です。
+
+>[!NOTE]
+>
+>ヘッドレスインスタンスは、製品のRecommendationsダッシュボードを強化するために、イベンティングを実装する必要があります。
 
 統合する [!DNL Product Recommendations] ヘッドレスストアフロントでは、次の操作を実行する必要があります。
 

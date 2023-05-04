@@ -2,9 +2,9 @@
 title: データを収集
 description: イベントが商品レコメンデーションのデータを収集する方法を説明します。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,13 @@ SaaS ベースのAdobe Commerce機能 ( [製品Recommendations](install-configur
 
 ストアフロントがPWA Studioで実装されている場合は、 [PWA文書](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). React や Vue JS などのカスタムフロントエンドテクノロジーを使用する場合は、ユーザーガイドを参照して、製品Recommendationsを [頭のない](headless.md) 環境。
 
+## 注意事項
+
 広告ブロッカーやプライバシー設定が `magento/product-recommendations` イベントのキャプチャからモジュールを削除し、エンゲージメントと売上高を引き起こす可能性 [指標](workspace.md) 過少報告される
+
+イベンティングは、商人のサイトで発生するすべてのトランザクションをキャプチャするわけではありません。 イベンティングは、サイト上で発生しているイベントに関する一般的なアイデアを商人に与えることを目的としています。
+
+ヘッドレス実装では、製品のRecommendationsダッシュボードを強化するために、イベンティングを実装する必要があります。
 
 >[!NOTE]
 >
