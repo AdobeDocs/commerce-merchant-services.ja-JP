@@ -4,9 +4,9 @@ description: SaaS 価格インデックス作成を使用したパフォーマ�
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,14 @@ ht-degree: 0%
 SaaS 価格のインデックス作成は、価格の変更が送信後に SaaS 顧客の Web サイトに反映されるまでに要する時間を短縮します。 このオプションモジュールを使用すると、大規模で複雑なカタログを持つマーチャントや、複数の Web サイトや顧客グループを持つマーチャントが、価格の変化をより迅速かつ継続的に処理できます。
 
 パイプラインの最大のボトルネック：インデックス作成や価格計算などの計算負荷の高いプロセスは、PHP のコアからAdobeのクラウドインフラストラクチャに移行されました。 これにより、マーチャントはリソースを迅速に拡張して、価格のインデクス化に要する時間を短縮し、その変更を Web サイトに迅速に反映できます。
+
+SaaS サービスに対するコアインデックス作成データフローは次のようになります。
+
+![デフォルトのデータフロー](assets/old_way.png)
+
+SaaS 価格のインデックス作成では、フローは次のようになります。
+
+![SaaS 価格インデックス作成データフロー](assets/new_way.png)
 
 要件を満たすすべての商人は、これらの改善の恩恵を受けることができますが、最大の利益を得られるのは、次の機能を持つ顧客です。
 
