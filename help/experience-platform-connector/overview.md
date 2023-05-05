@@ -2,7 +2,7 @@
 title: ガイドの概要
 description: Experience Platformコネクタを使用してAdobe CommerceデータをAdobe Experience Platformに統合する方法について説明します。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: 0d5bbe7d4e2070173930df66c4f159d65c7383ea
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -31,11 +31,12 @@ Experience Platformコネクタを使用するには、次の条件を満たす�
 ## オンボーディング手順
 
 1. [インストール](install.md) Experience Platformコネクタ拡張
-1. [ログイン](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) をAdobeアカウントに追加し、 [表示](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 組織 ID。 組織 ID は、プロビジョニングされた組織の会社に関連付けられたExperience CloudID です。 この ID は 24 文字の英数字から成る文字列で、その後にが続きます（必須） `@AdobeOrg`.
-1. [接続](connect-data.md) Adobe CommerceインスタンスをAdobe Experience Platformに追加します。
+1. [ログイン](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) をAdobeアカウントに追加し、 [確認するビュー](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 組織 ID。 組織 ID は、プロビジョニングされた組織の会社に関連付けられたExperience CloudID です。 この ID は 24 文字の英数字から成る文字列で、その後にが続きます（必須） `@AdobeOrg`.
 1. [作成または更新](update-xdm.md) コマース固有のフィールドグループを持つ XDM スキーマ。
-1. [データセットの作成](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 作成または更新したスキーマに基づいて
+1. [データセットの作成](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 作成または更新したスキーマに基づいて このデータセットには、送信したコマースデータが含まれます。
 1. [データストリームの作成](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) をクリックし、コマース固有のフィールドグループを含む XDM スキーマを選択します。
+1. [Commerce Services に接続](../landing/saas.md).
+1. [Adobe Experience Platformに接続](connect-data.md).
 
 ## 対象ユーザ
 

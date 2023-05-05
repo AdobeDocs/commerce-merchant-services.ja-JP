@@ -2,9 +2,9 @@
 title: コマースデータをAdobe Experience Platformに接続
 description: コマースデータをAdobe Experience Platformに接続する方法を説明します。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: dead0b8dae69476c196652abd43c4966a38c4141
+source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Experience Platformコネクタをインストールすると、 **システム*
 - Commerce Services コネクタ
 - Experience Platformコネクタ
 
-Adobe Commerceインスタンスを Adobe Experience Platform に接続するには、Commerce Services コネクタから開始し、Experience Platformコネクタで終了するように、両方のコネクタを設定する必要があります。
+Adobe CommerceインスタンスをAdobe Experience Platformに接続するには、両方のコネクタを設定する必要があります。まず Commerce Services コネクタを設定し、次にExperience Platformコネクタを設定します。
 
 ## Commerce Services コネクタの更新
 
@@ -56,7 +56,11 @@ Adobe Commerceインスタンスを Adobe Experience Platform に接続するに
 
 ## データ収集
 
-内 **データ収集** 「 」セクションで、ストアフロントやバックオフィスのデータを選択して、Experience PlatformEdge に送信します。 Adobe Commerceインスタンスでデータ収集を開始できることを確認するには、 [前提条件](overview.md#prerequisites).
+このセクションでは、Experience PlatformEdge に送信するデータのタイプを指定します。 データには次の 2 種類があります。クライアント側とサーバー側の 2 つのタイプがあります。
+
+クライアントサイドのデータは、ストアフロントでキャプチャされるデータです。 これには、買い物客のインタラクション ( `View Page`, `View Product`, `Add to Cart`、および [購買依頼リスト](events.md#b2b-events) 情報（B2B 商人用） サーバーサイドのデータ（バックオフィスのデータ）は、コマースサーバーでキャプチャされるデータです。 これには、注文が発行されたか、取り消されたか、返金されたか、発送されたか、完了したかなど、注文のステータスに関する情報が含まれます。
+
+内 **データ収集** 「 」セクションで、Experience Platformedge に送信するデータのタイプを選択します。 Adobe Commerceインスタンスがデータ収集を開始できることを確認するには、 [前提条件](overview.md#prerequisites).
 
 詳しくは、イベントのトピックを参照してください [店頭](events.md#storefront-events) および [バックオフィス](events.md#back-office-events) イベント。
 
@@ -110,11 +114,32 @@ Adobe Commerceインスタンスを Adobe Experience Platform に接続するに
 | バックオフィスイベント | オンにすると、イベントペイロードには、注文が発行されたか、キャンセルされたか、返金されたか、発送されたかなど、匿名化された注文ステータス情報が含まれます。 |
 | Datastream ID (Website) | Adobe Experience Platformから他のAdobeDX 製品にデータを送信できるようにする ID。 この ID は、特定のAdobe Commerceインスタンス内の特定の Web サイトに関連付ける必要があります。 独自のExperience PlatformWeb SDK を指定する場合は、このフィールドにデータストリーム ID を指定しないでください。 Experience Platformコネクタは、その SDK に関連付けられたデータストリーム ID を使用し、このフィールドで指定されたデータストリーム ID を無視します（存在する場合）。 |
 
-## データがExperience Platformに送信されていることを確認
+>[!NOTE]
+>
+>オンボーディング後、ストアフロントデータがExperience Platformエッジに送られ始めます。 バックオフィスのデータがエッジに表示されるまでに約 5 分かかります。 その後の更新は、Cron スケジュールに基づいてエッジで表示されます。
 
-オンボーディング後、ストアフロントデータがExperience Platformエッジに送られ始めます。 バックオフィスのデータは、オンボーディング後、データがエッジに表示されるまでに約 5 分かかります。 その後の更新は、Cron スケジュールに基づいてエッジで表示されます。
+## イベントデータが収集されていることを確認する
 
-コマースデータがExperience Platformエッジに送信されると、次のようなレポートを作成できます。
+データがコマースストアから収集されていることを確認するには、 [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) をクリックして、コマースサイトを確認します。 データが収集されていることを確認したら、ストアフロントおよびバックオフィスのイベントデータがエッジに表示されていることを確認するには、 [作成したデータセット](overview.md#prerequisites).
 
-![Adobe Experience Platformのコマースデータ](assets/aem-data-1.png)
-_Adobe Experience Platformのコマースデータ_
+1. 選択 **クエリ** をクリックし、Experience Platformの左側のナビゲーションで [!UICONTROL Create Query].
+
+   ![クエリエディター](assets/query-editor.png)
+
+1. クエリエディターが開いたら、データセットからデータを選択するクエリを入力します。
+
+   ![クエリを作成](assets/create-query.png)
+
+   例えば、クエリは次のようになります。
+
+   ```sql
+   SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
+   ```
+
+1. クエリを実行すると、結果が **結果** タブ（横） **コンソール** タブをクリックします。 このビューは、クエリの出力を表形式で表示します。
+
+   ![クエリエディター](assets/query-results.png)
+
+この例では、 [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)など。 このビューを使用すると、コマースデータがエッジに到達したことを確認できます。
+
+結果が期待どおりでない場合は、データセットを開き、失敗したバッチのインポートを探します。 詳細情報： [バッチインポートのトラブルシューティング](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
