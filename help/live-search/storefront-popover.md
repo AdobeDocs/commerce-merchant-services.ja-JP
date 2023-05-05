@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: 「 [!DNL Live Search storefront popover] は、推奨される製品とサムネールを動的に返します。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 92889130fd7482e0b99fb08746e6fd2830b0345e
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,4 @@ ht-degree: 0%
 * この [!DNL Live Search] [!DNL storefront popover] は、 *Luma* テーマ、または *Luma*.
 * この [!DNL popover] は *空白* テーマ。 詳しくは、 [スタイル設定 [!DNL Popover] 要素](storefront-popover-styling.md) を参照してください。
 * この [!DNL popover] は、クイック注文フォームではサポートされていません。
+* マーチャントは、ウィジェットやストアフロントの要素をカスタマイズして拡張できます ( 例：（ライブ検索結果へのカラースウォッチの統合） [カタログサービス](../catalog-service/overview.md) ストアフロント API ですが、これはAdobeのサポートチームの範囲外です。

@@ -3,9 +3,10 @@ title: SaaS 価格インデックス作成のインストール
 description: SaaS 価格インデックス作成のインストール
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-source-git-commit: 077be6d893b800b9571a869237501e58accc01e8
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -67,7 +68,9 @@ SaaS 価格のインデックス作成を行うには、新しいモジュール
 必要に応じて、上記のインデクサーを手動で実行します。 それ以外の場合は、標準の同期プロセスでデータが更新されます。 詳しくは、 [カタログ同期](../landing/catalog-sync.md) サービス。
 
 Luma とAdobe Commerce Core GraphQLのユーザーは、 `catalog-adapter` Luma と Core GraphQl の互換性を提供し、PHP のコア価格インデクサーを無効にするモジュール。
-次の手順で `catalog-adapter` モジュール [!DNL Live Search] を最初にインストールする必要があります。 フォロー： [インストール [!DNL Live Search]](../live-search/install.md) 手順を参照してください。
+次の手順で `catalog-adapter` モジュール [!DNL Live Search] および [!DNL Catalog Service] まず、をインストールして設定する必要があります。 フォロー： [インストール [!DNL Live Search]](../live-search/install.md) および [カタログサービスのインストール](../catalog-service/installation.md) 手順を参照してください。
+
+Live Search とカタログアダプタを設定するには、以下に従ってください [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 説明。
 
 ```bash
 composer require adobe-commerce/catalog-adapter

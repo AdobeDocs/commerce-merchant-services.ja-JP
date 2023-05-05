@@ -4,9 +4,9 @@ description: SaaS 価格インデックス作成を使用したパフォーマ�
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Luma とAdobe Commerce Core GraphQLを使用しているお客様は、Luma の互換性を提供し、PHP のコア価格インデクサーを無効にするモジュールをインストールできます。
+Luma とAdobe Commerce Core GraphQLを使用しているお客様は、Luma と Core GraphQLの互換性を提供し、PHP のコア価格インデクサーを無効にするモジュールをインストールできます。
 
 ```
 adobe-commerce/catalog-adapter
@@ -67,17 +67,7 @@ PHP のコア価格インデクサーは、必要に応じて、サードパー�
 製品の種類、価格の複雑さ、カタログのサイズなどの要因に応じて、SaaS 価格のインデックス作成がストアに最適なソリューションとなる場合があります。 次の制限事項を読み、サイトに適したソリューションかどうかを判断します。
 
 現在、SaaS 価格インデックス作成では、シンプル、グループ化、仮想、設定可能、バンドルの動的な製品タイプをサポートしています。
-ダウンロード可能な製品、ギフトカード、バンドル固定製品のサポートは、近日中に提供されます。
-
-SaaS 価格インデックス作成は、次の基本価格をサポートします。
-
-* 標準価格の最小値/最大値
-* 最終価格の最小値/最大値
-* 特別価格
-* 顧客グループの価格
-* カタログルール価格
-
-新しい価格フィードの使用をオプトインしたら、 [サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 元に戻すのに役立つ
+ダウンロード可能な製品、ギフトカード、バンドル固定製品のサポートは近日中に提供されます。
 
 新しいフィードは、 `resync` [CLI コマンド](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). それ以外の場合は、標準の同期プロセスでデータが更新されます。 に関する詳細情報を取得する [カタログ同期](../landing/catalog-sync.md) プロセス。
 
