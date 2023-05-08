@@ -2,9 +2,9 @@
 title: テストと検証
 description: テストと検証は、 [!DNL Payment Services] 機能が期待どおりに動作し、顧客に最適な支払いオプションを提供する
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
+source-git-commit: 0324c2d8e34fee0872d5f52ed3a246094b482aa2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,10 @@ ht-degree: 0%
 
 PayPal のクレジットカードジェネレーターを使用して [ランダムクレジットカード情報を生成](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) テスト用。
 
-Apple Pay をサンドボックスモードでテストするには、 [Apple sandbox テスターアカウント](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)（偽のクレジットカードと請求情報を含む）
+Apple Pay をサンドボックスモードでテストするには：
+
+* の作成 [Apple sandbox テスターアカウント](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)（偽のクレジットカードと請求情報を含む）
+* [サンドボックスドメインを登録](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]
 >
@@ -47,6 +50,4 @@ Apple Pay をサンドボックスモードでテストするには、 [Apple sa
 
 また、生産テストで使用する支払い方法に関する銀行取引明細書に表示される情報が正しく、期待されるもの（お客様のビジネスの説明を含む）であることを確認する必要があります。
 
->[!NOTE]
->
->Apple Pay の実稼動テストを完了するには、セールスに連絡して、実稼動環境でApple Pay を有効にする必要があります。
+Apple Pay を実稼働モードでテストするには、次の手順を実行する必要があります。 [実稼動ドメインを登録](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).

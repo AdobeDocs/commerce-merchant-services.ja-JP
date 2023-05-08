@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] 家に
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
+source-git-commit: f14b4a1abe9c0f85dc9f070467f94819c1fe89e6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 
       >[!NOTE]
       >
-      > Apple Pay を使用するには [は、Apple Sandbox テスターアカウントを持っている必要があります](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) （偽のクレジットカードと請求情報を含む）をテストします。 サンドボックスでApple Pay を使用する準備が整ったら、 _または_ 実稼動モード（任意の完了後） [テストと検証](test-validate.md#test-in-sandbox-environment)を使用する場合は、営業担当者に連絡して、ライブストアで有効にしてもらってください。
+      > Apple Pay を使用するには [は、Apple Sandbox テスターアカウントを持っている必要があります](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) （偽のクレジットカードと請求情報を含む）をテストします。 サンドボックスでApple Pay を使用する準備が整ったら、 _または_ 実稼動モード（任意の完了後） [テストと検証](test-validate.md#test-in-sandbox-environment), complete [～との自己登録 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_ライブドメインを登録_ セクションのみ ) および [次のストアに対して設定します。 [!DNL Payment Services]](settings.md#payment-buttons).
 
       支払いボタンや PayPal Pay Later メッセージの表示/非表示を切り替えると、設定ページの下部にその設定の視覚的なプレビューが表示されます。
 
