@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] リリースノート`'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d58193b622a1851259b2191ea54ac6b59029dd64
+source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 0%
 これらのリリースノートでは、管理パネルの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
 
 +++管理パネルのアップデート
+
+2023 年 5 月 23 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue BOLT-489 --> さて、 **新規アカウント** コンポーネント [!DNL Quick Checkout] レポートページにはスペクトルが含まれます [ワークフローアイコン](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html){target=_blank}.
 
 _2023 年 4 月 26 日_
 
