@@ -4,9 +4,9 @@ description: SaaS 価格インデックス作成を使用したパフォーマ�
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
+source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ PHP のコア価格インデクサーは、必要に応じて、サードパー�
 
 製品の種類、価格の複雑さ、カタログのサイズなどの要因に応じて、SaaS 価格のインデックス作成がストアに最適なソリューションとなる場合があります。 次の制限事項を読み、サイトに適したソリューションかどうかを判断します。
 
-現在、SaaS 価格インデックス作成では、シンプル、グループ化、仮想、設定可能、バンドルの動的な製品タイプをサポートしています。
-ダウンロード可能な製品、ギフトカード、バンドル固定製品のサポートは近日中に提供されます。
+現在、SaaS の価格インデックス作成は、シンプル、グループ化、仮想、構成可能、および [バンドル動的](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) 製品タイプ。
+ダウンロード可能な製品、ギフトカード、バンドル固定製品のサポートは、近日中に提供されます。
 
 新しいフィードは、 `resync` [CLI コマンド](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). それ以外の場合は、標準の同期プロセスでデータが更新されます。 に関する詳細情報を取得する [カタログ同期](../landing/catalog-sync.md) プロセス。
 
