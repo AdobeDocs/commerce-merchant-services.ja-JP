@@ -2,9 +2,9 @@
 title: Commerce Services コネクタ
 description: 実稼働用 API キーとサンドボックス API キーを使用して、Adobe CommerceまたはMagento Open Sourceインスタンスをサービスに統合する方法について説明します。
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 506b00e72d65fbafa071476608bb658cb59404b4
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -111,4 +111,4 @@ Adobe CommerceインスタンスをAdobe Experience Platformに接続するに�
 
 ## カタログの同期
 
-次の場合、 [!DNL Commerce] インスタンスが正常に接続しました [!DNL Commerce Services]カタログ同期プロセスで、 [!DNL Commerce] サーバーから [!DNL Commerce Services]. [詳細情報](catalog-sync.md) カタログ同期プロセスについて
+次の場合、 [!DNL Commerce] インスタンスが正常に接続しました [!DNL Commerce Services]カタログ同期プロセスで、 [!DNL Commerce] サーバーから [!DNL Commerce Services]. 現在、カタログ同期サービスを使用しているのは製品Recommendationsのみです。 [詳細情報](catalog-sync.md) カタログ同期プロセスについて
