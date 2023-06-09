@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] 家に
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: f14b4a1abe9c0f85dc9f070467f94819c1fe89e6
+source-git-commit: c28b86f3a0ff0aae06a4ee8a60b2b9f304295ff8
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '2036'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 1. チェックアウト時に表示される支払い方法の名前を変更するには、 **[!UICONTROL Checkout Title]** フィールドに入力します。
 1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)，切り替え **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
 1. 切り替えセレクターを使用して、有効または無効にします [!DNL PayPal smart button] 表示機能：
+
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
    - **[!UICONTROL Show PayPal buttons on product detail page]**
    - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
@@ -150,12 +151,13 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
    - **[!UICONTROL Show PayPal Pay Later message]**
    - **[!UICONTROL Show Venmo button]**
    - **[!UICONTROL Show Apple Pay button]**
+   - **[!UICONTROL Show PayPal Credit and Debit Card button]**
 
-      >[!NOTE]
-      >
-      > Apple Pay を使用するには [は、Apple Sandbox テスターアカウントを持っている必要があります](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) （偽のクレジットカードと請求情報を含む）をテストします。 サンドボックスでApple Pay を使用する準備が整ったら、 _または_ 実稼動モード（任意の完了後） [テストと検証](test-validate.md#test-in-sandbox-environment), complete [～との自己登録 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_ライブドメインを登録_ セクションのみ ) および [次のストアに対して設定します。 [!DNL Payment Services]](settings.md#payment-buttons).
+     >[!NOTE]
+     >
+     > Apple Pay を使用するには [は、Apple Sandbox テスターアカウントを持っている必要があります](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) （偽のクレジットカードと請求情報を含む）をテストします。 サンドボックスでApple Pay を使用する準備が整ったら、 _または_ 実稼動モード（任意の完了後） [テストと検証](test-validate.md#test-in-sandbox-environment), complete [～との自己登録 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_ライブドメインを登録_ セクションのみ ) および [次のストアに対して設定します。 [!DNL Payment Services]](settings.md#payment-buttons).
 
-      支払いボタンや PayPal Pay Later メッセージの表示/非表示を切り替えると、設定ページの下部にその設定の視覚的なプレビューが表示されます。
+     支払いボタンや PayPal Pay Later メッセージの表示/非表示を切り替えると、設定ページの下部にその設定の視覚的なプレビューが表示されます。
 
 1. デバッグモードを有効にするには、 **[!UICONTROL Debug Mode]** セレクター。
 1. クリック **[!UICONTROL Save]**.
@@ -178,6 +180,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 | [!UICONTROL Show PayPal Pay Later Message] | web サイト | 買い物かご、製品ページ、ミニ買い物かごおよびチェックアウトフローの「後で支払う」メッセージを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Venmo button] | ストア表示 | 支払いボタンが表示される Venmo 支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Apple Pay button] | ストア表示 | 支払いボタンが表示される「Apple支払」支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | ストア表示 | 支払いボタンが表示される「クレジット」および「デビット」カードの支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### ボタンのスタイル
@@ -198,6 +201,8 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 
    レイアウト、色、形状、高さ、ラベルの設定オプションを変更すると、その設定の視覚的なプレビューが設定ページの下部に表示されます。
 
+   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
+
 1. クリック **[!UICONTROL Save]**.
 
    変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
@@ -217,6 +222,19 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 | [!UICONTROL Responsive Button Height] | ストア表示 | 支払いボタンが既定の高さを使用するかどうかを定義します。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Height] | ストア表示 | 支払いボタンの高さを定義します。 デフォルト値：なし |
 | [!UICONTROL Label] | ストア表示 | 支払いボタンに表示されるラベルを定義します。 オプション： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+
+## 役割の設定
+
+管理者ユーザーがコマース管理で注文を作成および管理できるようにするには、 [!DNL Payment Services] — ユーザーの役割に固有のリソース。
+
+詳しくは、 [ユーザーの役割](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) 役割の管理方法を参照してください。
+
+ロールにリソースを割り当てる場合は、次の項目を選択する必要があります。
+
+- **支払い方法[!DNL Payment Services]** — このリソースは、管理で注文を作成する際に、 [!DNL Payment Services] クレジットカードは支払い方法として利用できます。 次を選択した場合、 **アクション** 親リソースの場合は、このリソースも選択されます。
+- **[!DNL Payment Services]** — このリソースには **ダッシュボード** および **SaaS Services プロキシ** リソース（選択する必要もあります）。 また、 [!DNL Payment Services] が _セールス_ メニュー
+
+  ![支払いサービスのリソース](assets/roles-payments.png)
 
 ## キャッシュをフラッシュ
 

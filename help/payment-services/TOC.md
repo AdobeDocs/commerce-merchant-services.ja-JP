@@ -3,9 +3,9 @@ user-guide-title: '"[!DNL Payment Services] ガイド»'
 user-guide-description: このガイドでは、インストールと設定に関する詳細な情報を提供します [!DNL Payment Services] の [!DNL Adobe Commerce] または [!DNL Magento Open Source] 保存する。」
 breadcrumb-title: '"[!DNL Payment Services] ガイド»'
 index: true
-source-git-commit: 6976c357ad268d7383306a1ffb407d128b951b30
+source-git-commit: c4e14f79e5aae996aff2f4e7fc9f8a82ae6ad93c
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 0%
 - 支払いとチェックアウト {#payments-checkout}
    - [支払いオプション](payments-options.md)
    - [クレジットカードの保管](vaulting.md)
+   - [チェックアウト](checkout.md)
 - オンボード [!DNL Payment Services] {#get-started}
    - [オンボーディングの概要](onboard.md)
    - [のインストール [!DNL Payment Services] 拡張](install.md)

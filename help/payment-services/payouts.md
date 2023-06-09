@@ -4,9 +4,9 @@ description: 支払額、処理済数量および財務調整の取引レベル�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 0%
 # ペイアウトレポート
 
 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗の注文件数と支払い数を明確に把握できるよう、包括的なレポートを提供します。
-
-![財務レポートビュー](assets/reports-justpayouts.png)
 
 2 つのペイアウトレポート表示を使用して、すべてのペイアウトに関する詳細情報を確認できます。
 
@@ -34,7 +32,7 @@ ht-degree: 0%
 
 の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** を使用すると、時間の経過に伴うクレジットとデビットおよび移動平均のデータ視覚化チャートを確認できます。
 
-![管理者でのデータの視覚化の配分](assets/payouts-report.png)
+![管理者でのデータの視覚化の配分](assets/payouts-report.png){zoomable=yes}
 
 クリック **[!UICONTROL View Report]** 詳細な表に移動するには [ペイアウトレポート表示](#payouts-report-view).
 
@@ -70,13 +68,13 @@ ht-degree: 0%
 
 の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** 詳細な表形式のペイアウトレポートビューを表示するには、次の手順に従います。
 
-![管理での支払トランザクション](assets/payouts-report-new.png)
+![管理での支払トランザクション](assets/payouts-report-new.png){zoomable=yes}
 
 このトピックのセクションごとに、このビューを設定して、表示するデータを最適に表示できます。
 
 管理のペイアウトレポート内で、リンクされたコマース注文およびトランザクション ID、トランザクション金額、トランザクションごとの支払い方法などを確認します。
 
-既存の会計または注文管理ソフトウェアで使用するために、支払トランザクションを.csv ファイル形式でダウンロードできます。
+以下が可能です。 [支払トランザクションのダウンロード](#download-transactions) 既存の会計または注文管理ソフトウェアで使用する.csv ファイル形式。
 
 >[!NOTE]
 >
@@ -86,9 +84,9 @@ ht-degree: 0%
 
 ペイアウトレポート表示で、データソースを選択できます。_[!UICONTROL Live]_または_[!UICONTROL Sandbox]_ — レポートの結果を表示する対象です。
 
-![データソースの選択](assets/datasource.png)
+![データソースの選択](assets/datasource.png){width=400px}
 
-If _[!UICONTROL Live]_が選択されたデータソースの場合は、ライブストアのレポート情報を表示できます。 If [!UICONTROL Sandbox]選択したデータソースは_です。サンドボックス環境のレポート情報を表示できます。
+If _[!UICONTROL Live]_が選択されたデータソースの場合は、実稼働モードでストアのレポート情報を表示できます。 If_[!UICONTROL Sandbox]_ が選択されたデータソースである場合は、サンドボックスモードでレポート情報ストアを表示できます。
 
 データソースの選択は、次のように動作します。
 
@@ -154,27 +152,27 @@ If _[!UICONTROL Live]_が選択されたデータソースの場合は、ライ�
 | [!UICONTROL Code] | クレジット (*CR*) または借方 (*DR*) |
 | [!UICONTROL Reference ID] | このイベントが関連する元のトランザクション ID |
 | [!UICONTROL Invoice] | トランザクションの請求書 ID （注文ごとに 1 つ） |
-| [!UICONTROL Commerce order] | コマース注文 ID <br> <br>関連する [注文情報](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}、「ID」をクリックします。 |
-| [!UICONTROL Commerce trans] | コマーストランザクション ID <br> <br>関連する [トランザクション情報](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}、「ID」をクリックします。 |
-| [!UICONTROL Pay method] | クレジットカードのタイプ —*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]* — および関連するカードプロバイダー ( *ビザ* または *MasterCard*) |
-| [!UICONTROL Trans amt] | トランザクションの金額 |
-| [!UICONTROL Cur] | トランザクション金額の通貨単位 |
-| [!UICONTROL Pending] | 未払金額 |
-| [!UICONTROL Cur] | 保留中の金額の通貨単位 |
-| [!UICONTROL Seller amt] | 顧客に対して、または顧客から移動した資金の額 <br> <br>売り手のアカウントから移動した資金には、ダッシュ (-) プレフィックスが表示されます。 |
-| [!UICONTROL Cur] | 販売者金額の通貨単位 |
-| [!UICONTROL Partner fee] | トランザクションに関連するパートナーの手数料 <br> <br>パートナー手数料アカウントから移動した資金には、ダッシュ (-) プレフィックスが表示されます。 |
-| [!UICONTROL Cur] | パートナー手数料の通貨単位 |
-| [!UICONTROL Prov fees] | トランザクションに関連する手数料 <br> <br>プロバイダーの手数料アカウントから移動した資金には、ダッシュ (-) プレフィックスが表示されます。 |
-| [!UICONTROL Cur] | プロバイダー手数料の通貨単位 |
-| [!UICONTROL Fee %] | 手数料として請求されたトランザクション金額の割合 |
-| [!UICONTROL Fixed fee] | 固定プロバイダー手数料の金額 |
-| [!UICONTROL Chbk fee] | トランザクションに関連するチャージバック料金 <br> <br>ダッシュ (-) プレフィックスは、チャージバック料が取り消されたことを示します。 |
-| [!UICONTROL Cur] | チャージバック手数料の通貨単位 |
-| [!UICONTROL Hold amt] | 保留中または保留から解除された金額 <br> <br>ダッシュ (-) プレフィックスは、保留資金がリリースされていることを示します。 |
-| [!UICONTROL Cur] | 保留金額の通貨単位 |
-| [!UICONTROL Recoup amt] | リカウプアカウントからリカウントされた金額 <br> <br>リカウントから移動した資金には、ダッシュ (-) プレフィックスが表示されます。 |
-| [!UICONTROL Cur] | 回収金額の通貨単位 |
+| [!UICONTROL Commerce order] | コマース注文 ID <br> <br>関連する [注文情報](https://docs.magento.com/user-guide/sales/orders.html)、「ID」をクリックします。 |
+| [!UICONTROL Commerce trans] | コマーストランザクション ID |
+| [!UICONTROL Pay method] | クレジットカードのタイプ —*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]* — および関連するカードプロバイダー ( *ビザ* または *MasterCard*) |
+| [!UICONTROL TRANS AMT] | トランザクションの金額 |
+| [!UICONTROL CUR] | トランザクション金額の通貨単位 |
+| [!UICONTROL PENDING] | 未払金額 |
+| [!UICONTROL CUR] | 保留中の金額の通貨単位 |
+| [!UICONTROL SELLER AMT] | 顧客に対して、または顧客から移動した資金の額 <br> <br>売り手のアカウントから移動した資金には、ダッシュ (-) プレフィックスが表示されます。 |
+| [!UICONTROL CUR] | 販売者金額の通貨単位 |
+| [!UICONTROL PARTNER FEE] | トランザクションに関連するパートナーの手数料 <br> <br>パートナー手数料アカウントから移動した資金には、ダッシュ (-) プレフィックスが表示されます。 |
+| [!UICONTROL CUR] | パートナー手数料の通貨単位 |
+| [!UICONTROL PROV FEES] | トランザクションに関連する手数料 <br> <br>プロバイダーの手数料アカウントから移動した資金には、ダッシュ (-) プレフィックスが表示されます。 |
+| [!UICONTROL CUR] | プロバイダー手数料の通貨単位 |
+| [!UICONTROL FEE %] | 手数料として請求されたトランザクション金額の割合 |
+| [!UICONTROL FIXED FEE] | 固定プロバイダー手数料の金額 |
+| [!UICONTROL CHBK FEE] | トランザクションに関連するチャージバック料金 <br> <br>ダッシュ (-) プレフィックスは、チャージバック料が取り消されたことを示します。 |
+| [!UICONTROL CUR] | チャージバック手数料の通貨単位 |
+| [!UICONTROL HOLD AMT] | 保留中または保留から解除された金額 <br> <br>ダッシュ (-) プレフィックスは、保留資金がリリースされていることを示します。 |
+| [!UICONTROL CUR] | 保留金額の通貨単位 |
+| [!UICONTROL RECOUP AMT] | リカウプアカウントからリカウントされた金額 <br> <br>リカウントから移動した資金には、ダッシュ (-) プレフィックスが表示されます。 |
+| [!UICONTROL CUR] | 回収金額の通貨単位 |
 
 ### トランザクションタイプ
 

@@ -4,9 +4,9 @@ description: インストール後、 [!DNL Payment Services] ストア設定の
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 2205ec1e4dbd027b2e510419da4bbdac2d7a480e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,13 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 1. 内 _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL PayPal Smart Buttons]_ 」セクションに入力します。
 1. チェックアウト時に表示される支払い方法の名前を変更するには、 _[!UICONTROL Title]_フィールドに入力します。
 1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)を選択します。 **[!UICONTROL Authorize]** または **[!UICONTROL Authorize and Capture]**.
-1. を無効にするには、以下を実行します。 [後で支払うメッセージ](payments-options.md#pay-later-button) （必要に応じて）、 `No` 対象 **[!UICONTROL Display Pay Later Message]**.
+1. を有効/無効にするには [後で支払うメッセージ](payments-options.md#pay-later-button)を選択します。 `Yes`/`No` 対象 **[!UICONTROL Display Pay Later Message]**.
+1. チェックアウトページに PayPal スマートボタンを表示するには、 `Yes` の **[!UICONTROL Show buttons on checkout page]**.
+1. PayPal スマートボタンをミニカートのプレビューに表示するには、 `Yes` 対象 **[!UICONTROL Show buttons in mini cart preview]**.
+1. 支払いオプションとして Venmo を有効にするには、 `Yes` 対象 **[!UICONTROL Venmo Enabled]**.
+1. Apple Pay を支払オプションとして有効にするには、 `Yes` 対象 **[!UICONTROL Apple Pay Enabled]**.
+1. PayPal クレジットカードとデビットカードを支払いオプションとして有効にするには（PayPal スマートボタン）、 `Yes` 対象 **[!UICONTROL PayPal Credit and Debit Card Enabled]**.
+1. を有効/無効にするには [PayPal 後払い](payments-options.md#pay-later-button) 支払いオプション、 `Yes`/`No` 対象 **[!UICONTROL PayPal Pay Later Enabled]**.
 1. デバッグモードを有効にするには、 `Yes` の **[!UICONTROL Debug Mode]** (`No` 無効にします )。
 1. 変更を保存するには、 **[!UICONTROL Save Config]** .
 1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
@@ -109,13 +115,14 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
 | [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | web サイト | 買い物かご、製品ページ、ミニ買い物かごおよびチェックアウトフローの「後で支払う」メッセージを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Venmo Enabled] | ストア表示 | 支払いボタンが表示される Venmo 支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Apple Pay Enabled] | ストア表示 | 支払いボタンが表示される「Apple支払」支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL PayPal Pay Later Enabled] | ストア表示 | 支払いボタンが表示される後払いオプションの外観を有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons on checkout page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] をチェックアウトページに追加します。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on product detail page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] 製品の詳細ページに表示されます。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini-cart preview] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] をクリックします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons on cart page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] を買い物かごページに追加します。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Venmo Enabled] | ストア表示 | 支払いボタンが表示される Venmo 支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Apple Pay Enabled] | ストア表示 | 支払いボタンが表示される「Apple支払」支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL PayPal Credit and Debit Card Enabled] | ストア表示 | 支払いボタンが表示される PayPal クレジットカードおよびデビットカードのオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL PayPal Pay Later Enabled] | ストア表示 | PayPal Pay Later 支払いオプションの外観を有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### [!DNL PayPal Smart Buttons] スタイル設定オプション
 
@@ -132,4 +139,3 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 ## キャッシュをフラッシュ
 
 設定を変更した場合、 [キャッシュを手動でフラッシュする](/help/payment-services/settings.md#flush-the-cache) ストアに最新の設定が表示されるようにします。
-

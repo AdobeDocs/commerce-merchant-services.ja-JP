@@ -2,9 +2,9 @@
 title: 支払いオプション
 description: 支払いオプションを設定して、店舗の顧客が利用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
+source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 [!DNL PayPal Smart Buttons]: PayPal を使用して購入を完了し、買い物客の配送先住所、請求先住所、支払いの詳細を保存して後で使用します。 買い物客は、以前に PayPal に保存または提供された任意の支払い方法を使用できます。
 
-![[!DNL PayPal Smart Buttons] options](assets/buttons-md.png)
+![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
 
 次の項目を設定できます。 [!UICONTROL PayPal Smart Buttons] をクリックします。  詳しくは、 [設定](settings.md#payment-buttons) を参照してください。
 
@@ -67,6 +67,14 @@ ht-degree: 0%
 >
 > 使用する [!DNL Apple Pay] 店舗の場合は、 [～との自己登録 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_ライブドメインを登録_ セクションのみ ) および [次のストアに対して設定します。 [!DNL Payment Services]](settings.md#payment-buttons).
 
+### PayPal のデビットまたはクレジットカードボタン
+
+お客様は、PayPal のデビットまたはクレジットカードのボタンを使用してチェックアウトできます。
+
+PayPal のデビットまたはクレジットカードのボタンは、チェックアウトページに表示されます。
+
+このオプションは、別のクレジットカードプロバイダがない場合に、PayPal のデビットまたはクレジットカードの支払いオプションを買い物客に提示するために使用できます。
+
 ### [!DNL Pay Later] ボタン
 
 顧客が今すぐ購入し、後で [!DNL Pay Later] 」ボタンをクリックします。
@@ -76,9 +84,9 @@ ht-degree: 0%
 * **顧客が$30 ～ $600 の製品を選択したとき**、PayPal の下のメッセージ、および [!DNL Pay Later] ボタンを使用すると、 [!DNL Pay in 4] 支払いオプション。 お客様は、 **詳細情報** を参照してください。[!DNL Pay in 4]&quot;オプション _または_ ポップアップの「6 か月の特別な融資を見る」テキストをクリックして、PayPal クレジットオプションについて学び、申し込みます。
 * **顧客が$98.99 を超える製品を選択したとき**、PayPal の下のメッセージ、および [!DNL Pay Later] ボタンをクリックすると、PayPal のクレジット支払いオプションに関する詳細情報が表示されます。 お客様は、 **詳細情報** PayPal クレジットオプションについて学び、申し込むには、 _または_ ポップアップの「Or see Pay in 4」テキストをクリックして、 [!DNL Pay in 4] オプション。
 
-   >[!NOTE]
-   >
-   >上記の金額は変更される場合があります。
+  >[!NOTE]
+  >
+  >上記の金額は変更される場合があります。
 
 詳しくは、 [設定](settings.md#payment-buttons) 無効にする/有効にする方法を学ぶには [!DNL Pay Later] メッセージ
 
@@ -93,6 +101,29 @@ ht-degree: 0%
 
 最終注文額が不明な場合（発送先住所情報がない場合など）、顧客が製品ページ、ミニカートまたは買い物かごからチェックアウトする過程にある場合、 _続行_ 」ボタンを使用できます。 顧客が _続行_&#x200B;支払い方法を確認した後、注文レビューページに移動し、チェックアウトを完了する前に必要な詳細を収集します。
 
+## PayPal の支払いボタンのみを使用
+
+ストアを実稼動モードにすばやく移行するには、を設定します _のみ_ PayPal の支払いボタン（Venmo、PayPal など）- PayPal クレジットカードの支払いオプションを使用する代わりに使用します。
+
+次の操作が可能です。
+
+* PayPal を通じてクレジットカードの承認を申し込まずに、お客様に様々な支払いオプションを提供します。
+* PayPal の他の支払いオプションを利用しながら、クレジットカードの支払いには、既存のクレジットカードプロバイダを使用します。
+* PayPal がクレジットカードを支払いオプションとしてサポートしていない地域で、PayPal の支払いボタンを使用します。
+
+宛先 **～で支払いをキャプチャする _のみ_ PayPal の支払いボタン (_not_ PayPal クレジットカードの支払いオプション )**:
+
+1. ストアが [実稼動モード](settings.md#enable-payment-services).
+1. [PayPal の支払いボタンを設定します](settings.md#payment-buttons) 」と入力します。
+1. 回転 _オフ_ の **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** オプション _[!UICONTROL Payment buttons]_」セクションに入力します。
+
+宛先 **既存のクレジットカードプロバイダーに支払いをキャプチャ _および_ PayPal の支払いボタン**:
+
+1. ストアが [実稼動モード](settings.md#enable-payment-services).
+1. [PayPal の支払いボタンを設定します](settings.md#payment-buttons).
+1. 回転 _オフ_ の **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** オプション _[!UICONTROL Payment buttons]_」セクションに入力します。
+1. 回転 _オフ_ の **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** オプション _[!UICONTROL Credit card fields]_セクションを開き、 [既存のクレジットカードプロバイダーアカウント](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+
 ## 注文の再計算
 
 顧客がミニカート、買い物かごまたは製品ページからチェックアウトフローに入ると、注文レビューページに移動し、PayPal ポップアップウィンドウで選択した配送先住所を確認できます。 顧客が発送方法を選択すると、注文額が適切に再計算され、顧客は配送費と税金を確認できます。
@@ -100,14 +131,6 @@ ht-degree: 0%
 顧客がチェックアウトページからチェックアウトフローに入ると、システムは既に配送先住所と最終的な計算額を認識し、合計が適切に表示されます。
 
 税金の休日、送料、消費税は、場所によって大きく異なる場合があります。 後 [!DNL Payment Services] 配送先住所と料金を受け取ると、該当するすべてのコストがすぐに再計算され、チェックアウトの最後の段階で適切に表示されます。
-
-## 製品ページからのチェックアウト
-
-顧客が PayPal または [!DNL Pay Later] ボタンを使用すると、現在の製品ページに表示される品目のみが購入されます。 顧客の買い物かごに既に存在する品目は、チェックアウトフローに追加されず、購入もされません。
-
-顧客が注文をキャンセルすると、現在の製品ページの品目が顧客の買い物かごに追加され、買い物かごに存在する他の品目が追加されます。 この機能を使用すると、顧客は現在表示している品目をすばやく購入できると同時に、以前に製品を閲覧したときに買い物かごに追加した他の品目も保持できます。
-
-顧客が製品ページからチェックアウトフローに入ると、チェックアウトページは簡略化され、注文関連のデータとオプションのみが表示されます。
 
 ## クレジットカードの保管
 

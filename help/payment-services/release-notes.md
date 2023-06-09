@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
+source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ ht-degree: 0%
 これらのリリースノートでは、ホストされているサービスの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
 
 +++ホストされたサービスの更新
+
+_2023 年 6 月 10 日_
+
+![新規](../assets/new.svg)<!-- Issue PAY-4288 --> 現在、商人は [設定 _のみ_ PayPal の支払いボタン](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons) — そして _not_ PayPal クレジットカードの支払いオプションを使用する — PayPal クレジットカードの承認を申し込まずに、様々な支払いオプションを提供します。
+
+![新規](../assets/new.svg)<!-- Issue PAY-4050 --> 追加された [データビジュアライゼーション表示](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view)（注文の支払ステータスレポートに対して「支払サービスホーム」に表示されます）
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-4486--> 以前は、PayPal の PayLater ボタンは英国の商人のチェックアウトには表示されませんでした。 その問題は解決しました。
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-4485--> 支払サービスが無効な場合、レポートのデータ視覚化ビューが支払サービスホームに表示されるようになりました。
 
 _2023 年 1 月 26 日_
 
@@ -56,6 +66,22 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v2.1.0
+
+_2023 年 6 月 10 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+![新規](../assets/new.svg)<!-- Issue xxx --> Adobe Commerce 2.4.7-beta1 のサポートを追加しました。
+
+![新規](../assets/new.svg)<!-- Issue xxx --> 追加済み [次の国および関連通貨での使用可能性](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability):オーストラリア、フランス、英国。
+
+![新規](../assets/new.svg)<!-- Issue PAY-4296 --> 追加済み [管理者ロール用のリソースの拡張](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) 管理者ユーザーが顧客の注文を作成および管理でき、セールスメニューの支払いサービスを表示できるようにする。
+
+![新規](../assets/new.svg)<!-- Issue PAY-4236 --> 追加済み [チェックアウト時にエラーが発生した注文を自動無効化](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![新規](../assets/new.svg)<!-- Issue PAY-4183 --> 作成された機能： [クレジット/デビットカードの支払いオプションボタンを表示](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) をチェックアウトページに追加します。
 
 ## v2.0.0
 
