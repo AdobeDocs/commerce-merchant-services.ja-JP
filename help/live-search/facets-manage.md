@@ -2,9 +2,9 @@
 title: ファセットの管理
 description: 「既存の [!DNL Live Search] ファセット」
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,10 @@ ht-degree: 0%
 ピンが灰色に変わり、ファセットが *動的ファセット* 」セクションに入力します。
 
    ![ピンおよび動的ファセット](assets/facets-pinned-unpinned.png)
+
+>[!NOTE]
+>
+>同じ名前のラベルが 2 つある場合、固定されたファセットの順序が一致しない可能性があります。
 
 ## 固定されたファセットを移動
 

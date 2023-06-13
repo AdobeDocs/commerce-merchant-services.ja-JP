@@ -2,9 +2,9 @@
 title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
+source-git-commit: 8f842732334dc8b1f8ebdf76310e16abe4e6b1b6
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -66,11 +66,31 @@ ht-degree: 0%
 
 ### PWAサポート
 
-ライブ検索のサポートは、一部のPWAがでテストされていないので、ベータ版と見なされます。 [!DNL Live Search]. Venia では検索や製品リストのページなどの基本機能は機能しますが、Graphql の順列の一部は正しく機能しない場合があります。
+[!DNL Live Search] はPWA Studioで機能しますが、他のコマース実装とは少し異なる場合があります。 Venia では検索や製品リストのページなどの基本機能は機能しますが、Graphql の順列の一部は正しく機能しない場合があります。 パフォーマンスに違いが生じる場合もあります。
 
-* の現在のベータPWA実装 [!DNL Live Search] を超える処理時間が必要 [!DNL Live Search] ネイティブの Commerce ストアフロントを使用します。
-* [!DNL Live Search] のPWAはをサポートしていません [イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* 現在のPWA実装 [!DNL Live Search] を超える処理時間が必要 [!DNL Live Search] ネイティブの Commerce ストアフロントを使用します。
+* [!DNL Live Search] のPWAはをサポートしていません [イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). このため、インテリジェントマーチャンダイジングは機能しません。
 * 直接のフィルター `description`, `name`, `short_description` で使用する場合、GraphQLではサポートされません [PWA](https://developer.adobe.com/commerce/pwa-studio/)が返されますが、より一般的なフィルターが返されます。
+
+使用する [!DNL Live Search] PWA Studioを使用した場合、インテグレーターは次の操作も必要になります。
+
+1. インストール [livesearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+1. を `environmentId` 内 `storeDetails` オブジェクト。
+
+   ```javascript
+   const storeDetails: StoreDetailsProps = {
+       environmentId: <Storefront_ID>,
+       websiteCode: "base",
+       storeCode: "main_website_store",
+       storeViewCode: "default",
+       searchUnitId: searchUnitId,
+       config: {
+           minQueryLength: 5,
+           pageSize: 8,
+           currencySymbol: "$",
+           },
+       };
+   ```
 
 ### 現在はサポートされていません
 

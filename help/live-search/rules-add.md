@@ -2,9 +2,9 @@
 title: "ルールを追加"
 description: 「 [!DNL Live Search] ルール」
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
+source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,10 @@ ht-degree: 0%
 * なし：製品は関連度順に並べ替えられます
 
 1. ルールの方法のタイプを選択します。 「ルールのテスト」ウィンドウに、期待される結果が表示されます。
+
+>[!NOTE]
+>
+>クエリでのアポストロフィや引用符は、一部の言語でのランク付けと関連性に関して、若干の軽微な問題を引き起こす可能性があります。
 
 ## イベントの追加
 

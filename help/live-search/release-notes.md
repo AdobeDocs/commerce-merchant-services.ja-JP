@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] リリースノート`'
 description: 「 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: d4f22cdae9b4b0a19691465ae87e344847672698
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,11 @@ ht-degree: 0%
 ![修正点](../assets/fix.svg) 修正点および改善点
 ![バグ](../assets/bug.svg) 既知の問題
 
+
+_2023 年 6 月 14 日_
+
+![新規](../assets/new.svg) ライブ検索で、さらに 5 つの検索がサポートされるようになりました。 [設定値](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
+![修正点](../assets/fix.svg) 引用符やアポストロフィなどの一部の文字がランキングの問題を引き起こしていた問題を修正しました。 インデックスを再作成すると、これらの問題が解決します。
 
 _2023 年 4 月 26 日_
 

@@ -2,9 +2,9 @@
 title: '''[!DNL Product Recommendations] リリースノート`'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: d4f22cdae9b4b0a19691465ae87e344847672698
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 開発者向けドキュメントを参照してください。 [製品の互換性の詳細](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## 現在のメジャーバージョン
+
+_2023 年 6 月 14 日_
+
+![新規](../assets/new.svg) 導入された [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL API
 
 _2023 年 4 月 26 日_
 
