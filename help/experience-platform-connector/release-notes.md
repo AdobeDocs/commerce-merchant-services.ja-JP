@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe CommerceのAdobe Experience Platformコネクタの最新のリリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
+source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -45,6 +45,14 @@ _2022 年 10 月 13 日_
 * ![新規](../assets/new.svg)  — のサポートを追加しました [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 3.0.0-beta1
+
+_2023 年 6 月 14 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+* ![新規](../assets/new.svg) - （ベータ版） [履歴注文を送信](connect-data.md#beta-send-historical-order-data) データとステータスをExperience Platformに
 
 ## 2.2.0
 
