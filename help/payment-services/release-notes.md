@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 _2023 年 6 月 10 日_
 
-![新規](../assets/new.svg)<!-- Issue PAY-4288 --> 現在、商人は [設定 _のみ_ PayPal の支払いボタン](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons) — そして _not_ PayPal クレジットカードの支払いオプションを使用する — PayPal クレジットカードの承認を申し込まずに、様々な支払いオプションを提供します。
+![新規](../assets/new.svg)<!-- Issue PAY-4288 --> 現在、商人は [設定 _のみ_ PayPal の支払いボタン](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons) — そして _not_ PayPal クレジットカードの支払いオプションを使用します。 これにより、商人は Venmo や PayPal の支払いボタンを含む様々な支払いオプションを提供し、PayPal のクレジットカード支払いオプションの代わりに既存のクレジットカードプロバイダを使用することができます。
 
 ![新規](../assets/new.svg)<!-- Issue PAY-4050 --> 追加された [データビジュアライゼーション表示](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view)（注文の支払ステータスレポートに対して「支払サービスホーム」に表示されます）
 
