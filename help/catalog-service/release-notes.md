@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] リリースノート`'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: f5a7e5ca4d1978e7ee8683c0ff0be8ba554cc9b2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,13 @@ ht-degree: 0%
 
 ## 現在のメジャーバージョン
 
-_2023 年 4 月 26 日_
+### V1.10 リリース
 
-![新規](../assets/new.svg) カタログサービスのお客様は、 [SaaS 価格インデクサー](../price-index/index.md).
-
-### V1.7 リリース
-
-_2023 年 4 月 13 日_
+_2023 年 6 月 28 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg) カタログサービスで、削除された製品のバリアントをクリーンアップするようになりました。
-![修正点](../assets/fix.svg) インフラストラクチャの拡張性とパフォーマンスの向上。
+![新規](../assets/new.svg) カタログサービスを製品の詳細ページウィジェットに関連製品を表示できるようになりました。
 
 #### 既知の制限事項
 
@@ -48,6 +43,15 @@ API Mesh と Core GraphQL API を使用して、次の制限を解決できま�
 * 最小広告価格
 * [価格帯](mesh.md)
 * ダウンロード可能な製品とギフトカード
+
+### V1.7 リリース
+
+_2023 年 4 月 13 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+![新規](../assets/new.svg) カタログサービスで、削除された製品のバリアントをクリーンアップするようになりました。
+![修正点](../assets/fix.svg) インフラストラクチャの拡張性とパフォーマンスの向上。
 
 ### V1.6 リリース
 
