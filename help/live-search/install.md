@@ -2,9 +2,9 @@
 title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法 [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: cccdcfe28150d929d9ff7de4459bbfef941860a4
+source-git-commit: 8b57f2269ae13033f26c0e5e468bc35ce9deaf9f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,7 @@ API キーと秘密鍵の生成については、 [Commerce Services コネク�
 
 ## カタログデータを同期 {#synchronize-catalog-data}
 
-[!DNL Live Search] では、検索操作用に同期された製品データが必要です。ファセットを設定するには、同期された属性データが必要です。 製品カタログとカタログサービス間の初期同期は、次の時点で開始されます。 [!DNL Live Search] は最初に接続されます。 カタログのインストール方法とサイズに応じて、でデータの書き出しとインデックス作成がおこなわれるまで、最大 8 時間かかる場合があります。 [!DNL Live Search]. カタログサービスと同期および共有されるデータのリストは、次の場所で定義されているスキーマ内にあります。
+[!DNL Live Search] では、検索操作用に同期された製品データが必要です。ファセットを設定するには、同期された属性データが必要です。 製品カタログとカタログサービス間の初期同期は、次の時点で開始されます。 [!DNL Live Search] は最初に接続されます。 カタログのインストール方法とサイズに応じて、データの書き出しとインデックス作成に最大 30 分かかる場合があります。 [!DNL Live Search]. カタログサービスと同期および共有されるデータのリストは、次の場所で定義されているスキーマ内にあります。
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
