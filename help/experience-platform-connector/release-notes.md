@@ -2,9 +2,9 @@
 title: リリースノート
 description: Adobe CommerceのAdobe Experience Platformコネクタの最新のリリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
+source-git-commit: 9dcb5a38f6ec2ed13a07d80b6a9d5a64efcc13ee
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -36,23 +36,35 @@ _2023 年 6 月 11 日_
 
 _2023 年 3 月 31 日_
 
-* ![新規](../assets/new.svg)  — という新しい拡張機能が追加されました。 `data-services-b2b` を含む [購買依頼リスト・イベント](events.md#b2b-events) B2B 商人向け
+* ![新規](../assets/new.svg)  — という新しい拡張機能が追加されました。 `data-services-b2b` を含む [購買依頼リスト・イベント](events.md#b2b-events) B2B 商人にとって
 * ![新規](../assets/new.svg)  — が追加されました `uniqueIdentifier` ～に向かって [検索](events.md#search-events) イベント。 この新しいフィールドを使用すると、マーチャントは、どの検索リクエストをどの検索応答に対応させるかを相互に参照できます。
 
 _2022 年 10 月 13 日_
 
-* ![新規](../assets/new.svg) - 2 つ追加 [storefront イベント](events.md): `openCart` および `removeFromCart` をAdobe Commerce Storefront Events SDK およびコレクターに追加しました。
-* ![新規](../assets/new.svg)  — のサポートを追加しました [AEM storefront](overview.md#aem-support)
+* ![新規](../assets/new.svg) - 2 つ追加 [storefront イベント](events.md): `openCart` および `removeFromCart` をAdobe Commerce Storefront Events SDK および Collector に追加します。
+* ![新規](../assets/new.svg)  — のサポートを追加しました [AEM storefront](overview.md#aem-support).
 
 +++
 
-## 3.0.0-beta1
+## 2.3.0
+
+_2023 年 6 月 28 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+* ![新規](../assets/new.svg)  — 次の機能を追加しました。 [storefront イベントの送信をオフにする](connect-data.md#data-collection) Experience Platform
+* ![修正点](../assets/fix.svg)  — コンテンツセキュリティポリシーの設定を更新しました。
+* ![修正点](../assets/fix.svg) - Commerce 2.4.7 バージョンでのバックオフィスイベントのサポートを修正しました。
+* ![新規](../assets/new.svg)  — 変更を「Experience Platformコネクタ」フォームに保存したときのキャッシュの無効化に関する通知メッセージを追加しました。
+
+
+## 3.0.0-beta1（内部のみ）
 
 _2023 年 6 月 14 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-* ![新規](../assets/new.svg) - （ベータ版） [履歴注文を送信](connect-data.md#beta-send-historical-order-data) データとステータスをExperience Platformに
+* ![新規](../assets/new.svg) - （ベータ版） [履歴注文を送信](connect-data.md#beta-send-historical-order-data) データとステータスをExperience Platformに この機能は、ベータ版ユーザーのみが使用できます。 ベータ版に参加するには、以下のアドレス宛てにメールを送信します。 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 ## 2.2.0
 
@@ -69,7 +81,7 @@ _2023 年 2 月 29 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-* ![新規](../assets/new.svg)  — すべてのExperience Platformコネクタモジュールに対する PHP 8.2 のサポートを追加
+* ![新規](../assets/new.svg) - PHP 8.2 のサポートを追加し、すべてのExperience Platformコネクタ拡張をサポート。
 
 ## 2.1.0
 
@@ -94,8 +106,8 @@ _2022 年 10 月 13 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-* ![新規](../assets/new.svg)  — 次の場合に独自の AEP Web SDK を指定する機能が追加されました。 [接続](connect-data.md) Adobe CommerceインスタンスからExperience Platform
-* ![修正点](../assets/fix.svg)  — データストリーム ID をストレビューではなく Web サイトにスコープする必要があるように、データストリームスコープの要件を更新しました
+* ![新規](../assets/new.svg)  — 次の場合に独自の AEP Web SDK を指定する機能が追加されました。 [接続](connect-data.md) Adobe CommerceインスタンスをExperience Platformに
+* ![修正点](../assets/fix.svg)  — データストリーム ID をストアレビューではなく Web サイトにスコープする必要があるように、データストリームスコープの要件を更新しました。
 
 ## 1.0.0
 
@@ -103,4 +115,4 @@ _2022 年 8 月 10 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-* ![新規](../assets/new.svg)  — 一般リリース (GA)
+* ![新規](../assets/new.svg)  — 一般リリース (GA)。
