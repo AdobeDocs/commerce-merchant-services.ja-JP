@@ -4,9 +4,9 @@ description: Adobe Commerce統合を作成し承認し、ストアフルフィ�
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,10 @@ Adobe Commerceをストアフルフィルメントサービスと統合するに
    - メールアドレスを入力
    - 管理者アカウントのパスワードを入力してください
 
-1. 設定 [!UICONTROL API Resource Access permissions] 統合の場合、 `[!UICONTROL All]`
+1. 以下との統合に対する API リソースのアクセス権限を設定します。
+
+   - セールス > BOPIS 注文の更新
+   - システム/フルフィルメントアプリの権限を保存
 
 1. 統合を保存してアクティブ化することで、認証用のアクセストークンを生成します。
 

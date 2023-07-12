@@ -4,7 +4,7 @@ description: SaaS 価格インデックス作成を使用したパフォーマ�
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
@@ -83,16 +83,16 @@ PHP のコア価格インデクサーは、必要に応じて、サードパー�
 
 ### 拡張機能の依存関係がない Luma
 
-* 必要なサービス ( ライブ検索、製品Recommendations、カタログサービス ) がインストールされている Luma または Abode Commerce Core GraphQLのマーチャント
+* 必要なサービス ( ライブ検索、製品Recommendations、カタログサービス ) がインストールされている Luma またはAdobe Commerce Core GraphQLマーチャント
 * PHP のコア価格インデクサーに依存するサードパーティの拡張機能はありません
 * シンプルで構成可能な、グループ化された、仮想製品、バンドル化された動的製品の販売
 
 1. 新しいフィードを有効にします。
 1. カタログアダプタをインストールします。
 
-### Luma と Abode Commerce Core GraphQl と PHP コア価格インデクサーの依存関係
+### Luma とAdobe Commerce Core GraphQl と PHP コア価格インデクサーの依存関係
 
-* サポート対象のサービス ( ライブ検索、製品Recommendations、カタログサービス ) がインストールされている Luma または Abode Commerce Core GraphQLマーチャント
+* サポート対象のサービス ( ライブ検索、製品Recommendations、カタログサービス ) がインストールされている Luma またはAdobe Commerce Core GraphQLマーチャント
 * PHP のコア価格インデクサーに依存するサードパーティの拡張機能を使用
 * シンプルで構成可能な、グループ化された、仮想製品、バンドル化された動的製品の販売
 
