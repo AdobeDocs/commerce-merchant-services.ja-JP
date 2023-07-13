@@ -5,7 +5,8 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: ドキュメント
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 63f6b5f33e3a8457420703d292d1eb341949af04
+recommendations: noCatalog
+source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -19,6 +20,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 >[!BEGINSHADEBOX 「リリース情報」]
 
 詳しくは、 [ドキュメントの新機能](whats-new.md) または [リリースノート](release-notes-all.md) 各コマースサービス用の
+
 >[!ENDSHADEBOX]
 
 ## コマースサービス
