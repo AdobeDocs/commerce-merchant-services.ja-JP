@@ -1,7 +1,9 @@
 ---
 title: '[!DNL Page Builder] 統合'
-description: '''使用方法を学ぶ [!DNL Product Recommendations] の単位を指定します。'
-source-git-commit: 59ec1a212fbc9ef48658b29cace083e3fb645185
+description: 使用方法を学ぶ [!DNL Product Recommendations] の単位を指定します。
+exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
+feature: Services, Recommendations, Page Builder
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%

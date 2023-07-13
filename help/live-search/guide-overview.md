@@ -2,7 +2,8 @@
 title: '"[!DNL Live Search] ガイドの概要»'
 description: '"[!DNL Live Search] Adobe Commerceからは、素早く、超関連性が高く、直感的な検索エクスペリエンスを提供します。」'
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+recommendations: noCatalog
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%

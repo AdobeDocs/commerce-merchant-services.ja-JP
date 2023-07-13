@@ -2,7 +2,8 @@
 title: '''[!DNL Product Recommendations] リリースノート`'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 326b852b67d4f4160badc652b24853df3a8de644
+feature: Services, Recommendations, Release Notes
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 0%

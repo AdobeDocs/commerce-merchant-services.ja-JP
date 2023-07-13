@@ -2,7 +2,8 @@
 title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法 [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 8b57f2269ae13033f26c0e5e468bc35ce9deaf9f
+role: Admin, Developer
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%

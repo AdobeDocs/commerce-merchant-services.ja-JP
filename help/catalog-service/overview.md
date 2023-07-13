@@ -2,7 +2,8 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] for Adobe Commerceは、ネイティブのAdobe Commerce GraphQLクエリよりも、製品表示ページと製品リストページのコンテンツをよりすばやく取得する方法を提供します。'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
+recommendations: noCatalog
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 * 検索結果ページ
 * 製品カルーセル
 * 製品比較ページ
-* 買い物かご、注文、ウィッシュリストページなど、製品データをレンダリングするその他のページ
+* 買い物かご、注文、ウィッシュリストのページなど、製品データをレンダリングするその他のページ
 
 この [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) 製品データをリクエストして受け取る。 GraphQLは、フロントエンドクライアントがAdobe Commerceなどのバックエンドで定義されたアプリケーションプログラミングインターフェイス (API) との通信に使用するクエリ言語です。 GraphQLは軽量で、システムインテグレーターが各応答の内容と順序を指定できるので、一般的な通信方法です。
 
