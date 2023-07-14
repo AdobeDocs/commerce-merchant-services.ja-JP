@@ -2,9 +2,9 @@
 title: イベント
 description: 各イベントが取り込むデータを説明します。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
+source-git-commit: e8818893d90f91df5b281905eb6bc30df34723ec
 workflow-type: tm+mt
-source-wordcount: '4605'
+source-wordcount: '4779'
 ht-degree: 0%
 
 ---
@@ -477,6 +477,11 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 | `quantity` | 買い物かご内の製品単位数 |
 | `priceTotal` | 製品品目の合計価格 |
 | `discountAmount` | 適用された割引額を示します |
+| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
 | `order` | オーダーに関する情報が含まれます |
 | `purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません |
 | `priceTotal` | すべての割引と税金が適用された後の、この注文の合計価格 |
@@ -517,7 +522,7 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 #### orderItemsShipped から収集されたデータ
 
 次の表に、このイベントで収集されるデータを示します。
-|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`priceTotal`|すべての割引と税金が適用された後の、この注文の合計価格| |`currencyCode`|注文の合計に使用する ISO 4217 通貨コード| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`payments`|この注文の支払いのリスト| |`paymentType`|この注文の支払い方法。 列挙型のカスタム値を使用できます。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用する通貨コード| |`paymentAmount`|支払の値| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`shipping`|1 つ以上の製品の出荷の詳細| |`shippingMethod`|顧客が選択した発送方法（標準配送、即時配送、店頭受け取りなど）| |`trackingNumber`|発送業者が注文項目の出荷に対して提供した追跡番号| |`trackingURL`|注文項目の配送状況を追跡する URL| |`shipDate`|注文の 1 つ以上の品目が発送された日付| |`address`|物理的な配送先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`shippingAmount`|顧客が送料を支払う必要があった金額。| |`billingAddress`|請求先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
+|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`commerceScope`|イベントが発生した場所を示します（ストアの表示、ストア、Web サイトなど）。| |`environmentID`|環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。| |`storeCode`|一意のストアコード。 Web サイトごとに多くの店舗を持つことができます。| |`storeViewCode`|一意のストア表示コード。 ストアごとに多数のストアビューを持つことができます。| |`websiteCode`|一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`priceTotal`|すべての割引と税金が適用された後の、この注文の合計価格| |`currencyCode`|注文の合計に使用する ISO 4217 通貨コード| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`payments`|この注文の支払いのリスト| |`paymentType`|この注文の支払い方法。 列挙型のカスタム値を使用できます。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用する通貨コード| |`paymentAmount`|支払の値| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`shipping`|1 つ以上の製品の出荷の詳細| |`shippingMethod`|顧客が選択した発送方法（標準配送、即時配送、店頭受け取りなど）| |`trackingNumber`|発送業者が注文項目の出荷に対して提供した追跡番号| |`trackingURL`|注文項目の配送状況を追跡する URL| |`shipDate`|注文の 1 つ以上の品目が発送された日付| |`address`|物理的な配送先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`shippingAmount`|顧客が送料を支払う必要があった金額。| |`billingAddress`|請求先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
 
 ### orderCancelled
 
@@ -528,7 +533,7 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 #### orderCancelled から収集されたデータ
 
 次の表に、このイベントで収集されるデータを示します。
-|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`cancelDate`|買い物客が注文をキャンセルした日時| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
+|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`commerceScope`|イベントが発生した場所を示します（ストアの表示、ストア、Web サイトなど）。| |`environmentID`|環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。| |`storeCode`|一意のストアコード。 Web サイトごとに多くの店舗を持つことができます。| |`storeViewCode`|一意のストア表示コード。 ストアごとに多数のストアビューを持つことができます。| |`websiteCode`|一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`cancelDate`|買い物客が注文をキャンセルした日時| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
 
 ### creditMemoIssued
 
