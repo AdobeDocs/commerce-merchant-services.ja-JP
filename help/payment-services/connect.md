@@ -2,9 +2,10 @@
 title: インスタンスに接続
 description: API キーと秘密鍵を使用して Commerce インスタンスに接続し、設定でデータ領域を指定します。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+feature: Payments, Checkout, Configuration, Saas
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---

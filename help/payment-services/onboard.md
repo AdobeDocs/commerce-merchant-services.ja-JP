@@ -4,7 +4,8 @@ description: インスタンスとの接続 [!DNL Payment Services] 機能を使
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+feature: Payments, Checkout, Integration
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

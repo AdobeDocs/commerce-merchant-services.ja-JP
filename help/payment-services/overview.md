@@ -4,7 +4,8 @@ description: インストールと使用の方法を学ぶ [!DNL Payment Service
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: c074b6dffea913e92dfa29159a79d0c389b810fa
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
