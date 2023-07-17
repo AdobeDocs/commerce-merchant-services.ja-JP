@@ -2,7 +2,8 @@
 title: '''[!DNL Quick Checkout] リリースノート`'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
+feature: Release Notes, Services, Checkout
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -197,7 +198,7 @@ _2022 年 8 月 10 日_
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-780 --> 買い物客は、 [[!DNL Quick Checkout]](checkout-page.md) 拡張または経由 [手動オーダー作成](create-order-admin.md).
 
-![新規](../assets/new.svg)<!-- Issue BOLT-666 --> マーチャントが [!DNL Quick Checkout] 次のような基本的な支払いアクションを持つ [`Authorize and Capture` または `Authorize` ](onboarding.md#complete-admin-configuration)、またはサンドボックスと実稼動環境を切り替えることができます。
+![新規](../assets/new.svg)<!-- Issue BOLT-666 --> マーチャントが [!DNL Quick Checkout] 次のような基本的な支払いアクションを持つ [`Authorize and Capture` または `Authorize`](onboarding.md#complete-admin-configuration)、またはサンドボックスと実稼動環境を切り替えることができます。
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-288 --> カスタム [ユーザーセッションの有効期間](user-session-lifetime.md) 対象 [!DNL Quick Checkout] Adobe Commerce
 

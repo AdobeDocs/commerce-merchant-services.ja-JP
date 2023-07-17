@@ -2,18 +2,19 @@
 title: "インストール [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「次の手順に従って、 [!DNL Quick Checkout] Adobe Commerceプロジェクトに」
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+feature: Checkout, Services, Install
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # インストール [!DNL Quick Checkout]
 
-この [!DNL Quick Checkout] Adobe Commerceおよびの拡張 [!DNL Magento Open Source] は、 [!DNL Composer keys]（ Commerce アカウントにリンクされています） [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target=&quot;_blank&quot;} が登録プロセスで提供されます。 Composer は、Adobe Commerceの初期インストール時、または [!DNL Composer keys] 以前は `auth.json` ファイル。
+この [!DNL Quick Checkout] Adobe Commerceおよびの拡張 [!DNL Magento Open Source] は、 [!DNL Composer keys]（ Commerce アカウントにリンクされています） [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} 登録プロセスで提供されます。 Composer は、Adobe Commerceの初期インストール時、または [!DNL Composer keys] 以前は `auth.json` ファイル。
 
-詳しくは、 [認証キーの取得](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target=&quot;_blank&quot;} のトピックを参照してください。 [!DNL Composer keys].
+詳しくは、 [認証キーの取得](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} の取得に関する詳細情報のトピック [!DNL Composer keys].
 
 この拡張機能をインストールするには、次の 2 つの方法があります。 [Adobe Commerce an cloud infrastructure](#magento-commerce-cloud) または [オンプレミス](#on-premises) インストール。 これらの方法では、CLI（コマンドラインインターフェイス）を使用する必要があります。
 

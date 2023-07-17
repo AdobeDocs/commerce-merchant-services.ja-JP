@@ -2,9 +2,10 @@
 title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「テストと検証により、 [!DNL Quick Checkout] 拡張機能は期待どおりに動作します。」
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 を公開する前に [!DNL Quick Checkout] 買い物客に対するAdobe Commerce拡張機能の場合は、サンドボックス環境と実稼動環境でテストすることをお勧めします。 テストと検証は、 [!DNL Quick Checkout] は期待どおりに動作し、ストアや顧客に対してシームレスなチェックアウトエクスペリエンスを提供します。
 
-設定する前に、 [!DNL Quick Checkout] Adobe Commerce Admin で、  [実稼動](https://merchant.bolt.com/register){target=&quot;_blank&quot;} および [サンドボックス](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} マーチャントアカウント [!DNL Bolt].
+設定する前に、 [!DNL Quick Checkout] Adobe Commerce Admin で、  [実稼動](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} ～の商人口座 [!DNL Bolt].
 
 ## サンドボックスでのテスト
 
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ### Sandbox アカウントの使用
 
-サンドボックスをテストおよび検証する際は、偽のクレジットカード番号と [サンドボックス](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} マーチャントアカウント [!DNL Bolt]既存のクレジットカードアカウントに対して実際の料金を作成しないようにします。
+サンドボックスをテストおよび検証する際は、偽のクレジットカード番号と [サンドボックス](https://merchant-sandbox.bolt.com/register){target="_blank"} ～の商人口座 [!DNL Bolt]既存のクレジットカードアカウントに対して実際の料金を作成しないようにします。
 
 ## 実稼動環境でのテスト
 

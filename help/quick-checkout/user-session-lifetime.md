@@ -2,7 +2,8 @@
 title: ユーザーセッションの有効期間
 description: 管理者は、Adobe Commerceユーザーの Cookie の有効期間を [!DNL Quick Checkout] 拡張子。
 exl-id: 32cf5d70-9a50-49ca-8b40-5f04bc1e24b7
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: '"[!DNL Quick Checkout] Adobe Commerce開発者向け情報»'
 description: '"[!DNL Quick Checkout] 開発者情報」'
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+role: Developer
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
