@@ -2,7 +2,9 @@
 title: Adobe Experience Platformタグを使用したコマースデータの収集
 description: Adobe Experience Platformタグを使用してコマースデータを収集する方法を説明します。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
+role: Admin, Developer
+feature: Personalization, Integration
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '2650'
 ht-degree: 0%
@@ -24,9 +26,9 @@ _Experience Platform付きコネクタのデータフロー_
 
 - のインストール [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). PHP ストアフロントについては、 [インストール](install.md) トピック。 PWA Studioストアフロントについては、 [PWA Studioガイド](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
-   >[!NOTE]
-   >
-   > 実行 **not** [設定](connect-data.md) 組織 ID およびデータストリーム ID。
+  >[!NOTE]
+  >
+  > 実行 **not** [設定](connect-data.md) 組織 ID およびデータストリーム ID。
 
 ## コマースストアフロントデータのAdobe Experience Platformへのマッピング
 
@@ -843,13 +845,13 @@ Adobe Experience Platformタグのデータ要素とルールをAdobe Commerce�
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `productContext.mainImageUrl`
+
    1. 買い物かご：
+
    - **名前**: `cart`
    - **拡張**: `Adobe Client Data Layer`
    - **データ要素タイプ**: `Data Layer Computed State`
    - **[オプション] パス**: `shoppingCartContext`
-
-
 
 1. 買い物かご ID :
 
