@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 742af84407943e7df47f986717b6dc31dc067863
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -136,6 +136,8 @@ SaaS 設定が完了したら、 [カタログ同期](https://experienceleague.a
 API キーを取得するには、管理の「 Commerce Service Connector 」領域に移動し、公開 API キーをコピーします。
 
 詳しくは、 [GraphQLドキュメント](https://developer.adobe.com/commerce/webapi/graphql/) を参照して、API リクエストの生成に必要なヘッダーをクエリして送信する方法を確認してください。
+
+ファイアウォールを介したカタログサービスを許可するには、 `commerce.adobe.io` 許可リスト
 
 ## カタログサービスと API メッシュ
 

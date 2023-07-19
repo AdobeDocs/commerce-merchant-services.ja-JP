@@ -3,9 +3,9 @@ title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法 [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -192,6 +192,8 @@ API キーと秘密鍵の生成については、 [Commerce Services コネク�
 すべてが正しく動作する場合は、おめでとうございます。 [!DNL Live Search] がインストールされ、接続され、使用できる状態になっている。
 
 ストアフロントで問題が発生した場合は、 `var/log/system.log` ファイルに保存され、API 通信の失敗やサービス側でのエラーに関する情報が含まれます。
+
+ファイアウォールを介したライブ検索を許可するには、 `commerce.adobe.io` 許可リスト
 
 ## インストールされているバージョンの確認
 

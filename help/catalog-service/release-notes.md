@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] リリースノート`'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerce
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 0%
 
 ## 現在のメジャーバージョン
 
-### V1.10 リリース
+### V1.11 リリース
 
-_2023 年 6 月 28 日_
+_2023 年 7 月 19 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg) カタログサービスを製品の詳細ページウィジェットに関連製品を表示できるようになりました。
+![新規](../assets/new.svg) カタログサービスは、 [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL製品Recommendationsのクエリ。
 
 #### 既知の制限事項
 
@@ -44,6 +44,14 @@ API Mesh と Core GraphQL API を使用して、次の制限を解決できま�
 * 最小広告価格
 * [価格帯](mesh.md)
 * ダウンロード可能な製品とギフトカード
+
+### V1.10 リリース
+
+_2023 年 6 月 28 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+![新規](../assets/new.svg) カタログサービスを製品の詳細ページウィジェットに関連製品を表示できるようになりました。
 
 ### V1.7 リリース
 

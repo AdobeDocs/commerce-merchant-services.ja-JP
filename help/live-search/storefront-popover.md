@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: 「 [!DNL Live Search storefront popover] は、推奨される製品とサムネールを動的に返します。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,20 @@ ht-degree: 0%
 1. を **オートコンプリート制限** を [!DNL popover].
 1. 完了したら、「 **設定を保存**.
 
+## カタログサービス
+
+この [Adobe Commerceのカタログサービス](../catalog-service/overview.md) 拡張機能は、豊富なビューモデルカタログデータを提供し、製品関連のストアフロントエクスペリエンスをすばやく完全にレンダリングできます。 カタログサービスをライブ検索と組み合わせて使用すると、ネイティブ拡張機能で現在サポートされていない機能を提供できます。
+
+* カラースウォッチ
+* 拡張属性
+* その他の製品情報を取り込むことができます
+
+マーチャントは、カタログサービスを使用してウィジェットやストアフロント要素をカスタマイズおよび拡張できますが、Adobeのサポートチームの範囲外です。
+
 ## 制限事項
 
-* この [!DNL Live Search] [!DNL storefront popover] は、 *Luma* テーマ、または *Luma*.
+* この [!DNL Live Search] [!DNL storefront popover] は、 *Luma* テーマ、または *Luma*. 検索結果ページのパンくずリストには *ルメ* スタイル設定。
 * この [!DNL popover] は *空白* テーマ。 詳しくは、 [スタイル設定 [!DNL Popover] 要素](storefront-popover-styling.md) を参照してください。
 * この [!DNL popover] は、クイック注文フォームではサポートされていません。
-* マーチャントは、ウィジェットやストアフロントの要素をカスタマイズして拡張できます ( 例：（ライブ検索結果へのカラースウォッチの統合） [カタログサービス](../catalog-service/overview.md) ストアフロント API ですが、これはAdobeのサポートチームの範囲外です。
+* ウィッシュリストと製品の比較はサポートされていません。
+* ベース通貨のみがサポートされます。

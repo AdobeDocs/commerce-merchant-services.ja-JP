@@ -2,7 +2,7 @@
 title: '"[!DNL Live Search] インデックス作成»'
 description: «学ぶ方法 [!DNL Live Search] 製品属性プロパティのインデックスを作成します。"
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ## クライアント検索
 
-この [!DNL Live Search] API を使用すると、クライアントは、 [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *製品リストの並べ替えに使用します* から `Yes`. テーマに応じて、この設定により、属性が [並べ替え基準](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) カタログページのページネーションコントロール。 最大 300 個の製品属性を [!DNL Live Search]を [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 検索可能でフィルタリング可能な
+この [!DNL Live Search] API を使用すると、クライアントは、 [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *製品リストの並べ替えに使用します* から `Yes`. テーマに応じて、この設定により、属性が [並べ替え基準](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) カタログページのページネーションコントロール。 最大 200 個の製品属性を [!DNL Live Search]を [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 検索可能でフィルタリング可能な
 インデックスメタデータは、インデックス作成パイプラインに保存され、検索サービスからアクセスできます。
 
 ![[!DNL Live Search] インデックスメタデータ API 図](assets/index-metadata-api.svg)

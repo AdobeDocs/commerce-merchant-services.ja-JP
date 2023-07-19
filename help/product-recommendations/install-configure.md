@@ -3,9 +3,9 @@ title: インストールと設定
 description: インストール、更新、アンインストールの方法を説明します [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,10 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 >[!NOTE]
 >
 > Product Recommendationsのバージョン 3.x.x では、1 つの API キーのみが必要でした。 バージョン 4.x.x 以降では、Production の公開および非公開 API キーと、Sandbox の公開および非公開 API キーを提供する必要があります。 両方の API キーのペアを指定しない場合、管理の Product Recommendations機能にアクセスできません。 ただし、データ収集はストアフロントで引き続きおこなわれ、既存のレコメンデーションは引き続き買い物客に表示されます。
+
+## ファイアウォール
+
+製品Recommendationsにファイアウォールを介させるには、 `commerce.adobe.io` 許可リスト
 
 ## アンインストール [!DNL Product Recommendations] {#uninstall}
 
