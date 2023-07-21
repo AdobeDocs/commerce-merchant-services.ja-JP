@@ -1,12 +1,12 @@
 ---
 title: バックグラウンドプロセス設定
 description: 次のスケジュールを設定： [!DNL Store Fulfillment] データをフルフィルメントサービスと同期する際に使用するバックグラウンドプロセス」
-role: User, Admin
+role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,4 @@ ht-degree: 0%
 
 管理者から、に移動します。 **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
-ストアフルフィルメントサービスのデフォルト設定を確認します。 注文処理の量とリソースの可用性に応じて、これらの設定を調整する必要が生じる場合があります。
+ストアフルフィルメントサービスのデフォルト設定を確認します。 これらの設定は、注文処理の量とリソースの可用性に応じてカスタマイズできます。

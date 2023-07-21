@@ -1,12 +1,13 @@
 ---
 title: アプリ設定
 description: 設定 [!DNL Store Assist] エンドツーエンドの店舗フルフィルメントワークフローとプロセスを管理するアプリは、オンラインで購入し、店舗注文で受け取ります。
-role: User, Admin
 level: Intermediate
+role: Admin
+feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Store Assist アプリは、注文の詳細から時間まで、すべての注�
 
 >[!NOTE]
 >
->詳しくは、 [Store Assist フルフィルメントワークフロー](store-assist-modules.md) を参照して、Store Assist アプリの詳細を確認してください。
+>Store Assist アプリについて詳しくは、 [Store Assist フルフィルメントワークフロー](store-assist-modules.md) トピック。
 
 ## Store Assist アプリの設定
 
@@ -42,9 +43,9 @@ Store Assist アプリには、次の 2 種類の設定が必要です。
 
    - **無操作時間** — アプリケーションが非アクティブである必要がある時間を指定します。この時間を過ぎるとログアウトされます。
 
-   - **ストアからのキャンセル** — オーダーをストアからキャンセルできるかどうか、およびキャンセル権限を持つロールを指定します
+   - **ストアからのキャンセル** — ストアからオーダーをキャンセルできるかどうか、およびキャンセル権限を持つロールを指定します
 
-   - **注文のクリーンアップウィンドウ** — 経過時間を指定します。 [推定ピックアップリードタイム](enable-general.md#delivery-method-title-configuration) 選択した注文は、再在庫される前（3 日間など）にステージングに残ります。 デフォルト値は 7 日です。 この設定をオンにした場合、この時間が経過すると、オーダーは自動的にキャンセルされます。 商品が再入荷され、商人はキャンセルメールを受け取ります。
+   - **注文のクリーンアップウィンドウ** — 経過時間を指定します。 [推定ピックアップリードタイム](enable-general.md#delivery-method-title-configuration) 選択した注文は、再在庫される前（3 日間など）にステージングに残ります。 デフォルト値は 7 日です。 この設定をオンにした場合、この時間が切れると、注文は自動的にキャンセルされます。 商品が再入荷され、商人はキャンセルメールを受け取ります。
 
    - アプリ内の指示（選択、ステージング、ハンドオフ）をすべてカスタマイズします。
 
@@ -55,7 +56,8 @@ Store Assist アプリには、次の 2 種類の設定が必要です。
    - **手渡しプロセス**- Store Associate が顧客に注文を行う場合（例えば、顧客の署名が必要な場合や、顧客 ID の確認を要求するメッセージを表示する場合）は、オプションのプロセスを有効にします。
 
    - **ハンドオフ時に項目却下を有効にする** — 顧客が注文の受け渡し中に注文項目を返却またはキャンセルできるようにします。
-   Walmart Commerce Technologies Client Services チームと協力して、Store Assist App のフロントエンド設定を完了します。
+
+  Walmart Commerce Technologies Client Services チームと協力して、Store Assist App のフロントエンド設定を完了します。
 
 ## アプリのダウンロードとインストール
 
@@ -70,4 +72,5 @@ Store Assist アプリを設定した後、Store Associates は、モバイル�
    - **[!UICONTROL Company name]** Store Assist アカウントに関連付けられています
 
    - **Store Assist アカウントの資格情報**：ユーザー名とパスワードの資格情報。
-   Adobe Commerce管理者は、 [!DNL Store Assist app] を持つすべてのストアの場所のユーザーアカウント [店内ピックアップ](merchant-store-configuration.md#pickup-location-configuration) が管理ストア設定で有効になっている。
+
+  Adobe Commerce管理者は、 [!DNL Store Assist app] を持つすべてのストアの場所のユーザーアカウント [店内ピックアップ](merchant-store-configuration.md#pickup-location-configuration) が管理ストア設定で有効になっている。

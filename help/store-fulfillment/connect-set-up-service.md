@@ -1,12 +1,13 @@
 ---
 title: ストアフルフィルメントソリューションの接続
-description: Adobe Commerce統合を作成し承認し、ストアフルフィルメントアカウント資格情報をAdobe Commerceサービス設定に追加することで、Adobe Commerceとストアフルフィルメントソリューション間の接続を確立します。
-role: User, Admin
+description: Adobe Commerceとストアフルフィルメントソリューション間の接続を確立します。 Adobe Commerce統合を作成して承認し、ストアフルフィルメントアカウント資格情報をAdobe Commerceサービス設定に追加します。
+role: Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, Install, Configuration, User Account, Tools and External Services
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---

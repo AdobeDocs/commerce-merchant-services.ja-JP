@@ -1,10 +1,10 @@
 ---
 title: «の概要 [!DNL Store Fulfillment]"
 description: «学ぶ方法 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] は、顧客向けにオンラインでの購入、店舗での受け取り (BOPIS) をサポートします。 Store Assist モバイルを使用して、BOPIS の達成と注文処理を合理化し、店舗関連者と Commerce の顧客に提供します。」
-role: User
+role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Store Fulfilment for Adobe Commerce by Walmart Commerce Technologies は、 [!DN
 
 ## ストアアシストアプリ
 
-iOSおよび Android™デバイス用の Store Assist アプリは、 [!DNL Walmart Commerce Technologies] お客様の小売店にオムニチャネルフルフィルメント機能を提供する。
+iOSおよび Android デバイス用の Store Assist App は、 [!DNL Walmart Commerce Technologies] お客様の小売店にオムニチャネルフルフィルメント機能を提供する。
 
 * 店舗とキューブサイドの受取注文を直接送信して、関連会社のモバイルデバイスを保存
 

@@ -1,10 +1,11 @@
 ---
 title: ストアフルフィルメントサービスのオンボーディングの概要
 description: '[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項について説明します。'
-role: User, Admin
+role: Admin, Leader
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -17,15 +18,15 @@ ht-degree: 0%
 
 - **Store Fulfilment 拡張機能** — このサードパーティの拡張機能をAdobe Commerceインスタンスにインストールして設定します。 インストール後、管理者からサポートするストアフルフィルメントソリューションを設定および管理できます [!DNL buys online, pickup in store] (BOPIS) シナリオが Commerce ストアフロントに表示されます。
 
-   ![[!DNL Store Fulfillment Service] 管理ビューの設定](assets/store-fulfillment-admin-home.png)
+  ![[!DNL Store Fulfillment Service] 管理ビューの設定](assets/store-fulfillment-admin-home.png)
 
 - **受渡勘定の保存** — 有効化プロセス中に、アカウントマネージャがストアフルフィルメントアカウントを作成し、アカウント情報と認証情報を提供します。 これらの資格情報は、Adobe Commerceとストアフルフィルメントソリューション間の接続を有効にするために必要です。
 
 - **ストアアシストアプリ** — ストアをエンドツーエンドのストアフルフィルメントワークフローと関連付けて、モバイルデバイスからの BOPIS 注文を管理します。 Store Associates は Walmart の [!DNL Store Assist] (iOSおよび Android™デバイス用 ) アプリのオンボーディングプロセスは、Walmart Commerce Technologies Client Center によって別のプロセスとして管理されます。 しかし、 [一部のアプリ設定](user-setup.md) は、Adobe Commerce Admin から入力されます。
 
-   | Store Assist App — はじめに表示 | Store Assist App — モジュールビュー |
-   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-   | ![[!DNL Store Assist App Getting Started] モバイルデバイスで表示](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] モバイルデバイス上](assets/store-assist-orders-small.png) |
+  | Store Assist App — はじめに表示 | Store Assist App — モジュールビュー |
+  |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+  | ![[!DNL Store Assist App Getting Started] モバイルデバイスで表示](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] モバイルデバイス上](assets/store-assist-orders-small.png) |
 
 ## プロビジョニング手順
 

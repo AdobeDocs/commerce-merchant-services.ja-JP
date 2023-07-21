@@ -1,10 +1,11 @@
 ---
 title: Inventory management Source Transfer
 description: 「 [!DNL Store Fulfillment solution] Adobe Commerce Inventory managementと 新しい在庫を設定し、在庫をデフォルトの在庫から移動します。これにより、店舗フルフィルメントソリューションで必要な受け取り機能を有効にするように設定されたソースに割り当てることができます。
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 1. [ソースの一括割り当て](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) をクリックして、すべての製品の新しいソースを追加します。
 
-1. [製品属性の一括更新の完了](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) を追加します。 `Allow Store Pickup` および `Allow Home Delivery` 既存の製品の属性。 ソリューションがインストールされると、属性は最適な *デフォルト* 値。 ただし、一括更新プロセスが完了するまで、これらの属性は既存の製品に適用されません。
+1. [製品属性の一括更新の完了](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) を追加します。 `Allow Store Pickup` および `Allow Home Delivery` 既存の製品の属性。 ソリューションがインストールされると、属性は最適な *デフォルト* 値。 ただし、一括更新コンテンツプロセスを完了するまで、これらの属性は既存の製品に適用されません。
 
 在庫は、選択したソース（小売店の場所または e コマースウェアハウス）から差し引かれます。 e コマース倉庫として使用するソースは、店舗の受取場所と同じ在庫に割り当て、小売場所の前に優先順位付けする必要があります。 詳しくは、 [在庫のソースの優先順位付け](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 

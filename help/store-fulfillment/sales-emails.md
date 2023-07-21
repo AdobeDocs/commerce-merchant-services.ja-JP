@@ -1,10 +1,11 @@
 ---
 title: セールスメールテンプレート
 description: 店舗受取注文の受取プロセス中に、顧客および店舗管理者とのコミュニケーションのためのトランザクション電子メールテンプレートを設定します。
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -312,7 +313,7 @@ ht-degree: 0%
 <tbody><tr>
 <td><strong>注文は商品を出荷して保存する E メール送信者です</strong></td>
 <td>指定した商人の担当者に、在庫が利用可能になるまで商店店で採用できないすべてのオープン注文の集計レポートとして送信されたメール。 </br></br> マーチャントはこのレポートを使用して、店舗間在庫移動または補充を開始および管理できます。 </br></br>この通知は、 [!DNL Ship-to-Store] 機能が有効になっている。
-</br></br>このラベルは、選択した配送業者または使用可能な配送方法のラベルには影響しません。</br></br></td>
+</br></br>このラベルは、選択した配送業者または使用可能な配送方法のラベルには影響しません。</td>
 <td>ストア表示</td>
 <td>いいえ</td>
 </tr>

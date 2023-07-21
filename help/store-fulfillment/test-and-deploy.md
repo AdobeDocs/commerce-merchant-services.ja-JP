@@ -3,8 +3,9 @@ title: ストアのフルフィルメントのテストとデプロイ
 description: テスト計画を作成して、店舗達成機能を検証します。 テストでは、在庫同期 API、取り消された注文のエンドツーエンドのフルフィルメントワークフロー、ストアフルフィルメントアプリのユーザー管理、および顧客チェックインエクスペリエンスをカバーします。
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '2660'
 ht-degree: 0%
@@ -84,7 +85,7 @@ ht-degree: 0%
 <td>リアルタイム同期操作では、5 分以内に詳細がウォルマートGIFに送信されます</td>
 </tr>
 <tr>
-<td><strong>ピックアップ在庫ソース</br><code>Is Synced</code> ステータス</br><code>Is Synced</code></strong></td>
+<td><strong>ピックアップ在庫ソース</br><code>Is Synced</code> ステータス</strong></td>
 <td>更新を既存のピックアップ在庫ソースに保存します。</td>
 <td>操作が成功した後、 <code>Is Synced</code> ソースを管理ページの更新元の列 <code>No</code> から <code>Yes</code>.</td>
 </tr>
@@ -166,7 +167,7 @@ ht-degree: 0%
 </ul>
 </td>
 </tr>
-<td><strong>ピックアップ準備完了</br></br>完全なキャンセル</br>（すべての製品は、0 数量のピッキング済みとして設定されます）</br></strong></td>
+<td><strong>ピックアップ準備完了</br></br>完全なキャンセル</br>（すべての製品は、0 数量のピッキング済みとして設定されます）</strong></td>
 <td>
 <ol>
 <li>注文をします。</li>
@@ -250,7 +251,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>分注済み（分注中）</br></br>部分キャンセル</br>( 一部の製品が分配されている。一部は拒否されます )。</strong>
-</br></td>
+</td>
 <td>
 <ol>
 <li>注文をします。</li>
@@ -469,7 +470,7 @@ Adobe Commerceの製品タイプのテストシナリオでは、顧客が様々
 </tr>
 <tr>
 <td><strong>代替ピックアップ連絡先</br>
-チェックイン</br><strong>
+チェックイン<strong>
 </td>
 <td>
 顧客が店頭受取オプションを使用して注文を送信します。</td>

@@ -1,10 +1,11 @@
 ---
 title: ストアのフルフィルメントの構成の概要
 description: ストアフルフィルメントソリューションが提供する拡張フルフィルメント機能をカスタマイズするために使用できる管理者構成設定の種類と、構成を完了する手順へのリンクについて説明します。
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Configuration
 exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

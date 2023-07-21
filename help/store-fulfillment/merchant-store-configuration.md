@@ -1,12 +1,13 @@
 ---
 title: マーチャントストアの設定
 description: マーチャントストアとしてInventory managementソースを強化しました。
-role: User, Admin
-level: Intermediate
+role: Admin
+level: Experienced
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -94,7 +95,13 @@ Merchant Stores の設定を管理者から管理します。 **[!UICONTROL Stor
 <td>いいえ</td>
 </tr>
 <tr>
-<td><strong>[!UICONTROL Enable Ship From Store]</strong><code>Extension Attribute: [!DNL use_as_shipping_source]</code></td><td></td><td></td><td></td></tr></tbody></table>
+<td><strong>[!UICONTROL Enable Ship From Store]</strong><code></br><code>Extension Attribute: [!DNL use_as_shipping_source]</code></td>
+<td>ソースレベルで出荷元ストア機能を設定します。 詳しくは、[ 一般設定 ](enable-general.md) オプションを参照してください。 [!UICONTROL Enable Ship From Store].</td>
+<td>グローバル</td>
+<td>いいえ</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -106,7 +113,7 @@ Merchant Stores の設定を管理者から管理します。 **[!UICONTROL Stor
 | **[!UICONTROL Enable Ship to Store]**</br>`Extension Attribute: [!DNL allow_ship_to_store]` | 出荷先店舗機能をソースレベルで設定します。 詳しくは、 [一般設定](enable-general.md) オプション **[!UICONTROL Enable Ship To Store]**. | グローバル | いいえ |
 | **[!UICONTROL Enable Ship From Store]**</br>`Extension Attribute: [!DNL use_as_shipping_source]` | ソースレベルで出荷元ストア機能を設定します。 詳しくは、 [一般設定](enable-general.md) オプション [!UICONTROL Enable Ship From Store] | グローバル | いいえ |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## ピックアップの場所の設定
 
