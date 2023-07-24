@@ -3,9 +3,9 @@ title: 支払いオプション
 description: 支払いオプションを設定して、店舗の顧客が利用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 0%
 
 次の項目を設定できます。 [!UICONTROL PayPal Smart Buttons] をクリックします。  詳しくは、 [設定](settings.md#payment-buttons) を参照してください。
 
+PayPal の「 [支払い方法に関するドキュメント](https://developer.paypal.com/docs/checkout/payment-methods/) 各支払い方法が現在どの国で利用できるかを確認する。
+
 ### [!DNL PayPal] ボタン
 
 お客様は PayPal ボタンを使用して、簡単かつ確実にチェックアウトできます。
@@ -80,21 +82,11 @@ PayPal のデビットまたはクレジットカードのボタンは、チェ�
 
 顧客が今すぐ購入し、後で [!DNL Pay Later] 」ボタンをクリックします。
 
-この [!DNL Pay Later] ボタンが製品ページ、ミニカート、買い物かご、チェックアウト表示から表示される。
+この [!DNL Pay Later] ボタンが製品ページ、ミニカート、買い物かご、チェックアウトビューに表示されます。
 
-* **顧客が$30 ～ $600 の製品を選択したとき**、PayPal の下のメッセージ、および [!DNL Pay Later] ボタンを使用すると、 [!DNL Pay in 4] 支払いオプション。 お客様は、 **詳細情報** を参照してください。[!DNL Pay in 4]&quot;オプション _または_ ポップアップの「6 か月の特別な融資を見る」テキストをクリックして、PayPal クレジットオプションについて学び、申し込みます。
-* **顧客が$98.99 を超える製品を選択したとき**、PayPal の下のメッセージ、および [!DNL Pay Later] ボタンをクリックすると、PayPal のクレジット支払いオプションに関する詳細情報が表示されます。 お客様は、 **詳細情報** PayPal クレジットオプションについて学び、申し込むには、 _または_ ポップアップの「Or see Pay in 4」テキストをクリックして、 [!DNL Pay in 4] オプション。
-
-  >[!NOTE]
-  >
-  >上記の金額は変更される場合があります。
+詳しくは、 [PayPal の Pay Later オファードキュメント](https://developer.paypal.com/docs/checkout/pay-later/us/). 以下を使用： **国または地域** 関心のある地域を選択するドロップダウン。
 
 詳しくは、 [設定](settings.md#payment-buttons) 無効にする/有効にする方法を学ぶには [!DNL Pay Later] メッセージ
-
-以下の 2 つの支払いオプションがあります： [!DNL Pay Later] ボタン：
-
-* **4 分の 1 で支払う** — お客様は、最初の頭金支払いの後、（2 週間ごとに）4 回の無利子支払いで注文残高を支払うことができます。 詳しくは、 [4 ドキュメントで支払い](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) を参照してください。
-* **PayPal クレジット** — お客様は 6 か月間、無利子で注文残高を全額払うことができます。 詳しくは、 [PayPal クレジットドキュメント](https://www.paypal.com/us/webapps/mpp/paypal-credit) を参照してください。
 
 ### [!DNL Pay Now] ボタン
 

@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,15 @@ ht-degree: 0%
 * フランス (FR)
 * 英国 (UK)
 
-詳しくは、 [ライフサイクルポリシー](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} そして [[!DNL Payment Services] リリースノート](release-notes.md) ページを参照してください。
+詳しくは、 [ライフサイクルポリシー](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) そして [[!DNL Payment Services] リリースノート](release-notes.md) ページを参照してください。
 
 ### 受け入れ済みクレジットカードと通貨
 
 [!DNL Payment Services] 国の通貨を受け入れる [それが利用可能な](#availability).
 
-詳しくは、 [PayPal の通貨の可用性](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) ドキュメントを参照してください。
+PayPal がサポートする通貨を確認するには、 [サポートされる通貨のドキュメント](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+
+PayPal がサポートする支払い方法を確認するには、 [支払い方法に関するドキュメント](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ## はじめに
 
