@@ -4,7 +4,7 @@ description: Adobe CommerceからAdobe Experience Platform Connector をイン�
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 拡張機能のインストール
 
-Experience Platformコネクタ拡張機能は、 [Adobe市場](https://marketplace.magento.com/magento-experience-platform-connector.html). サーバーのコマンドラインからこの拡張機能をインストールすると、AEM Analytics の AEM as a Adobe Commerceインストールに接続されます。 [サービス](../landing/saas.md). プロセスが完了したら、 **Experience Platformコネクタ** および **Commerce Services コネクタ** 次の場所に表示される： **システム** 下のメニュー **サービス** （コマース内） _管理者_.
+Experience Platformコネクタ拡張機能は、 [AdobeMarketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). サーバーのコマンドラインからこの拡張機能をインストールすると、AEM Analytics の AEM as a Adobe Commerceインストールに接続されます。 [サービス](../landing/saas.md). プロセスが完了したら、 **Experience Platformコネクタ** および **Commerce Services コネクタ** 次の場所に表示される： **システム** 下のメニュー **サービス** （コマース内） _管理者_.
 
 >[!NOTE]
 >
@@ -35,13 +35,13 @@ Experience Platformコネクタ拡張機能は、 [Adobe市場](https://marketpl
    * `module-experience-connector-admin` - Admin UI を更新し、特定のAdobe Commerceインスタンスのデータストリーム ID を選択できるようにしました
    * `module-experience-connector` - `Organization ID` および `datastreamId` （Storefront Events SDK の）
    * `data-services`  — ストアフロントイベントの属性コンテキストを提供します。 例えば、チェックアウトイベントが発生した場合、買い物かごに入った品目数に関する情報と、それらの品目の製品属性データが含まれます。
-   * `services-id` - Adobe Commerceインスタンスをに接続します [Adobe Commerce SaaS](../landing/saas.md) サンドボックスおよび実稼動 API キーとAdobe Experience Platformへの IMS 組織 ID の取得を使用する
+   * `services-id` - Adobe Commerceインスタンスをに接続します。 [Adobe Commerce SaaS](../landing/saas.md) サンドボックスおよび実稼動 API キーとAdobe Experience Platformへの IMS 組織 ID の取得を使用する
 
 1. （オプション）を含めるには [!DNL Live Search] データ（検索イベントを含む）は、 [[!DNL Live Search]](../live-search/install.md) 拡張子。
 
 ### B2B 拡張機能のインストール
 
-B2B マーチャントの場合は、次の拡張機能をインストールして、 [購買依頼リスト](events.md#b2b-events) イベントデータ。
+B2B マーチャントの場合は、次の拡張機能をインストールして以下を含めます。 [購買依頼リスト](events.md#b2b-events) イベントデータ。
 
 をダウンロードします。 `magento/experience-platform-connector-b2b` コマンドラインから次のコマンドを実行して、拡張機能を設定します。
 
@@ -67,7 +67,7 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 1. ルートを開く `composer.json` ファイルと検索 `magento/experience-platform-connector`.
 
-1. 内 `require` 「 」セクションで、次のようにバージョン番号を更新します。
+1. Adobe Analytics の `require` 「 」セクションで、次のようにバージョン番号を更新します。
 
    ```json
    "require": {

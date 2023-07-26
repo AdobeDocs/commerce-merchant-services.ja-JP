@@ -3,7 +3,7 @@ title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 0%
@@ -34,7 +34,7 @@ _2023 年 6 月 10 日_
 
 ![新規](../assets/new.svg)<!-- Issue PAY-4288 --> 現在、商人は [設定 _のみ_ PayPal の支払いボタン](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons) — そして _not_ PayPal クレジットカードの支払いオプションを使用します。 これにより、商人は Venmo や PayPal の支払いボタンを含む様々な支払いオプションを提供し、PayPal のクレジットカード支払いオプションの代わりに既存のクレジットカードプロバイダを使用することができます。
 
-![新規](../assets/new.svg)<!-- Issue PAY-4050 --> 追加された [データビジュアライゼーション表示](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view)（注文の支払ステータスレポートに対して「支払サービスホーム」に表示されます）
+![新規](../assets/new.svg)<!-- Issue PAY-4050 --> が追加されました。 [データビジュアライゼーション表示](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view)（注文の支払ステータスレポートに対して「支払サービスホーム」に表示されます）
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-4486--> 以前は、PayPal の PayLater ボタンは英国の商人のチェックアウトには表示されませんでした。 その問題は解決しました。
 
@@ -42,11 +42,11 @@ _2023 年 6 月 10 日_
 
 _2023 年 1 月 26 日_
 
-![既知の問題](../assets/bug.svg)<!-- Issue PAY-4102 --> 支払いサービスの新規インストールでコマースサービスを構成できず、支払いサービスが操作不可になっています。 この問題を修正するには、Payment Services 拡張機能をバージョン 1.5.3 に更新してください。
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-4102 --> 支払いサービスの新規インストールでコマースサービスを構成できず、支払いサービスが操作できなくなりました。 この問題を修正するには、Payment Services 拡張機能をバージョン 1.5.3 に更新してください。
 
 _2022 年 9 月 13 日_
 
-![新規](../assets/new.svg)<!-- Issue PAY-3705 --> この `increment_id` は、外部 ERP システムでの支払いの調整に使用できるようになりました。 これは、 [`custom_id` _および_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system)。PayPal Webhook と、支払のマーチャント活動の詳細の両方に表示されます。
+![新規](../assets/new.svg)<!-- Issue PAY-3705 --> The `increment_id` は、外部 ERP システムでの支払いの調整に使用できるようになりました。 これは、 [`custom_id` _および_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system)。PayPal Webhook と、支払のマーチャント活動の詳細の両方に表示されます。
 
 _2022 年 8 月 31 日_
 
@@ -76,13 +76,13 @@ _2023 年 6 月 10 日_
 
 ![新規](../assets/new.svg)<!-- Issue xxx --> Adobe Commerce 2.4.7-beta1 のサポートを追加しました。
 
-![新規](../assets/new.svg)<!-- Issue xxx --> 追加済み [次の国および関連通貨での使用可能性](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability):オーストラリア、フランス、英国。
+![新規](../assets/new.svg)<!-- Issue xxx --> 追加済み [次の国および関連通貨での使用可能性](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability)：オーストラリア、フランス、英国。
 
 ![新規](../assets/new.svg)<!-- Issue PAY-4296 --> 追加済み [管理者ロール用のリソースの拡張](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) 管理者ユーザーが顧客の注文を作成および管理でき、セールスメニューの支払いサービスを表示できるようにする。
 
 ![新規](../assets/new.svg)<!-- Issue PAY-4236 --> 追加済み [チェックアウト時にエラーが発生した注文を自動無効化](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
 
-![新規](../assets/new.svg)<!-- Issue PAY-4183 --> 作成された機能： [クレジット/デビットカードの支払いオプションボタンを表示](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) をチェックアウトページに追加します。
+![新規](../assets/new.svg)<!-- Issue PAY-4183 --> 次の機能を作成しました： [クレジット/デビットカードの支払いオプションボタンを表示](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) を「チェックアウト」ページに追加します。
 
 ## v2.0.0
 
@@ -90,7 +90,7 @@ _2023 年 3 月 11 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg)<!-- Issue PAY-4152 --> PHP 8.2 およびAdobe Commerce 2.4.6 のサポートを追加しました。PHP 7.x とは互換性がありません。
+![新規](../assets/new.svg)<!-- Issue PAY-4152 --> PHP 8.2 およびAdobe Commerce 2.4.6 のサポートを追加しました。PHP 7.x との互換性はありません。
 
 ## v1.6.1
 
@@ -102,7 +102,7 @@ _2023 年 3 月 11 日_
 
 ![修正点](../assets/fix.svg)<!-- Issue PAY-4205 --> 指定した配送先住所の州が、チェックアウト時に [PayPal オプション](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). 現在は、顧客は、マーチャントの税設定でデフォルトとして設定されたもの以外の州に注文を発送することができます。
 
-![修正点](../assets/fix.svg)<!-- Issue PAY-4202 --> お客様がカード保管機能を使用して、店舗の購入を完了したり、保管された支払い方法を削除したりできない問題を修正しました [の使用 `Authorize and Capture` 支払手続](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). 以前は、お客様が Vault に保存されたクレジットカードの使用または変更を試みると、「Provider Vault ID not found」（プロバイダー Vault ID が見つかりません）というエラーが表示されていました。
+![修正点](../assets/fix.svg)<!-- Issue PAY-4202 --> お客様がカード保管機能を使用して、店舗の購入を完了したり、保管された支払い方法を削除したりできない問題を修正しました。 [の使用 `Authorize and Capture` 支払手続](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). 以前は、お客様が Vault に保存されたクレジットカードの使用または変更を試みると、「Provider Vault ID not found」（プロバイダー Vault ID が見つかりません）というエラーが表示されていました。
 
 ## v1.6.0
 
@@ -138,7 +138,7 @@ _2022 年 12 月 22 日_
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 支払い方法が拒否された場合の支払いサービスの請求を改善しました。
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services で、 [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} チェックアウトページのカスタムテンプレート。 以前は、ミニカートがボタンを断続的に表示していました。
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services で、PayPal のスマートボタンが [Fire Checkout&#39;s](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} チェックアウトページのカスタムテンプレート。 以前は、ミニカートがボタンを断続的に表示していました。
 
 ## v1.5.1
 
@@ -158,7 +158,7 @@ _2022 年 11 月 19 日_
 
 ![新規](../assets/new.svg)<!-- Issue PAY-3880 --> 買い物客は今、 [チェックアウト時にクレジットカード情報を保管（保存）](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 同じ商人アカウント内の同じ店舗または別の店舗に対して後での購入で使用する
 
-![新規](../assets/new.svg)<!-- Issue PAY-3950 --> 商人が [即時購入コマース機能](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) 買い物客が ( [入金済みクレジットカード情報](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) をクリックして、チェックアウトを迅速に行います。
+![新規](../assets/new.svg)<!-- Issue PAY-3950 --> 商人は、 [即時購入コマース機能](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) 買い物客が ( [入金済みのクレジットカード情報](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) をクリックして、チェックアウトを迅速に行います。
 
 ## v1.4.1
 
@@ -174,11 +174,11 @@ _2022 年 9 月 31 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg)<!-- Issue PAY-784 --> 支払いサービスには、 [複数の PayPal ビジネスアカウントを使用する](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). これにより、マーチャントは異なる通貨を使用して複数の国で店舗を運営したり、ビジネスの一部にAdobe Commerceを使用したりできます。
+![新規](../assets/new.svg)<!-- Issue PAY-784 --> 支払いサービスには、次のようなマーチャントアカウントを設定する機能が含まれるようになりました。 [複数の PayPal ビジネスアカウントを使用する](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). これにより、マーチャントは異なる通貨を使用して複数の国で店舗を運営したり、ビジネスの一部にAdobe Commerceを使用したりできます。
 
-![新規](../assets/new.svg)<!-- Issue PAY-3231 --> 商人は [追加 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 顧客取引銀行明細書に表示され、ブランド、店舗、または製品ラインを説明する web サイトまたは個々の店舗ビュー構成。
+![新規](../assets/new.svg)<!-- Issue PAY-3231 --> 商人は次のことができます。 [を追加します。 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 顧客取引銀行明細書に表示され、ブランド、店舗、または製品ラインを説明する web サイトまたは個々の店舗ビュー構成。
 
-![新規](../assets/new.svg)<!-- Issue PAY-3707 --> [クレジットカードフィールドと PayPal スマートボタンの有効化/無効化](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) をクリックします。
+![新規](../assets/new.svg)<!-- Issue PAY-3707 --> [クレジットカードフィールドと PayPal スマートボタンの有効化/無効化](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) をクリックして、支払いサービス設定のチェックアウトを行います。
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3546 --> 顧客が **[!UICONTROL Edit cart]**&#x200B;をクリックした場合、ページは買い物かごページにリダイレクトされ、空の買い物かごを表示する代わりに、更新された項目が表示されます。
 
@@ -196,7 +196,7 @@ _2022 年 8 月 10 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg)<!-- Issue PAY-XX --> GA リリース —[!DNL Payment Services] 今 [～と互換性がある [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 ～ 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+![新規](../assets/new.svg)<!-- Issue PAY-XX --> GA リリース —[!DNL Payment Services] は今 [～と互換性がある [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 ～ 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay は、モバイルおよびデスクトップ上の Safari ブラウザー v15.5 と互換性があるようになりました。
 
@@ -224,13 +224,13 @@ _2022 年 3 月 31 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg)<!-- Issue PAY-2127 --> GA リリース —[!DNL Payment Services] 今 [～と互換性がある [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 ～ 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
+![新規](../assets/new.svg)<!-- Issue PAY-2127 --> GA リリース —[!DNL Payment Services] は今 [～と互換性がある [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 ～ 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
-![新規](../assets/new.svg)<!-- Issue PAY-2682 --> この [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は現在、カナダの商人が利用できます。 商人は次のいずれかで支払の構成を表示できます： [フランス語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) または [英語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
+![新規](../assets/new.svg)<!-- Issue PAY-2682 --> The [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は現在、カナダの商人が利用できます。 商人は次のいずれかで支払の構成を表示できます： [フランス語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) または [英語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
 
 ![新規](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] サポート [カナダドル (CAD)](overview.md#accepted-credit-cards-and-currencies) クレジットカードと PayPal トランザクションの場合。
 
-![新規](../assets/new.svg)<!-- Issue PAY-2680 --> 商人は [オンボード [!DNL Payment Services]](onboard.md) 英語またはフランス語の言語の拡張。
+![新規](../assets/new.svg)<!-- Issue PAY-2680 --> 商人は次のことができます。 [オンボード [!DNL Payment Services]](onboard.md) 英語またはフランス語の言語の拡張。
 
 ![新規](../assets/new.svg)<!-- Issue PAY-2678 --> マーチャントは、現在、 [注文の支払いステータス](order-payment-status.md) および [ペイアウトレポート](payouts.md)、カナダドル (CAD)。
 
@@ -240,9 +240,9 @@ _2022 年 3 月 31 日_
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-2742 --> ストア表示レベルで、Venmo などの利用可能な支払い方法を有効または無効にできるようになりました。 以前は、Web サイトごとに支払い方法を設定することができました。
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-2277 --> 選択的に [個々の PayPal スマートボタンの有効化または無効化](settings.md#payment-buttons).
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-2277 --> 次に、選択的に [個々の PayPal スマートボタンの有効化または無効化](settings.md#payment-buttons).
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-2561 --> 以前に削除した製品は、 _注文を確認_ ページ。
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-2561 --> 以前に削除した製品は、 _注文を確認_ ページに貼り付けます。
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2842 --> クレジットカードトランザクションのテスト [PayPal で失敗する場合があります](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) サンドボックス環境で支払いを処理する場合。
 
@@ -252,17 +252,17 @@ _2021 年 11 月 30 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg)<!-- Issue PAY-2127 --> GA リリース —[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) は現在、 [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 から 2.4.3-p1。
+![新規](../assets/new.svg)<!-- Issue PAY-2127 --> GA リリース —[[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html) は現在、 [!DNL Adobe Commerce] および [!DNL Magento Open Source] バージョン 2.4.0 から 2.4.3-p1。
 
-![新規](../assets/new.svg)<!-- Issue PAY-124 --> この [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 次のどちらかに対してインストールできます。 [[!DNL Adobe Commerce] クラウドインフラストラクチャ](install.md#adobe-commerce-on-cloud-infrastructure) または [オンプレミス](install.md#on-premises) インスタンス。 これらのメソッドでは、コマンドラインインターフェイスを使用する必要があります。
+![新規](../assets/new.svg)<!-- Issue PAY-124 --> The [!DNL Payment Services] 拡張 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 次のどちらかに対してインストールできます。 [[!DNL Adobe Commerce] クラウドインフラストラクチャ](install.md#adobe-commerce-on-cloud-infrastructure) または [オンプレミス](install.md#on-premises) インスタンス。 これらのメソッドでは、コマンドラインインターフェイスを使用する必要があります。
 
 ![新規](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] を支持する [サンドボックスアカウント](sandbox.md) これにより、マーチャントは拡張機能をテストモードで評価できます。
 
-![新規](../assets/new.svg)<!-- Issue PAY-666 --> 商人は [支払サービスの設定](settings.md) 基本的な支払い行動を伴う拡張（利用など） [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) サンドボックス環境または実稼動環境の切り替え
+![新規](../assets/new.svg)<!-- Issue PAY-666 --> 商人は次のことができます。 [支払サービスの設定](settings.md) 基本的な支払い行動を伴う拡張（利用など） [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) サンドボックス環境または実稼動環境の切り替え。
 
-![新規](../assets/new.svg)<!-- Issue PAY-780 --> 買い物客は [!DNL Payment Services] または経由 [手動オーダー作成](create-order.md).
+![新規](../assets/new.svg)<!-- Issue PAY-780 --> 買い物客は、 [!DNL Payment Services] または経由 [手動オーダー作成](create-order.md).
 
-![新規](../assets/new.svg)<!-- Issue PAY-1856 --> 包括的なレポート（を使用） [注文の支払いステータス](order-payment-status.md) および [ペイアウトレポート](payouts.md)、で使用可能 [!DNL Payment Services] 店舗の注文と関連する支払いを明確に表示するために。
+![新規](../assets/new.svg)<!-- Issue PAY-1856 --> 包括的なレポート（を使用） [注文の支払いステータス](order-payment-status.md) および [ペイアウトレポート](payouts.md)、で使用できます。 [!DNL Payment Services] 店舗の注文と関連する支払いを明確に表示するために。
 
 ![新規](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] は、あらゆる商人に合わせた、総処理量に基づく柔軟な階層型価格設定をサポートします。
 
@@ -272,4 +272,4 @@ _2021 年 11 月 30 日_
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] レポート [すぐに同期できない](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 
-![既知の問題](../assets/bug.svg)<!-- Issue PAY-2475 --> お使いの [PayPal サンドボックスアカウント](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) 対象 [!DNL Payment Services] は、オンボーディング中にそのアカウントを作成した場合は検証できません。
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-2475 --> お使いの [PayPal サンドボックスアカウント](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) 対象： [!DNL Payment Services] は、オンボーディング中にそのアカウントを作成した場合は検証できません。

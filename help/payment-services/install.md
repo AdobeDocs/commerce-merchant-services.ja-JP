@@ -4,7 +4,7 @@ description: Payments Services 拡張機能をインストールします。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 30eae4c7d81ab6c2a7f04f4ff22c25e86934380a
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 まず、から拡張機能をダウンロードする必要があります。 [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) インストールする前に
 
-1. 次に移動： [Commerce Marketplaceの Payment Services 拡張](https://marketplace.magento.com/magento-payment-services.html).
-1. エディションとバージョンを選択するには、切り替えます。 **[!UICONTROL Edition]** および **[!UICONTROL Your store version]** を選択します。
+1. 次に移動： [Commerce Marketplaceの Payment Services 拡張機能](https://commercemarketplace.adobe.com/magento-payment-services.html).
+1. エディションとバージョンを選択するには、切り替えます。 **[!UICONTROL Edition]** および **[!UICONTROL Your store version]** を任意の選択に変更します。
 1. クリック **[!UICONTROL Add to Cart]**.
 1. チェックアウトを完了し、「 **[!UICONTROL Place Order]**.
 1. 注文の確認と詳細については、Marketplace のダウンロードに関連する電子メールを確認してください。
 
 ## 拡張機能のインストール
 
-次をインストールできます： [!DNL Payment Services] 両方の [!DNL Adobe Commerce] ご使用のコマースアカウントにリンクされているクラウドインフラストラクチャおよびオンプレミスインスタンス上 [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 登録プロセスで提供されます。 [!DNL Magento Open Source] お客様はオンプレミスの手順を使用します。
+次をインストールできます： [!DNL Payment Services] 両方の拡張 [!DNL Adobe Commerce] ご使用のコマースアカウントにリンクされているクラウドインフラストラクチャおよびオンプレミスインスタンス上 [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 登録プロセスで提供されます。 [!DNL Magento Open Source] お客様はオンプレミスの手順を使用します。
 
 Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に `auth.json` ファイル。
 
@@ -41,7 +41,7 @@ Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に 
 
 このメソッドは、 [!DNL Payment Services] Commerce Cloudインスタンスの拡張。
 
-1. の更新 `composer.json` ファイル：
+1. を更新します。 `composer.json` ファイル：
 
    ```bash
    composer require magento/payment-services --no-update
@@ -53,7 +53,7 @@ Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に 
    composer update magento/payment-services --with-dependencies
    ```
 
-   以下を使用： `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
+   以下を使用します。 `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
 
 1. 変更をコミットしてプッシュします。
 
@@ -73,7 +73,7 @@ Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に 
    composer update magento/payment-services --with-dependencies
    ```
 
-   以下を使用： `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
+   以下を使用します。 `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
 
 1. インスタンスをアップグレードします。
 
@@ -100,13 +100,13 @@ Composer は、 [!DNL Adobe Commerce]または、Composer のキーが以前に 
    composer update magento/payment-services --with-dependencies
    ```
 
-   以下を使用： `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
+   以下を使用します。 `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
 
 1. 変更をコミットしてプッシュします。
 
 ## トラブルシューティング
 
-をインストールしようとすると、エラーが発生する場合があります [!DNL Payment Services] 拡張子。 次のトラブルシューティング方法を使用して、エラーを解決します。
+をインストールしようとすると、エラーが発生する場合があります。 [!DNL Payment Services] 拡張子。 次のトラブルシューティング方法を使用して、エラーを解決します。
 
 ### コンポーザーのキーが正しくありません
 
@@ -142,7 +142,7 @@ PHP のメモリが不足していることを示す次のエラーが表示さ�
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[メモリ制限を引き上げる](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) ( `php.ini`.
+[メモリ制限を引き上げる](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) の環境での PHP 用 `php.ini`.
 
 または、次のコマンドを使用してメモリ制限を指定できます。 `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 
