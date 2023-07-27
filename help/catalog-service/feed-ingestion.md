@@ -1,7 +1,7 @@
 ---
 title: フィード取り込みサービス
 description: Adobe Commerceのフィード取り込みサービスについて説明します。
-source-git-commit: b484429a529acfa95f70c5a55b6a5fcdedc887b3
+source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -42,4 +42,4 @@ Adobe Commerceの設定に応じて、データストレージとデータフロ
 * 大規模で複雑なカタログを使用するお客様
 * カタログデータの管理にAdobe Commerce管理者を使用していないお客様は、ERP またはサードパーティ製システムを使用してカタログデータを管理します。
 
-ベータ版プログラムへの参加を希望される場合は、XXXXX@adobe.comのチームにお問い合わせください。
+ベータ版プログラムへの参加を希望される場合は、sagonzal@adobe.comのチームにお問い合わせください。
