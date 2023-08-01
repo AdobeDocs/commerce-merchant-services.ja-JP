@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,17 @@ ht-degree: 0%
 
 ### サポートされるプラットフォーム
 
-- Adobe Commerce on cloud infrastructure:2.4.4 以上
-- Adobe Commerceオンプレミス：2.4.4 以上
+- Adobe Commerce on cloud infrastructure: 2.4.4 以降
+- オンプレミスのAdobe Commerce: 2.4.4 以降
 
 ## 環境
 
 カタログサービスには、オンボーディングで使用できる環境が 2 つあります。
 
-- サンドボックス (https://catalog-service-sandbox.adobe.io/graphql) — 運用開始前のテストおよび検証に使用
+- サンドボックス (https://catalog-service-sandbox.adobe.io/graphql) — 運用開始前のテストおよび検証に使用されます。
 - 実稼動 (https://catalog-service.adobe.io/graphql)-コマースマーチャントや Web サイトのライブトラフィックに使用
+
+読み込みテストは、サンドボックス環境でのみ実行する必要があります。 次の操作をお勧めします。 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) が負荷テスト時に開かれるので、サービスチームは追加のサーバートラフィックを予測できます。
 
 ## インストールと設定
 
@@ -81,7 +83,7 @@ composer update
 
 このコマンドは、すべての依存関係を更新します。
 
-1. 変更をコミットしてプッシュ `composer.json` および `composer.lock`.
+1. 変更をコミットしてプッシュする `composer.json` および `composer.lock`.
 
 #### オンプレミス
 
@@ -125,7 +127,7 @@ SaaS 設定が完了したら、 [カタログ同期](https://experienceleague.a
 
 - cron ジョブが実行中であることを確認します。
 - インデクサーが実行中であることを確認します。
-- 次を確認します。 `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、および `Product Variant Feed` インデクサーは「スケジュールに従って更新」に設定されます。
+- 次の点を確認します。 `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、および `Product Variant Feed` インデクサーは「スケジュールに従って更新」に設定されます。
 
 カタログのサイズによっては、初期同期に数分から数時間かかる場合があります。 初回同期後、カタログは、サービスを最新の状態に保つために、コマースサーバーからコマースサービスに製品データを継続的に書き出します。
 
@@ -137,10 +139,10 @@ API キーを取得するには、管理の「 Commerce Service Connector 」領
 
 詳しくは、 [GraphQLドキュメント](https://developer.adobe.com/commerce/webapi/graphql/) を参照して、API リクエストの生成に必要なヘッダーをクエリして送信する方法を確認してください。
 
-ファイアウォールを介したカタログサービスを許可するには、 `commerce.adobe.io` 許可リスト
+ファイアウォールを介したカタログサービスを許可するには、 `commerce.adobe.io` 許可リストに
 
 ## カタログサービスと API メッシュ
 
-この [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 開発者は、AdobeI/O を使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
+The [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 開発者は、AdobeI/O を使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
 
 詳しくは、  [カタログサービスと API メッシュ](mesh.md) インストールおよび設定の詳細に関するトピック。
