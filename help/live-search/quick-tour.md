@@ -1,21 +1,21 @@
 ---
 title: "クイックツアー"
-description: 「ちょっと見てみましょう [!DNL Live Search] 店の前から」
+description: 「～をちょっと見てみましょう。 [!DNL Live Search] 店の前から」
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # クイックツアー
 
-スピード、関連性、使いやすさに重点を置いて [!DNL Live Search] 買い物客と商人の両方にとって、大きな変革となる。 続いて～のクイックツアーを見る [!DNL Live Search] 店の前から
+スピード、関連性、使いやすさに重点を置いて [!DNL Live Search] 買い物客と商人の両方にとって、大きな変革をもたらすものです。 続いて～のクイックツアーを見る [!DNL Live Search] 店の前から
 
 ## 入力に応じて検索
 
-[!DNL Live Search] は、提案された製品と、上位の検索結果のサムネール画像を使用して、 [ポップオーバー](storefront-popover.md) 買い物客が [検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ボックス この [製品の詳細](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) 買い物客が提案または注目すべき製品をクリックすると、ページが表示されます。 A _すべて表示_ リンクは、ポップオーバーのフッターに、検索結果ページを表示します。
+[!DNL Live Search] は、提案された製品と、上位の検索結果のサムネール画像を使用して、 [ポップオーバー](storefront-popover.md) 買い物客が [検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ボックス。 The [製品の詳細](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) 買い物客が提案または注目すべき製品をクリックすると、ページが表示されます。 A _すべて表示_ リンクは、ポップオーバーのフッターに、検索結果ページを表示します。
 
 [!DNL Live Search] は、2 文字以上のクエリに対する「入力時に検索」の結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 クエリの文字数は設定できません。 ポップオーバーには、次のフィールドが含まれます。 `name`, `sku`、および `category_ids`.
 
@@ -29,7 +29,9 @@ ht-degree: 0%
 
 ## ファセットを使用したフィルター済み検索
 
-フィルター検索では、複数の属性値のディメンションが使用されます。 [ファセット](facets.md)、を検索条件として使用します。 フィルターの選択はマーチャントが定義し、返される製品に応じて変更します。最も一般的に使用されるファセットはリストの上部に固定されています。
+フィルター検索では、複数の属性値のディメンションが使用されます。または、 [ファセット](facets.md)、を検索条件として使用します。 フィルターの選択はマーチャントが定義し、返される製品に応じて変更します。最も一般的に使用されるファセットはリストの上部に固定されています。
+
+URL パラメーターとしてファセットを使用：`http://yourwebsite.com?color=red`およびライブ検索は、これらの属性値に基づいて結果をフィルタリングします。
 
 ## シノニム
 

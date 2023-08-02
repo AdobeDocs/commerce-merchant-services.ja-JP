@@ -2,9 +2,9 @@
 title: "ファセット"
 description: "[!DNL Live Search] ファセットでは、複数の属性値のディメンションを検索条件として使用します。"
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 6d4317df4f921bdc57faa4a7fbb86fc3a1d9e9b2
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 ![フィルター済みの検索結果](assets/storefront-search-results-run.png)
 
+定義されたファセットを URL パラメーターとして使用でき、結果は次のパラメーター値に基づいてフィルタリングされます。 `http://yourstore.com?brand=acme&color=red`.
+
 ## Faceting の要件
 
 ファセット設定のカテゴリと製品属性の要件は、レイヤー化されたナビゲーションで使用されるフィルタリング可能な属性と似ています。 各属性のストアフロントプロパティは、に設定する必要があります。 `filterable (with results)`.
 
-[!DNL Live Search] は以下をサポートします。
+[!DNL Live Search] は、以下をサポートします。
 
 * ファセットとして設定された 100 個の属性
 * 50 個の並べ替え可能な属性
@@ -34,7 +36,7 @@ ht-degree: 0%
 
 ## デフォルトの属性値
 
-次の製品属性には、 [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) が [!DNL Live Search] デフォルトで有効になっています。
+次の製品属性には、 [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) は、 [!DNL Live Search] デフォルトで有効になっています。
 
 | プロパティ | Storefront プロパティ | 属性 |
 |---|---|---|
@@ -44,7 +46,7 @@ ht-degree: 0%
 
 ## システム以外のデフォルトの属性プロパティ
 
-次の表に、Luma サンプルデータに固有のプロパティを含む、非システム属性のデフォルトの検索およびフィルタリング可能なプロパティを示します。 の設定 *検索で使用* 属性プロパティを `Yes` 属性を [!DNL Live Search] そしてネイティブのAdobe Commerce
+次の表に、Luma サンプルデータに固有のプロパティを含む、非システム属性のデフォルトの検索およびフィルタリング可能なプロパティを示します。 の設定 *検索で使用* 属性プロパティを `Yes` を指定すると、属性は [!DNL Live Search] そしてネイティブAdobe Commerce
 
 | 属性コード | 検索可能 | レイヤーナビゲーションで使用 |
 |--- |--- |--- |
@@ -78,4 +80,4 @@ ht-degree: 0%
 | ステータス | はい | いいえ |
 | tax_class_id | はい | いいえ |
 | url_key | はい | いいえ |
-| 重み付け | はい | いいえ |
+| 重み | はい | いいえ |
