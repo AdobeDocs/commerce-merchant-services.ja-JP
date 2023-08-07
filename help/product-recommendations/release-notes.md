@@ -3,16 +3,16 @@ title: '''[!DNL Product Recommendations] リリースノート`'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 91ad3b5f1fb9248685fc67071a7191dfbf6c2472
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
 
 # [!DNL Product Recommendations] リリースノート
 
-リリースノートには、以下の更新が含まれています [!DNL Product Recommendations] モジュール：
+リリースノートには、以下の更新が含まれています。 [!DNL Product Recommendations] モジュール：
 
 * [!DNL Product Recommendations] メタパッケージ： `magento/product-recommendations`
 * でのページビルダーのサポート [!DNL Product Recommendations] （オプション）モジュール： `magento/module-page-builder-product-recommendations`
@@ -27,7 +27,11 @@ ht-degree: 0%
 
 開発者向けドキュメントを参照してください。 [製品の互換性の詳細](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
-## 現在のメジャーバージョン
+## ホストされるサービスの更新
+
+これらのノートでは、バージョン管理されたリリース以外で公開された更新や、ホストされたサービスの改善について説明します。
+
++++ホストされたサービスの更新
 
 _2023 年 7 月 19 日_
 
@@ -36,6 +40,10 @@ _2023 年 7 月 19 日_
 _2023 年 4 月 26 日_
 
 ![新規](../assets/new.svg) 製品Recommendationsのお客様は、 [SaaS 価格のインデックス作成](../price-index/index.md).
+
++++
+
+## 現在のメジャーバージョン
 
 ### magento/product-recommendations の 5.0.0
 
@@ -46,7 +54,7 @@ _2023 年 4 月 26 日_
 
 #### 既知の制限事項
 
-* この `websiteCode` 値にアンダースコア (_) が含まれる場合、誤って値が返されます。
+* The `websiteCode` 値にアンダースコア (_) が含まれる場合、誤って値が返されます。
 
 ### 以前のバージョン
 
@@ -67,7 +75,7 @@ _2023 年 4 月 26 日_
 
 #### 既知の制限事項
 
-* この `websiteCode` 値にアンダースコア (_) が含まれる場合、誤って値が返されます。
+* The `websiteCode` 値にアンダースコア (_) が含まれる場合、誤って値が返されます。
 
 ### magento/product-recommendations の 3.3.7
 
@@ -80,7 +88,7 @@ _2023 年 4 月 26 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg) 最適化済み [!DNL Product Recommendations] 依存関係を明示的にリストしてメタパッケージ化
+![新規](../assets/new.svg) 最適化済み [!DNL Product Recommendations] 依存関係を明示的にリストしてメタパッケージ化する
 
 ### magento/product-recommendations の 3.3.5
 
@@ -93,10 +101,10 @@ _2023 年 4 月 26 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg) 新規追加 [レコメンデーションタイプ](type.md):コンバージョン（買い物かごへの表示）、コンバージョン（購入への表示）、最近表示。 これらの新しいレコメンデーションタイプは、 `magento/product-recommendations` モジュール 3.2.2 以降。
+![新規](../assets/new.svg) 新規追加 [レコメンデーションタイプ](type.md)：コンバージョン（買い物かごへの表示）、コンバージョン（購入への表示）、最近表示。 これらの新しいレコメンデーションタイプは、 `magento/product-recommendations` モジュール 3.2.2 以降。
 ![修正点](../assets/fix.svg) Fastly の Web アプリケーションファイアウォール (WAF) が Cookie を誤ってブロックしていた問題を修正しました。
 ![修正点](../assets/fix.svg) デフォルト以外のストア表示に割り当てられた製品が _Recommendations Product Preview_ パネルを使用して特定のストア表示のレコメンデーションを作成する
-![修正点](../assets/fix.svg) ページビルダーの特定のレコメンデーション単位名が、ストアフロントにレコメンデーション単位を表示できない問題を修正しました
+![修正点](../assets/fix.svg) ページビルダーの特定のレコメンデーション単位名が、ストアフロントにレコメンデーション単位を表示できない問題を修正しました。
 
 ### magento/product-recommendations の 3.3.2
 
@@ -108,7 +116,7 @@ _2023 年 4 月 26 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg) B2B 顧客グループの価格設定に対するサポートが追加されました。 次の場合、 [価格フィルター](filters.md) レコメンデーション・ユニットで、ログインした B2B 顧客には、表示される製品の顧客グループの価格設定が表示されます。
+![新規](../assets/new.svg) B2B 顧客グループの価格設定に対するサポートが追加されました。 次の場合に、 [価格フィルター](filters.md) レコメンデーション・ユニットで、ログインした B2B 顧客には、表示される製品の顧客グループの価格設定が表示されます。
 
 ### magento/product-recommendations の 3.3.0
 
@@ -176,7 +184,7 @@ _2023 年 4 月 26 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/new.svg) **（ベータ版）** 新しい [視覚的類似性](type.md#visualsim) レコメンデーションタイプ。
+![新規](../assets/new.svg) **（ベータ版）** 新規のサポートを含む [視覚的類似性](type.md#visualsim) レコメンデーションタイプ。
 
 ### magento/module-visual-product-recommendations の 1.0.0
 
@@ -201,7 +209,7 @@ _2023 年 4 月 26 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![修正点](../assets/fix.svg) ストアフロントテンプレートでのシンボルの実装を改善しました
+![修正点](../assets/fix.svg) ストアフロントテンプレートでのシンボルの実装を改善しました。
 
 ### Page Builder の magento/module-page-builder-product-recommendations の 1.0.4
 
@@ -222,7 +230,7 @@ _2023 年 4 月 26 日_
 
 これはメジャーバージョンのリリースです。 [編集](install-configure.md#update) プロジェクトのルート composer.json ファイル。
 
-![新規](../assets/new.svg) 取得 [!DNL Product Recommendations] 代替の SaaS データスペースから これにより、実稼動以外の他の環境で、お使いの製品環境で計算された製品レコメンデーションを使用できます。 [SaaS データスペースの切り替え](settings.md) この機能について詳しく説明します。
+![新規](../assets/new.svg) 取得 [!DNL Product Recommendations] 代替の SaaS データスペースから。 これにより、実稼動以外の他の環境で、お使いの製品環境で計算された製品レコメンデーションを使用できます。 [SaaS データスペースの切り替え](settings.md) この機能について詳しく説明します。
 
 ![修正点](../assets/fix.svg) uBlock Origin を使用する買い物客のチェックアウトが禁止されていた問題を修正しました。
 ![修正点](../assets/fix.svg) 買い物かごへの不要な追加イベントを送信する際の問題を修正しました。
