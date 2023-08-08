@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] リリースノート`'
 description: 次の最新のリリース情報： [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
+source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,10 @@ _2023 年 8 月 8 日_
 ### 更新
 
 * 高度なデータ取得をサポートするために、カタログサービスモジュールがメタパッケージに追加されました。
+
+### 修正点
+
+* The **マイアカウント** 製品リストページウィジェットを使用する際に、ページナビゲーションが消えなくなりました。
 
 マーチャントは [!DNL Live Search] これらの機能にアクセスするには、拡張機能バージョン 3.0.2 以降を参照してください。
 
