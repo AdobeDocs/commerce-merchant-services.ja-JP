@@ -5,9 +5,9 @@ breadcrumb-title: Adobe Commerce用Adobe Experience Platform Connector
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 91db0176b5ecf09ac403e6e91a4b4513dfb06ea0
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 0%
    - [Experience PlatformConnector のインストール](install.md)
    - [Experience Platformコネクタの設定](connect-data.md)
    - [XDM スキーマへのフィールドグループの追加](update-xdm.md)
-- データキャプチャ {#event-forwarding}
+   - [Adobe Experience Platform Mobile SDK の Commerce との統合](mobile-sdk-epc.md)
+- データのキャプチャ {#event-forwarding}
    - [イベント](events.md)
    - [カスタムイベント](custom-events.md)
    - [Adobe Experience Platformタグを使用](using-tags.md)
