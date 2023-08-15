@@ -3,9 +3,9 @@ title: 支払いオプション
 description: 支払いオプションを設定して、店舗の顧客が利用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
+source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -19,10 +19,10 @@ ht-degree: 0%
 
 支払い方法ごとに、チェックアウトプロセスの場所に応じて異なる行動があります。
 
-* 製品ページ — 品目の製品ページ
+* 「製品」ページ — 品目の製品ページ
 * 「ミニカート」(Mini cart) — 製品がカートに追加されたときに、カートアイコンをクリックすると使用できます。
 * 買い物かご — クリックで利用可能 _買い物かごの表示と編集_ ミニカートから
-* 「チェックアウト」(Checkout) ビュー — クリック時に使用可能 _チェックアウトに進む_ ミニカートまたは買い物かごから
+* 「チェックアウト」(Checkout) ビュー — クリック時に使用可能 _チェックアウトに進みます。_ ミニカートまたは買い物かごから
 
 >[!IMPORTANT]
 >
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 有効にする [クレジットカードの保管](#vaulting) 店舗で買い物客が後で迅速なチェックアウトを行うために、クレジットカード情報を逃がす（保存する）ことを許可するため。
 
-次の項目を設定できます。 [!UICONTROL Credit Card Fields] をクリックします。 詳しくは、 [設定](settings.md#credit-card-fields) を参照してください。
+次の項目を設定できます。 [!UICONTROL Credit Card Fields] （ストア設定または支払いサービスホーム）を参照してください。 詳しくは、 [設定](settings.md#credit-card-fields) を参照してください。
 
 また、クレジットカードフィールドのレイアウト、幅、高さ、外側のスタイルを変更することもできます。 詳しくは、 [PayPal ドキュメント](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) を参照してください。
 
@@ -44,31 +44,31 @@ ht-degree: 0%
 
 ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
 
-次の項目を設定できます。 [!UICONTROL PayPal Smart Buttons] をクリックします。  詳しくは、 [設定](settings.md#payment-buttons) を参照してください。
+次の項目を設定できます。 [!UICONTROL PayPal Smart Buttons] （ストア設定または支払いサービスホーム）を参照してください。  詳しくは、 [設定](settings.md#payment-buttons) を参照してください。
 
 PayPal の「 [支払い方法に関するドキュメント](https://developer.paypal.com/docs/checkout/payment-methods/) 各支払い方法が現在どの国で利用できるかを確認する。
 
 ### [!DNL PayPal] ボタン
 
-お客様は PayPal ボタンを使用して、簡単かつ確実にチェックアウトできます。
+お客様は PayPal ボタンを使用して、簡単かつ信頼性の高い方法でチェックアウトできます。
 
-この [!DNL PayPal] ボタンが製品ページ、ミニカート、買い物かご、チェックアウトビューに表示されます。
+The [!DNL PayPal] ボタンが製品ページ、ミニカート、買い物かご、チェックアウトビューに表示されます。
 
 ### [!DNL Venmo] ボタン
 
 お客様は、 [ベンモ](https://venmo.com/) 」ボタンをクリックします。
 
-この [!DNL Venmo] ボタンが製品ページ、ミニカート、買い物かご、チェックアウトビューに表示されます。
+The [!DNL Venmo] ボタンが製品ページ、ミニカート、買い物かご、チェックアウトビューに表示されます。
 
 ### [!DNL Apple Pay] ボタン
 
 お客様は、デバイスでタッチ ID を使用して、 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/):iOSまたはmacOSデバイスに保存されているクレジットカードおよびデビットカードの支払い資格情報を利用します。
 
-この [!DNL Apple Pay] ボタンが製品ページ、ミニカート、買い物かご、チェックアウトビューに表示されます。
+The [!DNL Apple Pay] ボタンが製品ページ、ミニカート、買い物かご、チェックアウトビューに表示されます。
 
 >[!NOTE]
 >
-> 使用する [!DNL Apple Pay] 店舗の場合は、 [～との自己登録 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_ライブドメインを登録_ セクションのみ ) および [次のストアに対して設定します。 [!DNL Payment Services]](settings.md#payment-buttons).
+> 次を使用するには： [!DNL Apple Pay] 店舗の場合は、 [～との自己登録 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_ライブドメインを登録_ セクションのみ ) および [次のストアに対して設定します。 [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### PayPal のデビットまたはクレジットカードボタン
 
@@ -76,27 +76,27 @@ PayPal の「 [支払い方法に関するドキュメント](https://developer.
 
 PayPal のデビットまたはクレジットカードのボタンは、チェックアウトページに表示されます。
 
-このオプションは、別のクレジットカードプロバイダがない場合に、PayPal のデビットまたはクレジットカードの支払いオプションを買い物客に提示するために使用できます。
+このオプションは、クレジットカード統合の代わりに PayPal がホストするボタンを使用して、買い物客にデビットまたはクレジットカードの支払いオプションを提示するために使用できます。
 
 ### [!DNL Pay Later] ボタン
 
 顧客が今すぐ購入し、後で [!DNL Pay Later] 」ボタンをクリックします。
 
-この [!DNL Pay Later] ボタンが製品ページ、ミニカート、買い物かご、チェックアウトビューに表示されます。
+The [!DNL Pay Later] ボタンが製品ページ、ミニカート、買い物かご、チェックアウトビューに表示されます。
 
-詳しくは、 [PayPal の Pay Later オファードキュメント](https://developer.paypal.com/docs/checkout/pay-later/us/). 以下を使用： **国または地域** 関心のある地域を選択するドロップダウン。
+詳しくは、 [PayPal の Pay Later オファードキュメント](https://developer.paypal.com/docs/checkout/pay-later/us/). 以下を使用します。 **国または地域** 関心のある地域を選択するドロップダウン。
 
-詳しくは、 [設定](settings.md#payment-buttons) 無効にする/有効にする方法を学ぶには [!DNL Pay Later] メッセージ
+詳しくは、 [設定](settings.md#payment-buttons) 無効にする/有効にする方法を学ぶには [!DNL Pay Later] メッセージ。
 
 ### [!DNL Pay Now] ボタン
 
-この [!DNL Pay Now] ボタンは、顧客が支払い画面で支払いボタンをクリックすると、PayPal ポップアップウィンドウに表示されます。
+The [!DNL Pay Now] ボタンは、顧客が支払い画面で支払いボタンをクリックすると、PayPal ポップアップウィンドウに表示されます。
 
 最終注文額が不明な場合（発送先住所情報がない場合など）、顧客が製品ページ、ミニカートまたは買い物かごからチェックアウトする過程にある場合、 _続行_ 」ボタンを使用できます。 顧客が _続行_&#x200B;支払い方法を確認した後、注文レビューページに移動し、チェックアウトを完了する前に必要な詳細を収集します。
 
 ## PayPal の支払いボタンのみを使用
 
-ストアを実稼動モードにすばやく移行するには、を設定します _のみ_ PayPal の支払いボタン（Venmo、PayPal など）- PayPal クレジットカードの支払いオプションを使用する代わりに使用します。
+ストアを実稼動モードにすばやく移行するには、を設定します。 _のみ_ PayPal の支払いボタン（Venmo、PayPal など）- PayPal クレジットカードの支払いオプションを使用する代わりに使用します。
 
 次の操作が可能です。
 
@@ -104,18 +104,18 @@ PayPal のデビットまたはクレジットカードのボタンは、チェ�
 * PayPal の他の支払いオプションを利用しながら、クレジットカードの支払いには、既存のクレジットカードプロバイダを使用します。
 * PayPal がクレジットカードを支払いオプションとしてサポートしていない地域で、PayPal の支払いボタンを使用します。
 
-宛先 **～で支払いをキャプチャする _のみ_ PayPal の支払いボタン (_not_ PayPal クレジットカードの支払いオプション )**:
+宛先 **～で支払いをキャプチャする _のみ_ PayPal の支払いボタン (_not_ （PayPal クレジットカードの支払いオプション）**:
 
-1. ストアが [実稼動モード](settings.md#enable-payment-services).
+1. ストアが以下であることを確認します。 [実稼動モード](settings.md#enable-payment-services).
 1. [PayPal の支払いボタンを設定します](settings.md#payment-buttons) 」と入力します。
-1. 回転 _オフ_ の **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** オプション _[!UICONTROL Payment buttons]_」セクションに入力します。
+1. 回転 _オフ_ の **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** オプションを _[!UICONTROL Payment buttons]_」セクションに入力します。
 
-宛先 **既存のクレジットカードプロバイダーに支払いをキャプチャ _および_ PayPal の支払いボタン**:
+宛先 **既存のクレジットカードプロバイダーに支払いをキャプチャする _および_ PayPal の支払いボタン**:
 
-1. ストアが [実稼動モード](settings.md#enable-payment-services).
+1. ストアが以下であることを確認します。 [実稼動モード](settings.md#enable-payment-services).
 1. [PayPal の支払いボタンを設定します](settings.md#payment-buttons).
-1. 回転 _オフ_ の **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** オプション _[!UICONTROL Payment buttons]_」セクションに入力します。
-1. 回転 _オフ_ の **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** オプション _[!UICONTROL Credit card fields]_セクションを開き、 [既存のクレジットカードプロバイダーアカウント](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+1. 回転 _オフ_ の **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** オプションを _[!UICONTROL Payment buttons]_」セクションに入力します。
+1. 回転 _オフ_ の **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** オプションを _[!UICONTROL Credit card fields]_セクションを開き、 [既存のクレジットカードプロバイダーアカウント](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## 注文の再計算
 
