@@ -1,13 +1,13 @@
 ---
-user-guide-title: '"[!DNL Product Recommendations] ガイド»'
+user-guide-title: 「[!DNL Product Recommendations] ガイド」
 user-guide-description: このガイドでは、 [!DNL Product Recommendations] Adobe Commerceから
-breadcrumb-title: '"[!DNL Product Recommendations] ガイド»'
+breadcrumb-title: 「[!DNL Product Recommendations] ガイド」
 role: Admin
 feature: Services, Recommendations
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 

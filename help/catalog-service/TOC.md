@@ -1,14 +1,14 @@
 ---
-user-guide-title: '"[!DNL Catalog Service] ガイド»'
+user-guide-title: 「[!DNL Catalog Service] ガイド」
 user-guide-description: このガイドでは、 [!DNL Catalog Service] Adobe Commerceに」
-breadcrumb-title: '"[!DNL Catalog Service] ガイド»'
+breadcrumb-title: 「[!DNL Catalog Service] ガイド」
 hide: true
 role: Admin
 feature: Services, Catalog Service
 source-git-commit: c256252ea58b61e511034cd33d81e004acff96d2
 workflow-type: tm+mt
 source-wordcount: '79'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 

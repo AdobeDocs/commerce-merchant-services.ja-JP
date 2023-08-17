@@ -20,13 +20,13 @@ ht-degree: 0%
 
 特定の注文に関連付けられた増分 ID を使用して、Adobe Commerce Financial Reporting をAdobe以外の Enterprise Resource Planning(ERP) システムと紐付けできます。
 
-支払いサービスがコマース注文を PayPal に送信すると、増分 ID が `custom_id` _および_ 内 `invoice_id` ( また、 `increment_id`) をクリックします。
+支払いサービスがコマース注文を PayPal に送信すると、増分 ID が `custom_id` _および_ （内） `invoice_id` ( また、 `increment_id`) をクリックします。
 
 ID には、支払のマーチャントアクティビティの詳細と PayPal Webhook の両方で簡単にアクセスできます。
 
-この `invoice_id` および `custom_id` は、支払のマーチャント活動詳細の下部に表示されます。
+The `invoice_id` および `custom_id` は、支払のマーチャント活動詳細の下部に表示されます。
 
-![`custom_id` マーチャント活動詳細](assets/merchant-activity-ids.png)
+![`custom_id` マーチャント活動の詳細](assets/merchant-activity-ids.png)
 
 `custom_id` および `invoice_id` PayPal のウェブフックの詳細は次の通りです。
 

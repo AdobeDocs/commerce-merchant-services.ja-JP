@@ -1,6 +1,6 @@
 ---
 title: 一般設定
-description: 有効にする一般設定を構成します [!DNL Store Fulfillment] お客様のストアの グローバル拡張機能の設定、ログのシステム設定、データの同期、セキュリティを設定します。 Adobe Commerceとストアフルフィルメントサービスの統合を可能にするための主要なデータを提供します。
+description: 有効にする一般設定を構成します [!DNL Store Fulfillment] お客様のストアの。 グローバル拡張機能の設定、ログのシステム設定、データの同期、セキュリティを設定します。 Adobe Commerceとストアフルフィルメントサービスの統合を可能にするための主要なデータを提供します。
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 ## ストアフルフィルメントサービス設定の管理
 
-次からストアフルフィルメントサービスの設定を管理 [!DNL Commerce Admin Store Configuration] メニュー
+次からストアフルフィルメントサービスの設定を管理： [!DNL Commerce Admin Store Configuration] メニュー。
 
 - 拡張機能を有効にし、グローバル設定を指定し、Store Assist アプリのユーザー接続とアカウントのセキュリティオプションを指定するには、次を選択します。 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-  ![ストアのフルフィルメント用の管理ストアサービス構成](assets/store-services-admin-sf-config.png)
+  ![ストアのフルフィルメント用の Admin Store サービス構成](assets/store-services-admin-sf-config.png)
 
 - 選択による配信方法の設定 **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 
-  ![ストアのフルフィルメントの管理ストアの販売構成](assets/store-sales-admin-sf-deliver-config.png)
+  ![ストアフルフィルメントの管理ストア販売構成](assets/store-sales-admin-sf-deliver-config.png)
 
 ## 基本設定
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この [!UICONTROL Search Radius] 設定は、 [ストアの場所とマッピングの設定](store-location-map-provider-setup.md) Adobe Commerce
+>The [!UICONTROL Search Radius] 設定は、 [ストアの場所とマッピングの設定](store-location-map-provider-setup.md) Adobe Commerceの
 
 ## ストアフルフィルメントソリューションを有効にする
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>次のいずれかを選択 <i>[!UICONTROL Sandbox]</i> または <i>[!UICONTROL Production]</i><br></br>選択 [!UICONTROL Sandbox] テスト環境でフルフィルメントサービスとの通信を可能にします。<br></br>選択 [!UICONTROL Production] は、実稼働環境でフルフィルメントサービスとの通信を可能にします。<br></br>各環境に対して一連の資格情報が提供され、同じインストールで両方のセットを管理できます。 <br></br>接続を検証する前に、資格情報を保存します。</td>
+<td>次のいずれかを選択 <i>[!UICONTROL Sandbox]</i> または <i>[!UICONTROL Production]</i><br></br>選択 [!UICONTROL Sandbox] は、テスト環境でフルフィルメントサービスとの通信を可能にします。<br></br>選択 [!UICONTROL Production] は、実稼働環境でフルフィルメントサービスとの通信を可能にします。<br></br>各環境に対して一連の資格情報が提供され、同じインストールで両方のセットを管理できます。 <br></br>接続を検証する前に、資格情報を保存します。</td>
 <td>グローバル</td>
 <td>はい</td>
 </tr>
@@ -139,7 +139,7 @@ ht-degree: 0%
 </tr>
 </table>
 
-設定後、 [!UICONTROL Account Credentials]を選択します。 <strong>[!UICONTROL Validate Credentials]</strong> を使用して、初めてストアフルフィルメントサービスへの接続を確認し、確立します。
+次の設定を行った後、 [!UICONTROL Account Credentials]を選択します。 <strong>[!UICONTROL Validate Credentials]</strong> を使用して、初めてストアフルフィルメントサービスへの接続を確認し、確立します。
 
 ## ログの設定
 
@@ -147,11 +147,11 @@ ht-degree: 0%
 
 API 関連の例外がファイアウォールまたはキャッシュを通じて取り込めるように、例外の処理を許可するように環境を設定するようにシステム管理者に依頼します。
 
-アプリケーション・ログ・ファイルは迅速に拡張できるため、必要に応じて短時間のみログを有効にします。例えば、 [!DNL Commerce] 注文。 この設定により、大きなログファイルが原因で発生する、実稼動環境での応答時間の問題を防ぐことができます。
+アプリケーション・ログ・ファイルは迅速に拡張できるため、必要に応じて短時間のみ、アプリケーションのログを有効にします。例えば、 [!DNL Commerce] 注文。 この設定により、大きなログファイルが原因で発生する、実稼動環境での応答時間の問題を防ぐことができます。
 
 >[!TIP]
 >
->Adobe Commerceのオンプレミスでのインストールの場合は、システム管理者に、 `var/log/walmart-bopis.log` ファイルのサイズを最小限に抑えます。 Adobe Commerceのオンプレミスでのインストールについては、 [対数の回転](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) 内 _Adobe Commerce Installation Guide_. Adobe Commerce on cloud infrastructure プロジェクトについては、 [ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Adobe Commerceのオンプレミスでのインストールの場合は、システム管理者に問い合わせて、 `var/log/walmart-bopis.log` ファイルのサイズを最小限に抑えます。 Adobe Commerceのオンプレミスでのインストールの場合は、 [対数のローテーション](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) （内） _Adobe Commerce Installation Guide_. Adobe Commerce on cloud infrastructure プロジェクトについては、 [ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -165,7 +165,7 @@ API 関連の例外がファイアウォールまたはキャッシュを通じ�
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>デバッグモードは、統合内のログに記録されるアクティビティを増やすために使用します。 無効にした場合、デバッグ情報はログに記録されません。 有効にすると、すべてのデバッグ情報がログに記録されます <br></br>ログに記録されたすべてのデータは、次のファイルにあります。 <pre>var/log/walmart-bopis.log</pre>
+<td>デバッグモードは、統合内のログに記録されるアクティビティを増やすために使用します。 無効にした場合、デバッグ情報はログに記録されません。 有効にすると、すべてのデバッグ情報がログに記録されます <br></br>ログに記録されたすべてのデータは、次のファイルで見つかります。 <pre>var/log/walmart-bopis.log</pre>
 <td>グローバル</td>
 <td>いいえ</td>
 </tr>
@@ -176,7 +176,7 @@ API 関連の例外がファイアウォールまたはキャッシュを通じ�
 
 注文の同期のエラー処理を管理する設定、注文の選択中にバーコードスキャンに使用するカタログ属性、ストアの達成キューの注文バッチサイズを構成する設定を構成します。
 
-オーダーの同期操作の詳細は、管理者の「ストア履行キュー管理」ダッシュボード (
+オーダーの同期操作の詳細は、管理者の「ストア履行キュー管理」ダッシュボードから表示できます (
 <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong>) をクリックします。
 
 ### 同期エラー管理
@@ -247,7 +247,7 @@ API 関連の例外がファイアウォールまたはキャッシュを通じ�
 </tbody>
 </table>
 
-## 店舗フルフィルメント配送オプションの有効化
+## 店舗フルフィルメント配送オプションを有効化
 
 Adobe Commerceストアの店頭受け取りと宅配オプションの可用性を決定する「店舗フルフィルメント配送オプション」を設定します。
 
@@ -286,7 +286,7 @@ Adobe Commerceストアの店頭受け取りと宅配オプションの可用性
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>マーチャントストアでの「ホーム配信」オプションを有効または無効にします。 有効にすると、マーチャントストアの場所は、Web サイトに関連付けられた在庫内の他の割り当てられたソースと集計されて考慮されます。<br></br>標準のInventory managementサービスでは、 [!DNL Ship from Store] はオプション固有で、無効にできません。 Store Fulfilment ソリューションでは、オン/オフを切り替えることができます。<br></br>この設定は、商人の場所と製品ごとに調整できます。</td>
+<td>マーチャントストアでの「ホーム配信」オプションの有効/無効を切り替えます。 有効にすると、マーチャントストアの場所は、Web サイトに関連付けられた在庫内の他の割り当てられたソースと集計されて考慮されます。<br></br>標準のInventory managementサービスでは、 [!DNL Ship from Store] はオプション固有で、無効にできません。 Store Fulfilment ソリューションでは、オン/オフを切り替えることができます。<br></br>この設定は、商人の場所と製品ごとに調整できます。</td>
 <td>グローバル</td>
 <td>いいえ</td>
 </tr>
@@ -330,7 +330,7 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td><em>[!UICONTROL Yes]</em>:アカウントの設定後にユーザーにパスワードの変更を求める。<br></br><em>[!UICONTROL No]</em>:アカウントの設定後にユーザーがパスワードを変更することをお勧めします。</td>
+<td><em>[!UICONTROL Yes]</em>：アカウントの設定後に、ユーザーがパスワードを変更する必要があります。<br></br><em>[!UICONTROL No]</em>：アカウント設定後にユーザーがパスワードを変更することをお勧めします。</td>
 <td>グローバル</td>
 <td>いいえ</td>
 </tr>
@@ -345,7 +345,7 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
 
 ## 配信方法
 
-ネイティブのAdobe Commerceを拡張することで、ストアの達成が機能 [!DNL In-Store Delivery] 機能 拡張機能をインストールした後、管理者に追加された次の拡張設定を使用して、ストア内配信方法を設定できます。
+ネイティブのAdobe Commerceを拡張することで、ストアの達成が機能 [!DNL In-Store Delivery] 機能。 拡張機能をインストールした後、管理者に追加された次の拡張設定を使用して、ストア内配信方法を設定できます。
 
 - **店内受け取り** — チェックアウトプロセス中の店舗配信用オファーオプションこれらの設定は、BOPIS 注文で最も一般的な配信シナリオを設定します。
 
@@ -355,10 +355,10 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
 
 >[!NOTE]
 >
->ストア内配信オプションの設定について詳しくは、 [ストア内配信](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) 内 _Adobe Commerce User Guide_.
+>ストア内配信オプションの設定について詳しくは、 [ストア内配信](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) （内） _Adobe Commerce User Guide_.
 
 
-### 配信メソッド設定
+### 配信メソッドの設定
 
 店舗での配信方法を使用すると、顧客は、チェックアウト時にピックアップ場所として使用するソースを選択できます。
 
@@ -423,7 +423,7 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
 </tr>
 <tr>
 <td><strong>店内ピックアップのタイトル</strong></td>
-<td>「店頭での集荷」が有効な場合、このタイトルが「集荷の保存」配信オプションとして顧客に表示されます。 ラベルをカスタマイズできます。</td>
+<td>店頭での集荷が有効になっている場合、このタイトルが「集荷配信を保存」オプションとして顧客に表示されます。 ラベルをカスタマイズできます。</td>
 <td>ストア表示</td>
 <td>いいえ</td>
 </tr>
@@ -436,7 +436,7 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
 </tr>
 <tr>
 <td><strong>店舗での受け取り手順</strong></td>
-<td>小売店で注文を受け取る準備が整うと、顧客に E メールで通知が送信されます。 顧客が [!DNL In-Store Pickup] チェックアウト時に、ここでピックアップの手順をカスタマイズできます。 </br></br>これらの手順はグローバルに設定され、すべての小売ストアの場所に適用されます。 また、小売ストアの場所レベルで手順をカスタマイズすることもできます。</td>
+<td>小売店で注文を受け取る準備が整うと、顧客に E メールで通知が送られます。 顧客が [!DNL In-Store Pickup] チェックアウト時に、ここでピックアップの手順をカスタマイズできます。 </br></br>これらの手順はグローバルに設定され、すべての小売ストアの場所に適用されます。 また、小売ストアの場所レベルで手順をカスタマイズすることもできます。</td>
 <td>ストア表示</td>
 <td>いいえ</td>
 </tr>
@@ -467,7 +467,7 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
 </tr>
 </tbody></table>
 
-### 在庫品目設定
+### 在庫品目の設定
 
 <table>
 <thead>
@@ -480,7 +480,7 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
 </thead>
 <tbody><tr>
 <td><strong>在庫</strong></td>
-<td>顧客が小売店舗ロケーターを使用している場合、現在の品目の在庫状況が各場所に表示されます。 </br></br>次の項目をカスタマイズできます： <em>[!UICONTROL in-stock]</em> ステータスラベルをここに入力します。</td>
+<td>顧客が小売店舗ロケーターを使用している場合、現在の品目の在庫状況が各場所に表示されます。 </br></br>次の項目をカスタマイズできます。 <em>[!UICONTROL in-stock]</em> ステータスラベルをここに入力します。</td>
 <td>ストア表示</td>
 <td>いいえ</td>
 </tr>
@@ -492,7 +492,7 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
 </tr>
 <tr>
 <td><strong>一部在庫</strong></td>
-<td>顧客が小売店舗ロケーターを使用している場合、現在の品目の在庫可用性は各場所で表示されます。 </br></br>次の項目をカスタマイズできます： <em>[!UICONTROL partially in-stock]</em> ステータスラベルをここに入力します。</td>
+<td>顧客が小売店舗ロケーターを使用している場合、現在の品目の在庫可用性は各場所に対して表示されます。 </br></br>次の項目をカスタマイズできます。 <em>[!UICONTROL partially in-stock]</em> ステータスラベルをここに入力します。</td>
 <td>ストア表示</td>
 <td>いいえ</td>
 </tr>

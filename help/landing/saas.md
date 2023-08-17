@@ -39,15 +39,15 @@ ht-degree: 0%
 
 ## 資格情報 {#apikey}
 
-実稼働用とサンドボックス API キーは、 [!DNL Commerce] 一意の [!DNL Commerce] ID (MageID)。 次のようなサービスの使用権限の検証に合格するには： [!DNL Product Recommendations] または [!DNL Live Search]を使用する場合、マーチャントの組織のライセンス所有者は、アカウントが正常である限り、API キーのセットを生成できます。 キーは、ライセンス所有者に代わってプロジェクトと環境を管理するシステムインテグレーターまたは開発チームと「知っておく必要がある」という理由で共有できます。 また、ソリューションインテグレーターは、 [!DNL Commerce Services]. ソリューションインテグレーターの場合、 [!DNL Commerce] パートナー契約は、API キーを生成する必要があります。
+実稼働用 API キーとサンドボックス API キーは、 [!DNL Commerce] ライセンス所有者のアカウント。一意の [!DNL Commerce] ID (MageID)。 次のようなサービスの使用権限の検証に合格するには： [!DNL Product Recommendations] または [!DNL Live Search]を使用する場合、マーチャントの組織のライセンス所有者は、アカウントが正常である限り、API キーのセットを生成できます。 キーは、ライセンス所有者に代わってプロジェクトと環境を管理するシステムインテグレーターまたは開発チームと「知っておく必要がある」ベースで共有できます。 また、ソリューションインテグレーターは、 [!DNL Commerce Services]. ソリューションインテグレーターの場合、 [!DNL Commerce] パートナー契約は、API キーを生成する必要があります。
 
 ### 実稼働環境とサンドボックス API キーを生成する {#genapikey}
 
 1. にログインします。 [!DNL Commerce] アカウント [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}。
 
-1. 以下 **Magento** タブ、選択 **API ポータル** サイドバーに表示されます。
+1. の下 **Magento** タブ、選択 **API ポータル** サイドバーに表示されます。
 
-1. 次の _環境_ メニュー、選択 **実稼動** または **サンドボックス**.
+1. 次から： _環境_ メニュー、選択 **実稼動** または **サンドボックス**.
 
 1. 名前を _API キー_ 「 」セクションで、「 」をクリックします。 **新規追加**.
 
@@ -59,17 +59,17 @@ ht-degree: 0%
    >
    > これは、鍵をコピーまたはダウンロードする必要がある唯一の機会です。
 
-1. クリック **ダウンロード** 次に、 **キャンセル**.
+1. クリック **ダウンロード** 次に、「 **キャンセル**.
 
 1. 各環境（実稼動およびサンドボックス）に対して、上記の手順を繰り返します。
 
-   この **API キー** 「 」セクションに API キーが表示されるようになりました。 実稼動用キーとサンドボックスキーの両方が必要な場合は、 [SaaS プロジェクトを選択または作成する](#createsaasenv).
+   The **API キー** 「 」セクションに API キーが表示されるようになりました。 実稼動用キーとサンドボックスキーの両方が必要な場合は、 [SaaS プロジェクトを選択または作成する](#createsaasenv).
 
 ## SaaS 設定 {#saasenv}
 
-[!DNL Commerce] インスタンスは、SaaS プロジェクトと SaaS データスペースを使用して、 [!DNL Commerce Services] では、適切な場所にデータを送信できます。 SaaS プロジェクトは、すべての SaaS データスペースをグループ化します。 SaaS データスペースは、 [!DNL Commerce Services] を有効にします。 このデータの一部は、 [!DNL Commerce] インスタンスと一部は、ストアフロントでの買い物客の行動から収集される場合があります。 その後、そのデータは保持され、クラウドストレージを保護します。
+[!DNL Commerce] インスタンスは、SaaS プロジェクトと SaaS データスペースを使用して設定し、 [!DNL Commerce Services] では、適切な場所にデータを送信できます。 SaaS プロジェクトは、すべての SaaS データスペースをグループ化します。 SaaS データスペースは、 [!DNL Commerce Services] を有効にします。 このデータの一部は、 [!DNL Commerce] インスタンスと一部は、ストアフロントでの買い物客の行動から収集される場合があります。 その後、そのデータは保持され、クラウドストレージを保護します。
 
-の場合 [!DNL Product Recommendations]に設定すると、SaaS データスペースには、カタログと行動データが含まれます。 次の項目を指定： [!DNL Commerce] 次の方法で SaaS データ空間にインスタンスを送信 [選択](https://docs.magento.com/user-guide/configuration/services/saas.html) 内 [!DNL Commerce] 設定。
+の場合 [!DNL Product Recommendations]に設定すると、SaaS データスペースには、カタログと行動データが含まれます。 次の項目を指定します。 [!DNL Commerce] 次の方法で SaaS データ空間にインスタンスを送信する [選択](https://docs.magento.com/user-guide/configuration/services/saas.html) （内） [!DNL Commerce] 設定。
 
 >[!WARNING]
 >
@@ -79,15 +79,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 次の項目が表示されない場合、 **[!UICONTROL Commerce Services Connector]** セクション [!DNL Commerce] 設定するには、 [!DNL Commerce] 目的の [[!DNL Commerce] サービス](#availableservices).
+> 次の項目が表示されない場合、 **[!UICONTROL Commerce Services Connector]** セクション内 [!DNL Commerce] 設定の場合は、 [!DNL Commerce] 目的のモジュール [[!DNL Commerce] サービス](#availableservices).
 
 SaaS プロジェクトを選択または作成するには、 [!DNL Commerce] からの API キー [!DNL Commerce] お客様の店舗のライセンス所有者。
 
-1. の _管理者_ サイドバー、移動 **システム** /サービス/ **Commerce Services コネクタ**.
+1. 次の日： _管理者_ サイドバー、移動 **システム** /サービス/ **Commerce Services コネクタ**.
 
-1. 内 _サンドボックス API キー_ および _実稼動 API キー_ セクションで、キー値を貼り付けます。
+1. Adobe Analytics の _サンドボックス API キー_ および _実稼動 API キー_ 「 」セクションで、キー値を貼り付けます。
 
-   秘密鍵には、 `----BEGIN PRIVATE KEY---` キーの先頭と `----END PRIVATE KEY----` 秘密鍵の最後に。
+   秘密鍵にはを含める必要があります `----BEGIN PRIVATE KEY---` キーの先頭と `----END PRIVATE KEY----` 秘密鍵の最後に。
 
 1. クリック **保存**.
 
@@ -96,10 +96,10 @@ SaaS プロジェクトを選択または作成するには、 [!DNL Commerce] �
 1. SaaS プロジェクトが存在しない場合は、「 **プロジェクトを作成**. 次に、 **プロジェクト** 「 」フィールドに、SaaS プロジェクトの名前を入力します。
 
    SaaS プロジェクトを作成する場合、 [!DNL Commerce] によって、に応じて 1 つ以上の SaaS データスペースが生成されます [!DNL Commerce] ライセンス：
-   - Adobe Commerce - 1 つの実稼動データ領域2 つのテスト用データスペース
-   - Magento Open Source- 1 つの実稼動データ領域テストデータスペースなし
+   - Adobe Commerce - 1 つの実稼動データ領域、2 つのテストデータ領域
+   - Magento Open Source:1 つの実稼動データ領域。テスト用のデータ領域なし
 
-1. を選択します。 **データスペース** を [!DNL Commerce] ストア。
+1. を選択します。 **データスペース** を使用して、 [!DNL Commerce] ストア。
 
 >[!WARNING]
 >
@@ -113,4 +113,4 @@ Adobe CommerceインスタンスをAdobe Experience Platformに接続するに�
 
 ## カタログの同期
 
-次の場合、 [!DNL Commerce] インスタンスが正常に接続しました [!DNL Commerce Services]カタログ同期プロセスで、 [!DNL Commerce] サーバーから [!DNL Commerce Services]. 現在、カタログ同期サービスを使用しているのは製品Recommendationsのみです。 [詳細情報](catalog-sync.md) カタログ同期プロセスについて
+次の場合に、 [!DNL Commerce] インスタンスが正常に接続しました [!DNL Commerce Services]を使用する場合、カタログ同期プロセスは、 [!DNL Commerce] サーバーから [!DNL Commerce Services]. 現在、カタログ同期サービスを使用しているのは製品のRecommendationsのみです。 [詳細情報](catalog-sync.md) カタログ同期プロセスについて

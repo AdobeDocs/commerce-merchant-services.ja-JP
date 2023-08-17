@@ -19,7 +19,7 @@ ht-degree: 0%
 
 属性メタデータの範囲は次のとおりです。 `website/store/store view`.
 
-この [!DNL Live Search] API を使用すると、クライアントは [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` に設定 `Yes` ( Adobe Commerce Admin ) 有効にした場合、 `Search Weight` および `Visible in Advanced Search` を属性に設定できます。
+The [!DNL Live Search] API を使用すると、クライアントは [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` に設定 `Yes` ( Adobe Commerce Admin )。 有効にした場合、 `Search Weight` および `Visible in Advanced Search` を属性に設定できます。
 
 [!DNL Live Search] 削除済みの製品または次に設定された製品のインデックスを作成しない `Not Visible Individually`.
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## パイプラインのインデックス作成
 
-クライアントがストアフロントから検索サービスを呼び出して、（フィルタリング可能で並べ替え可能な）インデックスメタデータを取得します。 検索可能な製品属性のみ、 *レイヤーナビゲーションで使用* プロパティを `Filterable (with results)` および *製品リストの並べ替えに使用* に設定 `Yes` は、検索サービスによって呼び出されます。
+クライアントがストアフロントから検索サービスを呼び出して、（フィルタリング可能で並べ替え可能な）インデックスメタデータを取得します。 検索可能な製品属性のみ、 *レイヤーナビゲーションで使用* プロパティをに設定 `Filterable (with results)` および *製品リストでの並べ替えに使用* に設定 `Yes` は、検索サービスによって呼び出されます。
 動的クエリを作成するには、検索可能な属性とその重みを検索サービスが把握しておく必要があります。 [!DNL Live Search] は、Adobe Commerceの検索重み付けに従います（1 ～ 10、10 が最も優先度が高い場所）。 カタログサービスと同期および共有されるデータのリストは、次の場所で定義されているスキーマにあります。
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
@@ -43,14 +43,14 @@ ht-degree: 0%
 
 ### 完全なインデックス
 
-条件 [!DNL Live Search] が設定され、オンボーディング中に同期されるので、初期インデックスの作成に最大 30 分かかる場合があります。 大きなカタログは、インデックス作成に時間がかかる場合があります。 プロセスは次の後に開始します `cron` はフィードを送信し、実行を完了します。
+条件 [!DNL Live Search] が設定され、オンボーディング中に同期されるので、初期インデックスの作成に最大 30 分かかる場合があります。 大きなカタログは、インデックス作成に時間がかかる場合があります。 プロセスは次の後に開始します。 `cron` はフィードを送信し、実行を完了します。
 
 次のイベントは、完全同期とインデックスの構築をトリガーします。
 
 * オンボーディング [カタログデータ同期](install.md#synchronize-catalog-data)
 * 属性メタデータの変更
 
-例えば、 `Use in Search` プロパティ `color` 属性 `No` から `Yes` 属性メタデータをに変更します。 `searchable=true`、およびトリガーの完全同期と再インデックス。 次の属性メタデータトリガーは、変更時に完全同期と再インデックスを実行します。
+例えば、 `Use in Search` のプロパティ `color` 属性 `No` から `Yes` 属性メタデータをに変更します。 `searchable=true`、およびトリガーの完全同期と再インデックス。 次の属性メタデータトリガーは、変更時に完全同期と再インデックスを実行します。
 
 * `filterableInSearch`
 * `searchable`
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ### 製品アップデートのストリーミング
 
-最初のインデックスが [オンボーディング](install.md#synchronize-catalog-data)の場合、次の増分製品アップデートが継続的に同期され、インデックスが再作成されます。
+最初のインデックスを作成した後、 [オンボーディング](install.md#synchronize-catalog-data)の場合、次の増分製品アップデートが継続的に同期され、インデックスが再作成されます。
 
 * カタログに追加された新しい製品
 * 製品属性値の変更
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ## クライアント検索
 
-この [!DNL Live Search] API を使用すると、クライアントは、 [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *製品リストの並べ替えに使用します* から `Yes`. テーマに応じて、この設定により、属性が [並べ替え基準](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) カタログページのページネーションコントロール。 最大 200 個の製品属性を [!DNL Live Search]を [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 検索可能でフィルタリング可能な
+The [!DNL Live Search] API を使用すると、クライアントは、 [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *製品リストの並べ替えに使用します* から `Yes`. テーマに応じて、この設定により、属性がオプションとして [並べ替え基準](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) カタログページのページネーションコントロール。 最大 200 個の製品属性を [!DNL Live Search]、を [storefront プロパティ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 検索可能でフィルタリング可能な
 インデックスメタデータは、インデックス作成パイプラインに保存され、検索サービスからアクセスできます。
 
 ![[!DNL Live Search] インデックスメタデータ API 図](assets/index-metadata-api.svg)
@@ -84,7 +84,7 @@ ht-degree: 0%
 1. 検索サービスは Search Admin Service を呼び出します。
 1. 検索サービスは、インデックス作成パイプラインを呼び出します。
 
-## すべての製品に対してインデックスが作成されます
+## すべての製品に対してインデックスが作成されました
 
 このリストでのフィールドの順序は、書き出された製品データの一般的な列の順序を反映しています。
 

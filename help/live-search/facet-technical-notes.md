@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ## ファセットの集計
 
-ファセットの集計は、次のように実行されます。ストアフロントに 3 つのファセット（カテゴリ、色、価格）があり、買い物客が 3 つすべてに対してフィルターを適用する場合 ( 色=青、価格は$10.00 ～ 50.00、カテゴリ= `promotions`) をクリックします。
+ストアフロントに 3 つのファセット（カテゴリ、色、価格）があり、買い物客が 3 つすべてのファセット ( 色=青、価格が$10.00 ～ 50.00、カテゴリ= `promotions`) をクリックします。
 
-* `categories` 集計 — 集計 `categories`を設定し、 `color` および `price` フィルター（ただし、除外） `categories` フィルター。
-* `color` 集計 — 集計 `color`を設定し、`price` および `categories` フィルター（ただし、除外） `color` フィルター。
-* `price` 集計 — 集計 `price`を設定し、 `color` および `categories` フィルター（ただし、除外） `price` フィルター。
+* `categories` 集計 — 集計 `categories`を設定し、 `color` および `price` フィルター（ただし、ではない） `categories` フィルター。
+* `color` 集計 — 集計 `color`を設定し、`price` および `categories` フィルター（ただし、ではない） `color` フィルター。
+* `price` 集計 — 集計 `price`を設定し、 `color` および `categories` フィルター（ただし、ではない） `price` フィルター。

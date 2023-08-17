@@ -8,15 +8,15 @@ feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # の概要 [!DNL Payment Services] ホーム
 
-[!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、拡張機能の設定と使用を開始するために必要な情報をすべてホームビューに提供します。
+[!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、拡張機能の設定と使用を開始するために必要な情報をすべてホームビューに提供します。
 
-1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
 
    ![ホームビュー](assets/home-view.png)
 
@@ -35,13 +35,13 @@ ht-degree: 0%
 |---|---|
 | [!UICONTROL Read documentation] | 以下の最新のユーザーおよび開発者向けドキュメントを参照してください。 [!DNL Payment Services]. |
 | [!UICONTROL How to onboard] | 設定を行い、 [!DNL Payment Services] 機能。 |
-| [!UICONTROL Understand financial reports] | でのキャッシュ・フロー管理レポートの詳細説明 [!DNL Payment Services]. |
+| [!UICONTROL Understand financial reports] | でのキャッシュ・フロー管理レポートの詳細な説明 [!DNL Payment Services]. |
 
 ## ヘルプ
 
 | フィールド | 説明 |
 |---|---|
-| [!UICONTROL Visit help center] | この [!DNL Adobe Commerce] ヘルプセンターには、次に関するナレッジベース記事があります。 [!DNL Payment Services]. |
+| [!UICONTROL Visit help center] | The [!DNL Adobe Commerce] ヘルプセンターには、次に関するナレッジベース記事があります。 [!DNL Payment Services]. |
 | [!UICONTROL Get support] | 次にアクセス： [!DNL Adobe Commerce] ～の支援を受けるためのポータルを支援する [!DNL Payment Services.] |
 
 ## 設定

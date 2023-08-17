@@ -1,6 +1,6 @@
 ---
 title: Inventory management Source Transfer
-description: 「 [!DNL Store Fulfillment solution] Adobe Commerce Inventory managementと 新しい在庫を設定し、在庫をデフォルトの在庫から移動します。これにより、店舗フルフィルメントソリューションで必要な受け取り機能を有効にするように設定されたソースに割り当てることができます。
+description: 「 [!DNL Store Fulfillment solution] Adobe Commerce Inventory managementと 新しい在庫を設定し、在庫をデフォルトの在庫から移動します。これにより、店舗フルフィルメントソリューションで必要な受け取り機能を有効にするように設定されたソースに割り当てることができます。」
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Inventory management Source Transfer
 
-この [!DNL Store Fulfillment] ソリューションはネイティブのAdobe Commerce Inventory managementを使用します。 デフォルトでは、 [!DNL Commerce] 設定により、すべての web インベントリがデフォルトの在庫に割り当てられ、追加のソースを割り当てることはできません。 Web サイトには 1 つの在庫しか割り当てられないので、マーチャントは新しい在庫を設定し、必要に応じて、適切な範囲に割り当てられたソースにデフォルトの在庫を転送する必要があります。 その後、新しい在庫にソースを割り当てることができます。
+The [!DNL Store Fulfillment] ソリューションはネイティブのAdobe Commerce Inventory managementを使用します。 デフォルトでは、 [!DNL Commerce] 設定により、すべての web インベントリがデフォルトの在庫に割り当てられ、追加のソースを割り当てることはできません。 Web サイトには 1 つの在庫しか割り当てられないので、マーチャントは新しい在庫を設定し、必要に応じて、適切な範囲に割り当てられたソースにデフォルトの在庫を転送する必要があります。 その後、新しい在庫にソースを割り当てることができます。
 
 >[!IMPORTANT]
 >

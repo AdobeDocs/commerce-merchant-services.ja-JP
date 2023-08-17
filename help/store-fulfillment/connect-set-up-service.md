@@ -28,10 +28,10 @@ ht-degree: 0%
 
 Adobe Commerceをストアフルフィルメントサービスと統合するには、コマース統合を作成し、ストアフルフィルメントサーバーからの要求を認証するために使用できるアクセストークンを生成します。 また、Adobe Commerceを更新する必要があります [!UICONTROL Consumer Settings] 防ぐオプション `The consumer isn't authorized to access %resources.` Adobe Commerceからへのリクエストの応答エラー [!DNL Store Fulfillment] サービス。
 
-1. 管理者から、ストアの達成の統合を作成します。
+1. 管理者から、ストアのフルフィルメント用の統合を作成します。
 
    - 拡張機能に名前を付ける
-   - メールアドレスを入力
+   - 電子メールアドレスを入力
    - 管理者アカウントのパスワードを入力してください
 
 1. 以下との統合に対する API リソースのアクセス権限を設定します。
@@ -45,15 +45,15 @@ Adobe Commerceをストアフルフィルメントサービスと統合するに
 
 1. アカウントマネージャーと協力して、ストアの達成側の設定を完了し、統合を承認します。
 
-1. Adobe Commerceの有効化 [!UICONTROL Consumer Settings] 選択肢 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
+1. Adobe Commerceを有効にする [!UICONTROL Consumer Settings] 選択肢 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
    - 管理者から、に移動します。 **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
 
-   - を [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] 選択肢 **[!UICONTROL Yes]**.
+   - を設定します。 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] 選択肢 **[!UICONTROL Yes]**.
 
 >[!IMPORTANT]
 >
-> 統合トークンは、環境に固有です。 別の環境のソースデータを使用して環境のデータベースを復元する場合（ステージング環境からの本番データの復元など）は、 `oauth_token` 統合トークンの詳細が復元操作中に上書きされないように、データベースエクスポートのテーブル。
+> 統合トークンは、環境に固有です。 別の環境のソースデータを使用して環境のデータベースを復元する場合（ステージング環境からの実稼動データの復元など）は、 `oauth_token` 統合トークンの詳細が復元操作中に上書きされないように、データベースエクスポートのテーブル。
 
 
 ## ストアフルフィルメントアカウント資格情報の設定
@@ -70,7 +70,7 @@ Adobe Commerceをストアフルフィルメントサービスと統合するに
 
 >[!NOTE]
 >
->アカウントの作成プロセスが完了するまでに時間がかかる場合があります。 資格情報を待つ間、 [ストアフルフィルメントソリューションの他の設定の確認と構成](service-config-settings-overview.md).
+>アカウントの作成プロセスが完了するまでに時間がかかる場合があります。 認証情報を待つ間、 [ストアフルフィルメントソリューションの他の設定の確認と構成](service-config-settings-overview.md).
 
 ### ストアフルフィルメントに接続するための資格情報を追加
 

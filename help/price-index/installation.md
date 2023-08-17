@@ -71,7 +71,7 @@ SaaS 価格のインデックス作成を行うには、新しいモジュール
 Luma とAdobe Commerce Core GraphQLのユーザーは、 `catalog-adapter` Luma と Core GraphQl の互換性を提供し、PHP のコア価格インデクサーを無効にするモジュール。
 次の手順で `catalog-adapter` モジュール [!DNL Live Search] および [!DNL Catalog Service] まず、をインストールして設定する必要があります。 フォロー： [インストール [!DNL Live Search]](../live-search/install.md) および [カタログサービスのインストール](../catalog-service/installation.md) 手順を参照してください。
 
-Live Search とカタログアダプタを設定するには、以下に従ってください [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 説明。
+Live Search とカタログアダプタを設定するには、以下に従ってください。 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 説明。
 
 ```bash
 composer require adobe-commerce/catalog-adapter

@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] フロー
+# [!DNL Quick Checkout] 流量
 
-この節では、 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合
+この節では、 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合。
 
 成功 [!DNL Quick Checkout] フローは、次の手順で構成されます。
 
-1. ストアフロントを開き、カートに項目を追加します。
+1. ストアフロントを開き、買い物かごに項目を追加します。
 1. チェックアウトに進みます。
 
 ![チェックアウト](assets/proceed-checkout.png)
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 > マーチャントに対する自動ログインを有効にすることができます。 詳しくは、 [Bolt&#39;s Enable Automatic Login トピック](https://help.bolt.com/products/embedded/direct-api/auto-login/) を参照してください。
 
-1. プロンプトが表示されたら、 [!DNL Bolt] アカウント
+1. プロンプトが表示されたら、 [!DNL Bolt] アカウント。
 1. これに送信する 1 回限りのパスワード (OTP) を入力します [!DNL Bolt] アカウントの電子メールアドレスまたは電話番号。
 
 ![OTP ポップアップ](assets/new-logo-otp-email.png)
@@ -41,14 +41,14 @@ ht-degree: 0%
 
 1. 発注。
 
-この [!DNL Quick Checkout] は、標準の追加のAdobe Commerceチェックアウトオプションと互換性があります。 [ギフトカード](https://docs.magento.com/user-guide/catalog/product-gift-card.html) または [割引コード](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
+The [!DNL Quick Checkout] は、標準の追加のAdobe Commerceチェックアウトオプションと互換性があります。 [ギフトカード](https://docs.magento.com/user-guide/catalog/product-gift-card.html) または [割引コード](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
 
 ## [!DNL Quick Checkout] 使用例
 
-この [!DNL Quick Checkout] では、チェックアウトフロー中に複数の使用例を使用できます。
+The [!DNL Quick Checkout] では、チェックアウトフロー中に複数の使用例を使用できます。
 
-- [ゲストユーザー](../quick-checkout/checkout-bolt.md) 登録された、または新しい [!DNL Bolt] アカウント
-- 既存の [Adobe Commerceユーザー](../quick-checkout/checkout-adobe-commerce.md) 登録を持っているか、持っていないか [!DNL Bolt] アカウント
+- [ゲストユーザー](../quick-checkout/checkout-bolt.md) 登録された、または新しい [!DNL Bolt] アカウント。
+- 既存の [Adobe Commerceユーザー](../quick-checkout/checkout-adobe-commerce.md) 登録を持っているか、持っていないか [!DNL Bolt] アカウント。
 
 ## お問い合わせ
 

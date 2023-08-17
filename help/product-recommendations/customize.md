@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # カスタマイズ
 
-製品のRecommendationsモジュールをインストールすると、Adobe Commerceは `ProductRecommendationsLayout` ディレクトリ。 このディレクトリにはテンプレートファイルが含まれています。このファイルをカスタマイズして、レコメンデーションがストアフロントに表示される方法を変更できます。 特に、次のテンプレートを変更または上書きできます。
+製品のRecommendationsモジュールをインストールすると、Adobe Commerceは、 `ProductRecommendationsLayout` ディレクトリ。 このディレクトリにはテンプレートファイルが含まれています。このファイルをカスタマイズして、レコメンデーションがストアフロントに表示される方法を変更できます。 特に、次のテンプレートを変更または上書きできます。
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
@@ -33,17 +33,17 @@ ht-degree: 0%
 | `web/js` | ストアのレコメンデーションを取得してレンダリングする JavaScript ファイルを含みます |
 | `web/template` | 次のテンプレートを含む： `magento/product-recommendations` モジュール |
 
-## レコメンデーション単位の配置
+## レコメンデーション単位の位置付け
 
-次の場合： [作成](create.md) レコメンデーションの場合は、 [場所](placement.md) ページ上で表示される場所です。 レコメンデーションユニットは、メインコンテンツコンテナの上部または下部に配置できます。 ただし、この配置はカスタマイズできます。 ページビルダーのレコメンデーションコンテンツタイプを作成する場合、ページビルダーツールを使用して、レコメンデーション単位をページ上に配置します。 その他のすべてのページタイプについては、 `*.xml` レコメンデーションの作成時に生成されるファイル。
+次の場合： [作成](create.md) レコメンデーションの場合は、次を指定します。 [場所](placement.md) ページ上で表示される場所です。 レコメンデーションユニットは、メインコンテンツコンテナの上部または下部に配置できます。 ただし、この配置はカスタマイズできます。 ページビルダーのレコメンデーションコンテンツタイプを作成する場合、ページビルダーツールを使用して、レコメンデーション単位をページ上に配置します。 その他のすべてのページタイプについては、 `*.xml` レコメンデーションの作成時に生成されるファイル。
 
-1. を `layout` ディレクトリ：
+1. 次に変更： `layout` ディレクトリ：
 
    ```bash
    cd `<your theme>/Magento_ProductRecommendationsLayout/layout`
    ```
 
-   次の表に、このディレクトリに存在する XML ファイルを示します。
+   次の表に、このディレクトリに存在する XML ファイルの一覧を示します。
 
    | ファイル名 | ページ |
    |---|---|
@@ -77,7 +77,7 @@ ht-degree: 0%
    </page>
    ```
 
-   上記のスニペットでは、 `main.content` 参照ブロックは、レコメンデーション単位が、その要素を基準としたどこかに配置されることを示します。 その `block` 要素に次を含む `after="-"` 属性：レコメンデーション単位がページのメインコンテンツブロックの後に表示されるように指定します。
+   上記のスニペットでは、 `main.content` 参照ブロックは、レコメンデーション単位が、その要素を基準としたどこかに配置されることを示します。 Its `block` 要素に次を含む `after="-"` 属性：レコメンデーション単位がページのメインコンテンツブロックの後に表示されるように指定します。
 
 1. 別のコンテンツブロックを指定して、このファイルを変更します。
 
@@ -101,7 +101,7 @@ ht-degree: 0%
    </page>
    ```
 
-   この変更により、レコメンデーション単位が、製品の詳細ページで製品の画像の後に表示されるようになります。 レコメンデーション単位を `product.info.media`、 `after="-"` 属性 `before="-"`. この `pagePlacement` 引数は、変更しない内部引数です。
+   この変更により、レコメンデーション単位が、製品の詳細ページで製品の画像の後に表示されるようになります。 レコメンデーション単位を `product.info.media`、 `after="-"` 属性 `before="-"`. The `pagePlacement` 引数は、変更しない内部引数です。
 
 参照： [レイアウトの概要](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) を参照してください。
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 ![バッジを追加](assets/unit-custom.png)
 
-ページでレコメンデーション単位をレンダリングする際にカスタム製品属性が使用可能であることを確認するには、 `Used in Product Listing` プロパティを `Yes` 内 [製品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) ページを管理者に表示します。
+ページでレコメンデーション単位をレンダリングする際にカスタム製品属性が使用可能であることを確認するには、 `Used in Product Listing` プロパティを `Yes` （内） [製品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) ページを管理者に表示します。
 
 このプロパティを設定すると、JSON ペイロードに `attributes` 属性コードと値の配列を含むオブジェクト。 その後、これらの属性値に基づいて、前述のように特別な視覚的処理やバッジを追加するなど、カスタムのストアフロントスタイルを適用できます。
 

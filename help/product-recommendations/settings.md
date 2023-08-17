@@ -17,25 +17,25 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->REST を通じて製品Recommendationsを使用する場合、 `alternateEnvironmentId` パラメーターを使用して、他のデータスペースを指定できます。 GraphQLを通じて Product Recommendationsを使用する場合、このパラメーターは使用できません。
+>REST を通じて製品Recommendationsを使用する場合、 `alternateEnvironmentId` パラメーターは、他のデータスペースを指定するために使用できます。 GraphQLを通じて Product Recommendationsを使用する場合、このパラメーターは使用できません。
 
 ## レコメンデーションソースを選択
 
 製品レコメンデーションデータのソースを変更するには、使用する行動データを含む SaaS データスペースを選択します。 始める前に、次の点を確認します。
 
-- ストアフロントのデータ収集は必ず必要です [設定済みおよび有効](install-configure.md) 実稼動環境の [検証済み](verify.md) その行動データがAdobe Commerceに送信されます。
+- ストアフロントのデータ収集は必ず必要です [設定済みおよび有効](install-configure.md) （実稼動環境用）および [検証済み](verify.md) その行動データがAdobe Commerceに送信されます。
 - 非実稼動環境のカタログは、実稼動カタログと基本的に同じにする必要があります。 同様のカタログを使用すると、製品のレコメンデーションユニットが実稼働環境でのレコメンデーションユニットと密接に似たものを返すようになります。
 
 1. 実稼動以外のAdobe Commerce環境の管理者にログインします。
 
-1. の _管理者_ サイドバー、移動 **マーケティング** > _プロモーション_ > **製品Recommendations**.
+1. 次の日： _管理者_ サイドバー、移動 **マーケティング** > _プロモーション_ > **製品Recommendations**.
 
 1. クリック **設定**.
 
    ![製品レコメンデーション設定](assets/settings.png)
    _設定_
 
-1. 内 _Recommendationsソース_ セクションで、 **別の SaaS データスペースからレコメンデーションを取得する** オプション。 この _Recommendationsソース_ セクションは、実稼動以外の環境にのみ表示されます。
+1. Adobe Analytics の _Recommendationsソース_ セクションで、 **別の SaaS データスペースからレコメンデーションを取得する** オプション。 The _Recommendationsソース_ セクションは、実稼動以外の環境にのみ表示されます。
 
    リスト _利用可能な SaaS データスペース_ が表示されます。
 
@@ -60,6 +60,6 @@ ht-degree: 0%
 
 ## 視覚的なレコメンデーションを有効にする
 
-この [Visual Product Recommendations](install-configure.md) モジュールがインストールされている場合、Visual Recommendationsを有効にして [視覚的類似性](type.md#visualsim) レコメンデーションタイプ。
+次の場合、 [Visual Product Recommendations](install-configure.md) モジュールがインストールされている場合、Visual Recommendationsを有効にして、 [視覚的類似性](type.md#visualsim) レコメンデーションタイプ。
 
-内 _Visual Recommendations_ セクション、設定 **Visual Recommendationsの有効化** をアクティブな位置に追加します。
+Adobe Analytics の _Visual Recommendations_ セクション、設定 **Visual Recommendationsを有効にする** をアクティブな位置に追加します。

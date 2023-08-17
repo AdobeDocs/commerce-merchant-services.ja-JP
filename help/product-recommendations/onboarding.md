@@ -27,8 +27,8 @@ ht-degree: 0%
 
 ### サポートされるプラットフォーム
 
-- Adobe Commerceオンプレミス (EE) :2.4.4 以上
-- Adobe Commerce on Cloud (ECE) :2.4.4 以上
+- Adobe Commerceオンプレミス (EE) :2.4.4 以降
+- Adobe Commerce on Cloud (ECE) :2.4.4 以降
 
 ### ページビルダーのサポート
 

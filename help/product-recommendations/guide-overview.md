@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Product Recommendations] ガイドの概要`'
+title: '[!DNL Product Recommendations] ガイドの概要'
 description: に関する包括的な情報 [!DNL Product Recommendations] Adobe Commerce管理者向け（インストールとオンボーディングを含む）
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
@@ -8,7 +8,7 @@ feature: Services, Recommendations
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 [!DNL Product Recommendations] には、管理者向けの次の 2 つの領域があります。
 
-* 管理者：この領域を使用して、設定 UI とレポートにアクセスします。
-* コマンドラインインターフェイスは次のようになります。このツールを使用して、インストールおよびバックエンドの設定タスクを実行します。
+* 管理者：この領域を使用して、設定の UI とレポートにアクセスします。
+* コマンドラインインターフェイス：このツールを使用して、インストールおよびバックエンドの設定タスクを実行します。
 
 このガイドでは、以下について説明します。
 
@@ -39,5 +39,5 @@ ht-degree: 0%
 
 このガイドに記載されていない情報や質問がある場合は、次のリソースを使用してください。
 
-* [ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"}— [!DNL Product Recommendations] — 関連のトラブルシューティング記事。
+* [ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} — 詳しくは、 [!DNL Product Recommendations] — 関連のトラブルシューティング記事。
 * [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 追加のヘルプを受け取るには、チケットを送信します。

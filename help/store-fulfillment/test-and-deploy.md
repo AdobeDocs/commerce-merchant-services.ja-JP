@@ -1,6 +1,6 @@
 ---
 title: ストアのフルフィルメントのテストとデプロイ
-description: テスト計画を作成して、店舗達成機能を検証します。 テストでは、在庫同期 API、取り消された注文のエンドツーエンドのフルフィルメントワークフロー、ストアフルフィルメントアプリのユーザー管理、および顧客チェックインエクスペリエンスをカバーします。
+description: テスト計画を作成して、店舗フルフィルメント機能を検証します。 テストでは、在庫同期 API、取り消された注文のエンドツーエンドのフルフィルメントワークフロー、ストアフルフィルメントアプリのユーザー管理、および顧客チェックインエクスペリエンスをカバーします。
 role: User, Admin
 level: Intermediate
 feature: Shipping/Delivery, User Account, Roles/Permissions
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 情報、店舗または注文をテストまたは同期する前に、次のタスクを完了していることを確認します。
 
-- 完了 [一般設定](enable-general.md) （ストアフルフィルメントサービス用）
+- 完了： [一般設定](enable-general.md) （ストアフルフィルメントサービス用）
 
 - [サンドボックスと実稼動環境のアカウント資格情報と接続の詳細を追加および検証します](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 
    - 選択 **[!UICONTROL Synchronize Store Fulfillment Sources]**.
 
-1. ストアグリッドから、ストアが `Synced` テスト注文を作成する前に
+1. ストアグリッドから、ストアが `Synced` テスト注文を作成する前に。
 
-## サンプルテストプラン
+## サンプルのテスト計画
 
 小売業者は、導入の構成およびテストフェーズで、店舗フルフィルメントソリューションの基本機能を検証します。 このサンプルテスト計画は、テストの出発点となります。 要件に応じてシナリオを追加します。
 
@@ -46,12 +46,12 @@ ht-degree: 0%
 >
 >ストアフルフィルメントソリューションの初期オンボーディングを完了した後、または既存のインストールを更新した後は、実稼動環境にデプロイする前に、必ず非実稼動環境でアプリケーションをテストしてください。
 
-このサンプルテストプランでは、次の機能領域を扱います。
+このテスト計画例では、次の機能領域を扱います。
 
 | 機能領域 | 関数 | 役割 |
 |-------------------------------------|------------------------------------------|----------------------------------|
 | 在庫と注文の同期 | 在庫 API の同期 | Adobe Commerce Admin |
-| エンドツーエンド | 注文キャンセルワークフロー | 顧客、管理者、ストア関連付け |
+| エンドツーエンド | 注文取消ワークフロー | 顧客、管理者、ストア関連付け |
 | 管理者 | フルフィルメントアプリの権限を保存 | 管理者 |
 | Adobe Commerce Frontend | 製品タイプ | 顧客、管理者 |
 | フロントエンドチェックアウト</br>チェックインフォーム | チェックインエクスペリエンス | 顧客、管理者 |
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 テスト計画のこのセクションでは、在庫と注文の同期をカバーして、ピックアップソースと在庫の更新がAdobe Commerceと Store Fulfilment ソリューションの間で正しく同期されていることを確認します。
 
-**機能領域**:在庫と注文の同期</br>
+**機能領域**：在庫と注文の同期</br>
 **役割：** 管理者</br>
 **テストタイプ：** すべての正数
 
@@ -80,14 +80,14 @@ ht-degree: 0%
 <td>リアルタイム同期では、ソースの詳細が 5 分以内にウォルマートGIFサービスに送信されます。</td>
 </tr>
 <tr>
-<td><strong>既存のピックアップ在庫ソースを更新</strong></td>
-<td>更新を既存のピックアップ在庫ソースに保存します。</td>
+<td><strong>既存のピックアップ在庫ソースを更新します</strong></td>
+<td>既存のピックアップ在庫ソースに対する更新を保存します。</td>
 <td>リアルタイム同期操作では、5 分以内に詳細がウォルマートGIFに送信されます</td>
 </tr>
 <tr>
-<td><strong>ピックアップ在庫ソース</br><code>Is Synced</code> ステータス</strong></td>
-<td>更新を既存のピックアップ在庫ソースに保存します。</td>
-<td>操作が成功した後、 <code>Is Synced</code> ソースを管理ページの更新元の列 <code>No</code> から <code>Yes</code>.</td>
+<td><strong>ピックアップの在庫ソース</br><code>Is Synced</code> ステータス</strong></td>
+<td>既存のピックアップ在庫ソースに対する更新を保存します。</td>
+<td>操作が正常に完了した後、 <code>Is Synced</code> ソースを管理ページの更新元の列 <code>No</code> から <code>Yes</code>.</td>
 </tr>
 <tr>
 <td><strong>変更された在庫予約プロセス</strong></td>
@@ -101,8 +101,8 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>新規注文プッシュ、API 同期 — 管理者が注文を送信</strong></td>
-<td>Adobe Commerce <strong>管理者</strong> 受取注文を送信します。</td>
-<td><ul><li>注文管理ビューで、注文の同期ステータスが次のように更新されます。 <code>Sent</code>.</li><li>注文の詳細ログには、メッセージが含まれます <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td>Adobe Commerce <strong>管理者</strong> は、ピックアップオーダーを送信します。</td>
+<td><ul><li>注文管理ビューで、注文の同期ステータスが <code>Sent</code>.</li><li>注文の詳細ログには、メッセージが含まれます <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>新規受注プッシュ、例外キュー<strong></td>
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 **機能領域：** Adobe Commerce Admin</br>
 **役割：** エンドツーエンド（管理者、ストア関連、顧客）</br>
-**テスト結果のタイプ：** すべてのシナリオで肯定的
+**テスト結果のタイプ：** すべてのシナリオに対して肯定的
 
 <table style="table-layout:fixed">
 <tr>
@@ -127,18 +127,18 @@ ht-degree: 0%
 <th>期待される結果</th>
 </tr>
 <tr>
-<td><strong>完全注文のキャンセル</strong></td>
+<td><strong>完全な注文のキャンセル</strong></td>
 <td><ol>
 <li>発注。</li>
 <li>オーダーが同期されるまで待ちます。</li>
-<li>請求書メールの請求書作成（承認および取得の場合）の受領を検証します。</li>
+<li>請求書メールの請求書作成（承認および取得の場合）の受領書を検証します。</li>
 <li>請求書ビューで発注されたすべての商品を含むクレジット・メモを作成します。</li>
 </ol>
 </td>
 <td>
 <ul>
 <li>注文履歴を次で更新： <code>We refunded $X online. Transaction ID: transactionID</code> および <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
-<li>注文ステータスは <code>Closed</code>. （今すぐ PAYMENT REVIEW を設定しました。）</li>
+<li>注文ステータス： <code>Closed</code>. （今すぐ PAYMENT REVIEW を設定しました。）</li>
 <li>Adobe Commerceで作成されたクレジットメモ。 （cron が動作するまで待ちます）。</li>
 <li>すべての項目が選択された場合は、E メールの受け取り準備が整います <code>DISPLAY COMMENT HISTORY</code> 表示 <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> フラグが <code>true</code>.)</li>
 <li>すべての項目が選択されていない場合は、キャンセルメールと DISPLAY COMMENT HISTORY が表示されます <code>Order has been canceled - all items were not available</code></li>
@@ -146,7 +146,7 @@ ht-degree: 0%
 </ul>
 </td>
 </tr>
-<tr><td><strong>一部注文取消<strong></td>
+<tr><td><strong>一部注文の取消<strong></td>
 <td>
 <ol>
 <li>少なくとも 2 つの製品を含む発注。</li>
@@ -160,26 +160,26 @@ ht-degree: 0%
 <li>注文履歴の更新： <code>We refunded $X online. Transaction ID: transactionID</code></li>
 <li>注文履歴の更新： <code>Order notified as partly canceled at: Date and Hour</code></li>
 <li>注文返金メールの受け取り： <code>$x amount was refunded</code></li>
-<li>注文ステータスは <code>Processing</code>.</li>
+<li>注文ステータス： <code>Processing</code>.</li>
 <li>Adobe Commerceで作成されたクレジットメモ（cron が機能するまでお待ちください）。</li>
 <li>一部の品目が選択されていない場合は、 [!UICONTROL Ready for Pickup] nil pick または refund セクションを含む e メールが表示されます。 <code>DISPLAY COMMENT HISTORY</code> 表示 <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> フラグが <code>true</code>.</li>
 </ul>
 </td>
 </tr>
-<td><strong>ピックアップ準備完了</br></br>完全なキャンセル</br>（すべての製品は、0 数量のピッキング済みとして設定されます）</strong></td>
+<td><strong>ピックアップの準備完了</br></br>完全なキャンセル</br>（すべての製品は、0 数量のピッキング済みとして設定されます）</strong></td>
 <td>
 <ol>
-<li>注文をします。</li>
+<li>注文を行います。</li>
 <li>オーダーが同期されるまで待ちます。</li>
 <li>請求書が作成され（承認および取り込みの場合）、および受け取った請求書の電子メールが受け取られたことを確認します。</li>
-<li>Postmanに移動し、すべての製品をに設定して、ピックアップ準備完了リクエストを実行します。 <code>picked</code> と <code>0 qty</code>.</li>
+<li>Postmanに移動し、すべての製品をに設定して、ピックアップ準備完了リクエストを実行します。 <code>picked</code> 次を使用 <code>0 qty</code>.</li>
 </ol>
 </td>
 <td>
 <ul>
 <li>注文履歴が更新されました： <code>We refunded $X offline</code></li>
-<li>注文ステータスは <code>CLOSED</code>.
+<li>オーダーのステータスは <code>CLOSED</code>.
 <li>クレジット・メモが作成されます。 （cron が動作するまで待ちます）。</li>
 <li>受け取った返金メール： <code>$x amount was refunded</code></li>
 <li>注文のキャンセルメールが送信されました。</li>
@@ -187,19 +187,19 @@ ht-degree: 0%
 </td>
 </tr>
 <tr>
-<td><strong>ピックアップ準備完了 — 部分キャンセル</strong></br></br><strong>( 一部の製品はピッキングされ、一部は <code>0 qty</code>)</strong>
+<td><strong>ピックアップの準備完了 — 部分キャンセル</strong></br></br><strong>( 一部の製品はピッキングされ、一部は <code>0 qty</code>)</strong>
 </td>
 <td>
 <ol>
-<li>注文をします。</li>
+<li>注文を行います。</li>
 <li>オーダーが同期されるまで待ちます。</li>
 <li>請求書が作成され（承認および取り込みの場合）、および受け取った請求書の電子メールが受け取られたことを確認します。</li>
-<li>Postmanに移動し、0 数量でピックされた製品と残りの製品の一部をピックアップ済みとして、ピックアップ準備要求を実行します。</li>
+<li>Postmanに移動し、0 数量でピックされた製品と残りの製品の一部をピックアップ済みとして、「ピックアップ準備完了」要求を実行します。</li>
 </ol>
 </td>
 <td>
 <ul>
-<li><code>Your order is ready for pickup</code> と [!UICONTROL Ready for Pickup Items] および [!UICONTROL Canceled Items] テーブル。 </li>
+<li><code>Your order is ready for pickup</code> 次を使用 [!UICONTROL Ready for Pickup Items] および [!UICONTROL Canceled Items] テーブル。 </li>
 <li>受注ステータスは「受注準備完了」です。 </li>
 <li>注文履歴が更新されました： <code>We refunded $X offline.</code>
 <li>注文履歴が更新されました： <code>Order notified as partly canceled at: Date and hour</code>
@@ -209,17 +209,17 @@ ht-degree: 0%
 </td>
 </tr>
 <tr>
-<td><strong>ピックアップ準備完了 — 部分キャンセル</br></br>一部の製品はピッキングされ、一部は <code>0 qty</code>)</strong>
+<td><strong>ピックアップの準備完了 — 部分キャンセル</br></br>一部の製品はピッキングされ、一部は <code>0 qty</code>)</strong>
 </td>
 <td><ol>
-<li>注文をします。</li>
+<li>注文を行います。</li>
 <li>オーダーが同期されるまで待ちます。</li>
 <li>請求書が作成され（承認および取り込みの場合）、および受け取った請求書の電子メールが受け取られたことを確認します。</li>
-<li>Postmanに移動し、0 数量でピックされた製品と残りの製品の一部をピックアップ済みとして、ピックアップ準備要求を実行します。</li>
+<li>Postmanに移動し、0 数量でピックされた製品と残りの製品の一部をピックアップ済みとして、「ピックアップ準備完了」要求を実行します。</li>
 </ol>
 </td>
 <td><ul>
-<li><code>Your order is ready for pickup</code> と [!UICONTROL Ready for Pickup Items] および [!UICONTROL Canceled Items] テーブル。 </li>
+<li><code>Your order is ready for pickup</code> 次を使用 [!UICONTROL Ready for Pickup Items] および [!UICONTROL Canceled Items] テーブル。 </li>
 <li>受注ステータスは「受注準備完了」です。 </li>
 <li>注文履歴が更新されました： <code>We refunded $X offline.</code>
 <li>注文履歴が更新されました： <code>Order notified as partly canceled at: Date and hour</code>
@@ -233,11 +233,11 @@ ht-degree: 0%
 </td>
 <td>
 <ol>
-<li>注文をします。</li>
+<li>注文を行います。</li>
 <li>オーダーが同期されるまで待ちます。</li>
 <li>請求書が作成され（承認および取り込みの場合）、および受け取った請求書の電子メールが受け取られたことを確認します。</li>
 <li>Postmanに移動し、すべての製品を選択済みとして、「ピックアップ準備完了」リクエストを実行します。</li>
-<li>メールボックスを開き、[ ピックアップの準備完了 ] メールを探します。 次に、「**[!UICONTROL Confirm Arrival]**.</li>
+<li>メールボックスを開き、[ ピックアップの準備完了 ] メールを探します。 次に、「**」をクリックします[!UICONTROL Confirm Arrival]**.</li>
 <li>チェックインします。</li>
 <li>Postmanに移動し、却下済みとして設定されたすべての製品でディスペンス済みリクエストを実行します。</li>
 </ol>
@@ -250,17 +250,17 @@ ht-degree: 0%
 </td>
 </tr>
 <tr>
-<td><strong>分注済み（分注中）</br></br>部分キャンセル</br>( 一部の製品が分配されている。一部は拒否されます )。</strong>
+<td><strong>分注済み（分注中）</br></br>部分キャンセル</br>（一部の製品は配布され、一部は拒否されます）。</strong>
 </td>
 <td>
 <ol>
-<li>注文をします。</li>
+<li>注文を行います。</li>
 <li>オーダーが同期されるまで待ちます。</li>
 <li>請求書が作成され（承認および取り込みの場合）、および受け取った請求書の電子メールが受け取られたことを確認します。</li>
 <li>Postmanに移動し、すべての製品を選択済みとして、「ピックアップ準備完了」リクエストを実行します。</li>
-<li>メールボックスを開きます。 [ ピックアップの準備 ] メールを探し、を選択します。 <code>Confirm Arrival</code>.</li>
+<li>メールボックスを開きます。 [ ピックアップの準備 ] メールを探し、[ ] を選択します。 <code>Confirm Arrival</code>.</li>
 <li>チェックインします。</li>
-<li>Postmanに移動し、配布する製品と却下する製品を使用して、配布リクエストを実行します</li>
+<li>Postmanに移動し、配布する製品と却下する製品を使用して、配布済みリクエストを実行します</li>
 </ol>
 </td>
 <td>
@@ -276,7 +276,7 @@ ht-degree: 0%
 </td>
 <td>
 <ol>
-<li>注文をします。</li>
+<li>注文を行います。</li>
 <li>オーダーが同期されるまで待ちます。</li>
 <li>「承認および取得」オプションが設定されている場合は、請求書が作成され、顧客が請求書の電子メールを受け取ったことを確認します。</li>
 <li>Postmanのすべての製品を選択します。</li>
@@ -298,7 +298,7 @@ ht-degree: 0%
 </td>
 <td>
 <ol>
-<li>注文をします。</li>
+<li>注文を行います。</li>
 <li>オーダーが同期されるまで待ちます。</li>
 <li>請求書が作成され（承認および取り込みの場合）、および受け取った請求書の電子メールが受け取られたことを確認します。</li>
 <li>Postmanのすべての製品を選択します。</li>
@@ -309,9 +309,9 @@ ht-degree: 0%
 </ol>
 <td>
 <ul>
-<li>RMA が作成され、下に表示されます <strong>[!UICONTROL Returns]</strong> 」タブをクリックします。</li>
+<li>RMA が作成され、下に表示されます。 <strong>[!UICONTROL Returns]</strong> 」タブをクリックします。</li>
 <li>お客様が RMA 確認 E メールを受け取りました。</li>
-<li>RMA の作成後に、次の RMA 承認を取得します。管理者から、に移動します。 <strong>[!UICONTROL Sales > Returns]</strong>. 作成して承認した RMA を選択します。</li>
+<li>RMA の作成後、RMA 認証を取得します。管理者から、に移動します。 <strong>[!UICONTROL Sales > Returns]</strong>. 作成して承認した RMA を選択します。</li>
 <li>お客様が RMA 承認確認 E メールを受け取ったことを確認します。</li>
 <li>払い戻しがトランザクションと注文履歴に追加されたことを確認します。</li>
 </ul>
@@ -362,12 +362,12 @@ ht-degree: 0%
 <li>管理者ユーザーアカウントでAdobe Commerce Admin にログインします。</li>
 <li>に移動します。 <strong>[!UICONTROL System] &gt; フルフィルメントアプリの保存権限 &gt; すべてのストアフルフィルメントアプリのユーザー</strong>.</li>
 <li>[ ユーザーアカウント ] の一覧で、既存のアクティブなユーザーアカウントを開くには、 <strong>[!UICONTROL Edit]</strong>.
-<li>アカウントを無効にするには、 <strong>[!UICONTROL Is Active]</strong> から <strong>いいえ</strong>.</li>
+<li>次を変更してアカウントを無効にする <strong>[!UICONTROL Is Active]</strong> から <strong>いいえ</strong>.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>の <strong>[!UICONTROL Store Fulfillment App Users]</strong> ダッシュボードに表示される更新済みアカウントのステータスが次の値に変更されました： <strong>[!UICONTROL Inactive]</strong>.</li>
+<li>次の日： <strong>[!UICONTROL Store Fulfillment App Users]</strong> ダッシュボードに表示される更新済みアカウントのステータスが次の値に変更されました： <strong>[!UICONTROL Inactive]</strong>.</li>
 <li>Store Associate は、非アクティブなアカウントの資格情報を使用して Store Assist アプリにログインできません。</li>
 </ul>
 </td>
@@ -415,7 +415,7 @@ Adobe Commerceの製品タイプのテストシナリオでは、顧客が様々
 <li>配信方法および [!UICONTROL Add to cart] すべての子製品が
 <code>qty</code> に設定 <code>0</code>.</li>
 <li>少なくとも 1 つの子製品に <code>qty</code> に設定 <code>0.</code></li>
-<li>確認する [!UICONTROL Store Pickup Delivery] メソッドは、 [!UICONTROL Available for Store Pickup] 有効。 （子製品を確認します。）</li>
+<li>を確認します。 [!UICONTROL Store Pickup Delivery] メソッドは、 [!UICONTROL Available for Store Pickup] 有効。 （子製品を確認します。）</li>
 </ul>
 </td>
 <td></td>
@@ -544,7 +544,7 @@ Adobe Commerceの製品タイプのテストシナリオでは、顧客が様々
 </tr>
 <tr>
 <td><strong>チェックイン処理 — 到着を確認</strong></td>
-<td>店舗でのピックアップの準備ができたとマークされます。 顧客が「ピックアップ準備完了」の E メールを受け取り、を選択します。 [!UICONTROL Confirm Arrival].</td>
+<td>店舗でのピックアップの準備ができたとマークされた FaaS。 顧客が「ピックアップ準備完了」の E メールを受け取り、を選択します。 [!UICONTROL Confirm Arrival].</td>
 <td>顧客に注文のチェックインフォームが表示されます。</td>
 </tr>
 </tbody>
@@ -590,12 +590,12 @@ Adobe Commerceの製品タイプのテストシナリオでは、顧客が様々
 </tr>
 <tr>
 <td><strong>単一注文ピッキング — ハッピーパスではなく、店内ピックアップ</strong></td>
-<td>一部ピックアップと日付ピックアップと店舗ピックアップを含む単一品目と複数数量品目をピックします（ステージングを含む）</td>
+<td>一部ピックアップと日付ピックアップと店舗ピックアップを含む単一品目と複数数量品目をピックします（ステージングを含む）。</td>
 </td>
 <td></td>
 </tr>
 <td><strong>複数注文ピッキング：パスカーブサイドピックアップが不適切</strong></td>
-<td>一部ピックアップと日付ピックアップと店舗ピックアップを含む単一品目と複数数量品目をピックします（ステージングを含む）</td>
+<td>一部ピックアップと日付ピックアップと店舗ピックアップを含む単一品目と複数数量品目をピックします（ステージングを含む）。</td>
 <td></td>
 </tr>
 <td><strong>単一注文ピッキング：ハッピーパスではなく、カーブサイドピックアップ</strong></td>
@@ -627,7 +627,7 @@ Adobe Commerceの製品タイプのテストシナリオでは、顧客が様々
 <tr><td><strong>バンドル項目 — ピッキングおよびハンドオフと共に発注</strong></td>
 <td></td>
 <td></td></tr>
-<tr><td><strong>発注済み — 却下を含むハンドオフ</strong></td>
+<tr><td><strong>発注済み — 却下を含む手渡し</strong></td>
 <td></td>
 <td></td></tr>
 <tr><td><strong>発注済み — すべての品目の却下を含むハンドオフ</strong></td>

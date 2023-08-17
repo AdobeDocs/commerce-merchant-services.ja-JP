@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Quick Checkout] Adobe Commerce」'
+title: '"[!DNL Quick Checkout] Adobe Commerceのために」'
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 6f205568-18af-4f2f-827c-b46f04e0a10a
 feature: Checkout, Services
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] Adobe Commerce
 
-この [!DNL Quick Checkout] Adobe Commerce向け拡張機能は、1 回限りのゲスト買い物客を常連のアカウント所有者に変換するために設計された、シームレスなチェックアウトエクスペリエンスを強化します。 買い物客は、高速な買い物体験を期待します。 しかし、買い物客が購入を完了しない理由としては、まだチェックアウトでの摩擦が最も大きな理由です。 チェックアウトを合理化し、コンバージョン率を向上させれば、本当に効果的な作業に専念できます。
+The [!DNL Quick Checkout] Adobe Commerce向け拡張機能は、1 回限りのゲスト買い物客を常連のアカウント所有者に変換するために設計された、シームレスなチェックアウトエクスペリエンスを強化します。 買い物客は、高速な買い物体験を期待します。 しかし、買い物客が購入を完了しない理由としては、まだチェックアウトでの摩擦が最も大きな理由のままです。 チェックアウトを合理化し、コンバージョン率を向上させれば、本当に効果的な作業に専念できます。
 
-このガイドでは、Adobe Commerceの一般的なチェックアウト操作の概要と、 [!DNL Quick Checkout] のメリットと、そのジャーニーに沿ったベストプラクティスを紹介します。
+このガイドでは、Adobe Commerceの一般的なチェックアウト操作の概要と、 [!DNL Quick Checkout] のメリットと、そのジャーニーに従うためのベストプラクティスを紹介します。
 
-この [!DNL Quick Checkout] Adobe Commerce拡張機能の目的は、このチェックアウトエクスペリエンスの向上です。 詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) の設定方法の詳細に関するトピック [!DNL Quick Checkout] Adobe Commerce
+The [!DNL Quick Checkout] Adobe Commerce拡張機能の目的は、このチェックアウトエクスペリエンスの向上です。 詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) の設定方法の詳細に関するトピック [!DNL Quick Checkout] Adobe Commerceの
 
-次を確認します。 [チェックアウトページ](../quick-checkout/checkout-page.md) の [!DNL Quick Checkout] Adobe Commerce拡張機能の場合
+次を確認します。 [チェックアウトページ](../quick-checkout/checkout-page.md) を使用して注文を処理する方法の詳細については、トピックを参照してください。 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合。
 
 ## このガイドは誰のためのものですか。
 

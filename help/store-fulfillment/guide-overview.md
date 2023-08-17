@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Store Fulfillment] ガイドの概要`'
-description: 「 [!DNL Store Fulfillment] Adobe Commerce管理者向け（インストールやオンボーディングを含む）」
+title: '[!DNL Store Fulfillment] ガイドの概要'
+description: 「次に関する包括的な情報： [!DNL Store Fulfillment] Adobe Commerce管理者向け（インストールやオンボーディングを含む）」
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 recommendations: noDisplay
@@ -8,7 +8,7 @@ exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 [!DNL Store Fulfillment] には、Adobe Commerce管理者向けの 2 つの領域があります。
 
 * 管理者：この領域を使用して、設定 UI にアクセスします。
-* コマンドラインインターフェイスは次のようになります。このツールを使用して、インストールおよびバックエンドの設定タスクを実行します。
+* コマンドラインインターフェイス：このツールを使用して、インストールおよびバックエンドの設定タスクを実行します。
 
 このガイドでは、以下について説明します。
 
@@ -39,5 +39,5 @@ ht-degree: 0%
 
 このガイドに記載されていない情報や質問がある場合は、次のリソースを使用してください。
 
-* [ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}— [!DNL Store Fulfillment] — 関連のトラブルシューティング記事。
+* [ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 詳しくは、 [!DNL Store Fulfillment] — 関連のトラブルシューティング記事。
 * [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 追加のヘルプを受け取るには、チケットを送信します。

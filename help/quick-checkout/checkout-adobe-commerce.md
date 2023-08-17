@@ -14,7 +14,7 @@ ht-degree: 0%
 
 既存のAdobe Commerceユーザーは、 [!DNL Quick Checkout] を参照してください。
 
-買い物客がチェックアウト時に電子メールアドレスを入力すると、 [!DNL Quick Checkout] を検証し、既存の [!DNL Bolt] アカウント
+買い物客がチェックアウト時に電子メールアドレスを入力すると、 [!DNL Quick Checkout] を検証し、既存の [!DNL Bolt] アカウント。
 
 ## Adobe Commerceと [!DNL Bolt]
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 次の場合、 [!DNL Bolt] アカウントはチェックアウト中に見つかり、買い物客は引き続き [!DNL Quick Checkout] シームレスなチェックアウトエクスペリエンス：
 
-1. これに送信する 1 回限りのパスワード (OTP) を入力します [!DNL Bolt] アカウントの電子メールアドレスまたはモバイル（次に応じる） [ユーザーの環境設定 [!DNL Bolt] アカウント](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
+1. これに送信する 1 回限りのパスワード (OTP) を入力します [!DNL Bolt] アカウントの電子メールアドレスまたはモバイル（次に応じる） [ユーザーの環境設定を [!DNL Bolt] アカウント](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
 ![OTP ポップアップ](assets/new-logo-otp-email.png)
 
@@ -45,10 +45,10 @@ ht-degree: 0%
 
 自動ログインコンポーネントは、買い物客がアクティブな Bolt セッションを持っているかどうかを検出し、買い物客を自動的にログインします。 これにより、買い物客が以前のセッションでアカウント検出と 1 回限りのパスコード (OTP) の手順をスキップします。
 
-自動ログインを [!DNL Quick Checkout] ユーザー。 設定を有効にすると、チェックアウト時にユーザーに自動的にログインできます。
+自動ログインを設定できます。 [!DNL Quick Checkout] ユーザー。 設定を有効にすると、チェックアウト時にユーザーに自動的にログインできます。
 
-1. の _管理者_ サイドバー、次に移動 **ストア** > **設定** > **チェックアウト** をクリックして、一般的な「チェックアウト管理者設定」ページにアクセスします。
-1. 内 _サービス設定_ セクション [!DNL Quick Checkout]、自動ログインの設定に必要なすべての詳細を指定します。
+1. 次の日： _管理者_ サイドバー、次に移動 **ストア** > **設定** > **チェックアウト** をクリックして、一般的な「チェックアウト管理者設定」ページにアクセスします。
+1. Adobe Analytics の _サービス設定_ のセクション [!DNL Quick Checkout]、自動ログインの設定に必要なすべての詳細を指定します。
 
 詳しくは、 [[!DNL Quick Checkout] サービス設定の構成](../quick-checkout/onboarding.md#configure-service-settings) トピックを参照してください。
 
@@ -58,11 +58,11 @@ ht-degree: 0%
 
 ## 新規 [!DNL Bolt] アカウント
 
-指定しない場合 [!DNL Bolt] アカウントが見つかった場合、買い物客はそのままデフォルトのAdobe Commerceチェックアウトを続行し、保存された情報から必要な詳細をすべて選択して注文します。
+いいえの場合 [!DNL Bolt] アカウントが見つかった場合、買い物客はそのままデフォルトのAdobe Commerceチェックアウトを続行し、保存された情報から必要な詳細をすべて選択して注文します。
 
 - 配送および請求情報
 - 発送方法
 - 支払い方法の確認
-- 登録するオプション [!DNL Bolt] チェックアウトを早めてから注文を行う場合。 買い物客は、利用条件に同意して、顧客の [!DNL Bolt] アカウント
+- 登録するオプション [!DNL Bolt] チェックアウトを早めてから注文を行う場合。 買い物客は、利用条件に同意して、顧客の [!DNL Bolt] アカウント。
 
   ![記憶する [!DNL Bolt]](assets/checkbox-remember-bolt.png)

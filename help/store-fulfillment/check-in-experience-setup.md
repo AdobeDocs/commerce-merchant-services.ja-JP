@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->受取注文フォームインターフェイスは、 [ストア設定メニュー](merchant-store-configuration.md#configure-check-in-experience-interface-options). 例えば、表示する入力フィールドと、必須か任意かを指定できます。
+>受け取り注文フォームインターフェイスは、 [ストア設定メニュー](merchant-store-configuration.md#configure-check-in-experience-interface-options). 例えば、表示する入力フィールドと、必須か任意かを指定できます。
 
 
 ## 車種と色の選択を設定する

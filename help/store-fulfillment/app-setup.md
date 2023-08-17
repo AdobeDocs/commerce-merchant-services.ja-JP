@@ -1,6 +1,6 @@
 ---
 title: アプリ設定
-description: 設定 [!DNL Store Assist] エンドツーエンドの店舗フルフィルメントワークフローとプロセスを管理するアプリは、オンラインで購入し、店舗注文で受け取ります。
+description: を設定します。 [!DNL Store Assist] エンドツーエンドの店舗フルフィルメントワークフローとプロセスを管理するアプリは、オンラインで購入し、店舗注文で受け取ります。
 level: Intermediate
 role: Admin
 feature: Shipping/Delivery, Configuration, Tools and External Services
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Store Assist は、Walmart Commerce Technologies を活用したフルフィルメント・ア・サービス (FaaS) プラットフォーム・アプリです。 デスクトップアプリケーションは、ストア内フルフィルメント機能を提供し、 [!DNL buy online, pick up in store] (BOPIS) 注文。 店舗アシストを使用すると、店舗関連者は、顧客が注文した品目を確認し、正しい品目を迅速に選択し、顧客に対する店舗内またはキューブサイドのピックアップ配信の履行注文を設定できます。
 
-Store Assist アプリは、注文の詳細から時間まで、すべての注文および顧客情報を受け取り、モバイルデバイスを通じて、関連付けをオンラインで保存するためのデータを使用できるようにします。 アプリにはが含まれます [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff]、および [!UICONTROL Orders] Store Associates が次のような達成活動に役立つモジュールです。
+Store Assist アプリは、注文の詳細から時間まで、すべての注文および顧客情報を受け取り、モバイルデバイスを通じて、関連付けをオンラインで保存するためのデータを使用できるようにします。 アプリにはが含まれます。 [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff]、および [!UICONTROL Orders] Store Associates が次のような達成活動に役立つモジュールです。
 
 - 注文の配信日時を割り当てます。
 - 受注の受け取り用に顧客が到着したら、顧客から通知を受け取ります。
@@ -51,9 +51,9 @@ Store Assist アプリには、次の 2 種類の設定が必要です。
 
    - **通知の選択** — 顧客が注文した後にピッキングプロセスを開始するためにプッシュ通知を送信するかどうかを指定します。
 
-   - **チェックイン通知** — 注文のチェックインプロセス中に、チェックイン後に、顧客の待機時間が指定した期間を超えた後にプッシュ通知を送信するかどうかを指定します。 または、通知を無効にします。
+   - **通知をチェックインする** — 注文のチェックインプロセス中に、チェックイン後に、顧客の待機時間が指定した期間を超えた後にプッシュ通知を送信するかどうかを指定します。 または、通知を無効にします。
 
-   - **手渡しプロセス**- Store Associate が顧客に注文を行う場合（例えば、顧客の署名が必要な場合や、顧客 ID の確認を要求するメッセージを表示する場合）は、オプションのプロセスを有効にします。
+   - **手渡しプロセス**- Store Associate が顧客に注文を行う場合（例えば、顧客の署名が必要な場合や、顧客 ID の確認を依頼する場合）は、オプションのプロセスを有効にします。
 
    - **ハンドオフ時に項目却下を有効にする** — 顧客が注文の受け渡し中に注文項目を返却またはキャンセルできるようにします。
 
@@ -73,4 +73,4 @@ Store Assist アプリを設定した後、Store Associates は、モバイル�
 
    - **Store Assist アカウントの資格情報**：ユーザー名とパスワードの資格情報。
 
-  Adobe Commerce管理者は、 [!DNL Store Assist app] を持つすべてのストアの場所のユーザーアカウント [店内ピックアップ](merchant-store-configuration.md#pickup-location-configuration) が管理ストア設定で有効になっている。
+  Adobe Commerce管理者は、 [!DNL Store Assist app] を持つすべてのストアの場所のユーザーアカウント [店舗でのピックアップ](merchant-store-configuration.md#pickup-location-configuration) が管理ストア設定で有効になっている。

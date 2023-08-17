@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # テストと検証
 
-公開する前に [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 買い物客にとって、サンドボックス環境でテストすることをお勧めします。 _および_ 実稼動環境で テストと検証は、 [!DNL Payment Services] 機能は期待どおりに動作し、お客様の店舗や顧客に最適な支払いオプションを提供します。
+公開する前に [!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] 買い物客にとって、サンドボックス環境でテストすることをお勧めします。 _および_ 実稼動環境で テストと検証は、 [!DNL Payment Services] 機能は期待どおりに動作し、お客様の店舗や顧客に最適な支払いオプションを提供します。
 
 ## サンドボックス環境でテスト
 
 テスト [!DNL Payment Services] サンドボックス環境は、実際の銀行や商人には接続されていない PayPal サンドボックスにのみ接続されたシミュレーション環境である場合でも、重要な検証手順です。
 
 1. ストアのチェックアウトが成功したら、 [クレジットカードのフィールド](payments-options.md#credit-card-fields) または [PayPal スマートボタン](payments-options.md#paypal-smart-buttons). 詳しくは、 [資格情報のテスト](#testing-credentials) を参照してください。
-1. キャプチャ ( 支払いアクションが [に設定 `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [払い戻し](refunds.md)または [ボイド](voids.md) 完了した注文。 また、 [請求書の作成](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} 注文の場合、支払い処理が `Authorize` の代わりに `Authorize and Capture`.
+1. キャプチャ ( 支払いアクションが [に設定 `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [払い戻し](refunds.md)または [ボイド](voids.md) 注文が完了しました。 また、 [請求書の作成](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} 注文の場合、支払い処理が `Authorize` の代わりに `Authorize and Capture`.
 1. 24 ～ 48 時間以内に、トランザクションおよびその他の情報を [ペイアウトレポート](payouts.md).
 1. 注文の詳細を [注文の支払いステータスレポート](order-payment-status.md).
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 サンドボックスをテストおよび検証する際は、既存のクレジットカードアカウントに対する実際の料金を作成しないように、偽のクレジットカード番号を使用する必要があります。
 
-PayPal のクレジットカードジェネレーターを使用して [ランダムクレジットカード情報を生成](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) テスト用。
+PayPal のクレジットカードジェネレーターを使用して [ランダムクレジットカード情報を生成する](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) （テスト用）
 
 Apple Pay をサンドボックスモードでテストするには：
 

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # バックグラウンドプロセス設定
 
-ストアフルフィルメント統合では、最適なパフォーマンスとスケールを実現するために、バックグラウンドプロセスとメッセージキューを使用します。 を使用して、Adobe Commerceストア用の環境を構築します。 [デプロイメント変数](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) 自動的に開始 [メッセージキューランナー](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html).
+ストアフルフィルメント統合では、最適なパフォーマンスとスケールを実現するために、バックグラウンドプロセスとメッセージキューを使用します。 を使用して、Adobe Commerceストア用の環境を構築します。 [デプロイメント変数](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) 自動的に開始する [メッセージキューランナー](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html).
 
 バックグラウンドプロセスは、標準のAdobe Commerce [予定タスク](https://docs.magento.com/user-guide/system/cron.html) 機能。 これらのプロセスは、注文とマーチャントストアの設定データをストアフルフィルメント Web サービスと同期する役割を果たします。
 

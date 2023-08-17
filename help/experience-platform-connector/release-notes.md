@@ -6,7 +6,7 @@ feature: Personalization, Integration, Release Notes
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -32,17 +32,17 @@ Experience Platformコネクタで使用される拡張機能に関する機能�
 
 _2023 年 6 月 11 日_
 
-* ![修正点](../assets/fix.svg) - `orderId` コマース注文識別子のプレフィックスが原因で、がコンテキストを渡していませんでした。
+* ![修正点](../assets/fix.svg)  — 次の場合に発生する問題を修正しました。 `orderId` コマース注文識別子のプレフィックスが原因で、がコンテキストを渡していませんでした。
 * ![修正点](../assets/fix.svg)  — コンテンツセキュリティポリシーの設定を更新しました。
 
 _2023 年 3 月 31 日_
 
 * ![新規](../assets/new.svg)  — という新しい拡張機能が追加されました。 `data-services-b2b` を含む [購買依頼リスト・イベント](events.md#b2b-events) B2B 商人にとって
-* ![新規](../assets/new.svg)  — が追加されました `uniqueIdentifier` ～に向かって [検索](events.md#search-events) イベント。 この新しいフィールドを使用すると、マーチャントは、どの検索リクエストをどの検索応答に対応させるかを相互に参照できます。
+* ![新規](../assets/new.svg)  — が追加されました。 `uniqueIdentifier` ～に向かって [検索](events.md#search-events) イベント。 この新しいフィールドを使用すると、マーチャントは、どの検索リクエストをどの検索応答に対応させるかを相互に参照できます。
 
 _2022 年 10 月 13 日_
 
-* ![新規](../assets/new.svg) - 2 つ追加 [storefront イベント](events.md): `openCart` および `removeFromCart` をAdobe Commerce Storefront Events SDK および Collector に追加します。
+* ![新規](../assets/new.svg) - 2 つ追加済み [storefront イベント](events.md): `openCart` および `removeFromCart` をAdobe Commerce Storefront Events SDK および Collector に追加します。
 * ![新規](../assets/new.svg)  — のサポートを追加しました [AEM storefront](overview.md#aem-support).
 
 +++
@@ -53,7 +53,7 @@ _2023 年 6 月 28 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-* ![新規](../assets/new.svg)  — 次の機能を追加しました。 [storefront イベントの送信をオフにする](connect-data.md#data-collection) Experience Platform
+* ![新規](../assets/new.svg)  — 次の機能を追加しました。 [storefront イベントの送信をオフにする](connect-data.md#data-collection) Experience Platformに
 * ![修正点](../assets/fix.svg)  — コンテンツセキュリティポリシーの設定を更新しました。
 * ![修正点](../assets/fix.svg) - Commerce 2.4.7 バージョンでのバックオフィスイベントのサポートを修正しました。
 * ![新規](../assets/new.svg)  — 変更を「Experience Platformコネクタ」フォームに保存したときのキャッシュの無効化に関する通知メッセージを追加しました。
@@ -74,7 +74,7 @@ _2023 年 3 月 31 日_
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
 * ![新規](../assets/new.svg)  — バンドルされた `commerce-data-export` および `saas-export` 依存関係 `experience-platform-connector` 拡張子。 以前は、これらの依存関係を個別にインストールする必要がありました。 これらの依存関係は、マーチャント設定と共に、サーバ側での [バックオフィスイベント](events.md#back-office-events).
-* ![新規](../assets/new.svg)  — という新しいバックオフィスイベントが追加されました [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+* ![新規](../assets/new.svg)  — という新しいバックオフィスイベントが追加されました。 [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
@@ -90,7 +90,7 @@ _2023 年 1 月 18 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-* ![新規](../assets/new.svg)  — 更新された [Experience Platformコネクタ管理](connect-data.md) 独自の AEP Web SDK(alloy) を指定できます。
+* ![新規](../assets/new.svg)  — 更新された [Experience Platformコネクタ管理者](connect-data.md) 独自の AEP Web SDK(alloy) を指定できます。
 * ![修正点](../assets/fix.svg) 次を使用してに変更 `identityMap` の代わりに `personID` エッジにプッシュされたデータのプライマリ id を設定する際に使用します。
 
 ## 2.0.1
@@ -116,4 +116,4 @@ _2022 年 8 月 10 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-* ![新規](../assets/new.svg)  — 一般リリース (GA)。
+* ![新規](../assets/new.svg) - GA リリース。

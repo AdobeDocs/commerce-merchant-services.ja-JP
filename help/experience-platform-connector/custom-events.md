@@ -1,6 +1,6 @@
 ---
 title: カスタムイベントの作成
-description: Adobe Commerceのデータを他のAdobeDX 製品に接続するカスタムイベントの作成方法を説明します。
+description: Adobe Commerceのデータを他のAdobeDX 製品に接続するカスタムイベントを作成する方法を説明します。
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # カスタムイベントの作成
 
-次の項目を拡張することができます。 [イベントプラットフォーム](events.md) 独自のストアフロントイベントを作成して、自社の業界固有のデータを収集する。 カスタムイベントを作成して設定すると、 [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
+次の項目を拡張することができます： [イベントプラットフォーム](events.md) 独自のストアフロントイベントを作成して、自社の業界固有のデータを収集する。 カスタムイベントを作成して設定すると、 [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## カスタムイベントの処理
 
@@ -31,7 +31,7 @@ mse.publish.custom({
 });
 ```
 
-Experience Platformエッジ内：
+Experience PlatformEdge 内：
 
 ```javascript
 {
@@ -49,7 +49,7 @@ Experience Platformエッジ内：
 
 ## イベントの上書きの処理（カスタム属性）
 
-標準イベントの属性の上書きは、イベントでのみサポートされています。Experience Platform カスタムデータは、コマースダッシュボードおよび指標トラッカーには転送されません。
+標準イベントの属性の上書きは、イベントでのみサポートされています。Experience Platform。 カスタムデータは、コマースダッシュボードおよび指標トラッカーには転送されません。
 
 が設定された任意のイベントの `customContext`、コレクターが上書きされます `personId` およびAdobe Analyticsカウンタ。 `customContext`.
 
@@ -63,7 +63,7 @@ mse.publish.productPageView({
 });
 ```
 
-Experience Platformエッジ内：
+Experience PlatformEdge 内：
 
 ```javascript
 {
@@ -88,7 +88,7 @@ mse.publish.productPageView({
 });
 ```
 
-Experience Platformエッジ内：
+Experience PlatformEdge 内：
 
 ```javascript
 {

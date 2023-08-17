@@ -44,7 +44,7 @@ ht-degree: 0%
 | `priceTotal` | 製品品目の合計価格 |
 | `quantity` | 買い物かごに追加された製品単位数 |
 | `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
 | `productImageUrl` | 製品のメイン画像 URL |
 | `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
 | `cartID` | 顧客の買い物かごを識別する一意の ID |
@@ -68,7 +68,7 @@ ht-degree: 0%
 | `priceTotal` | 製品品目の合計価格 |
 | `quantity` | 買い物かごに追加された製品単位数 |
 | `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
 | `productImageUrl` | 製品のメイン画像 URL |
 | `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
 | `cartID` | 顧客の買い物かごを識別する一意の ID |
@@ -92,7 +92,7 @@ ht-degree: 0%
 | `priceTotal` | 製品品目の合計価格 |
 | `quantity` | 買い物かごから削除された製品単位の数 |
 | `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
 | `productImageUrl` | 製品のメイン画像 URL |
 | `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
 | `cartID` | 顧客の買い物かごを識別する一意の ID |
@@ -116,7 +116,7 @@ ht-degree: 0%
 | `priceTotal` | 製品品目の合計価格 |
 | `quantity` | 買い物かご内の製品単位数 |
 | `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
 | `productImageUrl` | 製品のメイン画像 URL |
 | `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
 | `cartID` | 顧客の買い物かごを識別する一意の ID |
@@ -153,7 +153,7 @@ ht-degree: 0%
 | `name` | 製品の表示名または人間が読み取り可能な名前 |
 | `priceTotal` | 製品品目の合計価格 |
 | `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
 | `productImageUrl` | 製品のメイン画像 URL |
 | `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
 
@@ -176,7 +176,7 @@ ht-degree: 0%
 | `priceTotal` | 製品品目の合計価格 |
 | `quantity` | 買い物かご内の製品単位数 |
 | `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 商品の通貨 |
 | `productImageUrl` | 製品のメイン画像 URL |
 | `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
 | `cartID` | 顧客の買い物かごを識別する一意の ID |
@@ -198,15 +198,15 @@ ht-degree: 0%
 | `purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません。 |
 | `orderType` | 注文のタイプを示します（チェックアウト、即時購入など） |
 | `payments` | この注文の支払いのリスト |
-| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用される通貨コード。 例： `USD` または `EUR`. |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用される通貨コード。 例： `USD` または `EUR`. |
 | `paymentAmount` | 支払の値 |
 | `paymentType` | この注文の支払い方法。 オプションは次のとおりです。 `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
 | `transactionID` | この支払い項目の一意のトランザクション識別子 |
 | `shipping` | 1 つ以上の製品の出荷の詳細。 |
-| `shippingMethod` | 顧客が選択した送料方法（標準配送、即時配送、店頭受け取りなど） |
+| `shippingMethod` | 顧客が選択した送料の方法（標準配送、即時配送、店頭受け取りなど） |
 | `shippingAmount` | 買い物かご内の品目の合計送料 |
 | `promotionID` | プロモーションの一意の識別子（存在する場合） |
-| `personalEmail` | 個人の電子メールアドレスを指定 |
+| `personalEmail` | 個人の電子メールアドレスを指定します |
 | `address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
 | `productListItems` | 買い物かごに含まれる製品の配列 |
 | `SKU` | 在庫管理単位。 商品の一意の ID。 |
@@ -214,7 +214,7 @@ ht-degree: 0%
 | `priceTotal` | 製品品目の合計価格 |
 | `quantity` | 買い物かご内の製品単位数 |
 | `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 注文の合計に使用する通貨コード。 |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 注文の合計に使用する通貨コード。 |
 | `productImageUrl` | 製品のメイン画像 URL |
 | `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
 
@@ -320,7 +320,7 @@ ht-degree: 0%
 
 検索イベントは、買い物客の意図に関連するデータを提供します。 買い物客の意図をインサイトすることで、買い物客が商品やクリックしたものを検索し、最終的に購入または放棄する方法を知ることができます。 このデータの使用例は、トップ商品を検索しても商品を購入しない既存の買い物客をターゲットにしたい場合です。
 
-以下を使用： `uniqueIdentifier` 両方に見つかったフィールド `searchRequestSent` および `searchResponseReceived` イベントを使用して、対応する検索応答に検索リクエストを相互参照します。
+以下を使用します。 `uniqueIdentifier` 両方に見つかったフィールド `searchRequestSent` および `searchResponseReceived` イベントを使用して、対応する検索応答に検索リクエストを相互参照します。
 
 ### searchRequestSent
 
@@ -376,7 +376,7 @@ ht-degree: 0%
 
 ## B2B イベント
 
-![Adobe Commerce用 B2B](../assets/b2b.svg) B2B 商人の場合、 [インストール](install.md#install-the-b2b-extension) の `experience-platform-connector-b2b` 拡張機能を使用して、これらのイベントを有効にします。
+![Adobe Commerce用 B2B](../assets/b2b.svg) B2B 商人の場合は、 [install](install.md#install-the-b2b-extension) の `experience-platform-connector-b2b` 拡張機能を使用して、これらのイベントを有効にします。
 
 B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) 情報（購買依頼リストが作成、追加、削除された場合など）。 購買依頼リストに固有のイベントを追跡することで、顧客が頻繁に購入する製品を確認し、そのデータに基づいてキャンペーンを作成できます。
 
@@ -423,7 +423,7 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 | `quantity` | 追加された製品単位数 |
 | `priceTotal` | 製品品目の合計価格 |
 | `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用される通貨コード |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用される通貨コード |
 | `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
 
 ### removeFromRequisitionList
@@ -448,12 +448,12 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 | `quantity` | 追加された製品単位数 |
 | `priceTotal` | 製品品目の合計価格 |
 | `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用される通貨コード |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用される通貨コード |
 | `selectedOptions` | 設定可能な製品に使用するフィールド。 `attribute` 設定可能な製品の属性を次のように指定します。 `size` または `color` および `value` 属性の値を次のように指定します。 `small` または `black`. |
 
 ## バックオフィスイベント
 
-バックオフィスイベントには、注文が発行されたか、キャンセルされたか、返金されたか、発送されたか、完了したかなど、注文の状態に関する情報が含まれます。 これらのサーバー側イベントが収集するデータは、買い物客の注文を 360 ビュー表示します。 マーチャントがマーケティングキャンペーンを開発する際に、オーダーステータス全体をより適切にターゲティングまたは分析できるようになります。 例えば、ある製品カテゴリのトレンドを、年の異なる時期に好調に推移している項目で見分けることができます。 例えば、寒い数ヶ月の間により良く売れる冬の服や、買い物客が長年興味を持つ特定の製品の色。 また、注文ステータスデータは、以前の注文に基づいてコンバージョンする買い物客の傾向を把握することで、全期間顧客価値の計算に役立ちます。
+バックオフィスイベントには、注文が発行されたか、キャンセルされたか、返金されたか、発送されたか、完了したかなど、注文の状態に関する情報が含まれます。 これらのサーバー側イベントが収集するデータは、買い物客の注文を 360 ビュー表示します。 マーチャントがマーケティングキャンペーンを開発する際に、オーダーステータス全体をより適切にターゲティングまたは分析できるようになります。 例えば、ある製品カテゴリの傾向を、年の異なる時期に好調に推移している項目で見分けることができます。 例えば、寒い数ヶ月の間により良く売れる冬の服や、買い物客が長年興味を持つ特定の製品の色。 また、注文ステータスデータは、以前の注文に基づいてコンバージョンする買い物客の傾向を把握することで、全期間顧客価値の計算に役立ちます。
 
 >[!NOTE]
 >
@@ -472,7 +472,7 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 | フィールド | 説明 |
 |---|---|
 | `address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
-| `productListItems` | 注文の製品の配列 |
+| `productListItems` | 注文に含まれる製品の配列 |
 | `id` | この製品エントリの品目識別子。 製品自体は、 `product` フィールドに入力します。 |
 | `name` | 製品の表示名または人間が読み取り可能な名前 |
 | `SKU` | 在庫管理単位。 商品の一意の ID。 |
@@ -491,12 +491,12 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 | `purchaseOrderNumber` | 購入者がこの購入または契約に割り当てた一意の ID |
 | `payments` | この注文の支払いのリスト |
 | `paymentType` | この注文の支払い方法。 列挙型のカスタム値を使用できます。 |
-| `currencyCode` | この [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用される通貨コード |
+| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用される通貨コード |
 | `paymentAmount` | 支払の値 |
 | `taxAmount` | 最終支払いの一環として購入者が支払った税額 |
-| `createdDate` | コマースシステムで新しい注文が作成された日時。 例： `2022-10-15T20:20:39+00:00` |
-| `shipping` | 1 つ以上の製品の出荷詳細 |
-| `shippingMethod` | 顧客が選択した送料方法（標準配送、即時配送、店頭受け取りなど） |
+| `createdDate` | コマースシステムで新しい注文が作成された日時。 例：`2022-10-15T20:20:39+00:00` |
+| `shipping` | 1 つ以上の製品の発送詳細 |
+| `shippingMethod` | 顧客が選択した送料の方法（標準配送、即時配送、店頭受け取りなど） |
 | `shippingAmount` | 顧客が送料を支払う必要があった金額。 |
 | `address` | 物理的な配送先住所 |
 | `street1` | プライマリの番地の情報、アパート番号、番地、および番地 |
@@ -504,14 +504,14 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 | `city` | 市区町村の名前 |
 | `state` | 州の名前。 これは自由形式のフィールドです。 |
 | `postalCode` | 場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。 |
-| `country` | 政府が管理する領土の名前。 次以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。 |
+| `country` | 政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。 |
 | `billingAddress` | 請求先住所 |
 | `street1` | プライマリの番地の情報、アパート番号、番地、および番地 |
 | `street2` | 番地レベル情報の追加フィールド |
 | `city` | 市区町村の名前 |
 | `state` | 州の名前。 これは自由形式のフィールドです。 |
 | `postalCode` | 場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。 |
-| `country` | 政府が管理する領土の名前。 次以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。 |
+| `country` | 政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。 |
 | `personalEmail` | 個人の電子メールアドレス |
 | `address` | RFC2822 以降の標準で一般的に定義される技術的なアドレス ( 例：「name@domain.com」) |
 
@@ -524,7 +524,7 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 #### orderItemsShipped から収集されたデータ
 
 次の表に、このイベントで収集されるデータを示します。
-|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`commerceScope`|イベントが発生した場所を示します（ストアの表示、ストア、Web サイトなど）。| |`environmentID`|環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。| |`storeCode`|一意のストアコード。 Web サイトごとに多くの店舗を持つことができます。| |`storeViewCode`|一意のストア表示コード。 ストアごとに多数のストアビューを持つことができます。| |`websiteCode`|一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`priceTotal`|すべての割引と税金が適用された後の、この注文の合計価格| |`currencyCode`|注文の合計に使用する ISO 4217 通貨コード| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`payments`|この注文の支払いのリスト| |`paymentType`|この注文の支払い方法。 列挙型のカスタム値を使用できます。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用する通貨コード| |`paymentAmount`|支払の値| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`shipping`|1 つ以上の製品の出荷の詳細| |`shippingMethod`|顧客が選択した発送方法（標準配送、即時配送、店頭受け取りなど）| |`trackingNumber`|発送業者が注文項目の出荷に対して提供した追跡番号| |`trackingURL`|注文項目の配送状況を追跡する URL| |`shipDate`|注文の 1 つ以上の品目が発送された日付| |`address`|物理的な配送先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`shippingAmount`|顧客が送料を支払う必要があった金額。| |`billingAddress`|請求先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
+|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人間が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`commerceScope`|イベントが発生した場所を示します（ストアの表示、ストア、Web サイトなど）。| |`environmentID`|環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。| |`storeCode`|一意のストアコード。 Web サイトごとに多くの店舗を持つことができます。| |`storeViewCode`|一意のストア表示コード。 ストアごとに多数のストアビューを持つことができます。| |`websiteCode`|一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`priceTotal`|すべての割引と税金が適用された後の、この注文の合計価格| |`currencyCode`|注文の合計に使用する ISO 4217 通貨コード| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`payments`|この注文の支払いのリスト| |`paymentType`|この注文の支払い方法。 列挙型のカスタム値を使用できます。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用する通貨コード| |`paymentAmount`|支払の値| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`shipping`|1 つ以上の製品の出荷の詳細| |`shippingMethod`|顧客が選択した発送方法（標準配送、即時配送、店頭受け取りなど）| |`trackingNumber`|発送業者が注文項目の出荷に対して提供した追跡番号| |`trackingURL`|注文項目の配送状況を追跡する URL| |`shipDate`|注文の 1 つ以上の品目が発送された日付| |`address`|物理的な配送先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`shippingAmount`|顧客が送料を支払う必要があった金額。| |`billingAddress`|請求先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
 
 ### orderCancelled
 
@@ -535,26 +535,26 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 #### orderCancelled から収集されたデータ
 
 次の表に、このイベントで収集されるデータを示します。
-|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`commerceScope`|イベントが発生した場所を示します（ストアの表示、ストア、Web サイトなど）。| |`environmentID`|環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。| |`storeCode`|一意のストアコード。 Web サイトごとに多くの店舗を持つことができます。| |`storeViewCode`|一意のストア表示コード。 ストアごとに多数のストアビューを持つことができます。| |`websiteCode`|一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`cancelDate`|買い物客が注文をキャンセルした日時| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
+|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人間が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`commerceScope`|イベントが発生した場所を示します（ストアの表示、ストア、Web サイトなど）。| |`environmentID`|環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。| |`storeCode`|一意のストアコード。 Web サイトごとに多くの店舗を持つことができます。| |`storeViewCode`|一意のストア表示コード。 ストアごとに多数のストアビューを持つことができます。| |`websiteCode`|一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`cancelDate`|買い物客が注文をキャンセルした日時| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
 
 ### creditMemoIssued
 
 | 説明 | XDM イベント名 |
 |---|---|
-| 買い物客が注文内の項目を返した場合にトリガーされます。 | `commerce.backofficeCreditMemoIssued` |
+| 買い物客が注文で品目を返した場合にトリガーされます。 | `commerce.backofficeCreditMemoIssued` |
 
 #### creditMemoIssued から収集されたデータ
 
 次の表に、このイベントで収集されるデータを示します。
-|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
+|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人間が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
 
 ### orderShipmentCompleted
 
 | 説明 | XDM イベント名 |
 |---|---|
-| 買い物客が注文内の項目を返した場合にトリガーされます。 | `commerce.backofficeOrderShipmentCompleted` |
+| 買い物客が注文で品目を返した場合にトリガーされます。 | `commerce.backofficeOrderShipmentCompleted` |
 
 #### orderShipmentCompleted から収集されたデータ
 
 次の表に、このイベントで収集されるデータを示します。
-|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`priceTotal`|すべての割引と税金が適用された後の、この注文の合計価格| |`currencyCode`|注文の合計に使用する ISO 4217 通貨コード| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`taxAmount`|最終支払いの一環として購入者が支払った税額。| |`createdDate`|コマースシステムで新しい注文が作成された日時。 例： `2022-10-15T20:20:39+00:00`| |`payments`|この注文の支払いのリスト| |`paymentType`|この注文の支払い方法。 列挙型のカスタム値を使用できます。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用する通貨コード| |`paymentAmount`|支払の値| |`shipping`|1 つ以上の製品の出荷の詳細| |`shippingMethod`|顧客が選択した発送方法（標準配送、即時配送、店頭受け取りなど）| |`address`|物理的な配送先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`shippingAmount`|顧客が送料を支払う必要があった金額。| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`billingAddress`|請求先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、このデータは郵便番号の一部のみを含みます。| |`country`|政府が管理する領土の名前。 次以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
+|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人間が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`priceTotal`|すべての割引と税金が適用された後の、この注文の合計価格| |`currencyCode`|注文の合計に使用する ISO 4217 通貨コード| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`taxAmount`|最終支払いの一環として購入者が支払った税額。| |`createdDate`|コマースシステムで新しい注文が作成された日時。 例： `2022-10-15T20:20:39+00:00`| |`payments`|この注文の支払いのリスト| |`paymentType`|この注文の支払い方法。 列挙型のカスタム値を使用できます。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) この支払い項目に使用する通貨コード| |`paymentAmount`|支払の値| |`shipping`|1 つ以上の製品の出荷の詳細| |`shippingMethod`|顧客が選択した発送方法（標準配送、即時配送、店頭受け取りなど）| |`address`|物理的な配送先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`shippingAmount`|顧客が送料を支払う必要があった金額。| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`billingAddress`|請求先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、このデータは郵便番号の一部のみを含みます。| |`country`|政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|

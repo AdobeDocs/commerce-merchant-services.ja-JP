@@ -35,7 +35,7 @@ Adobe Commerceを使用すると、実稼動環境からレコメンデーショ
 
 ## 実稼動環境以外での行動データの生成
 
-1. をデプロイします。 `magento/product-recommendations` モジュールを、カタログデータが実稼動カタログに似ている非実稼動環境に追加します。
+1. をデプロイします。 `magento/product-recommendations` モジュールを、カタログデータが実稼動カタログに似ている実稼動以外の環境に追加します。
 
 1. 非実稼動用のデータスペース ID の 1 つを [設定](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 」と入力します。
 

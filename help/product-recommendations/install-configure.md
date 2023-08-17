@@ -23,7 +23,7 @@ ht-degree: 0%
 
 これは、 [!DNL Product Recommendations] モジュールはスタンドアロンのメタパッケージで、更新はAdobe Commerceよりも頻繁にリリースされます。 最新のバグ修正と機能を確認するには、 [リリースノート](release-notes.md).
 
-のインストール `magento/product-recommendations` Composer を使用したモジュール：
+をインストールします。 `magento/product-recommendations` Composer を使用したモジュール：
 
 ```bash
 composer require magento/product-recommendations
@@ -31,19 +31,19 @@ composer require magento/product-recommendations
 
 ### Page Builder サポートの追加 {#pbsupport}
 
-[!DNL Product Recommendations] for Page Builder はオプションのモジュールで、別途インストールされます。 使用する [!DNL Product Recommendations] ページビルダーで、次のコマンドを実行してモジュールをインストールします。
+[!DNL Product Recommendations] for Page Builder はオプションのモジュールで、別途インストールされます。 次を使用するには： [!DNL Product Recommendations] ページビルダーで、次のコマンドを実行してモジュールをインストールします。
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
 ```
 
-有効にする [!DNL Product Recommendations] ページビルダーで、既存のアクティブな [レコメンデーション単位](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) ページ、ブロック、動的ブロックなど、ページビルダーで作成されたすべてのコンテンツに追加できます。
+を有効にして [!DNL Product Recommendations] ページビルダーで、既存のアクティブな [レコメンデーション単位](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) ページ、ブロック、動的ブロックなど、ページビルダーで作成されたすべてのコンテンツに追加できます。
 
 詳しくは、 [使用 [!DNL Product Recommendations] Page Builder コンテンツを使用](page-builder.md) を参照してください。
 
 ### 視覚的類似性レコメンデーションタイプの追加 {#vissimsupport}
 
-この _視覚的類似性_ レコメンデーションタイプを使用すると、レコメンデーションユニットを、 [似たような](type.md#visualsim) 表示される製品に追加します。 このレコメンデーションタイプは、商品の画像や視覚的要素が買い物エクスペリエンスの重要な部分である場合に最も役に立ちます。 のインストール _視覚的類似性_ 次のコマンドを実行してレコメンデーションタイプを指定します。
+The _視覚的類似性_ レコメンデーションタイプを使用すると、レコメンデーションユニットを、 [似たような](type.md#visualsim) 表示される製品に追加します。 このレコメンデーションタイプは、商品の画像や視覚的要素が買い物エクスペリエンスの重要な部分である場合に最も役に立ちます。 をインストールします。 _視覚的類似性_ 次のコマンドを実行してレコメンデーションタイプを指定します。
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -51,13 +51,13 @@ composer require magento/module-visual-product-recommendations
 
 ## 設定 [!DNL Product Recommendations] {#configure}
 
-インストール後、 `magento/product-recommendations` モジュールの場合、 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) API キーを指定し、SaaS データ領域を選択する。
+インストール後、 `magento/product-recommendations` モジュールの場合は、 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) API キーを指定し、SaaS データ領域を選択する。
 
-カタログの書き出しが正しく実行されていることを確認するには、 [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) ジョブと [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行中で、 `Product Feed` indexer は次のように設定されています： `Update by Schedule`.
+カタログの書き出しが正しく実行されていることを確認するには、 [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) ジョブと [インデクサー](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行中で、 `Product Feed` indexer は次のように設定されています： `Update by Schedule`.
 
-API キーを使用して Commerce Services に正常にリンクし、SaaS データスペースを指定すると、カタログの同期が開始されます。 その後、 [確認](verify.md) その行動データがストアフロントに送信されます。
+API キーを使用して Commerce Services に正常にリンクし、SaaS データスペースを指定すると、カタログの同期が開始されます。 次の操作が可能です。 [確認](verify.md) その行動データがストアフロントに送信されます。
 
-## の更新 [!DNL Product Recommendations] インストール {#update}
+## を更新します。 [!DNL Product Recommendations] インストール {#update}
 
 全てのAdobe Commerceと同じように [!DNL Product Recommendations] は、インストールと更新に Composer を使用します。 次の手順で `magento/product-recommendations` モジュールで、以下を実行します。
 
@@ -85,7 +85,7 @@ composer update magento/product-recommendations --with-dependencies
 }
 ```
 
-保存する `composer.json` ファイルと実行：
+を保存します。 `composer.json` ファイルと実行：
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
@@ -103,7 +103,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## ファイアウォール
 
-製品Recommendationsにファイアウォールを介させるには、 `commerce.adobe.io` 許可リスト
+製品Recommendationsにファイアウォールを介させるには、 `commerce.adobe.io` 許可リストに
 
 ## アンインストール [!DNL Product Recommendations] {#uninstall}
 

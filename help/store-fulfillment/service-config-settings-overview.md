@@ -22,13 +22,13 @@ Adobe Commerce管理では、Walmart Commerce Technologies による Store Fulfi
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | [一般設定](enable-general.md) | ストアフルフィルメントソリューション、アクティブな機能、フルフィルメントサービスに接続するための資格情報に対して設定された一般的な統合。 | いいえ |
 | [セールスメールの構成](sales-emails.md) | チェックイン処理中に送信される顧客通知用の追加の電子メールテンプレートを設定します。 | いいえ |
-| [Merchant ストアの設定](merchant-store-configuration.md) | 拡張されたInventory managementソースをマーチャントストアとして設定します。 | はい |
+| [Merchant Store 設定](merchant-store-configuration.md) | 拡張されたInventory managementソースをマーチャントストアとして設定します。 | はい |
 | [製品在庫管理](product-stock.md) | 顧客が使用できるマーチャントストックメッセージおよび機能を設定します。 | はい |
 | [Inventory management Source Transfer](inventory-stock-transfer.md) | 新しい在庫を設定し、デフォルトの在庫から在庫を転送します。 | はい |
 | [複数の Web サイト/範囲の設定](multi-site-and-scope-config.md) | 複数の Web サイト/ストア範囲の在庫と配信方法を設定します。 | いいえ |
 | [バックグラウンドプロセスシステム設定](background-processes.md) | フルフィルメント・サービスとのデータ同期に使用するバックグラウンド・プロセスのスケジュールを構成します。 | いいえ |
 | [ストアの場所とマッピングの設定](store-location-map-provider-setup.md) | 距離プロバイダーを使用して小売店を検索し、この情報を SLS マップに表示する機能を設定します | はい |
-| [Check-In Experience Setup](check-in-experience-setup.md) | チェックインプロセス中に利用可能な車の色と車の製造オプションを設定 | はい |
+| [Check-In Experience Setup](check-in-experience-setup.md) | チェックインプロセス中に利用可能な車の色と車の製造オプションを設定します | はい |
 | [ユーザー設定](user-setup.md) | Store Assist アプリを使用するストア関連者のユーザーアカウント、役割、および権限を管理します。 スコープ。 | はい |
 | [アプリ設定](app-setup.md) | オンボーディングプロセスを完了するために必要な Store Assist App の利用可能な設定を確認します。 これらの設定は、Adobe Commerce Admin からは設定できません。 | はい |
 
@@ -40,9 +40,9 @@ Adobe Commerce管理では、Walmart Commerce Technologies による Store Fulfi
 
 - **フィールド** は、設定するフィールドの名前を参照します。
 
-- **説明** フィールドの目的と動作に関する重要な詳細を提供します
+- **説明** は、フィールドの目的と動作に関する重要な詳細を提供します
 
-- **範囲** 設定のAdobe Commerce設定範囲（グローバル、web サイト、ストア）を示します
+- **範囲** 設定のAdobe Commerce設定範囲（グローバル、web サイト、ストア）を示します。
 
 - **必須** 値は、フィールドに値を設定する必要があるかどうかを示します
 

@@ -1,5 +1,5 @@
 ---
-title: 達成要件を保存
+title: 受け渡し要件を保存
 description: のプロビジョニングとオンボーディングの要件 [!DNL Store Fulfillment solution].
 role: Leader, Admin, Developer
 level: Intermediate
@@ -16,9 +16,9 @@ ht-degree: 2%
 
 以下の節では、Adobe Commerceの Store Fulfilment ソリューションをインストールして有効にするための技術要件とビジネス要件について説明します。
 
-## プラットフォームとソフトウェアのバージョン要件
+## プラットフォームとソフトウェアのバージョンの要件
 
-この [!DNL Store Fulfillment] ソリューションは、次のプラットフォームでAdobe Commerceのお客様が利用できます。
+The [!DNL Store Fulfillment] ソリューションは、次のプラットフォームでAdobe Commerceのお客様が利用できます。
 
 - Adobe Commerce on cloud infrastructure (ECE)
 - Adobe Commerceオンプレミス (EE)
@@ -35,7 +35,7 @@ Store Fulfilment ソリューションは、 *ソフトウェアの互換性* �
 | MySQL | 5.7 | 8.0 |
 | PHP | 7.4 | 8.1 |
 
-詳細な要件については、 Adobe Commerceを確認してください [必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 内 *Adobe Commerce Installation Guide*.
+詳細な要件については、 Adobe Commerceを確認してください [必要システム構成](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) （内） *Adobe Commerce Installation Guide*.
 
 ## Store Assist アプリの要件
 
@@ -65,8 +65,8 @@ Store Fulfilment ソリューションは、 *ソフトウェアの互換性* �
 
 - マーチャント在庫のシンジケート機能
 
-- Wi-Fi の可用性を、ストアフルフィルメントソリューションをサポートするすべての場所に保存します。3 Mbps の最小インターネット速度
+- Wi-Fi の可用性をストアフルフィルメントソリューションをサポートするすべての場所に保存する：最低 3 Mbps のインターネット速度
 
-- 店舗および倉庫関連者は、個人または商人が提供するiOSまたは Android モバイルデバイスの勤務中にアクセスできます
+- 店舗および倉庫関連者は、個人または商人が提供するiOSまたは Android モバイルデバイスに、勤務中にアクセスできます
 
 - Store Fulfilment ソリューションを使用して管理される製品には、SKU または UPC 製品コードを含む製品属性が必要です

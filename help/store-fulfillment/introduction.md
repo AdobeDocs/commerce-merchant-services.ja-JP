@@ -1,6 +1,6 @@
 ---
 title: «の概要 [!DNL Store Fulfillment]"
-description: «学ぶ方法 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] は、顧客向けにオンラインでの購入、店舗での受け取り (BOPIS) をサポートします。 Store Assist モバイルを使用して、BOPIS の達成と注文処理を合理化し、店舗関連者と Commerce の顧客に提供します。」
+description: «学ぶ方法 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] は、顧客向けにオンラインでの購入、店舗での受け取り (BOPIS) をサポートします。 Store Assist モバイルを使用して、BOPIS の達成と、店舗の顧客と Commerce の顧客の注文処理を合理化します。」
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # の概要 [!DNL Store Fulfillment]
 
-Store Fulfilment for Adobe Commerce by Walmart Commerce Technologies は、 [!DNL Commerce] ストアは、優れた購入をオンラインで提供し、店舗 (BOPIS) の顧客体験を受け取る。
+Store Fulfilment for Adobe Commerce by Walmart Commerce Technologies は、 [!DNL Commerce] ストアは、優れた購入をオンラインで提供する、店頭での受け取り (BOPIS) 顧客体験。
 
-![フルフィルメントソリューションAdobe管理者構成を保存](assets/store-fulfillment-admin-home.png)
+![フルフィルメントソリューションAdobe管理者の構成を保存](assets/store-fulfillment-admin-home.png)
 
 また、店舗フルフィルメントは、コンバージョン率、平均注文額、顧客満足度を高めながらコストを削減できるエンドツーエンドのフルフィルメントワークフローも提供します。 このワークフローには次の内容が含まれます。
 
-* **オムニチャネルの柔軟性**・店舗と倉庫をピックアップ・ポイントとフルフィルメント・センターに変える
+* **オムニチャネルの柔軟性**・店舗と倉庫をピックアップ・ポイントとフルフィルメント・センターに変える。
 
 * **便利な顧客ピックアップオプション**・オンライン購入を選択する際に、顧客は簡単に商品の在庫状況を確認し、店舗内またはカーブサイドでのピックアップ用に店舗を選択できます。
 
 * **達成効率**— Store Assist モバイルアプリケーションは、ストアに関連する注文達成速度と精度の向上を支援します。
 
-* **モバイルの利便性**・お客様は、各手順で注文通知を受け取ります。 注文確認から受注まで、受注状況の追跡、チェックイン手順の取得、店舗に到着した際の店舗担当者とのコミュニケーションが可能です。
+* **モバイルの便利さ**・お客様は、各手順で注文の通知を受け取ります。 注文確認から受注まで、受注状況の追跡、チェックイン手順の取得、店舗に到着した際の店舗担当者とのコミュニケーションが可能です。
 
 * **業務上の可視性** — 店舗レベルの在庫割り当てを改善し、ローカルでの迅速な達成を促します。
 
@@ -41,7 +41,7 @@ Store Fulfilment for Adobe Commerce by Walmart Commerce Technologies は、 [!DN
 
 * Luma テーマとの完全な互換性
 
-* PWAとヘッドレスストアフロントの部分的な互換性
+* PWAとヘッドレスストアフロントとの部分的な互換性
 
 * Walmart Commerce Technologies の Store Assist アプリをサポートします。 このアプリは、選択した店舗の場所にある従業員のハンドヘルドデバイスに、受け取り注文情報を直接配信します。 この情報を利用して、顧客が店舗に到着した際に、顧客に対して迅速かつ正確にアイテムを選択、ステージング、ハンドオフできます。
 
@@ -49,11 +49,11 @@ Store Fulfilment for Adobe Commerce by Walmart Commerce Technologies は、 [!DN
 
 iOSおよび Android デバイス用の Store Assist App は、 [!DNL Walmart Commerce Technologies] お客様の小売店にオムニチャネルフルフィルメント機能を提供する。
 
-* 店舗とキューブサイドの受取注文を直接送信して、関連会社のモバイルデバイスを保存
+* 店舗とキューブサイドの受取注文を直接送信して、関連会社のモバイルデバイスを保存します
 
 * 店舗に到着して受注を受け取る際に、店舗の注文が迅速かつ正確に選択、ステージング、お客様に渡されるようにします。
 
-* ストアの関連付けユーザーアクセスを管理します。セキュリティポリシー、2 要素認証など
+* ストアの関連付けユーザーアクセスを管理します。セキュリティポリシー、2 要素認証などが含まれます。
 
 * 小売店の場所と在庫に関するデータをAdobe Commerceに自動的に同期
 
@@ -71,7 +71,7 @@ iOSおよび Android デバイス用の Store Assist App は、 [!DNL Walmart Co
 
 * **マイアカウント履歴**- [!DNL Commerce] 注文履歴にステップを表示するアカウント履歴。
 
-* **トランザクション E メール** — の管理機能を拡張します。 [!UICONTROL Sales Emails] オンラインで購入する電子メールテンプレートを追加するには、店舗トランザクションで受け取ります。 このテンプレートは、注文の受け取りプロセス中に、顧客と店舗の関連者間のリアルタイム通信をサポートします。
+* **トランザクション E メール** — の管理機能を拡張します。 [!UICONTROL Sales Emails] オンラインで購入する電子メールテンプレートを追加するには、店舗トランザクションで受け取ります。 このテンプレートは、注文の受け取りプロセス中に、顧客と店舗の関連者との間のリアルタイム通信をサポートします。
 
 * **柔軟な達成** — 拡張 [!DNL Commerce] バックオーダー、数量減額および一部受注履行の処理シナリオをサポートし、これらのシナリオをサポートするために必要なキャンセルおよびクレジット・メモを容易にする機能。
 

@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '''[!DNL API Mesh] 「for Adobe Commerceは、共通のGraphQLエンドポイントを使用して複数のデータソースを統合する方法を提供します。」'
+description: '''[!DNL API Mesh] 「for Adobe Commerceでは、共通のGraphQLエンドポイントを使用して複数のデータソースを統合する方法を提供します。」'
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Catalog Service and API Mesh]
 
-この [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、開発者は、Adobe I/O Runtimeを使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
+The [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、開発者は、Adobe I/O Runtimeを使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
 
 ![カタログのアーキテクチャ図](assets/catalog-service-architecture-mesh.png)
 
@@ -45,7 +45,7 @@ API メッシュを使用すると、外部のデータソースを使用してA
 ### 階層価格を有効化
 
 この例では、API Mesh を使用して、Adobe Commerceの階層価格を有効にします。
-を `name `, `endpoint`、および `x-api-key` 値。
+次を `name `, `endpoint`、および `x-api-key` 値。
 
 ```json
 {
@@ -160,7 +160,7 @@ query {
 
 ### エンティティ ID を取得する
 
-このメッシュは、 `entityId` を ProductView インターフェイスに追加します。 を `name `, `endpoint`、および `x-api-key` 値。
+このメッシュは、 `entityId` を ProductView インターフェイスに追加します。 次を `name `, `endpoint`、および `x-api-key` 値。
 
 ```json
 {

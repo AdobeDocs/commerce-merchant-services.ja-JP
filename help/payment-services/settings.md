@@ -1,6 +1,6 @@
 ---
 title: 支払いサービス設定
-description: インストール後、 [!DNL Payment Services] 家に
+description: インストール後に、 [!DNL Payment Services] 家の中で
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
@@ -16,29 +16,29 @@ ht-degree: 0%
 
 カスタマイズ可能 [!DNL Payment Services] の設定が役に立ちます。 [!DNL Payment Services] ホーム。
 
-を設定するには、以下を実行します。 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] クリック **[!UICONTROL Settings]**. これらの設定オプションは、 _[!UICONTROL Payment mode]_フィールド[_&#x200B;一般&#x200B;_設定オプション](#configure-general-settings).
+を設定するには、以下を実行します。 [!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] click **[!UICONTROL Settings]**. これらの設定オプションは、 _[!UICONTROL Payment mode]_フィールドの[_&#x200B;一般&#x200B;_設定オプション](#configure-general-settings).
 
 マルチストアまたはレガシー設定については、 [管理での設定](configure-admin.md).
 
 ## 一般設定の指定
 
-この [!UICONTROL General] 設定を使用すると、支払い方法として支払いサービスを有効または無効にし、顧客トランザクションに情報を追加して、Web サイトにマークを付けたり、カスタム情報を付けて表示することができます。
+The [!UICONTROL General] 設定を使用すると、支払い方法として支払いサービスを有効または無効にし、顧客トランザクションに情報を追加して、Web サイトにマークを付けたり、カスタム情報を付けて表示することができます。
 
 ### 支払いサービスの有効化
 
 次を有効にすることができます。 [!DNL Payment Services] web サイトに対して、サンドボックステストまたはライブ支払いを有効にします。
 
-1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![ホームビュー](assets/payment-services-menu-small.png)
 
 1. クリック **[!UICONTROL Settings]**. 詳しくは、 [の概要 [!DNL Payment Services] ホーム](payments-home.md) を参照してください。
 
-   この _[!UICONTROL General]_セクションには、を有効にするための設定が含まれています [!DNL Payment Services] を支払い方法として使用します。
+   The _[!UICONTROL General]_セクションには、を有効にするための設定が含まれています [!DNL Payment Services] を支払い方法として使用します。
 
 1. 有効にするには [!DNL Payment Services] お客様の店舗の支払い方法として、 _[!UICONTROL General]_セクション、切り替え&#x200B;**[!UICONTROL Enable Payment Services as payment method]**から `Yes`.
 
-1. まだテストを行っている場合 [!DNL Payment Services] お客様のストアには、 **支払いモード** から `Sandbox`. ライブ支払いを有効にする準備が整ったら、次のように設定します。 `Production`.
+1. まだテストを行っている場合 [!DNL Payment Services] お客様のストアに対して、 **支払いモード** から `Sandbox`. ライブ支払いを有効にする準備が整ったら、次のように設定します。 `Production`.
 
    >[!NOTE]
    >
@@ -48,7 +48,7 @@ ht-degree: 0%
 
    変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
 
-1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** をクリックし、 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
+1. に移動します。 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** をクリックします。 **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
 次に、のデフォルト設定の変更に進むことができます： [支払いオプション](#configure-payment-options) 関数とストアフロントディスプレイ。
 
@@ -56,12 +56,12 @@ ht-degree: 0%
 
 次の項目を追加できます： [!UICONTROL Soft Descriptor] を web サイトまたは個々のストア表示設定に追加します。 顧客トランザクション銀行明細書にソフト記述子が表示されます。 例えば、複数の店舗/ブランド/カタログがある場合、 [!UICONTROL Soft Descriptor] フィールドに入力します。
 
-1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![ホームビュー](assets/payment-services-menu-small.png)
 
 1. クリック **[!UICONTROL Settings]**. 詳しくは、 [の概要 [!DNL Payment Services] ホーム](payments-home.md) を参照してください。
-1. Web サイトまたはストア表示を、 **[!UICONTROL Scope]** ソフト記述子を作成するドロップダウンメニュー。 初期設定の場合、これは **[!UICONTROL Default]** をクリックしてデフォルト値を設定します。
+1. Web サイトまたはストア表示を、 **[!UICONTROL Scope]** ソフト記述子を作成するドロップダウンメニュー。 初期設定の場合、これはのままにします。 **[!UICONTROL Default]** をクリックしてデフォルト値を設定します。
 1. テキストフィールドにカスタムテキスト（最大 22 文字）を追加し、 `Custom descriptor`.
 1. クリック **[!UICONTROL Save]**.
 1. Web サイトまたはストア表示に設定されたデフォルト以外のソフト記述子を作成するには、次の手順を実行します。
@@ -84,13 +84,13 @@ ht-degree: 0%
 | [!UICONTROL Payment mode] | ストア表示 | ストアのメソッドまたは環境を設定します。 オプション： [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | ストア表示 | サンドボックスマーチャント ID。サンドボックスのオンボーディング中に自動生成されます。 |
 | [!UICONTROL Production Merchant ID] | ストア表示 | サンドボックスのオンボーディング中に自動生成される、実稼動マーチャント ID。 |
-| [!UICONTROL Soft Descriptor] | web サイトまたはストア表示 | ソフト記述子を Web サイトに追加し、ビューを保存して、ブランド、店舗または製品ラインを説明する顧客トランザクションに情報を追加します。 この [!UICONTROL Use website] toggle は、web サイトレベルに追加されたソフト記述子を適用します。 この [!UICONTROL Use default] toggle は、デフォルトとして追加されたソフト記述子を適用します。 |
+| [!UICONTROL Soft Descriptor] | web サイトまたはストア表示 | ソフト記述子を Web サイトに追加し、ビューを保存して、ブランド、店舗または製品ラインを説明する顧客トランザクションに情報を追加します。 The [!UICONTROL Use website] toggle は、web サイトレベルに追加されたソフト記述子を適用します。 The [!UICONTROL Use default] toggle は、デフォルトとして追加されたソフト記述子を適用します。 |
 
 ## 支払いオプションを設定
 
 これで、を有効にしました。 [!UICONTROL Payment Services] web サイトでは、支払い機能とストアフロント表示のデフォルト設定を変更できます。
 
-1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![ホームビュー](assets/payment-services-menu-small.png)
 
@@ -99,17 +99,17 @@ ht-degree: 0%
 
 ### クレジットカードのフィールド
 
-この _[!UICONTROL Credit Card Fields]_設定は、クレジットカードまたはデビットカードの支払い方法のためのシンプルでセキュアなチェックアウトオプションを提供します。
+The _[!UICONTROL Credit Card Fields]_設定は、クレジットカードまたはデビットカードの支払い方法のためのシンプルでセキュアなチェックアウトオプションを提供します。
 
 詳しくは、 [支払いオプション](payments-options.md#credit-card-fields) を参照してください。
 
-1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![ホームビュー](assets/payment-services-menu-small.png)
 
 1. ストア表示を選択します ( **[!UICONTROL Scope]** 支払い方法を有効にするドロップダウンメニュー。
 1. チェックアウト時に表示される支払い方法の名前を変更するには、 **[!UICONTROL Checkout title]** フィールドに入力します。
-1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)，切り替え **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
+1. 宛先 [支払いアクションを設定](production.md#set-payment-services-as-payment-method)，トグル **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
 1. 有効にするには [3DS セキュア認証](security.md#3ds) (`Off` （デフォルト）切り替え **[!UICONTROL 3DS Secure authentication]** セレクター `Always` または `When required`.
 1. チェックアウトページのクレジットカードフィールドを有効または無効にするには、 **[!UICONTROL Show on checkout page]** セレクター。
 1. 有効または無効にするには [カード保管](#card-vaulting)、切り替え **[!UICONTROL Vault enabled]** セレクター。
@@ -126,7 +126,7 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション： [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | The [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | web サイト | 有効または無効 [3DS セキュア認証](security.md#3ds). オプション： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページに表示するクレジットカードフィールドを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | ストア表示 | 有効または無効 [クレジットカードの保管](vaulting.md). オプション： [!UICONTROL Yes] / [!UICONTROL No] |
@@ -135,13 +135,13 @@ ht-degree: 0%
 
 ### 支払いボタン
 
-この [!DNL PayPal Smart Buttons] 支払いオプションは、お客様に対して、シンプルで迅速かつ安全なチェックアウトプロセスを提供します。 詳しくは、 [支払いオプション](payments-options.md#paypal-smart-buttons) を参照してください。
+The [!DNL PayPal Smart Buttons] 支払いオプションは、お客様に対して、シンプルで迅速かつ安全なチェックアウトプロセスを提供します。 詳しくは、 [支払いオプション](payments-options.md#paypal-smart-buttons) を参照してください。
 
 PayPal スマートボタンの支払いオプションを有効にして設定できます。
 
 1. ストア表示を選択します ( **[!UICONTROL Scope]** 支払い方法を有効にするドロップダウンメニュー。
 1. チェックアウト時に表示される支払い方法の名前を変更するには、 **[!UICONTROL Checkout Title]** フィールドに入力します。
-1. 宛先 [支払い処理を設定](production.md#set-payment-services-as-payment-method)，切り替え **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
+1. 宛先 [支払いアクションを設定](production.md#set-payment-services-as-payment-method)，トグル **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
 1. 切り替えセレクターを使用して、有効または無効にします [!DNL PayPal smart button] 表示機能：
 
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
@@ -172,8 +172,8 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
-| [!UICONTROL Payment Action] | web サイト | この [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL Show PayPal buttons on checkout page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] をチェックアウトページに追加します。 オプション： [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Payment Action] | web サイト | The [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show PayPal buttons on checkout page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] を「チェックアウト」ページに追加します。 オプション： [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] 製品の詳細ページに表示されます。 オプション： [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] をクリックします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on cart page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] を買い物かごページに追加します。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
@@ -198,7 +198,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 1. 次の手順で **[!UICONTROL Color]**」で、目的のカラーオプションを選択します。
 1. 次の手順で **[!UICONTROL Shape]**&#x200B;を選択します。 `Pill` または `Rectangle`.
 1. ボタンの高さセレクターを有効にするには、 **[!UICONTROL Responsive button height]** セレクター。
-1. 次の手順で **[!UICONTROL Label]**」で、目的のラベルオプションを選択します。
+1. 次の手順で **[!UICONTROL Label]**「 」で、目的のラベルオプションを選択します。
 
    レイアウト、色、形状、高さ、ラベルの設定オプションを変更すると、その設定の視覚的なプレビューが設定ページの下部に表示されます。
 
@@ -233,7 +233,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 ロールにリソースを割り当てる場合は、次の項目を選択する必要があります。
 
 - **支払い方法[!DNL Payment Services]** — このリソースは、管理で注文を作成する際に、 [!DNL Payment Services] クレジットカードは支払い方法として利用できます。 次を選択した場合、 **アクション** 親リソースの場合は、このリソースも選択されます。
-- **[!DNL Payment Services]** — このリソースには **ダッシュボード** および **SaaS Services プロキシ** リソース（選択する必要もあります）。 また、 [!DNL Payment Services] が _セールス_ メニュー
+- **[!DNL Payment Services]** — このリソースには、 **ダッシュボード** および **SaaS Services プロキシ** リソース（選択する必要もあります）。 また、 [!DNL Payment Services] が _セールス_ メニュー。
 
   ![支払いサービスのリソース](assets/roles-payments.png)
 
@@ -241,7 +241,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 
 設定を _設定_&#x200B;例えば、Apple Pay、Venmo、PayPal PayLater の各ボタンを切り替える場合は、ストアに最新の設定が表示されるように、手動でキャッシュをフラッシュします。
 
-1. の _管理者_ サイドバー、移動 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
 1. クリック **[!UICONTROL Flush Cache]** 無効なキャッシュをすべて更新します。
 
 キャッシュ管理テーブルのキャッシュタイプに `INVALIDATED` のステータスになっている場合は、ストアにその項目の最新の設定が表示されない可能性があります。 キャッシュをフラッシュしてストアを更新し、最新の設定を表示します。
@@ -266,7 +266,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 
 詳しくは、 [3DS のセキュリティ](security.md#3ds) を参照してください。
 
-## 複数の PayPal アカウントを使用
+## 複数の PayPal アカウントを使用する
 
 In [!UICONTROL Payment Services]の場合、内で複数の PayPal アカウントを使用できます **1 つ** ウェブサイトレベルのマーチャントアカウント。 例えば、複数の国 ( 異なる [通貨](https://docs.magento.com/user-guide/stores/currency.html)) またはAdobe Commerceをビジネスの一部に使用したいが、使用しない場合 _すべて_&#x200B;複数の PayPal アカウントを使用するようにマーチャントアカウントを設定することができます。
 

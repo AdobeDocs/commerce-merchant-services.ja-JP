@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # スタイル設定 [!DNL Popover] 要素
 
-この [[!DNL storefront popover]](storefront-popover.md) 常に製品を表示 `name` および `price`の場合、フィールドの選択は設定できません。 しかし、 [!DNL popover] 要素は、CSS クラスを使用してスタイルを設定できます。 例えば、次の宣言では、 [!DNL popover] コンテナとフッター。
+The [[!DNL storefront popover]](storefront-popover.md) 常に製品を表示 `name` および `price`の場合、フィールドの選択は設定できません。 しかし、 [!DNL popover] 要素は、CSS クラスを使用してスタイルを設定できます。 例えば、次の宣言では、 [!DNL popover] コンテナとフッター。
 
 ```css
 .livesearch.popover-container {
@@ -25,14 +25,14 @@ ht-degree: 0%
 
 ## コンテナの表示
 
-の親コンポーネント `.livesearch.popover-container` が `.search-autocomplete`.  この `.active` クラスは、コンテナの表示を示します。 この `.active` クラスは条件付きで [!DNL popover] が開いている。
+の親コンポーネント `.livesearch.popover-container` 次に該当 `.search-autocomplete`.  The `.active` クラスは、コンテナの表示を示します。 The `.active` クラスは条件付きで追加されます。 [!DNL popover] が開いている。
 
 ```css
 .search-autocomplete.active   /* visible */
 .search-autocomplete          /* not visible */
 ```
 
-ストアフロント要素のスタイル設定について詳しくは、 [カスケードスタイルシート (CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) 内 [フロントエンド開発者ガイド](https://developer.adobe.com/commerce/frontend-core/guide/).
+ストアフロント要素のスタイル設定について詳しくは、 [カスケードスタイルシート (CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) （内） [フロントエンド開発者ガイド](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## クラスセレクター
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 #### .livesearch.product-result
 
-![製品結果](assets/livesearch-product-result.png)
+![製品の結果](assets/livesearch-product-result.png)
 
 #### .livesearch.product-name
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ## 変更したテーマの使用 {#working-with-modified-theme}
 
-この [!DNL storefront popover] カスタマイズされた [テーマ](https://developer.adobe.com/commerce/frontend-core/guide/themes/) が *Luma*. この `top.search` ブロックを `header-wrapper` の `Magento_Search` モジュールは変更できません。
+The [!DNL storefront popover] カスタマイズされた [テーマ](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 必要なファイルを継承する *Luma*. The `top.search` ブロックを `header-wrapper` の `Magento_Search` モジュールは変更できません。
 
 ```html
 <referenceContainer name="header-wrapper">

@@ -6,7 +6,7 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 0%
 
 [!DNL Quick Checkout] Adobe CommerceとMagento Open Sourceの場合は、拡張機能の設定と使用に必要な情報がすべて含まれた管理パネルビューが提供されます。
 
-1. の _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
 1. この表示では、 _管理パネル_ 概要 _リソース_ について [!DNL Quick Checkout], get _ヘルプとサポート_&#x200B;または、 _設定_.
 
-   ![メニュークイックチェックアウト](assets/admin-panel-view.png)
+   ![メニューのクイックチェックアウト](assets/admin-panel-view.png)
 
-ユーザーが [!DNL Quick Checkout] 表示する管理パネル。 詳しくは、 [ユーザーの役割と権限](../quick-checkout/user-roles-setup.md) トピックを参照してください。
+ユーザーに、 [!DNL Quick Checkout] 表示する管理パネル。 詳しくは、 [ユーザーの役割と権限](../quick-checkout/user-roles-setup.md) トピックを参照してください。
 
-詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) の設定方法の詳細に関するトピック [!DNL Quick Checkout] Adobe Commerce
+詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) の設定方法の詳細に関するトピック [!DNL Quick Checkout] Adobe Commerceの
 
 ## ホーム
 
@@ -42,8 +42,8 @@ ht-degree: 0%
 | フィールド | 説明 |
 |---|---|
 | [!UICONTROL Open documentation] | 最新のドキュメントを参照 [!DNL Quick Checkout]. |
-| [!UICONTROL [!DNL Bolt] merchant dashboard] | 次にアクセス： [!DNL Bolt] マーチャントアカウントとダッシュボード |
-| [!UICONTROL Release notes] | の最新の変更点について [!DNL Quick Checkout]. |
+| [!UICONTROL [!DNL Bolt] merchant dashboard] | 次にアクセス： [!DNL Bolt] マーチャントアカウントとダッシュボード。 |
+| [!UICONTROL Release notes] | の最新の変更点について説明します。 [!DNL Quick Checkout]. |
 
 ## 設定
 

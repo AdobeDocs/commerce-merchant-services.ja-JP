@@ -26,8 +26,8 @@ ht-degree: 0%
 
 ### サポートされるプラットフォーム
 
-* Adobe Commerceオンプレミス (EE) :2.4.4 以上
-* Adobe Commerce on Cloud (ECE) :2.4.4 以上
+* Adobe Commerceオンプレミス (EE) :2.4.4 以降
+* Adobe Commerce on Cloud (ECE) :2.4.4 以降
 
 ## 境界としきい値
 
@@ -65,18 +65,18 @@ ht-degree: 0%
 
 ライブ検索のお客様は、 [SaaS 価格インデクサー](../price-index/index.md)：価格変更の更新と同期時間を高速化します。
 
-### PWAサポート
+### PWAのサポート
 
 [!DNL Live Search] はPWA Studioで機能しますが、他のコマース実装とは少し異なる場合があります。 Venia では検索や製品リストのページなどの基本機能は機能しますが、Graphql の順列の一部は正しく機能しない場合があります。 パフォーマンスに違いが生じる場合もあります。
 
-* 現在のPWA実装 [!DNL Live Search] を超える処理時間が必要 [!DNL Live Search] ネイティブの Commerce ストアフロントを使用します。
+* 現在のPWAの実装 [!DNL Live Search] を超える処理時間が必要です。 [!DNL Live Search] ネイティブの Commerce ストアフロントを使用します。
 * [!DNL Live Search] のPWAはをサポートしていません [イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). このため、インテリジェントマーチャンダイジングは機能しません。
 * 直接のフィルター `description`, `name`, `short_description` で使用する場合、GraphQLではサポートされません [PWA](https://developer.adobe.com/commerce/pwa-studio/)が返されますが、より一般的なフィルターが返されます。
 
-使用する [!DNL Live Search] PWA Studioを使用した場合、インテグレーターは次の操作も必要になります。
+次を使用するには： [!DNL Live Search] PWA Studioを使用した場合、インテグレーターは次の操作も必要になります。
 
 1. インストール [livesearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
-1. を `environmentId` 内 `storeDetails` オブジェクト。
+1. を設定します。 `environmentId` （内） `storeDetails` オブジェクト。
 
    ```javascript
    const storeDetails: StoreDetailsProps = {
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ### 現在はサポートされていません
 
-* この [詳細検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 次の場合、モジュールは無効になります： [!DNL Live Search] がインストールされ、ストアフロントフッターの「詳細検索」リンクは削除されます。
+* The [詳細検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 次の場合、モジュールは無効になります： [!DNL Live Search] がインストールされ、ストアフロントフッターの「詳細検索」リンクは削除されます。
 * 使用する複数の在庫場所 [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) またはその他の OMS 拡張
 * 製品の価格は含まれません [付加価値税](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT)。
 * [価格帯](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) は、ライブ検索ポップオーバーおよび製品リストページウィジェットではサポートされていません。

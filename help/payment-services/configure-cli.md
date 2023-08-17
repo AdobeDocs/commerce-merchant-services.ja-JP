@@ -1,6 +1,6 @@
 ---
 title: コマンドライン設定
-description: インストール後、 [!DNL Payment Services] コマンドラインインターフェイス (CLI) を使用する。
+description: インストール後に、 [!DNL Payment Services] コマンドラインインターフェイス (CLI) を使用する。
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 ## データエクスポートの設定
 
-[!DNL Payment Services] から書き出された注文データを組み合わせます [!DNL Magento Open Source] および [!DNL Adobe Commerce] を使用して、有用なレポートを作成するための支払いプロバイダーからの集計された支払いデータ。 この [!DNL Payment Services] 拡張機能では、インデクサーを使用して、レポートに必要なすべてのデータを効率的に収集します。
+[!DNL Payment Services] から書き出された注文データを組み合わせます [!DNL Magento Open Source] および [!DNL Adobe Commerce] を使用して、有用なレポートを作成するための支払いプロバイダーからの集計された支払いデータ。 The [!DNL Payment Services] 拡張機能では、インデクサーを使用して、レポートに必要なすべてのデータを効率的に収集します。
 
-で使用されるデータについて学ぶには [!DNL Payment Services] レポートについては、 [注文の支払いステータスレポート](order-payment-status.md#data-used-in-the-report).
+で使用されるデータについて学ぶには、以下を実行します。 [!DNL Payment Services] レポートについては、 [注文の支払いステータスレポート](order-payment-status.md#data-used-in-the-report).
 
 ### cron の設定 [!DNL Magento Open Source]
 
@@ -71,9 +71,9 @@ bin/magento saas:resync --feed [feedName]
 | `bin/magento saas:resync --feed [feedName]` | 指定されたフィードのインデックス再作成を実行し、それを対応するサービスに送信します |
 | `bin/magento saas:resync --no-reindex` | インデックス作成をスキップし、同期されていないデータをインデックスから送信します |
 
-この `--feed` パラメーターを使用すると、送信するフィードを指定できます。
+The `--feed` パラメーターを使用すると、送信するフィードを指定できます。
 
-| フィード | 説明 |
+| Feed | 説明 |
 |  ---  |  ---  |
 | `paymentServicesOrdersProduction` | 実稼動モードでのフィードのオーダー |
 | `paymentServicesOrdersSandbox` | サンドボックスモードでのフィードの注文 |

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # セキュリティとコンプライアンス
 
-～は安全が最も重要である [!DNL Payment Services] また、お客様に対しては、プライベートまたは支払いカード業界 (PCI) の規制情報が渡されることはありません [!DNL Payment Services].
+～には安全が最も重要である [!DNL Payment Services] また、お客様に対しては、プライベートまたは支払いカード業界 (PCI) の規制情報が渡されることはありません。 [!DNL Payment Services].
 
 ## コマースセキュリティ
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 詳しくは、 [PCI コンプライアンスガイドライン](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} を参照してください。
 
-商人が [自己評価アンケート (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}：カード所有者データのセキュリティを評価するための自己検証ツールです。
+マーチャントが [自己評価アンケート (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}：カード所有者データのセキュリティを評価するための自己検証ツールです。
 
 ### クレジットカードのフィールド
 

@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Quick Checkout] 前提条件"
-description: 「システムが、 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合」
+description: 「お使いのシステムが、 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合」
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
 feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # [!DNL Quick Checkout] 前提条件
 
-この [!DNL Quick Checkout] は、 [!DNL Magento Open Source] Adobe Commerce 詳しくは、 [ライフサイクルポリシー](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} を参照してください。
+The [!DNL Quick Checkout] は、次の両方と互換性があります [!DNL Magento Open Source] Adobe Commerce 詳しくは、 [ライフサイクルポリシー](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} を参照してください。
 
 詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) トピックを参照してください。
 

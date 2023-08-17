@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-条件 [!DNL Live Search] が [インストール済み](install.md), a [!DNL popover] 買い物客が [検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ボックス 文字を入力するたびに、 [!DNL popover] が更新され、上位の検索結果の推奨製品とサムネール画像が表示されます。
+条件 [!DNL Live Search] 次に該当 [インストール済み](install.md), a [!DNL popover] 買い物客が [検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ボックス。 文字を入力するたびに、 [!DNL popover] が更新され、上位の検索結果の推奨製品とサムネール画像が表示されます。
 
 [!DNL Live Search] 2 文字以上のクエリの結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 「入力中の検索」クエリの文字数は設定できません。
 
@@ -29,19 +29,19 @@ ht-degree: 0%
 
 ## [!DNL Popover] ページサイズ
 
-ページサイズ [!DNL popover] は、返すオートコンプリートされた製品のライン数を決定します。 以前は、ページサイズは 6 行にハードコードされていました。 ただし、 `page_size` の値は現在、 *管理者*. ライブ検索のインストール中に、 `page_size` 値が [カタログ検索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` 設定。
+ページのサイズ [!DNL popover] は、返すオートコンプリート済み製品のライン数を決定します。 以前は、ページサイズは 6 行にハードコードされていました。 ただし、 `page_size` の値は、現在は *管理者*. ライブ検索のインストール中に、 `page_size` 値は、現在の値の [カタログ検索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` 設定。
 
-デフォルトでは、「カタログ検索 — オートコンプリートの上限」の値は 8 行（または行）に設定されています。 ページサイズを変更するには [!DNL popover]、次の操作を実行します。
+デフォルトでは、「カタログ検索 — オートコンプリートの上限」の値は 8 行（または行）に設定されています。 ページのサイズを変更するには [!DNL popover]、次の操作を実行します。
 
-1. の *管理者* サイドバー、移動 **ストア** /設定/ **設定**.
+1. 次の日： *管理者* サイドバー、移動 **ストア** /設定/ **設定**.
 1. 左側のパネルで、を展開します。 **カタログ** を選択します。 **カタログ** を選択します。
 1. を展開します。 *カタログ検索* 」セクションに入力します。
-1. を **オートコンプリート制限** を [!DNL popover].
+1. を設定します。 **オートコンプリート制限** を [!DNL popover].
 1. 完了したら、「 **設定を保存**.
 
 ## カタログサービス
 
-この [Adobe Commerceのカタログサービス](../catalog-service/overview.md) 拡張機能は、豊富なビューモデルカタログデータを提供し、製品関連のストアフロントエクスペリエンスをすばやく完全にレンダリングできます。 カタログサービスをライブ検索と組み合わせて使用すると、ネイティブ拡張機能で現在サポートされていない機能を提供できます。
+The [Adobe Commerceのカタログサービス](../catalog-service/overview.md) 拡張機能は、豊富なビューモデルカタログデータを提供し、製品関連のストアフロントエクスペリエンスをすばやく完全にレンダリングできます。 カタログサービスをライブ検索と組み合わせて使用すると、ネイティブ拡張機能で現在サポートされていない機能を提供できます。
 
 * カラースウォッチ
 * 拡張属性
@@ -51,8 +51,8 @@ ht-degree: 0%
 
 ## 制限事項
 
-* この [!DNL Live Search] [!DNL storefront popover] は、 *Luma* テーマ、または *Luma*. 検索結果ページのパンくずリストには *ルメ* スタイル設定。
-* この [!DNL popover] は *空白* テーマ。 詳しくは、 [スタイル設定 [!DNL Popover] 要素](storefront-popover-styling.md) を参照してください。
-* この [!DNL popover] は、クイック注文フォームではサポートされていません。
+* The [!DNL Live Search] [!DNL storefront popover] は、 *Luma* テーマ、または *Luma*. 検索結果ページのパンくずリストには *ルメ* スタイル設定。
+* The [!DNL popover] はをサポートしていません *空白* テーマ。 詳しくは、 [スタイル設定 [!DNL Popover] 要素](storefront-popover-styling.md) を参照してください。
+* The [!DNL popover] は、クイック注文フォームではサポートされていません。
 * ウィッシュリストと製品の比較はサポートされていません。
 * ベース通貨のみがサポートされます。

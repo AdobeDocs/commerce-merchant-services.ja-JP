@@ -1,6 +1,6 @@
 ---
 title: カタログ同期
-description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services] サービスを最新の状態に保つための継続的なベースで
+description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services] サービスを最新の状態に保つための継続的なベースで。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalogs, Data Import/Export, Catalog Service
 source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Adobe CommerceおよびMagento Open Sourceは、インデクサーを使用してカタログデータをテーブルにコンパイルします。 プロセスは、次を通じて自動的にトリガーされます： [イベント](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 製品価格や在庫レベルの変更など。
 
-カタログ同期プロセスは 1 時間ごとに実行され、 [!DNL Commerce] カタログデータを使用するサービス。 カタログ同期で、 [!DNL Commerce] サーバーから [!DNL Commerce] サービスを継続的に更新し、サービスを最新の状態に保ちます。 例： [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) では、現在のカタログ情報が必要で、正しい名前、価格、可用性を使用してレコメンデーションを正確に返すことができます。 以下を使用して、 _カタログ同期_ 同期プロセスを監視および管理するためのダッシュボード [コマンドラインインターフェイス](#resynccmdline) を使用して、カタログの同期と製品データのインデックス再作成を行います。 [!DNL Commerce] サービス。
+カタログの同期プロセスは 1 時間ごとに実行され、 [!DNL Commerce] カタログデータを使用するサービス。 カタログ同期では、 [!DNL Commerce] サーバーから [!DNL Commerce] サービスを継続的に更新し、サービスを最新の状態に保ちます。 例： [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) では、現在のカタログ情報が必要で、正しい名前、価格、可用性を使用してレコメンデーションを正確に返すことができます。 以下を使用すると、 _カタログ同期_ 同期プロセスを監視および管理するためのダッシュボード [コマンドラインインターフェイス](#resynccmdline) を使用して、カタログの同期と製品データのインデックス再作成を行います。 [!DNL Commerce] サービス。
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Adobe CommerceおよびMagento Open Sourceは、インデクサーを使用し�
 
 >[!NOTE]
 >
-> この _カタログ同期_ ダッシュボードは、 _製品Recommendations_ モジュールがインストールされ、その機能に関連するデータ投影のみを反映します。 などの他のコマースサービスのサポート _ライブ検索_ および _カタログサービス_ は将来の予定です。
+> The _カタログ同期_ ダッシュボードは、 _製品Recommendations_ モジュールがインストールされ、その機能に関連するデータ投影のみを反映します。 などの他のコマースサービスのサポート _ライブ検索_ および _カタログサービス_ は将来の予定です。
 
 カタログ同期ダッシュボードにアクセスするには、「 **システム** > _データ転送_ > **カタログ同期**.
 
@@ -32,14 +32,14 @@ Adobe CommerceおよびMagento Open Sourceは、インデクサーを使用し�
 
 - 同期ステータスを表示 (**処理中**, **成功**, **失敗**)
 - 同期された製品の合計数を表示します（成功した場合）
-- 同期された製品を検索して現在の状態を表示
+- 同期した製品を検索して現在の状態を表示
 - 名前、SKU などでストアカタログを検索
 - 同期された製品の詳細を JSON で表示して、同期の不一致を診断するのに役立ちます
 - 同期プロセスを再開します
 
 ### 前回の同期
 
-同期ステータスを報告する：
+次の同期ステータスを報告します。
 
 - **成功**  — 同期が成功した日時と更新された製品数を表示
 - **失敗**  — 同期が試行された日時を表示
@@ -61,18 +61,18 @@ Adobe CommerceおよびMagento Open Sourceは、インデクサーを使用し�
 >
 > 再同期を強制すると、トリガーカタログ全体を再同期するので、ハードウェアリソースの負荷が増加する可能性があります。
 
-1. 次の _カタログ同期_ ダッシュボード、選択 **設定**.
+1. 次から： _カタログ同期_ ダッシュボード、選択 **設定**.
 
-   この _カタログ同期設定_ ページが表示されます。
+   The _カタログ同期設定_ ページが表示されます。
 
-1. 内 _データの再同期_ セクションで、 [!UICONTROL Resync].
+1. Adobe Analytics の _データの再同期_ セクションで、 [!UICONTROL Resync].
 
    [!DNL Commerce] 次のスケジュール済み同期ウィンドウ中にカタログを同期します。 カタログのサイズによっては、この操作に時間がかかる場合があります。
 
 
-## 同期されたカタログ製品
+## 同期済みカタログ製品
 
-この **同期されたカタログ製品** テーブルには、次の情報が表示されます。
+The **同期済みカタログ製品** テーブルには、次の情報が表示されます。
 
 | フィールド | 説明 |
 |---|---|
@@ -98,15 +98,15 @@ Adobe CommerceおよびMagento Open Sourceは、インデクサーを使用し�
 
 ### 同期が実行されていません
 
-同期がスケジュールに従って実行されていない場合、または何も同期されていない場合は、 [ナレッジベース](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
+同期がスケジュールに従って実行されていない場合、または何も同期されていない場合は、 [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### 同期に失敗しました
 
-カタログ同期のステータスが **失敗**、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+カタログ同期のステータスが **失敗**、送信 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## コマンドラインインターフェイス {#resynccmdline}
 
-この `saas:resync` コマンドは `magento/saas-export` パッケージ。 このパッケージは、 [!DNL Commerce Services] 製品： [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) または [[!DNL Live Search]](/help/live-search/install.md).
+The `saas:resync` コマンドは、 `magento/saas-export` パッケージ。 このパッケージは、 [!DNL Commerce Services] 製品 ( 例： [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) または [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 
 次の表に、 `saas:resync` パラメーターと説明。
 
-| パラメータ | 説明 | 必須？ |
+| パラメーター | 説明 | 必須？ |
 |---| ---| ---|
 | `feed` | 再同期するエンティティを指定します。例： `products` | はい |
 | `no-reindex` | 既存のカタログデータをに再送信します [!DNL Commerce Services] インデックスを再作成せずに このパラメーターを指定しない場合、コマンドはデータを同期する前に完全な再インデックスを実行します。 | いいえ |
@@ -130,12 +130,12 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 - `products` — カタログ内の製品
 - `categories` — カタログ内のカテゴリ
 - `variants` — 色やサイズなど、設定可能な製品の製品バリエーション。
-- `productattributes` — 製品属性 ( 例： `activity`, `gender`, `tops`, `bottoms`など
+- `productattributes` — 製品属性（例： ） `activity`, `gender`, `tops`, `bottoms`など
 - `productoverrides` — カテゴリ権限に基づく価格やカタログ表示ルールなど、お客様固有の価格やカタログ表示ルール
 
 コマンドラインからデータの再同期をトリガーする場合、データが更新されるまで最大 1 時間かかる場合があります。
 
-次を使用する場合： [SaaS 価格のインデックス作成](../price-index/index.md) 再同期が必要な場合は、次のコマンドを実行します。
+を使用している場合、 [SaaS 価格のインデックス作成](../price-index/index.md) 再同期が必要な場合は、次のコマンドを実行します。
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup

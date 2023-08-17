@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 財務報告
 
-[!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗の注文件数と支払い数を明確に把握できるよう、包括的なレポートを提供します。
+[!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗の注文件数と支払い数を明確に把握できるよう、包括的なレポートを提供します。
 
 ![財務レポートビュー](assets/reports-view.png)
 

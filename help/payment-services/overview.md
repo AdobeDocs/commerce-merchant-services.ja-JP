@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # の概要 [!DNL Payment Services]
 
-[!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、サンドボックステストやシンプルなセットアップを含む、自動セルフサービスソリューションで、コマース Web サイトの堅牢で安全な支払い処理を提供します。
+[!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、サンドボックステストやシンプルなセットアップを含む、自動セルフサービスソリューションで、コマース Web サイトの堅牢で安全な支払い処理を提供します。
 
 ![[!DNL Payment Services] 拡張機能の管理ビュー](assets/admin-view.png)
 
@@ -39,12 +39,12 @@ ht-degree: 0%
 * [**オンボーディング**](onboard.md) — このプロセスは、商用サインアップ、技術的な設定、権限、サンドボックス環境の設定、ライブ支払いの有効化の手順をガイドします。
 * [**支払いオプション**](payments-options.md) — 支払いオプションを設定して、店舗（またはマルチストア）の顧客が利用できる方法をカスタマイズします。
 * **キャッシュフロー管理財務報告** — 同期 [支払詳細](order-payment-status.md) 処理済数量、支払残高、および詳細に対する完全な透明性を得るための注文と [トランザクションレベルのレポート](payouts.md) 財務上の調整の場合。
-* **透明性の高い価格設定** — 価格は明確で前もって設定されています。何が見えるかは、得るものです。
+* **透明性の高い価格設定** — 価格は明確で前もって設定されています。
 * **効率的なチェックアウトエクスペリエンス** — 迅速でシンプルなチェックアウトに対する障壁を取り除き、常連客を作成し、 [カード保管](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) および [即時購入](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (Adobe Commerceの場合はデフォルトで有効 ) 機能です。
 
 ## 使用可否
 
-[!DNL Payment Services] は、次の場所で使用できます： [!DNL Adobe Commerce] および [!DNL Magento Open Source]. この [!DNL Payment Services] 拡張機能は、 [!DNL Adobe Commerce] バージョン 2.4.x.
+[!DNL Payment Services] は、次の場所で使用できます： [!DNL Adobe Commerce] および [!DNL Magento Open Source]. The [!DNL Payment Services] 拡張機能は、 [!DNL Adobe Commerce] バージョン 2.4.x.
 
 現在、 [!DNL Payment Services] は、次の国で利用できます。
 
@@ -64,11 +64,11 @@ PayPal がサポートする通貨を確認するには、 [サポートされ�
 
 PayPal がサポートする支払い方法を確認するには、 [支払い方法に関するドキュメント](https://developer.paypal.com/docs/checkout/payment-methods/).
 
-## はじめに
+## 基本を学ぶ
 
 オンボーディングとセットアップ [!DNL Payment Services] は、いくつかの手順で完了します。
 
-1. を取得 [[!DNL Payment Services] 拡張](install.md).
+1. を取得します [[!DNL Payment Services] 拡張](install.md).
 1. コマースインスタンスをコマースサービスに接続します。
 1. サンドボックスサービスをオンボーディングし、設定します。
 1. 有効にする [!DNL Payment Services] を支払い方法として使用し、テスト支払の処理を開始します。

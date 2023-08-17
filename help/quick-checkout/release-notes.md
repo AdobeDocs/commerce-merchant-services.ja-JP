@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Quick Checkout] リリースノート`'
+title: '[!DNL Quick Checkout] リリースノート'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout

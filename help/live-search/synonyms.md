@@ -15,4 +15,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->を使用したAdobe Commerceインストールの場合 [!DNL Live Search] インストール済み [!DNL Live Search] 標準のAdobe Commerceに代わるシノニム [シノニムを検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) 機能には、両方とも *SEO と検索* 」セクションに表示されます。 次を使用する場合、 [!DNL Live Search]を使用する場合は、この節の手順に従ってください。
+>を使用したAdobe Commerceインストールの場合 [!DNL Live Search] インストール済み [!DNL Live Search] 標準のAdobe Commerceを置き換えるシノニム [シノニムを検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) 機能には、両方とも *SEO と検索* 」セクションに表示されます。 次を使用する場合、 [!DNL Live Search]を使用する場合は、この節の手順に従ってください。

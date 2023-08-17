@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # オンボード [!DNL Payment Services]
 
-を使用し始めるには、以下を実行します。 [!DNL Payment Services] 対象 [!DNL Adobe Commerce] および [!DNL Magento Open Source]の場合は、インスタンスと支払い機能を接続するためのオンボーディング手順をいくつか実行する必要があります。
+を使用し始めるには、以下を実行します。 [!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source]の場合は、インスタンスと支払い機能を接続するためのオンボーディング手順をいくつか実行する必要があります。
 
 ## オンボーディングフロー
 
@@ -34,22 +34,22 @@ ht-degree: 0%
 * サービス ID モジュール
 * API キー
 
-サービスコネクタ ID モジュールとサービス ID モジュールは、 [～の設置 [!DNL Payment Services]](install.md). インストールが完了すると、設定 (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) を展開する際に、**[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
+サービスコネクタ ID モジュールとサービス ID モジュールは、 [～の設置 [!DNL Payment Services]](install.md). インストールが完了すると、設定に新しい節が表示されます (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) を展開する際に使用します。**[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
 
 API キーの作成またはアクセス方法については、 [API 資格情報](#obtain-api-credentials).
 
 ## オンボーディング手順
 
-1. [のインストール [!DNL Payment Services] 拡張](install.md#get-payment-services).
+1. [をインストールします。 [!DNL Payment Services] 拡張](install.md#get-payment-services).
 1. [API 資格情報の取得](connect.md#obtain-api-credentials).
 1. [インスタンスに接続](connect.md#configure-commerce-services) を Commerce Services に追加します。 この接続は、コマースインスタンスごとに 1 回だけ完了する必要があります。
 1. [サンドボックスサービスの設定](sandbox.md#enable-sandbox-testing) ( または、次に進みます： [ライブ支払の有効化](sandbox.md#enable-live-payments) （他の環境で機能をテストした場合）、PayPal の支払い処理アカウントを使用します。
 1. [設定 [!DNL Payment Services] お客様の支払い方法](production.md#set-payment-services-as-payment-method)（サンドボックスモード）：テストの支払いの処理を開始します。
 1. [支払い権限をリクエスト](production.md#request-payments-entitlement-from-adobe) ：ライブオンボーディングを有効にします。
 1. [完全なマーチャントオンボーディング](production.md#complete-merchant-onboarding) ：コマース Web サイトのライブ支払いを有効にします。
-1. [ダウンロード [!DNL Payment Services] マーチャント ID](production.md#configure-pricing-tier) 正しい価格帯を設定するために、セールスに渡します。
+1. [Adobe Analytics の [!DNL Payment Services] マーチャント ID](production.md#configure-pricing-tier) 正しい価格帯を設定するために、セールスに渡します。
 1. [有効にする [!DNL Payment Services] ライブモード](production.md#enable-live-payments) ：ライブ支払の処理を開始します。
-1. テスト支払（両方） [サンドボックス](sandbox.md#test-in-sandbox-environment) および [実稼動](production.md#test-in-production) 環境。
+1. テスト支払（両方） [sandbox](sandbox.md#test-in-sandbox-environment) および [実稼動](production.md#test-in-production) 環境。
 
 >[!NOTE]
 >

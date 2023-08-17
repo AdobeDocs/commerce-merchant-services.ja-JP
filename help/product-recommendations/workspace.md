@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Product Recommendations] Workspace
 
-この [!DNL Product Recommendations] workspace には、以前に設定したレコメンデーションのリストと、各レコメンデーションの成功を追跡するのに役立つ指標が表示されます。 リストは、最終日、週または月の指標を計算するように設定できます。 指標を使用して、レコメンデーションユニットの表示やクリックの頻度に基づいて実用的なインサイトを作成したり、レコメンデーションのパフォーマンスを分析したりできます。
+The [!DNL Product Recommendations] workspace には、以前に設定したレコメンデーションのリストと、各レコメンデーションの成功を追跡するのに役立つ指標が表示されます。 リストは、最終日、週または月の指標を計算するように設定できます。 指標を使用して、レコメンデーションユニットの表示やクリックの頻度に基づいて実用的なインサイトを作成したり、レコメンデーションのパフォーマンスを分析したりできます。
 
 ![Recommendations workspace](assets/workspace.png)
 _Recommendations Workspace_
@@ -30,7 +30,7 @@ _Recommendations Workspace_
    - 過去 7 日間
    - 過去 30 日間
 
-   指標列の計算値は、現在の日付範囲を反映して変更されます。
+   指標列の計算値は、現在の日付範囲を反映して変化します。
 
 ## 列を表示/非表示
 
@@ -66,7 +66,7 @@ _Recommendations Settings_
    ![Recommendations workspace](assets/recommendation-detail.png)
    _ホームページコンバージョン率の詳細_
 
-1. レコメンデーションのステータスを変更するには、 **有効化** または **無効化**.
+1. レコメンデーションのステータスを変更するには、 **有効化** または **非アクティブ化**.
 
 ## レコメンデーションを編集
 
@@ -80,10 +80,10 @@ _Recommendations Settings_
 
 | 制御 | 説明 |
 |---|---|
-| ![カレンダーセレクター](assets/icon-calendar.png) | 指標の計算に使用する時間範囲を決定します。 オプション：24 時間/ 7 日/ 30 日 |
+| ![カレンダーセレクター](assets/icon-calendar.png) | 指標の計算に使用する時間範囲を決定します。 オプション： 24 時間/ 7 日/ 30 日 |
 | ![列セレクター](assets/icon-show-hide-columns.png) | に表示される列を決定します。 [!DNL Product Recommendations] 表。 |
 | 設定 | recommendation-behavioral データを取得する SaaS データ空間を決定し、視覚的類似性レコメンデーションタイプも有効にします。 |
-| レコメンデーションを作成 | を開きます。 [新しいレコメンデーションを作成](create.md) ページ。 |
+| レコメンデーションを作成 | を開きます。 [新しいレコメンデーションを作成](create.md) ページに貼り付けます。 |
 
 ## 列の説明
 

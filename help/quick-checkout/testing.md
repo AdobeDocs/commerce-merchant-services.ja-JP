@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # をテストします。 [!DNL Quick Checkout] 拡張
 
-を公開する前に [!DNL Quick Checkout] 買い物客に対するAdobe Commerce拡張機能の場合は、サンドボックス環境と実稼動環境でテストすることをお勧めします。 テストと検証は、 [!DNL Quick Checkout] は期待どおりに動作し、ストアや顧客に対してシームレスなチェックアウトエクスペリエンスを提供します。
+を公開する前に、 [!DNL Quick Checkout] 買い物客に対するAdobe Commerce拡張機能の場合は、サンドボックス環境と実稼動環境でテストすることをお勧めします。 テストと検証は、 [!DNL Quick Checkout] は期待どおりに動作し、ストアや顧客に対してシームレスなチェックアウトエクスペリエンスを提供します。
 
 設定する前に、 [!DNL Quick Checkout] Adobe Commerce Admin で、  [実稼動](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} ～の商人口座 [!DNL Bolt].
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ### Sandbox アカウントの使用
 
-サンドボックスをテストおよび検証する際は、偽のクレジットカード番号と [サンドボックス](https://merchant-sandbox.bolt.com/register){target="_blank"} ～の商人口座 [!DNL Bolt]既存のクレジットカードアカウントに対して実際の料金を作成しないようにします。
+サンドボックスをテストおよび検証する際は、偽のクレジットカード番号と [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} ～の商人口座 [!DNL Bolt]既存のクレジットカードアカウントに対して実際の料金を作成しないようにします。
 
 ## 実稼動環境でのテスト
 
@@ -53,11 +53,11 @@ ht-degree: 0%
    - サンドボックス
    - 実稼動
 
-1. 注文をします。
+1. 注文を行います。
 
 注文が完了すると、注文の詳細を _注文グリッド_ 表示：
 
-1. に移動します。 _セールス_ > _注文_.
+1. に移動します。 _セールス_ > _購入回数_.
 1. すべての注文のリストを表示します。
 
-詳しくは、 [注文](https://docs.magento.com/user-guide/sales/orders.html) のトピックを参照してください。 _注文グリッド_ 表示
+詳しくは、 [購入回数](https://docs.magento.com/user-guide/sales/orders.html) のトピックを参照してください。 _注文グリッド_ 表示。

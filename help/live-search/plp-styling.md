@@ -1,7 +1,8 @@
 ---
 title: 製品リストページウィジェット
-description: 「 [!DNL Live Search Product Listing Page Widget]"
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+description: の有効化とスタイル設定 [!DNL Live Search Product Listing Page Widget]
+exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
+source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -10,15 +11,15 @@ ht-degree: 0%
 
 # 製品リストページウィジェット
 
-この [!DNL Live Search Product Listing Page Widget] (PLP) は、コマースサービスプラットフォームを使用して、パフォーマンスの高い、検索可能でファセット可能な製品リストページを提供します。 このトピックでは、PLP ウィジェットを有効にし、スタイルを設定する方法について説明します。
+The [!DNL Live Search Product Listing Page Widget] (PLP) は、コマースサービスプラットフォームを使用して、パフォーマンスの高い、検索可能でファセット可能な製品リストページを提供します。 このトピックでは、PLP ウィジェットを有効にし、スタイルを設定する方法について説明します。
 
 ## PLP ウィジェットの有効化
 
 次の場合に [!DNL Live Search] サービスがインストールされている場合、デフォルトの検索機能は [!DNL Live Search] 自動的に。
 PLP ウィジェットは、管理で有効にする必要があります。
 
-1. に移動します。 **ストア** /設定/ **設定** > **[!DNL Live Search]** > **ストアフロント機能** および設定 **製品リストウィジェットを有効にする** を「はい」に変更します。
-1. 選択 **設定を保存** 設定を保存します。
+1. に移動します。 **ストア** /設定/ **設定** > **[!DNL Live Search]** > **ストアフロント機能** と設定します。 **製品リストウィジェットを有効にする** を「はい」に変更します。
+1. 選択 **設定を保存** をクリックして設定を保存します。
 
 ## スタイル設定の例
 
@@ -26,8 +27,8 @@ PLP ウィジェットの外観をカスタマイズし、 [CSS](https://develop
 
 >[!NOTE]
 >
->Adobe Commerceテーマ内のカスタムクラスを持つ要素は継承されません。 これらの要素は、カスタムクラスに一致させるために、特定のクラスのターゲットにする必要があります。プライマリアクションクラスは、ウィジェットボタンでは機能しません。
->CSS 内の汎用のターゲット要素は継承されます。 `button` がウィジェットボタンに適用されます。
+>Adobe Commerceテーマ内のカスタムクラスを持つ要素は継承されません。 これらの要素は、カスタムクラスに一致する特定のクラスによってターゲット設定される必要があります。プライマリアクションクラスは、ウィジェットボタンでは機能しません。
+>CSS 内の汎用のターゲット要素は継承されます。 `button` ウィジェットボタンに適用されます。
 
 強調表示された div には、target クラスが含まれています `ds-sdk-product-item__product-name`.
 
@@ -47,8 +48,8 @@ PLP ウィジェットの外観をカスタマイズし、 [CSS](https://develop
 
 ### 製品リスト
 
-* `.ds-sdk-product-list`:外側の div
-* `.ds-sdk-product-list__grid`:内部 div
+* `.ds-sdk-product-list`：外側の div
+* `.ds-sdk-product-list__grid`：内部 div
 
 ![ページ編集](assets/plp-css-product-list.png)
 
@@ -68,9 +69,9 @@ PLP ウィジェットの外観をカスタマイズし、 [CSS](https://develop
 
 ### ウィジェット
 
-* `.ds-widgets`:外側の div
-* `.ds-widgets__actions`:左側の内側の div
-* `.ds-widgets__results`:右側の内部 div
+* `.ds-widgets`：外側の div
+* `.ds-widgets__actions`：左側の内部 div
+* `.ds-widgets__results`：右側の内部 div
 
 ![ウィジェットの結果](assets/plp-css-widgets.png)
 
@@ -153,7 +154,7 @@ PLP ウィジェットの外観をカスタマイズし、 [CSS](https://develop
 
 ![製品](assets/plp-css-product.png)
 
-### 読み込み中
+### 読み込み
 
 * `.ds-sdk-loading`
 * `.ds-sdk-loading__spinner`

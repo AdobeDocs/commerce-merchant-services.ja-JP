@@ -63,7 +63,7 @@ B2B 商人の場合は次のようになります。
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-1.0.0 から 2.0.0 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
+1.0.0 から 2.0.0 へのメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
 
 1. ルートを開く `composer.json` ファイルと検索 `magento/experience-platform-connector`.
 

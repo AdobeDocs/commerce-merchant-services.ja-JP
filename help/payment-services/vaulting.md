@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # クレジットカード保管
 
-1 回限りの顧客を、クレジットカードの保管機能を備えた常連客に変換します。 買い物客は、チェックアウト時にクレジットカードの資格情報を保存 (「vault」) して、同じ商人アカウント内で後の購入で使用することができます。
+1 回限りの顧客を、クレジットカードの保管機能を備えた常連客に変換します。 買い物客は、チェックアウト時にクレジットカードの資格情報を保存 (「vault」) して、同じ商人アカウント内で後の購入で使用することも、別の商人アカウント内で保存することもできます。
 
 ![後で使用するためのクレジットカードの保管](assets/save-card-for-later.png)
 
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ![保存された資格情報を今後の購入に使用](assets/use-stored-card.png)
 
-また、Vault に登録されたクレジットカードを [保管済支払い方法](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) マイアカウント内で
+また、Vault に登録されたクレジットカードを [保管済支払い方法](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) マイアカウント内にあります。
 
-![マイアカウントに保管された支払い方法](assets/stored-payment-methods.png)
+![マイアカウントでの保管済み支払い方法](assets/stored-payment-methods.png)
 
 ## ヴォールティングを有効化
 
@@ -34,15 +34,15 @@ ht-degree: 0%
 
 顧客が既存のアカウントと、以前に完了した支払いからシステムに保存された有効なトークンの両方を持っている場合にのみ、管理者で Vaulted カードを使用できます。
 
-管理者で、保留中のクレジットカードを使用して顧客の注文を作成するには、次の手順に従います。
+管理者で、保留中のクレジットカードを使用して顧客の注文を作成する手順は、次のとおりです。
 
 1. [注文の作成と製品の追加](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
 1. In _[!UICONTROL Payment & Shipping Information]_を選択します。**[!UICONTROL Stored Cards]**を支払い方法として使用します。
 1. 適切な Vaulted クレジットカードの支払い方法を選択します。
-1. オーダーに必要な他の手順を完了した後 [送信](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+1. オーダーに必要な他の手順を完了した後、 [送信](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
    ![顧客に管理者の Vault に保管されたクレジットカードを使用](assets/admin-vaultedcard.png)
 
 ## セキュリティ
 
-最小限のクレジットカード情報が買い物客と共有され、彼らは、最後の 4 桁、有効期限、および 2 枚のアウトされたクレジットカードのブランドのみを表示します。 クレジットカード情報は、支払いプロバイダーと共に、満たすために保存されます [PCI](security.md#PCI-compliance) 準拠基準
+最小限のクレジットカード情報は買い物客と共有され、買い物客には、最後の 4 桁、有効期限、および 2 枚目のクレジットカードのブランドのみが表示されます。 クレジットカード情報は、支払いプロバイダーと共に、満たすために保存されます [PCI](security.md#PCI-compliance) コンプライアンス基準。

@@ -16,19 +16,19 @@ ht-degree: 0%
 
 次の手順で [!DNL Quick Checkout] 管理パネル：
 
-1. の _管理者_ サイドバー、次に移動 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**.
+1. 次の日： _管理者_ サイドバー、次に移動 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**.
 
-   ![メニュークイックチェックアウト](assets/overview-admin-panel.png)
+   ![メニューのクイックチェックアウト](assets/overview-admin-panel.png)
 
-詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) の設定方法の詳細に関するトピック [!DNL Quick Checkout] Adobe Commerce
+詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) の設定方法の詳細に関するトピック [!DNL Quick Checkout] Adobe Commerceの
 
 ユーザーが [!DNL Quick Checkout] 管理パネルで、ユーザーに適切な役割リソースが付与されていることを確認する必要があります。
 
-1. の _管理者_ サイドバー、移動 **[!UICONTROL System]** /権限 > **[!UICONTROL User Roles]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL System]** /権限 > **[!UICONTROL User Roles]**.
 
    ![ユーザーの役割](assets/user-roles-small.png)
 
-1. 内 _役割_ 表示、クリック **新しいロールの追加**
+1. Adobe Analytics の _役割_ 表示、クリック **新しいロールの追加**
 1. を選択します。 [!DNL Quick Checkout] リソース：
 
    ![クイックチェックアウトの役割と権限](assets/role-resource-quick-checkout.png)

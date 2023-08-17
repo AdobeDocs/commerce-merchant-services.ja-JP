@@ -22,22 +22,22 @@ ht-degree: 0%
 
 距離プロバイダを設定するには：
 
-1. 次の **[!UICONTROL Stores > General]** 管理者の設定で、「マップ」コンテンツタイプにGoogle Maps 統合を追加します。
+1. 次から： **[!UICONTROL Stores > General]** 管理者の設定で、「マップ」コンテンツタイプにGoogle Maps 統合を追加します。
 
    - に移動します。 **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
    - Google API キーを **[!UICONTROL Google Maps API Key]** フィールドに入力します。
 
-1. 次の **[!UICONTROL Stores > Inventory]** 「管理」で、「ストアフルフィルメント」の距離プロバイダを選択します。
+1. 次から： **[!UICONTROL Stores > Inventory]** 「管理」で、「ストアフルフィルメント」の距離プロバイダを選択します。
 
    - に移動します。 **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 
    - を展開します。 **[!UICONTROL Distance Provider for Distance Based SSA]** 」セクションに入力します。
 
-   - を **プロバイダー** から **Google Map**.
+   - を設定します。 **プロバイダー** から **Google Map**.
 
 1. 次の項目の設定を行います： **[!UICONTROL Google Distance Provider]**.
 
-   - を **Google API キー**.
+   - を追加します。 **Google API キー**.
 
    - 設定 **[!UICONTROL Computation Mode]** から `Driving` および **[!UICONTROL Value]** から `Distance`

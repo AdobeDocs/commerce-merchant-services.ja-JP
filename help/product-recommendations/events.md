@@ -24,12 +24,12 @@ SaaS ベースのAdobe Commerce機能 ( [製品Recommendations](install-configur
 - `add-to-cart`
 - `place-order`
 
-この [Adobe Commerce Storefront イベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) ストアフロントにデプロイされたすべてのイベントの一覧が表示されます。 ただし、このリストからは、Product Recommendationsに固有のイベントのサブセットが得られます。 これらのイベントは、買い物客がストアフロントでレコメンデーション単位を操作する際にデータを収集し、レコメンデーションのパフォーマンスを分析するのに役立つ指標を活用します。
+The [Adobe Commerce Storefront イベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) ストアフロントにデプロイされたすべてのイベントの一覧が表示されます。 ただし、このリストからは、Product Recommendationsに固有のイベントのサブセットが得られます。 これらのイベントは、買い物客がストアフロントでレコメンデーション単位を操作する際にデータを収集し、レコメンデーションのパフォーマンスを分析するのに役立つ指標を活用します。
 
 | イベント | 説明 | [指標に使用されますか？](workspace.md) |
 | --- | --- | --- |
 | `impression-render` | レコメンデーション単位は、ページ上にレンダリングされます。 | はい |
-| `rec-add-to-cart-click` | 顧客が **買い物かごに追加** ボタンを使用して、レコメンデーション単位の品目を表示できます。 | はい、 **買い物かごに追加** ボタンが recommendations テンプレートに存在すること。 |
+| `rec-add-to-cart-click` | 顧客が **買い物かごに追加** ボタンを使用して、レコメンデーション単位の品目を表示できます。 | はい、 **買い物かごに追加** ボタンが recommendations テンプレートに存在することを確認します。 |
 | `rec-click` | 顧客がレコメンデーション単位で商品をクリックします。 | はい |
 | `view` | レコメンデーションユニットは、ビューにスクロールして表示するなど、ページ上で表示可能になります。 | はい |
 
@@ -37,7 +37,7 @@ SaaS ベースのAdobe Commerce機能 ( [製品Recommendations](install-configur
 
 ## 注意事項
 
-広告ブロッカーやプライバシー設定が `magento/product-recommendations` イベントのキャプチャからモジュールを削除し、エンゲージメントと売上高を引き起こす可能性 [指標](workspace.md) 過少報告される
+広告ブロッカーやプライバシー設定が `magento/product-recommendations` イベントのキャプチャからモジュールを削除し、エンゲージメントと売上高を引き起こす可能性がある [指標](workspace.md) 過少報告される
 
 イベンティングは、商人のサイトで発生するすべてのトランザクションをキャプチャするわけではありません。 イベンティングは、サイト上で発生しているイベントに関する一般的なアイデアを商人に与えることを目的としています。
 
@@ -45,4 +45,4 @@ SaaS ベースのAdobe Commerce機能 ( [製品Recommendations](install-configur
 
 >[!NOTE]
 >
->If [Cookie 制限モード](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、Adobe Commerceは買い物客が cookie の使用を同意するまで行動データを収集しません。 「Cookie Restriction Mode」が無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
+>次の場合 [Cookie 制限モード](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、Adobe Commerceは買い物客が cookie の使用を同意するまで行動データを収集しません。 「Cookie Restriction Mode」が無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。

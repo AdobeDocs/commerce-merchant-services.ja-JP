@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Product Recommendations] リリースノート`'
+title: '[!DNL Product Recommendations] リリースノート'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes

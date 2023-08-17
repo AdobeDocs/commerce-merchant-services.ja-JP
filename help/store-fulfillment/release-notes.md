@@ -1,13 +1,13 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] リリースノート`'
-description: すべての [!DNL Store Fulfillment by Walmart Commerce Technologies] リリース」
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] リリースノート'
+description: 「リリースノートで [!DNL Store Fulfillment by Walmart Commerce Technologies] リリース。」
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-![新規](../assets/fix.svg) [!DNL Store Fulfillment] 今 [～と互換性がある [!DNL Adobe Commerce] 2.4.0～2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![新規](../assets/fix.svg) [!DNL Store Fulfillment] は今 [～と互換性がある [!DNL Adobe Commerce] 2.4.0～2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.3.0
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 このリリースには、次の更新が含まれています。
 
-![新規](../assets/fix.svg) [!DNL Store Fulfillment] 今 [～と互換性がある [!DNL Adobe Commerce] 2.4.0～2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![新規](../assets/fix.svg) [!DNL Store Fulfillment] は今 [～と互換性がある [!DNL Adobe Commerce] 2.4.0～2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.1.0
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-安定性：一般公開
+安定性：一般可用性
 
 ![新規](../assets/fix.svg)<!-- WMTP-731 --> を簡素化し、 [チェックインエクスペリエンス設定](check-in-experience-setup.md) デフォルトの車のメーカーとモデルの選択を追加することにより、Store Assist アプリ用に。 以前のバージョンでは、商人は車の製造とモデルの選択を手動で設定する必要がありました。
 
@@ -65,7 +65,7 @@ ht-degree: 2%
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
-安定性：一般公開
+安定性：一般可用性
 
 ## ストアアシストアプリ
 

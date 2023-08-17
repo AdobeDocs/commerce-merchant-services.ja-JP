@@ -1,5 +1,5 @@
 ---
-title: シノニムの追加
+title: 「シノニムの追加」
 description: "追加 [!DNL Live Search] 検索リクエストへの応答を改善する同義語。"
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
 source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
@@ -11,18 +11,18 @@ ht-degree: 0%
 
 # シノニムの追加
 
-独自にキュレーションしたリストを追加して、顧客エンゲージメントを増やす [!DNL Live Search] シノニム。 [!DNL Live Search] 1 回につき 200 個まで同義語を管理できます `Data Space ID`.
+独自にキュレーションしたリストを追加して、顧客エンゲージメントを増やす [!DNL Live Search] 同義語。 [!DNL Live Search] 1 回につき 200 個まで同義語を管理できます `Data Space ID`.
 
 ![[!DNL Live Search] 同義語](assets/synonym-workspace.png)
 
-## 手順 1:シノニムを追加
+## 手順 1：シノニムの追加
 
 1. 管理者で、に移動します。 **マーケティング** / SEO と検索 > **[!DNL Live Search]**.
 1. 複数のストアの場合は、 **範囲** から [ストア表示](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) ここで、シノニム設定が適用されます。
 1. 次をクリック： **シノニム** タブをクリックします。
 1. 次をクリック： **シノニムを追加** 」ボタンをクリックします。
 
-## 手順 2:シノニムをタイプで定義
+## 手順 2：シノニムをタイプ別に定義する
 
 次の手順に従います。 [同義語の種類](synonyms-type.md) を作成します。
 
@@ -46,13 +46,13 @@ ht-degree: 0%
 
 ### 一方向のシノニム
 
-1. 次をクリック： **一方向** シノニムタイプ。
+1. 次をクリック： **片道** シノニムタイプ。
 
    ![一方向のシノニムを追加](assets/synonym-add-one-way.png)
 
 1. 次を入力します。 **キーワード** および **拡張** キーワード。 複数の用語はコンマで区切ります。
 
-   ![一方向シノニムの例](assets/synonym-add-one-way-example.png)
+   ![一方向のシノニムの例](assets/synonym-add-one-way-example.png)
 
    この例では、キーワードは「pants」で、一方向展開用語は「capris, calf-length pants, peddle-pushers」です。それぞれが「pants」のサブセットですが、具体的な意味を持ちます。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
    ![一方向のシノニム](assets/synonym-one-way.png)
 
-## 手順 3:変更を公開
+## 手順 3：変更の公開
 
 1. シノニムが完成したら、 **変更を公開**.
 1. 更新がストアフロントで利用できるようになるまで、最大 2 時間待ちます。

@@ -1,13 +1,13 @@
 ---
-user-guide-title: '"[!DNL Live Search] ガイド»'
+user-guide-title: 「[!DNL Live Search] ガイド」
 user-guide-description: このガイドでは、 [!DNL Live Search] Adobe Commerceから」
-breadcrumb-title: '"[!DNL Live Search] ガイド»'
+breadcrumb-title: 「[!DNL Live Search] ガイド」
 role: Admin
 feature: Services, Search
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 - [ガイドの概要](guide-overview.md)
 - [の概要 [!DNL Live Search]](overview.md)
 - [リリースノート](release-notes.md)
-- オンボーディングライブ検索 {#onboard}
+- オンボーディングのライブ検索 {#onboard}
    - [オンボーディングの概要](onboarding-overview.md)
    - [インストール [!DNL Live Search]](install.md)
 - [!DNL Live Search] ストアフロント {#live-search-storefront}

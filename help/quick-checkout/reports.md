@@ -6,7 +6,7 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -54,5 +54,5 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| [!UICONTROL Preset] | 特定の範囲のデータを表示するために使用できるデフォルトのプリセットを表示するドロップダウン。 デフォルトでは：過去 30 日間 |
+| [!UICONTROL Preset] | 特定の範囲のデータを表示するために使用できるデフォルトのプリセットを表示するドロップダウン。 デフォルト：過去 30 日間 |
 | [!UICONTROL Date range] | 選択した日付に応じて特定の範囲のデータを選択できるドロップダウン。 |

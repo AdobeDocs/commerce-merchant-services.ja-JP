@@ -39,9 +39,9 @@ Adobe CommerceインスタンスをAdobe Experience Platformに接続するに�
 
 1. 管理者で、に移動します。 **システム** /サービス/ **Experience Platformコネクタ**.
 
-1. の **設定** 下のタブ **一般**&#x200B;に設定されているように、Adobe Experience Platformアカウントに関連付けられている ID を確認します。 [Commerce Services コネクタ](../landing/saas.md#organizationid). 組織 ID はグローバルです。 1 つのAdobe Commerceインスタンスに関連付けることができる組織 ID は 1 つだけです。
+1. 次の日： **設定** 下のタブ **一般**&#x200B;に設定されているように、Adobe Experience Platformアカウントに関連付けられている ID を確認します。 [Commerce Services コネクタ](../landing/saas.md#organizationid). 組織 ID はグローバルです。 1 つのAdobe Commerceインスタンスに関連付けることができる組織 ID は 1 つだけです。
 
-1. 内 **範囲** ドロップダウンで、コンテキストを **Web サイト**.
+1. Adobe Analytics の **範囲** ドロップダウンで、コンテキストを次に設定します。 **Web サイト**.
 
 1. （オプション）既に [AEP Web SDK（合金）](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) サイトにデプロイし、チェックボックスを有効にして、AEP Web SDK の名前を追加します。 それ以外の場合は、これらのフィールドを空白のままにすると、Experience Platformコネクタによって自動的にデプロイされます。
 
@@ -51,23 +51,23 @@ Adobe CommerceインスタンスをAdobe Experience Platformに接続するに�
 
 ## データ収集
 
-このセクションでは、Experience PlatformEdge に送信するデータのタイプを指定します。 データには次の 2 種類があります。クライアント側とサーバー側の 2 つのタイプがあります。
+このセクションでは、Experience PlatformEdge に送信するデータのタイプを指定します。 データには、クライアント側とサーバー側の 2 種類があります。
 
 クライアントサイドのデータは、ストアフロントでキャプチャされるデータです。 これには、買い物客のインタラクション ( `View Page`, `View Product`, `Add to Cart`、および [購買依頼リスト](events.md#b2b-events) 情報（B2B 商人用） サーバーサイドのデータ（バックオフィスのデータ）は、コマースサーバーでキャプチャされるデータです。 これには、注文が発行されたか、取り消されたか、返金されたか、発送されたか、完了したかなど、注文のステータスに関する情報が含まれます。
 
 Adobe Commerceインスタンスがデータ収集を開始できることを確認するには、 [前提条件](overview.md#prerequisites).
 
-詳しくは、イベントのトピックを参照してください [店頭](events.md#storefront-events) および [バックオフィス](events.md#back-office-events) イベント。
+詳しくは、イベントのトピックを参照してください。 [店頭の](events.md#storefront-events) および [バックオフィス](events.md#back-office-events) イベント。
 
 >[!NOTE]
 >
->すべてのフィールド ( **データ収集** セクションの適用対象 **Web サイト** 範囲以上。
+>すべてのフィールド ( **データ収集** セクションの適用対象： **Web サイト** 範囲以上。
 
 1. 選択 **ストアフロントイベント** storefront 行動データを送信する場合。
 
    >[!NOTE]
    >
-   >この **ストアフロントイベント** AEP Web SDK および組織 ID が有効な場合、チェックボックスは自動的に有効になります。
+   >The **ストアフロントイベント** AEP Web SDK および組織 ID が有効な場合、チェックボックスは自動的に有効になります。
 
 1. 選択 **バックオフィスイベント** 注文が発行されたか、取り消されたか、返金されたか、出荷されたかなど、注文ステータス情報を送信する場合。
 
@@ -75,15 +75,15 @@ Adobe Commerceインスタンスがデータ収集を開始できることを確
    >
    >次を選択した場合、 **バックオフィスイベント**&#x200B;に設定されていない場合、すべてのバックオフィスデータがExperience PlatformEdge に送信されます。 買い物客がデータ収集をオプトアウトする場合は、Experience Platformで買い物客のプライバシー設定を明示的に設定する必要があります。 これは、コレクターが買い物客の環境設定に基づいて既に同意を処理しているストアフロントイベントとは異なります。 [詳細情報](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) Experience Platformでの買い物客のプライバシー設定に関する情報。
 
-1. バックオフィスのイベントデータを、 [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) ジョブの場合、 `Sales Orders Feed` インデックス `Update by Schedule`.
+1. バックオフィスのイベントデータを、 [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) ジョブの場合は、 `Sales Orders Feed` インデックス `Update by Schedule`.
 
-   1. の _管理者_ サイドバー、移動 **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**.
+   1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**.
 
    1. のチェックボックスをオンにします。 `Sales Orders Feed` インデクサー。
 
    1. 設定 **[!UICONTROL Actions]** から `Update by Schedule`.
 
-   1. バックオフィスのデータを初めて有効にする場合は、次のコマンドを実行して再インデックスを作成し、再同期をトリガーします。 以降の再同期は、 [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) ジョブが正しく設定されている。
+   1. バックオフィスのデータを初めて有効にする場合は、次のコマンドを実行して再インデックスを作成し、再同期をトリガーします。 その後の再同期は、 [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) ジョブが正しく設定されている。
 
       ```bash
       bin/magento index:reindex sales_order_data_exporter_v2
@@ -95,7 +95,7 @@ Adobe Commerceインスタンスがデータ収集を開始できることを確
 
 1. （独自の AEP Web SDK を使用している場合は、この手順をスキップします）。 [作成](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) Adobe Experience Platformのデータストリーム、または収集に使用する既存のデータストリームを選択します。
 
-1. （独自の AEP Web SDK を使用している場合は、この手順をスキップします）。 内 **データストリーム ID** 「 」フィールドに、新規または既存のデータストリームの ID を貼り付けます。
+1. （独自の AEP Web SDK を使用している場合は、この手順をスキップします）。 Adobe Analytics の **Datastream ID** 「 」フィールドに、新規または既存のデータストリームの ID を貼り付けます。
 
 ## フィールドの説明
 
@@ -121,15 +121,15 @@ Adobe Commerceインスタンスがデータ収集を開始できることを確
 
 Adobe Commerceは、最大 5 年間の注文履歴データとステータスを収集します。 Experience Platformコネクタを使用して、その履歴データをExperience Platformに送信し、過去の注文に基づいて顧客プロファイルをエンリッチメントできます。 データは、Experience Platform内のデータセットに保存されます。
 
-Commerce は既に履歴注文データを収集していますが、そのデータをExperience Platformに送信するために完了する必要があるタスクがいくつかあります。 次の節では、この手順を説明します。
+Commerce は既に履歴注文データを収集していますが、そのデータをExperience Platformに送信するために完了する必要があるタスクがいくつかあります。 次の節では、このプロセスの手順を説明します。
 
-### 過去の注文ベータ版をインストール
+### 過去の注文ベータ版をインストールする
 
 ベータ版の履歴注文データ収集を有効にするには、プロジェクトのルートを更新する必要があります [!DNL Composer] `.json` ファイルの内容は次のとおりです。
 
 1. ルートを開く `composer.json` ファイルと検索 `magento/experience-platform-connector`.
 
-1. 内 `require` 「 」セクションで、次のようにバージョン番号を更新します。
+1. Adobe Analytics の `require` 「 」セクションで、次のようにバージョン番号を更新します。
 
    ```json
    "require": {
@@ -139,7 +139,7 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
     }
    ```
 
-1. B2B マーチャントの場合、 `.json` ファイルの内容は次のとおりです。
+1. B2B マーチャントの場合は、 `.json` ファイルの内容は次のとおりです。
 
    ```json
    "require": {
@@ -167,9 +167,9 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
 
 >[!NOTE]
 >
->この節では、開発者コンソールから資格情報を入力します。 開発者コンソールプロジェクトに正しい [役割と権限が設定されました](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+>この節では、開発者コンソールから資格情報を入力します。 デベロッパーコンソールプロジェクトに正しい [役割と権限が設定されました](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
 
-1. の _管理者_ サイドバー、移動 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 
 1. 展開 **[!UICONTROL Services]** を選択し、 **[!UICONTROL Experience Platform Connector]**.
 
@@ -193,7 +193,7 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
    >
    >RabbitMQは既にコマースバージョン 2.4.7 以降用に設定されていますが、コンシューマーを有効にする必要があります。
 
-1. 次の cron ジョブでメッセージキューコンシューマーを有効にする `.magento.env.yaml` using `CRON_CONSUMERS_RUNNER` 環境変数。
+1. 次の cron ジョブでメッセージキューコンシューマーを有効にする： `.magento.env.yaml` using `CRON_CONSUMERS_RUNNER` 環境変数。
 
    ```yaml
       stage:
@@ -220,13 +220,13 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
 
 1. の下 **注文履歴の同期**、 **データセット ID**. これは、 [データ収集](#data-collection) 」の節を参照してください。
 
-   1. データセット ID にアクセスするには、Experience PlatformUI を開き、 **データセット** 左側のナビゲーションで **データセット** ダッシュボード。 ダッシュボードには、組織で使用可能なすべてのデータセットがリストされます。 リストに表示された各データセットに関する詳細（名前、データセットが適用されるスキーマ、最新の取り込み実行のステータスなど）が表示されます。
+   1. データセット ID にアクセスするには、Experience PlatformUI を開き、 **データセット** 左側のナビゲーションで、 **データセット** ダッシュボード。 ダッシュボードには、組織で使用可能なすべてのデータセットがリストされます。 リストに表示された各データセットに関する詳細（名前、データセットが適用されるスキーマ、最新の取り込み実行のステータスなど）が表示されます。
    1. データストリームに関連付けられたデータセットを開きます。
    1. 右側のウィンドウに、データセットの詳細が表示されます。 データセット ID をコピーします。
 
    ![データセット ID をコピー](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
 
-1. 内 **送信者** および **宛先** フィールドは、送信する履歴注文データのデータ範囲を指定します。 5 年を超える日付範囲は選択できません。
+1. Adobe Analytics の **送信者** および **宛先** フィールドは、送信する履歴注文データのデータ範囲を指定します。 5 年を超える日付範囲は選択できません。
 
 1. 選択 [!UICONTROL Start Sync] ：同期を開始するトリガーを設定します。 履歴注文データは、ストリーミングデータであるストアフロントおよびバックオフィスデータとは異なり、バッチデータになります。 バッチ処理されたデータがExperience Platformに到着するまでに約 45 分かかります。
 

@@ -1,7 +1,7 @@
 ---
 user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: Adobe Commerceストアのストアフルフィルメントのインストール、設定、使用に関する詳細情報。
-breadcrumb-title: Adobe Commerceのフルフィルメントを保存
+breadcrumb-title: Adobe Commerce のストアフルフィルメント
 index: true
 feature: Shipping/Delivery
 role: Admin, User
@@ -9,12 +9,12 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# コマースの達成を保存 {#store-fulfillment}
+#  Commerce のストアフルフィルメント {#store-fulfillment}
 
 - [ガイドの概要](guide-overview.md)
 - [の概要 [!DNL Store Fulfillment]](introduction.md)
