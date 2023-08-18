@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 </thead>
 <tbody><tr>
 <td><strong>非同期送信</strong></td>
-<td>この機能を無効にします。 非同期電子メール送信はサポートされていません。 Store Pickup の最速の通信と応答時間を得るには、バッチ処理の代わりにメールを直ちに送信してください。 </td>
+<td>セールスメールを非同期で送信するかどうかを指定します。 オプション： <br/>**'無効'** — （デフォルト）イベントでトリガーされた場合、セールス電子メールが送信されます。 ストアピックアップの最速の通信と応答時間を得るには、デフォルト設定を使用します。 <br/>**'Enable'** — このオプションを有効にすると、チェックアウトおよび注文処理の電子メール通知を処理するプロセスが、事前に決められた一定の間隔でバックグラウンドに送信されます。</td>
 <td>ストア表示</td>
 <td>いいえ</td>
 </tr>

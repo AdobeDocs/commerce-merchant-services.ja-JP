@@ -5,7 +5,7 @@ level: Intermediate
 role: Admin
 feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Store Assist アプリには、次の 2 種類の設定が必要です。
 
    - **ストアからのキャンセル** — ストアからオーダーをキャンセルできるかどうか、およびキャンセル権限を持つロールを指定します
 
-   - **注文のクリーンアップウィンドウ** — 経過時間を指定します。 [推定ピックアップリードタイム](enable-general.md#delivery-method-title-configuration) 選択した注文は、再在庫される前（3 日間など）にステージングに残ります。 デフォルト値は 7 日です。 この設定をオンにした場合、この時間が切れると、注文は自動的にキャンセルされます。 商品が再入荷され、商人はキャンセルメールを受け取ります。
+   - **注文のクリーンアップウィンドウ** — 経過時間を指定します。 [推定ピックアップリードタイム](enable-general.md#delivery-method-title-configuration) 選択した注文は、再在庫される前（3 日間など）にステージングに残ります。 デフォルト値は 7 日です。 この設定をオンにした場合、この時間が経過すると、オーダーは自動的にキャンセルされます。 商品が再入荷され、商人はキャンセルメールを受け取ります。
 
    - アプリ内の指示（選択、ステージング、ハンドオフ）をすべてカスタマイズします。
 

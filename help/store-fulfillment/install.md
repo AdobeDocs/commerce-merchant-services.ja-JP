@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,13 @@ ht-degree: 0%
 
 最初のインストールを完了する [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 実稼動環境以外の環境の拡張で、キューマネージャーが実行され、例外の処理を許可するようにキャッシュが設定されています。 Adobe Commerceインスタンスの動作と保守に関するベストプラクティスを確実に実施するための開発ツールが、開発環境に含まれていることを確認します。
 
+>[!TIP]
+>
+>オンプレミスのAdobe Commerceの Store Fulfilment 拡張機能をアップグレードするには、次の手順に従います。 [アップグレード手順](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) （内） _Adobe Commerceアップグレードガイド_. クラウドインフラストラクチャ上のAdobe Commerceについては、 [拡張機能のアップグレード](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) （内） *Commerce on Cloud Infrastructure ガイド*.
+
 ## 前提条件
 
-以下を確認します。 [要件](solution-requirements.md) をインストールする前に、Store Fulfilment ソリューションに関する情報を収集し、必要な情報を収集します。 [!DNL Store Fulfillment] Adobe Commerceの拡張機能。
+以下を確認します。 [要件](solution-requirements.md) ストアフルフィルメントソリューションに関する情報を取得し、 [!DNL Store Fulfillment] Adobe Commerceの拡張機能。
 
 Store Fulfilment for Adobe Commerce拡張機能のプレリリース版またはベータ版をインストールしている場合は、次のコマンドを使用して削除してから、現在のバージョンをインストールしてください。
 
@@ -196,4 +200,5 @@ The `-f` オプションは、空のテーマを使用する場合に必要で�
 >[!NOTE]
 >
 >詳しくは、 [Adobe Commerceでの静的コンテンツデプロイのベストプラクティス](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) 記事をAdobe Commerce Help Center で参照してください。
+
 

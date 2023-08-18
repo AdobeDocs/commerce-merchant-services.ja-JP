@@ -5,7 +5,7 @@ role: Leader, Admin, User
 level: Intermediate
 feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Store Assist アプリは、店舗注文で受け取る、オンライン購入�
 
 - **[選択](#pick-module)** — すべての順序付けされたアイテムとツールを完全に表示し、適切なアイテムと適切な数量が選択されていることを確認します。 店舗担当者は、効率を高めるために、1 つまたは複数の注文を同時に選択できます。
 
-- **[ステージ](#stage-module)** — 顧客が店舗に移動する際に注文がおこなわれる場所を入力し、Store Associates が注文の引き渡しのために、顧客を簡単に見つけられるようにします。
+- **[ステージ](#stage-module)** — 顧客が店舗に移動する際に注文がおこなわれる場所を入力し、Store Associates がより迅速に注文を見つけて引き渡せるようにします。
 
 - **[手を離す](#hand-off-module)** — 顧客がストアに到着した後にリアルタイムで通知を受け取り、待ち時間と受け渡しの順序をシームレスに最小限に抑えます。
 
