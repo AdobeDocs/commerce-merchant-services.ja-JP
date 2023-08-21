@@ -2,8 +2,8 @@
 title: カタログ同期
 description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services] サービスを最新の状態に保つための継続的なベースで。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-feature: Catalogs, Data Import/Export, Catalog Service
-source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
+feature: Catalog Management, Data Import/Export, Catalog Service
+source-git-commit: 4326daafecc08c758aa05bf2d59fc69eca913155
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
