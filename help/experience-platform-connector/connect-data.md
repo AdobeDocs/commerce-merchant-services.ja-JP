@@ -3,9 +3,9 @@ title: コマースデータをAdobe Experience Platformに接続
 description: コマースデータをAdobe Experience Platformに接続する方法を説明します。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Adobe Commerceインスタンスがデータ収集を開始できることを確
 
 >[!NOTE]
 >
->この機能は、ベータ版ユーザーのみが使用できます。 ベータ版に参加するには、以下のアドレス宛てにメールを送信します。 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+>この機能は、ベータ版ユーザーのみが使用できます。 ベータ版に参加するには、以下のアドレス宛てにメールを送信します。 `dataconnection@adobe.com`.
 
 Adobe Commerceは、最大 5 年間の注文履歴データとステータスを収集します。 Experience Platformコネクタを使用して、その履歴データをExperience Platformに送信し、過去の注文に基づいて顧客プロファイルをエンリッチメントできます。 データは、Experience Platform内のデータセットに保存されます。
 

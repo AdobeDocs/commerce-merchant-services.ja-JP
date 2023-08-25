@@ -4,9 +4,9 @@ description: Adobe Commerceのデータを他のAdobeDX 製品に接続するカ
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 659dd2d1b298ec2a98bb4365a46b09d7468daaad
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,11 @@ ht-degree: 0%
 
 カスタムイベントは、Adobe Experience Platformでのみサポートされています。 カスタムデータは、Adobe Commerceのダッシュボードおよび指標トラッカーには転送されません。
 
-任意の `custom` イベント、コレクターが `personId` (`ecid`) から `customContext` を囲んで `xdm` オブジェクトを囲んでから Edge に転送します。
+任意の `custom` イベント、コレクター：
+
+- 追加数 `identityMap` 次を使用 `ECID` プライマリ ID として
+- 次を含む `email` in `identityMap` セカンダリ ID として _if_ `personalEmail.address` がイベントに設定されている
+- イベント全体を `xdm` Edge に転送する前のオブジェクト
 
 例：
 
@@ -27,7 +31,11 @@ Adobe Commerce Events SDK を通じて公開されたカスタムイベント：
 
 ```javascript
 mse.publish.custom({
-    customContext: { customStrAttr: "cheetah", customNumAttr: 128 },
+    commerce: {
+        saveForLaters: {
+            value: 1,
+        },
+    },
 });
 ```
 
@@ -35,11 +43,27 @@ Experience PlatformEdge 内：
 
 ```javascript
 {
-    xdm: {
-        personId: 'ecid1234',
-        customStrAttr: 'cheetah',
-        customNumAttr: 128
+  xdm: {
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true
+        }
+      ],
+      email: [
+        {
+          id: "runs@safari.ke",
+          primary: false
+        }
+      ]
+    },
+    commerce: {
+        saveForLaters: {
+            value: 1
+        }
     }
+  }
 }
 ```
 
@@ -51,7 +75,11 @@ Experience PlatformEdge 内：
 
 標準イベントの属性の上書きは、イベントでのみサポートされています。Experience Platform。 カスタムデータは、コマースダッシュボードおよび指標トラッカーには転送されません。
 
-が設定された任意のイベントの `customContext`、コレクターが上書きされます `personId` およびAdobe Analyticsカウンタ。 `customContext`.
+次を含む任意のイベントの `customContext`の場合、コレクターは関連するコンテキストで設定された結合フィールドを、 `customContext`. オーバーライドの使用例は、開発者が、既にサポートされているイベントでページの他の部分によって設定されたコンテキストを再利用し、拡張したい場合です。
+
+>[!NOTE]
+>
+>カスタムイベントを上書きする場合は、そのイベントタイプに対してExperience Platformへのイベント転送をオフにして、二重カウントを回避する必要があります。
 
 例：
 
@@ -59,7 +87,17 @@ Adobe Commerce Events SDK で公開された上書きを含む製品表示：
 
 ```javascript
 mse.publish.productPageView({
-    customContext: { customCode: "okapi" },
+    productListItems: [
+        {
+            productCategories: [
+                {
+                    categoryID: "cat_15",
+                    categoryName: "summer pants",
+                    categoryPath: "pants/mens/summer",
+                },
+            ],
+        },
+    ],
 });
 ```
 
@@ -67,41 +105,31 @@ Experience PlatformEdge 内：
 
 ```javascript
 {
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        customCode: 'okapi',
-        commerce: {
-            productViews: {
-                value : 1
-            }
+  xdm: {
+    eventType: 'commerce.productViews',
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true,
         }
-    }
-}
-```
-
-Adobe Commerce Events SDK で公開されたAdobe Commerceの製品表示が、次のように上書きされます。
-
-```javascript
-mse.publish.productPageView({
-    customContext: { commerce: { customCode: "mongoose" } },
-});
-```
-
-Experience PlatformEdge 内：
-
-```javascript
-{
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        commerce: {
-            customCode: 'mongoose',
-            productViews: {
-                value : 1
-            }
-        }
-    }
+      ]
+    },
+    commerce: {
+      productViews: {
+        value : 1,
+      }
+    },
+    productListItems: [{
+        SKU: "1234",
+        name: "leora summer pants",
+        productCategories: [{
+            categoryID: "cat_15",
+            categoryName: "summer pants",
+            categoryPath: "pants/mens/summer",
+        }],
+    }],
+  }
 }
 ```
 
