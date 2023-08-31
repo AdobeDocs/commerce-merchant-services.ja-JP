@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe CommerceのAdobe Experience Platformコネクタの最新のリリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
+source-git-commit: 4b192fad63ce046bd8f77c513483bf095e249528
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '467'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Experience Platformコネクタで使用される拡張機能に関する機能�
 
 詳しくは、 [今後のリリース](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) を参照してください。
 
-開発者向けドキュメントを参照してください。 [製品の互換性の詳細](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+開発者向けドキュメントを参照してください。 [このモジュールをサポートするコマースバージョンを確認します。](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## サポートされるサービスの更新
 
@@ -51,7 +51,7 @@ _2022 年 10 月 13 日_
 
 _2023 年 6 月 28 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 * ![新規](../assets/new.svg)  — 次の機能を追加しました。 [storefront イベントの送信をオフにする](connect-data.md#data-collection) Experience Platformに
 * ![修正点](../assets/fix.svg)  — コンテンツセキュリティポリシーの設定を更新しました。
@@ -63,7 +63,7 @@ _2023 年 6 月 28 日_
 
 _2023 年 6 月 14 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 * ![新規](../assets/new.svg) - （ベータ版） [履歴注文を送信](connect-data.md#beta-send-historical-order-data) データとステータスをExperience Platformに この機能は、ベータ版ユーザーのみが使用できます。 ベータ版に参加するには、以下のアドレス宛てにメールを送信します。 `dataconnection@adobe.com`.
 
@@ -71,7 +71,7 @@ _2023 年 6 月 14 日_
 
 _2023 年 3 月 31 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 * ![新規](../assets/new.svg)  — バンドルされた `commerce-data-export` および `saas-export` 依存関係 `experience-platform-connector` 拡張子。 以前は、これらの依存関係を個別にインストールする必要がありました。 これらの依存関係は、マーチャント設定と共に、サーバ側での [バックオフィスイベント](events.md#back-office-events).
 * ![新規](../assets/new.svg)  — という新しいバックオフィスイベントが追加されました。 [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
@@ -80,7 +80,7 @@ _2023 年 3 月 31 日_
 
 _2023 年 2 月 29 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 * ![新規](../assets/new.svg) - PHP 8.2 のサポートを追加し、すべてのExperience Platformコネクタ拡張をサポート。
 
@@ -88,7 +88,7 @@ _2023 年 2 月 29 日_
 
 _2023 年 1 月 18 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 * ![新規](../assets/new.svg)  — 更新された [Experience Platformコネクタ管理者](connect-data.md) 独自の AEP Web SDK(alloy) を指定できます。
 * ![修正点](../assets/fix.svg) 次を使用してに変更 `identityMap` の代わりに `personID` エッジにプッシュされたデータのプライマリ id を設定する際に使用します。
@@ -97,7 +97,7 @@ _2023 年 1 月 18 日_
 
 _2022 年 11 月 11 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 * ![修正された問題](../assets/fix.svg) - Adobe Experience Platformコンテキストは、Storefront イベントコレクターと Storefront イベント SDK が正常に読み込まれた後にのみ設定されるようになりました。
 
@@ -105,7 +105,7 @@ _2022 年 11 月 11 日_
 
 _2022 年 10 月 13 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 * ![新規](../assets/new.svg)  — 次の場合に独自の AEP Web SDK を指定する機能が追加されました。 [接続](connect-data.md) Adobe CommerceインスタンスをExperience Platformに
 * ![修正点](../assets/fix.svg)  — データストリーム ID をストアレビューではなく Web サイトにスコープする必要があるように、データストリームスコープの要件を更新しました。
@@ -114,6 +114,6 @@ _2022 年 10 月 13 日_
 
 _2022 年 8 月 10 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 * ![新規](../assets/new.svg) - GA リリース。
