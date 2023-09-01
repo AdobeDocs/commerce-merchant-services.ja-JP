@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '85'
 ht-degree: 2%
 
 ---
@@ -37,10 +37,13 @@ ht-degree: 2%
 - [テストと検証](test-validate.md)
 - [オーダーの作成](create-order.md)
 - 財務報告 {#reporting}
+   - [トランザクションレポート](transactions.md)
    - [注文の支払いステータスレポート](order-payment-status.md)
    - [ペイアウトレポート](payouts.md)
    - [使用可能なデータ](data.md)
 - 支払の管理 {#manage}
    - [払い戻し](refunds.md)
    - [空白](voids.md)
-- [セキュリティとコンプライアンス](security.md)
+- セキュリティ {#security-compliance}
+   - [セキュリティとコンプライアンス](security.md)
+   - [信頼できる不正保護](fraud-protection.md)

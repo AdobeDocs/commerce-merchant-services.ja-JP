@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1868'
 ht-degree: 0%
 
 ---
 
 # 注文の支払いステータスレポート
 
-[!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗の注文件数と支払い数を明確に把握できるよう、包括的なレポートを提供します。
+[!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、ストアの [取引](transactions.md)、注文、支払い。
 
 注文の支払い状況をすばやく表示できるように、注文の支払い状況レポートの 2 つの表示を使用できます。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 注文の支払ステータス・ビューは、特定の注文がキャッシュ・プロセス・フローの注文内のどこにあるかを容易に把握するのに役立ちます。 これらのレポートを使用すると、支払い状況と支払い日に基づいて注文をすばやく確認し、潜在的な問題を特定できます。
 
-既存の会計または注文管理ソフトウェアで使用するために、注文の支払いステータストランザクションを.csv ファイル形式でダウンロードできます。
+以下が可能です。 [注文の支払いステータスのダウンロード](#download-order-payment-statuses) 既存の会計または注文管理ソフトウェアで使用する.csv ファイル形式。
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ ht-degree: 0%
 
 注文の支払いステータスのデータビジュアライゼーションビューは、支払いサービスホームで使用できます。 詳細な表から 1 日あたりの集計された支払いステータスが視覚的に表示されます [注文の支払状況レポートビュー](#order-payment-status-report-view).
 
-次の日： _管理者_ サイドバー、移動 **セールス** > **支払いサービス** データのビジュアライゼーションを表示するには [支払状況表](#statuses-information).
+次の日： _管理者_ サイドバー、移動 **セールス** > **支払いサービス** > _購入回数_ データのビジュアライゼーションを表示するには [支払状況表](#statuses-information).
 
 ![管理者でのデータの視覚化の配分](assets/orderpayment-dataviz.png){zoomable=yes}
 
-クリック **レポートを表示** 詳細な表に移動するには [注文の支払状況レポートビュー](#order-payment-status-report-view).
+クリック **[!UICONTROL View Report]** 詳細な表に移動するには [注文の支払状況レポートビュー](#order-payment-status-report-view).
 
 ### ステータスの期間のカスタマイズ
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 注文の支払いステータスビジュアライゼーションビューで、日付範囲を選択して、表示する支払いステータスの期間をカスタマイズできます。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. 注文の支払いステータスのデータビジュアライゼーションビューは、「注文の支払いステータス」セクションに表示されます。
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. 注文の支払いステータスのデータビジュアライゼーションビューは、 _購入回数_ 」セクションに入力します。
 1. 次をクリック： **[!UICONTROL Range]** セレクターフィルター。
 1. 該当する日付範囲（30 日、15 日、7 日）を選択します。
 1. 指定した日付のステータス情報を表示します。
@@ -69,9 +69,9 @@ ht-degree: 0%
 
 ## 注文の支払状況レポートビュー
 
-注文の支払いステータスレポートビューは、Payment Services の注文の支払いステータスビューで使用できます。 すべてのトランザクションに関する詳細なステータス（支払い、請求済み、発送済み、返金、紛争など）が含まれます。 The [注文の支払ステータスのデータ視覚化ビュー](#order-payment-status-data-visualization-view) 支払サービスホームは、注文の支払ステータスレポートビューから 1 日あたりの集計された支払ステータスを視覚的に表したものです。
+注文の支払い状況レポートビューは、支払いサービスのホームビューで使用できます。 すべてのトランザクションに関する詳細なステータス（支払い、請求済み、発送済み、返金、紛争など）が含まれます。
 
-次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** 詳細な表形式の注文の支払ステータスレポートビューを表示するには、次の手順に従います。
+次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**詳細な表形式の注文の支払ステータスレポートビューを表示するには、次の手順に従います。
 
 ![管理での注文の支払ステータストランザクション](assets/orders-report-data.png)
 
@@ -87,11 +87,11 @@ ht-degree: 0%
 
 The [!DNL Payment Services] モジュールは、注文データを使用し、他のソース（PayPal を含む）からの集計された支払いデータと組み合わせて、有意義で有用なレポートを提供します。
 
-注文データは、支払いサービスでエクスポートおよび保持されます。 次の場合： [注文のステータスを変更または追加する](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}または Web サイト名を入力すると、そのデータと支払いデータが結合され、注文の支払いステータスレポートに結合された情報が入力されます。
+注文データは、支払いサービスでエクスポートおよび保持されます。 次の場合： [注文のステータスを変更または追加する](https://docs.magento.com/user-guide/sales/order-status-custom.html) または [ストア表示の編集](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [保存する](https://docs.magento.com/user-guide/stores/store-information.html)または Web サイト名を入力すると、そのデータと支払いデータが結合され、注文の支払いステータスレポートに結合された情報が入力されます。
 
 このプロセスには、次の 2 つの手順があります。
 
-1. インデックスは、データを変更します `ON SAVE` （注文情報またはストア情報が変更されるたびに）または `BY SCHEDULE` （事前設定された Cron スケジュールに基づく）、 [インデックス管理](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} 」と入力します。
+1. インデックスは、データを変更します `ON SAVE` （注文情報またはストア情報が変更されるたびに）または `BY SCHEDULE` （事前設定された Cron スケジュールに基づく）、 [インデックス管理](https://docs.magento.com/user-guide/system/index-management.html) 」と入力します。
 
    デフォルトでは、データのインデックス作成がおこなわれます `ON SAVE`：つまり、注文、注文ステータス、ストア表示、ストアまたは Web サイトで何かが変更された場合には、そのたびに再インデックス化処理がおこなわれます。
 
@@ -107,13 +107,13 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 
 ただし、デフォルトでは、インデックスの再作成は `ON SAVE` モードの場合は、 `BY SCHEDULE` モード。 The `BY SCHEDULE` インデックスは cron スケジュールで 1 分間実行され、変更されたデータはデータの変更から 2 分以内に注文ステータスレポートに表示されます。 このスケジュールされたインデックス再作成により、（各注文がおこなわれるのではなく）スケジュールに基づいて発生するので、特に大量の受信注文がある場合に、ストアの負担を軽減できます。
 
-インデックスモードを変更できます。`ON SAVE` または `BY SCHEDULE`—[管理者](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
+インデックスモードを変更できます。`ON SAVE` または `BY SCHEDULE`—[管理者](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 
 データエクスポートを設定する方法については、 [コマンドライン設定](configure-cli.md#configure-data-export).
 
 ### データソースを選択
 
-注文の支払いステータスレポートビューで、データソースを選択できます。_[!UICONTROL Live]_または_[!UICONTROL Sandbox]_ — レポートの結果を表示する対象です。
+注文の支払いステータスレポートビューで、データソースを選択できます。**[!UICONTROL Live]** _または **[!UICONTROL Sandbox]** — レポートの結果を表示する対象です。
 
 ![データソースの選択](assets/datasource.png){width=400px}
 
@@ -127,8 +127,8 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 
 のデータソースを選択するには、以下を実行します。 [!UICONTROL Order Payment Status] レポート：
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. クリック **[!UICONTROL Data source]** を選択し、 _[!UICONTROL Live]_または_[!UICONTROL Sandbox]_.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. 次をクリック： _[!UICONTROL Data source]_セレクターフィルターと選択&#x200B;**[!UICONTROL Live]**または&#x200B;**[!UICONTROL Sandbox]**.
 
    レポート結果は、選択したデータソースに基づいて再生成されます。
 
@@ -136,16 +136,26 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 
 注文の支払い状況レポートビューで、特定の日付を選択することで、表示するステータスの期間をカスタマイズできます。 デフォルトでは、30 日間の注文支払いステータスがグリッドに表示されます。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. 次をクリック： **[!UICONTROL Order dates]** カレンダーセレクターフィルター。
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. 次をクリック： _[!UICONTROL Order dates]_カレンダーセレクターフィルター。
 1. 適用可能な日付範囲を選択します。
 1. グリッドで指定した日付の注文支払ステータスを表示します。
+
+### レポート情報をフィルター
+
+注文の支払いステータスレポートビューで、フィルタ条件を選択して、表示するステータスの結果をフィルタできます。
+
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. 次をクリック： **[!UICONTROL Filter]** セレクター。
+1. 切り替え _支払いステータス_ 選択した注文の支払ステータスのレポート結果のみを表示するオプションです。
+1. を入力します。 _最小注文額_ または _最大注文額_ をクリックして、その注文金額範囲内のレポート結果を確認します。
+1. クリック **[!UICONTROL Hide filters]** をクリックして、フィルターを非表示にします。
 
 ### 列の表示と非表示を切り替える
 
 「受注支払ステータス」レポートには、デフォルトで、使用可能なすべての情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 次をクリック： _列設定_ アイコン (![列設定アイコン](assets/column-settings.png)) をクリックします。
 1. レポートに表示する列をカスタマイズするには、リストの列をオンまたはオフにします。
 
@@ -153,9 +163,7 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 
 ### ステータスの表示
 
-注文の支払いステータスレポートビューには、各支払いサービス注文に関する包括的な取引ステータスと支払いステータス情報が表示されます。
-
-#### トランザクションステータス
+注文の支払いステータスレポートビューには、各注文に関する包括的な支払いステータス情報が表示されます。
 
 デフォルトでは、30 日間の注文支払いステータスがグリッドに表示されます。
 
@@ -177,7 +185,7 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 
 注文の支払いステータスレポートデータを手動で更新し、最新のレポート情報を表示することもできます。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 次をクリック： _更新_ アイコン (![更新アイコン](assets/refresh-button-med.png)) をクリックします。
 
    注文の支払いステータスレポートデータが更新され、 *[!UICONTROL Update complete]* 確認が表示され、最新の情報がグリッドに表示されます。
@@ -186,7 +194,7 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 
 店舗の注文に関する紛争を表示し、PayPal Resolution Center にアクセスして、注文の支払い状況レポート内から対処を行うことができます。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 次に移動： **[!UICONTROL Disputes column]**.
 1. 特定の注文に関する紛争を表示し、 [紛争の状況](#order-payment-status-information).
 1. 次の文字列で始まる紛争 ID のリンクをクリックします。 _PP-D-_) をクリックして、 [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
@@ -198,28 +206,13 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 
 デフォルトの 30 日間のステータスを表示しているか、カスタマイズされた期間を表示しているかに関わらず、すべてのステータスを含む.csv ファイルを注文の支払いステータス表示グリッドに表示してダウンロードできます。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 過去 30 日以外の期間のステータスを表示するには、 [ステータスの日付範囲期間のカスタマイズ](#customize-dates-timeframe).
 1. 次をクリック： _ダウンロード_ (![ダウンロードアイコン](assets/icon-download.png)) アイコンをクリックします。
 
 注文の支払いステータスは、.csv 形式でダウンロードされます。
 
-<!-- ## Default order payment status timeframes
-
-These order payment status timeframes are currently available in [!DNL Payment Services].
-
-| Report       | Description          |
-| ------------ | -------------------- |
-| Yesterday | Available from the Order payment status dates selector, this shows information for the prior date. |
-| | Today | Available from the Order payment status dates selector, this shows information for the current day. |
-| Last 7 days | Available from the Order payment status dates selector, this shows information for the last seven days. |
-| Last 30 days | Available from the Order payment status dates selector and by default in the Order payment statuses view, this shows information for the last 30 days. |
-| Last 90 days | Available from the Order payment status dates selector, this shows information for the last 90 days. |
-| Year to date | Available from the Order payment status dates selector, this shows information for the the entire year to date. |
-| Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
--->
-
-#### ステータス情報
+### 列の説明
 
 注文の支払いステータスレポートには、次の情報が含まれます。
 

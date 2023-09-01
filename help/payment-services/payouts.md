@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 # ペイアウトレポート
 
-[!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗の注文件数と支払い数を明確に把握できるよう、包括的なレポートを提供します。
+[!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗のトランザクション、注文、支払いを明確に把握できるように、包括的なレポートを提供します。
 
 2 つのペイアウトレポート表示を使用して、すべてのペイアウトに関する詳細情報を確認できます。
 
@@ -22,6 +22,8 @@ ht-degree: 0%
 * **[ペイアウトレポート表示](#payouts-report-view)** — すべてのトランザクションの詳細な支払情報を表示するペイアウトで使用可能なレポート
 
 「支払」ビューには、総合的な支払情報が一目で表示され、支払金額、処理済数量、財務調整のトランザクションレベルに関する詳細なレポートに完全に透明性を持たせることができます。
+
+以下が可能です。 [支払トランザクションのダウンロード](#download-transactions) 既存の会計または注文管理ソフトウェアで使用する.csv ファイル形式。
 
 >[!NOTE]
 >
@@ -65,15 +67,15 @@ ht-degree: 0%
 
 ## ペイアウトレポート表示
 
-ペイアウトレポートビューは、支払サービスのペイアウトビューで使用できます。 ストアのペイアウトに関する利用可能な情報がすべて含まれます。 The [ペイアウトのデータビジュアライゼーションビュー](#payouts-data-visualization-view) 支払サービスホームは、このより詳細なレポートビューで、1 日あたりの集計金額を視覚的に表したものです。
+ペイアウトレポートビューは、支払サービスのペイアウトビューで使用できます。 ストアのペイアウトに関する利用可能な情報がすべて含まれます。
 
-次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** 詳細な表形式のペイアウトレポートビューを表示するには、次の手順に従います。
+次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**詳細な表形式のペイアウトレポートビューを表示するには、次の手順に従います。
 
 ![管理での支払トランザクション](assets/payouts-report-new.png){zoomable=yes}
 
 このトピックのセクションごとに、このビューを設定して、表示するデータを最適に表示できます。
 
-管理のペイアウトレポート内で、リンクされたコマース注文およびトランザクション ID、トランザクション金額、トランザクションごとの支払い方法などを確認します。
+このレポート内のリンクされたコマース注文とトランザクション ID、トランザクション金額、トランザクションごとの支払い方法などを確認します。
 
 以下が可能です。 [支払トランザクションのダウンロード](#download-transactions) 既存の会計または注文管理ソフトウェアで使用する.csv ファイル形式。
 
@@ -83,7 +85,7 @@ ht-degree: 0%
 
 ### データソースを選択
 
-ペイアウトレポート表示で、データソースを選択できます。_[!UICONTROL Live]_または_[!UICONTROL Sandbox]_ — レポートの結果を表示する対象です。
+ペイアウトレポート表示で、データソースを選択できます。**[!UICONTROL Live]** または **[!UICONTROL Sandbox]** — レポートの結果を表示する対象です。
 
 ![データソースの選択](assets/datasource.png){width=400px}
 
@@ -97,8 +99,8 @@ ht-degree: 0%
 
 「受注支払ステータス」レポートのデータ・ソースを選択する手順は、次のとおりです。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. クリック **[!UICONTROL Data source]** を選択し、 _[!UICONTROL Live]_または_[!UICONTROL Sandbox]_.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. クリック **[!UICONTROL Data source]** を選択し、 **[!UICONTROL Live]** または **[!UICONTROL Sandbox]**.
 
    レポート結果は、選択したデータソースに基づいて再生成されます。
 
@@ -114,8 +116,8 @@ ht-degree: 0%
 
 ペイアウトレポートビューでは、特定の日付を入力するか、日付選択ツールから日付範囲を選択することで、表示するペイアウトトランザクションの期間をカスタマイズできます。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. 「トランザクション日」カレンダーセレクターフィルターをクリックします。
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. 次をクリック： _[!UICONTROL Transaction dates]_カレンダーセレクターフィルター。
 1. 適用可能な日付範囲を選択します。
 1. 指定した日付のグリッドにペイアウトステータスが表示されます。
 
@@ -123,7 +125,7 @@ ht-degree: 0%
 
 ペイアウトレポートビューには、デフォルトで利用可能な最も多くの情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. 次をクリック： _列設定_ アイコン (![列設定アイコン](assets/column-settings.png)) をクリックします。
 1. レポートに表示する列をカスタマイズするには、リストの列をオンまたはオフにします。
 
@@ -133,7 +135,7 @@ ht-degree: 0%
 
 ペイアウト表示グリッドに表示されるすべてのトランザクションを含む.csv ファイルをダウンロードできます。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [トランザクションの日付範囲期間のカスタマイズ](#customize-transactions-timeframe).
 1. 次をクリック： _ダウンロード_ (![](assets/icon-download.png)) アイコンをクリックします。
 

@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 4b70917ed09dcae72c3ec829db2e243fad7b14d3
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ The [!UICONTROL General] 設定を使用すると、支払い方法として支�
 
 | フィールド | 範囲 | 説明 |
 |---|---|---|
-| [!UICONTROL Enable] | web サイト | 有効または無効 [!DNL Payment Services] を設定します。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Enable] | web サイト | 有効または無効 [!DNL Payment Services] を設定します。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | ストア表示 | ストアのメソッドまたは環境を設定します。 オプション： [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | ストア表示 | サンドボックスマーチャント ID。サンドボックスのオンボーディング中に自動生成されます。 |
 | [!UICONTROL Production Merchant ID] | ストア表示 | サンドボックスのオンボーディング中に自動生成される、実稼動マーチャント ID。 |
@@ -108,8 +108,9 @@ The _[!UICONTROL Credit Card Fields]_設定は、クレジットカードまた�
    ![ホームビュー](assets/payment-services-menu-small.png)
 
 1. ストア表示を選択します ( **[!UICONTROL Scope]** 支払い方法を有効にするドロップダウンメニュー。
-1. チェックアウト時に表示される支払い方法の名前を変更するには、 **[!UICONTROL Checkout title]** フィールドに入力します。
+1. Adobe Analytics の **[!UICONTROL Credit card fields]** セクションで、 **[!UICONTROL Checkout title]** 「 」フィールドを使用して、チェックアウト時に表示される支払い方法の名前を変更します。
 1. 宛先 [支払いアクションを設定](production.md#set-payment-services-as-payment-method)，トグル **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
+1. 支払い方法をチェックアウトページで優先順位付けするには、 `Numeric Only` 値を **[!UICONTROL Sort order]** フィールドに入力します。
 1. 有効にするには [3DS セキュア認証](security.md#3ds) (`Off` （デフォルト）切り替え **[!UICONTROL 3DS Secure authentication]** セレクター `Always` または `When required`.
 1. チェックアウトページのクレジットカードフィールドを有効または無効にするには、 **[!UICONTROL Show on checkout page]** セレクター。
 1. 有効または無効にするには [カード保管](#card-vaulting)、切り替え **[!UICONTROL Vault enabled]** セレクター。
@@ -127,11 +128,47 @@ The _[!UICONTROL Credit Card Fields]_設定は、クレジットカードまた�
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション： [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | web サイト | The [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Sort order] | ストア表示 | チェックアウトページでの指定した支払い方法の並べ替え順。 `Numeric Only` 値 |
 | [!UICONTROL 3DS Secure authentication] | web サイト | 有効または無効 [3DS セキュア認証](security.md#3ds). オプション： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
-| [!UICONTROL Show on checkout page] | web サイト | チェックアウトページに表示するクレジットカードフィールドを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | ストア表示 | 有効または無効 [クレジットカードの保管](vaulting.md). オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show vaulted payment methods in Admin] | ストア表示 | 管理でマーチャントが顧客の注文を完了する機能を有効または無効にします [跳ね上げ式の支払い方法を使用する](vaulting.md). オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show on checkout page] | web サイト | チェックアウトページに表示するクレジットカードフィールドを有効または無効にします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Vault enabled] | ストア表示 | 有効または無効 [クレジットカードの保管](vaulting.md). オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show vaulted payment methods in Admin] | ストア表示 | 管理でマーチャントが顧客の注文を完了する機能を有効または無効にします [跳ね上げ式の支払い方法を使用する](vaulting.md). オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+
+### Apple Pay
+
+The [!UICONTROL Apple Pay] ボタンの支払いオプションを使用すると、 [!UICONTROL Apple Pay] お客様の店舗のチェックアウトでの支払いボタン。
+
+詳しくは、 [支払いオプション](payments-options.md#apple-pay-buttob) を参照してください。
+
+を有効にして、 [!UICONTROL Apple Pay] ボタンの支払いオプション：
+
+1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. ストア表示を選択します ( **[!UICONTROL Scope]** 支払い方法を有効にするドロップダウンメニュー。
+1. Adobe Analytics の **[!UICONTROL Apple Pay]** セクションで、 _[!UICONTROL Checkout title]_「 」フィールドを使用して、チェックアウト時に表示される支払い方法の名前を変更します。
+1. 宛先 [支払いアクションを設定](production.md#set-payment-services-as-payment-method)，トグル **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
+1. チェックアウトページでApple Pay を有効または無効にするには、 **[!UICONTROL Show Apple Pay on checkout page]** セレクター。
+1. 製品の詳細ページでApple Pay を有効または無効にするには、 **[!UICONTROL Show Apple Pay on product detail page]** セレクター。
+1. ミニ買い物かごのプレビューでApple Pay を有効または無効にするには、 **[!UICONTROL Show Apple Pay on the mini cart preview]** セレクター。
+1. 買い物かごページでのApple Pay の有効/無効を切り替えるには、 **[!UICONTROL Show Apple Pay on cart page]** セレクター。
+1. デバッグモードを有効または無効にするには、 **[!UICONTROL Debug Mode]** セレクター。
+1. クリック **[!UICONTROL Save]**.
+
+   変更を保存せずにこのビューから移動しようとすると、モーダルが表示され、変更の破棄、編集の続行、変更の保存を求めるプロンプトが表示されます。
+
+1. [キャッシュをフラッシュ](#flush-the-cache).
+
+#### 設定オプション
+
+| フィールド | 範囲 | 説明 |
+|---|---|---|
+| [!UICONTROL Checkout title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション： [!UICONTROL text field] |
+| [!UICONTROL Payment Action] | web サイト | The [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions) 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | web サイト | 「Apple Pay」ボタンを有効または無効にして、チェックアウトページに表示します。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on checkout page] | web サイト | 製品の詳細ページに表示する「 Apple Pay 」ボタンを有効または無効にします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on mini cart preview] | web サイト | 「Apple支払い」ボタンを有効または無効にして、ミニ買い物かごのプレビューに表示します。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on cart page] | web サイト | 「Apple支払い」ボタンを有効または無効にして、買い物かごページに表示します。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
 
 ### 支払いボタン
 
@@ -142,6 +179,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 1. ストア表示を選択します ( **[!UICONTROL Scope]** 支払い方法を有効にするドロップダウンメニュー。
 1. チェックアウト時に表示される支払い方法の名前を変更するには、 **[!UICONTROL Checkout Title]** フィールドに入力します。
 1. 宛先 [支払いアクションを設定](production.md#set-payment-services-as-payment-method)，トグル **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
+1. 支払い方法をチェックアウトページで優先順位付けするには、 `Numeric Only` 値を **[!UICONTROL Sort order]** フィールドに入力します。
 1. 切り替えセレクターを使用して、有効または無効にします [!DNL PayPal smart button] 表示機能：
 
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
@@ -173,26 +211,27 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
 | [!UICONTROL Payment Action] | web サイト | The [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Sort order] | ストア表示 | チェックアウトページでの指定した支払い方法の並べ替え順。 `Numeric Only` 値 |
 | [!UICONTROL Show PayPal buttons on checkout page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] を「チェックアウト」ページに追加します。 オプション： [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] 製品の詳細ページに表示されます。 オプション： [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini-cart preview] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] をクリックします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on cart page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] を買い物かごページに追加します。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later button] | ストア表示 | 支払いボタンが表示される後払いオプションの外観を有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later Message] | web サイト | 買い物かご、製品ページ、ミニ買い物かごおよびチェックアウトフローの「後で支払う」メッセージを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Venmo button] | ストア表示 | 支払いボタンが表示される Venmo 支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Apple Pay button] | ストア表示 | 支払いボタンが表示される「Apple支払」支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Credit and Debit card button] | ストア表示 | 支払いボタンが表示される「クレジット」および「デビット」カードの支払いオプションを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] をクリックします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal buttons on cart page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] を買い物かごページに追加します。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Pay Later button] | ストア表示 | 支払いボタンが表示される後払いオプションの外観を有効または無効にします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Pay Later Message] | web サイト | 買い物かご、製品ページ、ミニ買い物かごおよびチェックアウトフローの「後で支払う」メッセージを有効または無効にします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show Venmo button] | ストア表示 | 支払いボタンが表示される Venmo 支払いオプションを有効または無効にします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show Apple Pay button] | ストア表示 | 支払いボタンが表示される「Apple支払」支払いオプションを有効または無効にします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | ストア表示 | 支払いボタンが表示される「クレジット」および「デビット」カードの支払いオプションを有効または無効にします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
 
 ### ボタンのスタイル
 
-また、 _[!UICONTROL Button style]_PayPal スマートボタンのオプション：
+また、 _[!UICONTROL Button style]_支払いボタンのオプション：
 
 1. 次の手順で **[!UICONTROL Layout]**&#x200B;を選択します。 `Vertical` または `Horizontal`.
 
    >[!NOTE]
    >
-   > ボタンのスタイルが `Horizontal` お客様のストアは、複数の PayPal スマートボタンを表示するように設定されています。製品ページ、チェックアウトページ、ミニカートに表示されるボタンが 2 つ、カートに表示されるボタンが 1 つだけです。
+   > ボタンのスタイルが `Horizontal` お客様のストアが複数の支払いボタンを表示するように設定されている場合、製品ページ、チェックアウトページ、ミニカートに 2 つのボタンと、カートに 1 つのボタンのみが表示されます。
 
 1. 横置きレイアウトでタグラインを有効にするには、 **[!UICONTROL Show tagline]** セレクター。
 1. 次の手順で **[!UICONTROL Color]**」で、目的のカラーオプションを選択します。
@@ -210,17 +249,17 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 
 1. [キャッシュをフラッシュ](#flush-the-cache).
 
-次の項目を設定できます。 [!DNL PayPal Smart Buttons] スタイル設定 [（管理者の従来の設定）](configure-admin.md#configure-paypal-smart-buttons) またはここに [!DNL Payment Services Home]. 詳しくは、 [PayPal のボタンスタイルガイド](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) を参照してください。
+支払いボタンのスタイル設定を設定できます [（管理者の従来の設定）](configure-admin.md#configure-paypal-smart-buttons) またはここに [!DNL Payment Services Home]. 詳しくは、 [PayPal のボタンスタイルガイド](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) PayPal の支払いボタンのスタイル設定の詳細については、を参照してください。
 
 #### 設定オプション
 
 | フィールド | 範囲 | 説明 |
 |--- |--- |--- |
 | [!UICONTROL Layout] | ストア表示 | 支払いボタンのレイアウトのスタイルを定義します。 オプション： [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
-| [!UICONTROL Tagline] | ストア表示 | タグラインを有効/無効にします。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Tagline] | ストア表示 | タグラインを有効/無効にします。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Color] | ストア表示 | 支払いボタンの色を定義します。 オプション： [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
 | [!UICONTROL Shape] | ストア表示 | 支払いボタンの形状を定義します。 オプション： [!UICONTROL Rectangular] / [!UICONTROL Pill] |
-| [!UICONTROL Responsive Button Height] | ストア表示 | 支払いボタンが既定の高さを使用するかどうかを定義します。 オプション： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Responsive Button Height] | ストア表示 | 支払いボタンが既定の高さを使用するかどうかを定義します。 オプション： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Height] | ストア表示 | 支払いボタンの高さを定義します。 デフォルト値：なし |
 | [!UICONTROL Label] | ストア表示 | 支払いボタンに表示されるラベルを定義します。 オプション： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 

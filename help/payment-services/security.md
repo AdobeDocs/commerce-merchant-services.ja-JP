@@ -3,9 +3,10 @@ title: セキュリティとコンプライアンス
 description: サイトのセキュリティとコンプライアンス要件を確認します。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -61,3 +62,10 @@ PayPal スマートボタンを使用すると、PCI 規制のデータがサー
 セキュリティ上の理由から、PayPal はチェックアウト時に請求先住所を渡しません（国、E メール、名前は使用される唯一の請求情報です）。 必要に応じて、サイトの PayPal チェックアウトを有効にして、PayPal に問い合わせて、ベッティングプロセスを完了することで、完全な請求先住所を返すことができます。
 
 また、PayPal は、機械学習を使用して詐欺との戦いに役立つ統合不正保護を備えています。 PayPal の「 [販売者保護ドキュメント](https://www.paypal.com/us/webapps/mpp/security/seller-protection) を参照してください。
+
+## 不正の保護
+
+支払いサービスの自動不正保護を有効にするには、 [Signifyd 拡張機能](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+
+詳しくは、 [信頼できる不正保護](fraud-protection.md) を参照してください。
+

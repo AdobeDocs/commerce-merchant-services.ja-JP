@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 * [**オンボーディング**](onboard.md) — このプロセスは、商用サインアップ、技術的な設定、権限、サンドボックス環境の設定、ライブ支払いの有効化の手順をガイドします。
 * [**支払いオプション**](payments-options.md) — 支払いオプションを設定して、店舗（またはマルチストア）の顧客が利用できる方法をカスタマイズします。
-* **キャッシュフロー管理財務報告** — 同期 [支払詳細](order-payment-status.md) 処理済数量、支払残高、および詳細に対する完全な透明性を得るための注文と [トランザクションレベルのレポート](payouts.md) 財務上の調整の場合。
+* **キャッシュフロー管理財務報告** — 同期 [支払詳細](order-payment-status.md) 処理済数量、支払残高に対する完全な透明性を得る命令 [支払額](payouts.md)、および詳細 [トランザクションレベルのレポート](transactions.md) 財務上の紐付けと取引の可視性の最大のために
 * **透明性の高い価格設定** — 価格は明確で前もって設定されています。
 * **効率的なチェックアウトエクスペリエンス** — 迅速でシンプルなチェックアウトに対する障壁を取り除き、常連客を作成し、 [カード保管](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) および [即時購入](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (Adobe Commerceの場合はデフォルトで有効 ) 機能です。
 
