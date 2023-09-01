@@ -3,9 +3,9 @@ title: '[!DNL Quick Checkout] リリースノート'
 description: すべての [!DNL Quick Checkout] リリース。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: b0f9aee6603ecbc0c711190adb52440d05219368
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 ![修正された問題](../assets/fix.svg) 修正点および改善点
 ![既知の問題](../assets/bug.svg) 既知の問題
 
-詳しくは、 [今後のリリース](https://devdocs.magento.com/release/) を参照してください。
+詳しくは、 [今後のリリース](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) を参照してください。
 
-詳しくは、 [可用性](https://devdocs.magento.com/release/availability.html) 製品の互換性について詳しくは、開発者向けドキュメントを参照してください。
+詳しくは、 [可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) 製品の互換性について詳しくは、開発者向けドキュメントを参照してください。
 
 ## 管理パネルのアップデート
 
@@ -82,7 +82,7 @@ _2022 年 10 月 6 日_
 
 _2023 年 2 月 25 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-520 --> GA リリース —[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) は、Adobe Commerce Cloudバージョン 2.4.6 以降にプリインストールされるようになりました。
 
@@ -92,7 +92,7 @@ _2023 年 2 月 25 日_
 
 _2023 年 2 月 23 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![修正された問題](../assets/fix.svg)<!-- Issue AC-8002 --> を使用して注文を行う際のユーザーエクスペリエンスの改善 [Multishipping](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) メソッド。 この機能により、チェックアウト時に支払い方法を [!DNL Quick Checkout] が有効になっている。
 
@@ -100,7 +100,7 @@ _2023 年 2 月 23 日_
 
 _2023 年 2 月 10 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-567 --> 次の場合のユーザーエクスペリエンスの改善 [注文の実施](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) の使用 [店舗での配信](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) メソッドの [!DNL Quick Checkout] 無効。
 
@@ -110,7 +110,7 @@ _2023 年 2 月 10 日_
 
 _2023 年 1 月 19 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-522 --> 新しい設定を有効/無効にして、 [買い物客](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) は自動的に Bolt にログインできます。
 
@@ -126,7 +126,7 @@ _2023 年 1 月 19 日_
 
 _2022 年 11 月 31 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-513 --> これで、Adobe Commerceの顧客がチェックアウトプロセス中にストアにログインし、Bolt アカウントを持っている場合に、買い物客の Bolt アカウントにログインするためのオプションが表示されます。
 
@@ -138,7 +138,7 @@ _2022 年 11 月 31 日_
 
 _2022 年 11 月 3 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-293 --> さて [!DNL Quick Checkout] を有効にする機能が含まれる [チェックアウトトラッキング](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) Adobe Commerceがレポート情報を Bolt と共有できるようにする設定。
 
@@ -148,7 +148,7 @@ _2022 年 11 月 3 日_
 
 _2022 年 9 月 9 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-341 --> GA リリース —[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) は、Adobe Commerceバージョン 2.4.5 と互換性があります。
 
@@ -172,7 +172,7 @@ _2022 年 9 月 9 日_
 
 _2022 年 8 月 13 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![修正された問題](../assets/fix.svg)<!-- Issue BOLT-375 --> のユーザーエクスペリエンスの改善 [[!DNL Quick Checkout] 管理パネル](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 拡張機能が有効になっている場合に表示および検証されるパラメーターのみを含めるようになりました。
 
@@ -182,7 +182,7 @@ _2022 年 8 月 13 日_
 
 _2022 年 8 月 10 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg)<!-- Issue BOLT-341 --> GA リリース —[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) は、Adobe Commerceバージョン 2.4.1 ～ 2.4.4 と互換性があるようになりました。
 
