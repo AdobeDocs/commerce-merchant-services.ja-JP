@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerceの
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 _2023 年 7 月 19 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) カタログサービスは、 [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL製品Recommendationsに対するクエリ。
 
@@ -49,7 +49,7 @@ API Mesh と Core GraphQL API を使用して、次の制限を解決できま�
 
 _2023 年 6 月 28 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) カタログサービスを製品の詳細ページウィジェットに関連製品を表示できるようになりました。
 
@@ -57,7 +57,7 @@ _2023 年 6 月 28 日_
 
 _2023 年 4 月 13 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) カタログサービスで、削除された製品のバリアントをクリーンアップするようになりました。
 ![修正点](../assets/fix.svg) インフラストラクチャの拡張性とパフォーマンスの向上。
@@ -66,7 +66,7 @@ _2023 年 4 月 13 日_
 
 _2023 年 3 月 29 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) スウォッチを [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) クエリ。
 ![新規](../assets/new.svg) を取得する機能を追加しました。 `entityId` using [API メッシュ](mesh.md).
@@ -75,7 +75,7 @@ _2023 年 3 月 29 日_
 
 _2023 年 3 月 7 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) 追加済み [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL機能。
 ![修正点](../assets/fix.svg) パフォーマンスと API の拡張性が向上しました。
@@ -84,7 +84,7 @@ _2023 年 3 月 7 日_
 
 _2023 年 2 月 8 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) インストール手順を簡単にするカタログサービスのメタパッケージを公開しました。
 ![修正点](../assets/fix.svg) API の拡張性とパフォーマンスの向上。
@@ -93,7 +93,7 @@ _2023 年 2 月 8 日_
 
 _2023 年 1 月 18 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) オンボーディングエクスペリエンスをシンプル化し、改善しました。
 ![新規](../assets/new.svg) 実稼動前のテストで、新しい顧客サンドボックスエンドポイントを使用できます。
@@ -104,7 +104,7 @@ _2023 年 1 月 18 日_
 
 _2022 年 11 月 19 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) カタログサービスでAdobeの [API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/).
 ![修正点](../assets/fix.svg) API の拡張性と全体的なパフォーマンスが向上しました。
@@ -113,7 +113,7 @@ _2022 年 11 月 19 日_
 
 _2022 年 10 月 5 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) バンドルされた製品とグループ化された製品をサポートするようになりました。
 ![新規](../assets/new.svg) B2B 表示の上書きを追加しました。 製品が検索可能になり、特定の顧客グループ用に買い物かごに追加できるようになりました。
@@ -127,7 +127,7 @@ _2022 年 10 月 5 日_
 
 _2022 年 9 月 13 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) バリエーションをサポートする画像：製品の画像は、選択したオプションに基づいて返されます。
 ![新規](../assets/new.svg) 価格サポートの役割：特定の顧客グループのメンバーのみが製品の価格を表示できます
@@ -138,7 +138,7 @@ _2022 年 9 月 13 日_
 
 _2022 年 8 月 10 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) The `products` および `refineProduct` クエリは次のデータを返します。
 
