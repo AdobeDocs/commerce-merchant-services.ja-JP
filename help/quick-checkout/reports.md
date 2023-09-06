@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] レポート'
 description: '[!DNL Quick Checkout] は、包括的なレポート情報を提供します。'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Quick Checkout] Adobe CommerceとMagento Open Sourceの場合は、包括的なレポートを使用して、ストアのチェックアウトエクスペリエンスの統計に関する詳細な情報を取得できます。
 
-![レポート表示](assets/reports-view-big-checkout.png)
+![レポート表示](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 「概要」セクションのグラフには、平均チェックアウト時間、チェックアウト中またはチェックアウト中断中に作成された新規アカウントなど、ストアのチェックアウトパフォーマンスに関する詳細情報が表示されます。
 
-![レポートの概要](assets/overview-report-checkout.png)
+![レポートの概要](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | グラフ | 説明 |
 |---|---|
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 「トレンド」セクションのグラフには、アカウントタイプ別にフィルターされたチェックアウトエクスペリエンスのトレンド、またはチェックアウト時に作成された新しいアカウントが表示されます。
 
-![レポートのトレンド](assets/trends-report-checkout.png)
+![レポートのトレンド](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | グラフ | 説明 |
 |---|---|
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 日付別に表示される結果や、既存のプリセット ( **過去 30 日間**.
 
-![フィルター表示](assets/filter-view.png)
+![フィルター表示](assets/filter-view.png){width="300" zoomable="yes"}
 
 | フィールド | 説明 |
 |---|---|

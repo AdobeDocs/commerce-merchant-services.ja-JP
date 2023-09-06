@@ -3,7 +3,7 @@ title: "Adobe Commerceでの Bolt ユーザーのチェックアウトフロー"
 description: の概要 [!DNL Quick Checkout] Adobe Commerceの Bolt ユーザーのフロー。
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 1. これに送信する 1 回限りのパスワード (OTP) を入力します [!DNL Bolt] アカウントの電子メールアドレスまたはモバイル（次に応じる） [ユーザーの環境設定を [!DNL Bolt] アカウント](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![OTP ポップアップ](assets/new-logo-otp-email.png)
+![OTP ポップアップ](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. ログイン後、 [!DNL Bolt] アカウントに追加された場合、詳細は自動的に追加されます。
 

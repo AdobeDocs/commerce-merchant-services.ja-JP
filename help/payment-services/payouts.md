@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** を使用すると、時間の経過に伴うクレジットとデビットおよび移動平均のデータ視覚化チャートを確認できます。
 
-![管理者でのデータの視覚化の配分](assets/payouts-report.png){zoomable=yes}
+![管理者でのデータの視覚化の配分](assets/payouts-report.png){width="800" zoomable="yes"}
 
 クリック **[!UICONTROL View Report]** 詳細な表に移動するには [ペイアウトレポート表示](#payouts-report-view).
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**詳細な表形式のペイアウトレポートビューを表示するには、次の手順に従います。
 
-![管理での支払トランザクション](assets/payouts-report-new.png){zoomable=yes}
+![管理での支払トランザクション](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
 このトピックのセクションごとに、このビューを設定して、表示するデータを最適に表示できます。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ペイアウトレポート表示で、データソースを選択できます。**[!UICONTROL Live]** または **[!UICONTROL Sandbox]** — レポートの結果を表示する対象です。
 
-![データソースの選択](assets/datasource.png){width=400px}
+![データソースの選択](assets/datasource.png){width="300" zoomable="yes"}
 
 次の場合 _[!UICONTROL Live]_が選択されたデータソースの場合は、実稼働モードでストアのレポート情報を表示できます。 次の場合_[!UICONTROL Sandbox]_ が選択されたデータソースである場合は、サンドボックスモードでレポート情報ストアを表示できます。
 
@@ -126,7 +126,7 @@ ht-degree: 0%
 ペイアウトレポートビューには、デフォルトで利用可能な最も多くの情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
-1. 次をクリック： _列設定_ アイコン (![列設定アイコン](assets/column-settings.png)) をクリックします。
+1. 次をクリック： _列設定_ アイコン (![列設定アイコン](assets/column-settings.png){width="20" zoomable="yes"}) をクリックします。
 1. レポートに表示する列をカスタマイズするには、リストの列をオンまたはオフにします。
 
    ペイアウトレポートビューには、列設定メニューで行った変更がすぐに表示されます。 列の環境設定は保存され、レポート表示から移動しても有効なままになります。
@@ -137,7 +137,7 @@ ht-degree: 0%
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [トランザクションの日付範囲期間のカスタマイズ](#customize-transactions-timeframe).
-1. 次をクリック： _ダウンロード_ (![](assets/icon-download.png)) アイコンをクリックします。
+1. 次をクリック： _ダウンロード_ (![](assets/icon-download.png){width="20" zoomable="yes"}) アイコンをクリックします。
 
 支払トランザクションは.csv 形式でダウンロードされます。
 

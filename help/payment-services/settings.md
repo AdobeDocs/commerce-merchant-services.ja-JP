@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 4b70917ed09dcae72c3ec829db2e243fad7b14d3
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2381'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ The [!UICONTROL General] 設定を使用すると、支払い方法として支�
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![ホームビュー](assets/payment-services-menu-small.png)
+   ![ホームビュー](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
 
 1. クリック **[!UICONTROL Settings]**. 詳しくは、 [の概要 [!DNL Payment Services] ホーム](payments-home.md) を参照してください。
 
@@ -57,9 +57,6 @@ The [!UICONTROL General] 設定を使用すると、支払い方法として支�
 次の項目を追加できます： [!UICONTROL Soft Descriptor] を web サイトまたは個々のストア表示設定に追加します。 顧客トランザクション銀行明細書にソフト記述子が表示されます。 例えば、複数の店舗/ブランド/カタログがある場合、 [!UICONTROL Soft Descriptor] フィールドに入力します。
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![ホームビュー](assets/payment-services-menu-small.png)
-
 1. クリック **[!UICONTROL Settings]**. 詳しくは、 [の概要 [!DNL Payment Services] ホーム](payments-home.md) を参照してください。
 1. Web サイトまたはストア表示を、 **[!UICONTROL Scope]** ソフト記述子を作成するドロップダウンメニュー。 初期設定の場合、これはのままにします。 **[!UICONTROL Default]** をクリックしてデフォルト値を設定します。
 1. テキストフィールドにカスタムテキスト（最大 22 文字）を追加し、 `Custom descriptor`.
@@ -91,9 +88,6 @@ The [!UICONTROL General] 設定を使用すると、支払い方法として支�
 これで、を有効にしました。 [!UICONTROL Payment Services] web サイトでは、支払い機能とストアフロント表示のデフォルト設定を変更できます。
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![ホームビュー](assets/payment-services-menu-small.png)
-
 1. クリック **[!UICONTROL Settings]**. 詳しくは、 [の概要 [!DNL Payment Services] ホーム](payments-home.md) を参照してください。
 1. 支払いオプションを設定 [クレジットカード](#credit-card-fields), [支払ボタン](#payment-buttons)、および [ボタンのスタイル](#button-style)、以降のセクションに従って。
 
@@ -104,9 +98,6 @@ The _[!UICONTROL Credit Card Fields]_設定は、クレジットカードまた�
 詳しくは、 [支払いオプション](payments-options.md#credit-card-fields) を参照してください。
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![ホームビュー](assets/payment-services-menu-small.png)
-
 1. ストア表示を選択します ( **[!UICONTROL Scope]** 支払い方法を有効にするドロップダウンメニュー。
 1. Adobe Analytics の **[!UICONTROL Credit card fields]** セクションで、 **[!UICONTROL Checkout title]** 「 」フィールドを使用して、チェックアウト時に表示される支払い方法の名前を変更します。
 1. 宛先 [支払いアクションを設定](production.md#set-payment-services-as-payment-method)，トグル **[!UICONTROL Payment action]** から `Authorize` または `Authorize and Capture`.
@@ -241,7 +232,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 
    レイアウト、色、形状、高さ、ラベルの設定オプションを変更すると、その設定の視覚的なプレビューが設定ページの下部に表示されます。
 
-   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
+   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 1. クリック **[!UICONTROL Save]**.
 
@@ -274,7 +265,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 - **支払い方法[!DNL Payment Services]** — このリソースは、管理で注文を作成する際に、 [!DNL Payment Services] クレジットカードは支払い方法として利用できます。 次を選択した場合、 **アクション** 親リソースの場合は、このリソースも選択されます。
 - **[!DNL Payment Services]** — このリソースには、 **ダッシュボード** および **SaaS Services プロキシ** リソース（選択する必要もあります）。 また、 [!DNL Payment Services] が _セールス_ メニュー。
 
-  ![支払いサービスのリソース](assets/roles-payments.png)
+  ![支払いサービスのリソース](assets/roles-payments.png){width="400" zoomable="yes"}
 
 ## キャッシュをフラッシュ
 

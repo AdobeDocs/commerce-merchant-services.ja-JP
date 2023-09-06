@@ -3,7 +3,7 @@ title: "チェックアウトページ"
 description: 「Adobe Commerceのチェックアウトページの概要」
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 チェックアウトページの例を次に示します。
 
-![チェックアウトページ](assets/checkout-page.png)
+![チェックアウトページ](assets/checkout-page.png){width="600" zoomable="yes"}
 
 Adobe Commerceの標準チェックアウトページについて詳しくは、 [チェックアウトページ](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) トピック。
 

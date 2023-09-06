@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ID には、支払のマーチャントアクティビティの詳細と PayPal 
 
 The `invoice_id` および `custom_id` は、支払のマーチャント活動詳細の下部に表示されます。
 
-![`custom_id` マーチャント活動の詳細](assets/merchant-activity-ids.png)
+![`custom_id` マーチャント活動の詳細](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 `custom_id` および `invoice_id` PayPal のウェブフックの詳細は次の通りです。
 

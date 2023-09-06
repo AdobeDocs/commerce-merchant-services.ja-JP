@@ -3,7 +3,7 @@ title: 有効にする [!DNL Payment Services] 実稼動用
 description: を有効にしてオンボーディングプロセスを完了します。 [!DNL Payment Services] 実稼動用。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -78,7 +78,7 @@ ht-degree: 0%
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. クリック **[!UICONTROL Get Live Payments]** の [!DNL Payment Services] ホーム。
 
-   ![権限のリクエスト](assets/request-entitlements.png)
+   ![権限のリクエスト](assets/request-entitlements.png){width="500" zoomable="yes"}
 
 1. フォームに情報を入力します。
 1. セールスチームのメンバーが連絡を取ります。

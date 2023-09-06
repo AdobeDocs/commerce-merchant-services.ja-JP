@@ -3,7 +3,7 @@ title: を設定します。 [!DNL Quick Checkout] Adobe Commerce拡張機能
 description: の設定オプションについて説明します。 [!DNL Quick Checkout] およびは、拡張機能のオンボーディングとセットアップに成功する方法を示しています。
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 1%
@@ -19,13 +19,13 @@ ht-degree: 1%
 1. 次の日： _管理者_ サイドバー、移動 **ストア** > _設定_ > **設定**.
 1. 左側のパネルで、を展開します。 **セールス** を選択し、 **チェックアウト**.
 
-   ![クイックチェックアウト](assets/config-new-logo-view.png)
+   ![クイックチェックアウト](assets/config-new-logo-view.png){width="800" zoomable="yes"}
 
 詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) の設定方法の詳細に関するトピック [!DNL Quick Checkout] Adobe Commerceの
 
 ## 拡張機能を有効にする
 
-![クイックチェックアウト](assets/enable-method.png)
+![クイックチェックアウト](assets/enable-method.png){width="500" zoomable="yes"}
 
 | フィールド | 範囲 | 説明 |
 |---|---|---|
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ## アカウント資格情報
 
-![クイックチェックアウト](assets/account-creds.png)
+![クイックチェックアウト](assets/account-creds.png){width="500" zoomable="yes"}
 
 | フィールド | 範囲 | 説明 |
 |---|---|---|
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 ## サービス設定
 
-![クイックチェックアウト](assets/service-settings.png)
+![クイックチェックアウト](assets/service-settings.png){width="500" zoomable="yes"}
 
 | フィールド | 範囲 | 説明 |
 |---|---|---|

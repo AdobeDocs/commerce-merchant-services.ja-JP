@@ -6,7 +6,7 @@ seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerc
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 feature: Payments, Checkout
 recommendations: noCatalog
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 このガイドに記載されていない情報や質問がある場合は、ご自宅から提供される次のリソースをご利用ください。
 
-![ヘルプリソース](assets/help-resources.png)
+![ヘルプリソース](assets/help-resources.png){width="600" zoomable="yes"}
 
 * [ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) — を検索します。 [!DNL Payment Services]ナレッジベース内の関連するトラブルシューティング記事。
 * [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) — 追加のヘルプを受け取るには、チケットを送信します。

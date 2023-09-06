@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 366689fccdf3ae93700d458bf9cbcab63e4583a8
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 左側のパネルで、を展開します。 **[!UICONTROL Sales]** を選択します。 **[!UICONTROL Payment Methods]**.
 
-   ![メソッドビュー](assets/methods-view.png)
+   ![メソッドビュー](assets/methods-view.png){width="400" zoomable="yes"}
 
 1. を展開します。 _[!UICONTROL Recommended Solutions]_」セクションに入力します。
 1. Adobe Analytics の _[!UICONTROL [!DNL Payment Services]]_セクションで、_[!UICONTROL General Configuration]_ 」セクションに入力します。

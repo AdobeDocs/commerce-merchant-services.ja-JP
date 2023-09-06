@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 次の日： _管理者_ サイドバー、移動 **セールス** > **支払いサービス** > _購入回数_ データのビジュアライゼーションを表示するには [支払状況表](#statuses-information).
 
-![管理者でのデータの視覚化の配分](assets/orderpayment-dataviz.png){zoomable=yes}
+![管理者でのデータの視覚化の配分](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 クリック **[!UICONTROL View Report]** 詳細な表に移動するには [注文の支払状況レポートビュー](#order-payment-status-report-view).
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**詳細な表形式の注文の支払ステータスレポートビューを表示するには、次の手順に従います。
 
-![管理での注文の支払ステータストランザクション](assets/orders-report-data.png)
+![管理での注文の支払ステータストランザクション](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 このトピックのセクションごとに、このビューを設定して、表示するデータを最適に表示できます。
 
@@ -115,7 +115,7 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 
 注文の支払いステータスレポートビューで、データソースを選択できます。**[!UICONTROL Live]** _または **[!UICONTROL Sandbox]** — レポートの結果を表示する対象です。
 
-![データソースの選択](assets/datasource.png){width=400px}
+![データソースの選択](assets/datasource.png){width="300" zoomable="yes"}
 
 次の場合 _[!UICONTROL Live]_が選択されたデータソースの場合は、 [!DNL Payment Services] 実稼動モードで使用できます。 次の場合_[!UICONTROL Sandbox]_ が選択されたデータソースの場合は、サンドボックスモードのレポート情報を表示できます。
 
@@ -156,7 +156,7 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 「受注支払ステータス」レポートには、デフォルトで、使用可能なすべての情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. 次をクリック： _列設定_ アイコン (![列設定アイコン](assets/column-settings.png)) をクリックします。
+1. 次をクリック： _列設定_ アイコン (![列設定アイコン](assets/column-settings.png){width="20" zoomable="yes"}) をクリックします。
 1. レポートに表示する列をカスタマイズするには、リストの列をオンまたはオフにします。
 
    注文の支払い状況レポートには、列設定メニューで行った変更がすぐに表示されます。 列の環境設定は保存され、レポート表示から移動しても有効なままになります。
@@ -186,7 +186,7 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 注文の支払いステータスレポートデータを手動で更新し、最新のレポート情報を表示することもできます。
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. 次をクリック： _更新_ アイコン (![更新アイコン](assets/refresh-button-med.png)) をクリックします。
+1. 次をクリック： _更新_ アイコン (![更新アイコン](assets/refresh-button-med.png){width="20" zoomable="yes"}) をクリックします。
 
    注文の支払いステータスレポートデータが更新され、 *[!UICONTROL Update complete]* 確認が表示され、最新の情報がグリッドに表示されます。
 
@@ -208,7 +208,7 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 過去 30 日以外の期間のステータスを表示するには、 [ステータスの日付範囲期間のカスタマイズ](#customize-dates-timeframe).
-1. 次をクリック： _ダウンロード_ (![ダウンロードアイコン](assets/icon-download.png)) アイコンをクリックします。
+1. 次をクリック： _ダウンロード_ (![ダウンロードアイコン](assets/icon-download.png){width="20" zoomable="yes"}) アイコンをクリックします。
 
 注文の支払いステータスは、.csv 形式でダウンロードされます。
 

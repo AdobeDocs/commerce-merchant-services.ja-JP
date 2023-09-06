@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] ユーザー設定'
 description: ユーザーの役割と、 [!DNL Quick Checkout] 管理パネル。
 exl-id: 76393840-8312-41bb-8447-412849815169
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 1. 次の日： _管理者_ サイドバー、次に移動 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**.
 
-   ![メニューのクイックチェックアウト](assets/overview-admin-panel.png)
+   ![メニューのクイックチェックアウト](assets/overview-admin-panel.png){width="600" zoomable="yes"}
 
 詳しくは、 [オンボーディング](../quick-checkout/onboarding.md) の設定方法の詳細に関するトピック [!DNL Quick Checkout] Adobe Commerceの
 
@@ -26,12 +26,12 @@ ht-degree: 0%
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL System]** /権限 > **[!UICONTROL User Roles]**.
 
-   ![ユーザーの役割](assets/user-roles-small.png)
+   ![ユーザーの役割](assets/user-roles-small.png){width="300" zoomable="yes"}
 
 1. Adobe Analytics の _役割_ 表示、クリック **新しいロールの追加**
 1. を選択します。 [!DNL Quick Checkout] リソース：
 
-   ![クイックチェックアウトの役割と権限](assets/role-resource-quick-checkout.png)
+   ![クイックチェックアウトの役割と権限](assets/role-resource-quick-checkout.png){width="300" zoomable="yes"}
 
 1. クリック **ロールを保存**.
 

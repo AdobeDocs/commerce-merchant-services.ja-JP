@@ -3,7 +3,7 @@ title: 「Adobe Commerceのチェックアウトフロー」
 description: 「 [!DNL Quick Checkout] Adobe Commerceの流れだ」
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 1. ストアフロントを開き、買い物かごに項目を追加します。
 1. チェックアウトに進みます。
 
-![チェックアウト](assets/proceed-checkout.png)
+![チェックアウト](assets/proceed-checkout.png){width="200" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 0%
 1. プロンプトが表示されたら、 [!DNL Bolt] アカウント。
 1. これに送信する 1 回限りのパスワード (OTP) を入力します [!DNL Bolt] アカウントの電子メールアドレスまたは電話番号。
 
-![OTP ポップアップ](assets/new-logo-otp-email.png)
+![OTP ポップアップ](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. ログイン後、 [!DNL Bolt] アカウント、チェックアウトの詳細は自動的に入力されます。
 

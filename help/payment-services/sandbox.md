@@ -3,7 +3,7 @@ title: テスト用サンドボックスの設定
 description: PayPal Sandbox アカウントを使用して、 [!DNL Payment Services] テストモードで使用します。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -32,7 +32,7 @@ PayPal Sandbox アカウントを使用すると、 [!DNL Payment Services] テ�
    1. Adobe Analytics の _[!UICONTROL Sandbox Accounts]_」セクションで、_[!UICONTROL Manage accounts]_ 作成したサンドボックスアカウントの列。
    1. クリック **[!UICONTROL View/edit account]**.
 
-      ![PayPal - Sandbox アカウントを表示/編集](assets/onboarding-viewedit-sandbox.png)
+      ![PayPal - Sandbox アカウントを表示/編集](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
 
    1. 電子メール ID とシステム生成パスワードをコピーして保存し、後で使用できるようにします。
 
@@ -48,7 +48,7 @@ PayPal Sandbox アカウントを使用すると、 [!DNL Payment Services] テ�
 1. 手順 3 で生成した PayPal Sandbox アカウントの電子メールとパスワード（PayPal のビジネスアカウント情報ではなく）、およびお住まいの国や地域を入力します。
 1. クリック **[!UICONTROL Next]**.
 
-   ![PayPal — 支払いに PayPal アカウントを接続する](assets/paypal-connectacct.png)
+   ![PayPal — 支払いに PayPal アカウントを接続する](assets/paypal-connectacct.png){width="300" zoomable="yes"}
 
 1. 以前に保存した Sandbox アカウントの資格情報を使用して、PayPal フローに従います。
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.

@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## オンボーディングフロー
 
-![オンボーディングフロー](assets/onboarding-diagram.svg)
+![オンボーディングフロー](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
 このオンボーディングフロー図は、オンボーディングの一般的なプロセスを示しています [!DNL Payment Services].
 

@@ -3,7 +3,7 @@ title: 「 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: 「 [!DNL Quick Checkout] は、Adobe Commerceインスタンスや、拡張機能のオンボーディングとセットアップに成功する方法に役立ちます。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 を使い始めるには、以下を実行します。 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合、インスタンスをアドビのチェックアウト機能に接続するには、いくつかのオンボーディング手順を実行する必要があります。
 
-![クイックチェックアウト](assets/overview-admin-panel.png)
+![クイックチェックアウト](assets/overview-admin-panel.png){width="800" zoomable="yes"}
 
 1. [拡張機能の取得](#get-extension).
 1. [での実稼動またはサンドボックスマーチャントアカウントの作成 [!DNL Bolt]](#create-account-with-bolt). ID を検証するために必要な情報をすべて入力します。
@@ -29,7 +29,7 @@ Gainsight が有効な場合、トリガー **ツアーに参加する** 」ボ�
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** /詳細：
 
-   ![クイックチェックアウト](assets/gainsight-admin.png)
+   ![クイックチェックアウト](assets/gainsight-admin.png){width="500" zoomable="yes"}
 
 Gainsight が有効になっていない場合は、オンボーディング手順を続行します。
 
@@ -69,7 +69,7 @@ Gainsight が有効になっていない場合は、オンボーディング手�
 - [!DNL Publishable key]：フロントエンドがとのやり取りに使用するキー [!DNL Bolt] API
 - [!DNL Signing secret]：から受信した要求の署名検証に使用されます。 [!DNL Bolt].
 
-  ![クイックチェックアウト](assets/account-credentials.png)
+  ![クイックチェックアウト](assets/account-credentials.png){width="500" zoomable="yes"}
 
 詳しくは、 [[!DNL Bolt] 環境の詳細](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} キーと署名の秘密鍵についての詳細は、次のページを参照してください： [!DNL Bolt] （の） [!DNL Quick Checkout] 拡張子。
 
@@ -87,7 +87,7 @@ Gainsight が有効になっていない場合は、オンボーディング手�
 1. 左側のパネルで、を展開します。 **セールス** を選択し、 **チェックアウト**.
 1. Adobe Analytics の [!DNL Quick Checkout] 表示、設定 **有効にする** から `Yes`.
 
-![クイックチェックアウト](assets/quick-checkout-view-no-enable.png)
+![クイックチェックアウト](assets/quick-checkout-view-no-enable.png){width="500" zoomable="yes"}
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ Gainsight が有効になっていない場合は、オンボーディング手�
 
 1. 一意の API を指定した後で資格情報を検証し、 [!DNL Publishable keys].
 
-![クイックチェックアウト](assets/quick-checkout-main-view.png)
+![クイックチェックアウト](assets/quick-checkout-main-view.png){width="500" zoomable="yes"}
 
 詳しくは、 [設定](../quick-checkout/settings-quick-checkout.md) トピックを参照してください。 [!DNL Quick Checkout] Adobe Commerce拡張機能の場合。
 
@@ -141,7 +141,7 @@ Adobe Commerceの標準チェックアウトオプションについて詳しく
 
 ## サービス設定の指定
 
-![クイックチェックアウト](assets/service-settings.png)
+![クイックチェックアウト](assets/service-settings.png){width="500" zoomable="yes"}
 
 1. 設定 **チェックアウトの追跡を有効にする** から `Yes`.
 

@@ -3,7 +3,7 @@ title: クレジットカード保管
 description: 買い物客は、後で購入する際に、クレジットカードの詳細を確認（保存）できます。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 1 回限りの顧客を、クレジットカードの保管機能を備えた常連客に変換します。 買い物客は、チェックアウト時にクレジットカードの資格情報を保存 (「vault」) して、同じ商人アカウント内で後の購入で使用することも、別の商人アカウント内で保存することもできます。
 
-![後で使用するためのクレジットカードの保管](assets/save-card-for-later.png)
+![後で使用するためのクレジットカードの保管](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
 買い物客は、保存されたトークンを使用して、保存されたクレジットカード情報で将来のチェックアウトを完了します。
 
-![保存された資格情報を今後の購入に使用](assets/use-stored-card.png)
+![保存された資格情報を今後の購入に使用](assets/use-stored-card.png){width="400" zoomable="yes"}
 
 また、Vault に登録されたクレジットカードを [保管済支払い方法](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) マイアカウント内にあります。
 
-![マイアカウントでの保管済み支払い方法](assets/stored-payment-methods.png)
+![マイアカウントでの保管済み支払い方法](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
 ## ヴォールティングを有効化
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 1. 適切な Vaulted クレジットカードの支払い方法を選択します。
 1. オーダーに必要な他の手順を完了した後、 [送信](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![顧客に管理者の Vault に保管されたクレジットカードを使用](assets/admin-vaultedcard.png)
+   ![顧客に管理者の Vault に保管されたクレジットカードを使用](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## セキュリティ
 

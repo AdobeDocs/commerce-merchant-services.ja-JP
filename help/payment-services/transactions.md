@@ -3,7 +3,7 @@ title: トランザクションレポート
 description: 「トランザクション」レポートを使用して、トランザクション認証率とトランザクショントレンドを表示できます。
 role: User
 level: Intermediate
-source-git-commit: dab47a7dcac5d32f4b10cd8b4ce1f7e5dc7fd6c9
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、店舗のトランザクション、注文、支払いを明確に把握できるように、包括的なレポートを提供します。
 
-![トランザクションレポート](assets/transactions-report.png){width="600" zoomable="yes"}
+![トランザクションレポート](assets/transactions-report.png){width="700" zoomable="yes"}
 
 トランザクションレポートでは、トランザクションの承認率とネガティブなトランザクションの傾向を確認できるので、ストアの状態を効果的に監視し、トランザクションの問題を事前に特定して対処できます。
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 トランザクションレポートには、デフォルトで、使用可能なすべての情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. 次をクリック： **[!UICONTROL Column settings]** アイコン ![列設定アイコン](assets/column-settings.png){width="25"}.
+1. 次をクリック： **[!UICONTROL Column settings]** アイコン ![列設定アイコン](assets/column-settings.png){width="20" zoomable="yes"}.
 1. レポートに表示する列をカスタマイズするには、リストの列をオンまたはオフにします。
 
    トランザクションレポートには、列設定メニューで行った変更がすぐに表示されます。 列の環境設定は保存され、レポート表示から移動しても有効になります。
@@ -103,7 +103,7 @@ ht-degree: 0%
 また、レポートデータの更新を手動で強制して、最新のレポート情報を表示することもできます。
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. 次をクリック： _更新_ アイコン (![更新アイコン](assets/refresh-button-med.png)) をクリックします。
+1. 次をクリック： _更新_ アイコン (![更新アイコン](assets/refresh-button-med.png){width="20" zoomable="yes"}) をクリックします。
 
    トランザクションレポートデータが更新され、 *[!UICONTROL Update complete]* 確認が表示され、最新の情報がグリッドに表示されます。
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. 過去 30 日間以外の期間のトランザクションを表示する場合は、 [ステータスの日付範囲期間のカスタマイズ](#customize-dates-timeframe).
-1. 次をクリック： _ダウンロード_ ![ダウンロードアイコン](assets/icon-download.png){width="25"} アイコン。
+1. 次をクリック： _ダウンロード_ ![ダウンロードアイコン](assets/icon-download.png){width="20" zoomable="yes"} アイコン。
 
 トランザクションは.csv 形式でダウンロードされます。
 
