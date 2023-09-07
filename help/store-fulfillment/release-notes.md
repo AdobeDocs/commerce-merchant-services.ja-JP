@@ -4,10 +4,10 @@ description: 「リリースノートで [!DNL Store Fulfillment by Walmart Comm
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: db1d5523f48f5686c2a28c7dfb7b1175238b37cf
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '514'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,15 @@ ht-degree: 2%
 ![修正された問題](../assets/fix.svg) 修正点および改善点
 ![既知の問題](../assets/bug.svg) 既知の問題
 
+詳しくは、 [今後のリリース](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) を参照してください。
+
+詳しくは、 [製品の可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) を参照して、この拡張機能をサポートしているAdobe Commerceバージョンを確認してください。
+
 ## v1.5.0
 
 *2023 年 8 月 4 日*
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}[Adobe Commerce 2.4.4～2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)（2.4.6-p1、2.4.5-p3 および 2.4.4-p4 セキュリティパッチリリースを含む）
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}[Adobe Commerce 2.4.4～2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)（2.4.6-p1、2.4.5-p3 および 2.4.4-p4 セキュリティパッチリリースを含む）
 
 このリリースには、次の更新が含まれています。
 
@@ -63,7 +67,7 @@ ht-degree: 2%
 
 *2023 年 4 月 14 日*
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/fix.svg) [!DNL Store Fulfillment] は今 [～と互換性がある [!DNL Adobe Commerce] 2.4.4～2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -72,7 +76,7 @@ ht-degree: 2%
 
 *2023 年 2 月 28 日*
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 このリリースには、次の更新が含まれています。
 
@@ -82,7 +86,7 @@ ht-degree: 2%
 
 *2022 年 9 月 28 日*
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 このリリースには、次の更新が含まれています。
 
@@ -93,7 +97,7 @@ ht-degree: 2%
 
 *2022 年 7 月 16 日*
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 安定性：一般可用性
 
@@ -103,7 +107,7 @@ ht-degree: 2%
 
 *2022 年 3 月 5 日*
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 安定性：一般可用性
 
