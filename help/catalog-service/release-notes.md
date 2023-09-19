@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerceの
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 232dce5db4a82fcec367dce04fb6fba5826b9733
+source-git-commit: 4e1e50aad831f04c0fee105e4c45a28ff5ca65af
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -54,7 +54,7 @@ API Mesh と Core GraphQL API を使用して、次の制限を解決できま�
 
 _2023 年 7 月 19 日_
 
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) カタログサービスは、 [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL製品Recommendationsに対するクエリ。
 
