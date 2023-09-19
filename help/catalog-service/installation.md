@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,16 @@ ht-degree: 0%
 - Adobe Commerce on cloud infrastructure: 2.4.4 以降
 - オンプレミスのAdobe Commerce: 2.4.4 以降
 
-## 環境
+## エンドポイント
 
-カタログサービスには、オンボーディングで使用できる環境が 2 つあります。
+カタログサービスには、オンボーディングに使用できる 2 つのエンドポイントがあります。
 
 - サンドボックス (https://catalog-service-sandbox.adobe.io/graphql) — 運用開始前のテストおよび検証に使用されます。
 - 実稼動 (https://catalog-service.adobe.io/graphql)-コマースマーチャントや Web サイトのライブトラフィックに使用
 
-読み込みテストは、サンドボックス環境でのみ実行する必要があります。 次の操作をお勧めします。 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) が負荷テスト時に開かれるので、サービスチームは追加のサーバートラフィックを予測できます。
+Commerce のすべてのテストインスタンスは、Sanbox エンドポイントを使用する必要があります。
+
+読み込みテストは、サンドボックスエンドポイントでのみ実行する必要があります。 次の操作をお勧めします。 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) が負荷テスト時に開かれるので、サービスチームは追加のサーバートラフィックを予測できます。
 
 ## インストールと設定
 

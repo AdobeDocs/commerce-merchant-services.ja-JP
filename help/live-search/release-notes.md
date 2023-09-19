@@ -3,9 +3,9 @@ title: '[!DNL Live Search] リリースノート'
 description: 次の最新のリリース情報： [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 74282ba307f22730e1f6bfcb9a590caee87ba073
+source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1459'
 ht-degree: 1%
 
 ---
@@ -75,6 +75,16 @@ _2023 年 8 月 8 日_
 * The **マイアカウント** 製品リストページウィジェットを使用する際に、ページナビゲーションが消えなくなりました。
 
 マーチャントは [!DNL Live Search] これらの機能にアクセスするには、拡張機能バージョン 3.0.2 以降を参照してください。
+
+実稼動環境にプッシュする前に、アップグレードおよびテストすることをお勧めします。 テスト環境の結果を確認した後、オフピーク時に実稼動環境のアップグレードを検討します。
+
+### 制限事項
+
+ライブ検索の製品リストページウィジェットを使用すると、Google Tag Manager が失敗します。 Google Tag Manager が必要な場合は、デフォルトの検索アダプターを使用します。
+
+## 以前のバージョン
+
++++3.0.1 以前
 
 ## [!DNL Live Search] 3.0.1 {#301}
 

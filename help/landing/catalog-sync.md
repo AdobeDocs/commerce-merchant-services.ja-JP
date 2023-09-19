@@ -3,9 +3,9 @@ title: カタログ同期
 description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services] サービスを最新の状態に保つための継続的なベースで。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 4326daafecc08c758aa05bf2d59fc69eca913155
+source-git-commit: 1fd5f25b88fa129cc136b93fdf88b981624f0678
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -127,20 +127,36 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 
 フィード名は、次のいずれかになります。
 
-- `products` — カタログ内の製品
 - `categories` — カタログ内のカテゴリ
-- `variants` — 色やサイズなど、設定可能な製品の製品バリエーション。
+- `categoryPermissions`  — 各カテゴリの権限
+- `products` — カタログ内の製品
 - `productattributes` — 製品属性（例： ） `activity`, `gender`, `tops`, `bottoms`など
 - `productoverrides` — カテゴリ権限に基づく価格やカタログ表示ルールなど、お客様固有の価格やカタログ表示ルール
+- `variants` — 色やサイズなど、設定可能な製品の製品バリエーション。
 
 コマンドラインからデータの再同期をトリガーする場合、データが更新されるまで最大 1 時間かかる場合があります。
+
+### SaaS 価格のインデックス作成の同期
 
 を使用している場合、 [SaaS 価格のインデックス作成](../price-index/index.md) 再同期が必要な場合は、次のコマンドを実行します。
 
 ```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+```
+
+### カタログサービスの同期中
+
+カタログサービスの再同期を実行するには、次の順序でコマンドを実行することが重要です。
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions 
 ```
 
 ### 例

@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerceの
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
+source-git-commit: 232dce5db4a82fcec367dce04fb6fba5826b9733
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,14 @@ ht-degree: 0%
 
 ## 現在のメジャーバージョン
 
-### V1.11 リリース
+### V1.12 リリース
 
-_2023 年 7 月 19 日_
+_2023 年 9 月 20 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg) カタログサービスは、 [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL製品Recommendationsに対するクエリ。
+![新規](../assets/new.svg) カタログサービスは現在、を使用しています [SaaS 価格のインデックス作成](../price-index/index.md).
+![修正点](../assets/fix.svg) このリリースには、サービス側のバグ修正と改善が含まれています。
 
 #### 既知の制限事項
 
@@ -45,13 +46,25 @@ API Mesh と Core GraphQL API を使用して、次の制限を解決できま�
 * [価格帯](mesh.md)
 * ダウンロード可能な製品とギフトカード
 
+## 以前のバージョン
+
++++ 以前のバージョン
+
+### V1.11 リリース
+
+_2023 年 7 月 19 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+![新規](../assets/new.svg) カタログサービスは、 [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL製品Recommendationsに対するクエリ。
+
 ### V1.10 リリース
 
 _2023 年 6 月 28 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg) カタログサービスを製品の詳細ページウィジェットに関連製品を表示できるようになりました。
+![新規](../assets/new.svg) カタログサービス API で「関連製品」がサポートされるようになりました。
 
 ### V1.7 リリース
 
@@ -118,10 +131,6 @@ _2022 年 10 月 5 日_
 ![新規](../assets/new.svg) バンドルされた製品とグループ化された製品をサポートするようになりました。
 ![新規](../assets/new.svg) B2B 表示の上書きを追加しました。 製品が検索可能になり、特定の顧客グループ用に買い物かごに追加できるようになりました。
 ![修正点](../assets/fix.svg) サービスの安定性が向上し、パフォーマンスが向上しました。
-
-## 以前のバージョン
-
-+++ベータリリース
 
 ### 0.3 リリース — ベータ+
 
