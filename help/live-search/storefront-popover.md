@@ -2,7 +2,7 @@
 title: "[!DNL Storefront Popover]"
 description: 「 [!DNL Live Search storefront popover] は、推奨される製品とサムネールを動的に返します。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -55,7 +55,7 @@ The [Adobe Commerceのカタログサービス](../catalog-service/overview.md) 
 
 ## 制限事項
 
-* The [!DNL Live Search] [!DNL storefront popover] は、 *Luma* テーマ、または *Luma*. 検索結果ページのパンくずリストには *ルメ* スタイル設定。
+* The [!DNL Live Search] [!DNL storefront popover] は、 *Luma* テーマ、または *Luma*. 検索結果ページのパンくずリストには *Luma* スタイル設定。
 * The [!DNL popover] はをサポートしていません *空白* テーマ。 詳しくは、 [スタイル設定 [!DNL Popover] 要素](storefront-popover-styling.md) を参照してください。
 * The [!DNL popover] は、クイック注文フォームではサポートされていません。
 * ウィッシュリストと製品の比較はサポートされていません。
