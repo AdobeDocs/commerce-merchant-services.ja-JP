@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] リリースノート'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 1dc69bf92ce8c9105724dea0ce70c34afa25a091
+source-git-commit: f3e94b20580fcd14b341b2b04a04966afd4be5ce
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ _2023 年 4 月 26 日_
 
 ## 現在のメジャーバージョン
 
-### magento/product-recommendations の 5.0.0
+### magento/product-recommendations の 5.0.1
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg) Adobe Commerce 2.4.6 をサポートするように製品Recommendationsを更新しました。
-![新規](../assets/new.svg) これはメジャーバージョンのリリースです。 [編集](install-configure.md#update) 根 `composer.json` ファイルを作成します。
+![新規](../assets/new.svg) をサポートする新しいモジュールを追加しました。 [Saas Price Indexer](../price-index/index.md).
+![新規](../assets/new.svg) バンドルされた製品やギフトカードなど、より多くの製品タイプのエクスポートをサポートする新しいデータエクスポートモジュールを追加しました。
 
 #### 既知の制限事項
 
@@ -58,7 +58,14 @@ _2023 年 4 月 26 日_
 
 ### 以前のバージョン
 
-+++4.0.1 以前
++++5.0.0 以前
+
+### magento/product-recommendations の 5.0.0
+
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+
+![新規](../assets/new.svg) Adobe Commerce 2.4.6 をサポートするように製品Recommendationsを更新しました。
+![新規](../assets/new.svg) これはメジャーバージョンのリリースです。 [編集](install-configure.md#update) 根 `composer.json` ファイルを作成します。
 
 ### magento/product-recommendations の 4.0.1
 

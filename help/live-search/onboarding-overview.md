@@ -3,9 +3,9 @@ title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: ee8c37dc5dab9fcbc47d3d66e3ae0f99c9cb82d8
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 
 * Adobe Commerceオンプレミス (EE) :2.4.4 以降
 * Adobe Commerce on Cloud (ECE) :2.4.4 以降
+
+## エンドポイント
+
+[!DNL Live Search] は、次の場所のエンドポイントを通じて通信します： `https://catalog-service.adobe.io/graphql`.
 
 ## 境界としきい値
 

@@ -3,9 +3,9 @@ title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法を学ぶ [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,9 @@ ht-degree: 0%
    * 製品フィード
    * 製品バリアントフィード
    * カタログ属性フィード
+   * 製品価格フィード
+   * スコープの Web サイトデータフィード
+   * スコープの顧客グループデータフィード
 
 1. を設定します。 [API キー](#configure-api-keys) カタログデータが [同期済み](#synchronize-catalog-data) 次を使用 [!DNL Live Search] サービス。
 
@@ -121,6 +124,9 @@ ht-degree: 0%
    * 製品フィード
    * 製品バリアントフィード
    * カタログ属性フィード
+   * 製品価格フィード
+   * スコープの Web サイトデータフィード
+   * スコープの顧客グループデータフィード
 
 1. を設定します。 [API キー](#configure-api-keys) カタログデータが [同期済み](#synchronize-catalog-data) 次を使用 [!DNL Live Search] サービス。
 
@@ -211,7 +217,7 @@ composer show magento/module-live-search | grep version
 composer update magento/live-search --with-dependencies
 ```
 
-2.0.0 から 3.0.1 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
+2.0.0 から 3.1.1 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
 
 1. 現在 `magento/live-search` のバージョンが `2.0.3` または以下のバージョンにアップグレードしている `3.0.0` 以降の場合は、アップグレードの前に次のコマンドを実行します。
 
