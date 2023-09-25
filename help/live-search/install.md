@@ -3,9 +3,9 @@ title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法を学ぶ [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 0%
    >
    > データのインデックスが作成され、同期されている間は、検索およびカテゴリの参照操作はストアフロントで使用できません。 カタログのサイズによっては、プロセスに少なくとも 1 時間かかる場合があります。 `cron` データの同期先として実行 [!DNL Live Search] サービス。
 
-1. 次の点を確認します。 [インデクサー](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) が `Update by Schedule`:
+1. 次の点を確認します。 [インデクサー](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) が「スケジュールに従って更新」に設定されている場合：
 
    * 製品フィード
    * 製品バリアントフィード
@@ -119,7 +119,7 @@ ht-degree: 0%
 
    [!DNL Elasticsearch] はストアフロントから検索リクエストを引き続き管理し、 [!DNL Live Search] サービスは、カタログデータを同期し、製品のインデックスをバックグラウンドで作成します。
 
-1. 次の点を確認します。 [インデクサー](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) が `Update by Schedule`:
+1. 次の点を確認します。 [インデクサー](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) が「スケジュールに従って更新」に設定されている場合：
 
    * 製品フィード
    * 製品バリアントフィード
@@ -263,10 +263,21 @@ composer update magento/live-search --with-dependencies
 
 ## [!DNL Live Search] 依存関係 {#dependencies}
 
-次の [!DNL Live Search] 依存関係は次の方法でキャプチャされます。 [!DNL Composer]:
+次の [!DNL Live Search] 依存関係は次の方法でキャプチャされます。 [!DNL Composer].
 
-| 依存関係 | 説明 |
-|--- |--- |
-| モジュールの書き出し | 以下のモジュールは、カタログデータを収集し、同期します。<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
-| `data-services` | Commerce Services への接続を設定するために必要です。 |
-| `services-id` | Commerce Services への接続を設定するために必要です。 |
+* `magento/module-saas-catalog`
+* `magento/module-saas-category`
+* `magento/module-saas-category-permissions`
+* `magento/module-saas-product-override`
+* `magento/module-saas-product-variant`
+* `magento/module-saas-price`
+* `magento/module-saas-scopes`
+* `magento/module-bundle-product-data-exporter`
+* `magento/module-catalog-inventory-data-exporter`
+* `magento/module-catalog-url-rewrite-data-exporter`
+* `magento/module-configurable-product-data-exporter`
+* `magento/module-parent-product-data-exporter`
+* `magento/module-gift-card-product-data-exporter`
+* `magento/module-bundle-product-override-data-exporter`
+* `data-services`
+* `services-id`
