@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Live Search] リリースノート'
+title: "[!DNL Live Search] リリースノート"
 description: 次の最新のリリース情報： [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -129,6 +129,7 @@ _2023 年 3 月 15 日_
 ![新規](../assets/new.svg) ドラッグ&amp;ドロップでピンイベントを作成する機能が追加されました。
 ![新規](../assets/new.svg) 新しいピン操作： *スポットにピン留め — ピン留めボタンを使用して 1 回のクリックでピンイベントを作成*最上位にピン留め — 最初の位置に商品を配置*最下位にピン留め — 結果の下位に商品を配置*1 回のクリックでイベントのピン留めを解除
 ![新規](../assets/new.svg) [ルールのインテリジェントランキング](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![新規](../assets/new.svg) [!DNL Live Search] は、マルチソースインベントリ (MSI) をサポートするようになりました。 MSI を使用するには、次の操作を行う必要があります。 [install](install.md#update) の `commerce-data-export` 102.2.0 以降のモジュール。 次のコマンドを使用して、バージョンを確認します。 `composer update magento/live-search --with-dependencies`.
 
 ### 更新
 

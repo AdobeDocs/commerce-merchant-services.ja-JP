@@ -1,23 +1,27 @@
 ---
 title: '"[!DNL Live Search] 設定»'
-description: 次のような価格ファセットの範囲と間隔を設定： [!DNL Live Search] ファセット」
+description: 次の項目の設定を行います： [!DNL Live Search] サービス」
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: eefae3c849545062012cea1a7092c27f7df56b58
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
 # 設定
 
-以下を使用します。 *設定* 「 」タブを使用して、ストアフロントの検索フィルターとして使用できる価格ファセットの範囲と間隔を設定します。 価格ファセット設定は、動的ではなく静的で、検索結果に基づいていません。
+以下を使用します。 *設定* タブを使用して、価格ファセットの範囲と間隔およびインデックスのデフォルト言語を設定します。
 
-価格範囲グループの数と、それら間での価格値の配分方法を指定できます。 各価格帯は、前のグループと 1 つずつ重なっています。 例えば、20 の間隔を持つ 5 つのグループが、0 ～ 20、20 ～ 40、40 ～ 60、60 ～ 80、80 の価格範囲を作成します。 定義済みのすべての範囲を満たすのに十分な商品がカタログにない場合は、それに応じて使用可能なグループの表示が調整されます。 例：0-20、60-80、>80。
+価格のファセット設定では、価格範囲グループの数と、それら間で価格値をどのように配分するかを指定します。
+
+言語設定は、 [!DNL Live Search] インデックスの書き込み時に期待する言語のサービス。
 
 ![設定](assets/settings.png)
 
-## 価格ファセットのグループ化の設定
+## 価格のファセット設定
+
+価格範囲グループの数と、それら間での価格値の配分方法を指定できます。 各価格帯は、前のグループと 1 つずつ重なっています。 例えば、間隔が 20 の 5 つのグループは、0 ～ 20、20 ～ 40、40 ～ 60、60 ～ 80、80 の価格範囲を作成します。 定義済みのすべての範囲を満たすのに十分な商品がカタログにない場合は、それに応じて使用可能なグループの表示が調整されます。 例：0-20、60-80、>80。
 
 1. 管理者で、に移動します。 **マーケティング** > *SEO と検索* > **[!DNL Live Search]**.
 1. 次の日： **設定** 下のタブ *価格のファセット設定*、次の操作を実行します。
@@ -27,9 +31,18 @@ ht-degree: 0%
 
    更新された設定がストアフロントで使用できるようになるまで、約 15 分かかります。
 
-## フィールドの説明
+### フィールドの説明
 
 | フィールド | 説明 |
 |--- |--- |
 | 選択の数 | ストアフロントで検索フィルターとして使用できる価格範囲グループの数を指定します。 デフォルト値：8、最大値：50 |
-| 間隔の値 | 各グループの価格範囲間隔を指定します。 たとえば、間隔値が 20 の 5 つを選択すると、0 ～ 20、20 ～ 40、40 ～ 60、60 ～ 80、80 を超える 5 つのグループが作成されます。 デフォルト値：5、最大値：10,000 |
+| 間隔の値 | 各グループの価格範囲間隔を指定します。 たとえば、間隔値が 20 の 5 つを選択すると、0 ～ 20、20 ～ 40、40 ～ 60、60 ～ 80、80 の 5 つのグループが作成されます。 デフォルト値：5、最大値：10,000 |
+
+<!-- ## Language
+
+The Language setting tells [!DNL Live Search] which language to expect when reading the catalog and writing the index. 
+
+Languages have different sets of rules for grammar: how words are separated, verb tenses and synonyms, for example.
+The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
+
+The Language settings should be set to the primary language of the catalog. -->
