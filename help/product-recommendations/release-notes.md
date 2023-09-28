@@ -3,7 +3,7 @@ title: '[!DNL Product Recommendations] リリースノート'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
+source-git-commit: 7bc63a6b647dd010ef58c5d4d4df7a0a2c3cabe0
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 0%
@@ -66,6 +66,7 @@ _2023 年 4 月 26 日_
 
 ![新規](../assets/new.svg) Adobe Commerce 2.4.6 をサポートするように製品Recommendationsを更新しました。
 ![新規](../assets/new.svg) これはメジャーバージョンのリリースです。 [編集](install-configure.md#update) 根 `composer.json` ファイルを作成します。
+![新規](../assets/new.svg) [!DNL Product Recommendations] フルをサポート [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) コマースの機能 ( 以前はマルチソースインベントリ (MSI) と呼ばれていました )。 完全なサポートを有効にするには、 [更新](install-configure.md#update) 依存モジュール `commerce-data-export` をバージョン 102.2.0 以降に変更しました。
 
 ### magento/product-recommendations の 4.0.1
 
@@ -79,7 +80,6 @@ _2023 年 4 月 26 日_
 
 ![新規](../assets/new.svg) 追加済み [対応指標](create.md) を使用すると、各レコメンデーションタイプのトレーニングの進行状況を視覚化できます。
 ![新規](../assets/new.svg) これはメジャーバージョンのリリースです。 [編集](install-configure.md#update) 根 `composer.json` ファイルを作成します。 また、このリリースでは、Product Recommendationsのインストールと設定時に、2 つの API キーを指定する必要があります。 [実稼働キーとサンドボックスキー](../landing/saas.md).
-![新規](../assets/new.svg) [!DNL Product Recommendations] フルをサポート [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) コマースの機能 ( 以前はマルチソースインベントリ (MSI) と呼ばれていました )。 完全なサポートを有効にするには、 [更新](install-configure.md#update) 依存モジュール `commerce-data-export` をバージョン 102.2.0 以降に変更しました。
 
 #### 既知の制限事項
 

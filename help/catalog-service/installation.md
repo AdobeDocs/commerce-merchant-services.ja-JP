@@ -2,16 +2,16 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: f2771983072848e0da4a51d06bec970737ef951a
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
 
 # オンボーディングとインストール
 
-カタログサービスプロセスのチュートリアルを参照してください。
+詳しくは、 [!DNL Catalog Service] プロセス。
 
 パート 1:
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## エンドポイント
 
-カタログサービスには、オンボーディングに使用できる 2 つのエンドポイントがあります。
+[!DNL Catalog Service] には、オンボーディングで使用できる 2 つのエンドポイントがあります。
 
 - サンドボックス (https://catalog-service-sandbox.adobe.io/graphql) — 運用開始前のテストおよび検証に使用されます。
 - 実稼動 (https://catalog-service.adobe.io/graphql)-コマースマーチャントや Web サイトのライブトラフィックに使用
@@ -49,7 +49,7 @@ Commerce のすべてのテストインスタンスは、サンドボックス�
 
 ## インストールと設定
 
-Adobe Commerceのカタログサービスの使用を開始するには、次の手順が必要です。
+を使い始めるには、以下を実行します。 [!DNL Catalog Service] Adobe Commerceの場合は、次の手順が必要です。
 
 - データ書き出し拡張機能のインストール
 - サービスとデータのエクスポートを設定する
@@ -57,23 +57,23 @@ Adobe Commerceのカタログサービスの使用を開始するには、次の
 
 ### データ書き出し拡張機能のインストール
 
-カタログサービスのオンボーディングプロセスでは、サーバーのコマンドラインにアクセスする必要があります。
+のオンボーディングプロセス [!DNL Catalog Service] は、サーバーのコマンドラインへのアクセスを必要とします。
 
-カタログサービス拡張機能は、Adobe Commerceクラウドインフラストラクチャとオンプレミスインスタンスの両方にインストールできます。
+The [!DNL Catalog Service] 拡張機能は、Adobe Commerceクラウドインフラストラクチャとオンプレミスインスタンスの両方にインストールできます。
 
-カタログサービスは、Commerce アカウントにリンクされた Composer キーと共にインストールされます [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 登録プロセス中に提供されます。 Composer は、Adobe Commerceの初回インストール時、または Composer のキーが以前に外部に保存されていなかった状況で、これらのキーを使用します `auth.json` ファイル。
+The [!DNL Catalog Service] は、Commerce アカウントにリンクされた Composer キーと共にインストールされます [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 登録プロセス中に提供されます。 Composer は、Adobe Commerceの初回インストール時、または Composer のキーが以前に外部に保存されていなかった状況で、これらのキーを使用します `auth.json` ファイル。
 
 詳しくは、 [認証キーの取得](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) を参照してください。
 
 #### Adobe Commerce an cloud infrastructure
 
-この方法を使用して、Commerce Cloudインスタンスのカタログサービス拡張機能をインストールします。
+この方法を使用して、 [!DNL Catalog Service] Commerce Cloudインスタンスの拡張。
 
 1. を開きます。 `<Commerce_root>/composer.json` ファイルを編集し、次のように require セクションを更新します。
 
 ```json
 "require": {
-  "magento/catalog-service": "^2.2.0"
+  "magento/catalog-service": "^3.0.0"
 }
 ```
 
@@ -89,13 +89,13 @@ composer update
 
 #### オンプレミス
 
-オンプレミスインスタンスのカタログサービス拡張機能をインストールするには、この方法を使用します。
+この方法を使用して、 [!DNL Catalog Service] オンプレミスインスタンスの拡張。
 
 1. を開きます。 `<Commerce_root>/composer.json` ファイルを編集し、次のように require セクションを更新します。
 
 ```json
 "require": {
-    "magento/catalog-service": "^2.2.0"
+    "magento/catalog-service": "^3.0.0"
 }
 ```
 
@@ -121,7 +121,7 @@ bin/magento cache:clean
 
 ### サービスとデータのエクスポートを設定する
 
-カタログサービスをインストールした後、 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) API キーを指定し、SaaS データ空間を選択する。
+インストール後 [!DNL Catalog Service]を設定する場合は、 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) API キーを指定し、SaaS データ空間を選択する。
 
 SaaS 設定が完了したら、 [カタログ同期](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) ガイド。
 
@@ -135,16 +135,16 @@ SaaS 設定が完了したら、 [カタログ同期](https://experienceleague.a
 
 ### サービスへのアクセス
 
-カタログサービス API は、HTTPS 経由でのPOSTコマンドを使用してアクセスできます。
+The [!DNL Catalog Service] API には、HTTPS 経由でのPOSTコマンドを使用してアクセスできます。
 
 API キーを取得するには、管理の「 Commerce Service Connector 」領域に移動し、公開 API キーをコピーします。
 
 詳しくは、 [GraphQLドキュメント](https://developer.adobe.com/commerce/webapi/graphql/) を参照して、API リクエストの生成に必要なヘッダーをクエリして送信する方法を確認してください。
 
-ファイアウォールを介したカタログサービスを許可するには、 `commerce.adobe.io` 許可リストに
+許可する手順は次のとおりです。 [!DNL Catalog Service] ファイアウォールを通じて、 `commerce.adobe.io` をに追許可リストに加える加します。
 
 ## カタログサービスと API メッシュ
 
 The [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 開発者は、AdobeI/O を使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
 
-詳しくは、  [カタログサービスと API メッシュ](mesh.md) インストールおよび設定の詳細に関するトピック。
+詳しくは、  [[!DNL Catalog Service] と API メッシュ](mesh.md) インストールおよび設定の詳細に関するトピック。
