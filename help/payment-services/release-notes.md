@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] リリースノート"
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: eb2d21193ee3bde5e52bddb738564f0265422fe4
+source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2247'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,14 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v2.2.1
+
+_2023 年 9 月 28 日_
+
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-4870 --> 最新のリリースで拡張機能バージョンを送信する際、Storefront で新しいヘッダー属性が正しく入力されない問題を修正しました。 以前は、 `1.3.0` Commerce Services コネクタのリリースにより、 `User-Agent header` を Payment Services 拡張機能から削除します。
 
 ## v2.2.0
 
