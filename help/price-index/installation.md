@@ -1,20 +1,21 @@
 ---
-title: SaaS 価格インデックス作成のインストール
-description: SaaS 価格インデックス作成のインストール
+title: SaaS 価格インデックス作成手動インストール
+description: 古いバージョン用の SaaS 価格インデックス作成のインストール
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
-# SaaS 価格インデックス作成のインストール
+# SaaS 価格インデックス作成手動インストール
 
-SaaS 価格のインデックス作成を行うには、新しいモジュールをインストールし、CLI コマンドを実行する必要があります。 管理者は、このインストールを完了するには、コマンドラインアクセスが必要です。
+SaaS Price Indexing は、すぐに使用でき、サポート対象 [最新バージョン](index.md#Requirements) （コマースサービス）。
+最新バージョンがなく、Adobe Commerceインスタンスで SaaS Price Indexing を有効にする場合は、このミニガイドを使用してください。
 
 ## 前提条件
 
@@ -33,10 +34,10 @@ SaaS 価格のインデックス作成を行うには、新しいモジュール
 1. 以下のモジュールを `composer.json` ファイル：
 
    ```json
-   "magento/module-saas-price": "102.2.0",
-   "magento/module-saas-scopes": "102.2.0",
-   "magento/module-product-override-price-remover": "102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "102.2.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. アップグレードコマンドを実行します。
@@ -68,17 +69,12 @@ SaaS 価格のインデックス作成を行うには、新しいモジュール
 
 必要に応じて、上記のインデクサーを手動で実行します。 それ以外の場合は、標準の同期プロセスでデータが更新されます。 詳しくは、 [カタログ同期](../landing/catalog-sync.md) サービス。
 
-Luma とAdobe Commerce Core GraphQLのユーザーは、 `catalog-adapter` Luma と Core GraphQl の互換性を提供し、PHP のコア価格インデクサーを無効にするモジュール。
-次の手順で `catalog-adapter` モジュール [!DNL Live Search] および [!DNL Catalog Service] まず、をインストールして設定する必要があります。 フォロー： [インストール [!DNL Live Search]](../live-search/install.md) および [カタログサービスのインストール](../catalog-service/installation.md) 手順を参照してください。
 
-Live Search とカタログアダプタを設定するには、以下に従ってください。 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 説明。
+Luma とAdobe Commerce Core GraphQLのユーザーは、 [`Catalog Adapter`](catalog-adapter.md) Luma と Core GraphQl の互換性を提供し、Adobe Commerce Product Price インデクサーを無効にする拡張機能です。
 
-```bash
-composer require adobe-commerce/catalog-adapter
-```
+## 注意事項
 
-必要に応じて、PHP のコア価格インデクサを次のコマンドで再度有効にすることができます。
+前 `103.0.0` バージョン、SaaS 価格インデックス作成では、シンプル、グループ化、仮想、設定可能、およびバンドルの動的な製品タイプをサポートしています。
+ダウンロード可能な製品、ギフトカード、バンドル固定の製品タイプのサポートは、以下から利用できます。 `magento/module-saas-price:103.0.0` バージョンをサポートし、サポートされる Commerce Services で標準で使用できます。
 
-```bash
-bin/magento module:disable Magento_PriceIndexerDisabler
-```
+新しいフィードは、 `resync` [CLI コマンド](../landing/catalog-sync.md#resynccmdline). それ以外の場合は、標準の同期プロセスでデータが更新されます。 に関する詳細情報を取得する [カタログ同期](../landing/catalog-sync.md) プロセス。
