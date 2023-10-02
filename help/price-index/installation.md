@@ -5,9 +5,9 @@ seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
+source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ SaaS Price Indexing は、すぐに使用でき、サポート対象 [最新バ�
 ## 前提条件
 
 * Adobe Commerce 2.4.4 以降
-* 次の SaaS サービスのうち少なくとも 1 つがインストールされている。
+* 次の SaaS サービスの少なくとも 1 つがインストールされている。
 
    * [カタログサービス](../catalog-service/overview.md)
    * [ライブ検索](../live-search/guide-overview.md)
@@ -29,15 +29,15 @@ SaaS Price Indexing は、すぐに使用でき、サポート対象 [最新バ�
 ## 必要なモジュールのインストール
 
 設定によっては、インストールプロセスが少し異なる場合があります。
-新しいフィードおよびサポートコードを追加する拡張機能があり、デフォルトの価格フィードを削除する拡張機能があります。
+新しいフィードとサポートコードを追加する拡張機能があります。
 
 1. 以下のモジュールを `composer.json` ファイル：
 
    ```json
-   "magento/module-saas-price": "^102.2.0",
-   "magento/module-saas-scopes": ^"102.2.0",
-   "magento/module-product-override-price-remover": "^102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
+   "magento/module-saas-price": "^103.0",
+   "magento/module-saas-scopes": "^103.0",
+   "magento/module-bundle-product-override-data-exporter": "^103.0",
+   "magento/module-gift-card-product-data-exporter": "^103.0",
    ```
 
 1. アップグレードコマンドを実行します。
@@ -70,7 +70,7 @@ SaaS Price Indexing は、すぐに使用でき、サポート対象 [最新バ�
 必要に応じて、上記のインデクサーを手動で実行します。 それ以外の場合は、標準の同期プロセスでデータが更新されます。 詳しくは、 [カタログ同期](../landing/catalog-sync.md) サービス。
 
 
-Luma とAdobe Commerce Core GraphQLのユーザーは、 [`Catalog Adapter`](catalog-adapter.md) Luma と Core GraphQl の互換性を提供し、Adobe Commerce Product Price インデクサーを無効にする拡張機能です。
+Live Search およびカタログアダプタを設定するには、 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 説明。
 
 ## 注意事項
 
