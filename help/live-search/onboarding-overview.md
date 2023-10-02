@@ -3,9 +3,9 @@ title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,19 @@ ht-degree: 0%
 
 * [!DNL Live Search] は、1 つのストアビューにつき最大 200 個のシノニムを管理できます。
 
+## カテゴリマーチャンダイジング
+
+カテゴリマーチャンダイジングを使用すると、 [!DNL Live Search] 製品カテゴリレベルで作業する場合。
+
+このビデオでは、カテゴリマーチャンダイジングの紹介をしています。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
 ## 価格インデクサー
 
 ライブ検索のお客様は、 [SaaS 価格インデクサー](../price-index/index.md)：価格変更の更新と同期時間を高速化します。
 
-### PWAのサポート
+## PWAのサポート
 
 [!DNL Live Search] はPWA Studioで機能しますが、他のコマース実装とは少し異なる場合があります。 Venia では検索や製品リストのページなどの基本機能は機能しますが、Graphql の順列の一部は正しく機能しない場合があります。 パフォーマンスに違いが生じる場合もあります。
 
@@ -96,7 +104,7 @@ ht-degree: 0%
        };
    ```
 
-### 現在はサポートされていません
+## 現在はサポートされていません
 
 * The [詳細検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 次の場合、モジュールは無効になります： [!DNL Live Search] がインストールされ、ストアフロントフッターの「詳細検索」リンクは削除されます。
 * 製品の価格は含まれません [付加価値税](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT)。
