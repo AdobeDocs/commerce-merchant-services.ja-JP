@@ -2,20 +2,18 @@
 title: '"[!DNL Live Search] 設定»'
 description: 次の項目の設定を行います： [!DNL Live Search] サービス」
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
 # 設定
 
-以下を使用します。 *設定* タブを使用して、価格ファセットの範囲と間隔およびインデックスのデフォルト言語を設定します。
+以下を使用します。 *設定* 」タブを使用して、価格ファセットの範囲と間隔を設定します。
 
 価格のファセット設定では、価格範囲グループの数と、それら間で価格値をどのように配分するかを指定します。
-
-言語設定は、 [!DNL Live Search] インデックスの書き込み時に期待する言語のサービス。
 
 ![設定](assets/settings.png)
 
