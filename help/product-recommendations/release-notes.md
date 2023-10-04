@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] リリースノート'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 7bc63a6b647dd010ef58c5d4d4df7a0a2c3cabe0
+source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,8 @@ _2023 年 4 月 26 日_
 
 ### magento/product-recommendations の 5.0.1
 
+_2023 年 9 月 16 日_
+
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
 ![新規](../assets/new.svg) をサポートする新しいモジュールを追加しました。 [Saas Price Indexer](../price-index/index.md).
@@ -61,6 +63,8 @@ _2023 年 4 月 26 日_
 +++5.0.0 以前
 
 ### magento/product-recommendations の 5.0.0
+
+_2023 年 3 月 21 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 

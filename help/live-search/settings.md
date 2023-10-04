@@ -2,7 +2,7 @@
 title: '"[!DNL Live Search] 設定»'
 description: 次の項目の設定を行います： [!DNL Live Search] サービス」
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: eefae3c849545062012cea1a7092c27f7df56b58
+source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -37,12 +37,3 @@ ht-degree: 0%
 |--- |--- |
 | 選択の数 | ストアフロントで検索フィルターとして使用できる価格範囲グループの数を指定します。 デフォルト値：8、最大値：50 |
 | 間隔の値 | 各グループの価格範囲間隔を指定します。 たとえば、間隔値が 20 の 5 つを選択すると、0 ～ 20、20 ～ 40、40 ～ 60、60 ～ 80、80 の 5 つのグループが作成されます。 デフォルト値：5、最大値：10,000 |
-
-<!-- ## Language
-
-The Language setting tells [!DNL Live Search] which language to expect when reading the catalog and writing the index. 
-
-Languages have different sets of rules for grammar: how words are separated, verb tenses and synonyms, for example.
-The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
-
-The Language settings should be set to the primary language of the catalog. -->
