@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] リリースノート"
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
+source-git-commit: f61a9c9ed1eedded4b304d2fe3f9e2930d10e027
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2279'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
 これらのリリースノートでは、ホストされているサービスの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
 
 +++ホストされたサービスの更新
+
+_2023 年 10 月 11 日_
+
+![新しい問題](../assets/fix.svg)<!-- Issue PAY-4888 --> 現在は、商人はクレジットカードとデビットカードの取引を、 [トランザクションレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html).
 
 _2023 年 7 月 13 日_
 
