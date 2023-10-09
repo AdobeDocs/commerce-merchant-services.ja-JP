@@ -3,9 +3,10 @@ title: トランザクションレポート
 description: 「トランザクション」レポートを使用して、トランザクション認証率とトランザクショントレンドを表示できます。
 role: User
 level: Intermediate
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
+source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 このレポート内のリンクされたコマース注文 ID とプロバイダーのトランザクション ID、トランザクション金額、トランザクションごとの支払い方法などを確認します。
 
-すべての支払い方法が同じ精度の情報を提供しているわけではありません。 例えば、クレジットカードトランザクションは、トランザクションレポートに応答、AVS および CCV コードを提供します。PayPal スマートボタンは提供しません。
+すべての支払い方法が同じ精度の情報を提供しているわけではありません。 例えば、クレジットカードトランザクションは、応答、AVS、CCV コード、およびトランザクションレポートのカードの最後の 4 桁を提供します。PayPal スマートボタンは提供しません。
 
 以下が可能です。 [トランザクションをダウンロード](#download-transactions) 既存の会計または注文管理ソフトウェアで使用する.csv ファイル形式。
 
@@ -84,6 +85,7 @@ ht-degree: 0%
 1. 切り替え _[!UICONTROL Payment Method]_選択した支払い方法のレポート結果のみを表示するオプションです。
 1. を入力します。 _最小注文額_ または _最大注文額_ をクリックして、その注文金額範囲内のレポート結果を確認します。
 1. を入力します。 _[!UICONTROL Order ID]_特定のトランザクションを検索する場合。
+1. 次を入力します。 _[!UICONTROL Card Last Four Digits]_をクリックして、特定のクレジットカードまたはデビットカードを検索します。
 1. クリック **[!UICONTROL Hide filters]** をクリックして、フィルターを非表示にします。
 
 ### 列の表示と非表示を切り替える
@@ -126,7 +128,8 @@ ht-degree: 0%
 | [!UICONTROL Order ID] | コマース注文 ID （成功したトランザクションの値のみが含まれ、却下されたトランザクションの場合は空です）<br> <br>関連する [注文情報](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}、「 ID 」をクリックします。 |
 | [!UICONTROL Provider Transaction ID] | 支払プロバイダーから提供されるトランザクション ID。トランザクションが成功した場合の値のみが含まれ、却下されたトランザクションの場合はダッシュが含まれます。 |
 | [!UICONTROL Transaction Date] | トランザクション日のタイムスタンプ |
-| [!UICONTROL Payment Method] | トランザクションの支払い方法。Payment Services バージョン 1.6.0 以降で利用可能 |
+| [!UICONTROL Payment Method] | ブランドとカードの種類に関する詳細情報を含むトランザクションの支払い方法。 詳しくは、 [カードの種類](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) 詳細は、Payment Services バージョン 1.6.0 以降で利用可能 |
+| [!UICONTROL Card Last Four Digits] | トランザクションに使用するクレジットカードまたはデビットカードの最後の 4 桁 |
 | [!UICONTROL Result] | 取引の結果：*[!UICONTROL OK]* （成功したトランザクション）、 *[!UICONTROL Rejected by Payment Provider]* （PayPal によって却下）、 *[!UICONTROL Rejected by Bank]* （カードを発行した銀行により却下） |
 | [!UICONTROL Response Code] | 支払いプロバイダーまたは銀行から拒否理由を提供するエラーコード。次の項目について、考えられる応答コードと説明のリストを参照してください： [`Rejected by Bank` ステータス](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) および [`Rejected by Payment Provider` ステータス](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | 住所検証サービスコード。支払い要求のプロセッサ応答情報。 詳しくは、 [使用可能なコードと説明のリスト](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) を参照してください。 |
@@ -147,4 +150,3 @@ The _応答コード_ 列には、トランザクションに関連する特定�
 * `5650` — 取引は、銀行が強力な顧客認証 ([3DS](security.md#3ds)) をクリックします。
 
 失敗したトランザクションに関する詳細なエラー応答コードは、2023 年 6 月 1 日より新しいトランザクションで使用できます。 2023 年 6 月 1 日より前に発生したトランザクションに関する部分的なレポートデータが表示されます。
-
