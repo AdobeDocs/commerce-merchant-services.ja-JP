@@ -4,9 +4,9 @@ description: 各イベントが取り込むデータを説明します。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 0be39c5d46289a12bc2cfa704e942dc594fbded2
+source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
 workflow-type: tm+mt
-source-wordcount: '6126'
+source-wordcount: '6906'
 ht-degree: 0%
 
 ---
@@ -37,24 +37,24 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `productListAdds` | 製品が買い物かごに追加されたかどうかを示します。 値： `1` は、製品が追加されたことを示します。 |
-| `productListItems` | 買い物かごに追加された製品の配列 |
-| `SKU` | 在庫管理単位。 商品の一意の ID。 |
-| `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | 製品品目の合計価格 |
-| `quantity` | 買い物かごに追加された製品単位数 |
-| `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `productImageUrl` | 製品のメイン画像 URL |
-| `selectedOptions` | 設定可能な製品に使用するフィールド。 |
-| `attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color` |
-| `value` | 属性の値を次のように指定します。 `small` または `black`. |
-| `cartID` | 顧客の買い物かごを識別する一意の ID |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.productListAdds` | 製品が買い物かごに追加されたかどうかを示します。 値： `1` は、製品が追加されたことを示します。 |
+| `commerce.cart.cartID` | 顧客の買い物かごを識別する一意の ID。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `productListItems` | 買い物かごに追加された製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
 
 ### openCart
 
@@ -68,24 +68,24 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `productListOpens` | 買い物かごが作成されたかどうかを示します。 値： `1` は、買い物かごが作成されたことを示します。 |
-| `productListItems` | 買い物かごに追加された製品の配列 |
-| `SKU` | 在庫管理単位。 商品の一意の ID。 |
-| `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | 製品品目の合計価格 |
-| `quantity` | 買い物かごに追加された製品単位数 |
-| `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `productImageUrl` | 製品のメイン画像 URL |
-| `selectedOptions` | 設定可能な製品に使用するフィールド。 |
-| `attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color` |
-| `value` | 属性の値を次のように指定します。 `small` または `black`. |
-| `cartID` | 顧客の買い物かごを識別する一意の ID |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.productListOpens` | 買い物かごが作成されたかどうかを示します。 値： `1` は、買い物かごが作成されたことを示します。 |
+| `commerce.cart.cartID` | 顧客の買い物かごを識別する一意の ID。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `productListItems` | 買い物かごに追加された製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
 
 ### removeFromCart
 
@@ -99,24 +99,24 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `productListRemovals` | 製品が買い物かごから削除されたかどうかを示します。 値： `1` 製品が買い物かごから削除されたことを示します。 |
-| `productListItems` | 買い物かごから削除された製品の配列 |
-| `SKU` | 在庫管理単位。 商品の一意の ID。 |
-| `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | 製品品目の合計価格 |
-| `quantity` | 買い物かごから削除された製品単位の数 |
-| `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `productImageUrl` | 製品のメイン画像 URL |
-| `selectedOptions` | 設定可能な製品に使用するフィールド。 |
-| `attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color` |
-| `value` | 属性の値を次のように指定します。 `small` または `black`. |
-| `cartID` | 顧客の買い物かごを識別する一意の ID |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.productListRemovals` | 製品が買い物かごから削除されたかどうかを示します。 値： `1` 製品が買い物かごから削除されたことを示します。 |
+| `commerce.cart.cartID` | 顧客の買い物かごを識別する一意の ID。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `productListItems` | 買い物かごに追加された製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
 
 ### shoppingCartView
 
@@ -130,24 +130,24 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `productListViews` | 製品リストが表示されたかどうかを示します |
-| `productListItems` | 買い物かごに含まれる製品の配列 |
-| `SKU` | 在庫管理単位。 商品の一意の ID。 |
-| `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | 製品品目の合計価格 |
-| `quantity` | 買い物かご内の製品単位数 |
-| `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `productImageUrl` | 製品のメイン画像 URL |
-| `selectedOptions` | 設定可能な製品に使用するフィールド。 |
-| `attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color` |
-| `value` | 属性の値を次のように指定します。 `small` または `black`. |
-| `cartID` | 顧客の買い物かごを識別する一意の ID |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.productListViews` | 製品リストが表示されたかどうかを示します。 |
+| `commerce.cart.cartID` | 顧客の買い物かごを識別する一意の ID。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `productListItems` | 買い物かごに追加された製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
 
 ### pageView
 
@@ -161,12 +161,15 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `pageViews` | ページが読み込まれたかどうかを示します。 A `value` / `1` ページが読み込まれたことを示します。 |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `web.webPageDetails.pageViews` | ページが読み込まれたかどうかを示します。 A `value` / `1` ページが読み込まれたことを示します。 |
+| `web.webPageDetails.URL` | Web ページの基準となる URL または通常の URL。 これは、ページに到達するために使用される実際の URL にすることができます。この URL は、 `Web Link`. |
+| `web.webPageDetails.name` | Web ページの基準となる名前。 この名前は、必ずしもページタイトルやページコンテンツに直接関連付けられるわけではありませんが、分類目的でサイトのページを整理するために使用されます。 |
+| `web.webReferrer.URL` | 買い物客がサイトへのリンクをクリックする前に訪問した Web ページの URL。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
 
 ### productPageView
 
@@ -180,22 +183,23 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `productViews` | 製品が表示されたかどうかを示します |
-| `productListItems` | 買い物かごに含まれる製品の配列 |
-| `SKU` | 在庫管理単位。 商品の一意の ID。 |
-| `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | 製品品目の合計価格 |
-| `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `productImageUrl` | 製品のメイン画像 URL |
-| `selectedOptions` | 設定可能な製品に使用するフィールド。 |
-| `attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color` |
-| `value` | 属性の値を次のように指定します。 `small` または `black`. |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.productViews` | 製品が表示されたかどうかを示します。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `productListItems` | 買い物かごに追加された製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
 
 ### startCheckout
 
@@ -209,24 +213,24 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `checkouts` | チェックアウトプロセス中にアクションが発生したかどうかを示します |
-| `productListItems` | 買い物かごに含まれる製品の配列 |
-| `SKU` | 在庫管理単位。 商品の一意の ID。 |
-| `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | 製品品目の合計価格 |
-| `quantity` | 買い物かご内の製品単位数 |
-| `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `productImageUrl` | 製品のメイン画像 URL |
-| `selectedOptions` | 設定可能な製品に使用するフィールド。 |
-| `attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color` |
-| `value` | 属性の値を次のように指定します。 `small` または `black`. |
-| `cartID` | 顧客の買い物かごを識別する一意の ID |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.checkouts` | チェックアウトプロセス中にアクションが発生したかどうかを示します。 |
+| `commerce.cart.cartID` | 顧客の買い物かごを識別する一意の ID。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `productListItems` | 買い物かごに追加された製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
 
 ### completeCheckout
 
@@ -240,38 +244,38 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `purchases` | 注文が受け入れられたかどうかを示します |
-| `order` | 1 つ以上の製品の注文に関する情報が含まれます |
-| `purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません。 |
-| `orderType` | 注文のタイプを示します（チェックアウト、即時購入など） |
-| `payments` | この注文の支払いのリスト |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `paymentAmount` | 支払の値 |
-| `paymentType` | この注文の支払い方法。 オプションは次のとおりです。 `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
-| `transactionID` | この支払い項目の一意のトランザクション識別子 |
-| `shipping` | 1 つ以上の製品の出荷の詳細。 |
-| `shippingMethod` | 顧客が選択した送料の方法（標準配送、即時配送、店頭受け取りなど） |
-| `shippingAmount` | 買い物かご内の品目の合計送料 |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `promotionID` | プロモーションの一意の識別子（存在する場合） |
-| `personalEmail` | 個人の電子メールアドレスを指定します |
-| `address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
-| `productListItems` | 買い物かごに含まれる製品の配列 |
-| `SKU` | 在庫管理単位。 商品の一意の ID。 |
-| `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `priceTotal` | 製品品目の合計価格 |
-| `quantity` | 買い物かご内の製品単位数 |
-| `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `productImageUrl` | 製品のメイン画像 URL |
-| `selectedOptions` | 設定可能な製品に使用するフィールド。 |
-| `attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color` |
-| `value` | 属性の値を次のように指定します。 `small` または `black`. |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.purchases` | 注文が受け入れられたかどうかを示します。 |
+| `commerce.order` | 1 つ以上の製品の注文に関する情報が含まれます。 |
+| `commerce.order.purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません。 |
+| `commerce.order.payments` | この注文の支払いのリスト。 |
+| `commerce.order.payments.paymentTransactionID` | この支払トランザクションの一意の ID。 |
+| `commerce.order.payments.paymentAmount` | 支払の値。 |
+| `commerce.order.payments.paymentType` | この注文の支払い方法。 オプションは次のとおりです。 `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other`. |
+| `commerce.order.payments.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `commerce.order.taxAmount` | 最終支払いの一環として購入者が支払った税額。 |
+| `commerce.order.discountAmount` | 注文全体に適用される割引額を示します。 |
+| `commerce.order.createdDate` | コマースシステムで新しい注文が作成された日時。 例： `2022-10-15T20:20:39+00:00`. |
+| `commerce.shipping` | 1 つ以上の製品の出荷の詳細。 |
+| `commerce.shipping.shippingMethod` | 顧客が選択した送料方法（標準配送、即時配送、店頭受け取りなど）。 |
+| `commerce.shipping.shippingAmount` | 顧客が送料を支払う必要があった金額。 |  | `shipping` | 1 つ以上の製品の出荷の詳細。 |
+| `commerce.shipping.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `personalEmail` | 個人の電子メールアドレス。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `productListItems` | 買い物かごに追加された製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
 
 ## プロファイルイベント
 
@@ -293,19 +297,19 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `person` | 個々のアクター、連絡先、または所有者 |
-| `accountID` | ユーザーアカウント ID をキャプチャします |
-| `accountType` | ユーザーアカウントタイプをキャプチャします（例： ）。 `Personal` または `Company`該当する場合は、 |
-| `personalEmailID` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
-| `personalEmail` | 連絡先の詳細をキャプチャします — 電子メールと関連情報 |
-| `address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
-| `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します |
-| `login` | 訪問者がログインしようとしたかどうかを示します |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `person` | 個々のアクター、連絡先、または所有者。 |
+| `person.accountID` | ユーザーアカウント ID をキャプチャします。 |
+| `person.accountType` | ユーザーアカウントタイプをキャプチャします（例： ）。 `Personal` または `Company`（該当する場合） |
+| `person.personalEmailID` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `personalEmail` | 連絡先の詳細をキャプチャします — 電子メールと関連情報。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します。 |
+| `userAccount.login` | 訪問者がログインしようとしたかどうかを示します。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
 
 ### signOut
 
@@ -323,13 +327,13 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します |
-| `logout` | 訪問者がログアウトしようとしたかどうかを示します |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します。 |
+| `userAccount.logout` | 訪問者がログアウトしようとしたかどうかを示します。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
 
 ### createAccount
 
@@ -347,19 +351,19 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `person` | 個々のアクター、連絡先、または所有者 |
-| `accountID` | ユーザーアカウント ID をキャプチャします |
-| `accountType` | ユーザーアカウントタイプをキャプチャします（例： ）。 `Personal` または `Company`該当する場合は、 |
-| `personalEmailID` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
-| `personalEmail` | 連絡先の詳細をキャプチャします — 電子メールと関連情報 |
-| `address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
-| `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します |
-| `createProfile` | ユーザーがアカウントプロファイルを作成したかどうかを示します |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `person` | 個々のアクター、連絡先、または所有者。 |
+| `person.accountID` | ユーザーアカウント ID をキャプチャします。 |
+| `person.accountType` | ユーザーアカウントタイプをキャプチャします（例： ）。 `Personal` または `Company`（該当する場合） |
+| `person.personalEmailID` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `personalEmail` | 連絡先の詳細をキャプチャします — 電子メールと関連情報。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します。 |
+| `userAccount.updateProfile` | ユーザーがアカウントプロファイルを更新したかどうかを示します。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
 
 ### editAccount
 
@@ -377,25 +381,25 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `person` | 個々のアクター、連絡先、または所有者 |
-| `accountID` | ユーザーアカウント ID をキャプチャします |
-| `accountType` | ユーザーアカウントタイプをキャプチャします（例： ）。 `Personal` または `Company`該当する場合は、 |
-| `personalEmailID` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
-| `personalEmail` | 連絡先の詳細をキャプチャします — 電子メールと関連情報 |
-| `address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
-| `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します |
-| `updateProfile` | ユーザーがアカウントプロファイルを更新したかどうかを示します |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `person` | 個々のアクター、連絡先、または所有者。 |
+| `person.accountID` | ユーザーアカウント ID をキャプチャします。 |
+| `person.accountType` | ユーザーアカウントタイプをキャプチャします（例： ）。 `Personal` または `Company`（該当する場合） |
+| `person.personalEmailID` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `personalEmail` | 連絡先の詳細をキャプチャします — 電子メールと関連情報。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `userAccount` | ロイヤリティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します。 |
+| `userAccount.updateProfile` | ユーザーがアカウントプロファイルを更新したかどうかを示します。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
 
 ## イベントを検索
 
 検索イベントは、買い物客の意図に関連するデータを提供します。 買い物客の意図をインサイトすることで、買い物客が商品やクリックしたものを検索し、最終的に購入または放棄する方法を知ることができます。 このデータの使用例は、トップ商品を検索しても商品を購入しない既存の買い物客をターゲットにしたい場合です。
 
-以下を使用します。 `uniqueIdentifier` 両方に見つかったフィールド `searchRequestSent` および `searchResponseReceived` イベントを使用して、対応する検索応答に検索リクエストを相互参照します。
+以下を使用します。 `searchRequest.id` および `searchResponse.id` 両方の `searchRequestSent` および `searchResponseReceived` イベントを使用して、対応する検索応答に検索リクエストを相互参照します。
 
 ### searchRequestSent
 
@@ -413,21 +417,23 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `searchRequest` | 検索リクエストが送信されたかどうかを示します |
-| `id` | この特定の検索リクエストの一意の ID |
-| `filter` | 検索結果を制限するためにフィルターが適用されたかどうかを示します |
-| `attribute` （フィルター） | 項目を検索結果に含めるかどうかを決定するために使用される項目のファセット |
-| `value` | 検索結果に含まれる項目を決定するために使用される属性値 |
-| `isRange` | true の場合、値は許容可能な値の範囲の終点を示します |
-| `sort` | 検索結果の並べ替え方法を示します |
-| `attribute` （並べ替え） | 検索結果の項目の並べ替えに使用する属性 |
-| `order` | 検索結果を返す順序 |
-| `query` | 検索された用語 |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `searchRequest` | 検索リクエストが送信されたかどうかを示します。 |
+| `searchRequest.id` | この特定の検索リクエストの一意の ID。 |
+| `searchRequest.value` | リクエストの定量化可能な値。 |
+| `siteSearch` | 検索に関する情報が含まれます。 |
+| `siteSearch.filter` | 検索結果を制限するためにフィルターが適用されたかどうかを示します。 |
+| `siteSearch.filter.attribute` （フィルター） | 項目を検索結果に含めるかどうかを決定するために使用される項目のファセット。 |
+| `siteSearch.filter.isRange` | true の場合、値は許容可能な値の範囲の終点を示します。 |
+| `siteSearch.filter.value` | 検索結果に含まれる項目を決定するために使用される属性値。 |
+| `siteSearch.sort` | 検索結果の並べ替え方法を示します。 |
+| `siteSearch.sort.attribute` （並べ替え） | 検索結果内の項目の並べ替えに使用する属性。 |
+| `siteSearch.sort.order` | 検索結果を返す順序。 |
+| `siteSearch.query` | 検索された用語。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
 
 ### searchResponseReceived
 
@@ -445,19 +451,20 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `searchResponse` | 検索応答を受信したかどうかを示します |
-| `id` | この特定の検索応答の一意の ID |
-| `suggestions` | カタログに存在し、検索クエリに類似する製品とカテゴリの名前を含む文字列の配列。 |
-| `numberOfResults` | 返された製品の数 |
-| `productListItems` | 買い物かごに含まれる製品の配列。 |
-| `SKU` | 在庫管理単位。 商品の一意の ID。 |
-| `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `productImageUrl` | 製品のメイン画像 URL |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `searchResponse` | 検索応答が受信されたかどうかを示します。 |
+| `searchResponse.id` | この特定の検索応答の一意の ID。 |
+| `searchResponse.value` | 応答の定量化可能な値。 |
+| `siteSearch.numberOfResults` | 返された製品の数。 |
+| `siteSearch.suggestions` | カタログに存在し、検索クエリに類似する製品とカテゴリの名前を含む文字列の配列。 |
+| `productListItems` | 買い物かごに追加された製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
 
 ## B2B イベント
 
@@ -477,15 +484,16 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 
 | フィールド | 説明 |
 |---|---|
-| `requisitionList` | 顧客が作成した購買依頼リストのプロパティ |
-| `ID` | 購買依頼リストの一意の ID |
-| `name` | 顧客が指定した購買依頼リストの名前 |
-| `description` | 顧客が指定した購買依頼リストの説明 |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.requisitionListOpens` | 新しい購買依頼リストの初期化を示します。 |
+| `commerce.requisitionList` | 顧客が作成した購買依頼リストのプロパティ。 |
+| `commerce.requisitionList.ID` | 購買依頼リストの一意の ID。 |
+| `commerce.requisitionList.name` | 顧客が指定した購買依頼リストの名前。 |
+| `commerce.requisitionList.description` | 顧客が指定した購買依頼リストの説明。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
 
 ### addToRequisitionList
 
@@ -493,35 +501,32 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 |---|---|
 | 買い物客が既存のリクエストリストに製品を追加した場合、または新しいリストの作成時にトリガーされます。 | `commerce.requisitionListAdds` |
 
->[!NOTE]
->
->`addToRequisitionList` は、カテゴリ表示ページや設定可能な製品ではサポートされていません。 製品表示ページとシンプルな製品でサポートされています。
-
 #### addToRequisitionList から収集されたデータ
 
 次の表に、このイベントで収集されるデータを示します。
 
 | フィールド | 説明 |
 |---|---|
-| `requisitionList` | 顧客が作成した購買依頼リストのプロパティ |
-| `ID` | 購買依頼リストの一意の ID |
-| `name` | 顧客が指定した購買依頼リストの名前 |
-| `description` | 顧客が指定した購買依頼リストの説明 |
-| `productListItems` | 購買依頼リストに追加された製品の配列 |
-| `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `SKU` | 在庫管理単位。 商品の一意の ID。 |
-| `quantity` | 追加された製品単位数 |
-| `priceTotal` | 製品品目の合計価格 |
-| `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `selectedOptions` | 設定可能な製品に使用するフィールド。 |
-| `attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color` |
-| `value` | 属性の値を次のように指定します。 `small` または `black`. |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.requisitionListAdds` | 購買依頼リストに 1 つ以上の製品を追加することを示します。 |
+| `commerce.requisitionList` | 顧客が作成した購買依頼リストのプロパティ。 |
+| `commerce.requisitionList.ID` | 購買依頼リストの一意の ID。 |
+| `commerce.requisitionList.name` | 顧客が指定した購買依頼リストの名前。 |
+| `commerce.requisitionList.description` | 顧客が指定した購買依頼リストの説明。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `productListItems` | 購買依頼リストに追加された製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
 
 ### removeFromRequisitionList
 
@@ -535,25 +540,26 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 
 | フィールド | 説明 |
 |---|---|
-| `requisitionList` | 顧客が作成した購買依頼リストのプロパティ |
-| `ID` | 購買依頼リストの一意の ID |
-| `name` | 顧客が指定した購買依頼リストの名前 |
-| `description` | 顧客が指定した購買依頼リストの説明 |
-| `productListItems` | 購買依頼リストに追加された製品の配列 |
-| `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `SKU` | 在庫管理単位。 商品の一意の ID。 |
-| `quantity` | 追加された製品単位数 |
-| `priceTotal` | 製品品目の合計価格 |
-| `discountAmount` | 適用された割引額を示します |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `selectedOptions` | 設定可能な製品に使用するフィールド。 |
-| `attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color` |
-| `value` | 属性の値を次のように指定します。 `small` または `black`. |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.requsitionListRemovals` | 1 つ以上の製品を購買依頼リストから削除することを示します。 |
+| `commerce.requisitionList` | 顧客が作成した購買依頼リストのプロパティ。 |
+| `commerce.requisitionList.ID` | 購買依頼リストの一意の ID。 |
+| `commerce.requisitionList.name` | 顧客が指定した購買依頼リストの名前。 |
+| `commerce.requisitionList.description` | 顧客が指定した購買依頼リストの説明。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `productListItems` | 購買依頼リストに追加された製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
 
 ## バックオフィスイベント
 
@@ -575,56 +581,94 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 
 | フィールド | 説明 |
 |---|---|
-| `address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているように |
-| `productListItems` | 注文に含まれる製品の配列 |
-| `id` | この製品エントリの品目識別子。 製品自体は、 `product` フィールドに入力します。 |
-| `name` | 製品の表示名または人間が読み取り可能な名前 |
-| `SKU` | 在庫管理単位。 商品の一意の ID。 |
-| `quantity` | 買い物かご内の製品単位数 |
-| `priceTotal` | 製品品目の合計価格 |
-| `discountAmount` | 品目に適用される割引額を示します |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `productImageUrl` | 製品のメイン画像 URL |
-| `selectedOptions` | 設定可能な製品に使用するフィールド。 |
-| `attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color` |
-| `value` | 属性の値を次のように指定します。 `small` または `black`. |
-| `commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
-| `environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
-| `storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
-| `storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
-| `websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
-| `order` | オーダーに関する情報が含まれます |
-| `purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません |
-| `priceTotal` | すべての割引と税金が適用された後の、この注文の合計価格 |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `purchaseOrderNumber` | 購入者がこの購入または契約に割り当てた一意の ID |
-| `payments` | この注文の支払いのリスト |
-| `paymentType` | この注文の支払い方法。 列挙型のカスタム値を使用できます。 |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `paymentAmount` | 支払の値 |
-| `taxAmount` | 最終支払いの一環として購入者が支払った税額 |
-| `discountAmount` | 注文全体に適用される割引額を示します |
-| `createdDate` | コマースシステムで新しい注文が作成された日時。 例：`2022-10-15T20:20:39+00:00` |
-| `shipping` | 1 つ以上の製品の発送詳細 |
-| `shippingMethod` | 顧客が選択した送料の方法（標準配送、即時配送、店頭受け取りなど） |
-| `shippingAmount` | 顧客が送料を支払う必要があった金額。 |
-| `currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR` |
-| `address` | 物理的な配送先住所 |
-| `street1` | プライマリの番地の情報、アパート番号、番地、および番地 |
-| `street2` | 番地レベル情報の追加フィールド |
-| `city` | 市区町村の名前 |
-| `state` | 州の名前。 これは自由形式のフィールドです。 |
-| `postalCode` | 場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。 |
-| `country` | 政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。 |
-| `billingAddress` | 請求先住所 |
-| `street1` | プライマリの番地の情報、アパート番号、番地、および番地 |
-| `street2` | 番地レベル情報の追加フィールド |
-| `city` | 市区町村の名前 |
-| `state` | 州の名前。 これは自由形式のフィールドです。 |
-| `postalCode` | 場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。 |
-| `country` | 政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。 |
-| `personalEmail` | 個人の電子メールアドレス |
-| `address` | RFC2822 以降の標準で一般的に定義される技術的なアドレス ( 例：「name@domain.com」) |
+| `commerce.order` | オーダーに関する情報が含まれます。 |
+| `commerce.order.purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません。 |
+| `commerce.order.payments` | この注文の支払いのリスト。 |
+| `commerce.order.payments.paymentTransactionID` | この支払トランザクションの一意の ID。 |
+| `commerce.order.payments.paymentAmount` | 支払の値。 |
+| `commerce.order.payments.paymentType` | この注文の支払い方法。 列挙型のカスタム値を使用できます。 |
+| `commerce.order.payments.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `commerce.order.taxAmount` | 最終支払いの一環として購入者が支払った税額。 |
+| `commerce.order.discountAmount` | 注文全体に適用される割引額を示します。 |
+| `commerce.order.createdDate` | コマースシステムで新しい注文が作成された日時。 例： `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.currencyCode` | 注文の合計に使用される ISO 4217 通貨コード。 |
+| `commerce.shipping` | 1 つ以上の製品の出荷の詳細。 |
+| `commerce.shipping.shippingMethod` | 顧客が選択した送料方法（標準配送、即時配送、店頭受け取りなど）。 |
+| `commerce.shipping.shippingAmount` | 顧客が送料を支払う必要があった金額。 |
+| `commerce.shipping.currencyCode` | 送料合計に使用する ISO 4217 通貨コード。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.billing.address` | 請求先住所。 |
+| `commerce.billing.address.street1` | プライマリの番地の情報、アパート番号、番地、および番地 |
+| `commerce.billing.address.street2` | 番地レベル情報の追加フィールド。 |
+| `commerce.billing.address.city` | 市区町村の名前。 |
+| `commerce.billing.address.state` | 州の名前。 これは自由形式のフィールドです。 |
+| `commerce.billing.address.postalCode` | 場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。 |
+| `commerce.billing.address.country` | 政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。 |
+| `personalEmail` | 個人の電子メールアドレス。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `productListItems` | 注文内の製品の配列。 |
+| `productListItems.id` | この製品エントリの品目識別子。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
+| `productListItems.categories` | 製品のカテゴリに関する情報が含まれます。 |
+| `productListItems.categories.id` | カテゴリの一意の ID。 |
+| `productListItems.categories.name` | カテゴリの名前。 |
+| `productListItems.categories.path` | カテゴリへのパス。 |
+| `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
+
+### orderInvoiled
+
+| 説明 | XDM イベント名 |
+|---|---|
+| 商人が請求書を送信して支払を要求する際にトリガーされます。 | `commerce.backofficeOrderInvoiced` |
+
+#### orderInviled から収集されたデータ
+
+次の表に、このイベントで収集されるデータを示します。
+
+| フィールド | 説明 |
+|---|---|
+| `commerce.order` | オーダーに関する情報が含まれます。 |
+| `commerce.order.purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません。 |
+| `commerce.order.priceTotal` | すべての割引と税金が適用された後の、この注文の合計価格。 |
+| `commerce.order.currencyCode` | 注文の合計に使用される ISO 4217 通貨コード。 |
+| `commerce.order.purchaseOrderNumber` | 購入者がこの購入または契約に割り当てた一意の ID。 |
+| `commerce.order.payments` | この注文の支払いのリスト。 |
+| `commerce.order.payments.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `commerce.order.payments.paymentType` | この注文の支払い方法。 列挙型のカスタム値を使用できます。 |
+| `commerce.order.payments.paymentAmount` | 支払の値。 |
+| `commerce.shipping` | 1 つ以上の製品の出荷の詳細。 |
+| `commerce.shipping.shippingMethod` | 顧客が選択した送料方法（標準配送、即時配送、店頭受け取りなど）。 |
+| `commerce.shipping.shippingAmount` | 顧客が送料を支払う必要があった金額。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `personalEmail` | 個人の電子メールアドレス。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `productListItems` | 注文内の製品の配列。 |
+| `productListItems.id` | この製品エントリの品目識別子。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.categories` | 製品のカテゴリに関する情報が含まれます。 |
+| `productListItems.categories.id` | カテゴリの一意の ID。 |
+| `productListItems.categories.name` | カテゴリの名前。 |
+| `productListItems.categories.path` | カテゴリへのパス。 |
 
 ### orderItemsShipped
 
@@ -635,7 +679,62 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 #### orderItemsShipped から収集されたデータ
 
 次の表に、このイベントで収集されるデータを示します。
-|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人間が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`productImageUrl`|製品のメイン画像 URL| |`selectedOptions`|構成可能な製品に使用するフィールド。| |`attribute`|設定可能な製品の属性（例： ）を識別します。 `size` または `color`| |`value`|次のような属性の値を識別します。 `small` または `black`.| |`commerceScope`|イベントが発生した場所を示します（ストアの表示、ストア、Web サイトなど）。| |`environmentID`|環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。| |`storeCode`|一意のストアコード。 Web サイトごとに多くの店舗を持つことができます。| |`storeViewCode`|一意のストア表示コード。 ストアごとに多数のストアビューを持つことができます。| |`websiteCode`|一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`priceTotal`|すべての割引と税金が適用された後の、この注文の合計価格| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`payments`|この注文の支払いのリスト| |`paymentType`|この注文の支払い方法。 列挙型のカスタム値を使用できます。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`paymentAmount`|支払の値| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`shipping`|1 つ以上の製品の出荷の詳細| |`shippingMethod`|顧客が選択した発送方法（標準配送、即時配送、店頭受け取りなど）| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`trackingNumber`|発送業者が注文項目の出荷に対して提供した追跡番号| |`trackingURL`|注文項目の配送状況を追跡する URL| |`shipDate`|注文の 1 つ以上の品目が発送された日付| |`address`|物理的な配送先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`shippingAmount`|顧客が送料を支払う必要があった金額。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`billingAddress`|請求先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
+
+| フィールド | 説明 |
+|---|---|
+| `commerce.order` | オーダーに関する情報が含まれます。 |
+| `commerce.order.purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません。 |
+| `commerce.order.payments` | この注文の支払いのリスト。 |
+| `commerce.order.payments.paymentTransactionID` | この支払トランザクションの一意の ID。 |
+| `commerce.order.payments.paymentAmount` | 支払の値。 |
+| `commerce.order.payments.paymentType` | この注文の支払い方法。 列挙型のカスタム値を使用できます。 |
+| `commerce.order.payments.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `commerce.order.priceTotal` | すべての割引と税金が適用された後の、この注文の合計価格。 |
+| `commerce.order.purchaseOrderNumber` | 購入者がこの購入または契約に割り当てた一意の ID。 |
+| `commerce.order.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `commerce.order.lastUpdatedDate` | コマースシステムで特定の注文レコードが最後に更新された時刻。 |
+| `commerce.shipping` | 1 つ以上の製品の出荷の詳細。 |
+| `commerce.shipping.shippingMethod` | 顧客が選択した送料方法（標準配送、即時配送、店頭受け取りなど）。 |
+| `commerce.shipping.shippingAmount` | 顧客が送料を支払う必要があった金額。 |
+| `commerce.shipping.address` | 実際の配送先住所。 |
+| `commerce.shipping.address.street1` | プライマリの番地の情報、アパート番号、番地、および番地。 |
+| `commerce.shipping.address.street2` | 2 行目（オプション） |
+| `commerce.shipping.address.city` | 市区町村の名前。 |
+| `commerce.shipping.address.state` | 都道府県の名前。 これは自由形式のフィールドです。 |
+| `commerce.shipping.address.postalCode` | 場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。 |
+| `commerce.shipping.address.country` | 政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。 |
+| `commerce.shipping.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `commerce.shipping.trackingNumber` | 発注品目の出荷に対して出荷業者が提供する追跡番号。 |
+| `commerce.shipping.trackingURL` | 注文項目の発送ステータスを追跡する URL。 |
+| `commerce.shipping.shipDate` | 1 つ以上の注文品が出荷された日付。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.billing.address` | 請求先住所。 |
+| `commerce.billing.address.street1` | プライマリの番地の情報、アパート番号、番地、および番地 |
+| `commerce.billing.address.street2` | 番地レベル情報の追加フィールド。 |
+| `commerce.billing.address.city` | 市区町村の名前。 |
+| `commerce.billing.address.state` | 州の名前。 これは自由形式のフィールドです。 |
+| `commerce.billing.address.postalCode` | 場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。 |
+| `commerce.billing.address.country` | 政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。 |
+| `personalEmail` | 個人の電子メールアドレス。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `productListItems` | 注文内の製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
+| `productListItems.categories` | 製品のカテゴリに関する情報が含まれます。 |
+| `productListItems.categories.id` | カテゴリの一意の ID。 |
+| `productListItems.categories.name` | カテゴリの名前。 |
+| `productListItems.categories.path` | カテゴリへのパス。 |
 
 ### orderCancelled
 
@@ -646,26 +745,201 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 #### orderCancelled から収集されたデータ
 
 次の表に、このイベントで収集されるデータを示します。
-|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人間が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`productImageUrl`|製品のメイン画像 URL| |`selectedOptions`|構成可能な製品に使用するフィールド。| |`attribute`|設定可能な製品の属性（例： ）を識別します。 `size` または `color`| |`value`|次のような属性の値を識別します。 `small` または `black`.| |`commerceScope`|イベントが発生した場所を示します（ストアの表示、ストア、Web サイトなど）。| |`environmentID`|環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。| |`storeCode`|一意のストアコード。 Web サイトごとに多くの店舗を持つことができます。| |`storeViewCode`|一意のストア表示コード。 ストアごとに多数のストアビューを持つことができます。| |`websiteCode`|一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`cancelDate`|買い物客が注文をキャンセルした日時| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
 
-### creditMemoIssued
+| フィールド | 説明 |
+|---|---|
+| `commerce.order` | オーダーに関する情報が含まれます。 |
+| `commerce.order.purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません。 |
+| `commerce.order.purchaseOrderNumber` | 購入者がこの購入または契約に割り当てた一意の ID。 |
+| `commerce.order.cancelDate` | 買い物客が注文をキャンセルした日時。 |
+| `commerce.order.lastUpdatedDate` | コマースシステムで特定の注文レコードが最後に更新された時刻。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `personalEmail` | 個人の電子メールアドレス。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+
+### orderLineItemRefunded
 
 | 説明 | XDM イベント名 |
 |---|---|
-| 買い物客が注文で品目を返した場合にトリガーされます。 | `commerce.backofficeCreditMemoIssued` |
+| 返された品目に対して買い物客が払い戻された場合にトリガーされます。 | `commerce.backofficeCreditMemoIssued` |
 
-#### creditMemoIssued から収集されたデータ
+#### orderLineItemRefunded から収集されたデータ
 
 次の表に、このイベントで収集されるデータを示します。
-|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人間が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`productImageUrl`|製品のメイン画像 URL| |`selectedOptions`|構成可能な製品に使用するフィールド。| |`attribute`|設定可能な製品の属性（例： ）を識別します。 `size` または `color`| |`value`|次のような属性の値を識別します。 `small` または `black`.| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`lastUpdatedDate`|コマースシステムで特定の注文レコードが最後に更新された時刻| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`taxAmount`|最終支払いの一環として購入者が支払った税額。| |`refunds`|この注文の返金のリスト| |`refundPaymentType`|この注文の支払い方法。 列挙型のカスタム値を使用できます。| |`refundAmount`|払い戻しの値。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`personalEmail`|個人のメールアドレス| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される|
+
+| フィールド | 説明 |
+|---|---|
+| `commerce.order` | オーダーに関する情報が含まれます。 |
+| `commerce.order.purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません。 |
+| `commerce.order.lastUpdatedDate` | コマースシステムで特定の注文レコードが最後に更新された時刻。 |
+| `commerce.order.purchaseOrderNumber` | 購入者がこの購入または契約に割り当てた一意の ID。 |
+| `commerce.refunds` | この注文の返金のリスト。 |
+| `commerce.refunds.transactionID` | この返金の一意の ID。 |
+| `commerce.refunds.refundAmount` | 払い戻しの値。 |
+| `commerce.refunds.refundPaymentType` | この注文の支払い方法。 列挙型のカスタム値を使用できます。 |
+| `commerce.refunds.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `personalEmail` | 個人の電子メールアドレス。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `productListItems` | 注文内の製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
+| `productListItems.categories` | 製品のカテゴリに関する情報が含まれます。 |
+| `productListItems.categories.id` | カテゴリの一意の ID。 |
+| `productListItems.categories.name` | カテゴリの名前。 |
+| `productListItems.categories.path` | カテゴリへのパス。 |
+
+### orderItemsReturnInitiated
+
+| 説明 | XDM イベント名 |
+|---|---|
+| 買い物客が品目の返却をリクエストした場合にトリガーされます。 | `commerce.backofficeOrderItemsReturnInitiated` |
+
+#### orderItemsReturnInitiated から収集されたデータ
+
+次の表に、このイベントで収集されるデータを示します。
+
+| フィールド | 説明 |
+|---|---|
+| `commerce.order` | オーダーに関する情報が含まれます。 |
+| `commerce.order.purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません。 |
+| `commerce.order.returns` | この受注の RMA(Return Murchandise Authorization) 情報。 |
+| `commerce.order.returns.returnID` | この RMA の一意の ID(Return Murchandise Authorization)。 |
+| `commerce.order.returns.returnStatus` | RMA の現在のステータス（保留中、クローズ済など）。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `personalEmail` | 個人の電子メールアドレス。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `productListItems` | 注文内の製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
+| `productListItems.categories` | 製品のカテゴリに関する情報が含まれます。 |
+| `productListItems.categories.id` | カテゴリの一意の ID。 |
+| `productListItems.categories.name` | カテゴリの名前。 |
+| `productListItems.categories.path` | カテゴリへのパス。 |
+| `productListItems.returnItem` | この品目の RMA(Return Murchandise Authorization) 情報。 |
+| `productListItems.returnItem.returnStatus` | 返される項目のステータス（保留中、承認済みなど）。 |
+| `productListItems.returnItem.returnReason` | この項目の返品が要求された理由。 |
+| `productListItems.returnItem.returnItemCondition` | 返品が要求された品目の条件。 |
+| `productListItems.returnItem.returnResolution` | 返金、交換など、返品されるアイテムの要求された解決。 |
+| `productListItems.returnItem.returnQuantityRequested` | 買い物客が返すように要求したこの項目の数。 |
+| `productListItems.returnItem.returnQuantityAuthorized` | 返却を許可されたこの項目の数。 |
+| `productListItems.returnItem.eturnQuantityReceived` | 返された項目の数。 |
+| `productListItems.returnItem.returnQuantityApproved` | 完全に完了し、承認されたこの項目の数。 |
+
+### orderItemReturnCompleted
+
+| 説明 | XDM イベント名 |
+|---|---|
+| 買い物客が返品をリクエストした品目が完了したときにトリガーされます。 | `commerce.backofficeOrderItemsReturnCompleted` |
+
+#### orderItemReturnCompleted から収集されたデータ
+
+次の表に、このイベントで収集されるデータを示します。
+
+| フィールド | 説明 |
+|---|---|
+| `commerce.order` | オーダーに関する情報が含まれます。 |
+| `commerce.order.purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません。 |
+| `commerce.order.returns` | この受注の RMA(Return Murchandise Authorization) 情報。 |
+| `commerce.order.returns.returnID` | この RMA の一意の ID(Return Murchandise Authorization)。 |
+| `commerce.order.returns.returnStatus` | RMA の現在のステータス（保留中、クローズ済など）。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `personalEmail` | 個人の電子メールアドレス。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `productListItems` | 注文内の製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
+| `productListItems.categories` | 製品のカテゴリに関する情報が含まれます。 |
+| `productListItems.categories.id` | カテゴリの一意の ID。 |
+| `productListItems.categories.name` | カテゴリの名前。 |
+| `productListItems.categories.path` | カテゴリへのパス。 |
+| `productListItems.returnItem` | この品目の RMA(Return Murchandise Authorization) 情報。 |
+| `productListItems.returnItem.returnStatus` | 返される項目のステータス（保留中、承認済みなど）。 |
+| `productListItems.returnItem.returnReason` | この項目の返品が要求された理由。 |
+| `productListItems.returnItem.returnItemCondition` | 返品が要求された品目の条件。 |
+| `productListItems.returnItem.returnResolution` | 返金、交換など、返品されるアイテムの要求された解決。 |
+| `productListItems.returnItem.returnQuantityRequested` | 買い物客が返すように要求したこの項目の数。 |
+| `productListItems.returnItem.returnQuantityAuthorized` | 返却を許可されたこの項目の数。 |
+| `productListItems.returnItem.eturnQuantityReceived` | 返された項目の数。 |
+| `productListItems.returnItem.returnQuantityApproved` | 完全に完了し、承認されたこの項目の数。 |
 
 ### orderShipmentCompleted
 
 | 説明 | XDM イベント名 |
 |---|---|
-| 買い物客が注文で品目を返した場合にトリガーされます。 | `commerce.backofficeOrderShipmentCompleted` |
+| 出荷が完了したときにトリガーされます。 | `commerce.backofficeOrderShipmentCompleted` |
 
 #### orderShipmentCompleted から収集されたデータ
 
 次の表に、このイベントで収集されるデータを示します。
-|フィールド|説明| |—|—| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`productListItems`|注文した製品の配列| |`id`|この製品エントリの行項目識別子。 製品自体は、 `product` フィールドに入力します。| |`name`|製品の表示名または人間が読み取り可能な名前| |`SKU`|在庫管理単位。 商品の一意の ID。| |`quantity`|買い物かご内の製品単位数| |`priceTotal`|商品品目の合計価格| |`discountAmount`|適用された割引額を示します| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`productImageUrl`|製品のメイン画像 URL| |`selectedOptions`|構成可能な製品に使用するフィールド。| |`attribute`|設定可能な製品の属性（例： ）を識別します。 `size` または `color`| |`value`|次のような属性の値を識別します。 `small` または `black`.| |`order`|注文に関する情報が含まれます| |`purchaseID`|販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません| |`priceTotal`|すべての割引と税金が適用された後の、この注文の合計価格| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`purchaseOrderNumber`|購入者がこの購入または契約に割り当てた一意の ID| |`taxAmount`|最終支払いの一環として購入者が支払った税額。| |`createdDate`|コマースシステムで新しい注文が作成された日時。 例： `2022-10-15T20:20:39+00:00`| |`payments`|この注文の支払いのリスト| |`paymentType`|この注文の支払い方法。 列挙型のカスタム値を使用できます。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`paymentAmount`|支払の値| |`shipping`|1 つ以上の製品の出荷の詳細| |`shippingMethod`|顧客が選択した発送方法（標準配送、即時配送、店頭受け取りなど）| |`address`|物理的な配送先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。| |`country`|政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`shippingAmount`|顧客が送料を支払う必要があった金額。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`| |`address`|技術的な住所（例： ） `name@domain.com` RFC2822 以降の標準で一般的に定義される| |`billingAddress`|請求先住所| |`street1`|プライマリの番地の情報、アパート番号、番地、および番地| |`street2`|番地の情報の追加フィールド| |`city`|市区町村の名前| |`state`|州の名前。 これは自由形式のフィールドです。| |`postalCode`|場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、このデータは郵便番号の一部のみを含みます。| |`country`|政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。| |`personalEmail`|個人のメールアドレス| |`address`|技術的なアドレス (RFC2822 以降の標準で一般的に定義される&#39;name@domain.com&#39;など )|
+
+| フィールド | 説明 |
+|---|---|
+| `commerce.order` | オーダーに関する情報が含まれます。 |
+| `commerce.order.purchaseID` | 販売者がこの購入または契約に割り当てた一意の ID。 ID が一意であるという保証はありません。 |
+| `commerce.order.payments` | この注文の支払いのリスト。 |
+| `commerce.order.payments.paymentTransactionID` | この支払トランザクションの一意の ID。 |
+| `commerce.order.payments.paymentAmount` | 支払の値。 |
+| `commerce.order.payments.paymentType` | この注文の支払い方法。 列挙型のカスタム値を使用できます。 |
+| `commerce.order.payments.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `commerce.order.taxAmount` | 最終支払いの一環として購入者が支払った税額。 |
+| `commerce.order.createdDate` | コマースシステムで新しい注文が作成された日時。 例： `2022-10-15T20:20:39+00:00`. |
+| `commerce.shipping` | 1 つ以上の製品の出荷の詳細。 |
+| `commerce.shipping.shippingMethod` | 顧客が選択した送料方法（標準配送、即時配送、店頭受け取りなど）。 |
+| `commerce.shipping.shippingAmount` | 顧客が送料を支払う必要があった金額。 |
+| `commerce.shipping.shipDate` | 1 つ以上の注文品が出荷された日付。 |
+| `commerce.shipping.address` | 実際の配送先住所。 |
+| `commerce.shipping.address.street1` | プライマリの番地の情報、アパート番号、番地、および番地。 |
+| `commerce.shipping.address.street2` | 2 行目（オプション） |
+| `commerce.shipping.address.city` | 市区町村の名前。 |
+| `commerce.shipping.address.state` | 都道府県の名前。 これは自由形式のフィールドです。 |
+| `commerce.shipping.address.postalCode` | 場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。 |
+| `commerce.shipping.address.country` | 政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。 |
+| `commerce.billing.address` | 請求先住所。 |
+| `commerce.billing.address.street1` | プライマリの番地の情報、アパート番号、番地、および番地 |
+| `commerce.billing.address.street2` | 番地レベル情報の追加フィールド。 |
+| `commerce.billing.address.city` | 市区町村の名前。 |
+| `commerce.billing.address.state` | 州の名前。 これは自由形式のフィールドです。 |
+| `commerce.billing.address.postalCode` | 場所の郵便番号。 一部の国では、郵便番号が使用できません。 一部の国では、郵便番号の一部のみが含まれます。 |
+| `commerce.billing.address.country` | 政府が管理する領土の名前。 次の値以外： `xdm:countryCode`の場合、任意の言語で国名を付けることができる自由形式のフィールドです。 |
+| `personalEmail` | 個人の電子メールアドレス。 |
+| `personalEmail.address` | 技術的な住所（例： ）。 `name@domain.com` RFC2822 以降の標準で一般的に定義されているとおりです。 |
+| `productListItems` | 注文内の製品の配列。 |
+| `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
+| `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |
+| `productListItems.priceTotal` | 製品品目の合計価格。 |
+| `productListItems.quantity` | 買い物かご内の製品単位数。 |
+| `productListItems.discountAmount` | 適用される割引額を示します。 |
+| `productListItems.currencyCode` | The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用する通貨コード（例： ） `USD` または `EUR`. |
+| `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
+| `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
+| `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
+| `productListItems.categories` | 製品のカテゴリに関する情報が含まれます。 |
+| `productListItems.categories.id` | カテゴリの一意の ID。 |
+| `productListItems.categories.name` | カテゴリの名前。 |
+| `productListItems.categories.path` | カテゴリへのパス。 |

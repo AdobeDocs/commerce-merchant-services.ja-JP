@@ -3,9 +3,9 @@ title: コマースデータをAdobe Experience Platformに接続
 description: コマースデータをAdobe Experience Platformに接続する方法を説明します。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
+source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '2232'
 ht-degree: 0%
 
 ---
@@ -65,15 +65,21 @@ Adobe Commerceインスタンスがデータ収集を開始できることを確
 
 1. 選択 **ストアフロントイベント** storefront 行動データを送信する場合。
 
-   >[!NOTE]
-   >
-   >The **ストアフロントイベント** AEP Web SDK および組織 ID が有効な場合、チェックボックスは自動的に有効になります。
-
 1. 選択 **バックオフィスイベント** 注文が発行されたか、取り消されたか、返金されたか、出荷されたかなど、注文ステータス情報を送信する場合。
 
    >[!NOTE]
    >
    >次を選択した場合、 **バックオフィスイベント**&#x200B;に設定されていない場合、すべてのバックオフィスデータがExperience PlatformEdge に送信されます。 買い物客がデータ収集をオプトアウトする場合は、Experience Platformで買い物客のプライバシー設定を明示的に設定する必要があります。 これは、コレクターが買い物客の環境設定に基づいて既に同意を処理しているストアフロントイベントとは異なります。 [詳細情報](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) Experience Platformでの買い物客のプライバシー設定に関する情報。
+
+1. （独自の AEP Web SDK を使用している場合は、この手順をスキップします）。 [作成](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) Adobe Experience Platformのデータストリーム、または収集に使用する既存のデータストリームを選択します。 そのデータストリーム ID を **Datastream ID** フィールドに入力します。
+
+1. 次を入力します。 **データセット ID** Commerce データを含める必要があります。 データセット ID を見つけるには：
+
+   1. Experience PlatformUI を開き、「 」を選択します。 **データセット** 左側のナビゲーションで、 **データセット** ダッシュボード。 ダッシュボードには、組織で使用可能なすべてのデータセットがリストされます。 リストに表示された各データセットに関する詳細（名前、データセットが適用されるスキーマ、最新の取り込み実行のステータスなど）が表示されます。
+   1. データストリームに関連付けられたデータセットを開きます。
+   1. 右側のウィンドウで、データセットの詳細を表示します。 データセット ID をコピーします。
+
+   ![データセット ID をコピー](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
 
 1. バックオフィスのイベントデータを、 [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) ジョブの場合は、 `Sales Orders Feed` インデックス `Update by Schedule`.
 
@@ -93,10 +99,6 @@ Adobe Commerceインスタンスがデータ収集を開始できることを確
       bin/magento saas:resync --feed orders
       ```
 
-1. （独自の AEP Web SDK を使用している場合は、この手順をスキップします）。 [作成](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) Adobe Experience Platformのデータストリーム、または収集に使用する既存のデータストリームを選択します。
-
-1. （独自の AEP Web SDK を使用している場合は、この手順をスキップします）。 Adobe Analytics の **Datastream ID** 「 」フィールドに、新規または既存のデータストリームの ID を貼り付けます。
-
 ## フィールドの説明
 
 | フィールド | 説明 |
@@ -104,28 +106,25 @@ Adobe Commerceインスタンスがデータ収集を開始できることを確
 | 範囲 | 設定を適用する特定の Web サイト。 |
 | 組織 ID （グローバル） | AdobeDX 製品を購入した組織に属する ID。 この ID は、Adobe CommerceインスタンスをAdobe Experience Platformにリンクします。 |
 | AEP Web SDK が既にサイトにデプロイされているか。 | 独自の AEP Web SDK をサイトにデプロイした場合は、このチェックボックスを選択します。 |
-| AEP Web SDK 名（グローバル） | 既にサイトにExperience PlatformWeb SDK がデプロイされている場合は、このフィールドにその SDK の名前を指定します。 これにより、Storefront Event Collector および Storefront Event SDK は、Experience PlatformコネクタによってデプロイされたExperience Platformではなく、Web SDK を使用できます。 サイトにExperience PlatformWeb SDK がデプロイされていない場合、このフィールドを空白のままにすると、Experience Platformコネクタがデプロイします。 |
+| AEP Web SDK 名（グローバル） | 既にサイトにExperience PlatformWeb SDK がデプロイされている場合は、このフィールドにその SDK の名前を指定します。 これにより、Storefront Event Collector および Storefront Event SDK は、Experience PlatformコネクタによってデプロイされたExperience Platformではなく、Web SDK を使用できます。 サイトにExperience PlatformWeb SDK がデプロイされていない場合は、このフィールドを空白のままにしておくと、Experience Platformコネクタがユーザーに代わってデプロイします。 |
 | ストアフロントイベント | 組織 ID とデータストリーム ID が有効である限り、デフォルトでオンになります。 Storefront イベントは、サイトを閲覧する買い物客から匿名化された行動データを収集します。 |
 | バックオフィスイベント | オンにすると、イベントペイロードには、注文が発行されたか、キャンセルされたか、返金されたか、発送されたかなど、匿名化された注文ステータス情報が含まれます。 |
-| Datastream ID (Website) | Adobe Experience Platformから他のAdobeDX 製品にデータを送信できるようにする ID。 この ID は、特定のAdobe Commerceインスタンス内の特定の Web サイトに関連付ける必要があります。 独自のExperience PlatformWeb SDK を指定する場合は、このフィールドにデータストリーム ID を指定しないでください。 Experience Platformコネクタは、その SDK に関連付けられたデータストリーム ID を使用し、このフィールドで指定されたデータストリーム ID を無視します（存在する場合）。 |
+| Datastream ID（Web サイト） | Adobe Experience Platformから他のAdobeDX 製品にデータを送信できるようにする ID。 この ID は、特定のAdobe Commerceインスタンス内の特定の Web サイトに関連付ける必要があります。 独自のExperience PlatformWeb SDK を指定する場合は、このフィールドにデータストリーム ID を指定しないでください。 Experience Platformコネクタは、その SDK に関連付けられたデータストリーム ID を使用し、このフィールドで指定されたデータストリーム ID を無視します（存在する場合）。 |
+| データセット ID （Web サイト） | コマースデータを含むデータセットの ID。 このフィールドは、 **ストアフロントイベント** または **バックオフィスイベント** チェックボックス。 また、独自のExperience PlatformWeb SDK を使用していて、データストリーム ID を指定していない場合でも、データストリームに関連付けられたデータセット ID を追加する必要があります。 そうしないと、このフォームを保存できません。 |
 
 >[!NOTE]
 >
 >オンボーディング後、ストアフロントデータがExperience Platformエッジに送られ始めます。 バックオフィスのデータが最後に表示されるまでに約 5 分かかります。 その後の更新は、Cron スケジュールに基づいてエッジで表示されます。
 
-## （ベータ版）注文履歴データの送信
+## 履歴注文データの送信
 
->[!NOTE]
->
->この機能は、ベータ版ユーザーのみが使用できます。 ベータ版に参加するには、以下のアドレス宛てにメールを送信します。 `dataconnection@adobe.com`.
+Adobe Commerceは最大 5 年間を収集 [過去の注文データとステータス](events.md#back-office-events). Experience Platformコネクタを使用して、その履歴データをExperience Platformに送信し、過去の注文に基づいて顧客プロファイルをエンリッチメントできます。 データは、Experience Platform内のデータセットに保存されます。
 
-Adobe Commerceは、最大 5 年間の注文履歴データとステータスを収集します。 Experience Platformコネクタを使用して、その履歴データをExperience Platformに送信し、過去の注文に基づいて顧客プロファイルをエンリッチメントできます。 データは、Experience Platform内のデータセットに保存されます。
+Commerce は既に履歴注文データを収集していますが、そのデータをExperience Platformに送信するには、いくつかの手順を完了する必要があります。
 
-Commerce は既に履歴注文データを収集していますが、そのデータをExperience Platformに送信するために完了する必要があるタスクがいくつかあります。 次の節では、このプロセスの手順を説明します。
+### 手順 1：履歴注文データ収集をインストールする
 
-### 過去の注文ベータ版をインストールする
-
-ベータ版の履歴注文データ収集を有効にするには、プロジェクトのルートを更新する必要があります [!DNL Composer] `.json` ファイルの内容は次のとおりです。
+履歴注文データの収集を有効にするには、プロジェクトのルートを更新する必要があります [!DNL Composer] `.json` ファイルの内容は次のとおりです。
 
 1. ルートを開く `composer.json` ファイルと検索 `magento/experience-platform-connector`.
 
@@ -134,7 +133,7 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
    ```json
    "require": {
       ...
-      "magento/experience-platform-connector": "^3.0.0-beta1",
+      "magento/experience-platform-connector": "^3.0.0",
       ...
     }
    ```
@@ -144,7 +143,7 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
    ```json
    "require": {
      ...
-     "magento/experience-platform-connector-b2b": "^2.0.0-beta1"
+     "magento/experience-platform-connector-b2b": "^2.0.0"
      ...
    }
    ```
@@ -161,31 +160,49 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
    composer update magento/experience-platform-connector-b2b --with-dependencies
    ```
 
-### 過去の注文ベータ版を設定する
-
-顧客の注文履歴をExperience Platformに確実に送信するには、コマースインスタンスをExperience Platformにリンクする資格情報を指定する必要があります。 既にをインストールして有効にしている場合は、 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 拡張機能の場合は、必要な資格情報を既に指定しています。この手順はスキップできます。 Audience Activation拡張機能をまだインストールして有効にしていない場合は、次の手順を実行します。
+### 手順 2:Adobe Developer Console でプロジェクトを作成する
 
 >[!NOTE]
 >
->この節では、開発者コンソールから資格情報を入力します。 デベロッパーコンソールプロジェクトに正しい [役割と権限が設定されました](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+>既にをインストールして有効にしている場合は、 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 拡張機能には、手順 2 および 3 が既に完了しています。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+コマースを認証してExperience PlatformAPI を呼び出すためのプロジェクトをAdobe Developerコンソールで作成します。
 
-1. 展開 **[!UICONTROL Services]** を選択し、 **[!UICONTROL Experience Platform Connector]**.
+プロジェクトを作成するには、 [Experience PlatformAPI の認証とアクセス](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) チュートリアル
 
-1. で見つかった設定資格情報を入力します。 [開発者コンソール](https://developer.adobe.com/console/home).
+チュートリアルを進めながら、プロジェクトに次の内容が含まれていることを確認します。
+
+- 次へのアクセス [製品プロファイル](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **デフォルトの実稼動環境へのすべてのアクセス** および **AEP デフォルトのすべてのアクセス**.
+- 正しい [役割と権限が設定されている](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- JSON Web トークン (JWT) をサーバー間認証方式として使用する場合は、秘密鍵もアップロードする必要があります。
+
+この手順の結果、次の手順で使用する設定ファイルが作成されます。
+
+### 手順 3：設定ファイルをダウンロードする
+
+をダウンロードします。 [ワークスペース設定ファイル](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). このファイルの内容をコピーし、 **サービスアカウント/資格情報の詳細** コマース管理のページ。
+
+1. コマース管理で、に移動します。 **ストア** /設定/ **設定** > **サービス** > **Experience Platformコネクタ**.
+
+1. 実装したサーバー間認証方法を、 **Adobe I/O認証タイプ** メニュー。 Adobeでは、OAuth の使用をお勧めします。 JWT は非推奨（廃止予定）となりました。 [詳細情報](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+
+1. （JWT のみ） `private.key` ～に入る **クライアントの秘密鍵** フィールドに入力します。 次のコマンドを使用して、コンテンツをコピーします。
+
+   ```bash
+   cat config/private.key | pbcopy
+   ```
+
+   詳しくは、 [サービスアカウント (JWT) 認証](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) を参照してください。 `private.key` ファイル。
+
+1. の内容をコピーします。 `<workspace-name>.json` ～に入る **サービスアカウント/資格情報の詳細** フィールドに入力します。
 
    ![Experience Platformコネクタの管理者設定](./assets/epc-admin-config.png){width="700" zoomable="yes"}
 
-   >[!NOTE]
-   >
-   >ベータ版の場合、Commerce は開発者コンソールで JSON Web トークン (JWT) 資格情報を使用します。 ベータ版以降、Commerce は開発者コンソールで OAuth 2.0 を使用します。
-
 1. クリック **設定を保存**.
 
-### 注文同期サービスを設定する
+### 手順 4：注文同期サービスのセットアップ
 
-開発者の資格情報を入力したら、注文同期サービスを設定できます。 注文同期サービスは、 [メッセージキューフレームワーク](https://developer.adobe.com/commerce/php/development/components/message-queues/) RabbitMQ これらの手順を完了すると、注文ステータスデータを SaaS に同期できます。SaaS は、Experience Platformに送信される前に必要です。
+開発者資格情報を入力したら、注文同期サービスを設定します。 注文同期サービスは、 [メッセージキューフレームワーク](https://developer.adobe.com/commerce/php/development/components/message-queues/) RabbitMQ これらの手順を完了すると、注文ステータスデータを SaaS に同期できます。SaaS は、Experience Platformに送信される前に必要です。
 
 1. [有効にする](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ。
 
@@ -208,9 +225,9 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
 
 注文同期サービスを有効にすると、「Experience Platformコネクタ」ページで注文の履歴日付範囲を指定できます。
 
-### 注文履歴の日付範囲を指定
+### 手順 5：注文履歴の日付範囲の指定
 
-このセクションでは、Experience Platformに送信する履歴注文の日付範囲を指定します。
+Experience Platformに送信する過去の注文の日付範囲を指定します。
 
 ![注文履歴を同期](./assets/order-history.png){width="700" zoomable="yes"}
 
@@ -218,21 +235,25 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
 
 1. を選択します。 **注文履歴** タブをクリックします。
 
-1. の下 **注文履歴の同期**、 **データセット ID**. これは、 [データ収集](#data-collection) 」の節を参照してください。
+1. の下 **注文履歴の同期**、 **設定からデータセット ID をコピーする** チェックボックスは既に有効になっています。 これにより、 **設定** タブをクリックします。
 
-   1. データセット ID にアクセスするには、Experience PlatformUI を開き、 **データセット** 左側のナビゲーションで、 **データセット** ダッシュボード。 ダッシュボードには、組織で使用可能なすべてのデータセットがリストされます。 リストに表示された各データセットに関する詳細（名前、データセットが適用されるスキーマ、最新の取り込み実行のステータスなど）が表示されます。
-   1. データストリームに関連付けられたデータセットを開きます。
-   1. 右側のウィンドウに、データセットの詳細が表示されます。 データセット ID をコピーします。
+1. Adobe Analytics の **送信者** および **宛先** 「 」フィールドで、送信する履歴注文データの日付範囲を指定します。 5 年を超える日付範囲は選択できません。
 
-   ![データセット ID をコピー](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
+1. 選択 **[!UICONTROL Start Sync]** ：同期を開始するトリガーを設定します。 履歴注文データは、ストリーミングデータであるストアフロントおよびバックオフィスデータとは異なり、バッチデータになります。 バッチ処理されたデータがExperience Platformに到着するまでに約 45 分かかります。
 
-1. Adobe Analytics の **送信者** および **宛先** フィールドは、送信する履歴注文データのデータ範囲を指定します。 5 年を超える日付範囲は選択できません。
+| フィールド | 説明 |
+|--- |--- |
+| 設定からデータセット ID をコピーする | に入力したデータセット ID をコピーします。 **設定** タブをクリックします。 |
+| データセット ID （Web サイト） | コマースデータを含むデータセットの ID。 このフィールドは、 **ストアフロントイベント** または **バックオフィスイベント** チェックボックス。 また、独自のExperience PlatformWeb SDK を使用していて、データストリーム ID を指定していない場合でも、データストリームに関連付けられたデータセット ID を追加する必要があります。 そうしないと、このフォームを保存できません。 |
+| 送信者 | 注文履歴データの収集を開始する日付。 |
+| 宛先 | 注文履歴データの収集を終了する日付。 |
+| 同期を開始 | 注文履歴データとExperience PlatformEdge の同期プロセスを開始します。 このボタンは、 **[!UICONTROL Dataset ID]** フィールドが空白であるか、データセット ID が無効です。 |
 
-1. 選択 [!UICONTROL Start Sync] ：同期を開始するトリガーを設定します。 履歴注文データは、ストリーミングデータであるストアフロントおよびバックオフィスデータとは異なり、バッチデータになります。 バッチ処理されたデータがExperience Platformに到着するまでに約 45 分かかります。
+### 過去の注文デモ
 
-   >[!NOTE]
-   >
-   >ベータ版では、同じ時間範囲または重複する時間範囲で同期を複数回トリガーした場合、データセットに重複イベントが表示されます。
+過去の注文について詳しくは、このビデオをご覧ください。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## イベントデータが収集されていることを確認する
 

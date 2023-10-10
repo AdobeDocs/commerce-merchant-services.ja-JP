@@ -4,9 +4,9 @@ description: Adobe CommerceからAdobe Experience Platform Connector をイン�
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ Experience Platformコネクタ拡張機能は、 [AdobeMarketplace](https://com
 >
 >![Adobe Commerce用 B2B](../assets/b2b.svg) B2B マーチャントの場合は、別の拡張機能をインストールする必要があります。 この拡張機能は、B2B 固有のイベントのサポートを追加します。 [詳細情報](#install-the-b2b-extension).
 
-
 1. 次の手順で `experience-platform-connector` package で、コマンドラインから次のコマンドを実行します。
 
    ```bash
@@ -32,12 +31,45 @@ Experience Platformコネクタ拡張機能は、 [AdobeMarketplace](https://com
 
    このメタパッケージには、次のモジュールと拡張機能が含まれています。
 
-   * `module-experience-connector-admin` - Admin UI を更新し、特定のAdobe Commerceインスタンスのデータストリーム ID を選択できるようにしました
-   * `module-experience-connector` - `Organization ID` および `datastreamId` （Storefront Events SDK の）
+   * `module-experience-connector-admin` - Admin UI が更新され、特定のAdobe Commerceインスタンスのデータストリーム ID を選択できるようになりました。
+   * `module-experience-connector` - `Organization ID` および `datastreamId` （Storefront Events SDK の）を参照してください。
    * `data-services`  — ストアフロントイベントの属性コンテキストを提供します。 例えば、チェックアウトイベントが発生した場合、買い物かごに入った品目数に関する情報と、それらの品目の製品属性データが含まれます。
-   * `services-id` - Adobe Commerceインスタンスをに接続します。 [Adobe Commerce SaaS](../landing/saas.md) サンドボックスおよび実稼動 API キーとAdobe Experience Platformへの IMS 組織 ID の取得を使用する
+   * `services-id` - Adobe Commerceインスタンスをに接続します。 [Adobe Commerce SaaS](../landing/saas.md) サンドボックスおよび実稼動 API キーとAdobe Experience Platformに対してを使用し、IMS 組織 ID を取得する。
+   * `orders-connector`  — 注文ステータスサービスをAdobe Commerceインスタンスに接続します。
 
-1. （オプション）を含めるには [!DNL Live Search] データ（検索イベントを含む）は、 [[!DNL Live Search]](../live-search/install.md) 拡張子。
+1. （オプション）を含めるには [!DNL Live Search] 次を含むデータ： [イベントを検索](events.md#search-events), install [[!DNL Live Search]](../live-search/install.md) 拡張子。
+
+### 注文コネクタの設定
+
+インストール後、 `experience-platform-connector`のインストールを完了する必要があります。 `orders-connector` デプロイメントタイプに基づくモジュール：オンプレミスまたはクラウドインフラストラクチャ上のAdobe Commerce。
+
+#### オンプレミス
+
+オンプレミス環境では、コード生成とAdobe Commerceイベントを手動で有効にする必要があります。
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### クラウドインフラストラクチャ上
+
+クラウド上のAdobe Commerceインフラストラクチャで、 `ENABLE_EVENTING` のグローバル変数 `.magento.env.yaml`. [詳細情報](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+
+```bash
+stage:
+   global:
+      ENABLE_EVENTING: true
+```
+
+更新されたファイルをコミットし、クラウド環境にプッシュします。 デプロイメントが完了したら、次のコマンドを使用してイベントの送信を有効にします。
+
+```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
 
 ### B2B 拡張機能のインストール
 
