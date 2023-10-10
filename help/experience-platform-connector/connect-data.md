@@ -3,9 +3,9 @@ title: コマースデータをAdobe Experience Platformに接続
 description: コマースデータをAdobe Experience Platformに接続する方法を説明します。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
+source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,13 @@ Adobe Commerceインスタンスがデータ収集を開始できることを確
 
 ## 履歴注文データの送信
 
-Adobe Commerceは最大 5 年間を収集 [過去の注文データとステータス](events.md#back-office-events). Experience Platformコネクタを使用して、その履歴データをExperience Platformに送信し、過去の注文に基づいて顧客プロファイルをエンリッチメントできます。 データは、Experience Platform内のデータセットに保存されます。
+Adobe Commerceは最大 5 年間を収集 [過去の注文データとステータス](events.md#back-office-events). Experience Platformコネクタを使用して、その履歴データをExperience Platformに送信し、過去の注文に基づいて、顧客プロファイルを強化し、顧客エクスペリエンスをパーソナライズできます。 データは、Experience Platform内のデータセットに保存されます。
 
 Commerce は既に履歴注文データを収集していますが、そのデータをExperience Platformに送信するには、いくつかの手順を完了する必要があります。
+
+このビデオを見て、注文履歴の詳細を確認し、次の手順を実行して、注文履歴の収集と設定を実装します。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ### 手順 1：履歴注文データ収集をインストールする
 
@@ -248,12 +252,6 @@ Experience Platformに送信する過去の注文の日付範囲を指定しま�
 | 送信者 | 注文履歴データの収集を開始する日付。 |
 | 宛先 | 注文履歴データの収集を終了する日付。 |
 | 同期を開始 | 注文履歴データとExperience PlatformEdge の同期プロセスを開始します。 このボタンは、 **[!UICONTROL Dataset ID]** フィールドが空白であるか、データセット ID が無効です。 |
-
-### 過去の注文デモ
-
-過去の注文について詳しくは、このビデオをご覧ください。
-
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## イベントデータが収集されていることを確認する
 
