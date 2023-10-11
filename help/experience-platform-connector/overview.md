@@ -3,16 +3,16 @@ title: ガイドの概要
 description: Experience Platformコネクタを使用してAdobe CommerceデータをAdobe Experience Platformに統合する方法について説明します。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
 # Experience Platformコネクタの概要
 
-Experience Platformコネクタ拡張機能を使用すると、Adobe Commerceのマーチャントが [店頭の](events.md#storefront-events) および [バックオフィス](events.md#back-office-events) Adobe AnalyticsやAdobe Targetなどの他のAdobe Experience Cloud製品がそのコマースデータを使用できるように、Adobe Experience Platform Edge にデータを送信します。 コマースデータをAdobe Experience Cloud内の他の製品に接続することで、サイトでのユーザー行動の分析、AB テストの実行、パーソナライズされたキャンペーンの作成などのタスクを実行できます。
+Experience Platformコネクタ拡張機能を使用すると、Adobe Commerceのマーチャントが [店頭の](events.md#storefront-events) および [バックオフィス](events.md#back-office-events) Adobe AnalyticsやAdobe Journey Optimizerなどの他のAdobe Experience Cloud製品がそのコマースデータを使用できるように、Adobe Experience Platform Edge にデータを送信します。 コマースデータをAdobe Experience Cloud内の他の製品に接続することで、サイトでのユーザー行動の分析、AB テストの実行、パーソナライズされたキャンペーンの作成などのタスクを実行できます。
 
 [ストアフロントイベント](events.md#storefront-events) 買い物客のインタラクションのキャプチャ `View Page`, `View Product`, `Add to Cart`、および [購買依頼リスト](events.md#b2b-events) 情報（B2B 商人用） [バックオフィス](events.md#back-office-events) イベントは、注文が発行されたか、取り消されたか、返金されたか、出荷されたか、完了したかなど、注文のステータスに関する情報をキャプチャします。 取り込まれたデータには、個人を特定できる情報 (PII) は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は厳密に匿名化されます。 [詳細情報](https://www.adobe.com/privacy/experience-cloud.html).
 
