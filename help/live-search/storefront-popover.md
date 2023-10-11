@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: 「 [!DNL Live Search storefront popover] は、推奨される製品とサムネールを動的に返します。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 
 [!DNL Live Search] 2 文字以上のクエリの結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 「入力中の検索」クエリの文字数は設定できません。
 
+デフォルトでは、 [!DNL Live Search] サポート [検索語句のリダイレクト](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
+
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
+
 ## 検索可能な属性
 
 ターゲットを絞り込んだ結果を生成するには、 [検索可能な](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) 製品属性。 適切性を確保するために、明確で簡潔な意味を持つコンテンツが含まれている場合にのみ属性を検索可能にします。 より正確でなく長いテキストを含む属性（例： ）を使用しないでください。 `description`は、デフォルトで検索が有効になっていますが、検索結果の精度を下げることができます。 例えば、ある人が「ショート」を検索し、説明に「ショートスリーブ」という語句が含まれるシャツがある場合、シャツは検索結果に含まれます。
@@ -24,8 +28,6 @@ ht-degree: 0%
 * `sku`
 * `name`
 * `categories`
-
-[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 ## [!DNL Popover] ページサイズ
 

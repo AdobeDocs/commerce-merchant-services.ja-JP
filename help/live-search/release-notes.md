@@ -3,9 +3,9 @@ title: "[!DNL Live Search] リリースノート"
 description: 次の最新のリリース情報： [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1747'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,7 @@ _2023 年 9 月 16 日_
 
 ### 更新
 
+![修正点](../assets/fix.svg) 製品と価格のフィードのテーブルサイズが大幅に縮小されました。 テーブル `catalog_data_exporter_products` および `catalog_data_exporter_product_prices` 大幅なサイズ削減が見込まれる
 ![修正点](../assets/fix.svg) 「ルール」タブの名前が「検索ルール」に変更されました
 ![修正点](../assets/fix.svg) 「トレンド」でランク付けする場合、次の中から選択できるようになりました。* 3 日（デフォルト） * 14 日* 30 日
 ![修正点](../assets/fix.svg) 「イベント」（ブースト/ピン/ベリー/非表示）の名前が「手動ランキング」に変更されました。

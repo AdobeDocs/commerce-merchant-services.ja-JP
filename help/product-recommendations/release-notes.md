@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] リリースノート'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ _2023 年 9 月 16 日_
 
 ![新規](../assets/new.svg) をサポートする新しいモジュールを追加しました。 [Saas Price Indexer](../price-index/index.md).
 ![新規](../assets/new.svg) バンドルされた製品やギフトカードなど、より多くの製品タイプのエクスポートをサポートする新しいデータエクスポートモジュールを追加しました。
+![修正点](../assets/fix.svg) 製品と価格のフィードのテーブルサイズが大幅に縮小されました。 テーブル `catalog_data_exporter_products` および `catalog_data_exporter_product_prices` 大幅なサイズ削減が見込まれる
 
 #### 既知の制限事項
 

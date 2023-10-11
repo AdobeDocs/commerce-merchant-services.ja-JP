@@ -3,20 +3,30 @@ title: の概要 [!DNL Live Search]
 description: '"[!DNL Live Search] Adobe Commerceからは、素早く、超関連性が高く、直感的な検索エクスペリエンスを提供します。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
 # の概要 [!DNL Live Search]
 
-[!DNL Live Search] は、標準の検索機能に代わる、Adobe Commerce用のスタンドアロンパッケージのセットです。 The [!DNL Live Search] モジュールは、サーバーのコマンドラインからインストールされ、Commerce インストールに as a として接続します。 [サービス](../landing/saas.md). プロセスが完了したら、 [!DNL Live Search] 次の場所に表示される： *マーケティング* 下のメニュー *SEO と検索* （内） [!DNL Commerce] *管理者*.
+[!DNL Live Search] は、標準の検索機能に代わるAdobe Commerceのサービスです。 The [!DNL Live Search] モジュールが Composer と共にインストールされ、 [!DNL Commerce] へのインストール [!DNL Live Search] [サービス](../landing/saas.md). 設定すると、デフォルトの検索テキストフィールドが [!DNL Live Search] テキストフィールド。
 
-アーキテクチャのAdobe Commerce側には、検索のホストが含まれます *管理者*、カタログデータの同期、およびクエリサービスの実行を行う。 後 [!DNL Live Search] がインストールおよび設定されると、Adobe Commerceは検索およびカタログデータの SaaS サービスとの共有を開始します。 この時点で、管理者ユーザーは、検索ファセット、シノニムおよびマーチャンダイジングルールを設定、カスタマイズおよび管理できます。
+[!DNL Live Search] 次の場所に表示される： *マーケティング* 下のメニュー *SEO と検索* （内） [!DNL Commerce] *管理者*.
+
+アーキテクチャのAdobe Commerce側には、検索のホストが含まれます *管理者*、カタログデータの同期、およびクエリサービスの実行を行う。 後 [!DNL Live Search] がインストールおよび設定されると、Adobe Commerceは検索およびカタログデータの SaaS サービスとの共有を開始します。 この時点で、管理者ユーザーは検索の設定、カスタマイズ、管理をおこなうことができます [ファセット](facets.md), [同義語](synonyms.md)、および [マーチャンダイジングルール](category-merch.md).
 
 ![ライブ検索のアーキテクチャ図](assets/architecture-diagram.svg)
+
+## ライブ検索コンポーネント
+
+* [!DNL Live Search] [ポップオーバー](storefront-popover.md) は、検索結果を含む検索フィールドの下に開くボックスです。
+* [製品リストページウィジェット](plp-styling.md) は、ファセットとシノニムのサポートを含む検索可能な製品リストページを提供します。
+* AEM [CIFコンポーネント](https://github.com/adobe/aem-cif-guides-venia/pull/319) を使用すると、AEMサイトで [!DNL Live Search].
+* [[!DNL Live Search] 管理者](workspace.md) は、ルール、ファセットおよびシノニムを設定する場所です。
+* 検索アダプタは、 [!DNL Live Search].
 
 ## [!DNL Live Search] デモ
 

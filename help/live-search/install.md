@@ -3,9 +3,9 @@ title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法を学ぶ [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1265'
 ht-degree: 0%
 
 ---
@@ -40,10 +40,6 @@ ht-degree: 0%
 
 このシナリオでは、ストアフロント操作は、 [!DNL Live Search] サービスは、カタログ内のすべての製品のインデックスを作成します。 インストール時に、 [!DNL Live Search] モジュールが有効になり、 [!DNL Elasticsearch] モジュールが無効になっています。
 
->[!NOTE]
->
->2023 年 3 月の時点で、ライブ検索はバージョン 2.4.4 以降のみをサポートします。
-
 1. 次を使用せずにAdobe Commerce 2.4.4 以降をインストールする [!DNL Live Search].
 
 1. 次の手順で `live-search` package で、コマンドラインから次のコマンドを実行します。
@@ -51,8 +47,6 @@ ht-degree: 0%
    ```bash
    composer require magento/live-search
    ```
-
-   詳しくは、 [!DNL Live Search] [依存関係](#dependencies) が [!DNL Composer].
 
 1. 次のコマンドを実行して無効にします。 [!DNL Elasticsearch] および関連するモジュール、およびインストール [!DNL Live Search]:
 
@@ -104,8 +98,6 @@ ht-degree: 0%
    ```bash
    composer require magento/live-search
    ```
-
-   詳しくは、 [!DNL Live Search] [依存関係](#live-search-dependencies) が [!DNL Composer].
 
 1. 次のコマンドを実行して、 [!DNL Live Search] ストアフロントの検索結果を提供するモジュール。
 

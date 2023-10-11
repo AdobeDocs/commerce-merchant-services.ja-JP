@@ -2,9 +2,9 @@
 title: "クイックツアー"
 description: 「～をちょっと見てみましょう。 [!DNL Live Search] 店の前から」
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 9f045a049ac775ed4673e807ab5e21b8811cde2d
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ URL パラメーターとしてファセットを使用：`http://yourwebsite.co
 ## マーチャンダイジングルール
 
 マーチャンダイジング [ルール](rules.md) 検索にロジックとイベントを追加する if-then 文で買い物体験を形成します。 プロモーションや季節などの期間に合わせて、製品を簡単にブーストまたは埋め込むことができます。
+
+## 検索語のサポート
+
+[!DNL Live Search] コマースをサポート [検索語句のリダイレクト](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). 例えば、「送料」などの語句を検索して、直接送料ページに移動できます。

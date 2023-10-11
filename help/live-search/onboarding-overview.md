@@ -3,9 +3,9 @@ title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
+source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # オンボーディングの概要
 
 を使用し始めるには、以下を実行します。 [!DNL Live Search] Adobe Commerceの場合は、オンボーディングプロセスを完了して、拡張機能をインストールし、API キーを設定して、カタログを同期します。
-
-## オンボーディングフロー
-
-![[!DNL Live Search] オンボーディング図](assets/onboarding-flow.svg)
 
 ## 要件 {#requirements}
 
@@ -72,6 +68,12 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
+## Inventory management
+
+[!DNL Live Search] サポート [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) コマースの機能 ( 以前はマルチソースインベントリ (MSI) と呼ばれていました )。 完全なサポートを有効にするには、 [更新](install.md#update) 依存モジュール `commerce-data-export` をバージョン 102.2.0 以降に変更しました。
+
+[!DNL Live Search] 製品がInventory management内で使用可能かどうかを示すブール値を返しますが、在庫があるソースに関する情報は含まれません。
+
 ## 価格インデクサー
 
 ライブ検索のお客様は、 [SaaS 価格インデクサー](../price-index/index.md)：価格変更の更新と同期時間を高速化します。
@@ -107,7 +109,6 @@ ht-degree: 0%
 ## 現在はサポートされていません
 
 * The [詳細検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 次の場合、モジュールは無効になります： [!DNL Live Search] がインストールされ、ストアフロントフッターの「詳細検索」リンクは削除されます。
-* 製品の価格は含まれません [付加価値税](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT)。
 * [価格帯](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) は、ライブ検索ポップオーバーおよび製品リストページウィジェットではサポートされていません。
 
 ## Cookie
