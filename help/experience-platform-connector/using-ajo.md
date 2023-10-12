@@ -3,9 +3,9 @@ title: Adobe Journey Optimizerを使用して、放棄された買い物かご�
 description: Adobe Journey Optimizerを使用して、買い物かごの放棄済みの電子メールを送信する方法を説明します。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: ea54638b597f5eaae04780498558a8fd46821b52
+source-git-commit: 261416654773470edfa3cc22058cccf92ef29cdb
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -58,17 +58,17 @@ ht-degree: 0%
 
    を探します。 `commerce.checkouts` イベントを参照し、イベントペイロードを確認します。
 
-       &quot;&#39;json&#39;
-       &quot;personID&quot;: &quot;84281643067178465783746543501073369488&quot;,
-       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
-       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
-       &quot;commerce&quot;: {
-       &quot;cart&quot;: {},
-       &quot;checkouts&quot;: {
-       &quot;value&quot;: 1
-       }
-       &quot;&#39;
-   
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
+
    ご覧のように、完全なイベントペイロードには、リッチイベントデータが含まれています。 次の節では、Journey Optimizerでイベントを設定して、 `commerce.checkouts` イベントが Commerce ストアフロントから生成されました。
 
 ## 手順 3:Journey Optimizerでのイベントの設定
