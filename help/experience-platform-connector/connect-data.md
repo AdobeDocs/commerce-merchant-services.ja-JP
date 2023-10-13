@@ -3,9 +3,9 @@ title: コマースデータをAdobe Experience Platformに接続
 description: コマースデータをAdobe Experience Platformに接続する方法を説明します。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2263'
 ht-degree: 0%
 
 ---
@@ -122,53 +122,15 @@ Adobe Commerceは最大 5 年間を収集 [過去の注文データとステー�
 
 Commerce は既に履歴注文データを収集していますが、そのデータをExperience Platformに送信するには、いくつかの手順を完了する必要があります。
 
-このビデオを見て、注文履歴の詳細を確認し、次の手順を実行して、注文履歴の収集と設定を実装します。
+このビデオを見て、注文履歴の詳細を確認し、次の手順を実行して履歴の注文収集を実装します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### 手順 1：履歴注文データ収集をインストールする
-
-履歴注文データの収集を有効にするには、プロジェクトのルートを更新する必要があります [!DNL Composer] `.json` ファイルの内容は次のとおりです。
-
-1. ルートを開く `composer.json` ファイルと検索 `magento/experience-platform-connector`.
-
-1. Adobe Analytics の `require` 「 」セクションで、次のようにバージョン番号を更新します。
-
-   ```json
-   "require": {
-      ...
-      "magento/experience-platform-connector": "^3.0.0",
-      ...
-    }
-   ```
-
-1. B2B マーチャントの場合は、 `.json` ファイルの内容は次のとおりです。
-
-   ```json
-   "require": {
-     ...
-     "magento/experience-platform-connector-b2b": "^2.0.0"
-     ...
-   }
-   ```
-
-1. **保存** `composer.json`. 次に、コマンドラインから次の操作を実行します。
-
-   ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
-   ```
-
-   B2B 商人の場合は次のようになります。
-
-   ```bash
-   composer update magento/experience-platform-connector-b2b --with-dependencies
-   ```
-
-### 手順 2:Adobe Developer Console でプロジェクトを作成する
+### 手順 1:Adobe Developer Console でプロジェクトを作成する
 
 >[!NOTE]
 >
->既にをインストールして有効にしている場合は、 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 拡張機能には、手順 2 および 3 が既に完了しています。
+>既にをインストールして有効にしている場合は、 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 拡張機能の場合は、手順 1 と 2 を既に完了しており、手順 3 に進むことができます。
 
 コマースを認証してExperience PlatformAPI を呼び出すためのプロジェクトをAdobe Developerコンソールで作成します。
 
@@ -182,7 +144,7 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
 
 この手順の結果、次の手順で使用する設定ファイルが作成されます。
 
-### 手順 3：設定ファイルをダウンロードする
+### 手順 2：設定ファイルのダウンロード
 
 をダウンロードします。 [ワークスペース設定ファイル](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). このファイルの内容をコピーし、 **サービスアカウント/資格情報の詳細** コマース管理のページ。
 
@@ -204,7 +166,7 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
 
 1. クリック **設定を保存**.
 
-### 手順 4：注文同期サービスのセットアップ
+### 手順 3：注文同期サービスのセットアップ
 
 開発者資格情報を入力したら、注文同期サービスを設定します。 注文同期サービスは、 [メッセージキューフレームワーク](https://developer.adobe.com/commerce/php/development/components/message-queues/) RabbitMQ これらの手順を完了すると、注文ステータスデータを SaaS に同期できます。SaaS は、Experience Platformに送信される前に必要です。
 
@@ -229,7 +191,7 @@ Commerce は既に履歴注文データを収集していますが、そのデ�
 
 注文同期サービスを有効にすると、「Experience Platformコネクタ」ページで注文の履歴日付範囲を指定できます。
 
-### 手順 5：注文履歴の日付範囲の指定
+### 手順 4：注文履歴の日付範囲の指定
 
 Experience Platformに送信する過去の注文の日付範囲を指定します。
 

@@ -1,17 +1,17 @@
 ---
-title: Adobe CommerceからのAdobe Experience Platform Connector のインストールと設定
-description: Adobe CommerceからAdobe Experience Platform Connector をインストール、設定、更新およびアンインストールする方法について説明します。
+title: Adobe Experience Platform Connector のインストール
+description: Adobe CommerceからAdobe Experience Platform Connector をインストール、更新、アンインストールする方法について説明します。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
-# Experience Platformコネクタのインストールと設定
+# Adobe Experience Platformコネクタのインストール
 
 拡張機能をインストールする前に、 [前提条件を確認する](overview.md#prereqs).
 
@@ -95,7 +95,7 @@ B2B 商人の場合は次のようになります。
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-1.0.0 から 2.0.0 へのメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
+2.0.0 から 3.0.0 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
 
 1. ルートを開く `composer.json` ファイルと検索 `magento/experience-platform-connector`.
 
@@ -104,7 +104,7 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
    ```json
    "require": {
       ...
-      "magento/experience-platform-connector": "^2.0",
+      "magento/experience-platform-connector": "^3.0",
       ...
     }
    ```

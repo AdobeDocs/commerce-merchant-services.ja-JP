@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe CommerceのAdobe Experience Platformコネクタの最新のリリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 5e6cf955080338e00f23eaadeaa0192798126151
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '652'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,8 @@ _2022 年 10 月 13 日_
 _2023 年 10 月 11 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+これはメジャーバージョンのリリースです。 [編集](install.md#update-the-experience-platform-connector) プロジェクトのルート composer.json ファイル。
 
 ![新規](../assets/new.svg)  — に対する一般公開 [履歴注文を送信](connect-data.md#send-historical-order-data) データとステータスをExperience Platformに
 ![新規](../assets/new.svg)  — 次の場合に、OAuth 2.0 のサポートが追加されました。 [設定](connect-data.md#connect-commerce-data-to-adobe-experience-platform) Experience Platformコネクタ
