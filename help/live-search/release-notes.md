@@ -3,9 +3,9 @@ title: "[!DNL Live Search] リリースノート"
 description: 次の最新のリリース情報： [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,18 @@ ht-degree: 0%
 
 +++ホストされたサービスの更新
 
+_2023 年 10 月 13 日_
+
+![新規](../assets/new.svg) コマース管理者は、インデックスの言語を指定できるようになりました。 [!DNL Live Search]. 詳しくは、 [設定](settings.md).
+![修正点](../assets/fix.svg) 「検索ルール」タブの名前が「検索マーチャンダイジング」に変更されました。
+
 _2023 年 6 月 14 日_
 
 ![修正点](../assets/fix.svg) 引用符やアポストロフィなどの一部の文字がランキングの問題を引き起こしていた問題を修正しました。 インデックスを再作成すると、これらの問題が解決します。
 
 _2023 年 4 月 26 日_
 
-![新規](../assets/new.svg) ライブ検索のお客様は、新しい [SaaS 価格インデクサー](../price-index/index.md).
+![新規](../assets/new.svg) [!DNL Live Search] お客様は、 [SaaS 価格インデクサー](../price-index/index.md).
 
 +++
 

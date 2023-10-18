@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] インデックス作成»'
 description: «学ぶ方法 [!DNL Live Search] 製品属性プロパティのインデックスを作成します。"
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ The [!DNL Live Search] API を使用すると、クライアントは [storefron
 ## パイプラインのインデックス作成
 
 クライアントがストアフロントから検索サービスを呼び出して、（フィルタリング可能で並べ替え可能な）インデックスメタデータを取得します。 検索可能な製品属性のみ、 *レイヤーナビゲーションで使用* プロパティをに設定 `Filterable (with results)` および *製品リストでの並べ替えに使用* に設定 `Yes` は、検索サービスによって呼び出されます。
-動的クエリを作成するには、検索可能な属性とその重みを検索サービスが把握しておく必要があります。 [!DNL Live Search] は、Adobe Commerceの検索重み付けに従います（1 ～ 10、10 が最も優先度が高い場所）。 カタログサービスと同期および共有されるデータのリストは、次の場所で定義されているスキーマにあります。
+動的クエリを作成するには、検索可能な属性とその属性を検索サービスが把握しておく必要があります [重み](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] は、Adobe Commerceの検索重み付けに従います（1 ～ 10、10 が最も優先度が高い場所）。 カタログサービスと同期および共有されるデータのリストは、次の場所で定義されているスキーマにあります。
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 

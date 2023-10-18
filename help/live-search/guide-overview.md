@@ -3,16 +3,16 @@ title: "[!DNL Live Search] ガイドの概要"
 description: '"[!DNL Live Search] Adobe Commerceからは、素早く、超関連性が高く、直感的な検索エクスペリエンスを提供します。」'
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '217'
 ht-degree: 2%
 
 ---
 
 # [!DNL Live Search] ガイドの概要
 
-[!DNL Live Search] Adobe Commerceからは、Adobe Commerceでの迅速で超関連性の高い直感的な検索エクスペリエンスを、追加料金なしで提供します。 [!DNL Live Search] 次を使用： [Adobe Sensei](https://www.adobe.com/sensei.html) は、人工知能と機械学習アルゴリズムを使用して、集計された訪問者データを深く分析します。 このデータをAdobe Commerceカタログと組み合わせると、魅力的で関連性が高く、パーソナライズされたショッピングエクスペリエンスが得られます。 スピード、関連性、使いやすさに重点を置いて [!DNL Live Search] 買い物客と商人の両方にとって、大きな変革をもたらすものです。
+[!DNL Live Search] Adobe Commerceの場合は、迅速で関連性の高い直感的な検索エクスペリエンスを追加費用なしで提供します。 [!DNL Live Search] 次を使用： [Adobe Sensei](https://www.adobe.com/sensei.html) は、人工知能と機械学習アルゴリズムを使用して、集計された訪問者データを深く分析します。 このデータをAdobe Commerceカタログと組み合わせると、関連性の高いパーソナライズされたショッピングエクスペリエンスが得られます。
 
 [!DNL Live Search] には、管理者向けの次の 3 つの領域があります。
 
@@ -23,9 +23,9 @@ ht-degree: 2%
 ## その他のドキュメント
 
 | ガイド | 説明 |
-|--- |--- |
-| Adobe Commerce 2.4 ユーザーガイド | Adobe CommerceとMagento Open Sourceの両方に関するマーチャント中心のドキュメント |
-| Adobe Commerce 2.4 開発者ガイド | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けドキュメント |
+|------ | ----------- |
+| [Adobe Commerce 2.4 ユーザーガイド](https://experienceleague.adobe.com/docs/commerce.html) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャント中心のドキュメント |
+| [Adobe Commerce 2.4 開発者ガイド](https://developer.adobe.com/commerce/docs) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けドキュメント |
 
 ## サポート
 

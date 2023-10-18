@@ -3,9 +3,9 @@ title: 'コマース設定および [!DNL Live Search] '
 description: 以下に、Adobe Commerceの設定を示します。 [!DNL Live Search] 読み取り可能。
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 694a1c91425f246e497de50530d02f09a3093953
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | コマース構成設定 | ポップオーバーでサポート | アダプタでサポート |
 |---|---|---|
-| 店舗/設定/カタログ/カタログ/カタログ検索/ページごとのすべての製品の長さを許可 | はい。 最大 500 製品 | はい。 最大 500 製品 |
+| 店舗/設定/カタログ/カタログ/カタログ検索/ページの長さごとにすべての製品を許可 | はい。 最大 500 製品 | はい。 最大 500 製品 |
 | ストア/設定/カタログ/カタログ/カタログ検索/最小クエリ長 | はい | はい |
 | ストア/設定/カタログ/カタログ/カタログ検索/ページごとの製品（グリッドの許可値） | はい | はい |
 | 店舗/設定/カタログ/カタログ/カタログ検索/ページごとの製品（グリッドのデフォルト値） | はい。 最大 500 製品 | はい。 最大 500 製品 |
@@ -27,6 +27,10 @@ ht-degree: 0%
 | 「店舗」>「構成」>「一般」>「通貨設定」>「通貨オプション」>「基準通貨」 | はい | はい |
 
 ウィジェットの製品リストページとポップオーバーの価格が、設定済みの通貨レートを使用してデフォルトの表示通貨に変換されるようになりました。
+
+## 検索語句
+
+[!DNL Live Search] サポート [検索語句のリダイレクト](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) Adobe Commerceがルーティングを処理する実装の場合：Luma とその他の php ベースのテーマ。
 
 ## サポートされていない設定値
 

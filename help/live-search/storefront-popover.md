@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: 「 [!DNL Live Search storefront popover] は、推奨される製品とサムネールを動的に返します。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ ht-degree: 0%
 
 ## 検索可能な属性
 
-ターゲットを絞り込んだ結果を生成するには、 [検索可能な](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) 製品属性。 適切性を確保するために、明確で簡潔な意味を持つコンテンツが含まれている場合にのみ属性を検索可能にします。 より正確でなく長いテキストを含む属性（例： ）を使用しないでください。 `description`は、デフォルトで検索が有効になっていますが、検索結果の精度を下げることができます。 例えば、ある人が「ショート」を検索し、説明に「ショートスリーブ」という語句が含まれるシャツがある場合、シャツは検索結果に含まれます。
+ターゲットを絞り込んだ結果を生成するには、 [検索可能な](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) 製品属性。 適切性を確保するために、明確で簡潔な意味を持つコンテンツが含まれている場合にのみ属性を検索可能にします。 より正確でなく長いテキストを含む属性（例： ）を使用しないでください。 `description`は、デフォルトで検索が有効になっていますが、検索結果の精度を下げることができます。
+例えば、ある人が「ショート」を検索し、説明に「ショートスリーブ」という語句が含まれるシャツがある場合、シャツは検索結果に含まれます。
+
+[!DNL Live Search] また、 [重み](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) 製品属性の値 (Adobe Commerce内で設定される ) を含む ) に対して使用されます。 重みが大きい属性は、検索結果内で高く表示されます。
 
 次の属性は常に検索可能です。
 

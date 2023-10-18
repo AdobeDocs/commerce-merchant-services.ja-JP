@@ -1,17 +1,17 @@
 ---
-title: "検索ルール"
-description: '"[!DNL Live Search] ルールは、ロジックとアクションを組み合わせて、買い物体験を形成します。」'
+title: 「マーチャンダイジングを検索」
+description: '"[!DNL Live Search] マーチャンダイジングルールは、ロジックとアクションを組み合わせて、買い物エクスペリエンスを形成します。」'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
-# 検索ルール
+# マーチャンダイジングを検索
 
-[!DNL Live Search] ルールは、ロジックとアクションを組み合わせて、ストア内で買い物客の検索エクスペリエンスを形成します。 ルールを使用して、ビジネス目標に合わせて検索結果をリアルタイムに調整し、製品のブースト、埋め込み、ピン留めまたは非表示を行うことができます。
+検索マーチャンダイジングとは、ロジックとアクションを組み合わせて、ストア内の買い物客の検索エクスペリエンスを形成する一連のルールを指します。 マーチャンダイジングルールを使用して、ビジネス目標に合わせて検索結果をリアルタイムに調整し、製品のブースト、埋め込み、ピン留めまたは非表示を行うことができます。
 
 各ルールには、次の 3 つの主要なコンポーネントがあります。
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 * プレビュー中のルールに `query is` 条件、および後続のアクティブな、 `query is` 条件が見つかった場合、 `query is` ルールが適用されます。
 * プレビュー中のルールに `query is` 条件と他の規則が `query is` 条件が見つかったら、プレビュー中のルールが適用されます。
 
-## カテゴリルールとカテゴリ製品の割り当て
+## カテゴリマーチャンダイジングとカテゴリ製品割り当て
 
-[!DNL Live Search] では、カテゴリでフィルタリングできます。
+[!DNL Live Search] では、カテゴリでフィルタリングできます。 詳しくは、 [カテゴリマーチャンダイジング](category-merch.md) を参照してください。
 ただし、Adobe Commerceでは、 [カテゴリ製品の割り当て](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). このタイプのカテゴリは、実行時に作成され、カテゴリデータベースに存在しません。 したがって [!DNL Live Search] このカテゴリの種類を読み取ったり使用したりできません。

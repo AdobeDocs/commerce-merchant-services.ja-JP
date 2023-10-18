@@ -1,10 +1,10 @@
 ---
 title: "ルールを追加"
-description: 「作成方法を学ぶ [!DNL Live Search] ルール」
+description: 「検索マーチャンダイジングルールを作成する方法を説明します。」
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 1. 管理者で、に移動します。 **マーケティング** / SEO と検索 > **[!DNL Live Search]**.
 1. を設定します。 **範囲** を識別する [ストア表示](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) ルールを適用する場所。
-1. 次をクリック： **検索ルール** タブをクリックします。
+1. 次をクリック： **マーチャンダイジングを検索** タブをクリックします。
 1. クリック **ルールを追加** をクリックして、ルールエディターを起動します。
 
 ## 条件

@@ -4,9 +4,9 @@ user-guide-description: このガイドでは、 [!DNL Live Search] Adobe Commer
 breadcrumb-title: 「[!DNL Live Search] ガイド」
 role: Admin
 feature: Services, Search
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '98'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 9%
    - [ストアフロント [!DNL Popover]](storefront-popover.md)
    - [スタイル設定 [!DNL Popover] 要素](storefront-popover-styling.md)
 - [!DNL Live Search] 管理者{#live-search-admin}
-   - [カテゴリマーチャンダイジング](category-merch.md)
    - [コマース設定](configuration.md)
    - ファセット {#facets}
       - [概要](facets.md)
@@ -35,9 +34,10 @@ ht-degree: 9%
       - [ファセットを管理](facets-manage.md)
    - [インデックス作成](indexing.md)
    - [パフォーマンス](performance.md)
-   - ルール {#rules}
+   - [カテゴリマーチャンダイジング](category-merch.md)
+   - マーチャンダイジングを検索 {#rules}
       - [概要](rules.md)
-      - [ルールワークスペース](rules-workspace.md)
+      - [マーチャンダイジングワークスペースの検索](rules-workspace.md)
       - [ルールを追加](rules-add.md)
       - [ルールを管理](rules-manage.md)
    - [設定](settings.md)
