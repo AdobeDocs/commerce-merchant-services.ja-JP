@@ -3,10 +3,10 @@ title: '[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerceの
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 4e1e50aad831f04c0fee105e4c45a28ff5ca65af
+source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 0%
+source-wordcount: '548'
+ht-degree: 1%
 
 ---
 
@@ -22,14 +22,15 @@ ht-degree: 0%
 
 ## 現在のメジャーバージョン
 
-### V1.12 リリース
+### V1.13 リリース
 
-_2023 年 9 月 20 日_
+_2023 年 10 月 13 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg) カタログサービスは現在、を使用しています [SaaS 価格のインデックス作成](../price-index/index.md).
-![修正点](../assets/fix.svg) このリリースには、サービス側のバグ修正と改善が含まれています。
+![新規](../assets/new.svg) カタログサービスは、 `inStock` 製品バリアントのフラグ。
+![新規](../assets/new.svg) `urlKey` および `externalId` がGraphQLスキーマに追加されました。
+![新規](../assets/new.svg) カタログサービスはクリーンアップ API と互換性があるようになりました。
 
 #### 既知の制限事項
 
@@ -49,6 +50,15 @@ API Mesh と Core GraphQL API を使用して、次の制限を解決できま�
 ## 以前のバージョン
 
 +++ 以前のバージョン
+
+### V1.12 リリース
+
+_2023 年 9 月 20 日_
+
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+
+![新規](../assets/new.svg) カタログサービスは現在、を使用しています [SaaS 価格のインデックス作成](../price-index/index.md).
+![修正点](../assets/fix.svg) このリリースには、サービス側のバグ修正と改善が含まれています。
 
 ### V1.11 リリース
 
