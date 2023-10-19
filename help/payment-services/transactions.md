@@ -4,9 +4,9 @@ description: 「トランザクション」レポートを使用して、トラ�
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
+source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,8 @@ ht-degree: 0%
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. 次をクリック： **[!UICONTROL Filter]** セレクター。
 1. 切り替え _[!UICONTROL Transaction Result]_選択した注文トランザクションのレポート結果のみを表示するオプション。
+1. を選択します。 _[!UICONTROL Card Type]_選択したカードタイプのレポート結果を表示します。 支払い処理者がカードの種類を識別できない場合は、詳細情報を含むツールチップが表示されます。
+1. を選択します。 _[!UICONTROL Card Brand]_選択したカードブランドのレポート結果を表示します。 支払い処理者がカードのブランドを識別できない場合は、詳細情報を含むツールチップが表示されます。
 1. 切り替え _[!UICONTROL Payment Method]_選択した支払い方法のレポート結果のみを表示するオプションです。
 1. を入力します。 _最小注文額_ または _最大注文額_ をクリックして、その注文金額範囲内のレポート結果を確認します。
 1. を入力します。 _[!UICONTROL Order ID]_特定のトランザクションを検索する場合。

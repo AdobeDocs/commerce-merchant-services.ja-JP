@@ -4,13 +4,13 @@ description: 次の自動不正保護を有効にする： [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
-source-git-commit: 400d1f8a384fceebcd13e9496f8e218e694d2752
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 480b35fbc57b8528dbc305aa7db52483ba49d98c
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # 信頼できる不正保護
 
@@ -18,15 +18,9 @@ ht-degree: 0%
 
 Adobe Commerceは、Signifyd バージョン 5.4.0 以降をサポートしています。 [!DNL Payment Services] は、pre-auth および post-auth の署名フローをサポートします。
 
+ザシグニフィド/[!DNL Payment Services] 統合では、クレジットカード、デビットカード、ヴォールトカード、Admin、PayPal およびApple Pay の支払い方法でのチェックアウトを提供します。 Signifyd は、支払いサービスと Signifyd の間では、取引の一部の詳細が共有されませんが、すべての支払い方法に対して包括的なリスクカバレッジを提供し、最大限の保護を確保します。
+
 詳しくは、 [署名ドキュメント](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) 拡張機能のインストールと設定について説明します。
-
-## 統合の制限
-
-現在、Signifyd との統合には、次の制限が適用されます。 [!DNL Payment Services]:
-
-* ザシグニフィド/[!DNL Payment Services] 統合は、次のみをサポートします [クレジットカードフィールド](../payment-services/payments-options.md#credit-card-fields) (PayPal の支払いボタンやApple Pay ではありません )。 [!DNL Payment Services] は、 PayPal の支払いボタンおよびApple Pay を介して受け取った注文データを Signifyd に送信しますが、統合では、クレジットカードフィールドを介して行われた注文の詳細のみが提供されます。
-* Signifyd は、商人による買い物客への管理での注文をサポートしていません。
-* 署名は、 [跳ね上げられたクレジットカード](../payment-services/vaulting.md).
 
 ## オンボーディング
 
