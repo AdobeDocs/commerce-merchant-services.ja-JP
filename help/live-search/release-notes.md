@@ -3,9 +3,9 @@ title: "[!DNL Live Search] リリースノート"
 description: 次の最新のリリース情報： [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 67b4f24828dfdda6bd166791d6c36922294b402f
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,7 @@ _2023 年 9 月 16 日_
 ![新規](../assets/new.svg) ルールを追加する際に、カテゴリ名で検索できるようになりました
 ![新規](../assets/new.svg) カテゴリツリー表示を使用すると、ルールが適用されたカテゴリを表示できるようになりました。
 ![新規](../assets/new.svg) カテゴリプレビューには、選択したカテゴリのみが表示されます。
+![新規](../assets/new.svg) AEM CIF [ポップオーバーウィジェット](https://github.com/adobe/aem-cif-guides-venia/pull/319) および [PLP ウィジェット](https://github.com/adobe/aem-cif-guides-venia/pull/320) コンポーネントを使用すると、AEMサイトで [!DNL Live Search].
 
 ### 更新
 
