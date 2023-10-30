@@ -3,9 +3,9 @@ title: "[!DNL Live Search] リリースノート"
 description: 次の最新のリリース情報： [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 67b4f24828dfdda6bd166791d6c36922294b402f
+source-git-commit: a3f89b74f3cafb855e39b410c1ab60e09d789da0
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ ht-degree: 0%
 
 これらのノートでは、バージョン管理されたリリース以外で公開された更新や、ホストされたサービスの改善について説明します。
 
-+++ホストされたサービスの更新
+_2023 年 10 月 27 日_
+
+![新規](../assets/new.svg) The [!DNL Live Search] PLP ウィジェットでカラースウォッチがサポートされるようになりました。
 
 _2023 年 10 月 13 日_
 
@@ -38,8 +40,6 @@ _2023 年 6 月 14 日_
 _2023 年 4 月 26 日_
 
 ![新規](../assets/new.svg) [!DNL Live Search] お客様は、 [SaaS 価格インデクサー](../price-index/index.md).
-
-+++
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
