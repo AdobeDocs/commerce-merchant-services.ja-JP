@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerceの
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 59de14773849dfd996b6eac115ed821342ccd48d
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ _2023 年 7 月 19 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg) カタログサービスは、 [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL製品Recommendationsに対するクエリ。
+![新規](../assets/new.svg) カタログサービスは、 [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) GraphQL製品Recommendationsに対するクエリ。
 
 ### V1.10 リリース
 
@@ -90,7 +90,7 @@ _2023 年 3 月 29 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg) スウォッチを [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) クエリ。
+![新規](../assets/new.svg) スウォッチを [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) クエリ。
 ![新規](../assets/new.svg) を取得する機能を追加しました。 `entityId` using [API メッシュ](mesh.md).
 
 ### V1.5 リリース
@@ -99,7 +99,7 @@ _2023 年 3 月 7 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg) 追加済み [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL機能。
+![新規](../assets/new.svg) 追加済み [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) GraphQL機能。
 ![修正点](../assets/fix.svg) パフォーマンスと API の拡張性が向上しました。
 
 ### V1.4 リリース

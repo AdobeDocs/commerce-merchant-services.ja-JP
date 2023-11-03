@@ -3,9 +3,9 @@ title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法を学ぶ [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 0%
 
    の後にファセットを追加できます。 `cron` 製品および属性フィードを実行し、属性メタデータをに書き出します。 [!DNL Live Search] サービス。
 
-1. データのインデックスが作成され、同期されるまで 1 時間以上待ちます。 次に、 [GraphQLプレイグラウンド](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) をデフォルトのクエリに置き換えて、以下を検証します。
+1. データのインデックスが作成され、同期されるまで 1 時間以上待ちます。 次に、 [GraphQLプレイグラウンド](https://developer.adobe.com/commerce/services/graphql/live-search/) をデフォルトのクエリに置き換えて、以下を検証します。
 
    * 返される製品数は、ストア表示で期待される数に近い数です。
    * ファセットが返されます。

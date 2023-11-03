@@ -2,7 +2,7 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -139,7 +139,7 @@ The [!DNL Catalog Service] API には、HTTPS 経由でのPOSTコマンドを使
 
 API キーを取得するには、管理の「 Commerce Service Connector 」領域に移動し、公開 API キーをコピーします。
 
-詳しくは、 [GraphQLドキュメント](https://developer.adobe.com/commerce/webapi/graphql/) を参照して、API リクエストの生成に必要なヘッダーをクエリして送信する方法を確認してください。
+詳しくは、 [GraphQLドキュメント](https://developer.adobe.com/commerce/services/graphql/) を参照して、API リクエストの生成に必要なヘッダーをクエリして送信する方法を確認してください。
 
 許可する手順は次のとおりです。 [!DNL Catalog Service] ファイアウォールを通じて、 `commerce.adobe.io` をに追許可リストに加える加します。
 

@@ -5,10 +5,10 @@ breadcrumb-title: 「[!DNL Catalog Service] ガイド」
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: c256252ea58b61e511034cd33d81e004acff96d2
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '79'
-ht-degree: 7%
+source-wordcount: '74'
+ht-degree: 8%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 7%
 - [カタログサービスと API メッシュ](mesh.md)
 - [フィード取り込みサービス（ベータ版）](feed-ingestion.md)
 - GraphQLクエリ {#graphql}
-   - [カテゴリクエリ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)
-   - [製品クエリ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
-   - [productSearch クエリ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/)
-   - [refineProduct クエリ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)
+   - [カテゴリクエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
+   - [製品クエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/products/)
+   - [productSearch クエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/product-search/)
+   - [refineProduct クエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/refine-product/)
 - [リリースノート](release-notes.md)
