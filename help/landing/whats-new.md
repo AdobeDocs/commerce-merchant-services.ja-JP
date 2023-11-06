@@ -5,16 +5,16 @@ seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
 recommendations: noDisplay
-source-git-commit: 8a290ae260e50b19bab517280b78ee95c9e7668b
+source-git-commit: 4dd93d38caffa1507a55f2b4f74b63a5aff9229d
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '63'
 ht-degree: 0%
 
 ---
 
 # Commerce Services ドキュメントの新機能
 
-次の項目は、ドキュメントに対する最近の変更です。
+次の項目は、ドキュメントの最近の主な変更点です。
 
 | サービス | 変更 | タイプ |
 | -- | -- | -- |
