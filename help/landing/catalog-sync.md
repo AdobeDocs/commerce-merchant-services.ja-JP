@@ -3,9 +3,9 @@ title: カタログ同期
 description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,6 @@ Adobe Commerceは、インデクサーを使用してカタログデータをテ
 1. Adobe Analytics の _データの再同期_ セクションで、 [!UICONTROL Resync].
 
    [!DNL Commerce] 次のスケジュール済み同期ウィンドウ中にカタログを同期します。 カタログのサイズによっては、この操作に時間がかかる場合があります。
-
 
 ## 同期済みカタログ製品
 
@@ -193,7 +192,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 #### プロファイル
 
-特定のフィードの再インデックス処理に不当な時間がかかる場合は、プロファイラーを実行して、サポートチームに役立つ追加データを収集します。 これをおこなうには、 `EXPORTER_PROFILER=1`環境変数：
+特定のフィードの再インデックス処理に不合理な時間がかかる場合は、プロファイラを実行して、サポートチームに役立つ追加データを収集します。 これをおこなうには、 `EXPORTER_PROFILER=1`環境変数：
 
 ```bash
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products

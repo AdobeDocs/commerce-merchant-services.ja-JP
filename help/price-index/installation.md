@@ -3,11 +3,11 @@ title: SaaS 価格インデックス作成手動インストール
 description: 古いバージョン用の SaaS 価格インデックス作成のインストール
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
+source-git-commit: b2ebf26c9a34e5e2e08b7adbabcc780f24363e3c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 # SaaS 価格インデックス作成手動インストール
 
 SaaS Price Indexing は、すぐに使用でき、サポート対象 [最新バージョン](index.md#Requirements) （コマースサービス）。
-最新バージョンがなく、Adobe Commerceインスタンスで SaaS Price Indexing を有効にする場合は、このミニガイドを使用してください。
+最新バージョンがなく、Adobe Commerceインスタンスで SaaS Price Indexing を有効にする場合は、このガイドを使用します。
 
 ## 前提条件
 
 * Adobe Commerce 2.4.4 以降
-* 次の SaaS サービスの少なくとも 1 つがインストールされている。
+* 次の SaaS サービスのうち少なくとも 1 つがインストールされている。
 
    * [カタログサービス](../catalog-service/overview.md)
    * [ライブ検索](../live-search/guide-overview.md)
@@ -29,7 +29,7 @@ SaaS Price Indexing は、すぐに使用でき、サポート対象 [最新バ�
 ## 必要なモジュールのインストール
 
 設定によっては、インストールプロセスが少し異なる場合があります。
-新しいフィードとサポートコードを追加する拡張機能があります。
+新しいフィードおよびサポートコードを追加する拡張機能があり、デフォルトの価格フィードを削除する拡張機能があります。
 
 1. 以下のモジュールを `composer.json` ファイル：
 
@@ -52,7 +52,6 @@ SaaS Price Indexing は、すぐに使用でき、サポート対象 [最新バ�
 * `scopesCustomerGroup`  — サービスに顧客グループを配信します
 * `scopesWebsite`  — サービスに Web サイト、ストアグループ、ストア表示を配信します
 
-
 1. 新しいフィードを「スケジュールに従って更新」モードに設定します。
 
    ```bash
@@ -69,8 +68,7 @@ SaaS Price Indexing は、すぐに使用でき、サポート対象 [最新バ�
 
 必要に応じて、上記のインデクサーを手動で実行します。 それ以外の場合は、標準の同期プロセスでデータが更新されます。 詳しくは、 [カタログ同期](../landing/catalog-sync.md) サービス。
 
-
-Live Search およびカタログアダプタを設定するには、 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 説明。
+Luma とAdobe Commerce Core GraphQLのユーザーは、 [`Catalog Adapter`](catalog-adapter.md) Luma と Core GraphQl の互換性を提供し、Adobe Commerce Product Price インデクサーを無効にする拡張機能です。
 
 ## 注意事項
 

@@ -3,9 +3,9 @@ title: カタログアダプタ拡張
 description: カタログアダプタを使用してコマースサービスから価格をレンダリングする
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: 6b578e7113c278a05a64f2db5e032bccc4a9580a
+source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe Commerce Product Price Indexer は無効になっており、これらの�
 ## 要件
 
 * Adobe Commerce 2.4.4 以降
-* 次の Commerce Services のいずれかがインストールされています。
+* 次の Commerce Services の両方がインストールされている。
 
    * [カタログサービス](../catalog-service/overview.md)
    * [ライブ検索](../live-search/guide-overview.md)
@@ -34,14 +34,14 @@ Adobe Commerce Product Price Indexer は無効になっており、これらの�
 composer require adobe-commerce/catalog-adapter
 ```
 
-## Adobe Commerce Product Price インデクサーの再有効化
+## Adobe Commerce Product Price インデクサーを再有効化
 
 デフォルトのAdobe Commerce Product Price インデクサーに依存するサードパーティアプリケーションがある場合は、次のコマンドを使用して再度有効にできます。
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# reindex Product Price indexer 
+# re-index Product Price indexer 
 bin/magento index:reindex catalog_product_price
 ```
 
@@ -78,4 +78,4 @@ composer require magento/module-price-indexer-disabler
 * 必要なサービスがインストールされたヘッドレスコマースインスタンス ( ライブ検索、製品Recommendations、カタログサービス ) を持つマーチャント
 * デフォルトのAdobe Commerce製品価格のインデクサーに依存しない
 
-1. カタログアダプタパッケージから「価格無効」をインストールします。
+1. をインストールします。 `magento/module-price-indexer-disabler` モジュールをカタログアダプタパッケージから取得します。
