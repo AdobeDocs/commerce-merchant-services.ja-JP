@@ -4,9 +4,9 @@ description: SaaS 価格インデックス作成を使用したパフォーマ�
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
+source-git-commit: d9a9137faac12cc1c42c1b41afbd9794dcb29189
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ SaaS 価格インデックス作成は、Adobe Commerceサービスをご利用�
 
    * [カタログサービス](../catalog-service/overview.md)
    * [ライブ検索](../live-search/guide-overview.md)
+   * [製品Recommendations](../product-recommendations/guide-overview.md)
 
 Luma とAdobe Commerce Core GraphQLのユーザーは、 [`catalog-adapter`](catalog-adapter.md) Luma と Core GraphQl の互換性を提供し、Adobe Commerce Product Price インデクサーを無効にする拡張機能です。
 
