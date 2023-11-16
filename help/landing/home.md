@@ -6,7 +6,7 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: ドキュメント
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
+source-git-commit: 9558367bb80e04af1d55be63fcf4f7382e662436
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -85,13 +85,13 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
    </tr>
 </table>
 
-## データサービス
+## 統合サービス
 
 <table>
 <tr>
   <td valign="top" width="200">
-      <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
+      <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html"><strong>[!DNL Data Connection]</strong></a>  
     <div>Adobe CommerceとAdobe Experience Platform Edge の間の接続を活用して、Adobe AnalyticsやAdobe Targetなどの他のAdobe Experience Cloud製品用のコマースデータを利用します。</div>
   </td>
    </tr>
@@ -105,7 +105,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
    </tr>
 </table>
 
-## 統合サービス
+## データサービス
 
 <table>
 <tr>
