@@ -3,9 +3,9 @@ title: テスト用サンドボックスの設定
 description: PayPal Sandbox アカウントを使用して、 [!DNL Payment Services] テストモードで使用します。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Sandbox アカウントをリセットするには：
 
 ## 連絡先の電話番号を有効にする
 
-連絡先電話番号を使用すると、PayPal が顧客から収集した連絡先電話番号を取得できます。 PayPal は常に PayPal アカウント所有者から連絡先の電話番号を収集し、本人確認に役立ち、顧客のアカウントに関する問題を解決したり、達成プロセスを完了したりするために連絡を取ります。 ただし、PayPal では、商人に直接連絡先の電話番号を使用することは推奨されません。これは、販売に悪影響を与える可能性があるためです。 詳しくは、 [PayPal 連絡先の電話番号を取得](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) ドキュメントを参照してください。
+連絡先電話番号を使用すると、PayPal が顧客から収集した連絡先電話番号を取得できます。 PayPal は常に PayPal アカウント所有者から連絡先の電話番号を収集し、本人確認に役立ち、顧客のアカウントに関する問題を解決したり、達成プロセスを完了したりするために連絡を取ります。 ただし、PayPal では、商人に直接連絡先の電話番号を使用することは推奨されません。これは、販売に悪影響を与える可能性があるためです。 詳しくは、 [PayPal 連絡先の電話番号を取得](https://www.sandbox.paypal.com/businessmanage/preferences/website) ドキュメントを参照してください。
 
 この機能は次のとおりです。 `off` デフォルトでは。 この機能を有効にすると、店舗管理者は、顧客がチェックアウトページの外部で「ブランド化されたチェックアウト」フローを完了したときに、電話番号を確認できます。
 
