@@ -3,9 +3,9 @@ title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
+source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,22 @@ ht-degree: 0%
 ### シノニム
 
 * [!DNL Live Search] は、1 つのストアビューにつき最大 200 個のシノニムを管理できます。
+
+## 言語サポート
+
+[!DNL Live Search] ウィジェットは、次の言語をサポートしています。
+
+* en_US（デフォルト）
+* de_DE
+* es_MX
+* fr_FR
+* it_IT
+* ja_JA
+* nl_NL
+* no_NO
+* pt_PT
+
+ウィジェットがコマース管理者の言語設定 (_ストア_ /設定/ _設定_ > _一般_ > 国のオプション ) は、サポートされている言語に一致します。デフォルトでは、その言語が使用されます。 それ以外の場合、ウィジェットはデフォルトで英語に設定されます。
 
 ## カテゴリマーチャンダイジング
 

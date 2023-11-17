@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: 「 [!DNL Live Search storefront popover] は、推奨される製品とサムネールを動的に返します。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,6 @@ ht-degree: 0%
 
 The [Adobe Commerceのカタログサービス](../catalog-service/overview.md) 拡張機能は、豊富なビューモデルカタログデータを提供し、製品関連のストアフロントエクスペリエンスをすばやく完全にレンダリングできます。 カタログサービスをライブ検索と組み合わせて使用すると、ネイティブ拡張機能で現在サポートされていない機能を提供できます。
 
-* カラースウォッチ
 * 拡張属性
 * その他の製品情報を取り込むことができます
 

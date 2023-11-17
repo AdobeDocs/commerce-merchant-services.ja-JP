@@ -3,7 +3,7 @@ title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法を学ぶ [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -28,17 +28,21 @@ ht-degree: 0%
 
 1. 要件を満たすオンボーディング方法を選択し、指示に従います。
 
-   * [方法 1](#method-1)：を使用せずにインストール [!DNL Elasticsearch]
-   * [方法 2](#method-2)：を使用してインストール [!DNL Elasticsearch] （ダウンタイムなし）
+   * [方法 1](#method-1)：を使用せずにインストール [!DNL OpenSearch]
+   * [方法 2](#method-2)：を使用してインストール [!DNL OpenSearch] （ダウンタイムなし）
 
-## 方法 1：インストールをElasticsearchなしで行う {#method-1}
+>[!IMPORTANT]
+>
+>2023 年 8 月のElasticsearch7 のサポート終了のお知らせにより、すべてのAdobe Commerceのお客様は OpenSearch 2.x 検索エンジンに移行することをお勧めします。 製品のアップグレード中に検索エンジンを移行する方法については、 [OpenSearch への移行](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) （内） _アップグレードガイド_.
+
+## 方法 1:OpenSearch を使用せずにインストールする {#method-1}
 
 このオンボーディング方法は、 [!DNL Live Search] からに変更します。
 
 * 新規 [!DNL Commerce] インストール
 * ステージング環境
 
-このシナリオでは、ストアフロント操作は、 [!DNL Live Search] サービスは、カタログ内のすべての製品のインデックスを作成します。 インストール時に、 [!DNL Live Search] モジュールが有効になり、 [!DNL Elasticsearch] モジュールが無効になっています。
+このシナリオでは、ストアフロント操作は、 [!DNL Live Search] サービスは、カタログ内のすべての製品のインデックスを作成します。 インストール時に、 [!DNL Live Search] モジュールが有効になり、 [!DNL OpenSearch] モジュールが無効になっています。
 
 1. 次を使用せずにAdobe Commerce 2.4.4 以降をインストールする [!DNL Live Search].
 
@@ -48,7 +52,7 @@ ht-degree: 0%
    composer require magento/live-search
    ```
 
-1. 次のコマンドを実行して無効にします。 [!DNL Elasticsearch] および関連するモジュール、およびインストール [!DNL Live Search]:
+1. 次のコマンドを実行して無効にします。 [!DNL OpenSearch] および関連するモジュール、およびインストール [!DNL Live Search]:
 
    ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
@@ -81,17 +85,13 @@ ht-degree: 0%
 
 1. [テスト](#test-the-connection) ストアフロントからの接続。
 
-## 方法 2：インストールとElasticsearch {#method-2}
-
->[!IMPORTANT]
->
->2023 年 8 月のElasticsearch7 のサポート終了のお知らせにより、すべてのAdobe Commerceのお客様は OpenSearch 2.x 検索エンジンに移行することをお勧めします。 製品のアップグレード中に検索エンジンを移行する方法については、 [OpenSearch への移行](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) （内） _アップグレードガイド_.
+## 方法 2:OpenSearch を使用してインストールする {#method-2}
 
 このオンボーディング方法は、 [!DNL Live Search] 移動先：
 
 * 既存の実稼動 [!DNL Commerce] インストール
 
-このシナリオでは、 [!DNL Elasticsearch] ストアフロントからの検索リクエストを一時的に管理し、 [!DNL Live Search] サービスは、通常のストアフロント操作を中断することなく、バックグラウンドですべての製品のインデックスを作成します。 [!DNL Elasticsearch] が無効で、 [!DNL Live Search] すべてのカタログデータのインデックスが作成され、同期された後に有効になります。
+このシナリオでは、 [!DNL OpenSearch] ストアフロントからの検索リクエストを一時的に管理し、 [!DNL Live Search] サービスは、通常のストアフロント操作を中断することなく、バックグラウンドですべての製品のインデックスを作成します。 [!DNL OpenSearch] が無効で、 [!DNL Live Search] すべてのカタログデータのインデックスが作成され、同期された後に有効になります。
 
 1. 次の手順で `live-search` package で、コマンドラインから次のコマンドを実行します。
 
@@ -131,7 +131,7 @@ ht-degree: 0%
    * 返される製品数は、ストア表示で期待される数に近い数です。
    * ファセットが返されます。
 
-1. 次のコマンドを実行してを有効にします。 [!DNL Live Search] モジュール、無効 [!DNL Elasticsearch]、およびを実行します。 `setup`.
+1. 次のコマンドを実行してを有効にします。 [!DNL Live Search] モジュール、無効 [!DNL OpenSearch]、およびを実行します。 `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
@@ -209,9 +209,9 @@ composer show magento/module-live-search | grep version
 composer update magento/live-search --with-dependencies
 ```
 
-2.0.0 から 3.1.1 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
+3.1.1 から 4.0.0 のようなメジャーバージョンに更新するには、プロジェクトのルートを編集します。 [!DNL Composer] `.json` ファイルの内容は次のとおりです。
 
-1. 現在 `magento/live-search` のバージョンが `2.0.3` または以下のバージョンにアップグレードしている `3.0.0` 以降の場合は、アップグレードの前に次のコマンドを実行します。
+1. 現在 `magento/live-search` のバージョンが `3.1.1` または以下のバージョンにアップグレードしている `4.0.0` 以降の場合は、アップグレードの前に次のコマンドを実行します。
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +230,7 @@ composer update magento/live-search --with-dependencies
    ```json
    "require": {
       ...
-      "magento/live-search": "^3.0",
+      "magento/live-search": "^4.0",
       ...
     }
    ```

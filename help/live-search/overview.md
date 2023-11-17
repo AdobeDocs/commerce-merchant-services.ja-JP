@@ -3,16 +3,16 @@ title: の概要 [!DNL Live Search]
 description: '"[!DNL Live Search] Adobe Commerceからは、素早く、超関連性が高く、直感的な検索エクスペリエンスを提供します。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 3352bd1390704646f4c21599ebf204eda2e1488c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 # の概要 [!DNL Live Search]
 
-[!DNL Live Search] は、標準の検索機能に代わるAdobe Commerceのサービスです。 The [!DNL Live Search] モジュールが Composer と共にインストールされ、 [!DNL Commerce] へのインストール [!DNL Live Search] [サービス](../landing/saas.md). 設定すると、デフォルトの検索テキストフィールドが [!DNL Live Search] テキストフィールド。
+[!DNL Live Search] は、標準の検索機能に代わるAdobe Commerceのサービスです。 The [!DNL Live Search] モジュールが Composer と共にインストールされ、 [!DNL Commerce] へのインストール [!DNL Live Search] [サービス](../landing/saas.md). 設定すると、デフォルトの検索テキストフィールドが [!DNL Live Search] テキストフィールド。 [!DNL Live Search] また、は、検索結果を参照する際に堅牢なフィルタリング機能を提供する製品リストページ (PLP) ウィジェットをインストールします。
 
 [!DNL Live Search] 次の場所に表示される： *マーケティング* 下のメニュー *SEO と検索* （内） [!DNL Commerce] *管理者*.
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 * [製品リストページウィジェット](plp-styling.md) は、ファセットとシノニムのサポートを含む検索可能な製品リストページを提供します。
 * AEM CIFコンポーネント： [ポップオーバーウィジェット](https://github.com/adobe/aem-cif-guides-venia/pull/319) そして [PLP ウィジェット](https://github.com/adobe/aem-cif-guides-venia/pull/320) AEMサイトが [!DNL Live Search].
 * [[!DNL Live Search] 管理者](workspace.md) は、ルール、ファセットおよびシノニムを設定する場所です。
-* 検索アダプタは、 [!DNL Live Search].
+* 検索アダプタは、 [!DNL Live Search]. ヘッドレスおよびカスタム実装に推奨されます。
 
 ## [!DNL Live Search] デモ
 

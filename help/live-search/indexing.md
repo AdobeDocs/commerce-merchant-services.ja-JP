@@ -2,14 +2,16 @@
 title: "[!DNL Live Search] インデックス作成"
 description: «学ぶ方法 [!DNL Live Search] 製品属性プロパティのインデックスを作成します。"
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a062133d94cb4898149b9cc878351ca2fad3c09e
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 # インデックス作成
+
+The [!DNL Live Search] インデックス作成プロセスは、製品属性をカタログで読み取り、インデックスを作成して、製品を迅速に検索、フィルタリング、表示できるようにします。
 
 製品属性プロパティ（メタデータ）によって、次のことが決まります。
 

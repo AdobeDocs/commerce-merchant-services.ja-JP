@@ -4,9 +4,9 @@ user-guide-description: このガイドでは、 [!DNL Live Search] Adobe Commer
 breadcrumb-title: 「[!DNL Live Search] ガイド」
 role: Admin
 feature: Services, Search
-source-git-commit: 0089d1bba0ebd18b0dbfea123ba8a6e0a33af1b2
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '96'
 ht-degree: 10%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 10%
       - [ファセットを管理](facets-manage.md)
    - [インデックス作成](indexing.md)
    - [パフォーマンス](performance.md)
+   - [GraphQL](graphql.md)
    - [カテゴリマーチャンダイジング](category-merch.md)
    - マーチャンダイジングを検索 {#rules}
       - [概要](rules.md)
@@ -47,6 +48,7 @@ ht-degree: 10%
       - [シノニムの追加](synonyms-add.md)
       - [シノニムの管理](synonyms-manage.md)
    - [Workspace](workspace.md)
+- [イベント](events.md)
 - GraphQLクエリ {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
