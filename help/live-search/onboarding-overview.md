@@ -3,9 +3,9 @@ title: 「オンボーディングの概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
+source-git-commit: a98e8abe68b684dcddccbf7287126db159159bab
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,15 @@ ht-degree: 0%
 このビデオでは、カテゴリマーチャンダイジングの紹介をしています。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## ウィジェットコードリポジトリ
+
+製品リストページウィジェットと検索ポップオーバーウィジェットは、どちらも github リポジトリからダウンロードできます。
+
+これにより、開発者は機能とスタイル設定を完全にカスタマイズできます。 これらのユーザーは、 [!DNL Live Search] サービス。
+
+* [PLP ウィジェット](https://github.com/adobe/storefront-product-listing-page)
+* [検索バー](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory management
 

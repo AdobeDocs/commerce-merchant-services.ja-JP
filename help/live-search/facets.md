@@ -2,9 +2,9 @@
 title: "ファセット"
 description: "[!DNL Live Search] ファセットでは、複数の属性値のディメンションを検索条件として使用します。"
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ ht-degree: 0%
 * 50 個の並べ替え可能な属性
 * 200 個のフィルター可能な属性
 * 200 個の検索可能な属性
+
+>[!NOTE]
+>
+> 200 個を超えるフィルタリング可能な属性が定義されている場合、200 個の実際にインデックスが作成される決定論的な属性ではありません。
+
+コンテンツを取り込む属性が多数ある場合は、属性を 1 つの「meta-attribute」に組み合わせることを検討してください。 例えば、靴のサイズは通常数値で、シャツのサイズは通常「S/M/L/XL」です。 この 2 種類のサイズを 1 つの検索可能な属性に組み合わせることができます。
 
 | 設定 | 説明 |
 |--- |--- |
