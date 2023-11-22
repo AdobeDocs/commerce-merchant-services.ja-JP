@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 * **透明性の高い価格設定** — 価格は明確で前もって設定されています。
 * **効率的なチェックアウトエクスペリエンス** — 迅速でシンプルなチェックアウトに対する障壁を取り除き、常連客を作成し、 [カード保管](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) および [即時購入](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (Adobe Commerceの場合はデフォルトで有効 ) 機能です。
 
-## 使用可否
+## 対象
 
 [!DNL Payment Services] は、次の場所で使用できます： [!DNL Adobe Commerce] および [!DNL Magento Open Source]. The [!DNL Payment Services] 拡張機能は、 [!DNL Adobe Commerce] バージョン 2.4.x.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ### 受け入れ済みクレジットカードと通貨
 
-[!DNL Payment Services] 国の通貨を受け入れる [それが利用可能な](#availability).
+[!DNL Payment Services] 国の通貨を受け入れる [それが利用可能な](#availability). 詳しくは、 [通貨設定](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) を参照してください。
 
 PayPal がサポートする通貨を確認するには、 [サポートされる通貨のドキュメント](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 

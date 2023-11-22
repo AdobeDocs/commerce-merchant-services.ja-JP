@@ -3,9 +3,9 @@ title: クレジットカード保管
 description: 買い物客は、後で購入する際に、クレジットカードの詳細を確認（保存）できます。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 また、Vault に登録されたクレジットカードを [保管済支払い方法](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) マイアカウント内にあります。
 
 ![マイアカウントでの保管済み支払い方法](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+>[!WARNING]
+>
+>現在、PayPal は最大で 5 枚の Vault カードを保存できます。
 
 ## ヴォールティングを有効化
 

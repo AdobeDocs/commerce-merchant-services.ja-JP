@@ -3,9 +3,9 @@ title: 有効にする [!DNL Payment Services] 実稼動用
 description: を有効にしてオンボーディングプロセスを完了します。 [!DNL Payment Services] 実稼動用。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ ht-degree: 0%
    |---|---|
    | `Authorize` | 購入を承認し、資金を保留します。 その金額は、商人によって「取り込まれる」まで引き落とされません。 |
    | `Authorize and Capture` | 購入を承認し、商人が資金を「キャプチャ」します。 |
+
+   >[!IMPORTANT]
+   >
+   >[!DNL Payment Services] は部分キャプチャをサポートします。 商人は、注文の一部を部分的に取り込む（請求書）ことができます。 例えば、各項目を個別に取り込むことも、1 つの項目を今すぐ取り込み、残りを後で取り込むこともできます。
 
 1. クリック **[!UICONTROL Save]**.
 1. クリック **[!UICONTROL Go to Payment Services]** （人に）戻る [!DNL Payment Services] ホーム。

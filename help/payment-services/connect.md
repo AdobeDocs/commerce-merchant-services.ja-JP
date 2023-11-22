@@ -3,9 +3,9 @@ title: インスタンスに接続
 description: API キーと秘密鍵を使用して Commerce インスタンスに接続し、設定でデータ領域を指定します。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,16 @@ API キーが失われた場合、新しい API キーペアを [生成済み](h
 サンドボックス環境または実稼動環境の API キーを生成する方法については、 [資格情報](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
+>
 >API キーペアを再生成しないことをお勧めします *および* アクティブな実稼動インスタンス上の SaaS 識別子やデータ領域を変更します。 変更されると、インスタンスのデータが失われます。
 
 ## コマースサービスを設定
 
 同じ API キーをインスタンス全体で使用できますが、各インスタンスには独自の API キーが必要です [SaaS データ容量](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+>[!NOTE]
+>
+>マーチャントは、支払い権限に MageID 用に生成された同じキーを使用する必要があります。
 
 資格情報を取得したら、SaaS プロジェクトと Saas Data Space を設定できます。
 
