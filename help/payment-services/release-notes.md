@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Payment Services] リリースノート"
+title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
+source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2132'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,14 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v2.3.1
+
+_2023 年 12 月 8 日_
+
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+
+![新規](../assets/new.svg)<!-- PAY-5047 --> クレジット/デビットカードのブランドまたは支払い方法のタイプが、ストアフロントの顧客の注文ページ、買い物客に送信される注文確認 E メール、および [注文の詳細表示](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) （コマース管理）をクリックします。
 
 ## v2.3.0
 
