@@ -1,12 +1,12 @@
 ---
-title: "[!DNL Live Search] ガイドの概要"
+title: '"[!DNL Live Search] ガイドの概要»'
 description: '"[!DNL Live Search] Adobe Commerceからは、素早く、超関連性が高く、直感的な検索エクスペリエンスを提供します。」'
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
 recommendations: noCatalog
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 2%
+source-wordcount: '187'
+ht-degree: 0%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 2%
 
 [!DNL Live Search] Adobe Commerceの場合は、迅速で関連性の高い直感的な検索エクスペリエンスを追加費用なしで提供します。 [!DNL Live Search] 次を使用： [Adobe Sensei](https://www.adobe.com/sensei.html) は、人工知能と機械学習アルゴリズムを使用して、集計された訪問者データを深く分析します。 このデータをAdobe Commerceカタログと組み合わせると、関連性の高いパーソナライズされたショッピングエクスペリエンスが得られます。
 
-[!DNL Live Search] には、管理者向けの次の 3 つの領域があります。
+## 詳細情報
 
-* ストアフロント： CSS スタイルを使用した [!DNL storefront popover].
-* 管理：この領域を使用して、設定と設定にアクセスします。
-* コマンドラインインターフェイス：このツールを使用して、インストールおよびバックエンドの設定タスクを実行します。
+* の基本事項を理解する [の概要 [!DNL Live Search]](overview.md)
+* の入手 [技術概要](technical-overview.md) / [!DNL Live Search]
+* 詳しくは、 [インストールガイド](install.md) を使い始める [!DNL Live Search]
 
-## その他のドキュメント
+## Commerce ドキュメント
 
 | ガイド | 説明 |
 |------ | ----------- |

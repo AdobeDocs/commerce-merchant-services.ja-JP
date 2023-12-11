@@ -1,20 +1,20 @@
 ---
-title: 「カテゴリマーチャンダイジング」
-description: '"Use [!DNL Live Search] カテゴリマーチャンダイジングを使用して、より迅速なショッピングを実現。」'
+title: カテゴリマーチャンダイジング
+description: 用途 [!DNL Live Search] カテゴリマーチャンダイジングを使用して、より迅速な買い物を実現。
 gourl: ls_catalog_merchandising
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
+source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
-
 
 # カテゴリマーチャンダイジング
 
 カテゴリマーチャンダイジングを使用すると、ストアの所有者は [!DNL Live Search] インテリジェントランキング [ルール](rules.md) 製品カテゴリとサブカテゴリに追加します。
 
-この機能には、管理者 ( ) でアクセスします。 **マーケティング** / SEO と検索 > **[!DNL Live Search]** > **カテゴリマーチャンダイジング**.
+この機能には、管理ページ ( ) でアクセスします。 **マーケティング** / SEO と検索 > **[!DNL Live Search]** > **カテゴリマーチャンダイジング**.
 
 >[!NOTE]
 >

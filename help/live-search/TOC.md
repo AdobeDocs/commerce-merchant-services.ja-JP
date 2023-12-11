@@ -4,10 +4,10 @@ user-guide-description: このガイドでは、 [!DNL Live Search] Adobe Commer
 breadcrumb-title: 「[!DNL Live Search] ガイド」
 role: Admin
 feature: Services, Search
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 10%
+source-wordcount: '84'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 10%
 - [の概要 [!DNL Live Search]](overview.md)
 - [リリースノート](release-notes.md)
 - オンボーディングのライブ検索 {#onboard}
-   - [オンボーディングの概要](onboarding-overview.md)
+   - [技術概要](technical-overview.md)
    - [インストール [!DNL Live Search]](install.md)
 - [!DNL Live Search] ストアフロント {#live-search-storefront}
    - [製品リストページウィジェット](plp-styling.md)
