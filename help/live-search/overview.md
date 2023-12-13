@@ -3,7 +3,7 @@ title: の概要 [!DNL Live Search]
 description: '"[!DNL Live Search] Adobe Commerceからは、素早く、超関連性が高く、直感的な検索エクスペリエンスを提供します。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
+source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 * [!DNL Live Search] [ポップオーバーウィジェット](storefront-popover.md) は、検索結果を含む検索フィールドの下に開くボックスです。
 * [製品リストページウィジェット](plp-styling.md) は、ファセットとシノニムのサポートを含む検索可能な製品リストページを提供します。
-* AEM CIFコンポーネント： [ポップオーバーウィジェット](https://github.com/adobe/aem-cif-guides-venia/pull/319) そして [PLP ウィジェット](https://github.com/adobe/aem-cif-guides-venia/pull/320) AEMサイトが [!DNL Live Search].
+* AEM CIFコンポーネント： [ポップオーバーウィジェット](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-popover.html?lang=en) そして [PLP ウィジェット](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-plp.html) AEMサイトが [!DNL Live Search].
 * [[!DNL Live Search] 管理者](workspace.md) は、ルール、ファセットおよびシノニムを設定する場所です。
 
 ## ワークフローの概要

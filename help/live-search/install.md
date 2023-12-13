@@ -3,9 +3,9 @@ title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法を学ぶ [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,21 @@ ht-degree: 0%
 
    の後にファセットを追加できます。 `cron` 属性フィードを実行し、属性メタデータを書き出します。
 
-1. 少なくとも 1 時間後に待つ `cron` を実行してデータを同期します。 すると、 [確認](#verify-export) データがエクスポートされた。
+1. 次のコマンドを次の順序で実行します。
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. [検証](#verify-export) データがエクスポートされた。
 
 1. [テスト](#test-the-connection) ストアフロントからの接続。
 
@@ -126,7 +140,21 @@ ht-degree: 0%
 
    の後にファセットを追加できます。 `cron` 製品および属性フィードを実行し、属性メタデータをに書き出します。 [!DNL Live Search] サービス。
 
-1. データのインデックスが作成され、同期されるまで 1 時間以上待ちます。 次に、 [GraphQLプレイグラウンド](https://developer.adobe.com/commerce/services/graphql/live-search/) をデフォルトのクエリに置き換えて、以下を検証します。
+1. 次のコマンドを次の順序で実行します。
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. 同期が完了したら、 [GraphQLプレイグラウンド](https://developer.adobe.com/commerce/services/graphql/live-search/) をデフォルトのクエリに置き換えて、以下を検証します。
 
    * 返される製品数は、ストア表示で期待される数に近い数です。
    * ファセットが返されます。

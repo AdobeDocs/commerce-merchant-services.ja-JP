@@ -3,9 +3,9 @@ title: 「技術概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: ab09bc53666915713bd0180d87b3e40aec430a86
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,8 @@ ht-degree: 0%
 * pt_PT
 
 ウィジェットがコマース管理者の言語設定 (_ストア_ /設定/ _設定_ > _一般_ > 国のオプション ) は、サポートされている言語に一致します。デフォルトでは、その言語が使用されます。 それ以外の場合、ウィジェットはデフォルトで英語に設定されます。
+
+管理者は、 [検索インデックス](settings.md#language)を使用して、検索結果の質を高めることができます。
 
 ## カテゴリマーチャンダイジング
 
