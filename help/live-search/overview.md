@@ -1,11 +1,11 @@
 ---
 title: の概要 [!DNL Live Search]
-description: '"[!DNL Live Search] Adobe Commerceからは、素早く、超関連性が高く、直感的な検索エクスペリエンスを提供します。」'
+description: '"[!DNL Live Search] Adobe Commerceからは、迅速で関連性の高い直感的な検索エクスペリエンスを提供します。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
+source-git-commit: 12c9fa011662e2e9fd7bb088db97359dcde87915
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ The [!DNL Live Search] [workspace](workspace.md) は、設定をおこなう管�
 ポップオーバーおよび PLP ウィジェットは、必要に応じてカスタム CSS ルールを定義することでスタイルを設定できます。 詳しくは、 [ポップオーバー要素のスタイル設定](storefront-popover-styling.md) および [製品リストページウィジェット](plp-styling.md).
 
 ウィジェットの機能を拡張する場合は、各ウィジェットのソースコードをパブリックリポジトリで使用できます。
-このシナリオでは、独自のニーズに合わせて JavaScript をカスタマイズし、サイト上でカスタムコードをホストします。 このカスタムスクリプトは、 [!DNL Live Search] サービスを実行して通常どおりの結果を返し、ウィジェットの機能を制御できます。
+このシナリオでは、独自のニーズに合わせて JavaScript をカスタマイズし、CDN 上でカスタムコードをホストできます。 このカスタムスクリプトは、 [!DNL Live Search] サービスを実行して通常どおりの結果を返し、ウィジェットの機能を制御できます。
 
 * [PLP ウィジェットリポジトリ](https://github.com/adobe/storefront-product-listing-page)
 * [検索バーリポジトリ](https://github.com/adobe/storefront-search-as-you-type)
@@ -83,4 +83,4 @@ The [!DNL Live Search] [workspace](workspace.md) は、設定をおこなう管�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-ライブ検索の使用方法と設定方法に関する詳細なビデオについては、 [に関する完全なデモ [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/live-search-full-demonstration.html) トピック。
+ライブ検索の使用方法と設定方法に関する詳細なビデオについては、 [に関する完全なデモ [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) トピック。

@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: インストール方法を学ぶ [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -69,15 +69,13 @@ The [!DNL Catalog Service] は、Commerce アカウントにリンクされた C
 
 この方法を使用して、 [!DNL Catalog Service] Commerce Cloudインスタンスの拡張。
 
-1. を開きます。 `<Commerce_root>/composer.json` ファイルを編集し、次のように require セクションを更新します。
+1. Composer を使用して、カタログサービスモジュールをプロジェクトに追加します。
 
-```json
-"require": {
-  "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
-1. 新しい設定をローカルでテストし、依存関係を更新します。
+1. 次のコマンドを実行して依存関係を更新する：
 
 ```bash
 composer update
@@ -91,12 +89,10 @@ composer update
 
 この方法を使用して、 [!DNL Catalog Service] オンプレミスインスタンスの拡張。
 
-1. を開きます。 `<Commerce_root>/composer.json` ファイルを編集し、次のように require セクションを更新します。
+1. Composer を使用して、カタログサービスモジュールをプロジェクトに追加します。
 
-```json
-"require": {
-    "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
 1. 依存関係を更新し、拡張機能をインストールします。
