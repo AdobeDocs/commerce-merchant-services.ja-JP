@@ -3,9 +3,9 @@ title: 「技術概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
+source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ ht-degree: 0%
 [!DNL Live Search] はPWA Studioで機能しますが、他のコマース実装とは少し異なる場合があります。 Venia では検索や製品リストのページなどの基本機能は機能しますが、Graphql の順列の一部は正しく機能しない場合があります。 パフォーマンスに違いが生じる場合もあります。
 
 * 現在のPWAの実装 [!DNL Live Search] を超える処理時間が必要です。 [!DNL Live Search] ネイティブの Commerce ストアフロントを使用します。
-* [!DNL Live Search] のPWAはをサポートしていません [イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). その結果、インテリジェントマーチャンダイジングは機能しません。
+* [!DNL Live Search] のPWAはをサポートしていません [イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). その結果、検索レポートやインテリジェントマーチャンダイジングが機能します。
 * 直接のフィルター `description`, `name`, `short_description` で使用する場合、GraphQLではサポートされません [PWA](https://developer.adobe.com/commerce/pwa-studio/)が返されますが、より一般的なフィルターが返されます。
 
 次を使用するには： [!DNL Live Search] PWA Studioを使用した場合、インテグレーターは次の操作も必要になります。
