@@ -2,9 +2,9 @@
 title: "ファセット"
 description: "[!DNL Live Search] ファセットでは、複数の属性値のディメンションを検索条件として使用します。"
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
+source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Faceting の要件
 
-ファセット設定のカテゴリと製品属性の要件は、レイヤー化されたナビゲーションで使用されるフィルタリング可能な属性と似ています。 各属性のストアフロントプロパティは、に設定する必要があります。 `filterable (with results)`.
+ファセット設定のカテゴリと製品属性の要件は、レイヤー化されたナビゲーションで使用されるフィルタリング可能な属性と似ています。 属性の各ストアフロントプロパティには、「検索結果のレイヤーナビゲーションで使用」の値が「はい」に設定されている必要があります。
 
 [!DNL Live Search] は、以下をサポートします。
 

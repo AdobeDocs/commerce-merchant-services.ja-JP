@@ -3,9 +3,9 @@ title: 「技術概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
+source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,22 @@ ht-degree: 0%
 
 [!DNL Live Search] は、次の場所のエンドポイントを通じて通信します： `https://catalog-service.adobe.io/graphql`.
 
->[!NOTE]
->
->As [!DNL Live Search] は、製品データベース全体に対するアクセス権を持っていません。 [!DNL Live Search] GraphQLと Commerce のコアGraphQLは完全な同等性を持ちません。
+As [!DNL Live Search] は、製品データベース全体に対するアクセス権を持っていません。 [!DNL Live Search] GraphQLと Commerce のコアGraphQLは完全な同等性を持ちません。
+
+SaaS API を直接（特にカタログサービスエンドポイント）呼び出すことをお勧めします。
+
+* コマースデータベース/Graphql プロセスをバイパスして、パフォーマンスを向上し、プロセッサの負荷を軽減
+* を活用する [!DNL Catalog Service] 呼び出し連盟 [!DNL Live Search], [!DNL Catalog Service]、および [!DNL Product Recommendations] を 1 つのエンドポイントから削除します。
+
+一部の使用例では、 [!DNL Catalog Service] 製品の詳細や類似した事例については、を参照してください。 詳しくは、 [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) を参照してください。
+
+カスタムヘッドレス実装がある場合は、 [!DNL Live Search] リファレンス実装：
+
+* [PLP ウィジェット](https://github.com/adobe/storefront-product-listing-page)
+* [ライブ検索フィールド](https://github.com/adobe/storefront-search-as-you-type)
+
+Search Adapter や Widgets、AEM CIF Widgets などのデフォルトコンポーネントを使用しない場合は、eventing(Intelligent Merchandising とパフォーマンス指標にAdobe Senseiをフィードするクリックストリームデータ ) は初期状態では機能せず、ヘッドレスイベンティングを実装するためにカスタム開発が必要です。
+の最新バージョン [!DNL Live Search] は既にを使用しています [!DNL Catalog Service] およびインストール [!DNL Catalog Service] モジュール。
 
 ## 境界としきい値
 
@@ -69,15 +82,42 @@ ht-degree: 0%
 
 [!DNL Live Search] ウィジェットは、次の言語をサポートしています。
 
-* en_US（デフォルト）
-* de_DE
-* es_MX
-* fr_FR
-* it_IT
-* ja_JA
-* nl_NL
-* no_NO
-* pt_PT
+|  |  |  |  |
+|--- |--- |--- |--- |
+| 言語 | 地域 | 言語コード | Magentoロケール |
+| ブルガリア語 | ブルガリア | bg_BG | bg_BG |
+| カタロニア語 | スペイン | ca_ES | ca_ES |
+| チェコ語 | チェコ共和国 | cs_CZ | cs_CZ |
+| デンマーク語 | デンマーク | da_DK | da_DK |
+| ドイツ語 | ドイツ | de_DE | de_DE |
+| ギリシャ語 | ギリシャ | el_GR | el_GR |
+| 英語 | 英国 | en_GB | en_GB |
+| 英語 | 米国 | en_US | en_US |
+| スペイン語 | スペイン | es_ES | es_ES |
+| エストニア語 | エストニア | et_EE | et_EE |
+| バスク語 | スペイン | eu_ES | eu_ES |
+| ペルシャ語 | イラン | fa_IR | fa_IR |
+| フィンランド語 | フィンランド | fi_FI | fi_FI |
+| フランス語 | フランス | fr_FR | fr_FR |
+| ガリシア語 | スペイン | gl_ES | gl_ES |
+| ヒンディー語 | インド | hi_IN | hi_IN |
+| ハンガリー語 | ハンガリー | hu_HU | hu_HU |
+| インドネシア語 | インドネシア | id_ID | id_ID |
+| イタリア語 | イタリア | it_IT | it_IT |
+| 韓国語 | 韓国 | ko_KR | ko_KR |
+| リトアニア語 | リトアニア | lt_LT | lt_LT |
+| ラトビア語 | ラトビア | lv_LV | lv_LV |
+| ノルウェー語 | ノルウェーブークモール | nb_NO | nb_NO |
+| オランダ語 | オランダ | nl_NL | nl_NL |
+| ポルトガル語 | ブラジル | pt_BR | pt_BR |
+| ポルトガル語 | ポルトガル | pt_PT | pt_PT |
+| ルーマニア語 | ルーマニア | ro_RO | ro_RO |
+| ロシア語 | ロシア | ru_RU | ru_RU |
+| スウェーデン語 | スウェーデン | sv_SE | sv_SE |
+| タイ語 | タイ | th_TH | th_TH |
+| トルコ語 | トルコ | tr_TR | tr_TR |
+| 中国語 | 中国 | zh_CN | zh_Hans_CN |
+| 中国語 | 台湾 | zh_TW | zh_Hant_TW |
 
 ウィジェットがコマース管理者の言語設定 (_ストア_ /設定/ _設定_ > _一般_ > 国のオプション ) は、サポートされている言語に一致します。デフォルトでは、その言語が使用されます。 それ以外の場合、ウィジェットはデフォルトで英語に設定されます。
 
@@ -109,6 +149,17 @@ ht-degree: 0%
 ## 価格インデクサー
 
 ライブ検索のお客様は、 [SaaS 価格インデクサー](../price-index/index.md)：価格変更の更新と同期時間を高速化します。
+
+## 価格のサポート
+
+ライブ検索ウィジェットは、Adobe Commerceでサポートされているすべての価格タイプをサポートしていますが、サポートしているわけではありません。
+
+現在、基本価格がサポートされています。 サポートされていない高度な価格は次のとおりです。
+
+* コスト
+* 最小広告価格
+
+見る [API メッシュ](../catalog-service/mesh.md) より複雑な価格計算の場合。
 
 ## PWAのサポート
 
