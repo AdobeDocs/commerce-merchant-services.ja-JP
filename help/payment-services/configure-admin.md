@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ The [!UICONTROL Credit Card Fields] 支払いオプションは、クレジッ�
 
 ## [!UICONTROL Apple Pay]
 
-The [!UICONTROL Apple Pay] 支払いオプションを使用すると、商人はApple Pay を買い物客に提供できます。この買い物客は、デバイスでタッチ ID を使用して購入を行うことができます。
+The [!UICONTROL Apple Pay] 支払いオプションを使用すると、商人はApple Pay を買い物客に提供でき、この買い物客はデバイスでタッチ ID を使用して Safari ブラウザーから購入を行うことができます。
 
 詳しくは、 [支払いオプション](payments-options.md#apple-pay-button) を参照してください。
 

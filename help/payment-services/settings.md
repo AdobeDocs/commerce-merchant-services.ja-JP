@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2364'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ The _[!UICONTROL Credit Card Fields]_設定は、クレジットカードまた�
 
 ### Apple Pay
 
-The [!UICONTROL Apple Pay] ボタンの支払いオプションを使用すると、 [!UICONTROL Apple Pay] お客様の店舗のチェックアウトでの支払いボタン。
+The [!UICONTROL Apple Pay] ボタンの支払いオプションを使用すると、 [!UICONTROL Apple Pay] Safari ブラウザーからのストアのチェックアウト時の支払いボタン。
 
 Apple Pay は、 [Appleは Paypal を通じて自己登録を支払う](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) その後 [Apple Pay の設定](settings.md/#payment-buttons) お客様の店舗用に。 詳しくは、 [支払いオプション](payments-options.md#apple-pay-button) を参照してください。
 
@@ -230,7 +230,7 @@ PayPal スマートボタンの支払いオプションを有効にして設定�
 1. ボタンの高さセレクターを有効にするには、 **[!UICONTROL Responsive button height]** セレクター。
 1. 次の手順で **[!UICONTROL Label]**「 」で、目的のラベルオプションを選択します。
 
-   レイアウト、色、形状、高さ、ラベルの設定オプションを変更すると、その設定の視覚的なプレビューが設定ページの下部に表示されます。
+   レイアウト、色、形状、高さ、ラベルの設定オプションを変更すると、その設定の視覚的なプレビューが設定ページの下部に表示されます。 下の画像では、 **[!UICONTROL Shape]** が _長方形_ そして **[!UICONTROL Label]** が _PayPal （推奨）_.
 
    ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
