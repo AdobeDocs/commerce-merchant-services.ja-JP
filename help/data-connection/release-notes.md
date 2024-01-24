@@ -3,10 +3,10 @@ title: リリースノート
 description: の最新のリリース情報 [!DNL Data Connection] Adobe Commerceからの拡張。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 69c1a5c00796f96cafe0169632ad5e1e3c53a297
+source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 1%
+source-wordcount: '774'
+ht-degree: 0%
 
 ---
 
@@ -33,6 +33,10 @@ ht-degree: 1%
 これらのリリースノートでは、 [!DNL Data Connection] 拡張子。
 
 +++サポートされるサービスの更新
+
+_2024 年 1 月 25 日_
+
+![新規](../assets/new.svg)  — 更新された `data-services-b2b` 次の名前の新しい購買依頼イベントを含める拡張： [deleteRequisitionList](events.md#deleterequisitionlist) B2B 商人にとって
 
 _2023 年 11 月 17 日_
 

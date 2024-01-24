@@ -4,9 +4,9 @@ description: 各イベントが取り込むデータを説明します。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
 workflow-type: tm+mt
-source-wordcount: '6894'
+source-wordcount: '6957'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ ht-degree: 0%
 
 | 説明 | XDM イベント名 |
 |---|---|
-| 買い物客が注文したときにトリガーされます。 | `commerce.order` |
+| 買い物客が注文したときにトリガーされます。 | `commerce.purchases` |
 
 #### completeCheckout から収集されたデータ
 
@@ -560,6 +560,29 @@ B2B イベントには、 [購買依頼リスト](https://experienceleague.adobe
 | `productListItems.selectedOptions` | 設定可能な製品に使用するフィールド。 |
 | `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
 | `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
+
+### deleteRequisitionList
+
+| 説明 | XDM イベント名 |
+|---|---|
+| 買い物客が購入依頼リストを削除した場合にトリガーされます。 | `commerce.requisitionListDeletes` |
+
+#### deleteRequisitionList から収集されたデータ
+
+次の表に、このイベントで収集されるデータを示します。
+
+| フィールド | 説明 |
+|---|---|
+| `commerce.requisitionListDeletes` | 購買依頼リストが削除されたことを示します。 |
+| `commerce.requisitionList` | 顧客が作成した購買依頼リストのプロパティ。 |
+| `commerce.requisitionList.ID` | 購買依頼リストの一意の ID。 |
+| `commerce.requisitionList.name` | 顧客が指定した購買依頼リストの名前。 |
+| `commerce.requisitionList.description` | 顧客が指定した購買依頼リストの説明。 |
+| `commerce.commerceScope` | イベントが発生した場所を示します（ストア表示、ストア、Web サイトなど）。 |
+| `commerce.commerceScope.environmentID` | 環境 ID。 32 桁の英数字 ID で、ハイフンで区切られます。 |
+| `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
+| `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
+| `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
 
 ## バックオフィスイベント
 

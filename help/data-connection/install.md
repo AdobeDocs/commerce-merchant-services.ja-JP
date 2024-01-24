@@ -4,9 +4,9 @@ description: インストール、更新、アンインストールの方法を�
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 2392cb4257f6efdcb8fc3e38c007148e03e338fd
+source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,33 @@ The [!DNL Data Connection] 拡張機能は、 [AdobeMarketplace](https://commerc
 
 1. （オプション）B2B データを含める場合は、 [要求イベント](events.md#b2b-events), install [B2B 拡張機能](#install-the-b2b-extension).
 
-### 注文コネクタの設定
+### イベントのAdobe I/O
 
-インストール後、 `experience-platform-connector` 拡張機能を使用する場合は、のインストールを完了する必要があります。 `orders-connector` デプロイメントタイプに基づくモジュール：オンプレミスまたはクラウドインフラストラクチャ上のAdobe Commerce。
+インストール後、 `experience-platform-connector` 拡張機能には、Adobe Commerce用のAdobe I/Oイベントをインストールする必要があります。
+
+次の手順は、クラウドインフラストラクチャ上のAdobe Commerceとオンプレミスでのインストールの両方に適用されます。
+
+1. Commerce 2.4.4 または 2.4.5 を実行している場合は、次のコマンドを使用してイベンティングモジュールを読み込みます。
+
+   ```bash
+   composer require magento/commerce-eventing=^1.0 --no-update
+   ```
+
+   Commerce 2.4.6 以降では、これらのモジュールが自動的に読み込まれます。
+
+1. プロジェクトの依存関係を更新します。
+
+   ```bash
+   composer update
+   ```
+
+1. 新しいモジュールを有効にします。
+
+   ```bash
+   bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
+   ```
+
+オンプレミスまたはクラウドインフラストラクチャ上のAdobe Commerceのデプロイメントタイプに基づいて、インストールを最終化します。
 
 #### オンプレミス
 
