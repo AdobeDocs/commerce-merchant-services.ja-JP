@@ -1,47 +1,51 @@
 ---
 title: オンボーディングとインストール
-description: インストール方法を学ぶ [!DNL Catalog Service]
+description: インストール方法 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
+source-git-commit: d02ffe4028bdf5765fb0f23fd210f398729bee62
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
 
 # オンボーディングとインストール
 
-詳しくは、 [!DNL Catalog Service] プロセス。
+以下のビデオでは、 [!DNL Catalog Service] プロセス。
 
-パート 1:
+**パート 1**：オンボーディングとインストール
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415599)
 
-パート 2:
+**パート 2**：を使用します。 [!DNL Catalog Service]
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415600)
+
+>[!BEGINSHADEBOX]
 
 ## 前提条件
 
 のオンボーディングプロセス [!DNL Catalog Service] は、サーバーのコマンドラインへのアクセスを必要とします。 コマンドラインでの作業に慣れていない場合は、開発者またはシステムインテグレーターに問い合わせてください。
 
-### ソフトウェア要件
+**ソフトウェア要件**
 
 - Adobe Commerce 2.4.4 以降
 - PHP 8.1, 8.2
 - コンポーザー：2.x
 
-### サポートされるプラットフォーム
+**サポートされるプラットフォーム**
 
 - Adobe Commerce on cloud infrastructure: 2.4.4 以降
 - オンプレミスのAdobe Commerce: 2.4.4 以降
+
+>[!ENDSHADEBOX]
 
 ## エンドポイント
 
 [!DNL Catalog Service] には、オンボーディングで使用できる 2 つのエンドポイントがあります。
 
-- サンドボックス (https://catalog-service-sandbox.adobe.io/graphql) — 運用開始前のテストおよび検証に使用されます。
-- 実稼動 (https://catalog-service.adobe.io/graphql)-コマースマーチャントや Web サイトのライブトラフィックに使用
+- サンドボックス (`https://catalog-service-sandbox.adobe.io/graphql`) — 運用開始前のテストおよび検証に使用されます。
+- 実稼動 (`https://catalog-service.adobe.io/graphql`) — コマースマーチャントや Web サイトのライブトラフィックに使用されます。
 
 Commerce のすべてのテストインスタンスは、サンドボックスエンドポイントを使用する必要があります。
 
@@ -61,7 +65,7 @@ Commerce のすべてのテストインスタンスは、サンドボックス�
 
 The [!DNL Catalog Service] 拡張機能は、Adobe Commerceクラウドインフラストラクチャとオンプレミスインスタンスの両方にインストールできます。
 
-The [!DNL Catalog Service] は、Commerce アカウントにリンクされた Composer キーと共にインストールされます [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 登録プロセス中に提供されます。 Composer は、Adobe Commerceの初回インストール時、または Composer のキーが以前に外部に保存されていなかった状況で、これらのキーを使用します `auth.json` ファイル。
+The [!DNL Catalog Service] は、Commerce アカウントにリンクされた Composer キーと共にインストールされます [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 登録プロセス中に提供されます。 Composer は、Adobe Commerceの初回インストール時、または Composer のキーが以前に外部に保存されていなかった状況で、これらのキーを使用します `auth.json` ファイル。
 
 詳しくは、 [認証キーの取得](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) を参照してください。
 
@@ -69,21 +73,20 @@ The [!DNL Catalog Service] は、Commerce アカウントにリンクされた C
 
 この方法を使用して、 [!DNL Catalog Service] Commerce Cloudインスタンスの拡張。
 
-1. Composer を使用して、カタログサービスモジュールをプロジェクトに追加します。
+1. ローカルワークステーションで、プロジェクトディレクトリに移動します。
+1. カタログサービスモジュールを追加します。
 
-```bash
-composer require "magento/catalog-service" "^3.0.1"
-```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
-1. 次のコマンドを実行して依存関係を更新する：
+1. パッケージの依存関係を更新します。
 
-```bash
-composer update
-```
+   ```bash
+   composer update
+   ```
 
-このコマンドは、すべての依存関係を更新します。
-
-1. 変更をコミットしてプッシュする `composer.json` および `composer.lock`.
+1. のコード変更をコミットしてプッシュします `composer.json` および `composer.lock` ファイル。
 
 #### オンプレミス
 
@@ -91,29 +94,27 @@ composer update
 
 1. Composer を使用して、カタログサービスモジュールをプロジェクトに追加します。
 
-```bash
-composer require "magento/catalog-service" "^3.0.1"
-```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
 1. 依存関係を更新し、拡張機能をインストールします。
 
-```bash
-composer update
-```
-
-このコマンドは、すべての依存関係を更新します。
+   ```bash
+   composer update
+   ```
 
 1. Adobe Commerceをアップグレード：
 
-```bash
-bin/magento setup:upgrade
-```
+   ```bash
+   bin/magento setup:upgrade
+   ```
 
 1. キャッシュをクリアします。
 
-```bash
-bin/magento cache:clean
-```
+   ```bash
+   bin/magento cache:clean
+   ```
 
 ### サービスとデータのエクスポートを設定する
 
@@ -143,4 +144,4 @@ API キーを取得するには、管理の「 Commerce Service Connector 」領
 
 The [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 開発者は、AdobeI/O を使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
 
-詳しくは、  [[!DNL Catalog Service] と API メッシュ](mesh.md) インストールおよび設定の詳細に関するトピック。
+詳しくは、 [[!DNL Catalog Service] と API メッシュ](mesh.md) インストールおよび設定の詳細に関するトピック。
