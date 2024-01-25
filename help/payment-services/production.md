@@ -3,9 +3,9 @@ title: 有効にする [!DNL Payment Services] 実稼動用
 description: を有効にしてオンボーディングプロセスを完了します。 [!DNL Payment Services] 実稼動用。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Save]**.
 1. クリック **[!UICONTROL Go to Payment Services]** （人に）戻る [!DNL Payment Services] ホーム。
-1. [キャッシュをクリア](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [キャッシュをクリア](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    設定を変更するたびに、クリアを実行する必要があります。
 
@@ -51,14 +51,58 @@ ht-degree: 0%
 
 ## 完全なマーチャントオンボーディング
 
+お客様の店舗が支払いサービスと共に運営されるようにする次のステップは、ライブオンボーディングを完了することです。
+
+支払いサービスが提供する [**詳細** （完全にサポート）および **標準** （速達チェックアウト）支払いオプション](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) オンボーディングフローは、操作する国と好みの支払いエクスペリエンスに応じて異なります。
+
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. クリック **[!UICONTROL Live onboarding]**.
 
    このオプションは、のライブオンボーディングをまだ完了していない場合に表示されます。 [!DNL Payment Services].
 
-   PayPal ウィンドウが表示されます。
+1. Adobe Analytics の _国を選択_ 「モーダル」で、操作元の国を選択します。
 
-1. PayPal フローを続行するには、PayPal アカウントの資格情報（Sandbox アカウントの資格情報ではなく）を使用するか、新しい PayPal アカウントに新規登録します。
+   支払いサービスは、 [5 か国](../payment-services/overview.md#availability) 現在は 支払サービスは、国リストに表示されるその他すべての国に対して、高速チェックアウト機能（支払いオプションのサブセット）を提供します。
+
+   リストから選択した国によって、支払いオプションとオンボーディングフローが決まります。[詳細](#advanced-onboarding) （完全にサポート）または [標準](#standard-onboarding) （速達チェックアウト） — ご利用いただけます。
+
+>[!TIP]
+>
+> オンボーディングオプション（標準または詳細）を選択して続行したら、オンボーディングを再完了して、最初の選択項目からアップグレードまたはダウングレードする必要があります。
+
+### 高度なオンボーディング
+
+このオンボーディングフローは、 [完全に支援された国](../payment-services/overview.md#availability).
+
+国を選択した後：
+
+1. 表示されるモーダルで、「 」を選択します。 **詳細**.
+
+   の **標準** オプションを選択し、次に進みます。 [標準オンボーディングフロー](#standard-onboarding).
+
+1. クリック **続行**.
+1. PayPal アカウントの資格情報（Sandbox アカウントの資格情報ではなく）を使用して、完全にサポートされている高度なオンボーディングの PayPal フローを続行します _または_ 新しい PayPal アカウントに新規登録します。
+
+>[!IMPORTANT]
+>
+>**高度なオンボーディング** 商人に～を求める [支払いの権利を要求](#request-payments-entitlement-from-adobe) ：ライブオンボーディングを有効にします。
+
+### 標準オンボーディング
+
+この標準オンボーディングフローは、 [高速チェックアウトのみサポート](../payment-services/overview.md#availability) が指定されている。
+
+国を選択した後：
+
+1. Adobe Analytics の _支払いサービス契約_ 表示されるモーダルを選択し、 **支払いサービス契約** Adobe Commerce Payment Services 契約を表示するためのリンクです。
+1. Adobe Analytics の _支払いサービス契約_ モーダルをクリックします。 **同意します**.
+1. Express Checkout オンボーディングの場合は、PayPal アカウントの資格情報（Sandbox アカウントの資格情報ではなく）を使用して PayPal フローを続行するか、新しい PayPal アカウントに新規登録します。
+
+>[!IMPORTANT]
+>
+>[Appleの支払いフィールドとクレジットカードフィールド](../payment-services/payments-options.md) は次の場合に使用できません： **標準オンボーディング**.
+
+## 電子メールアドレスを確認
+
 1. 管理者のサイドバーで、 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
    The _[!UICONTROL Live onboarding]_ボタンが表示されなくなり、「[!UICONTROL Live payments pending]」テキストボックスに入力します。
@@ -77,7 +121,7 @@ ht-degree: 0%
 
 ## Adobeからの支払い権限の要求
 
-ライブオンボーディングを有効にするには、次のAdobeに支払い権限を要求する必要があります。
+ストアの運用を有効にするには、Adobe( [高度なオンボーディングのみ](#advanced-onboarding)):
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. クリック **[!UICONTROL Get Live Payments]** の [!DNL Payment Services] ホーム。
@@ -95,8 +139,7 @@ ht-degree: 0%
 
 ## 価格層の設定
 
-次の手順で、 [!DNL Payment Services] _マーチャント ID_:
-
+Adobe Analytics の [!DNL Payment Services] _マーチャント ID_:
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. ホームビューで、 **[!UICONTROL Settings]**. 詳しくは、 [ホーム](payments-home.md) を参照してください。
@@ -106,7 +149,7 @@ ht-degree: 0%
 
 A _実稼動マーチャント ID_ が自動生成され、 [設定](configure-admin.md). この ID を変更または変更しないでください。
 
-ライブ支払を有効にする手順は、次のとおりです。
+ライブ支払いを有効にする：
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. ホームで、 **[!UICONTROL Settings]** をクリックします。 詳しくは、 [ホーム](payments-home.md) を参照してください。

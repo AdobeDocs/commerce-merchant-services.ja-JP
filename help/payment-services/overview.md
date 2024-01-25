@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -46,13 +46,15 @@ ht-degree: 0%
 
 [!DNL Payment Services] は、次の場所で使用できます： [!DNL Adobe Commerce] および [!DNL Magento Open Source]. The [!DNL Payment Services] 拡張機能は、 [!DNL Adobe Commerce] バージョン 2.4.x.
 
-現在、 [!DNL Payment Services] は、次の国の商人が利用できます。
+現在、 [!DNL Payment Services] 完全なサポートを提供します ( [高度なオンボーディング](../payment-services/production.md#advanced-onboarding)) を次の国のすべての支払いオプションに使用します。
 
 * 米国（米国）
 * カナダ (CA)
 * オーストラリア (AUS)
 * フランス (FR)
 * 英国 (UK)
+
+支払いサービスが提供する [高速チェックアウト機能](../payment-services/payments-options.md) （支払いオプションのサブセット）その他 [オンボーディング中に利用可能な国](../payment-services/production.md#complete-merchant-onboarding).
 
 詳しくは、 [ライフサイクルポリシー](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) そして [[!DNL Payment Services] リリースノート](release-notes.md) ページを参照してください。
 

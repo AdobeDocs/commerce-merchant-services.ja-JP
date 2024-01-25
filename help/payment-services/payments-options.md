@@ -3,30 +3,38 @@ title: 支払いオプション
 description: 支払いオプションを設定して、店舗の顧客が利用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
 
 # 支払いオプション
 
-を使用 [!DNL Adobe Commerce] および [!DNL Magento Open Source] [!DNL Payment Services]、複数の支払いオプションを使用できます。 これらの支払いオプションは、次の方法で設定できます。
+を使用 [!DNL Adobe Commerce] および [!DNL Magento Open Source] [!DNL Payment Services]、複数の支払いオプションを使用できます。
 
-* [ホーム設定](payments-home.md)
-* [ストア設定](configure-admin.md) （従来の支払いオプションまたはマルチストア設定に推奨）
+これらの支払いオプションは、 [ホーム設定](payments-home.md) または [ストア設定](configure-admin.md) （従来の支払いオプションまたはマルチストア設定に推奨）。
 
 支払い方法ごとに、チェックアウトプロセスの場所に応じて異なる行動があります。
 
 * 「製品」ページ — 品目の製品ページ
-* 「ミニカート」(Mini cart) — 製品がカートに追加されたときに、カートアイコンをクリックすると使用できます。
+* ミニカート — 製品が買い物かごに追加されたときに、買い物かごアイコンをクリックすると使用できます。
 * 買い物かご — クリックで利用可能 _買い物かごの表示と編集_ ミニカートから
 * 「チェックアウト」(Checkout) ビュー — クリック時に使用可能 _チェックアウトに進みます。_ ミニカートまたは買い物かごから
 
 >[!IMPORTANT]
 >
->支払いを処理する前に、支払いサービスのオンボーディングを完了する必要があります。
+>[!DNL Payment Services] オンボーディングは、支払いを処理する前に完了する必要があります。
+
+## 「標準支払い」と「前払い」の比較
+
+[!DNL Payment Services] 提供する **詳細** （完全にサポート）および **標準** （速達チェックアウト）支払いオプションとオンボーディングフロー（運営国に応じて異なります）。
+
+* **詳細**  — すべて使用可能 [支払いオプション](../payment-services/payments-options.md) は現在使用可能です [完全に支援された国](../payment-services/overview.md#availability). ライブ支払いを有効にするオンボーディング中に、 [アドバンスオンボーディングオプション](../payment-services/production.md#advanced-onboarding).
+* **標準**  — 支払いオプションのサブセット（速達チェックアウト） — PayPal クレジットカードとデビットカード — は、他のサポート対象国で利用できます。 [クレジットカードのフィールド](#credit-card-fields) および [Apple Pay](#apple-pay-button) は、このオンボーディングオプションでは使用できません。 ライブ支払いを有効にするオンボーディング中に、 [標準オンボーディングオプション](../payment-services/production.md#standard-onboarding).
+
+詳しくは、 [有効にする [!DNL Payment Services] 実稼動用](../payment-services/production.md#complete-merchant-onboarding) を参照してください。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -36,7 +44,7 @@ ht-degree: 0%
 
 有効にする [クレジットカードの保管](#vaulting) 店舗で買い物客が後で迅速なチェックアウトを行うために、クレジットカード情報を逃がす（保存する）ことを許可するため。
 
-次の項目を設定できます。 [!UICONTROL Credit Card Fields] （ストア設定または支払いサービスホーム）を参照してください。 詳しくは、 [設定](settings.md#credit-card-fields) を参照してください。
+次の項目を設定できます。 [!UICONTROL Credit Card Fields] ストア設定、または [!DNL Payment Services] ホーム。 詳しくは、 [設定](settings.md#credit-card-fields) を参照してください。
 
 また、クレジットカードフィールドのレイアウト、幅、高さ、外側のスタイルを変更することもできます。 詳しくは、 [PayPal ドキュメント](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) を参照してください。
 
@@ -62,7 +70,7 @@ The [!DNL Apple Pay] ボタンが製品ページ、ミニカート、買い物�
 
 ![PayPal ボタン](assets/paypal-button.png){width="350" zoomable="yes"}
 
-次の項目を設定できます。 [!UICONTROL PayPal Smart Buttons] （ストア設定または支払いサービスホーム）を参照してください。  詳しくは、 [設定](settings.md#payment-buttons) を参照してください。
+次の項目を設定できます。 [!UICONTROL PayPal Smart Buttons] ストア設定、または [!DNL Payment Services] ホーム。  詳しくは、 [設定](settings.md#payment-buttons) を参照してください。
 
 PayPal の「 [支払い方法に関するドキュメント](https://developer.paypal.com/docs/checkout/payment-methods/) 各支払い方法が現在どの国で利用できるかを確認する。
 
