@@ -3,9 +3,9 @@ title: テストと検証
 description: テストと検証は、 [!DNL Payment Services] 機能が期待どおりに動作し、顧客に最適な支払いオプションを提供する
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 テスト [!DNL Payment Services] サンドボックス環境は、実際の銀行や商人には接続されていない PayPal サンドボックスにのみ接続されたシミュレーション環境である場合でも、重要な検証手順です。
 
-1. ストアのチェックアウトが成功したら、 [クレジットカードのフィールド](payments-options.md#credit-card-fields) または [PayPal スマートボタン](payments-options.md#paypal-smart-buttons). 詳しくは、 [資格情報のテスト](#testing-credentials) を参照してください。
+1. ストアのチェックアウトが成功したら、 [クレジットカードのフィールド](payments-options.md#credit-card-fields) または [PayPal の支払いボタン](payments-options.md#paypal-smart-buttons). 詳しくは、 [資格情報のテスト](#testing-credentials) を参照してください。
 1. キャプチャ ( 支払いアクションが [に設定 `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [払い戻し](refunds.md)または [ボイド](voids.md) 注文が完了しました。 また、 [請求書の作成](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} 注文の場合、支払い処理が `Authorize` の代わりに `Authorize and Capture`.
 1. 24 ～ 48 時間以内に、トランザクションおよびその他の情報を [ペイアウトレポート](payouts.md).
 1. 注文の詳細を [注文の支払いステータスレポート](order-payment-status.md).

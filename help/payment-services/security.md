@@ -4,9 +4,9 @@ description: サイトのセキュリティとコンプライアンス要件を�
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ PCI 3-D セキュア (3DS) は、オンラインでクレジットカードを�
 
 詳しくは、 [クレジットカードの保管](vaulting.md) を参照してください。
 
-### PayPal スマートボタン
+### PayPal の支払いボタン
 
-PayPal スマートボタンを使用すると、PCI 規制のデータがサービスを通じて渡されることはありません。 データの保存や保守を行う必要がなく、PCI への準拠に関する懸念が大幅に軽減されます。
+PayPal の支払いボタンを使用すると、PCI 規制のデータがサービスを通じて渡されることはありません。 データの保存や保守を行う必要がなく、PCI への準拠に関する懸念が大幅に軽減されます。
 
 セキュリティ上の理由から、PayPal はチェックアウト時に請求先住所を渡しません（国、E メール、名前は使用される唯一の請求情報です）。 必要に応じて、サイトの PayPal チェックアウトを有効にして、PayPal に問い合わせて、ベッティングプロセスを完了することで、完全な請求先住所を返すことができます。
 

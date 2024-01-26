@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
+source-git-commit: 31c1c9a99e75feae7a2a81faf17921a63a03a526
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 0%
@@ -116,28 +116,28 @@ The [!UICONTROL Apple Pay] 支払いオプションを使用すると、商人�
 | [!UICONTROL Show buttons on cart page] | ストア表示 | 有効または無効 [!DNL Apple Pay] を買い物かごページに追加します。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-The [!DNL PayPal Smart Buttons] 支払いオプションは、お客様に対して、シンプルで迅速かつ安全なチェックアウトプロセスを提供します。
+The [!DNL PayPal payment buttons] 支払いオプションは、お客様に対して、シンプルで迅速かつ安全なチェックアウトプロセスを提供します。
 
 詳しくは、 [支払いオプション](payments-options.md#paypal-smart-buttons) を参照してください。
 
-設定 [!DNL PayPal Smart Buttons]
+設定 [!DNL PayPal payment buttons]
 
-PayPal スマートボタンの支払いオプションは、Admin 内で有効にして設定できます。
+Admin 内で PayPal の支払いボタンの支払いオプションを有効にして設定できます。
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 左側のパネルで、を展開します。 **[!UICONTROL Sales]** を選択します。 **[!UICONTROL Payment Methods]**.
 1. を展開します。 _[!UICONTROL Recommended Solutions]_」セクションに入力します。
-1. Adobe Analytics の _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL PayPal Smart Buttons]_ 」セクションに入力します。
+1. Adobe Analytics の _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL PayPal payment buttons]_ 」セクションに入力します。
 1. チェックアウト時に表示される支払い方法の名前を変更するには、 _[!UICONTROL Title]_フィールドに入力します。
 1. 宛先 [支払いアクションを設定](production.md#set-payment-services-as-payment-method)を選択します。 **[!UICONTROL Authorize]** または **[!UICONTROL Authorize and Capture]**.
 1. 支払い方法をチェックアウトページで優先順位付けするには、 `Numeric Only` 値を **[!UICONTROL Sort order]** フィールドに入力します。
 1. を有効/無効にするには [後で支払うメッセージ](payments-options.md#pay-later-button)を選択します。 `Yes`/`No` 対象： **[!UICONTROL Display Pay Later Message]**.
-1. チェックアウトページに PayPal スマートボタンを表示するには、 `Yes` （の） **[!UICONTROL Show buttons on checkout page]**.
-1. 製品の詳細ページに PayPal スマートボタンを表示するには、 `Yes` （の） **[!UICONTROL Show buttons on product detail page]**.
-1. PayPal スマートボタンをミニカートのプレビューに表示するには、 `Yes` 対象： **[!UICONTROL Show buttons in mini cart preview]**.
-1. 買い物かごページに PayPal スマートボタンを表示するには、 `Yes` （の） **[!UICONTROL Show buttons on cart page]**.
+1. チェックアウトページに PayPal の支払いボタンを表示するには、 `Yes` （の） **[!UICONTROL Show buttons on checkout page]**.
+1. 製品の詳細ページに PayPal の支払いボタンを表示するには、 `Yes` （の） **[!UICONTROL Show buttons on product detail page]**.
+1. PayPal の支払いボタンをミニカートのプレビューに表示するには、 `Yes` 対象： **[!UICONTROL Show buttons in mini cart preview]**.
+1. 買い物かごページに PayPal の支払いボタンを表示するには、 `Yes` （の） **[!UICONTROL Show buttons on cart page]**.
 1. 支払いオプションとして Venmo を有効にするには、 `Yes` 対象： **[!UICONTROL Venmo Enabled]**.
 1. クレジットカードとデビットカードを支払いオプションとして有効にするには（PayPal のスマートボタン）、 `Yes` 対象： **[!UICONTROL Credit and Debit Card Enabled]**.
 1. を有効/無効にするには [PayPal 後払い](payments-options.md#pay-later-button) 支払いオプション、選択 `Yes`/`No` 対象： **[!UICONTROL PayPal Pay Later Enabled]**.
@@ -152,10 +152,10 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に「支払い方法」ビューで、この支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
 | [!UICONTROL Payment Action] | web サイト | The [支払手続](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定した支払い方法の オプション： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | web サイト | 買い物かご、製品ページ、ミニ買い物かごおよびチェックアウトフローの「後で支払う」メッセージを有効または無効にします。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on checkout page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] を「チェックアウト」ページに追加します。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on product detail page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] 製品の詳細ページに表示されます。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons in mini-cart preview] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] をクリックします。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on cart page] | ストア表示 | 有効または無効 [!DNL PayPal Smart Buttons] を買い物かごページに追加します。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on checkout page] | ストア表示 | 有効または無効 [!DNL PayPal payment buttons] を「チェックアウト」ページに追加します。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on product detail page] | ストア表示 | 有効または無効 [!DNL PayPal payment buttons] 製品の詳細ページに表示されます。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons in mini-cart preview] | ストア表示 | 有効または無効 [!DNL PayPal payment buttons] をクリックします。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on cart page] | ストア表示 | 有効または無効 [!DNL PayPal payment buttons] を買い物かごページに追加します。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Venmo Enabled] | ストア表示 | 支払いボタンが表示される Venmo 支払いオプションを有効または無効にします。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Credit and Debit Card Enabled] | ストア表示 | 支払いボタンが表示されるクレジットカードおよびデビットカードのオプションを有効または無効にします。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL PayPal Pay Later Enabled] | ストア表示 | 支払いボタンが表示される PayPal Pay Later 支払いオプションの外観を有効または無効にします。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -184,12 +184,12 @@ PayPal スマートボタンの支払いオプションは、Admin 内で有効�
 
 | フィールド | 範囲 | 説明 |
 |--- |--- |--- |
-| [!UICONTROL Layout] | ストア表示 | Paypal スマートボタンのレイアウトのスタイルを定義します。 オプション： `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
-| [!UICONTROL Color] | ストア表示 | Paypal スマートボタンの色を定義します。 オプション： [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |
-| [!UICONTROL Shape] | ストア表示 | Paypal スマートボタンの形状を定義します。 オプション： `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]` |
-| [!UICONTROL Use Default Height] | ストア表示 | PayPal スマートボタンがデフォルトの高さを使用するかどうかを定義します。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Height] | ストア表示 | PayPal のスマートボタンの高さを定義します。 デフォルト値：なし |
-| [!UICONTROL Label] | ストア表示 | PayPal のスマートボタンに表示されるラベルを定義します。 オプション： `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]` |
+| [!UICONTROL Layout] | ストア表示 | Paypal の支払いボタンのレイアウトのスタイルを定義します。 オプション： `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
+| [!UICONTROL Color] | ストア表示 | Paypal の支払いボタンの色を定義します。 オプション： [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |
+| [!UICONTROL Shape] | ストア表示 | Paypal の支払いボタンの形状を定義します。 オプション： `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]` |
+| [!UICONTROL Use Default Height] | ストア表示 | PayPal の支払いボタンがデフォルトの高さを使用するかどうかを定義します。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Height] | ストア表示 | PayPal の支払いボタンの高さを定義します。 デフォルト値：なし |
+| [!UICONTROL Label] | ストア表示 | PayPal の支払いボタンに表示されるラベルを定義します。 オプション： `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]` |
 | [!UICONTROL Tagline] | ストア表示 | タグラインを有効にします。 オプション： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## キャッシュをフラッシュ

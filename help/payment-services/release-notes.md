@@ -3,7 +3,7 @@ title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '2132'
 ht-degree: 0%
@@ -168,7 +168,7 @@ _2023 年 1 月 30 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-4110 --> 購入者が製品ページ、ミニカート、買い物かごのスマートボタンを使用して注文できなかった問題を修正しました。 購入者は注文を正常に完了できるようになりました。
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-4110 --> 購入者が製品ページ、ミニカート、買い物かごの支払いボタンを使用して注文できなかった問題を修正しました。 購入者は注文を正常に完了できるようになりました。
 
 ## v1.5.3
 
@@ -186,7 +186,7 @@ _2022 年 12 月 22 日_
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 支払い方法が拒否された場合の支払いサービスの請求を改善しました。
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services で、PayPal のスマートボタンが [Fire Checkout&#39;s](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} チェックアウトページのカスタムテンプレート。 以前は、ミニカートがボタンを断続的に表示していました。
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services で、 [Fire Checkout&#39;s](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} チェックアウトページのカスタムテンプレート。 以前は、ミニカートがボタンを断続的に表示していました。
 
 ## v1.5.1
 
@@ -196,7 +196,7 @@ _2022 年 11 月 24 日_
 
 ![新規](../assets/new.svg)<!-- Issue PAY-3923 --> 支払いサービスで、未使用のエンドポイントを追跡、フィルタリングまたは廃止するためのリクエストのバージョン番号がユーザーエージェントヘッダーに含まれるようになりました。
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-3968 --> スマートボタンを使用して製品ページから注文が行われた場合、支払サービスで注文データが正しく表示されるようになりました。
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3968 --> 支払いボタンを使用して製品ページから注文が発行された場合、支払いサービスで注文データが正しく表示されるようになりました。
 
 ## v1.5.0
 
@@ -226,7 +226,7 @@ _2022 年 9 月 31 日_
 
 ![新規](../assets/new.svg)<!-- Issue PAY-3231 --> 商人は次のことができます。 [を追加します。 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 顧客取引銀行明細書に表示され、ブランド、店舗、または製品ラインを説明する web サイトまたは個々の店舗ビュー構成。
 
-![新規](../assets/new.svg)<!-- Issue PAY-3707 --> [クレジットカードフィールドと PayPal スマートボタンの有効化/無効化](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) をクリックして、支払いサービス設定のチェックアウトを行います。
+![新規](../assets/new.svg)<!-- Issue PAY-3707 --> [クレジットカードフィールドと PayPal の支払いボタンを有効または無効にします](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) をクリックして、支払いサービス設定のチェックアウトを行います。
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3546 --> 顧客が **[!UICONTROL Edit cart]**&#x200B;をクリックした場合、ページは買い物かごページにリダイレクトされ、空の買い物かごを表示する代わりに、更新された項目が表示されます。
 
@@ -258,7 +258,7 @@ _2022 年 6 月 30 日_
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3264 --> 以前は、ログインしたユーザーが自分のアカウントにデフォルトの住所以外の別の請求先/配送先住所を選択した場合、チェックアウトに失敗していました。 この問題を修正し、選択した請求先/配送先住所（デフォルトの保存済み住所ではなく）が送信され、チェックアウトが正常に完了しました。
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-3314 --> PayPal のスマートボタンをチェックアウト用に無効にした場合、エラーは表示されません。
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3314 --> PayPal の支払いボタンをチェックアウトに無効にした場合、エラーは表示されません。
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3330 --> ゲストユーザーがダッシュを含む電話番号を入力した場合に、チェックアウト中に支払いが失敗することはなくなりました。
 
@@ -288,7 +288,7 @@ _2022 年 3 月 31 日_
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-2742 --> ストア表示レベルで、Venmo などの利用可能な支払い方法を有効または無効にできるようになりました。 以前は、Web サイトごとに支払い方法を設定することができました。
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-2277 --> 次に、選択的に [個々の PayPal スマートボタンの有効化または無効化](settings.md#payment-buttons).
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-2277 --> 次に、選択的に [個々の PayPal 支払いボタンを有効または無効にします](settings.md#payment-buttons).
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-2561 --> 以前に削除した製品は、 _注文を確認_ ページに貼り付けます。
 
@@ -314,7 +314,7 @@ _2021 年 11 月 30 日_
 
 ![新規](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] は、あらゆる商人に合わせた、総処理量に基づく柔軟な階層型価格設定をサポートします。
 
-![新規](../assets/new.svg)<!-- Issue PAY-1443 --> 簡単に [外観をカスタマイズする](payments-options.md) / PayPal スマートボタンとクレジットカードフィールド [!DNL Payment Services] 拡張子。
+![新規](../assets/new.svg)<!-- Issue PAY-1443 --> 簡単に [外観をカスタマイズする](payments-options.md) (PayPal の支払いボタンと、 [!DNL Payment Services] 拡張子。
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [誤ったコンポーザーキー](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) 拡張機能のインストール中に、ユーザーは [認証](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正しい `MAGEID`.
 

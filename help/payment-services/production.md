@@ -3,7 +3,7 @@ title: 有効にする [!DNL Payment Services] 実稼動用
 description: を有効にしてオンボーディングプロセスを完了します。 [!DNL Payment Services] 実稼動用。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
    ホームビューの設定領域に移動し、関連するオプションが展開されます (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) を使用して、 [!DNL Payment Services] のオプション [支払方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_，設定&#x200B;**[!UICONTROL Enable]**から `Yes`.
-1. 設定 **[!UICONTROL Payment Action]**（両方） _[!UICONTROL Credit Card Fields]_および_[!UICONTROL PayPal Smart Buttons]_&#x200B;を次のいずれかに変更します。
+1. 設定 **[!UICONTROL Payment Action]**（両方） _[!UICONTROL Credit Card Fields]_および_[!UICONTROL PayPal payment buttons]_&#x200B;を次のいずれかに変更します。
 
    | 設定 | 説明 |
    |---|---|
@@ -47,7 +47,7 @@ ht-degree: 0%
 
    設定を変更するたびに、クリアを実行する必要があります。
 
-詳しくは、 [支払いサービスの構成](settings.md) クレジットカードフィールドと PayPal スマートボタンの設定に関する詳細
+詳しくは、 [支払いサービスの構成](settings.md) クレジットカードフィールドと PayPal の支払いボタンの設定に関する詳細
 
 ## 完全なマーチャントオンボーディング
 

@@ -3,7 +3,7 @@ title: 支払いオプション
 description: 支払いオプションを設定して、店舗の顧客が利用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -64,13 +64,13 @@ The [!DNL Apple Pay] ボタンが製品ページ、ミニカート、買い物�
 
 次の項目を設定できます。 [!UICONTROL Apple Pay] （ストア設定または支払いサービスホーム）を参照してください。 詳しくは、 [設定](settings.md#apple-pay) を参照してください。
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-[!DNL PayPal Smart Buttons]: PayPal を使用して購入を完了し、買い物客の配送先住所、請求先住所、支払いの詳細を保存して後で使用します。 買い物客は、以前に PayPal に保存または提供された任意の支払い方法を使用できます。
+[!DNL PayPal payment buttons]: PayPal を使用して購入を完了し、買い物客の配送先住所、請求先住所、支払いの詳細を保存して後で使用します。 買い物客は、以前に PayPal に保存または提供された任意の支払い方法を使用できます。
 
 ![PayPal ボタン](assets/paypal-button.png){width="350" zoomable="yes"}
 
-次の項目を設定できます。 [!UICONTROL PayPal Smart Buttons] ストア設定、または [!DNL Payment Services] ホーム。  詳しくは、 [設定](settings.md#payment-buttons) を参照してください。
+次の項目を設定できます。 [!UICONTROL PayPal payment buttons] ストア設定、または [!DNL Payment Services] ホーム。  詳しくは、 [設定](settings.md#payment-buttons) を参照してください。
 
 PayPal の「 [支払い方法に関するドキュメント](https://developer.paypal.com/docs/checkout/payment-methods/) 各支払い方法が現在どの国で利用できるかを確認する。
 

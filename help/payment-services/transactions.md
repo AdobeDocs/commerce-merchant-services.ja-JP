@@ -4,9 +4,9 @@ description: 「トランザクション」レポートを使用して、トラ�
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 このレポート内のリンクされたコマース注文 ID とプロバイダーのトランザクション ID、トランザクション金額、トランザクションごとの支払い方法などを確認します。
 
-すべての支払い方法が同じ精度の情報を提供しているわけではありません。 例えば、クレジットカードトランザクションは、応答、AVS、CCV コード、およびトランザクションレポートのカードの最後の 4 桁を提供します。PayPal スマートボタンは提供しません。
+すべての支払い方法が同じ精度の情報を提供しているわけではありません。 例えば、クレジットカードトランザクションは、応答、AVS、CCV コード、およびトランザクションレポートのカードの最後の 4 桁を提供します。PayPal の支払いボタンは提供しません。
 
 以下が可能です。 [トランザクションをダウンロード](#download-transactions) 既存の会計または注文管理ソフトウェアで使用する.csv ファイル形式。
 
