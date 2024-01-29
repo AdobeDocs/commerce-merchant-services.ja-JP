@@ -4,9 +4,9 @@ description: ヘッドレスまたはカスタムの Commerce ストアフロン
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,4 @@ Experience Platform の SDK 設定を完了したら、SDK 設定を Commerce �
 
    Adobe Experience Platform Mobile SDK を Commerce モバイルアプリと統合しました。 アプリからイベントエッジに渡されるExperience Platformデータ。
 
-モバイルコマースアプリからReal-Time CDPオーディエンスを取得して、買い物かごの価格ルールと動的ブロックに情報を提供する方法については、 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html).
+モバイルコマースアプリからReal-Time CDPオーディエンスを取得して、買い物かごの価格ルールと動的ブロックに情報を提供する方法については、 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

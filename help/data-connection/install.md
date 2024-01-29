@@ -4,9 +4,9 @@ description: インストール、更新、アンインストールの方法を�
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 ## 拡張機能のインストール
 
 The [!DNL Data Connection] 拡張機能は、 [AdobeMarketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). サーバーのコマンドラインからこの拡張機能をインストールすると、AEM Analytics の AEM as a Adobe Commerceインストールに接続されます。 [サービス](../landing/saas.md). プロセスが完了したら、 **[!DNL Data Connection]** および **Commerce Services コネクタ** 次の場所に表示される： **システム** 下のメニュー **サービス** （コマース内） _管理者_.
+
+![[!DNL Data Connection] 拡張機能の管理ビュー](assets/epc-adminui.png)
 
 >[!IMPORTANT]
 >
