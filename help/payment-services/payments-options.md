@@ -3,9 +3,9 @@ title: 支払いオプション
 description: 支払いオプションを設定して、店舗の顧客が利用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 お客様は、 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)：購入の際に、iOSまたはmacOSデバイスに保存されたクレジットカードおよびデビットカードの支払い資格情報を使用します。
 
-[!DNL Apple Pay] は、Safari ブラウザーでのみ使用できます。
+[!DNL Apple Pay] は、Safari ブラウザーでのみ使用できます。 商人は 1 商人口座につき最大 99 ドメインを追加できます。
 
 ![Apple・ペイ・ボタン（ミニカルト）](assets/apple-pay-button.png){width="500" zoomable="yes"}
 

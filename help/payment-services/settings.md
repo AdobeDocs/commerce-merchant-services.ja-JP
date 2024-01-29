@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2372'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ The _[!UICONTROL Credit Card Fields]_設定は、クレジットカードまた�
 
 ### Apple Pay
 
-The [!UICONTROL Apple Pay] ボタンの支払いオプションを使用すると、 [!UICONTROL Apple Pay] Safari ブラウザーからのストアのチェックアウト時の支払いボタン。
+The [!UICONTROL Apple Pay] ボタンの支払いオプションを使用すると、 [!UICONTROL Apple Pay] Safari ブラウザーからのストアのチェックアウト時の支払いボタン（マーチャントアカウントあたり最大 99 ドメイン）。
 
 Apple Pay は、 [Appleは Paypal を通じて自己登録を支払う](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) その後 [Apple Pay の設定](settings.md/#payment-buttons) お客様の店舗用に。 詳しくは、 [支払いオプション](payments-options.md#apple-pay-button) を参照してください。
 
