@@ -3,9 +3,9 @@ title: データを収集
 description: イベントが商品レコメンデーションのデータを収集する方法を説明します。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 7ed9321a2f4e58a7476aa91e74611fe896e1a7b1
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ SaaS ベースのAdobe Commerce機能 ( [製品Recommendations](install-configur
 
 >[!NOTE]
 >
->製品レコメンデーションを目的としたデータ収集には、個人を特定できる情報 (PII) は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は厳密に匿名化されます。 [詳細情報](https://www.adobe.com/privacy/experience-cloud.html).
+>製品レコメンデーションを目的としたデータ収集には、個人を特定できる情報 (PII) は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は厳密に匿名化されます。 学ぶ [その他](https://www.adobe.com/privacy/experience-cloud.html).
 
 次のイベントは、Product Recommendationsに固有のものではありませんが、結果を返すために必要になります。
 
@@ -26,14 +26,17 @@ SaaS ベースのAdobe Commerce機能 ( [製品Recommendations](install-configur
 
 The [Adobe Commerce Storefront イベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) ストアフロントにデプロイされたすべてのイベントの一覧が表示されます。 ただし、このリストからは、Product Recommendationsに固有のイベントのサブセットが得られます。 これらのイベントは、買い物客がストアフロントでレコメンデーション単位を操作する際にデータを収集し、レコメンデーションのパフォーマンスを分析するのに役立つ指標を活用します。
 
-| イベント | 説明 | [指標に使用されますか？](workspace.md) |
+| イベント | 説明 | 指標に使用されますか？ |
 | --- | --- | --- |
 | `impression-render` | レコメンデーション単位は、ページ上にレンダリングされます。 | はい |
 | `rec-add-to-cart-click` | 顧客が **買い物かごに追加** ボタンを使用して、レコメンデーション単位の品目を表示できます。 | はい、 **買い物かごに追加** ボタンが recommendations テンプレートに存在することを確認します。 |
 | `rec-click` | 顧客がレコメンデーション単位で商品をクリックします。 | はい |
 | `view` | レコメンデーションユニットは、ビューにスクロールして表示するなど、ページ上で表示可能になります。 | はい |
 
-ストアフロントがPWA Studioで実装されている場合は、 [PWA文書](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). React や Vue JS などのカスタムフロントエンドテクノロジーを使用する場合は、ユーザーガイドを参照して、製品Recommendationsを [頭のない](headless.md) 環境。
+ダッシュボードに適切に入力するには、次のイベントが必要です。
+| ダッシュボード列 | イベント | フィールドを結合 | | — | — | — | | Impressions |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId | | 件数 |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId | | クリック数 |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`    | unitId | | 売上高 |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku | | LT 収益 |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku | | CTR |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | unitId, sku | | vCTR |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
+
+ストアフロントがPWA Studioで実装されている場合は、 [PWA文書](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). React や Vue JS などのカスタムフロントエンドテクノロジーを使用する場合は、ユーザーガイドを参照して、 [ヘッドレスの製品Recommendations](headless.md) 環境。
 
 ## 注意事項
 

@@ -2,9 +2,10 @@
 title: '''[!DNL Live Search] イベント`'
 description: イベントでデータを収集する方法を説明します。 [!DNL Live Search].
 feature: Services, Eventing
-source-git-commit: c14ba55bee54954ffcfe760e26dc1d69646ecd69
+exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
+source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -39,17 +40,17 @@ ht-degree: 0%
 
 ## 必須のダッシュボードイベント
 
-一部のイベントは、 [ライブ検索ダッシュボード](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/performance.html)
+一部のイベントは、 [ライブ検索ダッシュボード](performance.md)
 
-| ダッシュボード領域 | イベント |
-| ----- | ---- | 
-| 一意の検索 | `search-request-sent`,`search-response-received` |
-| 結果がゼロの検索 | `search-request-sent`,`search-response-received` |
-| ゼロの結果率 | `search-request-sent`,`search-response-received` |
-| よく読まれる検索 | `search-request-sent`,`search-response-received` |
-| 平均 クリック位置 | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| クリックスルー率 | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| コンバージョン率 | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click`,`product-view`,`add-to-cart`,`place-order` |
+| ダッシュボード領域 | イベント | フィールドを結合 |
+| ------------------- | ------------- | ---------- |
+| 一意の検索 | `page-view`, `search-request-sent`, | searchRequestId |
+| 結果がゼロの検索 | `page-view`, `search-request-sent`, | searchRequestId |
+| ゼロの結果率 | `page-view`, `search-request-sent`, | searchRequestId |
+| よく読まれる検索 | `page-view`, `search-request-sent`, | searchRequestId |
+| 平均 クリック位置 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| クリックスルー率 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
+| コンバージョン率 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
 
 ### 必要なコンテキスト
 
