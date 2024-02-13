@@ -5,9 +5,9 @@ breadcrumb-title: 「[!DNL Catalog Service] ガイド」
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
+source-git-commit: a2f933151481cbdd39d66a0dfbd36e6c339ede62
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '53'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 11%
 - [オンボーディングとインストール](installation.md)
 - [カタログサービスと API メッシュ](mesh.md)
 - [API メッシュを使用した課税済み価格の表示](taxes.md)
-- [フィード取り込みサービス（ベータ版）](feed-ingestion.md)
+- [データ取り込みサービス](data-ingestion.md)
 - GraphQLクエリ {#graphql}
    - [カテゴリクエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
    - [製品クエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
