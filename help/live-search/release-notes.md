@@ -3,9 +3,9 @@ title: '"[!DNL Live Search] リリースノート»'
 description: 次の最新のリリース情報： [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
+source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1772'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ ht-degree: 0%
 
 これらのノートでは、バージョン管理されたリリース以外で公開された更新や、ホストされたサービスの改善について説明します。
 
+_2024 年 2 月 14 日_
+
+![新規](../assets/new.svg) [!DNL Live Search] で、のデフォルトルールの設定をサポートするようになりました。 [マーチャンダイジングを検索](rules.md).
+
 _2023 年 10 月 27 日_
 
 ![新規](../assets/new.svg) The [!DNL Live Search] PLP ウィジェットでカラースウォッチがサポートされるようになりました。
@@ -41,37 +45,26 @@ _2023 年 4 月 26 日_
 
 ![新規](../assets/new.svg) [!DNL Live Search] お客様は、 [SaaS 価格インデクサー](../price-index/index.md).
 
-## [!DNL Live Search] 4.1.0 {#410}
+<!--## [!DNL Live Search] 4.1.0 {#410}
 
-_2024 年 2 月 14 日_
+_Feb 13, 2024_
 
-[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### 新機能
+### New Features
 
-![新規](../assets/new.svg) [!DNL Live Search] で、のデフォルトルールの設定をサポートするようになりました。 [マーチャンダイジングを検索](rules.md).
-![新規](../assets/new.svg) に複数の新機能が追加されました。 [PLP ウィジェット](plp-styling.md):
+![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
 
-* リスト/グリッド表示の切り替え
-* 買い物かごに追加ボタン
-* スウォッチのサポート
-* 製品ごとに複数の画像
-* 価格スライダー
-* 言語サポート
+* List/grid view toggling
+* Add to Cart buttons
+* Swatch support
+* Multiple images per product
+* Price sliders
+* Language support
 
-マーチャントは [!DNL Live Search] これらの機能にアクセスするには、バージョン 4.1.0 以降の拡張機能を使用してください。
+Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
 
-バージョン 3.1.1 以降をインストールした後、新しいインデクサーを有効にします。
-
-* 製品価格フィード
-* スコープの Web サイトデータフィード
-* スコープの顧客グループデータフィード
-
-アップグレード後、変更を実稼動環境にプッシュする前に、QA またはステージングで更新された設定をテストします。
-
-## 以前のバージョン
-
-+++4.0.0 以前
+--->
 
 ## [!DNL Live Search] 4.0.0 {#400}
 
@@ -92,6 +85,18 @@ _2023 年 11 月 14 日_
 ![修正点](../assets/fix.svg) The [!DNL Live Search] PLP ウィジェットは、新規インストールでデフォルトで有効になりました。
 ![修正点](../assets/fix.svg) CSS スタイルを再設定し、ウィジェットクラスをより詳細に分離しました。
 ![修正点](../assets/fix.svg) マイナーなバグ修正。
+
+バージョン 3.1.1 以降をインストールした後、新しいインデクサーを有効にします。
+
+* 製品価格フィード
+* スコープの Web サイトデータフィード
+* スコープの顧客グループデータフィード
+
+アップグレード後、変更を実稼動環境にプッシュする前に、QA またはステージングで更新された設定をテストします。
+
+## 以前のバージョン
+
++++3.1.1 以前
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
