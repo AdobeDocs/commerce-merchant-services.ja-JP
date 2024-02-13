@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: インストール方法 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: d02ffe4028bdf5765fb0f23fd210f398729bee62
+source-git-commit: 82ed90f48067d7daf20c1a9ebde318d428aad864
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -144,4 +144,8 @@ API キーを取得するには、管理の「 Commerce Service Connector 」領
 
 The [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 開発者は、AdobeI/O を使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
 
-詳しくは、 [[!DNL Catalog Service] と API メッシュ](mesh.md) インストールおよび設定の詳細に関するトピック。
+詳しくは、  [[!DNL Catalog Service] と API メッシュ](mesh.md) インストールおよび設定の詳細に関するトピック。
+
+## データ管理ダッシュボード
+
+ユーザーは、 [データ管理ダッシュボード](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 関するその他の情報 [!DNL Catalog Service] データ同期。

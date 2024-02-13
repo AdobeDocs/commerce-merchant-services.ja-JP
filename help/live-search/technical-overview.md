@@ -3,9 +3,9 @@ title: 「技術概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
+source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Search Adapter や Widgets、AEM CIF Widgets などのデフォルトコンポ�
 
 ## ウィジェットコードリポジトリ
 
-製品リストページウィジェットと検索ポップオーバーウィジェットは、どちらも github リポジトリからダウンロードできます。
+製品リストページウィジェットとライブ検索フィールドウィジェットは、どちらも GitHub リポジトリからダウンロードできます。
 
 これにより、開発者は機能とスタイル設定を完全にカスタマイズできます。 これらのユーザーは、 [!DNL Live Search] サービス。
 
@@ -160,6 +160,8 @@ Search Adapter や Widgets、AEM CIF Widgets などのデフォルトコンポ�
 * 最小広告価格
 
 見る [API メッシュ](../catalog-service/mesh.md) より複雑な価格計算の場合。
+
+価格形式は、コマースインスタンス内のロケール設定をサポートします。 *ストア* /設定/ *設定* /一般/ *一般* /ローカルオプション/ロケール。
 
 ## PWAのサポート
 
@@ -192,7 +194,7 @@ Search Adapter や Widgets、AEM CIF Widgets などのデフォルトコンポ�
 ## 現在はサポートされていません
 
 * The [詳細検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 次の場合、モジュールは無効になります： [!DNL Live Search] がインストールされ、ストアフロントフッターの「詳細検索」リンクは削除されます。
-* [価格帯](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) および [特別価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) は、 [!DNL Live Search] ポップオーバーおよび製品リストページウィジェット。
+* [価格帯](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) および [特別価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) は、 [!DNL Live Search] フィールドおよび製品リストページウィジェット。
 
 ## Cookie
 

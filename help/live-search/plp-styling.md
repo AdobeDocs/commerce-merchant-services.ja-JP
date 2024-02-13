@@ -2,9 +2,9 @@
 title: 製品リストページウィジェット
 description: の有効化とスタイル設定 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,16 @@ PLP ウィジェットを無効にするには：
 
 1. に移動します。 **ストア** /設定/ **設定** > **[!DNL Live Search]** > **ストアフロント機能** と設定します。 **製品リストウィジェットを有効にする** を「いいえ」に設定します。
 1. 選択 **設定を保存** をクリックして設定を保存します。
+
+## ウィジェットの機能
+
+PLP ウィジェットは、検索可能な製品ページで期待される様々な機能を提供します。 これには次が含まれます。
+
+* 属性によるフィルタリング。
+* カラースウォッチのサポート
+* 買い物かごに追加機能
+* 複数言語のサポート
+* 価格スライダー
 
 ## スタイル設定の例
 

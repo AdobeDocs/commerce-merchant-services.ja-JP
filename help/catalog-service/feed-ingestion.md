@@ -1,19 +1,15 @@
 ---
 title: フィード取り込みサービス
 description: Adobe Commerceのフィード取り込みサービスについて説明します。
-source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
+exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
+source-git-commit: d3798efa038c35f71bb0bb6874d954a8e66c7467
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
 
-
 # フィード取り込みサービス
-
->[!NOTE]
->
->フィード取り込みサービスは、現在、プライベートベータ版です。 まだ一般的には使用できません。
 
 フィード取り込みサービスを使用すると、大きなカタログや複雑なカタログを持つお客様は、Adobe Commerceに直接データを送信できます。
 
@@ -36,12 +32,6 @@ Adobe Commerceの設定に応じて、データストレージとデータフロ
 
 コアコマースアプリケーションをバイパスし、データを直接コマースサービスに移動することで、製品の更新がストアに迅速に反映されます。 SKU などのコアカタログデータは、別々の処理のためにコア Commerce アプリケーションに送信されます。
 
-## ベータ版に参加する
+## API
 
-フィード取り込みサービスは、次の目的で設計されています。
-
-* ヘッドレス実装を使用する中堅企業のお客様
-* 大規模で複雑なカタログを使用するお客様
-* カタログデータの管理にAdobe Commerce管理者を使用していないお客様は、ERP またはサードパーティ製システムを使用してカタログデータを管理します。
-
-ベータ版プログラムへの参加を希望される場合は、sagonzal@adobe.comのチームにお問い合わせください。
+The [フィード取り込みサービス API ドキュメント](https://developer.adobe.com/commerce/services/feed-ingestion) サービスの実装方法の詳細については、を参照してください。

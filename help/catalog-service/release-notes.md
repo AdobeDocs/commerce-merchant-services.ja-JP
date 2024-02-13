@@ -1,12 +1,12 @@
 ---
-title: '[!DNL Catalog Service] リリースノート'
+title: '''[!DNL Catalog Service] リリースノート`'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerceの
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 1%
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -22,21 +22,20 @@ ht-degree: 1%
 
 ## 現在のメジャーバージョン
 
-### V1.13 リリース
+### V1.16 リリース
 
-_2023 年 10 月 13 日_
+_2023 年 2 月 14 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg) カタログサービスは、 `inStock` 製品バリアントのフラグ。
-![新規](../assets/new.svg) `urlKey` および `externalId` がGraphQLスキーマに追加されました。
-![新規](../assets/new.svg) ダウンロード可能な製品とギフトカードがサポートされるようになりました。
+![新規](../assets/new.svg) カタログサービス API で製品ビデオがサポートされるようになりました。
+![修正点](../assets/fix.svg) 固定価格のバンドル製品がサポートされるようになりました。
+![修正点](../assets/fix.svg) 在庫切れのオプションが PDP ウィジェットに表示されるようになりました。
 
 #### 既知の制限事項
 
 以下の機能は、まだサポートされていません。
 
-* 定価で製品をバンドル
 * 動的属性ペイロードの最大サイズは 9 MB です。
 * グループの製品価格。 単純な製品価格で計算できます。
 * 画像配列では、最初の画像のみに役割が含まれます。
@@ -49,6 +48,16 @@ API Mesh と Core GraphQL API を使用して、次の制限を解決できま�
 ## 以前のバージョン
 
 +++ 以前のバージョン
+
+### V1.13 リリース
+
+_2023 年 10 月 13 日_
+
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+
+![新規](../assets/new.svg) カタログサービスは、 `inStock` 製品バリアントのフラグ。
+![新規](../assets/new.svg) `urlKey` および `externalId` がGraphQLスキーマに追加されました。
+![新規](../assets/new.svg) ダウンロード可能な製品とギフトカードがサポートされるようになりました。
 
 ### V1.12 リリース
 

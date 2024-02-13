@@ -3,9 +3,9 @@ title: カタログ同期
 description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
+source-git-commit: 6513fd6dce9648407b0878785f5f59f9f39cd5e1
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,15 @@ ht-degree: 0%
 
 # カタログ同期
 
+>[!NOTE]
+>
+> 「カタログ同期」ダッシュボードが「データ管理」ダッシュボードになりました。 この改良されたダッシュボードは、 [!DNL Product Recommendations], [!DNL Live Search]、および [!DNL Catalog Service]. お客様は、データ管理ダッシュボードを取得するには、これらのサービスのいずれかを最新バージョンに更新します。 詳しくは、 [データ管理ダッシュボード](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ドキュメント。 この現在のトピックは、まだアップグレードせず、まだカタログ同期ダッシュボードを持っているユーザーに対しても引き続き表示されます。
+
 Adobe Commerceは、インデクサーを使用してカタログデータをテーブルにコンパイルします。 プロセスは、次を通じて自動的にトリガーされます： [イベント](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 製品価格や在庫レベルの変更など。
 
 カタログ同期サービスは、製品データを [!DNL Adobe Commerce] インスタンスから [!DNL Commerce Services] データを最新の状態に保つための、継続的なプラットフォーム。 例： [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) では、現在のカタログ情報が正しい名前、価格、可用性を使用してレコメンデーションを正確に返すように必要になります。 以下を使用します。 _カタログ同期_ 同期プロセスを監視および管理するためのダッシュボード [コマンドラインインターフェイス](#resynccmdline) カタログ同期をトリガーし、使用する製品データのインデックスを再作成するには、以下を実行します。 [!DNL Commerce Services].
 
->[!NOTE]
->
-> 次の手順で _カタログ同期_ ダッシュボードまたはコマンドラインインターフェイスには、 [API キーと SaaS データ領域の設定](saas.md).
-
 ## カタログ同期ダッシュボードへのアクセス
-
->[!NOTE]
->
-> The _カタログ同期_ ダッシュボードは、 _製品Recommendations_ モジュールがインストールされ、その機能に関連するデータ投影のみを反映します。 などの他のコマースサービスのサポート _ライブ検索_ および _カタログサービス_ は将来の予定です。
 
 カタログ同期ダッシュボードにアクセスするには、「 **システム** > _データ転送_ > **カタログ同期**.
 
@@ -46,7 +42,7 @@ Adobe Commerceは、インデクサーを使用してカタログデータをテ
 - **失敗**  — 同期が試行された日時を表示
 - **処理中**  — 最後に同期が成功した日時を表示します
 
-カタログ同期プロセスは、1 時間ごとに自動的に実行されます。 ストアフロントに期待された製品が表示されない場合や、製品に最近の変更が反映されていない場合は、解決できます [カタログ同期の問題](#resolvesync).
+カタログ同期プロセスは、cron プロセスを通じて実行されます。 ストアフロントに期待した製品が表示されない場合や、製品に最近の変更が反映されていない場合は、解決できます [カタログ同期の問題](#resolvesync).
 
 ### 同期された製品
 

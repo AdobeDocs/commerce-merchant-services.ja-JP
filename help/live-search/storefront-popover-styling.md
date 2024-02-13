@@ -2,9 +2,9 @@
 title: 「スタイル設定」 [!DNL Popover] エレメント»
 description: " [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 67da9016d4bca9750fa9e440cce08ad1ae7100e2
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,10 @@ The [[!DNL storefront popover]](storefront-popover.md) 常に製品を表示 `na
 #### .livesearch.product-price
 
 ![製品価格](assets/livesearch-product-price.png)
+
+#### .livesearch product-link
+
+![製品の結果](assets/livesearch-product-link.png)
 
 ## 変更したテーマの使用 {#working-with-modified-theme}
 
