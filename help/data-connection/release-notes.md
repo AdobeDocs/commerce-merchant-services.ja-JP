@@ -3,9 +3,9 @@ title: リリースノート
 description: の最新のリリース情報 [!DNL Data Connection] Adobe Commerceからの拡張。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
+source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ _2023 年 11 月 17 日_
 
 _2023 年 10 月 11 日_
 
-![新規](../assets/new.svg)  — 新しい注文ステータスイベントが追加されました。 [注文請求済み](events.md#orderinvoiced), [注文品目の返品開始](events.md#orderitemsreturninitiated)、および [注文品目の返品完了](events.md#orderitemreturncompleted).
+![新規](../assets/new.svg)  — 新しい注文ステータスイベントが追加されました。 [注文請求済み](events-backoffice.md#orderinvoiced), [注文品目の返品開始](events.md#orderitemsreturninitiated)、および [注文品目の返品完了](events.md#orderitemreturncompleted).
 ![修正点](../assets/fix.svg)  — キャッシュを更新した後、通貨設定の変更がイベントに反映されない問題を修正しました。
 ![修正点](../assets/fix.svg)  — 非同期の注文配置が有効な場合に注文確認メッセージが表示されない場合のエラーを修正しました。
 ![新規](../assets/new.svg)  — にデータを追加しました [addToRequisitionList](events.md#addtorequisitionlist) イベントを追加できます。
@@ -71,6 +71,16 @@ _2022 年 10 月 13 日_
 ![新規](../assets/new.svg)  — のサポートを追加しました [AEM storefront](overview.md#aem-support).
 
 +++
+
+## 3.2.0-beta1
+
+_2024 年 2 月 17 日_
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+![新規](../assets/new.svg)  — ベータ版に参加している場合は、 `composer.json` ファイルのルートレベルは次のようになります。 ` "minimum-stability": "beta"`.
+![新規](../assets/new.svg)  — 次の機能を追加しました。 [カスタム属性を追加](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![新規](../assets/new.svg)  — 次の機能を追加しました。 [プロファイルレコードの収集と送信](connect-data.md#send-customer-profile-data) およびデータをExperience Platformに
 
 ## 3.1.0
 
@@ -120,8 +130,8 @@ _2023 年 3 月 31 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg)  — バンドルされた `commerce-data-export` および `saas-export` 依存関係 `experience-platform-connector` 拡張子。 以前は、これらの依存関係を個別にインストールする必要がありました。 これらの依存関係は、マーチャント設定と共に、サーバ側での [バックオフィスイベント](events.md#back-office-events).
-![新規](../assets/new.svg)  — という新しいバックオフィスイベントが追加されました。 [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+![新規](../assets/new.svg)  — バンドルされた `commerce-data-export` および `saas-export` 依存関係 `experience-platform-connector` 拡張子。 以前は、これらの依存関係を個別にインストールする必要がありました。 これらの依存関係は、マーチャント設定と共に、サーバ側での [バックオフィスイベント](events-backoffice.md).
+![新規](../assets/new.svg)  — という新しいバックオフィスイベントが追加されました。 [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
 
 ## 2.1.1
 

@@ -5,10 +5,10 @@ breadcrumb-title: '"[!DNL Data Connection] Adobe Commerceの拡張機能»'
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: f3e0fab42ced9306a8083fb83cf09c53735628f9
+source-git-commit: cb31b0d1f9589da9785ed0b02b4c519a562f14d0
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 5%
+source-wordcount: '98'
+ht-degree: 4%
 
 ---
 
@@ -18,11 +18,15 @@ ht-degree: 5%
 - [リリースノート](release-notes.md)
 - 基本 {#fundamentals}
    - [をインストールします。 [!DNL Data Connection] 拡張](install.md)
+   - [コマースデータのタイプ](data-ingestion.md)
+   - [コマースデータ取り込み用の時系列イベントスキーマの更新](update-xdm.md)
+   - [コマースデータ取り込み用にプロファイルレコードスキーマを更新](profile-data.md)
    - [コマースデータをAdobe Experience Platformに接続](connect-data.md)
-   - [XDM スキーマへのフィールドグループの追加](update-xdm.md)
    - [Adobe Experience Platform Mobile SDK の Commerce との統合](mobile-sdk-epc.md)
 - データのキャプチャ {#event-forwarding}
-   - [イベント](events.md)
+   - [行動イベント](events.md)
+   - [バックオフィスイベント](events-backoffice.md)
+   - [プロファイルレコード](events-profilerecord.md)
    - [カスタムイベント](custom-events.md)
    - [Adobe Experience Platformタグを使用](using-tags.md)
 - 使用例 {#use-cases}
