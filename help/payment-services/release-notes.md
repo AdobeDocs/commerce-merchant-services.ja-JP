@@ -3,9 +3,9 @@ title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 8b619669ed0558fbd4769206e20062e819e1e6f3
+source-git-commit: ac7e16fd7e5e4161ee8935f4ecc6da6ae2e9d9f0
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2183'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,16 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v2.3.3
+
+_2024 年 2 月 15 日_
+
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+
+![新規](../assets/new.svg)<!-- PAY-5048 --> PHP 8.3 のサポートを追加
+
+![修正点](../assets/fix.svg)<!-- PAY-5048 --> 次のエラーを修正しました： `is_deleted` フラグ。 現在は、 `Rejected` 拡張機能から送信されたステータス。
 
 ## v2.3.2
 
