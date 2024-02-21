@@ -3,7 +3,7 @@ title: リリースノート
 description: の最新のリリース情報 [!DNL Data Connection] Adobe Commerceからの拡張。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -46,7 +46,7 @@ _2023 年 11 月 17 日_
 
 _2023 年 10 月 11 日_
 
-![新規](../assets/new.svg)  — 新しい注文ステータスイベントが追加されました。 [注文請求済み](events-backoffice.md#orderinvoiced), [注文品目の返品開始](events.md#orderitemsreturninitiated)、および [注文品目の返品完了](events.md#orderitemreturncompleted).
+![新規](../assets/new.svg)  — 新しい注文ステータスイベントが追加されました。 [注文請求済み](events-backoffice.md#orderinvoiced), [注文品目の返品開始](events-backoffice.md#orderitemsreturninitiated)、および [注文品目の返品完了](events-backoffice.md#orderitemreturncompleted).
 ![修正点](../assets/fix.svg)  — キャッシュを更新した後、通貨設定の変更がイベントに反映されない問題を修正しました。
 ![修正点](../assets/fix.svg)  — 非同期の注文配置が有効な場合に注文確認メッセージが表示されない場合のエラーを修正しました。
 ![新規](../assets/new.svg)  — にデータを追加しました [addToRequisitionList](events.md#addtorequisitionlist) イベントを追加できます。

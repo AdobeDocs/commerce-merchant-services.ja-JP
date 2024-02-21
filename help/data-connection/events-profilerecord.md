@@ -3,7 +3,7 @@ title: プロファイルレコード
 description: プロファイルレコードが取り込むデータを説明します。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## プロファイルレコード
 
-プロファイルレコードの更新は、新しいプロファイルが作成、更新または削除されたときに、Experience Platformで利用できます。
+プロファイルレコードの更新は、新しいプロファイルの作成、更新、または削除時にExperience Platformで利用できます。
 
 ### プロファイルレコードから収集されたデータ
 

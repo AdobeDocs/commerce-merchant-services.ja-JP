@@ -3,7 +3,7 @@ title: コマースデータをAdobe Experience Platformに接続
 description: コマースデータをAdobe Experience Platformに接続する方法を説明します。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '2501'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Commerce Services コネクタを設定した後、 [!DNL Data Connection] 拡�
 
 Adobe Commerceインスタンスがデータ収集を開始できることを確認するには、 [前提条件](overview.md#prerequisites).
 
-詳しくは、イベントのトピックを参照してください。 [店頭の](events.md#storefront-events), [バックオフィス](events.md#back-office-events)、および [profile](events.md#customer-profile-events-server-side) イベント。
+詳しくは、イベントのトピックを参照してください。 [店頭の](events.md#storefront-events), [バックオフィス](events-backoffice.md)、および [profile](events-backoffice.md#customer-profile-events-server-side) イベント。
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ Experience Platformに送信できるプロファイルデータには、プロ�
 
 ### 履歴注文データの送信
 
-Adobe Commerceは最大 5 年間を収集 [過去の注文データとステータス](events.md#back-office-events). 以下を使用すると、 [!DNL Data Connection] 拡張機能を使用して、その履歴データをExperience Platformに送信し、過去の注文に基づいて顧客プロファイルを強化し、顧客エクスペリエンスをパーソナライズします。 データは、Experience Platform内のデータセットに保存されます。
+Adobe Commerceは最大 5 年間を収集 [過去の注文データとステータス](events-backoffice.md#back-office-events). 以下を使用すると、 [!DNL Data Connection] 拡張機能を使用して、その履歴データをExperience Platformに送信し、過去の注文に基づいて顧客プロファイルを強化し、顧客エクスペリエンスをパーソナライズします。 データは、Experience Platform内のデータセットに保存されます。
 
 Commerce は既に履歴注文データを収集していますが、そのデータをExperience Platformに送信するには、いくつかの手順を完了する必要があります。
 
