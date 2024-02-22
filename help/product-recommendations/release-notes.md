@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Product Recommendations] リリースノート'
+title: '''[!DNL Product Recommendations] リリースノート`'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: bf7dc316f7b7b702836441b35770403d75be6cfd
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,19 @@ _2023 年 4 月 26 日_
 
 ## 現在のメジャーバージョン
 
+### magento/product-recommendations の 6.0.0
+
+_2024 年 2 月 23 日_
+
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+
+![新規](../assets/new.svg) The [!DNL Catalog Sync Dashboard] は、現在 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). この改良されたダッシュボードは、 [!DNL Product Recommendations], [!DNL Live Search]、および [!DNL Catalog Service].
+![修正点](../assets/fix.svg) Product Recommendationsのチェックアウトエラーが発生する問題を修正しました。
+
+### 以前のバージョン
+
++++5.0.0 以前
+
 ### magento/product-recommendations の 5.0.1
 
 _2023 年 9 月 16 日_
@@ -58,10 +71,6 @@ _2023 年 9 月 16 日_
 #### 既知の制限事項
 
 * The `websiteCode` 値にアンダースコア (_) が含まれる場合、誤って値が返されます。
-
-### 以前のバージョン
-
-+++5.0.0 以前
 
 ### magento/product-recommendations の 5.0.0
 

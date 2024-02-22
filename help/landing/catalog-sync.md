@@ -3,9 +3,9 @@ title: カタログ同期
 description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 748fb32913f9e7f0dea21f87be20386d9cc0ad17
+source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,15 @@ ht-degree: 0%
 
 # カタログ同期
 
+>[!NOTE]
+>
+> 「カタログ同期」ダッシュボードが「データ管理」ダッシュボードになりました。 この改良されたダッシュボードは、 [!DNL Product Recommendations], [!DNL Live Search]、および [!DNL Catalog Service]. お客様は、データ管理ダッシュボードを取得するには、これらのサービスのいずれかを最新バージョンに更新します。 詳しくは、 [データ管理ダッシュボード](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ドキュメント。 この現在のトピックは、まだアップグレードせず、まだカタログ同期ダッシュボードを持っているユーザーに対しても引き続き表示されます。
+
 Adobe Commerceは、インデクサーを使用してカタログデータをテーブルにコンパイルします。 プロセスは、次を通じて自動的にトリガーされます： [イベント](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 製品価格や在庫レベルの変更など。
 
 カタログ同期サービスは、製品データを [!DNL Adobe Commerce] インスタンスから [!DNL Commerce Services] データを最新の状態に保つための、継続的なプラットフォーム。 例： [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) では、現在のカタログ情報が正しい名前、価格、可用性を使用してレコメンデーションを正確に返すように必要になります。 以下を使用します。 _カタログ同期_ 同期プロセスを監視および管理するためのダッシュボード [コマンドラインインターフェイス](#resynccmdline) カタログ同期をトリガーし、使用する製品データのインデックスを再作成するには、以下を実行します。 [!DNL Commerce Services].
 
->[!NOTE]
->
-> 次の手順で _カタログ同期_ ダッシュボードまたはコマンドラインインターフェイスには、 [API キーと SaaS データ領域の設定](saas.md).
-
 ## カタログ同期ダッシュボードへのアクセス
-
->[!NOTE]
->
-> The _カタログ同期_ ダッシュボードは、 _製品Recommendations_ モジュールがインストールされ、その機能に関連するデータ投影のみを反映します。 などの他のコマースサービスのサポート _ライブ検索_ および _カタログサービス_ は将来の予定です。
 
 カタログ同期ダッシュボードにアクセスするには、「 **システム** > _データ転送_ > **カタログ同期**.
 

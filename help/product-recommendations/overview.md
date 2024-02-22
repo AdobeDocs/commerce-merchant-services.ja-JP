@@ -3,9 +3,9 @@ title: の概要 [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。」'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ ht-degree: 0%
 ## プライバシー
 
 の目的でのデータ収集 [!DNL Product Recommendations] には、個人を特定できる情報 (PII) は含まれません。 また、Cookie ID や IP アドレスなどのすべてのユーザー識別子は厳密に匿名化されます。 詳しくは、 [Adobeプライバシーポリシー](https://www.adobe.com/privacy/policy.html).
+
+[!DNL Product Recommendations] ユーザーは、 [データ管理ダッシュボード](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) を参照してください。
 
 ## 製品のレコメンデーションと製品の関係
 

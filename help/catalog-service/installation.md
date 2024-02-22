@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: インストール方法 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ SaaS 設定が完了したら、 [カタログ同期](https://experienceleague.a
 - インデクサーが実行中であることを確認します。
 - 次の点を確認します。 `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、および `Product Variant Feed` インデクサーは「スケジュールに従って更新」に設定されます。
 
-カタログのサイズによっては、初期同期に数分から数時間かかる場合があります。 初回同期後、カタログは、サービスを最新の状態に保つために、コマースサーバーからコマースサービスに製品データを継続的に書き出します。
+カタログのサイズによっては、初期同期に数分から数時間かかる場合があります。 初回同期後、カタログは、サービスを最新の状態に保つために、コマースサーバーからコマースサービスに製品データを継続的に書き出します。 同期のステータスを監視するには、 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### サービスへのアクセス
 
@@ -145,3 +145,7 @@ API キーを取得するには、管理の「 Commerce Service Connector 」領
 The [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 開発者は、AdobeI/O を使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
 
 詳しくは、  [[!DNL Catalog Service] と API メッシュ](mesh.md) インストールおよび設定の詳細に関するトピック。
+
+## データ管理ダッシュボード
+
+ユーザーは、 [データ管理ダッシュボード](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 関するその他の情報 [!DNL Catalog Service] データ同期。

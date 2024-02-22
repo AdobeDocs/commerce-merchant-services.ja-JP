@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] リリースノート`'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerceの
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
+source-git-commit: 358dac1ce083023476022c968bc6a9debfadc119
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,18 @@ ht-degree: 0%
 ![バグ](../assets/bug.svg) 既知の問題
 
 ## 現在のメジャーバージョン
+
+### V1.17 リリース
+
+_2023 年 2 月 23 日_
+
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+
+![新規](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) が利用できるようになりました。 この改良されたダッシュボードは、 [!DNL Product Recommendations], [!DNL Live Search]、および [!DNL Catalog Service].
+
+## 以前のバージョン
+
++++ 以前のバージョン
 
 ### V1.16 リリース
 
@@ -44,10 +56,6 @@ API Mesh と Core GraphQL API を使用して、次の制限を解決できま�
 
 * 最小広告価格
 * [価格帯](mesh.md)
-
-## 以前のバージョン
-
-+++ 以前のバージョン
 
 ### V1.13 リリース
 

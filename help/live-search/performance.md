@@ -2,9 +2,9 @@
 title: 「パフォーマンスダッシュボード」
 description: 「 [!DNL Live Search] パフォーマンスダッシュボードは、買い物客が使用する検索用語に関するインサイトを提供します。」
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ The [!DNL Live Search] パフォーマンスダッシュボードでは、買い
 * 一般的な結果
 
 ![パフォーマンス](assets/performance-unique-searches.png)
+
+また、 [データ管理ダッシュボード](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) を参照してください。
 
 ## レポートの表示
 
