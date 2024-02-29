@@ -2,9 +2,9 @@
 title: 新しいレコメンデーションを作成
 description: 製品レコメンデーション単位の作成方法を説明します。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ _推奨単位_
 1. Adobe Analytics の _レコメンデーションに名前を付ける_ セクション内部参照のわかりやすい名前（例： ）を入力します。 `Home page most popular`.
 
 1. Adobe Analytics の _ページタイプを選択_ 「 」セクションで、レコメンデーションを表示するページを次のオプションから選択します。
+
+   >[!NOTE]
+   >
+   > ストアが [買い物かごに製品を追加した直後に買い物かごページを表示](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
 
    * ホームページ
    * カテゴリ
