@@ -4,9 +4,9 @@ description: コマースデータ取り込み用の時系列イベントデー�
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -76,10 +76,6 @@ ht-degree: 0%
 買い物客のプロファイル情報を含めるには、次の節を参照してください。
 
 ## 時系列プロファイルイベントデータ
-
->[!NOTE]
->
->この機能はベータ版です。 ベータ版プログラムに参加したい場合は、にリクエストを送信してください。 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 時系列プロファイルイベントデータは、次のイベントから生成されます。
 

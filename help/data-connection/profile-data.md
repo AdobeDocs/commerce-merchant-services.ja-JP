@@ -3,18 +3,14 @@ title: コマースデータ取り込み用にプロファイルレコードス�
 description: コマースプロファイルレコードデータを収集してExperience Platformに送信するスキーマ、データセット、データストリームを作成する方法を説明します。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 8456f9b81812cf8ace55b7406d8b4fe50332c17a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 # コマースデータ取り込み用にプロファイルレコードスキーマを更新
-
->[!NOTE]
->
->この機能はベータ版です。 ベータ版プログラムに参加したい場合は、にリクエストを送信してください。 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 買い物客がコマースサイトでプロファイルを作成すると、プロファイルレコードが作成され、データが取り込まれます。 プロファイルデータをExperience Platformにストリーミングする前に、そのプロファイルレコードに固有のスキーマとデータセットを作成する必要があります。
 

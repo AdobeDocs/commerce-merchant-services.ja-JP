@@ -3,9 +3,9 @@ title: コマースデータのタイプ
 description: 収集してExperience Platformに送信できるデータのタイプについて説明します。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,7 @@ The [データ接続拡張機能](overview.md) は、コマースデータをExp
 
 ## レコードデータ
 
->[!NOTE]
->
->この機能はベータ版です。 ベータ版プログラムに参加したい場合は、にリクエストを送信してください。 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
-レコードデータは、主体の属性に関する情報を提供します。 主体は、組織または個人にすることができます。 例えば、サイトの買い物客がアカウントを作成し、そのアカウントがレコードデータを生成したとします。 このデータは、クラスがに設定されたExperience Platformを使用してスキーマに取り込まれます。 **個々のプロファイル**. そのレコードデータは、Adobeのプロファイル管理およびセグメント化サービスに送信できます。 [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+レコードデータは、主体の属性に関する情報を提供します。 主体は、組織または個人にすることができます。 例えば、サイトの買い物客がアカウントを作成し、そのアカウントがレコードデータを生成したとします。 このデータは、クラスがに設定されたExperience Platformを使用してスキーマに取り込まれます。 **個々のプロファイル**. そのレコードデータは、Adobeのプロファイル管理およびセグメント化サービスに送信できます。 [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=ja).
 
 ### キャプチャされたプロファイルレコードデータ
 

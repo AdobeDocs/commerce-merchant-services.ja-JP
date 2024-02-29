@@ -3,9 +3,9 @@ title: コマースデータをAdobe Experience Platformに接続
 description: コマースデータをAdobe Experience Platformに接続する方法を説明します。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Commerce Services コネクタを設定した後、 [!DNL Data Connection] 拡�
 
 ### サービスアカウントと資格情報の詳細を追加
 
-収集して送信する予定がある場合 [履歴注文データ](#send-historical-order-data) または [（ベータ版）顧客プロファイルデータ](#send-customer-profile-data)、サービスアカウントと資格情報の詳細を追加する必要があります。 また、 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 拡張機能の場合は、次の手順を実行する必要があります。
+収集して送信する予定がある場合 [履歴注文データ](#send-historical-order-data) または [顧客プロファイルデータ](#send-customer-profile-data)、サービスアカウントと資格情報の詳細を追加する必要があります。 また、 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 拡張機能の場合は、次の手順を実行する必要があります。
 
 ストアフロントまたはバックオフィスのデータを収集して送信する場合は、 [一般](#general) 」セクションに入力します。
 
@@ -97,7 +97,7 @@ Commerce Services コネクタを設定した後、 [!DNL Data Connection] 拡�
 
 - **バックオフィス** （サーバーサイドデータ）は、Commerce サーバーでキャプチャされるデータです。 これには、注文が発行されたか、取り消されたか、返金されたか、発送されたか、完了したかなど、注文のステータスに関する情報が含まれます。 また、 [履歴注文データ](#send-historical-order-data).
 
-- (**ベータ版**) **プロファイル** は、買い物客のプロファイル情報に関連するデータです。 学ぶ [その他](#send-customer-profile-data).
+- **プロファイル** は、買い物客のプロファイル情報に関連するデータです。 学ぶ [その他](#send-customer-profile-data).
 
 Adobe Commerceインスタンスがデータ収集を開始できることを確認するには、 [前提条件](overview.md#prerequisites).
 
@@ -158,13 +158,9 @@ Adobe Commerceインスタンスがデータ収集を開始できることを確
 
 ### 顧客プロファイルデータの送信
 
->[!IMPORTANT]
->
->この機能はベータ版です。 ベータ版プログラムに参加したい場合は、にリクエストを送信してください。 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
 Experience Platformに送信できるプロファイルデータには、プロファイルレコードと時系列プロファイルイベントの 2 種類があります。
 
-プロファイルレコードには、買い物客がコマースインスタンスにプロファイルを作成したときに保存されるデータ（買い物客の名前など）が含まれます。 スキーマとデータセットが [適切に設定](profile-data.md)に設定すると、プロファイルレコードがExperience Platformに送信され、Adobeのプロファイル管理およびセグメント化サービスに転送されます。 [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+プロファイルレコードには、買い物客がコマースインスタンスにプロファイルを作成したときに保存されるデータ（買い物客の名前など）が含まれます。 スキーマとデータセットが [適切に設定](profile-data.md)に設定すると、プロファイルレコードがExperience Platformに送信され、Adobeのプロファイル管理およびセグメント化サービスに転送されます。 [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=ja).
 
 時系列プロファイルイベントには、サイト上でアカウントを作成、編集、削除した場合など、買い物客のプロファイル情報に関するデータが含まれます。 プロファイルイベントデータがExperience Platformに送信されると、そのデータはデータセット内に存在し、他の DX 製品で使用できます。
 

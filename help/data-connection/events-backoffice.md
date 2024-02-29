@@ -3,9 +3,9 @@ title: バックオフィスイベント
 description: 各バックオフィスイベントがキャプチャするデータを説明します。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3573'
 ht-degree: 0%
 
 ---
@@ -402,10 +402,6 @@ ht-degree: 0%
 | `productListItems.categories.path` | カテゴリへのパス。 |
 
 ## 顧客プロファイルイベント（バックオフィス）
-
->[!NOTE]
->
->**ベータ版** サーバー側から生成されたプロファイルイベントは、ベータ版参加者が利用できます。 ベータ版プログラムに参加したい場合は、にリクエストを送信してください。 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 サーバー側からキャプチャされるプロファイルイベントには、次のようなアカウント情報が含まれます。 `accountCreated`, `accountUpdated`、および `accountDeleted`. このデータは、セグメントをより適切に定義したり、新規登録の割引オファーの送信や、アカウントの変更確認など、マーケティングキャンペーンを実行するために必要な顧客の主要な詳細情報を入力するのに役立ちます。 次からキャプチャされた類似のプロファイルイベントがあります： [店頭の](#customer-profile-events-storefront).
 

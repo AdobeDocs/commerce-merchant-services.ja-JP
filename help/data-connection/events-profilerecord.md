@@ -3,18 +3,14 @@ title: プロファイルレコード
 description: プロファイルレコードが取り込むデータを説明します。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] プロファイルレコード（ベータ版）
-
->[!NOTE]
->
->この機能はベータ版です。 ベータ版プログラムに参加したい場合は、にリクエストを送信してください。 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+# [!DNL Data Connection] プロファイルレコード
 
 次に、 [!DNL Data Connection] 拡張子。 プロファイルレコード内のデータがAdobe Experience Platformに送信されます。
 
