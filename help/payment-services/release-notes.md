@@ -3,9 +3,9 @@ title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: ac7e16fd7e5e4161ee8935f4ecc6da6ae2e9d9f0
+source-git-commit: 36475f3071e819efa9884aefffc8bbeb6b6ac788
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2209'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,16 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v2.3.4
+
+_2024 年 3 月 5 日_
+
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+
+![新規](../assets/new.svg)<!-- PAY-5244 --> 非同期チェックアウトの互換性を修正しました。
+
+![修正点](../assets/fix.svg)<!-- PAY-5253 --> 支払いサービスに属していない Vault トークンを削除できないエラーを修正しました。
 
 ## v2.3.3
 
