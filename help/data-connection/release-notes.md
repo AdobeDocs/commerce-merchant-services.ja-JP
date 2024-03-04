@@ -3,7 +3,7 @@ title: リリースノート
 description: の最新のリリース情報 [!DNL Data Connection] Adobe Commerceからの拡張。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: b1a029f07bf6b62443850146c9be0793bc8e7211
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -72,9 +72,9 @@ _2022 年 10 月 13 日_
 
 +++
 
-## 3.2.0-beta1
+## 3.2.0-beta2
 
-_2024 年 2 月 17 日_
+_2024 年 3 月 5 日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"}
 
