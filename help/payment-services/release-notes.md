@@ -3,7 +3,7 @@ title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 36475f3071e819efa9884aefffc8bbeb6b6ac788
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 0%
@@ -78,7 +78,7 @@ _2021 年 6 月 29 日_
 
 ## v2.3.4
 
-_2024 年 3 月 5 日_
+_2024 年 3 月 2 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 

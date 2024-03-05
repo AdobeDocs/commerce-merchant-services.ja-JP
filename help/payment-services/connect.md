@@ -3,9 +3,9 @@ title: インスタンスに接続
 description: API キーと秘密鍵を使用して Commerce インスタンスに接続し、設定でデータ領域を指定します。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 * 次の条件を満たしている場合： *インスタンスは既に接続されています* API 資格情報を取得して使用し、Commerce Services を設定すると、次に進むことができます。 [テストサンドボックスの設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * もしまだ *インスタンスに接続する必要があります*&#x200B;については、このトピックの情報を参照してください。 [API 資格情報の取得](#obtain-api-credentials) および [Commerce Services の設定](#configure-commerce-services).
 * 次の場合、 *インスタンスが接続されているかどうかが不明です*&#x200B;に移動します。 **システム** /サービス/ **Commerce Services コネクタ** と、 [!UICONTROL Sandbox Keys] および [!UICONTROL Production Keys] セクション、および *プロジェクト* および *データスペース* フィールド [!UICONTROL SaaS Identifier] 」セクションに入力します。 これらの値が存在する場合、インスタンスは接続されます。
+
+>[!NOTE]
+>
+>支払いサービスを利用できるすべてのマーチャントは、1 つの実稼動データスペースと 2 つのテストデータスペースを使用できます。
 
 ## API 資格情報の取得
 
