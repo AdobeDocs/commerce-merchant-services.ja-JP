@@ -2,9 +2,9 @@
 title: 「シノニムの追加」
 description: "追加 [!DNL Live Search] 検索リクエストへの応答を改善する同義語。"
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 次を入力します。 **キーワード** 一致する語句。
 1. 次を入力します。 **拡張** キーワードの同義語として追加する用語。 複数の用語はコンマで区切ります。
-この例では、一致するキーワードは「pants」で、拡張用語のセットは「long pants, tobors, slacks」です。
+この例では、一致するキーワードは「pants」で、拡張用語のセットは「tobs, slacks」です。
 
    ![双方向シノニムの例](assets/synonym-add-two-way-example.png)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    ![一方向のシノニムの例](assets/synonym-add-one-way-example.png)
 
-   この例では、キーワードは「pants」で、一方向展開用語は「capris, calf-length pants, peddle-pushers」です。それぞれが「pants」のサブセットですが、具体的な意味を持ちます。
+   この例では、キーワードは「pants」で、一方向展開用語は「capris, peddle-pushers」です。それぞれが「pants」のサブセットですが、具体的な意味を持ちます。
 
 1. 完了したら、「 **保存**.
 同義語のセットは、拡張用語からキーワードを指す一方向矢印でリストに表示され、キーワードがそのキーワードのサブセットであることを示します。 各拡張項をプラス記号で区切ります。
