@@ -3,9 +3,9 @@ title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
+source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
 これらのリリースノートでは、ホストされているサービスの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
 
 +++ホストされたサービスの更新
+
+_2024 年 3 月 6 日_
+
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-5252 --> 現在は、マーチャントは、1 つのセルの内容を選択して、ダッシュボードのグリッドからデータをコピーできます。
 
 _2023 年 10 月 11 日_
 
