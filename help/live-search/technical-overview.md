@@ -3,7 +3,7 @@ title: 「技術概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%
@@ -148,7 +148,7 @@ Search Adapter や Widgets、AEM CIF Widgets などのデフォルトコンポ�
 
 ## 価格インデクサー
 
-ライブ検索のお客様は、 [SaaS 価格インデクサー](../price-index/index.md)：価格変更の更新と同期時間を高速化します。
+ライブ検索のお客様は、 [SaaS 価格インデクサー](../price-index/price-indexing.md)：価格変更の更新と同期時間を高速化します。
 
 ## 価格のサポート
 

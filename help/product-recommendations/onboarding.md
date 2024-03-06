@@ -2,9 +2,9 @@
 title: オンボーディング
 description: での要件とサポートされるプラットフォームについて説明します。 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ### SaaS 価格のインデックス作成
 
-製品レコメンデーションのお客様が [SaaS 価格のインデックス作成](../price-index/index.md)：価格変更の更新と同期時間を短縮します。
+製品レコメンデーションのお客様が [SaaS 価格のインデックス作成](../price-index/price-indexing.md)：価格変更の更新と同期時間を短縮します。
 
 ### B2B サポート {#b2bsupport}
 

@@ -1,10 +1,10 @@
 ---
-title: "[!DNL Live Search] インデックス作成"
+title: '"[!DNL Live Search] インデックス作成»'
 description: «学ぶ方法 [!DNL Live Search] 製品属性プロパティのインデックスを作成します。"
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ The [!DNL Live Search] API を使用すると、クライアントは [storefron
 
 >[!NOTE]
 >
-> 次を使用してコマースを行う顧客： [!DNL Live Search] は、Web サイト上で迅速な価格変更の更新と同期時間を活用できます。 [SaaS 価格インデクサー](../price-index/index.md).
+> 次を使用してコマースを行う顧客： [!DNL Live Search] は、Web サイト上で迅速な価格変更の更新と同期時間を活用できます。 [SaaS 価格インデクサー](../price-index/price-indexing.md).
 
 ## パイプラインのインデックス作成
 

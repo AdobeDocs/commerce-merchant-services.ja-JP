@@ -3,7 +3,7 @@ title: '"[!DNL Live Search] リリースノート»'
 description: 次の最新のリリース情報： [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 89f0cd15e7eeb7f8f1f76df7a3612ba3ef02391e
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 0%
@@ -43,7 +43,7 @@ _2023 年 6 月 14 日_
 
 _2023 年 4 月 26 日_
 
-![新規](../assets/new.svg) [!DNL Live Search] お客様は、 [SaaS 価格インデクサー](../price-index/index.md).
+![新規](../assets/new.svg) [!DNL Live Search] お客様は、 [SaaS 価格インデクサー](../price-index/price-indexing.md).
 
 ## [!DNL Live Search] 4.1.0 {#410}
 

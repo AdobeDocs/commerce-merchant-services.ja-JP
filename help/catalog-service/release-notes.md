@@ -3,7 +3,7 @@ title: '''[!DNL Catalog Service] リリースノート`'
 description: の最新のリリース情報 [!DNL Catalog Service] Adobe Commerceの
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 358dac1ce083023476022c968bc6a9debfadc119
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -73,7 +73,7 @@ _2023 年 9 月 20 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg) カタログサービスは現在、を使用しています [SaaS 価格のインデックス作成](../price-index/index.md).
+![新規](../assets/new.svg) カタログサービスは現在、を使用しています [SaaS 価格のインデックス作成](../price-index/price-indexing.md).
 ![修正点](../assets/fix.svg) このリリースには、サービス側のバグ修正と改善が含まれています。
 
 ### V1.11 リリース

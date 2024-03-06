@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] for Adobe Commerceは、ネイティブのAdobe Commerce GraphQLクエリよりも、製品表示ページと製品リストページのコンテンツをよりすばやく取得する方法を提供します。」'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -25,7 +25,7 @@ The [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) をクリック�
 
 Adobe Commerceには 2 つのGraphQLシステムがあります。 コアGraphQLシステムは様々なクエリ（読み取り操作）と変異（書き込み操作）を提供し、買い物客が製品、顧客アカウント、買い物かご、チェックアウトなど、様々な種類のページを操作できるようにします。 ただし、製品情報を返すクエリは、速度に対して最適化されていません。 サービスGraphQLシステムは、製品と関連情報に対してのみクエリを実行できます。 これらのクエリは、類似のコアクエリよりもパフォーマンスが高くなります。
 
-[!DNL Catalog Service] 新しい [SaaS 価格インデクサー](../price-index/index.md)：価格変更の更新と同期時間を高速化します。
+[!DNL Catalog Service] 新しい [SaaS 価格インデクサー](../price-index/price-indexing.md)：価格変更の更新と同期時間を高速化します。
 
 ## アーキテクチャ
 
@@ -68,7 +68,7 @@ Adobe Commerceには 2 つのGraphQLシステムがあります。 コアGraphQL
 
 >[!NOTE]
 >
-> 次を使用してコマースを行う顧客： [!DNL Catalog Service] は、Web サイト上で迅速な価格変更の更新と同期時間を活用できます。 [SaaS 価格インデクサー](../price-index/index.md).
+> 次を使用してコマースを行う顧客： [!DNL Catalog Service] は、Web サイト上で迅速な価格変更の更新と同期時間を活用できます。 [SaaS 価格インデクサー](../price-index/price-indexing.md).
 
 ## 実装
 
