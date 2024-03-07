@@ -3,9 +3,10 @@ title: バックオフィスイベント
 description: 各バックオフィスイベントがキャプチャするデータを説明します。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
+source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3571'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 以下のイベントで収集されるデータに加えて、 [その他のデータ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) Adobe Experience Platform Web SDK によって提供されます。
 
-バックオフィスのイベントには、サーバー側のデータが含まれます。 このデータは、 [注文ステータス](#order-status) 注文が行われたか、取り消されたか、返金されたか、発送されたか、完了したかなどの情報。 サーバー側のデータには、 [顧客プロファイルイベント](#customer-profile-events-back-office) アカウントが作成、更新、削除された場合などの情報。
+バックオフィスのイベントには、サーバー側のデータが含まれます。 このデータは、 [注文ステータス](#order-status) 注文が行われたか、取り消されたか、返金されたか、発送されたか、完了したかなどの情報。 サーバー側のデータには、 [顧客プロファイルイベント](#customer-profile-events) アカウントが作成、更新、削除された場合などの情報。
 
 >[!NOTE]
 >
@@ -401,9 +402,9 @@ ht-degree: 0%
 | `productListItems.categories.name` | カテゴリの名前。 |
 | `productListItems.categories.path` | カテゴリへのパス。 |
 
-## 顧客プロファイルイベント（バックオフィス）
+## 顧客プロファイルイベント
 
-サーバー側からキャプチャされるプロファイルイベントには、次のようなアカウント情報が含まれます。 `accountCreated`, `accountUpdated`、および `accountDeleted`. このデータは、セグメントをより適切に定義したり、新規登録の割引オファーの送信や、アカウントの変更確認など、マーケティングキャンペーンを実行するために必要な顧客の主要な詳細情報を入力するのに役立ちます。 次からキャプチャされた類似のプロファイルイベントがあります： [店頭の](#customer-profile-events-storefront).
+サーバー側からキャプチャされるプロファイルイベントには、次のようなアカウント情報が含まれます。 `accountCreated`, `accountUpdated`、および `accountDeleted`. このデータは、セグメントをより適切に定義したり、新規登録の割引オファーの送信や、アカウントの変更確認など、マーケティングキャンペーンを実行するために必要な顧客の主要な詳細情報を入力するのに役立ちます。 次からキャプチャされた類似のプロファイルイベントがあります： [店頭の](events.md#customer-profile-events).
 
 ### accountCreated
 

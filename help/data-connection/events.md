@@ -4,9 +4,9 @@ description: 各行動イベントがキャプチャするデータを説明し�
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '4497'
+source-wordcount: '4496'
 ht-degree: 0%
 
 ---
@@ -303,9 +303,9 @@ ht-degree: 0%
 | `productListItems.selectedOptions.attribute` | 設定可能な製品の属性（例： ）を識別します。 `size` または `color`. |
 | `productListItems.selectedOptions.value` | 属性の値を次のように指定します。 `small` または `black`. |
 
-## 顧客プロファイルイベント（行動）
+## 顧客プロファイルイベント
 
-ストアフロントからキャプチャされるプロファイルイベントには、次のようなアカウント情報が含まれます。 `signIn`, `signOut`, `createAccount`、および `editAccount`. このデータは、セグメントをより適切に定義したり、新規登録の割引オファーの送信や、アカウントの変更確認など、マーケティングキャンペーンを実行するために必要な顧客の主要な詳細情報を入力するのに役立ちます。 次からキャプチャされた類似のプロファイルイベントがあります： [サーバーサイド](events-backoffice.md#customer-profile-events-back-office).
+ストアフロントからキャプチャされるプロファイルイベントには、次のようなアカウント情報が含まれます。 `signIn`, `signOut`, `createAccount`、および `editAccount`. このデータは、セグメントをより適切に定義したり、新規登録の割引オファーの送信や、アカウントの変更確認など、マーケティングキャンペーンを実行するために必要な顧客の主要な詳細情報を入力するのに役立ちます。 次からキャプチャされた類似のプロファイルイベントがあります： [サーバーサイド](events-backoffice.md#customer-profile-events).
 
 ### signIn
 

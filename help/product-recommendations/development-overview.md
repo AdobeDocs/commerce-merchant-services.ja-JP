@@ -2,9 +2,9 @@
 title: 製品のRecommendations Administrator Development
 description: 製品のRecommendationsアーキテクチャと開発機能の概要です。
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 0%
 - **カタログ**  — 製品メタデータ（名前、価格、在庫など）。
 
 をインストールする際に、 `magento/product-recommendations` モジュールの場合、Adobe Senseiは行動データとカタログデータを集計し、各レコメンデーションタイプに対して製品Recommendationsを作成します。 次に、Product Recommendationsサービスによって、これらのレコメンデーションがストアフロントにデプロイされます。
+
+>[!NOTE]
+>
+>設定可能な製品の場合、製品Recommendationsはレコメンデーション単位で親製品の画像を使用します。 設定可能な製品に画像が指定されていない場合、その特定の製品のレコメンデーション単位は空になります。
 
 ## 次の手順
 
