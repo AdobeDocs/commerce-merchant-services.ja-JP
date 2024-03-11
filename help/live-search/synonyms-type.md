@@ -2,9 +2,9 @@
 title: 「シノニムのタイプ」
 description: 「一方向と双方向 [!DNL Live Search] 「類義語」は、キーワードの定義を拡張します。
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,3 @@ a, a, and, a, a, at, a, a, a, a, a, a, a, a, a, in, in, i, it, no, on, on, on, o
 ### 一貫性
 
 カタログでの用語の使用方法に一致します。 地域による使用方法の違いや、業界内の違いが生じる場合があることに注意してください。
-
-### キーワードマッピング
-
-この手法では、同義語ではなく、検索可能な製品属性を使用して、製品間のキーワードベースの関連付けを作成します。 その結果、マッピングされた製品が別の製品の検索結果に表示される場合があります。 詳しくは、 [検索結果](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
