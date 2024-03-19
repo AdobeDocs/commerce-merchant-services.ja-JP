@@ -3,9 +3,9 @@ title: リリースノート
 description: の最新のリリース情報 [!DNL Data Connection] Adobe Commerceからの拡張。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: c95b1fc9393c507dd757c74c30473590760d47a6
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -71,14 +71,6 @@ _2022 年 10 月 13 日_
 ![新規](../assets/new.svg)  — のサポートを追加しました [AEM storefront](overview.md#aem-support).
 
 +++
-
-## 3.1.1
-
-_2024 年 3 月 20 日_
-
-[!BADGE 互換性]{type=Informative tooltip="互換性"}
-
-![新規](../assets/new.svg) PHP 8.3 のサポートを追加しました。
 
 ## 3.2.0-beta2
 
