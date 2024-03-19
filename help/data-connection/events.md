@@ -4,9 +4,9 @@ description: 各行動イベントがキャプチャするデータを説明し�
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4516'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,8 @@ ht-degree: 0%
 | `commerce.commerceScope.storeCode` | 一意の店舗コード。 Web サイトごとに多くの店舗を持つことができます。 |
 | `commerce.commerceScope.storeViewCode` | 一意の店舗ビューコード。 ストアごとに多数のストアビューを持つことができます。 |
 | `commerce.commerceScope.websiteCode` | 一意の Web サイトコード。 1 つの環境に多数の Web サイトを持つことができます。 |
+| `commerce.order` | 1 つ以上の製品の保留中の注文に関する情報が含まれます。 |
+| `commerce.order.discountAmount` | 注文全体に適用される割引額を示します。 |
 | `productListItems` | 買い物かごに追加された製品の配列。 |
 | `productListItems.SKU` | 在庫管理単位。 商品の一意の ID。 |
 | `productListItems.name` | 製品の表示名または人間が読み取り可能な名前。 |

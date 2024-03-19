@@ -3,9 +3,9 @@ title: "インストール [!DNL Live Search]"
 description: インストール、更新、アンインストールの方法を学ぶ [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 次の操作を実行します。
 
-1. 確認 [cron ジョブ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) および [インデクサー](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) が実行中です。
+1. 確認 [cron ジョブ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) および [インデクサー](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) が実行中です。
 
 1. 要件を満たすオンボーディング方法を選択し、指示に従います。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->2023 年 8 月のElasticsearch7 のサポート終了のお知らせにより、すべてのAdobe Commerceのお客様は OpenSearch 2.x 検索エンジンに移行することをお勧めします。 製品のアップグレード中に検索エンジンを移行する方法については、 [OpenSearch への移行](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) （内） _アップグレードガイド_.
+>2023 年 8 月のElasticsearch7 のサポート終了のお知らせにより、すべてのAdobe Commerceのお客様は OpenSearch 2.x 検索エンジンに移行することをお勧めします。 製品のアップグレード中に検索エンジンを移行する方法については、 [OpenSearch への移行](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) （内） _アップグレードガイド_.
 
 ## 方法 1:OpenSearch を使用せずにインストールする {#method-1}
 
@@ -66,7 +66,7 @@ ht-degree: 0%
    >
    > データのインデックスが作成され、同期されている間は、検索およびカテゴリの参照操作はストアフロントで使用できません。 カタログのサイズによっては、プロセスに少なくとも 1 時間かかる場合があります。 `cron` データの同期先として実行 [!DNL Live Search] サービス。
 
-1. 次の点を確認します。 [インデクサー](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) が「スケジュールに従って更新」に設定されている場合：
+1. 次の点を確認します。 [インデクサー](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) が「スケジュールに従って更新」に設定されている場合：
 
    * 製品フィード
    * 製品バリアントフィード
@@ -74,6 +74,8 @@ ht-degree: 0%
    * 製品価格フィード
    * スコープの Web サイトデータフィード
    * スコープの顧客グループデータフィード
+   * カテゴリフィード
+   * カテゴリ権限フィード
 
 1. を設定します。 [API キー](#configure-api-keys) カタログデータが [同期済み](#synchronize-catalog-data) 次を使用 [!DNL Live Search] サービス。
 
@@ -125,7 +127,7 @@ ht-degree: 0%
 
    [!DNL Elasticsearch] はストアフロントから検索リクエストを引き続き管理し、 [!DNL Live Search] サービスは、カタログデータを同期し、製品のインデックスをバックグラウンドで作成します。
 
-1. 次の点を確認します。 [インデクサー](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) が「スケジュールに従って更新」に設定されている場合：
+1. 次の点を確認します。 [インデクサー](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) が「スケジュールに従って更新」に設定されている場合：
 
    * 製品フィード
    * 製品バリアントフィード
@@ -201,7 +203,7 @@ API キーと秘密鍵の生成については、 [Commerce Services コネク�
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-その他のヘルプについては、 [[!DNL Live Search] カタログが同期されていません](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) 」を参照してください。
+その他のヘルプについては、 [[!DNL Live Search] カタログが同期されていません](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) 」を参照してください。
 
 ### 今後の製品アップデート
 
@@ -223,7 +225,7 @@ API キーと秘密鍵の生成については、 [Commerce Services コネク�
 
 ## インストールされているバージョンの確認
 
-ライブ検索を更新する前に、コマンドラインから次のコマンドを実行して、現在インストールされているライブ検索のバージョンを確認します。
+ライブ検索を更新する前に、コマンドラインから次のコマンドを実行して、インストールされているライブ検索のバージョンを確認します。
 
 ```bash
 composer show magento/module-live-search | grep version
@@ -271,14 +273,14 @@ composer update magento/live-search --with-dependencies
 
 ## アンインストール [!DNL Live Search] {#uninstall}
 
-アンインストールするには [!DNL Live Search]（を参照）。 [モジュールのアンインストール](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+アンインストールするには [!DNL Live Search]（を参照）。 [モジュールのアンインストール](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
 ## [!DNL Live Search] パッケージ {#packages}
 
 | パッケージ | 説明 |
 |--- |--- |
 | `module-live-search` | マーチャントがファセット設定、シノニム、クエリルールなどの検索設定を行えるようにし、読み取り専用のGraphQLプレイグラウンドにアクセスして、 *管理者*. |
-| `module-live-search-adapter` | ストアフロントからにリクエストをルーティングします [!DNL Live Search] 結果がストアフロントに表示されます。 <br /> — カテゴリ参照 — ストアフロントからリクエストをルーティングします。 [上部ナビゲーション](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) を検索サービスに追加します。<br /> — グローバル検索 — リクエストを [クイック検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 店頭の右上にある箱 [!DNL Live Search] サービス。 |
+| `module-live-search-adapter` | ストアフロントからにリクエストをルーティングします [!DNL Live Search] 結果がストアフロントに表示されます。 <br /> — カテゴリ参照 — ストアフロントからリクエストをルーティングします。 [上部ナビゲーション](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) を検索サービスに追加します。<br /> — グローバル検索 — リクエストを [クイック検索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 店頭の右上にある箱 [!DNL Live Search] サービス。 |
 | `module-live-search-storefront-popover` | 「入力に応じて検索」ポップオーバーは、標準のクイック検索に代わり、上位の検索結果のデータとサムネールを返します。 |
 
 ## [!DNL Live Search] 依存関係 {#dependencies}

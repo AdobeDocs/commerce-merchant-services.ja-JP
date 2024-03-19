@@ -3,9 +3,9 @@ title: 「技術概要」
 description: '"[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項»'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -43,8 +43,8 @@ SaaS API を直接（特にカタログサービスエンドポイント）呼�
 * [PLP ウィジェット](https://github.com/adobe/storefront-product-listing-page)
 * [ライブ検索フィールド](https://github.com/adobe/storefront-search-as-you-type)
 
-Search Adapter や Widgets、AEM CIF Widgets などのデフォルトコンポーネントを使用しない場合は、eventing(Intelligent Merchandising とパフォーマンス指標にAdobe Senseiをフィードするクリックストリームデータ ) は初期状態では機能せず、ヘッドレスイベンティングを実装するためにカスタム開発が必要です。
-の最新バージョン [!DNL Live Search] は既にを使用しています [!DNL Catalog Service] およびインストール [!DNL Catalog Service] モジュール。
+Search Adapter や Widgets などのデフォルトのコンポーネント (Luma のウィジェットやAEM CIF Widgets など ) を使用しない場合、eventing(Adobe Senseiをインテリジェントマーチャンダイジングおよびパフォーマンス指標にフィードするクリックストリームデータ ) は初期状態では機能せず、ヘッドレスイベンティングを実装するカスタム開発が必要です。
+の最新バージョン [!DNL Live Search] は既にを使用しています [!DNL Catalog Service].
 
 ## 境界としきい値
 
@@ -109,6 +109,7 @@ Search Adapter や Widgets、AEM CIF Widgets などのデフォルトコンポ�
 | ラトビア語 | ラトビア | lv_LV | lv_LV |
 | ノルウェー語 | ノルウェーブークモール | nb_NO | nb_NO |
 | オランダ語 | オランダ | nl_NL | nl_NL |
+| ポーランド語 | ポーランド | pl_PL | pl_PL |
 | ポルトガル語 | ブラジル | pt_BR | pt_BR |
 | ポルトガル語 | ポルトガル | pt_PT | pt_PT |
 | ルーマニア語 | ルーマニア | ro_RO | ro_RO |
@@ -142,7 +143,7 @@ Search Adapter や Widgets、AEM CIF Widgets などのデフォルトコンポ�
 
 ## Inventory management
 
-[!DNL Live Search] サポート [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) コマースの機能 ( 以前はマルチソースインベントリ (MSI) と呼ばれていました )。 完全なサポートを有効にするには、 [更新](install.md#update) 依存モジュール `commerce-data-export` をバージョン 102.2.0 以降に変更しました。
+[!DNL Live Search] サポート [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) コマースの機能 ( 以前はマルチソースインベントリ (MSI) と呼ばれていました )。 完全なサポートを有効にするには、 [更新](install.md#update) 依存モジュール `commerce-data-export` をバージョン 102.2.0 以降に変更しました。
 
 [!DNL Live Search] 製品がInventory management内で使用可能かどうかを示すブール値を返しますが、在庫があるソースに関する情報は含まれません。
 
@@ -152,7 +153,7 @@ Search Adapter や Widgets、AEM CIF Widgets などのデフォルトコンポ�
 
 ## 価格のサポート
 
-ライブ検索ウィジェットは、Adobe Commerceでサポートされているすべての価格タイプをサポートしていますが、サポートしているわけではありません。
+ライブ検索ウィジェットは、Adobe Commerceでサポートされているほとんどの価格タイプをサポートしていますが、一部の価格タイプはサポートしていません。
 
 現在、基本価格がサポートされています。 サポートされていない高度な価格は次のとおりです。
 
@@ -193,9 +194,9 @@ Search Adapter や Widgets、AEM CIF Widgets などのデフォルトコンポ�
 
 ## 現在はサポートされていません
 
-* The [詳細検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 次の場合、モジュールは無効になります： [!DNL Live Search] がインストールされ、ストアフロントフッターの「詳細検索」リンクは削除されます。
-* [価格帯](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) および [特別価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) は、 [!DNL Live Search] フィールドおよび製品リストページウィジェット。
+* The [詳細検索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 次の場合、モジュールは無効になります： [!DNL Live Search] がインストールされ、ストアフロントフッターの「詳細検索」リンクは削除されます。
+* [価格帯](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) および [特別価格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) は、 [!DNL Live Search] フィールドおよび製品リストページウィジェット。
 
 ## Cookie
 
-[!DNL Live Search] は、ユーザーインタラクションデータを基本機能の一部として収集し、cookie を使用してこのデータを保存します。 ユーザー情報を収集する場合、ユーザーは Cookie の保存に同意する必要があります。 [!DNL Live Search] および [!DNL Product Recommendations] はデータストリームを共有するので、同じ cookie メカニズムを使用する必要があります。 詳しくは、 [Cookie 制限の処理](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
+[!DNL Live Search] は、ユーザーインタラクションデータを基本機能の一部として収集し、cookie を使用してこのデータを保存します。 ユーザー情報を収集する場合、ユーザーは Cookie の保存に同意する必要があります。 [!DNL Live Search] および [!DNL Product Recommendations] はデータストリームを共有するので、同じ cookie メカニズムを使用する必要があります。 詳しくは、 [Cookie 制限の処理](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie).

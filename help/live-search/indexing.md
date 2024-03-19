@@ -2,7 +2,7 @@
 title: '"[!DNL Live Search] インデックス作成»'
 description: «学ぶ方法 [!DNL Live Search] 製品属性プロパティのインデックスを作成します。"
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 17b9383ad84c47f2b0314feccbabb33d7dd8fc11
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -45,7 +45,7 @@ The [!DNL Live Search] API を使用すると、クライアントは [storefron
 
 ### 完全なインデックス
 
-条件 [!DNL Live Search] が設定され、オンボーディング中に同期されるので、初期インデックスの作成に最大 30 分かかる場合があります。 大きなカタログは、インデックス作成に時間がかかる場合があります。 プロセスは次の後に開始します。 `cron` はフィードを送信し、実行を完了します。
+条件 [!DNL Live Search] が設定され、オンボーディング中に同期されるので、初期インデックスの作成に最大 60 分かかる場合があります。 大きなカタログは、インデックス作成に時間がかかる場合があります。 プロセスは次の後に開始します。 `cron` はフィードを送信し、実行を完了します。
 
 次のイベントは、完全同期とインデックスの構築をトリガーします。
 
