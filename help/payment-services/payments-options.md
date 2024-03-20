@@ -3,9 +3,9 @@ title: 支払いオプション
 description: 支払いオプションを設定して、店舗の顧客が利用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Credit Card Fields]
 
-[!UICONTROL Credit Card Fields] クレジットカードまたはデビットカードの支払い方法に対して、簡単で安全なチェックアウトを提供します。 買い物客がクレジットカードのフィールドを使用してチェックアウトする際、名前、請求先住所、クレジットカードまたはデビットカードの情報を入力して、注文をおこないます。 顧客情報は、購入セッション中に安全に使用され、チェックアウトフローをシームレスに導きます。
+[!UICONTROL Credit Card Fields] クレジットカードまたはデビットカードの支払い方法に対して、簡単で安全なチェックアウトを提供します。 買い物客がクレジットカードフィールドを使用してチェックアウトする際には、名前、請求先住所、クレジットカード情報、デビットカード情報を入力して注文を行います。 顧客情報は、購入セッション中に安全に使用され、チェックアウトフローをシームレスに導きます。
 
 ![チェックアウト時のクレジットカードフィールド](assets/credit-card-fields.png){width="500" zoomable="yes"}
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## [!DNL Apple Pay] ボタン
 
-お客様は、 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)：購入の際に、iOSまたはmacOSデバイスに保存されたクレジットカードおよびデビットカードの支払い資格情報を使用します。
+お客様は、 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)：購入をおこなうために、iOSまたはmacOSデバイスに保存されているクレジットカードおよびデビットカードの支払い資格情報を使用します。
 
 [!DNL Apple Pay] は、Safari ブラウザーでのみ使用できます。 商人は 1 商人口座につき最大 99 ドメインを追加できます。
 
@@ -64,15 +64,31 @@ The [!DNL Apple Pay] ボタンが製品ページ、ミニカート、買い物�
 
 次の項目を設定できます。 [!UICONTROL Apple Pay] （ストア設定または支払いサービスホーム）を参照してください。 詳しくは、 [設定](settings.md#apple-pay) を参照してください。
 
+## [!DNL Google Pay] ボタン
+
+お客様は、 [[!DNL Google Pay]](https://pay.google.com/about/) 支払いの詳細をGoogleアカウントに追加することで、シームレスなチェックアウトエクスペリエンスを実現するために安全に保存されます。
+
+[!DNL Google Pay] は、特定の国または地域と特定のデバイスでのみ使用できます。 詳しくは、 [[!DNL Google Pay] ドキュメント](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) を参照してください。
+
+![Google Pay ボタン（チェックアウト時）](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+The [!DNL Google Pay] ボタンが製品ページ、ミニカート、買い物かご、チェックアウトビューに表示されます。
+
+次の項目を設定できます。 [!UICONTROL Google Pay] （ストア設定または支払いサービスホーム）を参照してください。 詳しくは、 [設定](settings.md) を参照してください。
+
+>[!NOTE]
+>
+> The [!DNL Google Pay] API は、安全なコンテキストの Web サイトでのみ使用できます。 詳しくは、 [トラブルシューティング](https://developers.google.com/pay/api/web/support/troubleshooting) ドキュメントを参照してください。
+
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons]: PayPal を使用して購入を完了し、買い物客の配送先住所、請求先住所、支払いの詳細を保存して後で使用します。 買い物客は、以前に PayPal に保存または提供された任意の支払い方法を使用できます。
 
 ![PayPal ボタン](assets/paypal-button.png){width="350" zoomable="yes"}
 
-次の項目を設定できます。 [!UICONTROL PayPal payment buttons] ストア設定、または [!DNL Payment Services] ホーム。  詳しくは、 [設定](settings.md#payment-buttons) を参照してください。
+次の項目を設定できます。 [!UICONTROL PayPal payment buttons] ストア設定、または [!DNL Payment Services] ホーム。 詳しくは、 [設定](settings.md#payment-buttons) を参照してください。
 
-PayPal の「 [支払い方法に関するドキュメント](https://developer.paypal.com/docs/checkout/payment-methods/) 各支払い方法が現在どの国で利用できるかを確認する。
+PayPal の国別支払い方法の可用性について説明します [支払い方法に関するドキュメント](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ### [!DNL PayPal] ボタン
 
@@ -102,27 +118,27 @@ The [!DNL Pay Later] ボタンが製品ページ、ミニカート、買い物�
 
 詳しくは、 [PayPal の Pay Later オファードキュメント](https://developer.paypal.com/docs/checkout/pay-later/us/). 以下を使用します。 **国または地域** 関心のある地域を選択するドロップダウン。
 
-詳しくは、 [設定](settings.md#payment-buttons) 無効にする/有効にする方法を学ぶには [!DNL Pay Later] メッセージ。
+を無効または有効にする方法を説明します。 [!DNL Pay Later] メッセージを更新して [設定](settings.md#payment-buttons) 設定。
 
 ## PayPal の支払いボタンのみを使用
 
-ストアを実稼動モードにすばやく移行するには、を設定します。 _のみ_ PayPal の支払いボタン（Venmo、PayPal など）- PayPal クレジットカードの支払いオプションを使用する代わりに使用します。
+ストアを実稼動モードにすばやく移行するには、 _のみ_ PayPal の支払いボタン（Venmo、PayPal など）- PayPal クレジットカードの支払いオプションを使用する代わりに使用します。
 
 次の操作が可能です。
 
-* Venmo や PayPal の支払いボタンなど、顧客に対して様々な支払いオプションを提供し、PayPal がホストするカードフィールドをオフにし、既存のクレジットカードプロバイダーを使用するオプションを提供します。
-* PayPal の他の支払いオプションを利用しながら、クレジットカードの支払いには、既存のクレジットカードプロバイダを使用します。
-* PayPal がクレジットカードを支払いオプションとしてサポートしていない地域で、PayPal の支払いボタンを使用します。
+* Venmo や PayPal の支払いボタンを含む顧客に対して、PayPal がホストするカードフィールドをオフにし、既存のクレジットカードプロバイダを使用するオプションを提供します。
+* PayPal の他の支払いオプションも使用しているのに対し、クレジットカードの支払いには、既存のクレジットカードプロバイダを使用してください。
+* PayPal がクレジットカードを支払いオプションとしてサポートしていない地域では、PayPal の支払いボタンを使用します。
 
 宛先 **～で支払いをキャプチャする _のみ_ PayPal の支払いボタン (_not_ （PayPal クレジットカードの支払いオプション）**:
 
-1. ストアが以下であることを確認します。 [実稼動モード](settings.md#enable-payment-services).
+1. ストアが [実稼動モード](settings.md#enable-payment-services).
 1. [PayPal の支払いボタンを設定します](settings.md#payment-buttons) 」と入力します。
 1. 回転 _オフ_ の **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** オプションを _[!UICONTROL Payment buttons]_」セクションに入力します。
 
 宛先 **既存のクレジットカードプロバイダーに支払いをキャプチャする _および_ PayPal の支払いボタン**:
 
-1. ストアが以下であることを確認します。 [実稼動モード](settings.md#enable-payment-services).
+1. ストアが [実稼動モード](settings.md#enable-payment-services).
 1. [PayPal の支払いボタンを設定します](settings.md#payment-buttons).
 1. 回転 _オフ_ の **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** オプションを _[!UICONTROL Payment buttons]_」セクションに入力します。
 1. 回転 _オフ_ の **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** オプションを _[!UICONTROL Credit card fields]_セクションを開き、 [既存のクレジットカードプロバイダーアカウント](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).

@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ### ステータス情報
 
-選択した日付範囲の支払いステータスが、注文の支払いステータスのデータ視覚化表示の左側に表示されます。 選択した日付範囲の日付がビューの下部に表示されます。 特定の日付に注文がなかった場合、その日付は表示されません。
+選択した日付範囲の支払いステータスが、注文の支払いステータスのデータ視覚化表示の左側に表示されます。 選択した日付範囲の日付がビューの下部に表示されます。 特定の日付に注文がなかった場合は、その日付は表示されません。
 
 注文の支払いステータスのデータビジュアライゼーションビューには、次の情報が含まれています。
 
@@ -83,9 +83,36 @@ ht-degree: 0%
 >
 >この表に示すデータは降順 (`DESC`) デフォルトでは、 `TRANS DATE`. The `TRANS DATE` は、トランザクションが開始された日時です。
 
+### 支払ステータスの更新
+
+特定の支払い方法では、支払いを取得するのに期間が必要です。 [!DNL Payment Services] では、次の方法で、注文の支払トランザクションの保留状態を検出します。
+
+* 同期的検出 `pending capture` 取引
+* 非同期監視 `pending capture` 取引
+
+>[!NOTE]
+>
+>注文中の支払トランザクションの保留状態を検出すると、支払がまだ受け取られていない場合に、誤って発注が発送されるのを防ぐことができます。 これは、e-check および PayPal トランザクションで発生する可能性があります。
+
+#### 保留中の取得トランザクションの同期検出
+
+次に示すキャプチャトランザクションを自動的に検出： `Pending` ステータスと注文が入力されないようにする `Processing` ステータスを返します。
+
+顧客のチェックアウト時、または管理者が以前に承認された支払いの請求書を作成した場合、 [!DNL Payment Services] でのキャプチャトランザクションを自動的に検出します。 `Pending` 対応する注文を次に移す `Payment Review` ステータス。
+
+#### 保留中の取得トランザクションの非同期監視
+
+保留中の取得トランザクションが次の条件に入る時期を検出 `Completed` ステータスを使用して、マーチャントが影響を受けるオーダーの処理を再開できるようにします。
+
+このプロセスが期待どおりに動作するように、マーチャントは新しい cron ジョブを設定する必要があります。 ジョブが自動的に実行するように設定された後は、マーチャントからの他の介入は期待されません。
+
+詳しくは、 [cron ジョブの設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). 設定が完了すると、新しいジョブが 30 分ごとに実行され、 `Payment Review` ステータス。
+
+マーチャントは、注文の支払い状況レポートビューで、更新された支払い状況を確認できます。
+
 ### レポートで使用されるデータ
 
-The [!DNL Payment Services] モジュールは、注文データを使用し、他のソース（PayPal を含む）からの集計された支払いデータと組み合わせて、有意義で有用なレポートを提供します。
+[!DNL Payment Services] は注文データを使用し、他のソース（PayPal を含む）からの集計された支払いデータと組み合わせて、意味のある非常に有用なレポートを提供します。
 
 注文データは、支払いサービスでエクスポートおよび保持されます。 次の場合： [注文のステータスを変更または追加する](https://docs.magento.com/user-guide/sales/order-status-custom.html) または [ストア表示の編集](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [保存する](https://docs.magento.com/user-guide/stores/store-information.html)または Web サイト名を入力すると、そのデータと支払いデータが結合され、注文の支払いステータスレポートに結合された情報が入力されます。
 
@@ -132,9 +159,9 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 
    レポート結果は、選択したデータソースに基づいて再生成されます。
 
-### 日付の期間をカスタマイズ
+### 注文日の期間のカスタマイズ
 
-注文の支払い状況レポートビューで、特定の日付を選択することで、表示するステータスの期間をカスタマイズできます。 デフォルトでは、30 日間の注文支払いステータスがグリッドに表示されます。
+注文の支払い状況レポートビューで、特定の日付を選択することで、表示するステータスの結果の期間をカスタマイズできます。 デフォルトでは、30 日間の注文支払いステータスがグリッドに表示されます。
 
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 次をクリック： _[!UICONTROL Order dates]_カレンダーセレクターフィルター。
@@ -148,7 +175,7 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 次をクリック： **[!UICONTROL Filter]** セレクター。
 1. 切り替え _支払いステータス_ 選択した注文の支払ステータスのレポート結果のみを表示するオプションです。
-1. を入力します。 _最小注文額_ または _最大注文額_ をクリックして、その注文金額範囲内のレポート結果を確認します。
+1. 次の項目を入力して、注文額の範囲内のレポート結果を表示します： _[!UICONTROL Min Order Amount]_または_[!UICONTROL Max Order Amount_].
 1. クリック **[!UICONTROL Hide filters]** をクリックして、フィルターを非表示にします。
 
 ### 列の表示と非表示を切り替える
@@ -159,7 +186,7 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 1. 次をクリック： _列設定_ アイコン (![列設定アイコン](assets/column-settings.png){width="20" zoomable="yes"}) をクリックします。
 1. レポートに表示する列をカスタマイズするには、リストの列をオンまたはオフにします。
 
-   注文の支払い状況レポートには、列設定メニューで行った変更がすぐに表示されます。 列の環境設定は保存され、レポート表示から移動しても有効なままになります。
+   注文の支払い状況レポートには、列設定メニューで行った変更がすぐに表示されます。 列の環境設定は保存され、レポート表示から移動しても有効になります。
 
 ### ステータスの表示
 
@@ -197,10 +224,10 @@ The [!DNL Payment Services] モジュールは、注文データを使用し、�
 1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 次に移動： **[!UICONTROL Disputes column]**.
 1. 特定の注文に関する紛争を表示し、 [紛争の状況](#order-payment-status-information).
-1. 次の文字列で始まる紛争 ID のリンクをクリックします。 _PP-D-_) をクリックして、 [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. 次の場所から紛争の詳細を確認 [PayPal Resolution Center](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) 次の語句で始まる紛争 ID リンクをクリックすると、 _PP-D-_.
 1. 必要に応じて、紛争に対して適切な措置をとる。
 
-   順序の争議をステータス別に並べ替えるには、「争議」列ヘッダーをクリックします。
+   順序の争議をステータスで並べ替えるには、 [!UICONTROL Disputes] 列ヘッダー。
 
 ### 注文の支払いステータスをダウンロード
 

@@ -3,9 +3,9 @@ title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2379'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,13 @@ ht-degree: 0%
 ![修正された問題](../assets/fix.svg) 修正点および改善点
 ![既知の問題](../assets/bug.svg) 既知の問題
 
-通常のバージョン管理された機能リリース以外でリリースされた機能の変更および修正については、ホストされたサービスの更新の節を参照してください。
+通常の機能リリースバージョン以外でリリースされた機能の変更や修正点については、 _ホストされるサービスの更新_ セクション。
 
-詳しくは、 [今後のリリース](https://devdocs.magento.com/release/) を参照してください。
-
-詳しくは、 [製品の可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) を参照して、この拡張機能をサポートしているAdobe Commerceバージョンを確認してください。
+今後のリリース、製品サポート、支払いサービス拡張機能をサポートするAdobe Commerceバージョンについて詳しくは、 Adobe Commerce [リリーススケジュール](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) および [製品の可用性](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) トピック。
 
 ## ホストされるサービスの更新
 
-これらのリリースノートでは、ホストされているサービスの通常のバージョン管理機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
+これらのリリースノートでは、ホストされているサービスの通常の機能リリース以外でリリースされた、機能の変更点と修正点について説明します。
 
 +++ホストされたサービスの更新
 
@@ -70,7 +68,7 @@ _2021 年 8 月 10 日_
 
 _2021 年 6 月 29 日_
 
-![新規](../assets/new.svg)<!-- Issue PAY-1720 --> 店舗注文に関する紛争は、 [注文の支払い状況レポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). PayPal Resolution Center に直接アクセスして、紛争に対する対処を行うことができます。 [!DNL Payment Services].
+![新規](../assets/new.svg)<!-- Issue PAY-1720 --> 店舗注文に関する紛争は、 [注文の支払い状況レポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). PayPal Resolution Center に直接アクセスして、紛争に対処できます。 [!DNL Payment Services].
 
 ![新規](../assets/new.svg)<!-- Issue PAY-2854 --> 次のユーザーエクスペリエンスの改善： [!DNL Payment Services] ホームには、現在の継承レベルで設定を変更する機能や、ヘッダーとナビゲーションの表示を改善する機能が含まれます。
 
@@ -79,6 +77,20 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v2.4.0
+
+_2024 年 3 月 15 日_
+
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+
+![新規](../assets/new.svg)<!-- PAY-4868 --> 商人は成功する [購入エクスペリエンス全体でGoogle Pay を設定する](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html)（管理者を通じた支払サービスの他の支払いボタンと同様）
+
+![新規](../assets/new.svg)<!-- PAY-4381 --> [支払いサービスは、GraphQLを通じてGoogle Pay をサポートします](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) Google Pay の支払い方法を使用して、商人がヘッドレスコマースを体験できるようにします。
+
+![新規](../assets/new.svg)<!-- PAY-4878 --> 現在、支払いサービスの基本的なチェックアウト機能は、Adobe CommerceおよびMagento Open Sourceの商人用にバンドルされています。 支払いサービスは、世界中の 200 の地域にある企業を持つ商人をサポートするようになりました。 支払いサービスの基本チェックアウトは、セルフサービスオンボーディングで、デビット/クレジット、PayPal、Venmo（利用可能な場合）、PayLater（利用可能な場合）の各オプションを提供します。
+
+![修正点](../assets/fix.svg)<!-- PAY-5291 --> 一部のトランザクションの支払確認の受信が遅れる可能性があります。 その場合、商人は注文の支払いステータスを更新できます。 [支払サービスは支払トランザクションの保留状態を検出します](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html) 保留中のトランザクションを検出し、これらのトランザクションを事前に監視し、保留状態が取り込まれたら更新することで、順序を変更します。
 
 ## v2.3.4
 
@@ -114,7 +126,10 @@ _2023 年 12 月 8 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg)<!-- PAY-5047 --> クレジット/デビットカードのブランドまたは支払い方法のタイプが、ストアフロントの顧客の注文ページ、買い物客に送信される注文確認 E メール、および [注文の詳細表示](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) （コマース管理）をクリックします。
+![新規](../assets/new.svg)<!-- PAY-5047 --> クレジット/デビットカードのブランドまたは支払い方法のタイプは、次の場所から利用できるようになりました。
+- ストアフロントの顧客注文ページ
+- 買い物客に送信された注文確認 E メール
+- から [注文の詳細表示](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) （コマース管理）をクリックします。
 
 ## v2.3.0
 
@@ -146,7 +161,7 @@ _2023 年 8 月 31 日_
 
 ![新規](../assets/new.svg)<!-- PAY-4002 --> 商人が [支払いオプションの順序を並べ替える](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) をクリックして特定の支払いオプションを優先します。 この機能は、チェックアウト時の会話率の向上を推奨します。
 
-![新規](../assets/new.svg)<!-- PAY-4035 --> 新しい [トランザクションレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) 支払サービスの管理者ホームに対して、取引の認証率とネガティブな取引の傾向を明確に表示できるようにすることで、商人は店舗の状態を効果的に監視し、取引の問題を特定できます。
+![新規](../assets/new.svg)<!-- PAY-4035 --> 店舗の状態を効率的に監視し、新しい [トランザクションレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) は、「支払サービス管理者」ホームページから入手できます。 このレポートには、トランザクションの認証率と負のトランザクションの傾向に関するデータも表示されます。
 
 ## v2.1.0
 
@@ -226,7 +241,7 @@ _2022 年 11 月 24 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![新規](../assets/new.svg)<!-- Issue PAY-3923 --> 支払いサービスで、未使用のエンドポイントを追跡、フィルタリングまたは廃止するためのリクエストのバージョン番号がユーザーエージェントヘッダーに含まれるようになりました。
+![新規](../assets/new.svg)<!-- Issue PAY-3923 --> 支払いサービスで、ユーザーエージェントヘッダーにバージョン番号が含まれるようになり、リクエストで未使用のエンドポイントを追跡、フィルターまたは廃止できるようになりました。
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3968 --> 支払いボタンを使用して製品ページから注文が発行された場合、支払いサービスで注文データが正しく表示されるようになりました。
 
@@ -246,7 +261,7 @@ _2022 年 10 月 15 日_
 
 [!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
 
-![修正点](../assets/fix.svg)<!-- Issue PAY-3766 --> 顧客の支払い方法が拒否された場合、表示されるエラーメッセージの内容がよりわかりやすくなります。 お客様に、支払い情報を再入力して、もう一度やり直すか、別の支払い方法を試すか、拒否された取引について銀行に問い合わせるよう勧めます。
+![修正点](../assets/fix.svg)<!-- Issue PAY-3766 --> 顧客の支払い方法が拒否された場合、表示されるエラーメッセージの内容がよりわかりやすくなります。 お客様に、支払い情報を再入力し、再度お試しいただくか、別の支払い方法を試すか、または拒否された取引について銀行に問い合わせるように勧めます。
 
 ## v1.4.0
 
@@ -288,15 +303,15 @@ _2022 年 6 月 30 日_
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay は、モバイルおよびデスクトップ上の Safari ブラウザー v15.5 と互換性がありません。 Safari バージョン 15.5 を使用している場合、Apple Pay でチェックアウトを完了できません。
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-3264 --> 以前は、ログインしたユーザーが自分のアカウントにデフォルトの住所以外の別の請求先/配送先住所を選択した場合、チェックアウトに失敗していました。 この問題を修正し、選択した請求先/配送先住所（デフォルトの保存済み住所ではなく）が送信され、チェックアウトが正常に完了しました。
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3264 --> 以前は、ログインしたユーザーが自分のアカウントにデフォルトの住所以外の請求先/発送先住所を選択した場合、チェックアウトに失敗していました。 これで、選択した請求先/配送先住所が（デフォルトの保存済み住所ではなく）送信され、チェックアウトが正常に完了しました。
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3314 --> PayPal の支払いボタンをチェックアウトに無効にした場合、エラーは表示されません。
 
 ![修正された問題](../assets/fix.svg)<!-- Issue PAY-3330 --> ゲストユーザーがダッシュを含む電話番号を入力した場合に、チェックアウト中に支払いが失敗することはなくなりました。
 
-![修正された問題](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Commerce Services の資格情報が無効な場合、 [!DNL Payment Services] これで、管理画面にホームが表示されます。 資格情報エラーが表示され、資格情報が無効であることが警告されます。
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Commerce Services の資格情報が無効な場合、支払いサービスは、 [!DNL Payment Services] 管理者のホーム。
 
-![既知の問題](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] は現在、 `commerce-data-export` v101.20 以降 ( [[!DNL Channel manager] 拡張](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 次と互換性がありません： `commerce-data-export` v101.20 以降 ( [[!DNL Channel manager] 拡張](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ## v1.1.0
 
