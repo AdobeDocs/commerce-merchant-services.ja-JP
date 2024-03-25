@@ -3,7 +3,7 @@ title: カタログ同期
 description: から製品データを書き出す方法を説明します。 [!DNL Commerce] サーバーから [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: d95c11a35c78d72da8126affb0753d86aa695827
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 「カタログ同期」ダッシュボードが「データ管理」ダッシュボードになりました。 この改良されたダッシュボードは、 [!DNL Product Recommendations], [!DNL Live Search]、および [!DNL Catalog Service]. お客様は、データ管理ダッシュボードを取得するには、これらのサービスのいずれかを最新バージョンに更新します。 詳しくは、 [データ管理ダッシュボード](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ドキュメント。 この現在のトピックは、まだアップグレードせず、まだカタログ同期ダッシュボードを持っているユーザーに対しても引き続き表示されます。
+> 「カタログ同期」ダッシュボードが「データ管理」ダッシュボードになりました。 この改良されたダッシュボードは、 [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md), [[!DNL Live Search]](../live-search/guide-overview.md)、および [[!DNL Catalog Service]](../catalog-service/overview.md). お客様は、データ管理ダッシュボードを取得するには、これらのサービスのいずれかを最新バージョンに更新します。 詳しくは、 [データ管理ダッシュボード](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ドキュメント。 この現在のトピックは、まだアップグレードせず、まだカタログ同期ダッシュボードを持っているユーザーに対しても引き続き表示されます。
 
 Adobe Commerceは、インデクサーを使用してカタログデータをテーブルにコンパイルします。 プロセスは、次を通じて自動的にトリガーされます： [イベント](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 製品価格や在庫レベルの変更など。
 
