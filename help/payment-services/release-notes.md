@@ -3,9 +3,9 @@ title: '"[!DNL Payment Services] リリースノート»'
 description: すべての [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 0c7bbe78100a323b19b59422a97e6eed83cbc22c
+source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2434'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,16 @@ _2021 年 6 月 29 日_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> これで、 [注文の支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) そして [ペイアウトレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v2.4.1
+
+2024 年 4 月 6 日_
+
+[!BADGE サポート対象]{type=Informative tooltip="サポート対象"}
+
+![修正点](../assets/fix.svg)<!-- PAY-5322 --> 新しいAdobe Commerceリリースでの PCI 互換性の問題を修正しました。 現在、支払いサービスは、支払いオプションとしてAdobe Commerceのチェックアウト要件に適合しています。
+
+![修正点](../assets/fix.svg)<!-- PAY-5323 --> PayLater と Venmo がAdobe Commerceで正しく表示されます。 管理者が PayLater および Venmo の切り替えオプションを表示できなかったエラーを修正しました。
 
 ## v2.4.0
 
