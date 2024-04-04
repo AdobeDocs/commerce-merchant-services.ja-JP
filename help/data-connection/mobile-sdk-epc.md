@@ -4,9 +4,9 @@ description: ヘッドレスまたはカスタムの Commerce ストアフロン
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
+source-git-commit: 593e92ebf890bd7d9bfef1cd13be727ca6be172b
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,10 @@ Experience Platform の SDK 設定を完了したら、SDK 設定を Commerce �
 
    Adobe Experience Platform Mobile SDK を Commerce モバイルアプリと統合しました。 アプリからイベントエッジに渡されるExperience Platformデータ。
 
-モバイルコマースアプリからReal-Time CDPオーディエンスを取得して、買い物かごの価格ルールと動的ブロックに情報を提供する方法については、 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+## モバイルアプリケーションから生成されたコマースイベントを区別する方法
+
+すべて [イベント](events.md) ～と呼ばれる分野を含む `channel`. The `channel` フィールドに含む `channel._id` および `channel._type` Luma ストアフロントの場合、名前空間の値は `"https://ns.adobe.com/xdm/channels/web"` および `"https://ns.adobe.com/xdm/channel-types/web"` それぞれ。 ただし、モバイルストアフロントの場合、名前空間の値は `"https://ns.adobe.com/xdm/channels/mobile-app"` および `"https://ns.adobe.com/xdm/channel-types/mobile"` それぞれ。
+
+## 次の手順
+
+モバイルコマースアプリからReal-Time CDPオーディエンスを取得して、買い物かごの価格ルール、動的ブロック、関連する製品ルールに通知する方法については、 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

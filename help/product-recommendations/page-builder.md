@@ -3,9 +3,9 @@ title: '[!DNL Page Builder] 統合'
 description: 使用方法を学ぶ [!DNL Product Recommendations] の単位を指定します。
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
 feature: Services, Recommendations, Page Builder
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 6bc8eb5ffbefc46c8666ead8c8ec8b274a0040e7
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,11 @@ ht-degree: 0%
 ## 製品Recommendationsと Page Builder コンテンツの使用
 
 1. Web サイトのデフォルトのストア表示でレコメンデーションユニットを作成します。 異なるストアビューで使用する予定の場合でも、デフォルトのストアビューで作成する必要があります。
+
+   >[!NOTE]
+   >
+   >ページビルダーのレコメンデーション単位の指標は、デフォルトのストア表示にのみ表示されます [!DNL Product Recommendations] ワークスペース。 デフォルトのストア表示以外のストア表示に Page Builder のレコメンデーション単位を配置しても、これらの Page Builder のレコメンデーション単位に関連する指標は、デフォルトのストア表示にのみ表示されます [!DNL Product Recommendations] ワークスペース。 デフォルト以外のストアでページビルダー指標を表示するには [!DNL Product Recommendations] ワークスペース、開く、および [編集](edit.md) デフォルト以外のストアのページビルダーのレコメンデーションユニットで、 [!UICONTROL **保存**]. ページビルダー指標が [!DNL Product Recommendations] ワークスペース（デフォルト以外のストアレビューの下）
+
 1. Page Builder で、製品のRecommendationsコンテンツウィジェットを選択し、サイトに配置します。
 
 ![レコメンデーションユニットの挿入](assets/pb-insert.png)
