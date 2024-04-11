@@ -1,23 +1,23 @@
 ---
 title: オンボーディングとインストール
-description: インストール方法 [!DNL Catalog Service]"
+description: 「インストール方法を学ぶ [!DNL Catalog Service]“
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
 
 # オンボーディングとインストール
 
-以下のビデオでは、 [!DNL Catalog Service] プロセス。
+次のビデオでは、 [!DNL Catalog Service] プロセス。
 
 **パート 1**：オンボーディングとインストール
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415599)
 
-**パート 2**：を使用します。 [!DNL Catalog Service]
+**第 2 部**：の使用 [!DNL Catalog Service]
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415600)
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 前提条件
 
-のオンボーディングプロセス [!DNL Catalog Service] は、サーバーのコマンドラインへのアクセスを必要とします。 コマンドラインでの作業に慣れていない場合は、開発者またはシステムインテグレーターに問い合わせてください。
+のオンボーディングプロセス [!DNL Catalog Service] サーバーのコマンドラインにアクセスできる必要があります。 コマンドラインからの操作に詳しくない場合は、開発者またはシステムインテグレーターにお問い合わせください。
 
 **ソフトウェア要件**
 
@@ -35,45 +35,45 @@ ht-degree: 0%
 
 **サポートされるプラットフォーム**
 
-- Adobe Commerce on cloud infrastructure: 2.4.4 以降
-- オンプレミスのAdobe Commerce: 2.4.4 以降
+- クラウドインフラストラクチャー上のAdobe Commerce:2.4.4 以降
+- Adobe Commerce オンプレミス：2.4.4 以降
 
 >[!ENDSHADEBOX]
 
 ## エンドポイント
 
-[!DNL Catalog Service] には、オンボーディングで使用できる 2 つのエンドポイントがあります。
+[!DNL Catalog Service] には、オンボーディングに使用できる 2 つのエンドポイントがあります。
 
-- サンドボックス (`https://catalog-service-sandbox.adobe.io/graphql`) — 運用開始前のテストおよび検証に使用されます。
-- 実稼動 (`https://catalog-service.adobe.io/graphql`) — コマースマーチャントや Web サイトのライブトラフィックに使用されます。
+- サンドボックス （`https://catalog-service-sandbox.adobe.io/graphql`）：運用開始前のテストおよび検証に使用
+- 実稼動（`https://catalog-service.adobe.io/graphql`） – Commerceのマーチャントおよび web サイトのライブトラフィックに使用します。
 
-Commerce のすべてのテストインスタンスは、サンドボックスエンドポイントを使用する必要があります。
+Commerceのすべてのテストインスタンスは、サンドボックスエンドポイントを使用する必要があります。
 
-読み込みテストは、サンドボックスエンドポイントでのみ実行する必要があります。 次の操作をお勧めします。 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) が負荷テスト時に開かれるので、サービスチームは追加のサーバートラフィックを予測できます。
+負荷テストは、サンドボックスエンドポイントでのみ実行してください。 以下を推奨します。 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 負荷テスト時に開いて、サービスチームが追加のサーバートラフィックを予測できるようにします。
 
 ## インストールと設定
 
-を使い始めるには、以下を実行します。 [!DNL Catalog Service] Adobe Commerceの場合は、次の手順が必要です。
+を使用するには [!DNL Catalog Service] Adobe Commerceには、次の手順が必要です。
 
 - データ書き出し拡張機能のインストール
-- サービスとデータのエクスポートを設定する
+- サービスとデータの書き出しの設定
 - サービスへのアクセス
 
 ### データ書き出し拡張機能のインストール
 
-のオンボーディングプロセス [!DNL Catalog Service] は、サーバーのコマンドラインへのアクセスを必要とします。
+のオンボーディングプロセス [!DNL Catalog Service] サーバーのコマンドラインにアクセスできる必要があります。
 
-The [!DNL Catalog Service] 拡張機能は、Adobe Commerceクラウドインフラストラクチャとオンプレミスインスタンスの両方にインストールできます。
+この [!DNL Catalog Service] 拡張機能は、Adobe Commerce クラウドインフラストラクチャとオンプレミスインスタンスの両方にインストールできます。
 
-The [!DNL Catalog Service] は、Commerce アカウントにリンクされた Composer キーと共にインストールされます [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 登録プロセス中に提供されます。 Composer は、Adobe Commerceの初回インストール時、または Composer のキーが以前に外部に保存されていなかった状況で、これらのキーを使用します `auth.json` ファイル。
+この [!DNL Catalog Service] は、Commerce アカウントにリンクされた Composer キーと共にインストールされます [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 登録プロセス中に提供されます。 Composer は、Adobe Commerceの初期インストール時、または以前に外部に保存されていなかった状況で、これらのキーを使用します `auth.json` ファイル。
 
-詳しくは、 [認証キーの取得](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) を参照してください。
+参照： [認証キーの取得](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) composer キーの取得の詳細については、を参照してください。
 
-#### Adobe Commerce an cloud infrastructure
+#### クラウドインフラストラクチャー上のAdobe Commerce
 
-この方法を使用して、 [!DNL Catalog Service] Commerce Cloudインスタンスの拡張。
+をインストールするには、次の方法を使用します [!DNL Catalog Service] Commerce Cloudインスタンス用の拡張機能。
 
-1. ローカルワークステーションで、プロジェクトディレクトリに移動します。
+1. ローカルワークステーションで、をプロジェクトディレクトリに変更します。
 1. カタログサービスモジュールを追加します。
 
    ```bash
@@ -90,9 +90,9 @@ The [!DNL Catalog Service] は、Commerce アカウントにリンクされた C
 
 #### オンプレミス
 
-この方法を使用して、 [!DNL Catalog Service] オンプレミスインスタンスの拡張。
+をインストールするには、次の方法を使用します [!DNL Catalog Service] オンプレミスのインスタンスの拡張機能。
 
-1. Composer を使用して、カタログサービスモジュールをプロジェクトに追加します。
+1. Composer を使用して、Catalog Service モジュールをプロジェクトに追加します。
 
    ```bash
    composer require "magento/catalog-service" "^3.0.1"
@@ -104,48 +104,48 @@ The [!DNL Catalog Service] は、Commerce アカウントにリンクされた C
    composer update
    ```
 
-1. Adobe Commerceをアップグレード：
+1. Adobe Commerceをアップグレード :
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-1. キャッシュをクリアします。
+1. キャッシュをクリアする：
 
    ```bash
    bin/magento cache:clean
    ```
 
-### サービスとデータのエクスポートを設定する
+### サービスとデータの書き出しの設定
 
-インストール後 [!DNL Catalog Service]を設定する場合は、 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) API キーを指定し、SaaS データ空間を選択する。
+インストール後 [!DNL Catalog Service]を設定する必要があります [Commerce サービスコネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) API キーを指定し、SaaS データ空間を選択する。
 
-SaaS 設定が完了したら、 [カタログ同期](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) ガイド。
+SaaS の設定が完了したら、 [データ管理ダッシュボード](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). このダッシュボードを使用して、Commerce データベースからCommerce SaaS サービスに転送される商品データの同期ステータスをモニタリングできます。
 
-カタログの書き出しが正しく実行されていることを確認するには、次の手順を実行します。
+カタログの書き出しが正しく実行されていることを確認するには：
 
 - cron ジョブが実行中であることを確認します。
 - インデクサーが実行中であることを確認します。
-- 次の点を確認します。 `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、および `Product Variant Feed` インデクサーは「スケジュールに従って更新」に設定されます。
+- 必ずを `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、および `Product Variant Feed` インデクサーは「スケジュールに従って更新」に設定されています。
 
-カタログのサイズによっては、初期同期に数分から数時間かかる場合があります。 初回同期後、カタログは、サービスを最新の状態に保つために、コマースサーバーからコマースサービスに製品データを継続的に書き出します。 同期のステータスを監視するには、 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
+カタログのサイズに応じて、最初の同期に数分から数時間かかる場合があります。 最初の同期の後、カタログは、商品データをCommerce サーバーからCommerce サービスに継続的に書き出し、サービスを最新の状態に保ちます。 同期のステータスを監視するには、 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### サービスへのアクセス
 
-The [!DNL Catalog Service] API には、HTTPS 経由でのPOSTコマンドを使用してアクセスできます。
+この [!DNL Catalog Service] API には、POSTコマンドを使用して HTTPS でアクセスできます。
 
-API キーを取得するには、管理の「 Commerce Service Connector 」領域に移動し、公開 API キーをコピーします。
+api キーを取得するには、管理のCommerce サービスコネクタ領域に移動し、公開 API キーをコピーします。
 
-詳しくは、 [GraphQLドキュメント](https://developer.adobe.com/commerce/services/graphql/) を参照して、API リクエストの生成に必要なヘッダーをクエリして送信する方法を確認してください。
+を読み取る [GraphQL ドキュメント](https://developer.adobe.com/commerce/services/graphql/) api リクエストの生成に必要なヘッダーをクエリして送信する方法を理解するため
 
-許可する手順は次のとおりです。 [!DNL Catalog Service] ファイアウォールを通じて、 `commerce.adobe.io` をに追許可リストに加える加します。
+許可する [!DNL Catalog Service] ファイアウォールを使用して、次を追加します `commerce.adobe.io` を許可リストに追加します。
 
 ## カタログサービスと API メッシュ
 
-The [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 開発者は、AdobeI/O を使用して、プライベートまたはサードパーティの API やその他のインターフェイスをAdobe製品と統合できます。
+この [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、開発者は、プライベートまたはサードパーティの API およびその他のインターフェイスを、Adobe IO を使用するAdobe製品と統合できます。
 
-詳しくは、  [[!DNL Catalog Service] と API メッシュ](mesh.md) インストールおよび設定の詳細に関するトピック。
+を参照してください。  [[!DNL Catalog Service] と API メッシュ](mesh.md) インストールと設定の詳細に関するトピック。
 
 ## データ管理ダッシュボード
 
-ユーザーは、 [データ管理ダッシュボード](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 関するその他の情報 [!DNL Catalog Service] データ同期。
+ユーザーは、次を参照できます [データ管理ダッシュボード](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 詳細なデータ： [!DNL Catalog Service] データ同期。
