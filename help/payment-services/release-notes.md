@@ -3,9 +3,9 @@ title: “[!DNL Payment Services] リリースノート」
 description: すべてについて詳しくは、リリースノートを確認してください [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: bc38c01f429b4d20d4ba0d04c34932e1857a20cf
+source-git-commit: 880cb5c70727224217297d5d5b09490bdb112ff1
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2481'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,14 @@ _2021 年 6 月 28 日（Pt）_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> に表示されるデータをカスタマイズできるようになりました [注文支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) および [支払いレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v2.4.3
+
+_2024 年 4 月 16 日（Pt）_
+
+[!BADGE サポート]{type=Informative tooltip="サポート"}
+
+![修正](../assets/fix.svg)<!-- Issue PAY-5106 --> PayPal とAdobe Commerceの間のチェックアウト時に注文金額の合計が正しく入力されない問題を修正しました。 マーチャントは、注文を行う際に注文金額の合計が正しいことを確認できるようになりました。
 
 ## v2.4.2
 
