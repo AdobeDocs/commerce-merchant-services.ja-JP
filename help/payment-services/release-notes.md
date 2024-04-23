@@ -3,9 +3,9 @@ title: “[!DNL Payment Services] リリースノート」
 description: すべてについて詳しくは、リリースノートを確認してください [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 880cb5c70727224217297d5d5b09490bdb112ff1
+source-git-commit: 8e123367600c40d1d1207b35c4f7fa41079e7172
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2505'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,14 @@ _2021 年 6 月 28 日（Pt）_
 ![新規](../assets/new.svg)<!-- Issue PAY-2761 --> に表示されるデータをカスタマイズできるようになりました [注文支払いステータスレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) および [支払いレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 列設定コントロールを使用して、列を表示または非表示にする。
 
 +++
+
+## v2.5.0
+
+_2024 年 4 月 23 日（Pt）_
+
+[!BADGE サポート]{type=Informative tooltip="サポート"}
+
+![修正](../assets/fix.svg)<!-- Issue PAY-5396 --> 支払いサービスがサポートされるようになりました [Adobe Commerceのガイドライン `--db-prefix` パラメーター](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) （Adobe Commerce バージョン 2.4.7 以降の場合）
 
 ## v2.4.3
 
