@@ -4,9 +4,9 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
+source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -77,13 +77,11 @@ Adobe CommerceとMagento Open Sourceの一部の機能は、 [!DNL Commerce Serv
 
 ### SaaS プロジェクトの選択または作成 {#createsaasenv}
 
->[!NOTE]
->
-> が表示されない場合、 **[!UICONTROL Commerce Services Connector]** セクション： [!DNL Commerce] 設定する。をインストールする必要があります [!DNL Commerce] 目的に合ったモジュール [[!DNL Commerce] サービス](#availableservices).
-
 SaaS プロジェクトを選択または作成するには、 [!DNL Commerce] からの API キー [!DNL Commerce] ストアのライセンス所有者。
 
 1. 日 _Admin_ サイドバー、に移動 **システム** / サービス / **Commerce サービスコネクタ**.
+
+   が表示されない場合、 **[!UICONTROL Commerce Services Connector]** セクション： [!DNL Commerce] 設定、をインストール [!DNL Commerce] 目的に合ったモジュール [[!DNL Commerce] サービス](#availableservices). また、必ず `magento/module-services-id` パッケージがインストールされます。
 
 1. が含まれる _サンドボックス API キー_ および _実稼動 API キー_ セクションに、キー値を貼り付けます。
 
