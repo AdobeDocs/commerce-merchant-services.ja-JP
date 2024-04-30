@@ -3,9 +3,9 @@ title: について [!DNL Live Search]?
 description: “[!DNL Live Search] Adobe Commerceから迅速で関連性の高い直感的な検索を提供します。」
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
+source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,11 @@ ht-degree: 0%
 
 ## クイックツアー
 
-速度、関連性、使いやすさに重点を置いて、 [!DNL Live Search] は、買い物客と商人の両方にとってゲームのチェンジャーです。 ～の簡単なツアーを行う [!DNL Live Search] 店舗の前から。
+速度、関連性、使いやすさに重点を置いて、 [!DNL Live Search] は、買い物客と商人の両方にとってゲームのチェンジャーです。 次のビデオを視聴し、 [!DNL Live Search] 店舗の前から。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+Live Search の使用方法と設定方法について詳しくは、 [の完全なデモ [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) トピック。
 
 ### 入力中に検索
 
@@ -80,11 +84,3 @@ ht-degree: 0%
 ## イベント
 
 [!DNL Live Search] 使用 [イベント](events.md) 計算する [インテリジェントマーチャンダイジング](category-merch.md) および [給付](performance.md) ダッシュボード。 イベントはデフォルトの実装で提供されています。 ヘッドレスストアフロントのイベントは、手動で有効にする必要があります。
-
-## [!DNL Live Search] デモ
-
-詳しくは、このビデオをご覧ください。 [!DNL Live Search]:
-
->[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
-
-Live Search の使用方法と設定方法について詳しくは、 [の完全なデモ [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) トピック。
