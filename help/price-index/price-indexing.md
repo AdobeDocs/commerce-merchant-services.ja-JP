@@ -1,10 +1,10 @@
 ---
 title: SaaS 価格インデックス作成
-description: SaaS 価格インデックス作成を使用したパフォーマンスの向上
+description: SaaS 価格インデックスを使用したパフォーマンスの向上
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -13,43 +13,43 @@ ht-degree: 0%
 
 # SaaS 価格インデックス作成
 
-SaaS 価格のインデックス作成により、価格の変更が反映されるまでの時間が短縮されます。 [コマースサービス](../landing/saas.md) 送信後 これにより、大規模で複雑なカタログを持つマーチャントや、複数の Web サイトや顧客グループを持つマーチャントが、価格の変更を継続的に処理できます。
-ヘッドレスストアフロントがある場合、または [catalog-adapter](./catalog-adapter.md) 拡張機能を使用すると、Adobe Commerceのコア価格インデクサーを無効にできます。
+SaaS の価格インデックス作成により、価格の変更が反映されるまでの時間が短縮されます [Commerce サービス](../landing/saas.md) 送信後 これにより、大規模で複雑なカタログを持つマーチャント、または複数の Web サイトや顧客グループを持つマーチャントは、価格変更を継続的に処理できます。
+ヘッドレスなストアフロントがある場合や、 [catalog-adapter](./catalog-adapter.md) の拡張機能で、お客様はAdobe Commerce core price indexer を無効にできます。
 
-インデクス作成や価格計算などの計算量の多いプロセスが、コマースコアからAdobeのクラウドインフラストラクチャに移行されました。 これにより、マーチャントは迅速にリソースを拡張して、価格のインデクション時間を短縮し、その変更を迅速に反映できます。
+インデックス化や価格計算などの計算量の多いプロセスは、Commerce コアからAdobeのクラウドインフラストラクチャに移行されました。 これにより、マーチャントはリソースを迅速に拡大して価格のインデックス化時間を短縮し、その変更をより迅速に反映することができます。
 
-SaaS サービスに対するコアインデックス作成データフローは次のようになります。
+SaaS サービスへのコアインデックス作成のデータフローは次のようになります。
 
 ![デフォルトのデータフロー](assets/old_way.png)
 
-SaaS 価格のインデックス作成では、フローは次のようになります。
+SaaS 価格インデックス作成のフローは次のとおりです。
 
-![SaaS 価格インデックス作成データフロー](assets/new_way.png)
+![SaaS 価格インデックス作成データ フロー](assets/new_way.png)
 
-すべての商人がこれらの改善の恩恵を受けることができますが、最大の利益を得られるのは次の機能を持つ顧客です。
+これらの改善は、すべてのマーチャントにメリットをもたらしますが、最大限のメリットを享受できるのは次のような顧客です。
 
-* 定常的な価格変化：頻繁なプロモーション、季節ごとの割引、在庫のマークダウンなどの戦略目標を満たすために、価格の繰り返しの変更を必要とする商人。
-* 複数の Web サイトや顧客グループ：複数の Web サイト（ドメイン/ブランド）や顧客グループにまたがって製品カタログを共有するマーチャント。
-* Web サイトまたは顧客グループ間で多数のユニーク価格：Web サイトまたは顧客グループ間で一意の価格を含む大規模な共有商品カタログを持つマーチャント（事前に交渉された価格を持つ B2B 商人、異なる価格戦略を持つブランドなど）。
+* 一定の価格変更：頻繁なプロモーション、季節的な割引、在庫のマークダウンなどの戦略的目標を達成するために、価格の繰り返しの変更を必要とするマーチャント。
+* 複数の web サイトや顧客グループ：複数の web サイト（ドメイン/ブランド）や顧客グループで製品カタログを共有しているマーチャント。
+* Web サイトまたは顧客グループをまたいだ一意の価格の膨大：事前に交渉された価格の B2B マーチャント、異なる価格戦略のブランドなど、web サイトまたは顧客グループをまたいだ一意の価格を含む広範な共有製品カタログを持つマーチャント。
 
-SaaS 価格インデックス作成は、Adobe Commerceサービスをご利用のお客様は無料で利用でき、組み込みのAdobe Commerce製品タイプすべてで価格計算をサポートします。
+SaaS 価格インデックスは、Adobe Commerce サービスを使用するお客様が無償で利用でき、すべての組み込みAdobe Commerce製品タイプの価格計算をサポートします。
 
-このガイドでは、SaaS 価格のインデックス作成の仕組みと有効化方法について説明します。
+このガイドでは、SaaS 価格インデックスの仕組みと有効化の方法について説明します。
 
 ## 要件
 
 * Adobe Commerce 2.4.4 以降
-* Adobe Commerce拡張機能の最新バージョンを持つ、次のコマースサービスの少なくとも 1 つ：
+* 最新バージョンのAdobe Commerce拡張機能を備えた、次のCommerce サービスのうち少なくとも 1 つ：
 
    * [カタログサービス](../catalog-service/overview.md)
-   * [ライブ検索](../live-search/guide-overview.md)
-   * [製品Recommendations](../product-recommendations/guide-overview.md)
+   * [Live Search](../live-search/overview.md)
+   * [製品のRecommendations](../product-recommendations/guide-overview.md)
 
-Luma とAdobe Commerce Core GraphQLのユーザーは、 [`catalog-adapter`](catalog-adapter.md) Luma と Core GraphQl の互換性を提供し、Adobe Commerce Product Price インデクサーを無効にする拡張機能です。
+Luma とAdobe Commerce Core GraphQLのユーザーは、 [`catalog-adapter`](catalog-adapter.md) luma とコア GraphQl の互換性を提供し、Adobe Commerce Product Price Indexer を無効にする拡張機能。
 
-## 使用状況
+## 使用方法
 
-Adobe Commerceインスタンスを SaaS 価格インデックス作成サポートでアップグレードした後、新しいフィードを同期します。
+SaaS 価格インデックス作成をサポートしてAdobe Commerce インスタンスをアップグレードしたら、新しいフィードを同期します。
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
@@ -59,11 +59,11 @@ bin/magento saas:resync --feed=prices
 
 ## カスタム製品タイプの価格
 
-価格の計算は、基本価格、特別価格、グループ価格、カタログルール価格などのカスタム製品タイプでサポートされます。
+価格計算は、基本価格、特別価格、グループ価格、カタログルール価格などのカスタム製品タイプに対してサポートされています。
 
-特定の数式を使用して最終価格を計算するカスタムの製品タイプがある場合、製品価格フィードの動作を拡張できます。
+特定の数式を使用して最終価格を計算するカスタム製品タイプがある場合、製品価格フィードの動作を拡張できます。
 
-1. でのプラグインの作成 `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` クラス。
+1. にプラグインを作成する `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` クラス。
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
