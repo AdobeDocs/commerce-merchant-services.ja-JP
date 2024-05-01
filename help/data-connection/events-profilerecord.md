@@ -4,9 +4,9 @@ description: プロファイルレコードが取得するデータを説明し�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: bd04730d-e37a-48a9-822b-0f4aa68a4651
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c02496fb3f88f4781b79c5e477d5508c3e3d5224
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 両方 `_id` および `_type` contain [名前空間の値](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | データのソースに関する情報が含まれます。 両方 `_id` および `_type` contain [名前空間の値](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | チャネルの一意の識別子（例：） `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | 次のようなチャネルデータのソースを識別します `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | 顧客に関する情報が含まれます。 |
@@ -41,21 +41,25 @@ ht-degree: 0%
 | `billingAddress.city` | 市区町村の名前。 |
 | `billingAddress.state` | 州の名前。 これは自由形式フィールドです。 |
 | `billingAddress.country` | 政府が管理する領土の名前。 次の以外： `xdm:countryCode`これは、任意の言語で国名を持つことができる自由形式フィールドです。 |
+| `billingAddress.primary` | これが主要請求先住所かどうかを示します。 値は常に `False`. |
 | `billingAddressPhone` | 請求先住所に関連付けられた電話番号。 |
 | `billingAddressPhone.number` | 電話番号。 電話番号は文字列で、意味のある文字（角括弧など）を含めることができます `()`, ハイフン `-`、または内線などのサブダイヤル識別子を示す文字 `x` 例：  `1-353(0)18391111` または `+613 9403600x1234`. |
+| `billingAddressPhone.primary` | これが請求先住所の主要電話番号かどうかを示します。 値は常に `False`. |
 | `shippingAddress` | 配送先住所。 |
 | `shippingAddress.street1` | プライマリの番地レベルの情報、アパート番号、通り番号、通り名。 |
 | `shippingAddress.street2` | オプションの住所情報 2 行目。 |
 | `shippingAddress.city` | 市区町村の名前。 |
 | `shippingAddress.state` | 州の名前。 これは自由形式フィールドです。 |
 | `shippingAddress.country` | 政府が管理する領土の名前。 次の以外： `xdm:countryCode`これは、任意の言語で国名を持つことができる自由形式フィールドです。 |
-| `shippingAddressPhone` | 配送先住所に関連付けられている電話番号。 |
+| `shippingAddress.primary` | これがプライマリ配送先住所かどうかを示します。 値は常に `False`. |
+| `shippingAddressPhone` | 配送先住所に関連付けられた電話番号。 |
 | `shippingAddressPhone.number` | 電話番号。 電話番号は文字列で、意味のある文字（角括弧など）を含めることができます `()`, ハイフン `-`、または内線などのサブダイヤル識別子を示す文字 `x` 例：  `1-353(0)18391111` または `+613 9403600x1234`. |
+| `shippingAddressPhone.primary` | これが配送先住所の基本電話番号かどうかを示します。 値は常に `False`. |
 | `userAccount` | ロイヤルティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します。 |
 | `userAccount.startDate` | プロファイルが最初に作成された日付。 |
 
 >[!NOTE]
 >
->各プロファイルレコードには、 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) フィールド。プロファイルのプライマリ識別子としてシステムが生成したCommerce顧客 ID と、セカンダリ識別子として使用されるメール ID が含まれます。
+>各プロファイルレコードには、 [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) フィールド。プロファイルのプライマリ識別子としてシステムが生成したCommerce顧客 ID と、セカンダリ識別子として使用されるメール ID が含まれます。
 
 方法を学ぶ [プロファイルレコード固有のスキーマの作成](profile-data.md) これにより、プロファイルレコードからデータを取り込むことができます。
