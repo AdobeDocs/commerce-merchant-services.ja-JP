@@ -3,16 +3,16 @@ title: 「の概要 [!DNL Live Search]“
 description: のシステム要件とインストール手順を説明します [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: a55e3304d590c2bd6a591bdc78a4765ffed46cd1
+source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
 
-# を使用した成功の設定 [!DNL Live Search] および [!DNL Catalog Service]
+# を使用した成功の設定 [!DNL Live Search]
 
-Adobe Commerce [!DNL Live Search] および [!DNL Catalog Service] 共同で作業して、パフォーマンスが高く関連性が高く直感的な検索ソリューションを提供することで、顧客が必要なものを正確かつ迅速に見つけられるようにします。 具体的には、 [!DNL Catalog Service] などの SaaS サービスのカタログデータを表示します [!DNL Live Search] を使用します。
+Adobe Commerce [!DNL Live Search] および [[!DNL Catalog Service]](../catalog-service/guide-overview.md) 共同で作業して、パフォーマンスが高く関連性が高く直感的な検索ソリューションを提供することで、顧客が必要なものを正確かつ迅速に見つけられるようにします。 具体的には、 [!DNL Catalog Service] などの SaaS サービスのカタログデータを表示します [!DNL Live Search] を使用します。
 
 この記事では、を実装する手順を説明します [!DNL Live Search] （を使用） [!DNL Catalog Service].
 
