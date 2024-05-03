@@ -4,9 +4,9 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
+source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ Adobe CommerceとMagento Open Sourceの一部の機能は、 [!DNL Commerce Serv
 
 ## 資格情報 {#apikey}
 
-実稼働およびサンドボックスの API キーは、 [!DNL Commerce] 一意で識別されるライセンス所有者のアカウント [!DNL Commerce] ID （MageID）。 などのサービスのエンタイトルメント検証に合格するには： [!DNL Product Recommendations] または [!DNL Live Search]を使用すると、アカウントが正常な状態にある限り、マーチャントの組織のライセンス所有者は API キーのセットを生成できます。 キーは、ライセンス所有者の代わりにプロジェクトや環境を管理するシステムインテグレーターまたは開発チームと、「必要に応じて」共有できます。 さらに、ソリューションインテグレーターはを使用する資格もあります。 [!DNL Commerce Services]. ソリューションインテグレーターの場合は、の署名者 [!DNL Commerce] パートナー契約は、API キーを生成する必要があります。
+実稼働およびサンドボックスの API キーは、 [!DNL Commerce] のアカウント [ライセンス所有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) 一意ので識別されます。 [!DNL Commerce] ID （MageID）。 などのサービスのエンタイトルメント検証に合格するには： [!DNL Product Recommendations] または [!DNL Live Search]アカウントが正常な状態にある限り、マーチャントの組織のライセンス所有者は API キーのセットを生成できます。 キーは、ライセンス所有者の代わりにプロジェクトや環境を管理するシステムインテグレーターまたは開発チームと、「必要に応じて」共有できます。 さらに、ソリューションインテグレーターはを使用する資格もあります。 [!DNL Commerce Services]. ソリューションインテグレーターの場合は、の署名者 [!DNL Commerce] パートナー契約は、API キーを生成する必要があります。
+
+>[!NOTE]
+>
+>ライセンスオーナーは通常、Adobe Commerce アカウントのプライマリ連絡先であり、クラウドインフラストラクチャプロジェクトにおけるAdobe Commerceのプロジェクトオーナーと同じでないことがあります。
 
 ### 実稼動およびサンドボックス API キーの生成 {#genapikey}
 
