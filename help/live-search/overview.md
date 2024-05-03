@@ -3,16 +3,16 @@ title: について [!DNL Live Search]?
 description: “[!DNL Live Search] Adobe Commerceから迅速で関連性の高い直感的な検索を提供します。」
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # について [!DNL Live Search]?
 
-[!DNL Live Search] は、Adobe Commerceの標準検索機能に代わる拡張機能です。 この [!DNL Live Search] 拡張機能は Composer と共にインストールされ、 [!DNL Commerce] へのインストール [!DNL Live Search] [サービス](../landing/saas.md). これを設定すると、デフォルトの検索テキストフィールドがに置き換えられます [!DNL Live Search] テキストフィールド。 [!DNL Live Search] は製品リストページ（PLP）ウィジェットもインストールします。このウィジェットは、検索結果を参照する際に堅牢なフィルタリング機能を提供します。
+[!DNL Live Search] は、Adobe Commerceの標準の検索機能を置き換える機能です。 この [!DNL Live Search] 機能は Composer と共にインストールされ、 [!DNL Commerce] に保存 [Commerce サービスコネクタ](../landing/saas.md). これを設定すると、デフォルトの検索テキストフィールドがに置き換えられます [!DNL Live Search] テキストフィールド。 [!DNL Live Search] は製品リストページ（PLP）ウィジェットもインストールします。このウィジェットは、検索結果を参照する際に堅牢なフィルタリング機能を提供します。
 
 （を使用） [!DNL Live Search]では、以下のことが可能です。
 
@@ -75,7 +75,6 @@ Live Search の使用方法と設定方法について詳しくは、 [の完全
 
 - [!DNL Live Search] [ポップオーバーウィジェット](storefront-popover.md) は、検索結果を含む検索フィールドの下に開くボックスです。
 - [製品一覧ページウィジェット](plp-styling.md) は、ファセットとシノニムをサポートする、検索可能な製品リストページを提供します。
-- [[!DNL Live Search] Admin](workspace.md) は、ルール、ファセットおよびシノニムが設定される場所です。
 
 ## [!DNL Live Search] workspace
 

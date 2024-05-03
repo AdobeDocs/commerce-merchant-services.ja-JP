@@ -1,17 +1,18 @@
 ---
-title: "GraphQL Workspace"
-description: 「 [!DNL Live Search] GraphQL workspace を使用すると、ライブデータでクエリを作成できます。」
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+title: GraphQL
+description: この [!DNL Live Search] GraphQL workspace では、ライブデータを使用してクエリを作成できます。
+exl-id: f7b17c5a-a97b-4724-a50e-83e28a4c4c38
+source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
 workflow-type: tm+mt
-source-wordcount: '57'
+source-wordcount: '38'
 ht-degree: 0%
 
 ---
 
 # GraphQL
 
-The [!DNL Live Search] GraphQLタブは、管理者が独自のデータを使用してGraphQLクエリを作成およびテストできる、インタラクティブなGraphQL Workspace です。
+この *GraphQL* workspace を使用すると、管理者は独自のデータを使用してGraphQL クエリを作成およびテストできます。
 
-このワークスペースでは、 [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) および [`attributeMetadata`](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/) クエリ。
+このワークスペースは、 [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) および [`attributeMetadata`](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/) クエリ。
 
-![GraphQL workspace](assets/graphql.png)
+![GraphQL Workspace](assets/graphql.png)

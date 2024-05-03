@@ -3,7 +3,7 @@ title: カテゴリマーチャンダイジング
 description: 使用方法 [!DNL Live Search] カテゴリマーチャンダイジングでショッピングエクスペリエンスを高速化。
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->カテゴリマーチャンダイジングはで利用できます。 [!DNL Live Search] [3.0.0 以上](release-notes.md). 「カテゴリマーチャンダイジング」タブが表示されてもデータが入力されていない場合は、を更新します [!DNL Live Search] モジュール。
+>カテゴリマーチャンダイジングはで利用できます。 [!DNL Live Search] [3.0.0 以上](release-notes.md). カテゴリマーチャンダイジングワークスペースが表示されても、データが入力されていない場合は、 [!DNL Live Search] モジュール。
 
 ![カテゴリ マーチャンダイジング](assets/category_workspace.png)
 

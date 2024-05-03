@@ -1,18 +1,18 @@
 ---
-title: 「Commerce設定」および [!DNL Live Search] '
-description: は、次のAdobe Commerce設定について説明します [!DNL Live Search] 読めます。
+title: 'Commerce設定'
+description: は、次のCommerce設定について説明します [!DNL Live Search] 読めます。
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] とAdobe Commerceの設定
+# Commerceの設定
 
-Commerceの設定には、次のものがあります [!DNL Live Search] のサポート。 このトピックでは、これらの設定値を示します。
+Commerceの設定には、次のものがあります [!DNL Live Search] のサポート。 この記事では、これらの設定値を示します。
 
 ## サポートされる設定値
 

@@ -3,9 +3,9 @@ title: 「の概要 [!DNL Live Search]“
 description: のシステム要件とインストール手順を説明します [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
+source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2370'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,6 @@ Adobe Commerce [!DNL Live Search] および [[!DNL Catalog Service]](../catalog-
 ## ワークフローの概要
 
 大まかなレベルでのオンボーディング [!DNL Live Search] では、次の操作が必要です。
-
-- 拡張機能のインストール
-- API キーの設定
-- カタログデータを同期
-- データがエクスポートされたことを確認
-- データの設定
-- 接続のテスト
-- ストアフロントに合わせたカスタマイズ
 
 ![Live Search ワークフロー](assets/livesearch-workflow.png)
 
