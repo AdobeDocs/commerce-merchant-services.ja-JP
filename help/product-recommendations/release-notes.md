@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] リリースノート'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: c3940c399c0639fe53e23cea96b347c7827ecb42
+source-git-commit: 316059288ace6ebaf3748a294d8fe7351fc63bbd
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,16 @@ _2023 年 4 月 25 日（Pt）_
 
 ## 現在のメジャーバージョン
 
+### magento/product-recommendations の 6.0.2
+
+_2024 年 5 月 9 日（Pt）_
+
+[!BADGE サポート]{type=Informative tooltip="サポート"}
+
+![修正](../assets/fix.svg) をクリックした際の問題を修正しました **[!DNL Add to Cart]** 商品Recommendationsユニット内のシンプルな商品のボタンが、現在のページに留まることなく、買い物客をホームページにリダイレクトしました。
+
+### 以前のバージョン
+
 ### magento/product-recommendations の 6.0.1
 
 _2024 年 3 月 19 日（Pt）_
@@ -52,8 +62,6 @@ _2024 年 3 月 19 日（Pt）_
 [!BADGE サポート]{type=Informative tooltip="サポート"}
 
 ![新規](../assets/new.svg) PHP 8.3 のサポートを追加しました。
-
-### 以前のバージョン
 
 ### magento/product-recommendations の 6.0.0
 
