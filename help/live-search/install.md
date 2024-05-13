@@ -3,9 +3,9 @@ title: 「の概要 [!DNL Live Search]“
 description: のシステム要件とインストール手順を説明します [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
+source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -419,9 +419,23 @@ Live Search のお客様は新しいを使用できます [SaaS 価格インデ�
 
 価格フォーマットでは、Commerce インスタンス内の次のロケール設定がサポートされます。 *ストア* > 設定 > *設定* > 一般 > *一般* / ローカルオプション / ロケール。
 
+### ヘッドレスストアフロントのサポート
+
+オプションで、 `module-data-services-graphql` アプリケーションの既存のGraphQL範囲を拡張し、ストアフロントの行動データ収集に必要なフィールドを含めるモジュール。
+
+```bash
+composer require magento/module-data-services-graphql
+```
+
+このモジュールは、GraphQL クエリにコンテキストを追加します。
+
+- `dataServicesStorefrontInstanceContext`
+- `dataServicesMagentoExtensionContext`
+- `dataServicesStoreConfigurationContext`
+
 ### PWAサポート
 
-[!DNL Live Search] はPWA Studioで動作しますが、他のCommerceの実装と比較すると、わずかな違いがあります。 検索や製品リストのページなどの基本機能は Venia で機能しますが、Graphql の一部の並べ替えが正しく機能しない場合があります。 パフォーマンスの違いもあります。
+[!DNL Live Search] はPWA Studioで動作しますが、他のCommerce実装と比較すると、わずかな違いがあります。 検索や製品リストのページなどの基本的な機能は Venia で機能しますが、Graphql の一部の並べ替えが正しく機能しない場合があります。 パフォーマンスの違いもあります。
 
 - 現在のPWAの実装 [!DNL Live Search] 検索結果を返すのに必要な処理時間は、 [!DNL Live Search] ネイティブのCommerce ストアフロントを使用します。
 - [!DNL Live Search] PWA内のはサポートしていません [イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). その結果、検索レポートやインテリジェントマーチャンダイジングも機能します。
