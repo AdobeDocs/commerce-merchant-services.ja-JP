@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: の境界と制限について説明します [!DNL Live Search] お客様のビジネスニーズを満たしていることを確認します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 0%
 
 - この [詳細検索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 次の場合、モジュールは無効になります [!DNL Live Search] がインストールされ、ストアフロントのフッター内の詳細検索リンクが削除されます。
 - [階層の価格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) および [特別価格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) ではサポートされていません [!DNL Live Search] フィールドと製品一覧ページウィジェット。
-- [!DNL Live Search] 複数のソースからインベントリ データを集計できません。
 - 製品価格には付加価値税（VAT）は含まれていません。
 - コンテンツの検索はサポートされていません。
 - ページ分割できる製品には、10,000 個の制限があります。
