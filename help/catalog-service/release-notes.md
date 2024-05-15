@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] （Adobe Commerceの場合）
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 77716f8fd74a7ba390fea5e4454b01152b024da0
+source-git-commit: 181b233b3c41a421b2f68ab395fae06c13bc924b
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,12 @@ ht-degree: 0%
 ![バグ](../assets/bug.svg) 既知の問題
 
 ## 現在のメジャーバージョン
+
+### V1.19 リリース
+
+_2024 年 5 月 11 日（Pt）_
+
+![修正](../assets/fix.svg) カタログサービスで、がサポートされるようになりました `enabled` 製品バリアントのフラグ。
 
 ### V1.18 リリース
 
