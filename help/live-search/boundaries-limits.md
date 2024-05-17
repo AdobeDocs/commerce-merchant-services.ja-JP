@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: の境界と制限について説明します [!DNL Live Search] お客様のビジネスニーズを満たしていることを確認します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
+source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 0%
 - 製品価格には付加価値税（VAT）は含まれていません。
 - コンテンツの検索はサポートされていません。
 - ページ分割できる製品には、10,000 個の制限があります。
+- 検索アダプターは、カスタム ソース モデルで作成され、ファセットとして使用される製品属性をサポートしていません。 この機能をサポートするには、 [製品一覧ページウィジェット](plp-styling.md).
 
 ## インデックス作成
 

@@ -3,9 +3,9 @@ title: について [!DNL Live Search]?
 description: “[!DNL Live Search] Adobe Commerceから迅速で関連性の高い直感的な検索を提供します。」
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->サイト検索に関しては、Adobe Commerceのオプションが用意されています。 必ずお読みください。 [境界と制限](boundaries-limits.md) 実装する前に、以下を確認します [!DNL Live Search] は、お客様のビジネスニーズに合っています。
+>サイト検索に関しては、Adobe Commerceのオプションが用意されています。 実装する前に、 [境界と制限](boundaries-limits.md) を保証するための情報 [!DNL Live Search] は、お客様のビジネスニーズに合っています。
 
 ## アーキテクチャ
 
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-Live Search の使用方法と設定方法について詳しくは、 [の完全なデモ [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) トピック。
+Live Search の使用と設定について詳しくは、 [の完全なデモ [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) トピック。
 
 ### 入力中に検索
 
-[!DNL Live Search] は、製品の提案と、での上位の検索結果のサムネール画像を返します。 [ポップオーバー](storefront-popover.md) 買い物客がにクエリを入力する際 [検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ボックス。 この [製品の詳細](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) ページは、買い物客が推奨製品またはおすすめ製品をクリックすると表示されます。 A _すべて表示_ ポップオーバーのフッターにあるリンクをクリックすると、検索結果のページが表示されます。
+[!DNL Live Search] は、製品の提案と、での上位の検索結果のサムネール画像を返します。 [ポップオーバー](storefront-popover.md) 買い物客がにクエリを入力する際 [検索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) ボックス。 この [製品の詳細](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) ページは、買い物客が推奨製品またはおすすめ製品をクリックすると表示されます。 A _すべて表示_ ポップオーバーのフッターにあるリンクをクリックすると、検索結果のページが表示されます。
 
 [!DNL Live Search] 2 文字以上のクエリに対しては、「入力中に検索」を行った結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 クエリの文字数は変更できません。 ポップオーバーには、`name`, `sku`、および `category_ids` フィールド。
 
@@ -69,12 +69,13 @@ Live Search の使用方法と設定方法について詳しくは、 [の完全
 
 ### 検索用語のサポート
 
-[!DNL Live Search] はCommerceをサポートします [検索語句のリダイレクト](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). 例えば、「配送料」などの語句を検索すると、配送料ページに直接移動できます。
+[!DNL Live Search] はCommerceをサポートします [検索語句のリダイレクト](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). 例えば、「配送料」などの語句を検索すると、配送料ページに直接移動できます。
 
 ## Live Search コンポーネント
 
 - [!DNL Live Search] [ポップオーバーウィジェット](storefront-popover.md) は、検索結果を含む検索フィールドの下に開くボックスです。
-- [製品一覧ページウィジェット](plp-styling.md) は、ファセットとシノニムをサポートする、検索可能な製品リストページを提供します。
+- [製品一覧ページウィジェット](plp-styling.md) （PLP）は、ファセットと同義語のサポートを備えた検索可能な製品リストページを提供します。 このウィジェットは Live Search 4.0.0 以降にインストールされ、有効になっています。
+- （**非推奨**）検索アダプターは PLP ウィジェットの前身であり、Live Search &lt; 4.0.0 でインストールされました。4.0.0 より前のバージョンの Live Search を使用している場合、Commerceはアップグレードして、PLP ウィジェットの機能のメリットを享受し、今後の改善を受けることをお勧めします。
 
 ## [!DNL Live Search] workspace
 
