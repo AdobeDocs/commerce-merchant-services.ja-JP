@@ -3,9 +3,9 @@ title: インスタンスの接続
 description: API キーと秘密鍵を使用してCommerce インスタンスを接続し、設定内のデータスペースを指定します。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,10 @@ API キーが失われた場合、新しい API キーのペアは [生成日時
    >[!INFO]
    >
    > のを表示 [[!DNL Adobe Commerce] サービスコネクタ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) ビデオを参照してください。
+
+## エンドポイント
+
+[!DNL Payment Services] はを使用します [Commerce サービスコネクタ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) をCommerce サービスに接続し、SaaS としてデプロイします。 この [!DNL Commerce Services Connector] 次の場所にあるエンドポイントを介して通信します。
+
+* `commerce-beta.adobe.io` サンドボックス環境用。
+* `commerce.adobe.io for` ライブ環境の場合。
