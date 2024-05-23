@@ -2,39 +2,35 @@
 title: オンボーディングとインストール
 description: 「インストール方法を学ぶ [!DNL Catalog Service]“
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c33ec5a10f9f2570e971e968efd1524e0d384ecd
+source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # オンボーディングとインストール
 
-カタログサービスをインストールし、を使用してCommerce インスタンスから商品データをリクエストおよび受信する [Catalog Service GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/).
+カタログサービスをインストールし、を使用してCommerce インスタンスから商品データをリクエストおよび受信する [Catalog Service GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/). カタログサービスは、repo.magento.com リポジトリからコンポーザメタパッケージとして提供されます。
 
 >[!NOTE]
 >
 >Commerce インスタンスで Live Search または Product Recommendationsを使用している場合は、サービスのオンボーディングまたはアップグレードの際に、Catalog Service のインストールまたは更新が自動的に行われます。 詳しくは、のインストール手順を参照してください [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) および [製品のRecommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure).
 
->[!BEGINSHADEBOX]
 
-## 前提条件
 
-のオンボーディングプロセス [!DNL Catalog Service] サーバーのコマンドラインにアクセスできる必要があります。 コマンドラインからの操作に詳しくない場合は、開発者またはシステムインテグレーターにお問い合わせください。
+## 必要システム構成
 
 **ソフトウェア要件**
 
 - Adobe Commerce 2.4.4 以降
-- PHP 8.1, 8.2
+- PHP 8.1、8.2、8.3
 - コンポーザー：2.x
 
 **サポートされるプラットフォーム**
 
 - クラウドインフラストラクチャー上のAdobe Commerce:2.4.4 以降
 - Adobe Commerce オンプレミス：2.4.4 以降
-
->[!ENDSHADEBOX]
 
 ## エンドポイント
 
@@ -51,19 +47,23 @@ ht-degree: 0%
 
 を使用するには [!DNL Catalog Service] Adobe Commerceには、次の手順が必要です。
 
-- データ書き出し拡張機能のインストール
+- カタログサービス拡張機能（`magento/catalog-service`）
 - サービスとデータの書き出しの設定
 - サービスへのアクセス
 
-### データ書き出し拡張機能のインストール
+### カタログサービス拡張機能のインストール
 
-を完了するには、サーバーのコマンドラインにアクセスできる必要があります。 [!DNL Catalog Service] オンボーディングプロセス。
+>[!BEGINSHADEBOX]
 
-この [!DNL Catalog Service] は、Commerce アカウントにリンクされた Composer キーと共にインストールされます [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 登録プロセス中に提供されます。 Composer は、Adobe Commerceの初期インストール時、または以前に外部に保存されていなかった状況で、これらのキーを使用します `auth.json` ファイル。
+**前提条件**
 
-参照： [認証キーの取得](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) composer キーの取得の詳細については、を参照してください。
+- アクセス [repo.magento.com](https://repo.magento.com) をクリックして拡張機能をインストールします。 キーの生成と必要な権限の取得については、を参照してください。 [認証キーの取得](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). クラウドインストールについては、を参照してください [クラウドインフラストラクチャー上のCommerce ガイド](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
-この [!DNL Catalog Service] 拡張機能は、Adobe Commerce クラウドインフラストラクチャとオンプレミスインスタンスの両方にインストールできます。
+- Adobe Commerce アプリケーションサーバーのコマンドラインにアクセスします。
+
+>[!ENDSHADEBOX]
+
+カタログサービス拡張機能の最新バージョン（`magento/catalog-service`Adobe Commerce Adobe Commerce）を選択する必要があります。 カタログサービスは、 [repo.magento.com](https://repo.magento.com) リポジトリ。
 
 >[!BEGINTABS]
 

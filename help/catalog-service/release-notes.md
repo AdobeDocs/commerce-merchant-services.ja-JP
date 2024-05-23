@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] （Adobe Commerceの場合）
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 187c3841a1682c53bb0f0e9c3f16cb43df146a58
+source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,12 @@ ht-degree: 0%
 ![バグ](../assets/bug.svg) 既知の問題
 
 ## 現在のメジャーバージョン
+
+### V1.19 リリース
+
+_2024 年 5 月 23 日（Pt）_
+
+![修正](../assets/fix.svg) この `InStock` オプション値のフラグで、スコープが考慮されるようになりました `enabled` 製品バリアントのステータス。
 
 ### V1.18 リリース
 
