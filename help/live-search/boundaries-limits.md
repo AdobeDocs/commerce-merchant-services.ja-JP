@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: の境界と制限について説明します [!DNL Live Search] お客様のビジネスニーズを満たしていることを確認します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 0f4860afa38dc188c19ee8bcbd386d3fb5d0907f
+source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ ht-degree: 0%
    - 検索可能な属性 200
 - [!DNL Live Search] は、Adobe Commerce データベースからの商品のみにインデックスを作成します。
 - CMS ページにはインデックスが作成されません。
+- SKU、名前、カテゴリの属性は、デフォルトで検索でき、検索から除外することはできません。 これらのカテゴリに製品を入れない場合は、カテゴリから製品の割り当てを解除してください。
 
 ## ファセット
 
