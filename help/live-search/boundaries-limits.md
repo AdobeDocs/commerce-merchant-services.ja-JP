@@ -3,7 +3,7 @@ title: 『境界と限界』
 description: の境界と制限について説明します [!DNL Live Search] お客様のビジネスニーズを満たしていることを確認します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
+source-git-commit: 0f4860afa38dc188c19ee8bcbd386d3fb5d0907f
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 - [!DNL Live Search] ではカテゴリツリーの完全な分類にアクセスできません。これにより、リーチを超える階層ナビゲーション検索シナリオが作成されます。
 - [!DNL Live Search] 一意のを使用 [GraphQL エンドポイント](https://developer.adobe.com/commerce/services/graphql/live-search/) 動的ファセットや入力時検索などの機能をサポートするクエリ用。 に似ていますが [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)、いくつかの違いがあり、一部のフィールドは完全には互換性がない可能性があります。
-- 検索クエリで再試行できる結果の最大数は 10,000 個です。
+- 検索クエリで返される結果の最大数は 10,000 個です。
 
 ## ルール
 
