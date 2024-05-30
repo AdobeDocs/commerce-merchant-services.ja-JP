@@ -4,9 +4,9 @@ description: Adobe Journey Optimizerを使用して、放棄された買い物�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
+source-git-commit: 6500aaa373d8e9abf88d1ca45dc2742c83bfeca3
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,6 @@ ht-degree: 0%
 |---|---|---|
 | **定義** | サイトに対する顧客のクリックまたはアクション。 | 各注文のライフサイクルと詳細（過去および現在）に関する情報。 |
 | **Adobe Commerceでキャプチャされたイベント** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[注文履歴](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
-
-### Adobe Commerceだけで何ができますか？
-
-Adobeを使用 [!DNL Commerce] ルールベースでメールのリマインダーを設定できます。リマインダーは、買い物かごとして機能したり、放棄されたメールを参照したりできます。 詳細はこちらをご覧ください。
-
-### Adobeを使用して実行できること [!DNL Commerce] Experience Cloudは？
-
-- **Adobe [!DNL Commerce] （Adobe Journey Optimizerを使用）** - Adobeの使用 [!DNL Commerce] Adobe Journey Optimizerのを使用すると、以下を使用できます [!DNL Commerce] オムニチャネル離脱ジャーニーのトリガーとしてのデータ。 顧客属性、放棄された項目、その他のショッピング行動、過去の購入行動に基づいて、ジャーニーをパーソナライズできます。
-
-- **Adobe Commerce、Adobe Journey Optimizer、Adobe Real-Time CDP** - Real-Time CDPを追加すると、統合された顧客プロファイルと、一元管理されたルールベースまたは AI を利用したオーディエンスに基づいて、放棄キャンペーンをさらに絞り込むことができます。 例えば、以下を作成できます。
-
-   - 離脱率の低い「強力なコンバーター」オーディエンス
-   - 特定のカテゴリを複数回再訪問した「高い考慮事項」オーディエンス
-   - 費用とロイヤルティが高いものの、最近は放棄された「高い可能性」のあるオーディエンス
 
 ### 他の顧客は何を達成しましたか？
 
