@@ -108,17 +108,17 @@ Adobe [!DNL Commerce] お客様は、Adobeを使用してパーソナライズ�
 
    を探します。 `commerce.checkouts` イベントペイロードをイベントで確認します。
 
-       ```json
-       &quot;personID&quot;: &quot;84281643067178465783746543501073369488&quot;,
-       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
-       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
-       &quot;commerce&quot;: {
-       「買い物かご」: {},
-       「チェックアウト」: {
-       「value」:1
-       }
-       ``
-   
+    ```json
+    "personID": "84281643067178465783746543501073369488", 
+    "eventType": "commerce.checkouts", 
+    "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+    "commerce": { 
+        "cart": {}, 
+        "checkouts": { 
+            "value": 1 
+        } 
+    ```
+
    ご覧のように、完全なイベントペイロードには豊富なイベントデータが含まれています。 次の節では、をリッスンして応答するイベントをJourney Optimizerで設定します。 `commerce.checkouts` から生成されたイベント [!DNL Commerce] ストアフロント。
 
 ## 手順 3:Journey Optimizerでのイベントの設定
