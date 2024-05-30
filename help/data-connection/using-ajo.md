@@ -4,9 +4,9 @@ description: Adobe Journey Optimizerを使用して、放棄された買い物�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: a94f75dfab1f88f02e217b0e021cc2dfc94244c7
+source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -108,16 +108,16 @@ Adobe [!DNL Commerce] お客様は、Adobeを使用してパーソナライズ�
 
    を探します。 `commerce.checkouts` イベントペイロードをイベントで確認します。
 
-    ```json
-    "personID": "84281643067178465783746543501073369488", 
-    "eventType": "commerce.checkouts", 
-    "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
-    "commerce": { 
-        "cart": {}, 
-        "checkouts": { 
-            "value": 1 
-        } 
-    ```
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
 
    ご覧のように、完全なイベントペイロードには豊富なイベントデータが含まれています。 次の節では、をリッスンして応答するイベントをJourney Optimizerで設定します。 `commerce.checkouts` から生成されたイベント [!DNL Commerce] ストアフロント。
 
