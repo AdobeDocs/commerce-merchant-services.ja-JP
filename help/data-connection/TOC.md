@@ -5,10 +5,10 @@ breadcrumb-title: “[!DNL Data Connection] Adobe Commerceの拡張機能
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: ae9a87d3a1dd2b20acc534defd51556a9edc31c2
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '110'
+ht-degree: 3%
 
 ---
 
@@ -31,3 +31,4 @@ ht-degree: 4%
    - [Adobe Experience Platform タグの使用](using-tags.md)
 - ユースケース {#use-cases}
    - [Adobe Journey Optimizerを使用して、放棄された買い物かごにメールを送信](using-ajo.md)
+   - [Commerce イベントデータを使用したReal-Time CDPでのオーディエンスの作成](create-audience.md)
