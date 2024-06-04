@@ -1,176 +1,178 @@
 ---
-title: 有効にする [!DNL Payment Services] 実稼動用
-description: を有効にしてオンボーディングプロセスを完了します。 [!DNL Payment Services] 実稼動用。
+title: Enable （有効） [!DNL Payment Services] 実稼動用
+description: を有効にして、オンボーディングプロセスを完了します。 [!DNL Payment Services] （実稼動用）。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
 
-# 有効にする [!DNL Payment Services] 実稼動用
+# Enable （有効） [!DNL Payment Services] 実稼動用
 
-サービスを実稼動環境に移行し、 [オンボーディングプロセス](onboard.md)、このトピックの手順に従って、次の操作をおこないます。
+サービスを実稼動環境に移行して、以下を完了できます。 [オンボーディングプロセス](onboard.md)このトピックの手順に従って、以下を行った後に、
 
-* [インストール](install.md) Payment Services 拡張機能
-* [設定と接続](connect.md) インスタンス
-* [設定](sandbox.md) および [テスト](test-validate.md) サンドボックス
+* [インストール](install.md) 支払いサービス拡張機能
+* [設定と接続](connect.md) お使いのインスタンス
+* [の設定](sandbox.md) および [テスト](test-validate.md) サンドボックス
 
-## 設定 [!DNL Payment Services] 支払い方法として
+## を設定 [!DNL Payment Services] 支払方法として
 
-後で [コマースサービスの設定](connect.md#configure-commerce-services) を有効にします。 [サンドボックステスト](sandbox.md#enable-sandbox-testing) または [生前払い](#enable-live-payments)を設定する必要があります。 [!DNL Payment Services] 支払い方法として。
+お先に [Commerce サービスの設定](connect.md#configure-commerce-services) およびいずれかのオプションを有効にします [サンドボックステスト](sandbox.md#enable-sandbox-testing) または [ライブ支払](#enable-live-payments)、を設定する必要があります [!DNL Payment Services] お支払方法として。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 日 _Admin_ サイドバー、に移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. クリック **[!UICONTROL Enable Payment Services]**.
 
-   このオプションは、まだ設定していない場合は表示されます [!DNL Payment Services] を 1 つ以上の web サイトの支払い方法として使用できます。
+   このオプションは、を設定していない場合に表示されます [!DNL Payment Services] 1 つ以上の web サイトの支払方法として。
 
-   ホームビューの設定領域に移動し、関連するオプションが展開されます (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) を使用して、 [!DNL Payment Services] のオプション [支払方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   ホームビューの設定エリアに移動すると、関連するオプションが展開されます（**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_）に割り当てます。ここで、 [!DNL Payment Services] のオプション [支払い方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
-1. In _[!UICONTROL General Configuration]_，設定&#x200B;**[!UICONTROL Enable]**から `Yes`.
-1. 設定 **[!UICONTROL Payment Action]**（両方） _[!UICONTROL Credit Card Fields]_および_[!UICONTROL PayPal payment buttons]_&#x200B;を次のいずれかに変更します。
+1. 対象： _[!UICONTROL General Configuration]_、設定&#x200B;**[!UICONTROL Enable]**対象： `Yes`.
+1. を設定 **[!UICONTROL Payment Action]**、両方 _[!UICONTROL Credit Card Fields]_および_[!UICONTROL PayPal payment buttons]_&#x200B;を次のいずれかに変更します。
 
    | 設定 | 説明 |
    |---|---|
-   | `Authorize` | 購入を承認し、資金を保留します。 その金額は、商人によって「取り込まれる」まで引き落とされません。 |
-   | `Authorize and Capture` | 購入を承認し、商人が資金を「キャプチャ」します。 |
+   | `Authorize` | 購入を承認し、資金を保留します。 この金額は、マーチャントによって「キャプチャ」されるまで引き出されません。 |
+   | `Authorize and Capture` | 購入を承認すると、マーチャントは資金を「キャプチャ」します。 |
 
    >[!IMPORTANT]
    >
-   >[!DNL Payment Services] は部分キャプチャをサポートします。 商人は、注文の一部を部分的に取り込む（請求書）ことができます。 例えば、各項目を個別に取り込むことも、1 つの項目を今すぐ取り込み、残りを後で取り込むこともできます。
+   >[!DNL Payment Services] は部分キャプチャをサポートしています。 マーチャントは、注文の一部を部分的にキャプチャ（請求）できます。 例えば、各項目を個別にキャプチャしたり、1 つの項目を今すぐキャプチャして、残りの項目を後でキャプチャしたりできます。
 
 1. クリック **[!UICONTROL Save]**.
-1. クリック **[!UICONTROL Go to Payment Services]** （人に）戻る [!DNL Payment Services] ホーム。
-1. [キャッシュをクリア](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
+1. クリック **[!UICONTROL Go to Payment Services]** ～に戻る [!DNL Payment Services] ホーム。
+1. [キャッシュのクリア](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
-   設定を変更するたびに、クリアを実行する必要があります。
+   設定を変更するたびにクリアを行う必要があります。
 
-詳しくは、 [支払いサービスの構成](settings.md) クレジットカードフィールドと PayPal の支払いボタンの設定に関する詳細
+参照： [支払いサービスの設定](settings.md) クレジットカードのフィールドと PayPal の支払いボタンの設定について詳しくは、こちらを参照してください。
 
-## 完全なマーチャントオンボーディング
+## マーチャントのオンボーディングの完了
 
-お客様の店舗が支払いサービスと共に運営されるようにする次のステップは、ライブオンボーディングを完了することです。
+ストアが支払いサービスを有効にする次のステップは、ライブオンボーディングを完了することです。
 
-支払いサービスが提供する [**詳細** （完全にサポート）および **標準** （速達チェックアウト）支払いオプション](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) オンボーディングフローは、操作する国と好みの支払いエクスペリエンスに応じて異なります。
+支払いサービスの提供 [**詳細** （完全にサポート）と **標準** （エクスプレスチェックアウト）支払いオプション](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) また、使用する国や希望する支払い体験に応じて、オンボーディングフローも異なります。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 日 _Admin_ サイドバー、に移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. クリック **[!UICONTROL Live onboarding]**.
 
-   このオプションは、のライブオンボーディングをまだ完了していない場合に表示されます。 [!DNL Payment Services].
+   このオプションは、のライブオンボーディングをまだ完了していない場合に表示されます [!DNL Payment Services].
 
-1. Adobe Analytics の _国を選択_ 「モーダル」で、操作元の国を選択します。
+1. が含まれる _国を選択_ モーダルで、操作する国を選択します。
 
-   支払いサービスは、 [5 か国](../payment-services/overview.md#availability) 現在は 支払サービスは、国リストに表示されるその他すべての国に対して、高速チェックアウト機能（支払いオプションのサブセット）を提供します。
+   支払いサービスは、におけるすべての支払いオプションを完全にサポートします。 [5 か国](../payment-services/overview.md#availability) 現在。 支払いサービスは、国リストに表示されるその他すべての国に対して、高速チェックアウト機能（支払いオプションのサブセット）を提供します。
 
-   リストから選択した国によって、支払いオプションとオンボーディングフローが決まります。[詳細](#advanced-onboarding) （完全にサポート）または [標準](#standard-onboarding) （速達チェックアウト） — ご利用いただけます。
+   リストから選択する国によって、支払いオプションとオンボーディングフローが決まります。[詳細](#advanced-onboarding) （完全にサポート）または [標準](#standard-onboarding) （高速チェックアウト） – 利用可能。
 
 >[!TIP]
 >
-> オンボーディングオプション（標準または詳細）を選択して続行したら、オンボーディングを再完了して、最初の選択項目からアップグレードまたはダウングレードする必要があります。
+> オンボーディングオプション（標準または詳細）を選択して続行したら、オンボーディングを再度完了して、最初の選択からアップグレードまたはダウングレードする必要があります。
 
-### 高度なオンボーディング
+### 詳細オンボーディング
 
-このオンボーディングフローは、 [完全に支援された国](../payment-services/overview.md#availability).
+このオンボーディングフローは、のマーチャントが使用できます [完全に支援されている国](../payment-services/overview.md#availability).
 
-国を選択した後：
+国を選択すると、次のようになります。
 
-1. 表示されるモーダルで、「 」を選択します。 **詳細**.
+1. 表示されるモーダルで、を選択します **詳細**.
 
-   の **標準** オプションを選択し、次に進みます。 [標準オンボーディングフロー](#standard-onboarding).
+   の場合 **標準** オプションで、 [標準のオンボーディングフロー](#standard-onboarding).
 
 1. クリック **続行**.
-1. PayPal アカウントの資格情報（Sandbox アカウントの資格情報ではなく）を使用して、完全にサポートされている高度なオンボーディングの PayPal フローを続行します _または_ 新しい PayPal アカウントに新規登録します。
+1. PayPal アカウントの資格情報（サンドボックスアカウントの資格情報ではありません）を使用して、完全にサポートされている高度なオンボーディングで PayPal フローを続行します _または_ 新しい PayPal アカウントに新規登録します。
 
 >[!IMPORTANT]
 >
->**高度なオンボーディング** 商人に～を求める [支払いの権利を要求](#request-payments-entitlement-from-adobe) ：ライブオンボーディングを有効にします。
+>**詳細オンボーディング** 商人は以下を行う必要があります [支払い権利のリクエスト](#request-payments-entitlement-from-adobe) ライブオンボーディングを有効にします。
 
 ### 標準オンボーディング
 
-この標準オンボーディングフローは、 [高速チェックアウトのみサポート](../payment-services/overview.md#availability) が指定されている。
+この標準のオンボーディングフローは、次の利用可能な国のマーチャントが使用できます [エクスプレスチェックアウトのサポート](../payment-services/overview.md#availability) が指定されている。
 
-国を選択した後：
+国を選択すると、次のようになります。
 
-1. Adobe Analytics の _支払いサービス契約_ 表示されるモーダルを選択し、 **支払いサービス契約** Adobe Commerce Payment Services 契約を表示するためのリンクです。
-1. Adobe Analytics の _支払いサービス契約_ モーダルをクリックします。 **同意します**.
-1. Express Checkout オンボーディングの場合は、PayPal アカウントの資格情報（Sandbox アカウントの資格情報ではなく）を使用して PayPal フローを続行するか、新しい PayPal アカウントに新規登録します。
+1. が含まれる _支払いサービス契約_ 表示されるモーダルで、 **支払いサービス契約** Adobe Commerce支払いサービス契約を表示するためのリンク。
+1. が含まれる _支払いサービス契約_ モーダル、クリック **同意します**.
+1. PayPal アカウントの資格情報（サンドボックスアカウントの資格情報ではありません）を使用して、PayPal エクスプレスチェックアウトオンボーディングの PayPal フローを続行するか、新しい PayPal アカウントに新規登録します。
 
 >[!IMPORTANT]
 >
->[Appleの支払いフィールドとクレジットカードフィールド](../payment-services/payments-options.md) は次の場合に使用できません： **標準オンボーディング**.
+>[Appleの Pay フィールドと Credit card フィールド](../payment-services/payments-options.md) は利用できません **標準オンボーディング**.
 
-## 電子メールアドレスを確認
+## メールアドレスを確認
 
-1. 管理者のサイドバーで、 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
+1. 管理サイドバーで、に移動します。 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   The _[!UICONTROL Live onboarding]_ボタンが表示されなくなり、「[!UICONTROL Live payments pending]」テキストボックスに入力します。
+   この _[!UICONTROL Live onboarding]_ボタンが表示されなくなり、「[!UICONTROL Live payments pending]」テキストボックスに入力します。
 
-   このテキストボックスでは、オンボーディングを完了するために PayPal でメールアドレスを確認するように求められる場合もあります。
+   そのテキストボックスでは、オンボーディングを完了するために PayPal でメールアドレスを確認するように求められる場合もあります。
 
-1. メールアドレスの確認を求めるメッセージが表示されたら、PayPal から送信された確認メッセージをメールで確認し、「 」をクリックしてメールアドレスを確認します。
-1. 管理者のサイドバーで、 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. メールアドレスを確認するメッセージが表示されたら、PayPal から送信された確認メッセージをメールで確認し、クリックしてメールアドレスを確認します。
+1. 管理サイドバーで、に移動します。 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. ブラウザーウィンドウを更新します。
 
-   PayPal マーチャントのオンボーディングが承認されると、支払いシステムがサンドボックスモードで、ライブ支払いを処理していないことを示す通知が表示されます。
+   PayPal マーチャントオンボーディングが承認されると、支払いシステムがサンドボックスモードであり、ライブ支払いを処理していないことを示す通知が表示されます。
 
    >[!IMPORTANT]
    >
-   >次の同意を取り消した場合： [!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] お客様の支払い処理（お客様の PayPal アカウント設定）に関して、お客様のストア内の注文を次の手順で処理することはできません： [!DNL Payment Services]. お使いの支払いサービスホームに、取り消された同意に関するアラートが表示されます。
+   >次の同意を取り消した場合： [!DNL Payment Services] （用） [!DNL Adobe Commerce] および [!DNL Magento Open Source] （PayPal アカウントの設定で）支払いを処理する場合、ストア内の注文は次のユーザーが処理することはできません [!DNL Payment Services]. 支払サービスのホームに、失効した同意に関するアラートが表示されます。
 
-## Adobeからの支払い権限の要求
+## Adobeからの支払い権利のリクエスト
 
-ストアの運用を有効にするには、Adobe( [高度なオンボーディングのみ](#advanced-onboarding)):
+ストアを有効にするには、Adobeから支払い権限をリクエストします（例：） [高度なオンボーディングのみ](#advanced-onboarding)）:
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. クリック **[!UICONTROL Get Live Payments]** の [!DNL Payment Services] ホーム。
+1. 日 _Admin_ サイドバー、に移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. クリック **[!UICONTROL Get Live Payments]** が含まれる [!DNL Payment Services] ホーム。
 
-   ![権限のリクエスト](assets/request-entitlements.png){width="500" zoomable="yes"}
+   ![リクエストの使用権限](assets/request-entitlements.png){width="500" zoomable="yes"}
 
-1. フォームに情報を入力します。
-1. セールスチームのメンバーが連絡を取ります。
+1. フォームに入力します。
+1. 営業チームのメンバーから連絡があります。
 
-または、次の場所でAdobeの支払い権限を要求できます： [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+または、次の場所でAdobeから支払い権限をリクエストできます。 [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
->**ライブオンボーディング** は、支払いの権利付与が承認されるまでアクセスできません。
+>**ライブオンボーディング** は、支払い権限が承認されるまでアクセスできません。
 
-## 価格層の設定
+## 価格レベルの構成
 
-Adobe Analytics の [!DNL Payment Services] _マーチャント ID_:
+を入手 [!DNL Payment Services] _マーチャント ID_:
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. ホームビューで、 **[!UICONTROL Settings]**. 詳しくは、 [ホーム](payments-home.md) を参照してください。
-1. 必要な項目を選択 _マーチャント ID_ を送信し、正しい価格帯を設定するセールス担当者に送信します。
+1. 日 _Admin_ サイドバー、に移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. ホームビューで、 **[!UICONTROL Settings]**. 参照： [ホーム](payments-home.md) を参照してください。
+1. 必要なを選択 _マーチャント ID_ そして、正しい価格レベルを設定するセールス担当者に送信します。
+
+参照： [レベル 2 およびレベル 3 の処理](levels-card-payment-transactions.md) 支払いトランザクションの詳細については、こちらを参照してください。
 
 ## ライブ支払いを有効にする
 
-A _実稼動マーチャント ID_ が自動生成され、 [設定](configure-admin.md). この ID を変更または変更しないでください。
+A _生産業者 ID_ が自動生成され、に入力されます。 [設定](configure-admin.md). この ID は変更しないでください。
 
-ライブ支払いを有効にする：
+ライブ支払を有効にする：
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. ホームで、 **[!UICONTROL Settings]** をクリックします。 詳しくは、 [ホーム](payments-home.md) を参照してください。
-1. Adobe Analytics の _[!UICONTROL General Configuration]_セクションセット&#x200B;**[!UICONTROL Payment mode]**から `Production`.
+1. 日 _Admin_ サイドバー、に移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. ホームで、 **[!UICONTROL Settings]** ページの右上に 参照： [ホーム](payments-home.md) を参照してください。
+1. が含まれる _[!UICONTROL General Configuration]_断面セット&#x200B;**[!UICONTROL Payment mode]**対象： `Production`.
 1. クリック **[!UICONTROL Save]**.
-1. [キャッシュをクリア](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [キャッシュのクリア](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >
-   >キャッシュをクリアしない場合、顧客はチェックアウト時に PayPal の支払いオプションを表示できません。
+   >キャッシュをクリアしないと、チェックアウト時に PayPal の支払いオプションが表示されません。
 
-以下に戻ると、 [!DNL Payment Services] ホーム：ライブ支払いを処理しているので、サンドボックス支払いモードメッセージは表示されなくなりました。
+に戻る場合 [!DNL Payment Services] ホームでは、ライブ支払いを処理中なので、サンドボックス支払いモードメッセージが表示されなくなります。
 
-詳しくは、 [管理での設定](configure-admin.md) （レガシー設定オプションの場合）
+参照： [管理者でを設定](configure-admin.md) （レガシー設定オプション用）。
 
 >[!IMPORTANT]
 >
->次の同意を取り消した場合： [!DNL Payment Services] お客様の支払い処理（お客様の PayPal アカウント設定）に関して、お客様のストア内の注文を次の手順で処理することはできません： [!DNL Payment Services]. 支払処理を再度有効にする場合は、オンボーディングを再度完了する必要があります。 お使いの支払いサービスホームに、取り消された同意に関するアラートが表示されます。
+>次の同意を取り消した場合： [!DNL Payment Services] （PayPal アカウントの設定で）支払いを処理する場合、ストア内の注文は次のユーザーが処理することはできません [!DNL Payment Services]. 支払い処理を再度有効にする場合は、オンボーディングを再度完了する必要があります。 支払サービスのホームに、失効した同意に関するアラートが表示されます。
 
-## 本番でテスト
+## 実稼動環境でテスト
 
-実際のクレジットカードと銀行を使用して実稼動環境で支払いをテストしてから、買い物客にこの機能を公開することを強くお勧めします。
+この機能を買い物客に公開する前に、実際のクレジットカードや銀行を使用して、実稼動環境で支払いをテストすることを強くお勧めします。
 
-詳しくは、 [テストと検証](test-validate.md) を参照してください。
+参照： [テストと検証](test-validate.md) を参照してください。
