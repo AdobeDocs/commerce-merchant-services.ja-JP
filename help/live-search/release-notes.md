@@ -3,9 +3,9 @@ title: “[!DNL Live Search] リリースノート」
 description: 「の最新のリリース情報 [!DNL Live Search] Adobe Commerceから」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 228ce5f3df3cc020a260fdd710eac02433d7bf0a
+source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,6 @@ _2024 年 2 月 13 日（Pt）_
 
 ![新規](../assets/new.svg) [!DNL Live Search] では、のデフォルトルールの設定をサポートするようになりました [マーチャンダイジングを検索](rules.md).
 
-_2023 年 10 月 27 日（Pt）_
-
-![新規](../assets/new.svg) この [!DNL Live Search] PLP ウィジェットがカラースウォッチをサポートするようになりました。
-
 _2023 年 10 月 12 日（Pt）_
 
 ![新規](../assets/new.svg) Commerce管理者は、のインデックスの言語を指定できるようになりました [!DNL Live Search]. 参照： [設定](settings.md).
@@ -44,6 +40,28 @@ _2023 年 6 月 13 日（Pt）_
 _2023 年 4 月 25 日（Pt）_
 
 ![新規](../assets/new.svg) [!DNL Live Search] お客様は新しい [SaaS 価格インデクサー](../price-index/price-indexing.md).
+
+### PLP ウィジェット
+
+_2024 年 5 月 31 日（Pt）_
+
+![新規](../assets/new.svg) PLP ウィジェットのバージョン 2.0.0 がリリースされ、次の機能がサポートされるようになりました。
+
+- 「買い物かごに追加」ボタン – シンプルな製品でのみ使用できます。
+- 製品ごとに複数の画像 – 設定可能な製品に対して別の色を選択すると、画像が変化する場合があります。
+
+_2023 年 10 月 27 日（Pt）_
+
+![新規](../assets/new.svg) この [!DNL Live Search] PLP ウィジェットがカラースウォッチをサポートするようになりました。
+
+
+## [!DNL Live Search] 4.2.0 {#420}
+
+_2024 年 5 月 31 日（Pt）_
+
+[!BADGE サポート]{type=Informative tooltip="サポート"}
+
+![新規](../assets/new.svg) PLP ウィジェット バージョン 2.0.0 を使用するように Live Search 拡張機能を更新しました。
 
 ## [!DNL Live Search] 4.1.2 {#412}
 
@@ -75,16 +93,6 @@ _2024 年 2 月 22 日（Pt）_
 ### 新機能
 
 ![新規](../assets/new.svg) この [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) が利用可能になりました。 この改善されたダッシュボードは、のデータストリームに関するインサイトを提供します [!DNL Product Recommendations], [!DNL Live Search]、および [!DNL Catalog Service].
-![新規](../assets/new.svg) に複数の新機能が追加されました [PLP ウィジェット](plp-styling.md):
-
-* リスト/グリッド表示の切り替え
-* 「買い物かごに追加」ボタン
-* スウォッチのサポート
-* 製品ごとに複数の画像
-* 価格スライダー
-* 言語サポート
-
-マーチャントは、 [!DNL Live Search] これらの機能にアクセスするためのバージョン 4.1.0 への拡張。
 
 ### 更新
 
@@ -114,9 +122,9 @@ _2023 年 11 月 13 日（Pt）_
 
 バージョン 3.1.1 以降をインストールしたら、新しいインデクサーを有効にします。
 
-* 製品価格フィード
-* スコープ web サイト データ フィード
-* 範囲顧客グループデータフィード
+- 製品価格フィード
+- スコープ web サイト データ フィード
+- 範囲顧客グループデータフィード
 
 アップグレード後、変更を実稼動環境にプッシュする前に、QA またはステージング環境で、更新された設定をテストします。
 
@@ -145,7 +153,7 @@ _2023 年 9 月 15 日（Pt）_
 
 ![修正](../assets/fix.svg) 製品および価格フィードのテーブルサイズが大幅に縮小されました。 テーブル `catalog_data_exporter_products` および `catalog_data_exporter_product_prices` 大幅なサイズ削減が必要です。
 ![修正](../assets/fix.svg) 「ルール」タブの名前は、「ルールを検索」に変更されます
-![修正](../assets/fix.svg) 「トレンド」でランキングする場合、次の中から選択できるようになりました。* 3 日（デフォルト）* 14 日* 30 日
+![修正](../assets/fix.svg) 「トレンド」別にランキングする場合、次の中から選択できるようになりました。- 3 日（デフォルト） – 14 日～30 日
 ![修正](../assets/fix.svg) 「イベント」（ブースト/ピン/ベリー/非表示）の名前は「手動ランキング」に変更されました
 ![修正](../assets/fix.svg) 「ランキングタイプ」の名前が「インテリジェントランキング」に変更されました
 ![修正](../assets/fix.svg) 軽微なバグ修正
@@ -170,11 +178,11 @@ _2023 年 8 月 7 日（Pt）_
 
 ![新規](../assets/new.svg) 次の値がに追加されました `storeDetails` オブジェクト :
 
-* 「1 ページにすべての製品を許可」
-* 通貨レート
-* 「グリッド許容値の 1 ページあたりの製品数」
-* 「グリッドのデフォルト値の 1 ページあたりの製品数」
-* ストアの言語
+- 「1 ページにすべての製品を許可」
+- 通貨レート
+- 「グリッド許容値の 1 ページあたりの製品数」
+- 「グリッドのデフォルト値の 1 ページあたりの製品数」
+- ストアの言語
 
 ### 更新
 
@@ -201,7 +209,7 @@ _2023 年 3 月 14 日（Pt）_
 ![新規](../assets/new.svg) [製品一覧ページウィジェット](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling)
 ![新規](../assets/new.svg) [カテゴリフィルターオプション](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![新規](../assets/new.svg) ドラッグ&amp;ドロップしてピンイベントを作成する機能を追加しました
-![新規](../assets/new.svg) 新しいピン留めアクション：* スポットにピン留め – ワンクリックでピン留めイベントを作成するピンボタン *上にピン留め – 製品を最初の位置に配置*下にピン留め – 結果の下部に製品を配置* ワンクリックでイベントのピン留めを解除
+![新規](../assets/new.svg) 新しいピン留めアクション：- スポットにピン留め – ワンクリックでピン留めイベントを作成するピンボタン – 上にピン留め – 製品を最初の位置に配置 – 下にピン留め – 結果の下部に製品を配置 – ワンクリックでイベントのピン留めを解除
 ![新規](../assets/new.svg) [ルールのインテリジェントランキング](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
 ![新規](../assets/new.svg) [!DNL Live Search] 完全なサポートを追加 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerceの機能（以前はマルチソースインベントリ（MSI）と呼ばれていました）。 フルサポートを有効にするには、次の操作を行う必要があります [更新](install.md#update) 依存関係モジュール `commerce-data-export` をバージョン 102.2.0 以降にアップグレードします。
 
@@ -326,6 +334,6 @@ _2023 年 3 月 14 日（Pt）_
 
 詳細情報：
 
-* [Adobe Commerce開発者向けドキュメント](https://developer.adobe.com/commerce/docs)
-* [Adobe Commerce ユーザーガイド](https://experienceleague.adobe.com/en/docs/commerce)
-* [[!DNL Live Search] Marketplace で](https://commercemarketplace.adobe.com/magento-live-search.html)
+- [Adobe Commerce開発者向けドキュメント](https://developer.adobe.com/commerce/docs)
+- [Adobe Commerce ユーザーガイド](https://experienceleague.adobe.com/en/docs/commerce)
+- [[!DNL Live Search] Marketplace で](https://commercemarketplace.adobe.com/magento-live-search.html)
