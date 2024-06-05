@@ -4,9 +4,9 @@ description: SaaS 価格インデックスを使用したパフォーマンス�
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,8 @@ ht-degree: 0%
 # SaaS 価格インデックス作成
 
 SaaS の価格インデックス作成により、価格の変更が反映されるまでの時間が短縮されます [Commerce サービス](../landing/saas.md) 送信後 これにより、大規模で複雑なカタログを持つマーチャント、または複数の Web サイトや顧客グループを持つマーチャントは、価格変更を継続的に処理できます。
-ヘッドレスなストアフロントがある場合や、 [catalog-adapter](./catalog-adapter.md) の拡張機能で、お客様はAdobe Commerce core price indexer を無効にできます。
+
+ヘッドレスなストアフロントがある場合や、 [catalog-adapter](./catalog-adapter.md) Adobe Commerceの Core Price Indexer を無効にすると、SaaS の価格インデックス作成を使用できるようになります。
 
 インデックス化や価格計算などの計算量の多いプロセスは、Commerce コアからAdobeのクラウドインフラストラクチャに移行されました。 これにより、マーチャントはリソースを迅速に拡大して価格のインデックス化時間を短縮し、その変更をより迅速に反映することができます。
 

@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] （Adobe Commerceの場合）
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ ht-degree: 0%
 
 _2024 年 5 月 23 日（Pt）_
 
-![修正](../assets/fix.svg) この `InStock` オプション値のフラグで、スコープが考慮されるようになりました `enabled` 製品バリアントのステータス。
+![修正](../assets/fix.svg) <!--DATA-5033-->この `InStock` オプション値のフラグで、スコープが考慮されるようになりました `enabled` 製品バリアントのステータス。
+
+![修正](../assets/fix.svg) <!--DATA-5888-->大きな数字（最大 16 桁）とより大きな小数点精度（最大 4 桁）を必要とする製品価格のサポートを追加します。 既存のカタログに価格構成の更新を適用するには、 [データ管理ダッシュボード](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)または、を使用します [Adobe Commerce コマンドラインインターフェイス](../landing/catalog-sync.md#command-line-interface).
+
+## 以前のバージョン
+
++++ 以前のバージョン
 
 ### V1.18 リリース
 
@@ -37,10 +43,6 @@ _2024 年 4 月 11 日（Pt）_
 ![新規](../assets/new.svg) PHP 8.3 のサポートを追加。
 
 ![新規](../assets/new.svg) この [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) および [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) クエリは、シンプルな製品と複雑な製品の両方で、カスタマイズ可能なオプションデータを返すようになりました。<!--DATA-5538-->
-
-## 以前のバージョン
-
-+++ 以前のバージョン
 
 ### V1.17 リリース
 
