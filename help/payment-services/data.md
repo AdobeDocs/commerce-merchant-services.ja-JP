@@ -1,34 +1,34 @@
 ---
 title: 使用可能なデータ
-description: Financial Reporting データを使用して、レポートを非コマースシステムと紐付けします。
+description: Financial reporting データを使用して、レポートをCommerce以外のシステムと調整します。
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 9a933d41bffc2af453eed00caeb941eb18b23852
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
 
 # 使用可能なデータ
 
-一部の注文および支払いデータは、外部システム間でAdobe Commerceの財務報告を調整できるように利用できます。
+一部の注文および支払いデータは、外部システム間でAdobe Commerceの財務レポートを調整できるように使用できます。
 
-## ERP システムとの紐付け
+## ERP システムとの調整
 
-特定の注文に関連付けられた増分 ID を使用して、Adobe Commerce Financial Reporting をAdobe以外の Enterprise Resource Planning(ERP) システムと紐付けできます。
+特定の注文に関連付けられた増分 ID を使用して、Adobe Commerceの財務レポートをAdobe以外の Enterprise Resource Planning （ERP）システムと紐付けることができます。
 
-支払いサービスがコマース注文を PayPal に送信すると、増分 ID が `custom_id` _および_ （内） `invoice_id` ( また、 `increment_id`) をクリックします。
+支払いサービスがCommerce注文を PayPal に送信すると、増分 ID が `custom_id` _および_ が含まれる `invoice_id` （このファイルには、の後のランダムな文字列も含まれます） `increment_id`）に設定します。
 
-ID には、支払のマーチャントアクティビティの詳細と PayPal Webhook の両方で簡単にアクセスできます。
+ID には、支払いのマーチャントアクティビティの詳細と PayPal Webhook の両方で簡単にアクセスできます。
 
-The `invoice_id` および `custom_id` は、支払のマーチャント活動詳細の下部に表示されます。
+この `invoice_id` および `custom_id` 支払いの業者活動の詳細の下部付近に表示されます。
 
-![`custom_id` マーチャント活動の詳細](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
+![`custom_id` マーチャントアクティビティの詳細で](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
-`custom_id` および `invoice_id` PayPal のウェブフックの詳細は次の通りです。
+`custom_id` および `invoice_id` PayPal の Webhook の詳細で：
 
 ```json
    ...
@@ -77,7 +77,7 @@ The `invoice_id` および `custom_id` は、支払のマーチャント活動�
    ...
 ```
 
-詳しくは、 PayPal の REST API に関するドキュメントを参照してください。
+詳しくは、PayPal の REST API ドキュメントを参照してください。
 
-* [`purchase_unit`は、 `custom_id` および `invoice_id` 存在する](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit, — 折りたたみ)
+* [`purchase_unit`。この条件は `custom_id` および `invoice_id` 存在する](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [注文の詳細を表示](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
