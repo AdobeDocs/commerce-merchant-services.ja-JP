@@ -3,9 +3,9 @@ title: リリースノート
 description: の最新のリリース情報 [!DNL Data Connection] Adobe Commerceからの拡張機能。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
+source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,15 @@ _2022 年 10 月 12 日（Pt）_
 ![新規](../assets/new.svg)  – をサポートするようになりました [AEM ストアフロント](overview.md#aem-support).
 
 +++
+
+## 3.1.2
+
+[!BADGE 互換性]{type=Informative tooltip="互換性"}
+
+_2024 年 6 月 5 日（Pt）_
+
+![修正](../assets/new.svg)  – を開始する際に間違った日付形式が使用されていた問題を修正しました [履歴同期](connect-data.md#specify-order-history-date-range).
+![修正](../assets/new.svg)  – が表示される問題を修正しました [startCheckout](events.md#startcheckout) Adobe Commerce 2.4.7 でイベントが送信されなかった。
 
 ## 3.1.1
 

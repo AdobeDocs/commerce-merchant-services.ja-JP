@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: の境界と制限について説明します [!DNL Live Search] お客様のビジネスニーズを満たしていることを確認します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
+source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,14 @@ ht-degree: 0%
 - ファセット内では、最大 30 個のバケットを返すことができます。 30 個を超えるバケットを返す必要がある場合、 [サポートチケットを作成](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) そのため、Adobeはパフォーマンスへの影響を分析し、お使いの環境でこの制限を増やすことが可能かどうかを判断できます。
 - 動的ファセットは、大きなインデックスや通常のインデックスのパフォーマンスで問題を引き起こす可能性があります。 動的ファセットを作成し、パフォーマンスの低下や、タイムアウトエラーを伴うページの読み込みがない場合は、ファセットをピン留めに変更して、パフォーマンスの問題が解決するかどうかを判断してください。
 - 在庫ステータス （`quantity_and_stock_status`）はファセットとしてサポートされていません。 次を使用できます `inStock: 'true'` 在庫品を除外します。 これは、の標準サポートで、 `LiveSearchAdapter` で「在庫切れの製品を表示」が「True」に設定されている場合のモジュール [!DNL Commerce] 管理者。
+- 日付タイプ属性はファセットとしてサポートされていません。
 
 ## クエリ
 
 - [!DNL Live Search] ではカテゴリツリーの完全な分類にアクセスできません。これにより、リーチを超える階層ナビゲーション検索シナリオが作成されます。
 - [!DNL Live Search] 一意のを使用 [GraphQL エンドポイント](https://developer.adobe.com/commerce/services/graphql/live-search/) 動的ファセットや入力時検索などの機能をサポートするクエリ用。 に似ていますが [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)、いくつかの違いがあり、一部のフィールドは完全には互換性がない可能性があります。
 - 検索クエリで返される結果の最大数は 10,000 個です。
+- 日付タイプの属性を使用して結果をフィルタリングすることはできません。
 
 ## ルール
 
@@ -56,7 +58,7 @@ ht-degree: 0%
 ## 同義語
 
 - [!DNL Live Search] 最大 200 まで管理可能 [同義語](synonyms.md) ストア表示ごとに。
-- マルチワードの同義語はサポートされていません。
+- マルチワード同義語は、ストアビューあたり 20 に制限されています。
 
 ## カテゴリマーチャンダイジング
 
