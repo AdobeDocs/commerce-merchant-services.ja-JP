@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: の境界と制限について説明します [!DNL Live Search] お客様のビジネスニーズを満たしていることを確認します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,6 @@ ht-degree: 0%
 
 ## クエリ
 
-- [!DNL Live Search] ではカテゴリツリーの完全な分類にアクセスできません。これにより、リーチを超える階層ナビゲーション検索シナリオが作成されます。
 - [!DNL Live Search] 一意のを使用 [GraphQL エンドポイント](https://developer.adobe.com/commerce/services/graphql/live-search/) 動的ファセットや入力時検索などの機能をサポートするクエリ用。 に似ていますが [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)、いくつかの違いがあり、一部のフィールドは完全には互換性がない可能性があります。
 - 検索クエリで返される結果の最大数は 10,000 個です。
 - 日付タイプの属性を使用して結果をフィルタリングすることはできません。
@@ -74,3 +73,4 @@ ht-degree: 0%
    - 「ログインしていない」顧客グループには、「許可」閲覧権限を付与する必要があります。
    - 製品を「ログインしていない」顧客グループに制限するには、各カテゴリに移動して、各顧客グループに権限を設定します。
 - Live Search forPWA Studioでの B2B のサポートは現時点ではサポートされていません。
+- のカテゴリファセット [!DNL Live Search] 特定の顧客グループに表示できないカテゴリが表示される場合があります。

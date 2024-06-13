@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] リリースノート'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 316059288ace6ebaf3748a294d8fe7351fc63bbd
+source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ _2024 年 5 月 9 日（Pt）_
 [!BADGE サポート]{type=Informative tooltip="サポート"}
 
 ![修正](../assets/fix.svg) をクリックした際の問題を修正しました **[!DNL Add to Cart]** 商品Recommendationsユニット内のシンプルな商品のボタンが、現在のページに留まることなく、買い物客をホームページにリダイレクトしました。
+![バグ](../assets/bug.svg) によって検証エラーが発生しました `referenceBlock` 内の要素 `ProductRecommendations Layout` XML ファイル。
 
 ### 以前のバージョン
 

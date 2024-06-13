@@ -4,10 +4,10 @@ user-guide-description: 「このガイドでは、を使用する詳細な手�
 breadcrumb-title: 「[!DNL Live Search] ガイド」
 role: Admin
 feature: Services, Search
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 5df5eef652212c095a8f46a8736e1e97426f631e
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 10%
+source-wordcount: '72'
+ht-degree: 11%
 
 ---
 
@@ -44,7 +44,6 @@ ht-degree: 10%
    - [インデックス作成](indexing.md)
    - [GraphQL](graphql.md)
    - [設定](settings.md)
-   - [Commerceの設定](configuration.md)
 - [イベント](events.md)
 - GraphQL クエリ {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)

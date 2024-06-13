@@ -3,9 +3,9 @@ title: 「の概要 [!DNL Live Search]“
 description: のシステム要件とインストール手順を説明します [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2266'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ## 5. データを設定する
 
-製品データを正しく設定すると、顧客に適した検索結果が得られます。 このセクションでは、製品リストウィジェットを有効にし、カテゴリと属性を割り当てます。
+製品データを正しく設定すると、顧客に適した検索結果が得られます。 このセクションでは、製品リストウィジェットを有効にし、カテゴリを割り当てます。
 
 ### 製品リストウィジェットの有効化
 
@@ -197,16 +197,6 @@ bin/magento saas:resync --feed categoryPermissions
 ### カテゴリの割り当て
 
 返品された商品 [!DNL Live Search] に割り当てなければなりません [category](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). 例えば Luma では、製品が「男性」、「女性」、「歯車」などのカテゴリに分類されます。 サブカテゴリも「トップス」、「ボトムス」、「ウォッチポイント」に設定されます。 これにより、フィルタリング時の精度が向上します。
-
-### 検索可能なフィールドとフィルタリング可能なフィールド
-
-製品が割り当てられている [属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) 検索とフィルタリングに使用できます。 属性とは、「色」、「サイズ」、「マテリアル タイプ」などです。 これらの属性を使用すると、ユーザーは「緑のトップス」を探すことができます。 各製品には、で定義された多くの属性を持つことができます。 [!DNL Commerce] 管理者。
-
-これらの各属性は、次のように定義できます [&quot;検索可能&quot;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) admin. 「検索可能」に設定すると、これらの属性をで検索できます。 [!DNL Live Search].
-
-[ファセット](facets.md) は、で定義される製品属性です。 [!DNL Live Search] フィルタリング可能。 フィルタリング可能な属性は、でファセットとして設定できます。 [!DNL Live Search] ただし、一度に検索できるファセットの数には制限があります。
-
-[同義語](synonyms.md) は、ユーザーが正しい製品に導かれるよう定義できる用語です。 ズボンを探しているユーザーは「ズボン」や「スラックス」と入力する場合があります。 これらの検索用語で「パンツ」の結果にユーザーがアクセスできるように、同義語を設定できます。
 
 ## 6.接続をテストする {#test-connection}
 
@@ -432,6 +422,10 @@ composer require magento/module-data-services-graphql
 - `dataServicesStorefrontInstanceContext`
 - `dataServicesMagentoExtensionContext`
 - `dataServicesStoreConfigurationContext`
+
+### B2B サポート
+
+[!DNL Live Search] のサポート [B2B 機能](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) （追加：） [制限事項](boundaries-limits.md#b2b-and-category-permissions).
 
 ### PWAサポート
 
