@@ -2,9 +2,9 @@
 title: "設定"
 description: の設定を行います [!DNL Live Search] サービス」と入力します。
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 0%
 | インドネシア | id |
 | アイルランド語 | ga |
 | イタリア語 | 0.45511884 |
-| 日本語 | ja |
+| 日本語（カタカナ） | ja |
 | 韓国語 | ko |
 | ラトビアン | 左室 |
 | リトアニア語 | lt |

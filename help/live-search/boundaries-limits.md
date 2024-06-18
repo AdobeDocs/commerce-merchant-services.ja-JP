@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: の境界と制限について説明します [!DNL Live Search] お客様のビジネスニーズを満たしていることを確認します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -72,5 +72,12 @@ ht-degree: 0%
    - 製品はルートカテゴリに割り当てる必要があります。
    - 「ログインしていない」顧客グループには、「許可」閲覧権限を付与する必要があります。
    - 製品を「ログインしていない」顧客グループに制限するには、各カテゴリに移動して、各顧客グループに権限を設定します。
-- Live Search forPWA Studioでの B2B のサポートは現時点ではサポートされていません。
+- PWA Studioで PLP ウィジェットを使用した B2B の標準サポートは、現時点ではサポートされていません。 ただし、次のことができます [api の使用](install.md#pwa-support) ：この機能を実装します。
 - のカテゴリファセット [!DNL Live Search] 特定の顧客グループに表示できないカテゴリが表示される場合があります。
+
+## [!DNL Storefront popover]
+
+- この [[!DNL popover]](storefront-popover.md) は、を使用するストアでのみ使用できます *Luma* テーマ、または基づいてカスタマイズされたテーマ *Luma*. 検索結果ページのパンくずリストには表示されません *Luma* スタイル設定。
+- この [!DNL popover] はをサポートしていません *空白* テーマ。
+- この [!DNL popover] は、クイックオーダーフォームではサポートされていません。
+- ウィッシュリストと製品の比較はサポートされていません。
