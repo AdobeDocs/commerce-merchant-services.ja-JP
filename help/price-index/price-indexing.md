@@ -4,53 +4,55 @@ description: SaaS 価格インデックスを使用したパフォーマンス�
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # SaaS 価格インデックス作成
 
-SaaS の価格インデックス作成により、価格の変更が反映されるまでの時間が短縮されます [Commerce サービス](../landing/saas.md) 送信後 これにより、大規模で複雑なカタログを持つマーチャント、または複数の Web サイトや顧客グループを持つマーチャントは、価格変更を継続的に処理できます。
+SaaS の価格インデックス作成では、インデックス作成や価格計算などの重い計算プロセスをCommerce アプリケーションからAdobeのクラウドインフラストラクチャに移行することで、サイトのパフォーマンスが向上します。 このアプローチにより、マーチャントはリソースを迅速に拡張して価格のインデックス化時間を短縮し、データをストアフロントおよび接続されたCommerce サービスに送信する際に価格の変化をより迅速に反映できます。
 
-ヘッドレスなストアフロントがある場合や、 [catalog-adapter](./catalog-adapter.md) Adobe Commerceの Core Price Indexer を無効にすると、SaaS の価格インデックス作成を使用できるようになります。
-
-インデックス化や価格計算などの計算量の多いプロセスは、Commerce コアからAdobeのクラウドインフラストラクチャに移行されました。 これにより、マーチャントはリソースを迅速に拡大して価格のインデックス化時間を短縮し、その変更をより迅速に反映することができます。
-
-SaaS サービスへのコアインデックス作成のデータフローは次のようになります。
+次の図は、Commerceがを使用している場合の SaaS サービスへのインデックス作成データフローを示しています。 [価格索引付け](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) Commerce アプリケーションに含まれるプロセス：
 
 ![デフォルトのデータフロー](assets/old_way.png)
 
-SaaS 価格インデックス作成のフローは次のとおりです。
+SaaS 価格インデックスを有効にすると、データフローが変更されます。 価格のインデックス作成は、次を使用して実行します。 [Commerce SaaS データの書き出し](../data-export/data-synchronization.md).
 
 ![SaaS 価格インデックス作成データ フロー](assets/new_way.png)
 
-これらの改善は、すべてのマーチャントにメリットをもたらしますが、最大限のメリットを享受できるのは次のような顧客です。
+すべてのマーチャントは、SaaS 価格インデックスを使用することでメリットを得ることができますが、次のような特徴を持つプロジェクトを持つマーチャントは、最大のメリットを得ることができます。
 
-* 一定の価格変更：頻繁なプロモーション、季節的な割引、在庫のマークダウンなどの戦略的目標を達成するために、価格の繰り返しの変更を必要とするマーチャント。
-* 複数の web サイトや顧客グループ：複数の web サイト（ドメイン/ブランド）や顧客グループで製品カタログを共有しているマーチャント。
-* Web サイトまたは顧客グループをまたいだ一意の価格の膨大：事前に交渉された価格の B2B マーチャント、異なる価格戦略のブランドなど、web サイトまたは顧客グループをまたいだ一意の価格を含む広範な共有製品カタログを持つマーチャント。
+* **継続的な価格変更**・頻繁なプロモーション、季節的な割引、在庫の値動きなど、戦略目標を達成するために何度も価格を変更する必要がある販売者。
+* **複数の web サイトや顧客グループ** – 複数の web サイト（ドメイン/ブランド）や顧客グループで製品カタログを共有しているマーチャント。
+* **Web サイトまたは顧客グループをまたいだ多くのユニークな価格**-Web サイトや顧客グループをまたいだ一意の価格を含む、広範な共有製品カタログを持つマーチャント。 例えば、事前に交渉された価格を持つ B2B マーチャントや、異なる価格戦略を持つブランドが含まれます。
 
-SaaS 価格インデックスは、Adobe Commerce サービスを使用するお客様が無償で利用でき、すべての組み込みAdobe Commerce製品タイプの価格計算をサポートします。
+## SaaS 価格インデックス作成の使用
 
-このガイドでは、SaaS 価格インデックスの仕組みと有効化の方法について説明します。
+SaaS 価格インデックス作成は、Adobe Commerce サービスのインストール時に自動的に有効になります。 すべてのビルトイン Adobe Commerce商品タイプの価格計算をサポートしています。
 
-## 要件
+### 要件
 
 * Adobe Commerce 2.4.4 以降
-* 最新バージョンのAdobe Commerce拡張機能を備えた、次のCommerce サービスのうち少なくとも 1 つ：
+
+### 前提条件
+
+* 次のいずれかのCommerce サービスを、最新バージョンのCommerce拡張機能と共にインストールする必要があります。
 
    * [カタログサービス](../catalog-service/overview.md)
    * [Live Search](../live-search/overview.md)
    * [製品のRecommendations](../product-recommendations/guide-overview.md)
 
-Luma とAdobe Commerce Core GraphQLのユーザーは、 [`catalog-adapter`](catalog-adapter.md) luma とコア GraphQl の互換性を提供し、Adobe Commerce Product Price Indexer を無効にする拡張機能。
 
-## 使用方法
+>[!NOTE]
+>
+>必要に応じて、Commerce アプリケーションのデフォルトの価格インデクサーを [カタログアダプタ](catalog-adapter.md).
 
-SaaS 価格インデックス作成をサポートしてAdobe Commerce インスタンスをアップグレードしたら、新しいフィードを同期します。
+## 価格と SaaS 価格インデックスの同期
+
+Adobe Commerceの SaaS 価格インデックス作成を有効にした後、新しいフィードを同期することで、ストアフロントとCommerce サービスの価格を更新します。
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
@@ -58,7 +60,7 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-## カスタム製品タイプの価格
+### カスタム製品タイプの価格
 
 価格計算は、基本価格、特別価格、グループ価格、カタログルール価格などのカスタム製品タイプに対してサポートされています。
 
@@ -94,3 +96,4 @@ bin/magento saas:resync --feed=prices
        }
    }
    ```
+

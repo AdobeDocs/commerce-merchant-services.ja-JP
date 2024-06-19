@@ -1,0 +1,89 @@
+---
+title: データを SaaS データ書き出しと同期
+description: 次の方法を学びます [!DNL SaaS Data Export] Adobe Commerce インスタンスと接続された SaaS サービスとの間でデータを収集して同期します。」
+role: Admin, Developer
+recommendations: noCatalog
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+workflow-type: tm+mt
+source-wordcount: '694'
+ht-degree: 0%
+
+---
+
+# SaaS データ エクスポートを使用してデータを同期する
+
+カタログサービス、Live Search、Product Recommendationsなど、データのエクスポートを必要とするCommerce サービスをインストールすると、データの収集と同期プロセスを管理するために、Saas データのエクスポートモジュールのコレクションがインストールされます。 次の図は、SaaS データの書き出しフローを示しています。
+
+![Adobe Commerceの SaaS データ書き出し収集および同期フロー](assets/data-export-flow.png){width="900" zoomable="yes"}
+
+SaaS データ書き出しフローの主なコンポーネントは次のとおりです。
+
+- Adobe Commerceからフィードのデータを収集し、フィード項目を組み立て、更新をリッスンし、フィードステータスを保持する SaaS データエクスポートモジュール。
+- SaaS は、データをエクスポートするモジュールをエクスポートし、ルーティングを設定して、接続されたサービスにフィードを公開します。
+- Adobe Commerce サービスは、データ取得プロセスを管理して、受信フィードを検証し、接続されたサービスの更新を保持します。
+
+## 同期モード
+
+SaaS データ エクスポートには、エンティティ フィードを処理するための 2 つのモードがあります。
+
+- **即時書き出しモード** – このモードでは、データが収集され、1 回のイテレーションで直ちにCommerce サービスに送信されます。 このモードでは、Commerce サービスへのエンティティの更新の配信が高速化され、フィードテーブルのストレージサイズが縮小されます。
+
+- **レガシー書き出しモード** – このモードでは、データは 1 つのプロセスで収集されます。 次に、cron ジョブが、収集したデータを接続されたコマースサービスに送信します。 データ書き出しログエントリでは、レガシーモードを使用するフィードにはラベルが付けられます `(legacy)`.
+
+## 同期タイプ
+
+SaaS データのエクスポートでは、フル同期、部分同期、および失敗した項目同期の再試行の 3 種類の同期タイプがサポートされています。
+
+### 完全同期
+
+Adobe Commerce インスタンスをCommerce サービスに接続した後、完全同期を実行して、Adobe Commerceから接続されたサービスにエンティティフィードデータを送信します。
+
+>[!NOTE]
+>
+>フル同期は主にオンボーディングフェーズ用です。 データベース容量超過を防ぐために、通常の使用は避けます。 初期同期の後、進行中の変更は、部分同期を使用して自動的に同期されます。
+
+### 部分同期
+
+部分同期を使用すると、SaaS データの書き出しは、Commerce アプリケーションから接続されたコマースサービスに、商品名の変更や価格の更新などのアップデートを自動的に送信します。
+
+データの書き出しプロセスでは、次の cron ジョブを使用して部分同期操作を自動化します。
+
+- cron グループジョブの「インデックス」:
+   - この `indexer_reindex_all_invalid` ジョブでは、無効なフィードのインデックスを再作成します。 これは、標準のAdobe Commerce cron ジョブです。
+   - この `saas_data_exporter` ジョブは従来のエクスポートフィード用です。
+   - この `sales_data_exporter` ジョブは、販売データのエクスポートフィードに固有です。
+
+これらのジョブは毎分実行されます。
+
+部分同期を機能させるには、Commerce アプリケーションで次の設定が必要です。
+
+- [Cron ジョブを介してタスクスケジュールが有効になる](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
+
+- すべての SaaS データ書き出しインデクサーは、次の場所で設定されます `Update by Schedule` モード。
+
+  SaaS データ エクスポート バージョン 103.1.0 以降では、 `Update by Schedule` モードはデフォルトで有効になっています。 Commerce CLI コマンドを使用して、サーバー上のインデックス設定を確認できます。 `bin/magento indexer:show-mode | grep -i feed`
+
+### 失敗した項目の同期を再試行
+
+失敗した項目の同期の再試行では、アプリケーション エラー、ネットワーク障害、SaaS サービス エラーなど、同期プロセス中のエラーが原因で同期に失敗した項目を、別のプロセスを使用して再送信します。 この同期の実装は、cron ジョブにも基づいています。
+
+- `resync_failed_feeds_data_exporter` cron グループジョブ：
+   - この `<feed name>_feed_resend_failed_feeds_items` ジョブが同期に失敗した項目を再送信する。例： `products_feed_resend_failed_items`.
+
+### 同期プロセスの表示と管理
+
+ほとんどの同期アクティビティは、アプリケーション設定に基づいて自動的に処理されます。 ただし、SaaS データのエクスポートには、プロセスを管理するためのツールも用意されています。
+
+- 管理者ユーザーは、同期の進行状況を表示および追跡し、からデータに関する情報を取得できます。 [データ管理ダッシュボード](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+
+- Commerce アプリケーションサーバーへのアクセス権を持つ開発者、システムインテグレーター、管理者は、Adobe Commerce コマンドラインツール（CLI）を使用して同期プロセスとデータフィードを管理できます。 参照： [データ書き出しコマンド リファレンス](data-export-cli-commands.md).
+
+### Commerce アプリケーション設定の確認
+
+部分同期および失敗した項目の再試行同期は、Commerce インスタンスが正しく設定されている場合にのみ機能します。 通常、設定はCommerce サービスを設定する際に完了します。 データの書き出しが正しく機能しない場合は、次の設定を確認します。
+
+- [Cron ジョブが実行中であることを確認](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+
+- インデクサーがから実行されていることを確認 [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) または、Commerce CLI コマンドを使用します `bin/magento indexer:info`.
+
+- 次のフィードのインデクサーがに設定されていることを確認します。 `Update by Schedule`：カタログ属性、製品、製品オーバーライド、製品バリアント。 インデクサーは、次の場所から確認できます。 [インデックス管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) 管理モードまたは CLI の使用（`bin/magento indexer:show-mode | grep -i feed`）に設定します。

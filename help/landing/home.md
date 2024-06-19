@@ -6,7 +6,7 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: マニュアル
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 <tr>
   <td valign="top" width="200">
       <img alt="[!DNL Live Search]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>  
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview"><strong>[!DNL Live Search]</strong></a>
     <div>B2C の買い物客に、よりスマートで迅速かつ適切な結果を提供するこの AI を活用した検索ツールを実装します。</div>
   </td>
    </tr>
@@ -37,42 +37,42 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
    <td valign="top" width="200">
        <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
-   <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html"><strong>[!DNL Product Recommendations]</strong></a>
+   <a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview"><strong>[!DNL Product Recommendations]</strong></a>
     <div>買い物客の行動、人気のトレンド、製品の類似性などに基づいて、AI を活用したレコメンデーションを追加します。</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="カタログサービス" src="assets/catalog-service.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html"> <strong>カタログサービス</strong></a> <br>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview"> <strong>カタログサービス</strong></a> <br>
     <div>顧客に最適化された製品体験を提供すると同時に、パフォーマンスを向上させ、スケーラビリティを向上させ、コンバージョンを増やします。</div>
   </td>
    </tr>
 <tr>
   <td valign="top" width="200px">
     <img alt="支払いサービス" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>支払いサービス</strong></a>  <br><em>（Magento Open Source可能）</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>支払いサービス</strong></a>  <br><em>（Magento Open Source可能）</em>
     <div>無利子の分割払い、支払い処理、注文、請求書の単一ビューなど、様々な支払い方法を簡単に提供することで、顧客満足度を高めます。</div>
   </td>
     </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Store Fulfillment</strong></a></br>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>Store Fulfillment</strong></a></br>
     <div>モバイルデバイスを通じて可能になる包括的なフルフィルメントワークフローを提供することで、優れたオンライン購入、店舗での集荷（BOPIS）顧客体験を提供し、従業員の生産性を最大化します。</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="AmazonSales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Amazon販売チャネル</strong></a> <br><em>（Magento Open Source可能）</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon販売チャネル</strong></a> <br><em>（Magento Open Source可能）</em>
     <div>を世界最大のグローバルオンラインショッピング先と統合すると、Amazonのセールス、データの自動処理と同期、Amazonのリスト管理などを、1 つのダッシュボードで行えるようになります。</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>チャネルマネージャー</strong></a> <br><em>（Magento Open Source可能）</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>チャネルマネージャー</strong></a> <br><em>（Magento Open Source可能）</em>
     <div>ウォルマート マーケットプレイスとの統合により、売上の増加、新規顧客へのリーチ、運用の合理化、時間の節約を実現します。 スタッフが Walmart Marketplace の売上、在庫、価格設定をすべてCommerceでシームレスに管理できるようにします。</div>
   </td>
    </tr>
@@ -84,7 +84,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 <tr>
   <td valign="top" width="200">
       <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html"><strong>[!DNL Data Connection]</strong></a>  
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview"><strong>[!DNL Data Connection]</strong></a>  
     <div>Adobe CommerceとAdobe Experience Platform Edge 間の接続を活用して、Commerce データを他のAdobe Experience Cloud製品（Adobe AnalyticsやAdobe Targetなど）に活用します。</div>
   </td>
    </tr>
@@ -92,7 +92,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
    <td valign="top" width="200">
        <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
-   <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
+   <a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas"><strong>[!DNL Services Connector]</strong></a>
     <div>Commerce サービスコネクタは、API キーと秘密鍵を使用して、Adobe CommerceまたはMagento Open Sourceインスタンスの統合を提供します。 データサービス （Adobe Commerceのみ）の場合、設定でデータスペースを指定することもできます。</div>
   </td>
    </tr>
@@ -104,7 +104,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 <tr>
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync"><strong>[!DNL Catalog Sync]</strong></a>
     <div>カタログ同期は、商品データをCommerce サーバーからCommerce サービスに書き出して、サービスを最新の状態に保ちます。 インデクサーは、製品価格や在庫レベルの変更などのイベントによってトリガーされ、カタログデータをコンパイルします。 このプロセスは、*カタログ同期* ダッシュボードまたはコマンドラインインターフェイスを介して監視および管理できます。</div>
   </td>
 </tr>

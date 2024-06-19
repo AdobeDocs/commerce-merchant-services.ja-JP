@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: 「インストール方法を学ぶ [!DNL Catalog Service]“
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!TAB クラウドインフラストラクチャ]
 
-このメソッドを使用して、 [!DNL Catalog Service] Commerce Cloudインスタンス用の拡張機能。
+このメソッドを使用して、 [!DNL Catalog Adapter] Commerce Cloudインスタンスの場合。
 
 1. ローカルワークステーションで、Adobe Commerce on cloud infrastructure プロジェクトのプロジェクトディレクトリに移動します。
 
@@ -83,16 +83,16 @@ ht-degree: 0%
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. カタログサービスモジュールを追加します。
+1. カタログアダプタモジュールを追加します。
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1" --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. パッケージの依存関係を更新します。
 
    ```bash
-   composer update "magento/catalog-service"
+   composer update "magento/catalog-adapter"
    ```
 
 1. のコード変更をコミットしてプッシュします `composer.json` および `composer.lock` ファイル。
@@ -105,22 +105,22 @@ ht-degree: 0%
    git push origin <branch-name>
    ```
 
-   更新をプッシュすると、が開始されます [Commerce cloud のデプロイメントプロセス](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) 変更を適用します。 からデプロイメントステータスを確認します。 [ログをデプロイ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   更新をクラウド環境にプッシュすると、が開始されます [Commerce cloud のデプロイメントプロセス](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) 変更を適用します。 からデプロイメントステータスを確認します。 [ログをデプロイ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB オンプレミス]
 
-このメソッドを使用して、 [!DNL Catalog Service] オンプレミスのインスタンスの拡張機能。
+このメソッドを使用して、 [!DNL Catalog Adapter] オンプレミスのインスタンスの場合。
 
 1. Composer を使用して、Catalog Service モジュールをプロジェクトに追加します。
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"  --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. 依存関係を更新し、拡張機能をインストールします。
 
    ```bash
-   composer update  "magento/catalog-service"
+   composer update  "magento/catalog-adapter"
    ```
 
 1. Adobe Commerceをアップグレード :
