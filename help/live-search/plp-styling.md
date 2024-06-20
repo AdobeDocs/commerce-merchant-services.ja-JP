@@ -2,9 +2,9 @@
 title: 製品一覧ページウィジェット
 description: の有効化とスタイル設定 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 1e0baa20defe4e50bd9e45c03ff7c5f758b24e5d
+source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -23,24 +23,27 @@ ht-degree: 0%
 >
 >いつ [!DNL Live Search Product Listing Page Widget] が有効になっている場合、商品リストページの並べ替え順の方向を変更できません。
 
-## PLP ウィジェットの無効化
-
-PLP ウィジェットを無効にするには：
-
-1. に移動 **ストア** > 設定 > **設定** > **[!DNL Live Search]** > **ストアフロントの機能** およびを設定 **製品リストウィジェットの有効化** 「いいえ」に設定します。
-1. を選択 **設定を保存** 設定を保存します。
-
 ## ウィジェットの機能
 
-PLP ウィジェットは、検索可能な製品ページで期待される様々な機能を提供します。 これには以下が含まれます。
+PLP ウィジェットには、次の標準機能が用意されています。
 
-* 属性によるフィルタリング
-* カラースウォッチのサポート
-* 買い物かごに追加機能
-* 複数言語のサポート
-* 価格スライダー
+- 「買い物かごに追加」ボタン – シンプルな製品でのみ使用できます。
+- 製品ごとに複数の画像 – 設定可能な製品に対して別の色を選択すると、画像が変化する場合があります。
+- カラースウォッチのサポート - color 属性はつづりが必要です `color` コードが適切に検証されるかどうか。
+
+### ウィジェットのカスタマイズ
+
+PLP ウィジェットの標準機能に加え、ウィジェットをさらにカスタマイズして次の機能を含めることができます。
+
+- 属性によるフィルタリング
+- 複数言語のサポート
+- 価格スライダー
 
 上記の機能を処理するための PLP ウィジェットのカスタマイズ方法については、を参照してください。 `storefront-product-listing-page` の README を参照してください [リポジトリ](https://github.com/adobe/storefront-product-listing-page/).
+
+>[!WARNING]
+>
+>リポジトリ内のコードを使用して PLP ウィジェットをカスタマイズした場合、メンテナンスと必要な更新はユーザーが行う必要があります。 Adobeリリースに新しい PLP ウィジェット機能は、カスタマイズされた実装と互換性がない可能性があります。
 
 ## スタイル設定の例
 
@@ -48,8 +51,7 @@ PLP ウィジェットのルックアンドフィールは、を使用してサ�
 
 >[!NOTE]
 >
->Adobe Commerce テーマ内にカスタムクラスを持つ要素は継承されません。 これらの要素は、カスタムクラスに一致する特定のクラスによってターゲットにする必要があります。プライマリアクションクラスは、ウィジェットボタンでは機能しません。
->CSS 内の汎用のターゲット要素が継承されます。 `button` ウィジェットボタンに適用します。
+>Adobe Commerce テーマ内にカスタムクラスを持つ要素は継承されません。 これらの要素は、カスタムクラスに一致する特定のクラスによってターゲットにする必要があります。プライマリアクションクラスは、ウィジェットボタンでは機能しません。 CSS 内の汎用のターゲット要素が継承されます。 `button` ウィジェットボタンに適用します。
 
 ハイライト表示された div には、ターゲットクラスが含まれています `ds-sdk-product-item__product-name`.
 
@@ -69,117 +71,124 @@ PLP ウィジェットのルックアンドフィールは、を使用してサ�
 
 ### 商品リスト
 
-* `.ds-sdk-product-list`：外側の div
-* `.ds-sdk-product-list__grid`：内部 div
+- `.ds-sdk-product-list`：外側の div
+- `.ds-sdk-product-list__grid`：内部 div
 
 ![ページネーション](assets/plp-css-product-list.png)
 
 #### 製品リストのページネーション
 
-* `.ds-plp-pagination`
+- `.ds-plp-pagination`
 
 ![ページネーション](assets/plp-css-pagination.png)
 
-* `.ds-plp-pagination_item`
+- `.ds-plp-pagination_item`
 
 ![ページネーション項目](assets/plp-css-pagination-item.png)
 
-* `.ds-plp-pagination_item--current`
+- `.ds-plp-pagination_item--current`
 
 ![ページネーションの現在の項目](assets/plp-css-pagination-item-current.png)
 
 ### ウィジェット
 
-* `.ds-widgets`：外側の div
-* `.ds-widgets__actions`：左側内側 div
-* `.ds-widgets__results`：右側内側 div
+- `.ds-widgets`：外側の div
+- `.ds-widgets__actions`：左側内側 div
+- `.ds-widgets__results`：右側内側 div
 
 ![ウィジェットの結果](assets/plp-css-widgets.png)
 
 ### 並べ替えドロップダウン
 
-* `.ds-sdk-sort-dropdown`
+- `.ds-sdk-sort-dropdown`
 
 ![並べ替えドロップダウン](assets/plp-css-dropdown.png)
 
-* `.ds-sdk-sort-dropdown__button`
+- `.ds-sdk-sort-dropdown__button`
 
 ![ドロップダウンボタン](assets/plp-css-dropdown-button.png)
 
-* `.ds-sdk-sort-dropdown__items`
+- `.ds-sdk-sort-dropdown__items`
 
 ![ドロップダウン項目](assets/plp-css-dropdown-items.png)
 
-* `.ds-sdk-sort-dropdown__items--item`
+- `.ds-sdk-sort-dropdown__items--item`
 
 ![ドロップダウン項目](assets/plp-css-dropdown-item.png)
 
-* `.ds-sdk-sort-dropdown__items--item-selected`
+- `.ds-sdk-sort-dropdown__items--item-selected`
 
 ![ドロップダウンで選択された項目](assets/plp-css-dropdown-selected.png)
 
-* `.ds-sdk-sort-dropdown__items--item-active`
+- `.ds-sdk-sort-dropdown__items--item-active`
 
 ![ドロップダウンのアクティブな選択](assets/plp-css-dropdown-active.png)
 
 ### ファセット
 
-* `.ds-plp-facets`
-* `.ds-plp-facets__header`
-* `.ds-plp-facets__header_title`
-* `.ds-plp-facets__header__clear-all`
+- `.ds-plp-facets`
+- `.ds-plp-facets__header`
+- `.ds-plp-facets__header_title`
+- `.ds-plp-facets__header__clear-all`
 
 ![ファセットヘッダータイトル](assets/plp-css-facets-title-clear.png){width="350"}
 
-* `.ds-plp-facets__pills`
-* `.ds-sdk-pill`
+- `.ds-plp-facets__pills`
+- `.ds-sdk-pill`
 
 ![ファセット錠剤](assets/plp-css-facets-pill.png){width="350"}
 
-* `.ds-sdk-pill__label`
-* `.ds-sdk-pill__cta`
+- `.ds-sdk-pill__label`
+- `.ds-sdk-pill__cta`
 
 ![ファセットラベル](assets/plp-css-pill-label-cta.png){width="350"}
 
-* `.ds-plp-facets__list`
+- `.ds-plp-facets__list`
 
 ![ファセットリスト](assets/plp-css-facets-list.png){width="350"}
 
-* `.ds-sdk-input`
-* `.ds-sdk-input__label`
-* `.ds-sdk-product-item__product-swatch-group`
-* `ds-sdk-product-item__product-swatch-item`
-* `.ds-sdk-input_fieldset_show-more`
+- `.ds-sdk-input`
+- `.ds-sdk-input__label`
+- `.ds-sdk-product-item__product-swatch-group`
+- `ds-sdk-product-item__product-swatch-item`
+- `.ds-sdk-input_fieldset_show-more`
 
 ![入力](assets/plp-css-sdk-input.png)
 
-* `.ds-sdk-labelled-input`
+- `.ds-sdk-labelled-input`
 
 ![ラベル付き入力](assets/plp-css-labelled-input.png)
 
-* `.ds-sdk-labelled-input__input`
-* `.ds-sdk-labelled-input__label`
+- `.ds-sdk-labelled-input__input`
+- `.ds-sdk-labelled-input__label`
 
 ![入力ラベル](assets/plp-css-labelled-input-label.png)
 
 ### 商品品目
 
-* `.ds-sdk-product-item`
-* `.ds-sdk-product-item__image`
-* `.ds-sdk-product-item__product-name`
-* `.ds-sdk-product-item__product-options`
-* `.ds-sdk-product-price`
-   * `.ds-sdk-product-price--no-discount`
-   * `.ds-sdk-product-price--grouped`
-   * `.ds-sdk-product-price--bundle`
-   * `.ds-sdk-product-price--discount`
+- `.ds-sdk-product-item`
+- `.ds-sdk-product-item__image`
+- `.ds-sdk-product-item__product-name`
+- `.ds-sdk-product-item__product-options`
+- `.ds-sdk-product-price`
+   - `.ds-sdk-product-price--no-discount`
+   - `.ds-sdk-product-price--grouped`
+   - `.ds-sdk-product-price--bundle`
+   - `.ds-sdk-product-price--discount`
 
 ![製品](assets/plp-css-product.png)
 
 ### 読み込み
 
-* `.ds-sdk-loading`
-* `.ds-sdk-loading__spinner`
-* `.ds-sdk-loading__spinner-label`
+- `.ds-sdk-loading`
+- `.ds-sdk-loading__spinner`
+- `.ds-sdk-loading__spinner-label`
 
 ![インジケーターを読み込み中](assets/plp-css-loading.png)
+
+## PLP ウィジェットの無効化
+
+PLP ウィジェットを無効にするには：
+
+1. に移動 **ストア** > 設定 > **設定** > **[!DNL Live Search]** > **ストアフロントの機能** およびを設定 **製品リストウィジェットの有効化** 「いいえ」に設定します。
+1. を選択 **設定を保存** 設定を保存します。

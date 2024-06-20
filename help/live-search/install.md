@@ -3,9 +3,9 @@ title: 「の概要 [!DNL Live Search]“
 description: のシステム要件とインストール手順を説明します [!DNL Live Search] Adobe Commerceから」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -216,7 +216,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 がインストールされました [!DNL Live Search] データの拡張、同期、検証、設定を行います。 次に、以下を確実にします [!DNL Live Search] ウィジェットは、ストアのルックアンドフィールに準拠しています。
 
-ポップオーバーウィジェットと PLP ウィジェットのスタイルを設定するには、必要に応じてカスタム CSS ルールを定義します。 参照： [ポップオーバー要素のスタイル設定](storefront-popover-styling.md) および [製品一覧ページウィジェット](plp-styling.md).
+ポップオーバーウィジェットと PLP ウィジェットのスタイルを設定するには、必要に応じてカスタム CSS ルールを定義します。 参照： [ポップオーバー要素のスタイル設定](storefront-popover.md#styling-popover-example) および [製品一覧ページウィジェット](plp-styling.md#styling-example).
 
 ウィジェットの機能を拡張する場合は、各のソースコードを公開リポジトリで入手できます。
 このシナリオでは、独自のニーズに合わせて JavaScript をカスタマイズし、カスタムコードを CDN にホストできます。 このカスタムスクリプトは、 [!DNL Live Search] サービスを実行し、通常と同様の結果を返すことで、ウィジェットの機能を制御できます。
