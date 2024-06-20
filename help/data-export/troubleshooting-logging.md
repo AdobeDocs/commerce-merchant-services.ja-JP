@@ -1,15 +1,15 @@
 ---
 title: ログの確認とトラブルシューティング
-description: 「トラブルシューティング方法を学ぶ [!DNL data export] データの書き出しログと saas-export ログを使用したエラー。」
+description: トラブルシューティング方法を学ぶ [!DNL data export] data-export ログと saas-export ログを使用したエラー。
 feature: Services
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
-
 
 # ログの確認とトラブルシューティング
 
@@ -26,9 +26,7 @@ ht-degree: 0%
 | SaaS エクスポート ログ | `saas-export.log` | Commerce SaaS サービスに送信されるデータに関する情報を提供します。 |
 | SaaS エクスポート エラーログ | `saas-export-errors.log` | Commerce SaaS サービスにデータを送信する際に発生するエラーについて説明します。 |
 
-Adobe Commerce サービスで予期されたデータが表示されない場合は、データエクスポート拡張機能のエラーログを使用して問題の発生場所を特定してください。
-
-トラッキングとトラブルシューティングのために、追加データでログを拡張できます。 参照： [拡張ログ](#extended-logging).
+Adobe Commerce サービスで予期されたデータが表示されない場合は、データエクスポート拡張機能のエラーログを使用して問題の発生場所を特定してください。 また、トラッキングやトラブルシューティングのために、追加データを使用してログを拡張することもできます。 参照： [拡張ログ](#extended-logging).
 
 ### ログ形式
 
@@ -85,7 +83,7 @@ Adobe Commerce サービスで予期されたデータが表示されない場�
    - **`"synced" < "processed"`** は、以前に同期されたバージョンと比較して、フィードテーブルで項目の変更が検出されなかったことを意味します。 このような項目は、同期操作中は無視されます。
    - **`"synced" > "processed"`** 同じエンティティ id （例：） `Product ID`）には、異なる範囲に複数の値を含めることができます。 例えば、1 つの製品を 5 つの web サイトに割り当てることができます。 この場合、「1 件の処理済み」項目と「5 件の同期済み」項目が存在する可能性があります。
 
-+++ 例：価格フィードの完全再同期ログ
++++ **例：価格フィードの完全再同期ログ**
 
 ```
 Price feed full resync:
@@ -125,7 +123,42 @@ Adobe Commerce ログをNew Relicに保存する場合は、解析ルールを�
 
 **クエリ文字列の例**—`feed.feed:"products" and feed.status:"Complete"`
 
+## トラブルシューティング
+
+Commerce Services でデータが見つからないか間違っている場合は、ログを調べて、Adobe Commerce インスタンスからCommerce Service Platform への同期中に問題が発生したかどうかを確認します。 必要に応じて、拡張ログを使用して、トラブルシューティング用の情報をログに追加します。
+
+- commerce-data-export-errors.log – 収集フェーズでエラーが発生した場合
+- saas-export-errors.log – 送信フェーズでエラーが発生したかどうか
+
+設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) できるだけ多くの情報を使用します。
+
+### カタログ同期の問題を解決 {#resolvesync}
+
+データの再同期をトリガーする場合、データが更新され、ライブ検索やレコメンデーションユニットなどの UI コンポーネントに反映されるまで、最大 1 時間かかる場合があります。 カタログとCommerce ストアフロントのデータの間にまだ不一致が発生する場合、またはカタログの同期に失敗した場合は、次を参照してください。
+
+#### データの不一致
+
+1. 検索結果に、該当する製品の詳細ビューを表示します。
+1. JSON 出力をコピーし、コンテンツが内にあるものと一致することを確認します。 [!DNL Commerce] カタログ。
+1. コンテンツが一致しない場合は、スペースやピリオドの追加など、カタログの製品に小さな変更を加えます。
+1. 再同期を待つか、 [手動再同期のトリガー](#resync).
+
+#### 同期が実行されていません
+
+同期がスケジュールに従って実行されていないか、何も同期されていない場合は、こちらを参照してください [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 記事。
+
+#### 同期できませんでした
+
+カタログ同期のステータスがの場合 **失敗**、送信 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
 ## 拡張ログ
+
+その他のログ情報については、環境変数を使用して、トラッキングやトラブルシューティング用に追加のデータでログを拡張できます。
+
+には 2 つのログファイルがあります。 `var/log/` ディレクトリ：
+
+- commerce-data-export-errors.log – 収集フェーズでエラーが発生した場合
+- saas-export-errors.log – 送信フェーズでエラーが発生したかどうか
 
 環境変数を使用して、トラッキングやトラブルシューティングのために追加データでログを拡張できます。
 
@@ -164,7 +197,3 @@ EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
-
-
-
-

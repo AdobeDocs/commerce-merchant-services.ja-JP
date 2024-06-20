@@ -3,9 +3,9 @@ title: カタログ同期
 description: から製品データを書き出す方法を学ぶ [!DNL Commerce] サーバー先 [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Commerceはインデクサーを使用して、カタログデータをテーブルにコンパイルします。 プロセスは、次のユーザーによって自動的にトリガーされます [イベント](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 製品価格や在庫レベルの変更など。
 
-カタログ同期サービスは、以下から製品データを移動します [!DNL Adobe Commerce] インスタンスからへ [!DNL Commerce Services] 継続的にプラットフォームを構築し、データを最新の状態に保ちます。 例： [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 現在のカタログ情報を使用して、正確な名前、価格、在庫状況でレコメンデーションを正確に返す必要があります。 の使用 _カタログ同期_ 同期プロセスを監視および管理するダッシュボード [コマンドラインインターフェイス](#resynccmdline) カタログ同期をトリガーし、次の方法で使用するために商品データを再インデックス化する [!DNL Commerce Services].
+カタログ同期サービスは、以下から製品データを移動します [!DNL Adobe Commerce] インスタンスからへ [!DNL Commerce Services] 継続的にプラットフォームを構築し、データを最新の状態に保ちます。 例： [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 現在のカタログ情報を使用して、正確な名前、価格、在庫状況でレコメンデーションを正確に返す必要があります。 の使用 _カタログ同期_ 同期プロセスまたはコマンドラインインターフェイスを監視および管理するダッシュボード。カタログ同期をトリガーし、で使用するために製品データを再インデックス化します。 [!DNL Commerce Services]. 参照： [コマンドラインインターフェイスリファレンス](../data-export/data-export-cli-commands.md) が含まれる _SaaS データ エクスポート_ ガイド。
 
 ## カタログ同期ダッシュボードへのアクセス
 
@@ -81,123 +81,4 @@ Adobe Commerceはインデクサーを使用して、カタログデータをテ
 
 ## カタログ同期の問題を解決 {#resolvesync}
 
-データの再同期をトリガーする場合、データが更新され、レコメンデーションユニットなどの UI コンポーネントに反映されるまで、最大 1 時間かかる場合があります。 カタログとストアフロントのデータの間にまだ不一致が表示される場合、またはカタログの同期に失敗した場合は、次を参照してください。
-
-### データの不一致
-
-1. 検索結果に、該当する製品の詳細ビューを表示します。
-1. JSON 出力をコピーし、コンテンツが内にあるものと一致することを確認します。 [!DNL Commerce] カタログ。
-1. コンテンツが一致しない場合は、スペースやピリオドの追加など、カタログの製品に小さな変更を加えます。
-1. 再同期を待つか、 [手動再同期のトリガー](#resync).
-
-### 同期が実行されていません
-
-同期がスケジュールに従って実行されていないか、何も同期されていない場合は、こちらを参照してください [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 記事。
-
-### 同期できませんでした
-
-カタログ同期のステータスがの場合 **失敗**、送信 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
-
-## コマンドラインインターフェイス {#resynccmdline}
-
-この `saas:resync` コマンドは、 `magento/saas-export` パッケージは、次のいずれかの方法で追加設定なしで利用できます [!DNL Commerce Services] 製品（例：） [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) または [[!DNL Live Search]](/help/live-search/install.md).
-
->[!NOTE]
->
-> データ同期を初めて実行する場合は、 `productattributes` 最初にフィードし、次にフィード `productoverrides`を実行する前に、 `products` フィード。
-
-コマンドオプション：
-
-```bash
-bin/magento saas:resync --feed <feed name> [no-reindex|cleanup-feed]
-```
-
-以下の表で、 `saas:resync` パラメーターと説明。
-
-| パラメーター | 説明 | 必須？ |
-|---| ---| ---|
-| `feed` | 次のように、再同期するエンティティを指定します `products` | はい |
-| `no-reindex` | 既存のカタログ データをに再送信します [!DNL Commerce Services] のインデックスが再作成されることはありません。 このパラメーターを指定しない場合、コマンドは、データを同期する前に完全な再インデックスを実行します。 | 不可 |
-| `cleanup-feed` | 同期前にフィードインデクサーテーブルをクリーンアップします。 | 不可 |
-
-フィード名は次のいずれかになります。
-
-- `products`— カタログ内の製品
-- `productattributes` – 次のような製品属性 `activity`, `gender`, `tops`, `bottoms`など
-- `variants` – 色やサイズなど、設定可能な製品の製品バリエーション
-- `prices` ・製品価格について
-- `scopesCustomerGroup`  – 顧客グループ
-- `scopesWebsite` — ストアビューがある Web サイト
-- `categories`— カタログ内のカテゴリ
-- `categoryPermissions`  – 各カテゴリの権限
-- `productoverrides` – カテゴリ権限に基づくものなど、顧客固有の価格およびカタログ表示ルール
-
-対象 [Commerce サービス](../landing/saas.md) がインストールされている場合、で使用できるフィードのセットは異なる可能性があります `saas:resync` コマンド。
-
-を実行しないことをお勧めします `saas:resync` 定期的にコマンドを実行します。 次の 2 つのシナリオでは、コマンドを手動で実行する必要がある場合があります。
-
-- 初期同期
-- この [SaaS データ空間 ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) が変更されました
-
-### 初期同期
-
-をトリガーすると、 `saas:resync` コマンドラインでは、カタログのサイズに応じて、データの更新に数分から数時間かかる場合があります。
-
-初期同期では、次の順序でコマンドを実行することをお勧めします。
-
-```bash
-bin/magento saas:resync --feed productattributes
-bin/magento saas:resync --feed products
-bin/magento saas:resync --feed scopesCustomerGroup
-bin/magento saas:resync --feed scopesWebsite
-bin/magento saas:resync --feed prices
-bin/magento saas:resync --feed productoverrides
-bin/magento saas:resync --feed variants
-bin/magento saas:resync --feed categories
-bin/magento saas:resync --feed categoryPermissions 
-```
-
-### トラブルシューティング
-
-に期待されたデータが表示されない場合 [!DNL Commerce Service]で、同期中に問題が発生したかどうかを [!DNL Adobe Commerce] インスタンスからへ [!DNL Commerce Service] プラットフォーム。
-
-には 2 つのログファイルがあります。 `var/log/` ディレクトリ：
-
-- `commerce-data-export-errors.log`  – 次の期間にエラーが発生した場合： _収集_ フェーズ
-- `saas-export-errors.log`  – 次の期間にエラーが発生した場合： _送信中_ フェーズ
-
-#### フィードペイロードを確認
-
-に送信されたフィードペイロードを確認すると役立つ場合があります。 [!DNL Commerce Service]. これは、環境変数を渡すことで実行できます `EXPORTER_EXTENDED_LOG=1`. この `no-reindex` フラグは、現在収集されているデータのみが送信されることを意味します。
-
-```bash
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products --no-reindex
-```
-
-ペイロードはで入手できます。 `var/log/saas-export.log`.
-
-#### フィードインデックステーブルにペイロードを保持
-
-From の説明 `magento/module-data-exporter:103.0.0` 一部のフィード：製品フィード、価格フィードでは、インデックステーブルに必要な最小限のデータのみを保持します。
-
-実稼動環境では、ペイロードデータをインデックステーブルに保持することは推奨されませんが、開発者インスタンスでは便利な場合があります。 これは、を渡すことによって行われます。 `PERSIST_EXPORTED_FEED=1` 環境変数：
-
-```bash
-PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
-```
-
-#### プロファイル
-
-特定のフィードの再インデックスプロセスに不相応な時間がかかる場合は、プロファイラーを実行して、サポートチームに役立つ追加データを収集します。 これを行うには、 `EXPORTER_PROFILER=1`環境変数：
-
-```bash
-EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
-```
-
-プロファイラーデータはに保存されます。 `var/log/commerce-data-export.log` 次の形式を使用します。
-
-`<Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>`
-
-#### サポートリクエストを送信
-
-設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) できるだけ多くの情報を使用します。
+参照： [ログとトラブルシューティング](../data-export/troubleshooting-logging.md#troubleshooting) が含まれる _SaaS データ エクスポート ガイド_.

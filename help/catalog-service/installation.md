@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: 「インストール方法を学ぶ [!DNL Catalog Service]“
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
@@ -152,6 +152,10 @@ ht-degree: 0%
 1. からの初期データ同期の実行 [データ管理ダッシュボード](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
    カタログのサイズに応じて、最初の同期に数分から数時間かかる場合があります。 同期ステータスは、データ管理ダッシュボードから監視できます。 最初の同期の後、カタログは、サービスを最新の状態に保つために、継続的に製品データを書き出します。
+
+   >[!NOTE]
+   >
+   >Commerce CLI を使用して、コマンドラインから初期同期を開始することもできます。 参照： [初期同期](../data-export/data-export-cli-commands.md#initial-sync) が含まれる _SaaS データ エクスポート ガイド_.
 
 カタログの書き出しが正しく実行されていることを確認するには：
 

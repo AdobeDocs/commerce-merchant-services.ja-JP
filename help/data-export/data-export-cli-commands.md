@@ -1,10 +1,11 @@
 ---
 title: SaaS データ書き出しコマンドライン インターフェイス
-description: コマンドラインインターフェイスコマンドを使用して、のフィードとプロセスを管理する方法を説明します [!DNL data export extension] （Adobe Commerce SaaS サービスの場合）
+description: コマンドラインインターフェイスコマンドを使用して、のフィードとプロセスを管理する方法を説明します [!DNL data export extension] Adobe Commerce SaaS サービスの場合。
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -21,10 +22,24 @@ Adobeは、 `saas:resync` 定期的にコマンドを実行します。 コマ�
 
 ## 初期同期
 
+>[!NOTE]
+>Live Search または Product Recommendationsを使用している場合は、初期同期を実行する必要はありません。 サービスをCommerce インスタンスに接続すると、プロセスが自動的に開始されます。
+
 をトリガーすると、 `saas:resync` コマンドラインでは、カタログのサイズに応じて、データの更新に数分から数時間かかる場合があります。
 
->[!NOTE]
->Live Search または Product Recommendationsを使用している場合は、同期を開始する必要はありません。 サービスをCommerce インスタンスに接続すると、プロセスが自動的に開始されます。
+初期同期の場合、Adobeでは次の順序でコマンドを実行することをお勧めします。
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
 ## コマンドの例
 

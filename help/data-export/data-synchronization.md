@@ -1,18 +1,23 @@
 ---
 title: データを SaaS データ書き出しと同期
-description: 次の方法を学びます [!DNL SaaS Data Export] Adobe Commerce インスタンスと接続された SaaS サービスとの間でデータを収集して同期します。」
+description: 詳細を見る [!DNL SaaS Data Export] Adobe Commerce インスタンスと接続された SaaS サービス間でデータを収集して同期します。
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # SaaS データ エクスポートを使用してデータを同期する
 
-カタログサービス、Live Search、Product Recommendationsなど、データのエクスポートを必要とするCommerce サービスをインストールすると、データの収集と同期プロセスを管理するために、Saas データのエクスポートモジュールのコレクションがインストールされます。 次の図は、SaaS データの書き出しフローを示しています。
+カタログサービス、Live Search、Product Recommendationsなど、データのエクスポートを必要とするCommerce サービスをインストールすると、データの収集と同期プロセスを管理するために、Saas データのエクスポートモジュールのコレクションがインストールされます。
+
+SaaS データのエクスポートでは、商品データをAdobe Commerce インスタンスからCommerce サービスプラットフォームに継続的に移動して、データを最新の状態に保ちます。 例えば、商品Recommendationsでは、現在のカタログ情報を使用して、正確な名前、価格、在庫状況でレコメンデーションを正確に返す必要があります。 の使用 [データ管理ダッシュボード](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) 同期プロセスを監視および管理したり、同期をトリガーしたり、Commerce サービスで使用するために製品データを再インデックス化するためのコマンドラインインターフェイスを使用したりできます。
+
+次の図は、SaaS データの書き出しフローを示しています。
 
 ![Adobe Commerceの SaaS データ書き出し収集および同期フロー](assets/data-export-flow.png){width="900" zoomable="yes"}
 
