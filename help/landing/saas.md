@@ -4,9 +4,9 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
+source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -125,6 +125,6 @@ SaaS プロジェクトまたはデータ領域の名前を変更するには、
 
 Adobe Commerce インスタンスをAdobe Experience Platformに接続するには、Adobe IDを使用してAdobeアカウントにログインします。 ログインすると、Adobeアカウントに関連付けられた IMS 組織がこのセクションに表示されます。
 
-## カタログ同期
+## SaaS データのエクスポート
 
-いつ [!DNL Commerce] インスタンスの接続先 [!DNL Commerce Services]の場合、カタログ同期プロセスによってユーザーから製品データを [!DNL Commerce] サーバー先 [!DNL Commerce Services]. 現在、カタログ同期サービスを使用するのは、製品Recommendationsのみです。 [詳細情報](catalog-sync.md) カタログ同期プロセスについて。
+いつ [!DNL Commerce] インスタンスの接続先 [!DNL Commerce Services]Commerceの場合、SaaS データ書き出しプロセスでは、 [!DNL Commerce] サーバー先 [!DNL Commerce SaaS Services] そのため、接続されたCommerce サービスに同期できます。 管理者は、次を使用して同期ステータスを確認できます [データ管理ダッシュボード](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). 詳しくは、を参照してください [SaaS データ エクスポート ガイド](../data-export/overview.md).
