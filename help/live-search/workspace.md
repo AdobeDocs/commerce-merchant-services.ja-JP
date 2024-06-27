@@ -2,9 +2,9 @@
 title: 'Live Search のセットアップ'
 description: この [!DNL Live Search] workspace を使用すると、検索パフォーマンスの設定、管理、監視を行うことができます。
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,20 @@ ht-degree: 0%
 
 ワークスペースでは、のパフォーマンスを設定、管理、監視できます [!DNL Live Search]. 上部のメニューから、各機能領域のツールにアクセスできます。 使用可能な機能は、現在のメニュー選択を反映します。
 
-![ワークスペース](assets/workspace.png)
+![Workspace](assets/workspace.png)
+
+## データ収集
+
+ワークスペースの各機能領域に正しいデータが含まれるようにするには、選択したストアフロント実装に基づいてデータ収集を設定する必要があります。
+
+1. Luma - データ収集は標準で利用できます。
+1. ヘッドレス – ストアフロントの実装に応じて、データ収集を手動で設定する必要があります。
+
+ヘッドレスストアフロントを使用している場合、追加する必要のある必須イベントの詳細については、次のドキュメントを参照してください。
+
+- [必須イベント](events.md) （ライブ検索ダッシュボード）。
+- [Storefront イベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) これは前提条件として追加する必要があります。
+- [例](https://github.com/adobe/commerce-events/tree/main/examples) イベント構造の
 
 ## 範囲を設定
 
@@ -41,15 +54,15 @@ ht-degree: 0%
 1. 次のように、検索可能にする属性を選択します `color`.
 1. を選択 **ストアフロント プロパティ** およびを設定 **検索で使用** 対象： `yes`.
 
-   ![ワークスペース](assets/attribute-searchable.png)
+   ![Workspace](assets/attribute-searchable.png)
 
 [!DNL Live Search] 次の点も尊重します [重み](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) Adobe Commerceで設定された product 属性の。 重み付けが大きい属性は、検索結果内で高く表示されます。
 
 次の属性は常に検索可能です。
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [ファセット](facets.md) は、で定義される製品属性です。 [!DNL Live Search] フィルタリング可能。 で任意のフィルター可能属性をファセットとして設定できます。 [!DNL Live Search]しかし、次のものがあります [制限](boundaries-limits.md) 一度に検索できるファセットの数。
 
