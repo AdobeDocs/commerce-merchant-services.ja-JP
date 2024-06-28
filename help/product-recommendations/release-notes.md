@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] リリースノート'
 description: の最新のリリース情報 [!DNL Product Recommendations] Adobe Commerceから
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
+source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,12 @@ ht-degree: 0%
 
 ## ホステッド サービスの更新
 
-これらのメモでは、バージョン管理されたリリースの外部で公開された更新や、ホストされるサービスの改善について説明します。
+これらのメモでは、バージョン管理されたリリースの外部で公開または検出された、更新プログラムや既知の問題、またはホストされるサービスの改善について説明します。
 
-+++ホステッド サービスの更新
+_2024 年 6 月 28 日（Pt）_
+
+![バグ](../assets/bug.svg) から買い物かごに追加された製品 [!DNL Product Recommendations] 買い物かごページが再読み込みされても、買い物かごページ上のユニットが、推奨製品のリストから削除されない。
+![バグ](../assets/bug.svg) 買い物かごから削除された製品は、引き続き `cartSkus` 買い物かごページがリロードされるまで配列します。
 
 _2023 年 7 月 18 日（Pt）_
 
@@ -40,8 +43,6 @@ _2023 年 7 月 18 日（Pt）_
 _2023 年 4 月 25 日（Pt）_
 
 ![新規](../assets/new.svg) [!DNL Product Recommendations] お客様は次のメリットを享受できます [SaaS 価格インデックス作成](../price-index/price-indexing.md).
-
-+++
 
 ## 現在のメジャーバージョン
 
@@ -97,7 +98,7 @@ _2023 年 3 月 20 日（Pt）_
 
 ![新規](../assets/new.svg) 更新日 [!DNL Product Recommendations] Adobe Commerce 2.4.6 をサポートします。
 ![新規](../assets/new.svg) これはメジャーバージョンリリースです。 [編集](install-configure.md#update) ルート `composer.json` プロジェクトのファイルです。
-![新規](../assets/new.svg) [!DNL Product Recommendations] 完全なサポートを追加 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerceの機能（以前はマルチソースインベントリ（MSI）と呼ばれていました）。 フルサポートを有効にするには、次の操作を行う必要があります [更新](install-configure.md#update) 依存関係モジュール `commerce-data-export` をバージョン 102.2.0 以降にアップグレードします。
+![新規](../assets/new.svg) [!DNL Product Recommendations] 完全なサポートを追加 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerceの機能（旧称：マルチSourceインベントリ、MSI）。 フルサポートを有効にするには、次の操作を行う必要があります [更新](install-configure.md#update) 依存関係モジュール `commerce-data-export` をバージョン 102.2.0 以降にアップグレードします。
 
 ### magento/product-recommendations の 4.0.1
 
@@ -223,13 +224,13 @@ _2023 年 3 月 20 日（Pt）_
 
 [!BADGE サポート]{type=Informative tooltip="サポート"}
 
-![新規](../assets/new.svg) **（ベータ版）** 新規ののサポートを含む [視覚的類似性](type.md#visualsim) レコメンデーションタイプ。
+![新規](../assets/new.svg) **（Beta）** 新規ののサポートを含む [視覚的類似性](type.md#visualsim) レコメンデーションタイプ。
 
 ### magento/module-visual-product-recommendations 1.0.0
 
 [!BADGE サポート]{type=Informative tooltip="サポート"}
 
-![新規](../assets/new.svg) **（ベータ版）** [視覚的類似性](type.md#visualsim). （を使用） _視覚的類似性_ レコメンデーションタイプ：レコメンデーションユニットを製品の詳細ページにデプロイできます。このページには、表示する製品に視覚的に似た製品が表示されます。
+![新規](../assets/new.svg) **（Beta）** [視覚的類似性](type.md#visualsim). （を使用） _視覚的類似性_ レコメンデーションタイプ：レコメンデーションユニットを製品の詳細ページにデプロイできます。このページには、表示する製品に視覚的に似た製品が表示されます。
 
 ### magento/product-recommendations の 3.0.5
 
