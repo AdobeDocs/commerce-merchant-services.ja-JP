@@ -3,9 +3,9 @@ title: “[!DNL Payment Services] リリースノート」
 description: すべてについて詳しくは、リリースノートを確認してください [!DNL Payment Services] リリース。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2547'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 これらのリリースノートでは、ホステッド サービスの通常の機能リリースの外部で発生した機能の変更と修正について説明します。
 
 +++ホステッド サービスの更新
+
+_2024 年 7 月 9 日（Pt）_
+
+![新規問題](../assets/new.svg)<!-- Issue PAY-5488 --> マーチャントは、Commerce顧客 ID をの列として表示できるようになりました。 [トランザクションレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) 特定の顧客が行ったトランザクションの特定に役立ちます。 さらに、マーチャントは、このCommerce顧客 ID でトランザクションレポートをフィルタリングして、関連する注文を確認できます。
 
 _2024 年 3 月 5 日（Pt）_
 
@@ -171,6 +175,7 @@ _2023 年 12 月 7 日（Pt）_
 [!BADGE サポート]{type=Informative tooltip="サポート"}
 
 ![新規](../assets/new.svg)<!-- PAY-5047 --> クレジット/デビットカードのブランドまたは支払い方法のタイプを、次の場所から利用できるようになりました。
+
 - ストアフロントの顧客注文ページ
 - 買い物客に送信された注文確認メール
 - から [注文の詳細表示](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) Commerce Admin.
