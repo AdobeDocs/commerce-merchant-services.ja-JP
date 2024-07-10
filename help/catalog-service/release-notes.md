@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] リリースノート'
 description: の最新のリリース情報 [!DNL Catalog Service] （Adobe Commerceの場合）
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,22 @@ _2024 年 5 月 23 日（Pt）_
 ![修正](../assets/fix.svg) <!--DATA-5033-->この `InStock` オプション値のフラグで、スコープが考慮されるようになりました `enabled` 製品バリアントのステータス。
 
 ![修正](../assets/fix.svg) <!--DATA-5888-->大きな数字（最大 16 桁）とより大きな小数点精度（最大 4 桁）を必要とする製品価格のサポートを追加します。 既存のカタログに価格構成の更新を適用するには、 [データ管理ダッシュボード](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)または、を使用します [Adobe Commerce コマンドラインインターフェイス](../landing/catalog-sync.md#command-line-interface).
+
+#### 既知の制限事項
+
+次の機能は、まだサポートされていません。
+
+* 動的属性ペイロードの最大サイズは 9 MB です。
+* グループ商品価格はシンプルな商品価格で算出できます。
+* 画像配列では、最初の画像にのみ役割が含まれます。
+
+API メッシュとコア GraphQL API を使用して、次の制限を解決します。
+
+* 広告の最低価格
+* 階層の価格
+* 固定価格で製品をバンドル
+
+詳細と例については、を参照してください。 [カタログサービスと API メッシュ](mesh.md)
 
 ## 以前のバージョン
 
@@ -59,7 +75,6 @@ _2024 年 2 月 13 日（Pt）_
 [!BADGE サポート]{type=Informative tooltip="サポート"}
 
 ![新規](../assets/new.svg) 製品ビデオが Catalog Service API でサポートされるようになりました。
-![修正](../assets/fix.svg) 固定価格のバンドル製品がサポートされるようになりました。
 ![修正](../assets/fix.svg) 在庫切れのオプションが PDP ウィジェットに表示されるようになりました。
 
 #### 既知の制限事項
@@ -134,7 +149,7 @@ _2023 年 3 月 6 日（Pt）_
 
 [!BADGE サポート]{type=Informative tooltip="サポート"}
 
-![新規](../assets/new.svg) 追加済み [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) GraphQL機能。
+![新規](../assets/new.svg) 追加済み [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) GraphQL機能。
 ![修正](../assets/fix.svg) パフォーマンスと API のスケーラビリティの向上。
 
 ### V1.4 リリース
@@ -176,7 +191,7 @@ _2022 年 10 月 4 日（Pt）_
 ![新規](../assets/new.svg) B2B 表示の上書きを追加しました。 製品が検索できるようになり、特定の顧客グループのために買い物かごに追加できるようになりました。
 ![修正](../assets/fix.svg) サービスの安定性とパフォーマンスが向上しました。
 
-### 0.3 リリース – ベータ版+
+### 0.3 リリース - Beta+
 
 _2022 年 9 月 12 日（Pt）_
 
@@ -187,7 +202,7 @@ _2022 年 9 月 12 日（Pt）_
 ![修正](../assets/fix.svg) サービスの安定性とパフォーマンスの向上
 ![新規](../assets/new.svg) 製品がカタログから削除されると、更新が受信されます
 
-### ベータ版リリース
+### Beta リリース
 
 _2022 年 8 月 9 日（Pt）_
 

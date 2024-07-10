@@ -2,7 +2,7 @@
 title: オンボーディングとインストール
 description: 「インストール方法を学ぶ [!DNL Catalog Service]“
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!TAB クラウドインフラストラクチャ]
 
-このメソッドを使用して、 [!DNL Catalog Adapter] Commerce Cloudインスタンスの場合。
+このメソッドを使用して、 [!DNL Catalog Service] Commerce Cloudインスタンスの場合。
 
 1. ローカルワークステーションで、Adobe Commerce on cloud infrastructure プロジェクトのプロジェクトディレクトリに移動します。
 
@@ -83,16 +83,16 @@ ht-degree: 0%
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. カタログアダプタモジュールを追加します。
+1. カタログサービスモジュールを追加します。
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. パッケージの依存関係を更新します。
 
    ```bash
-   composer update "magento/catalog-adapter"
+   composer update "magento/catalog-service"
    ```
 
 1. のコード変更をコミットしてプッシュします `composer.json` および `composer.lock` ファイル。
@@ -109,18 +109,18 @@ ht-degree: 0%
 
 >[!TAB オンプレミス]
 
-このメソッドを使用して、 [!DNL Catalog Adapter] オンプレミスのインスタンスの場合。
+このメソッドを使用して、 [!DNL Catalog Service] オンプレミスのインスタンスの場合。
 
 1. Composer を使用して、Catalog Service モジュールをプロジェクトに追加します。
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. 依存関係を更新し、拡張機能をインストールします。
 
    ```bash
-   composer update  "magento/catalog-adapter"
+   composer update  "magento/catalog-service"
    ```
 
 1. Adobe Commerceをアップグレード :
@@ -175,7 +175,7 @@ GraphQL クエリでは、管理者でAdobe Commerce サービスコネクタ設
 
 ## カタログサービスと API メッシュ
 
-この [Adobe Developer App Builder の API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、開発者は、プライベートまたはサードパーティの API およびその他のインターフェイスを、Adobe IO を使用するAdobe製品と統合できます。
+この [Adobe Developer App Builderの API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、開発者は、プライベートまたはサードパーティの API およびその他のインターフェイスを、Adobe IO を使用するAdobe製品と統合できます。
 
 を参照してください。 [[!DNL Catalog Service] と API メッシュ](mesh.md) インストールと設定の詳細に関するトピック。
 

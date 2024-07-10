@@ -5,7 +5,7 @@ breadcrumb-title: 「[!DNL Catalog Service] ガイド」
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 10%
@@ -22,7 +22,7 @@ ht-degree: 10%
 - GraphQL クエリ {#graphql}
    - [カテゴリクエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
    - [製品クエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
-   - [productSearch クエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/)
+   - [productSearch クエリ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
    - [refineProduct クエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [リリースノート](release-notes.md)
 - [Commerce サービスに戻る](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/home)
