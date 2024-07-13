@@ -1,31 +1,32 @@
 ---
 title: 『境界と限界』
-description: の境界と制限について説明します [!DNL Live Search] お客様のビジネスニーズを満たしていることを確認します。
+description: ビジネスのニーズを確実に満たすための  [!DNL Live Search]  の境界と制限について説明します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 2d383d6b0d9e7b915fac32f90b25f1640dcab6cf
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
 
 # 境界と制限
 
-サイト検索に関しては、Adobe Commerceのオプションが用意されています。 以下の境界と制限をレビューして、以下を確認します [!DNL Live Search] および [!DNL Catalog Service] ビジネスのニーズに対応 コンテンツ検索、独自アルゴリズムの作成（BYOA）、属性ベースのマーチャンダイジングなどの高度な検索機能が必要な場合は、サードパーティの検索ソリューションを検討してください。
+サイト検索に関しては、Adobe Commerceのオプションが用意されています。 次の境界と制限を確認して、[!DNL Live Search] と [!DNL Catalog Service] がビジネスのニーズを満たしていることを確認します。 コンテンツ検索、独自アルゴリズムの作成（BYOA）、属性ベースのマーチャンダイジングなどの高度な検索機能が必要な場合は、サードパーティの検索ソリューションを検討してください。
 
 ## 一般
 
-- この [詳細検索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 次の場合、モジュールは無効になります [!DNL Live Search] がインストールされ、ストアフロントのフッター内の詳細検索リンクが削除されます。
-- [階層の価格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) および [特別価格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) ではサポートされていません [!DNL Live Search] フィールドと製品一覧ページウィジェット。
+- [!DNL Live Search] がインストールされている場合は [ 詳細検索 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) モジュールが無効になり、ストアフロントフッターの詳細検索リンクが削除されます。
+- [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) および [Special Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) は、[!DNL Live Search] フィールドおよび製品一覧ページウィジェットではサポートされていません。
 - 製品価格には付加価値税（VAT）は含まれていません。
 - コンテンツの検索はサポートされていません。
 - ページ分割できる製品には、10,000 個の制限があります。
-- 検索アダプターは、カスタム ソース モデルで作成され、ファセットとして使用される製品属性をサポートしていません。 この機能をサポートするには、 [製品一覧ページウィジェット](plp-styling.md).
+- 属性には、説明やカスタム属性を含め、1MB のハード制限があります。
+- 検索アダプターは、カスタム ソース モデルで作成され、ファセットとして使用される製品属性をサポートしていません。 この機能をサポートするには、[ 製品一覧ページウィジェット ](plp-styling.md) を使用する必要があります。
 
 ## インデックス作成
 
-- [!DNL Live Search] [索引](indexing.md) 1 つのストア表示につき最大で合計 450 個の製品属性。 これらは次のように配布されます。
+- 1 つのストア表示につき最大 450 個の製品属性を [!DNL Live Search] [ インデックス ](indexing.md) します。 これらは次のように配布されます。
    - 並べ替え可能な 50 個の属性
    - 200 フィルタリング可能な属性
    - 検索可能な属性 200
@@ -36,27 +37,27 @@ ht-degree: 0%
 ## ファセット
 
 - インデックス作成可能な 200 のフィルタリング可能な属性から、最大 100 の属性をファセットとして設定できます。
-- ファセット内では、最大 30 個のバケットを返すことができます。 30 個を超えるバケットを返す必要がある場合、 [サポートチケットを作成](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) そのため、Adobeはパフォーマンスへの影響を分析し、お使いの環境でこの制限を増やすことが可能かどうかを判断できます。
+- ファセット内では、最大 30 個のバケットを返すことができます。 30 を超えるバケットを返す必要がある場合は、[ サポートチケットを作成 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) します。これにより、Adobeはパフォーマンスへの影響を分析し、お使いの環境でこの制限を増やすことが可能かどうかを判断できます。
 - 動的ファセットは、大きなインデックスや通常のインデックスのパフォーマンスで問題を引き起こす可能性があります。 動的ファセットを作成し、パフォーマンスの低下や、タイムアウトエラーを伴うページの読み込みがない場合は、ファセットをピン留めに変更して、パフォーマンスの問題が解決するかどうかを判断してください。
-- 在庫ステータス （`quantity_and_stock_status`）はファセットとしてサポートされていません。 次を使用できます `inStock: 'true'` 在庫品を除外します。 これは、の標準サポートで、 `LiveSearchAdapter` で「在庫切れの製品を表示」が「True」に設定されている場合のモジュール [!DNL Commerce] 管理者。
+- 在庫状態（`quantity_and_stock_status`）はファセットとしてサポートされていません。 `inStock: 'true'` を使用して、在庫製品を除外できます。 [!DNL Commerce] 管理者で「在庫切れの製品を表示」が「True」に設定されている場合、これは `LiveSearchAdapter` モジュールの初期設定でサポートされています。
 - 日付タイプ属性はファセットとしてサポートされていません。
 
 ## クエリ
 
-- [!DNL Live Search] 一意のを使用 [GraphQL エンドポイント](https://developer.adobe.com/commerce/services/graphql/live-search/) 動的ファセットや入力時検索などの機能をサポートするクエリ用。 に似ていますが [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)、いくつかの違いがあり、一部のフィールドは完全には互換性がない可能性があります。
+- [!DNL Live Search] では、クエリで一意の [GraphQL エンドポイント ](https://developer.adobe.com/commerce/services/graphql/live-search/) を使用して、動的なファセットや入力に応じた検索などの機能をサポートしています。 [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) と似ていますが、いくつかの違いがあり、一部のフィールドは完全な互換性がない場合があります。
 - 検索クエリで返される結果の最大数は 10,000 個です。
 - 日付タイプの属性を使用して結果をフィルタリングすることはできません。
 
 ## ルール
 
-- 検索マーチャンダイジングの最大数 [個のルール](rules.md) ストア表示あたり 50 です。
+- ストア表示あたりの検索マーチャンダイジング [ ルール ](rules.md) の最大数は 50 です。
 - カテゴリマーチャンダイジングには、カテゴリごとに 1 つのルールを設定できます。
 - ルールごとの条件の最大数は 10 です。
 - ルールごとのイベントの最大数は 25 です。
 
 ## 同義語
 
-- [!DNL Live Search] 最大 200 まで管理可能 [同義語](synonyms.md) ストア表示ごとに。
+- 1 つ [!DNL Live Search] ストア表示で最大 200 個の [ 同義語 ](synonyms.md) を管理できます。
 - マルチワード同義語は、ストアビューあたり 20 に制限されています。
 
 ## カテゴリマーチャンダイジング
@@ -72,12 +73,12 @@ ht-degree: 0%
    - 製品はルートカテゴリに割り当てる必要があります。
    - 「ログインしていない」顧客グループには、「許可」閲覧権限を付与する必要があります。
    - 製品を「ログインしていない」顧客グループに制限するには、各カテゴリに移動して、各顧客グループに権限を設定します。
-- PWA Studioで PLP ウィジェットを使用した B2B の標準サポートは、現時点ではサポートされていません。 ただし、次のことができます [api の使用](install.md#pwa-support) ：この機能を実装します。
-- のカテゴリファセット [!DNL Live Search] 特定の顧客グループに表示できないカテゴリが表示される場合があります。
+- PWA Studioで PLP ウィジェットを使用した B2B の標準サポートは、現時点ではサポートされていません。 ただし、この機能を実装するには [API を使用 ](install.md#pwa-support) できます。
+- [!DNL Live Search] のカテゴリファセットには、特定の顧客グループに表示できないカテゴリが表示される場合があります。
 
 ## [!DNL Storefront popover]
 
-- この [[!DNL popover]](storefront-popover.md) は、を使用するストアでのみ使用できます *Luma* テーマ、または基づいてカスタマイズされたテーマ *Luma*. 検索結果ページのパンくずリストには表示されません *Luma* スタイル設定。
-- この [!DNL popover] はをサポートしていません *空白* テーマ。
-- この [!DNL popover] は、クイックオーダーフォームではサポートされていません。
+- [[!DNL popover]](storefront-popover.md) は、*Luma* テーマを使用するストア、または *Luma* に基づいてカスタマイズされたテーマでのみ使用できます。 検索結果ページのパンくずリストには *Luma* スタイルが設定されません。
+- [!DNL popover] は *Blank* テーマをサポートしていません。
+- [!DNL popover] は、クイックオーダーフォームではサポートされていません。
 - ウィッシュリストと製品の比較はサポートされていません。
