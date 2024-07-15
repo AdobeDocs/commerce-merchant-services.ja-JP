@@ -1,6 +1,6 @@
 ---
 title: ホーム
-description: の概要 [!DNL Payment Services] ホーム。
+description: ホーム  [!DNL Payment Services]  概要。
 role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
@@ -12,38 +12,38 @@ ht-degree: 1%
 
 ---
 
-# の概要 [!DNL Payment Services] ホーム
+# [!DNL Payment Services] ホームの概要
 
-[!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source] は、拡張機能の設定と使用を開始するために必要な情報をすべてホームビューに提供します。
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] のホームビューには、拡張機能の設定と使用を開始するために必要なすべての情報が表示されます。
 
-1. 次の日： _管理者_ サイドバー、移動 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]** に移動します。
 
-   ![ホームビュー](assets/home-view.png){width="700" zoomable="yes"}
+   ![ ホームビュー ](assets/home-view.png){width="700" zoomable="yes"}
 
-1. このホームビューで、 _ホーム_ 表示 _学ぶ_ について [!DNL Payment Services]、拡張機能の設定 _設定_&#x200B;または get _ヘルプ_.
+1. このホームビューでは、_ホーム_ ビュー、[!DNL Payment Services] ールに関する _詳細情報_ 拡張機能の設定 _設定_、または _ヘルプ_ を取得できます。
 
 ## ホーム
 
 | フィールド | 説明 |
 |---|---|
-| [!UICONTROL Orders] | これらのレポートを使用すると、注文の支払い状況をすばやく確認し、潜在的な問題を特定できます。 |
-| [!UICONTROL Payouts] | ペイアウトレポートには、包括的なペイアウト情報が一目で表示され、支払金額、処理済数量、財務調整のトランザクションレベルに関する詳細なレポートを完全に透明化できます。 |
+| [!UICONTROL Orders] | これらのレポートを使用すると、注文の支払いステータスをすばやく確認し、潜在的な問題を特定できます。 |
+| [!UICONTROL Payouts] | 支払いレポートは、包括的な支払い情報を一目で確認できるため、支払い金額、処理量、および財務調整のためのトランザクションレベルに関する詳細なレポートを完全に透明にすることができます。 |
 
 ## 学ぶ
 
 | フィールド | 説明 |
 |---|---|
-| [!UICONTROL Read documentation] | 以下の最新のユーザーおよび開発者向けドキュメントを参照してください。 [!DNL Payment Services]. |
-| [!UICONTROL How to onboard] | 設定を行い、 [!DNL Payment Services] 機能。 |
-| [!UICONTROL Understand financial reports] | でのキャッシュ・フロー管理レポートの詳細な説明 [!DNL Payment Services]. |
+| [!UICONTROL Read documentation] | 詳しくは、最新のユーザーおよび開発者向けドキュメントを参 [!DNL Payment Services] してください。 |
+| [!UICONTROL How to onboard] | セットアップして [!DNL Payment Services] 機能を使い始めるために必要な情報がすべて揃っています。 |
+| [!UICONTROL Understand financial reports] | [!DNL Payment Services] におけるキャッシュ・フロー管理レポートの詳細な説明。 |
 
 ## ヘルプ
 
 | フィールド | 説明 |
 |---|---|
-| [!UICONTROL Visit help center] | The [!DNL Adobe Commerce] ヘルプセンターには、次に関するナレッジベース記事があります。 [!DNL Payment Services]. |
-| [!UICONTROL Get support] | 次にアクセス： [!DNL Adobe Commerce] ～の支援を受けるためのポータルを支援する [!DNL Payment Services.] |
+| [!UICONTROL Visit help center] | [!DNL Adobe Commerce] ヘルプセンターには、[!DNL Payment Services] に関するナレッジベース記事があります。 |
+| [!UICONTROL Get support] | [!DNL Payment Services.] については、[!DNL Adobe Commerce] サポートポータルを参照してください |
 
 ## 設定
 
-ホームビューで、 **[!UICONTROL Settings]**. 詳しくは、 [設定](settings.md) を参照してください。
+ホームビューで、「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[ 設定 ](settings.md) を参照してください。

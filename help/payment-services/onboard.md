@@ -1,63 +1,63 @@
 ---
-title: オンボード [!DNL Payment Services]
-description: インスタンスとの接続 [!DNL Payment Services] 機能を使用できるようになります。
+title: オンボード  [!DNL Payment Services]
+description: いくつかのオ  [!DNL Payment Services]  ボーディング手順を完了して、インスタンスを機能と接続します。
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration
 source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
-# オンボード [!DNL Payment Services]
+# Onboard [!DNL Payment Services]
 
-を使用し始めるには、以下を実行します。 [!DNL Payment Services] 対象： [!DNL Adobe Commerce] および [!DNL Magento Open Source]の場合は、インスタンスと支払い機能を接続するためのオンボーディング手順をいくつか実行する必要があります。
+[!DNL Adobe Commerce] および [!DNL Magento Open Source] で [!DNL Payment Services] の使用を開始するには、インスタンスを支払機能に接続するためにいくつかのオンボーディング手順を完了する必要があります。
 
 ## オンボーディングフロー
 
-![オンボーディングフロー](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
+![ オンボーディングフロー ](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
-このオンボーディングフロー図は、オンボーディングの一般的なプロセスを示しています [!DNL Payment Services].
+このオンボーディングフロー図は、[!DNL Payment Services] ーザーをオンボーディングする一般的なプロセスを示しています。
 
-サンドボックスまたはライブ支払のオンボーディングを完了すると、財務レポートには次の場所からアクセスできます： [!DNL Payment Services] 」と入力します。
+サンドボックスまたはライブ支払いのオンボーディングを完了すると、管理者の [!DNL Payment Services] から財務レポートにアクセスできます。
 
-サンドボックスとライブの支払いの両方がオンボーディングされ、有効になっている場合、これらのモードを [!DNL Payment Services] ホーム。
+サンドボックスとライブ支払の両方がオンボーディングされ、有効になっている場合は、[!DNL Payment Services] ホームからこれらのモードを簡単に切り替えることができます。
 
 ## 前提条件
 
-を使用するには [!DNL Payment Services]を使用する場合は、お使いのインスタンスで以下を使用できる必要があります。
+[!DNL Payment Services] を使用するには、お使いのインスタンスで以下が可能である必要があります。
 
 * サービスコネクタモジュール
 * サービス ID モジュール
 * API キー
 
-サービスコネクタ ID モジュールとサービス ID モジュールは、 [～の設置 [!DNL Payment Services]](install.md). インストールが完了すると、設定に新しい節が表示されます (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) を展開する際に使用します。**[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
+サービスコネクタとサービス ID モジュールは、[ のインストール  [!DNL Payment Services]](install.md) 中に自動的にインストールされます。 インストールが完了したら、**[!UICONTROL Services]** - **[!UICONTROL Commerce Services Connector]** を展開すると、設定（**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**）に新しいセクションが表示されます。
 
-API キーの作成またはアクセス方法については、 [API 資格情報](#obtain-api-credentials).
+API キーを作成する方法や API キーにアクセスする方法については、[API 資格情報 ](#obtain-api-credentials) を参照してください。
 
 ## オンボーディング手順
 
-1. [をインストールします。 [!DNL Payment Services] 拡張](install.md#get-payment-services).
-1. [API 資格情報の取得](connect.md#obtain-api-credentials).
-1. [インスタンスに接続](connect.md#configure-commerce-services) を Commerce Services に追加します。 この接続は、コマースインスタンスごとに 1 回だけ完了する必要があります。
-1. [サンドボックスサービスの設定](sandbox.md#enable-sandbox-testing) ( または、次に進みます： [ライブ支払の有効化](sandbox.md#enable-live-payments) （他の環境で機能をテストした場合）、PayPal の支払い処理アカウントを使用します。
-1. [設定 [!DNL Payment Services] お客様の支払い方法](production.md#set-payment-services-as-payment-method)（サンドボックスモード）：テストの支払いの処理を開始します。
-1. [支払い権限をリクエスト](production.md#request-payments-entitlement-from-adobe) ：ライブオンボーディングを有効にします。
-1. [完全なマーチャントオンボーディング](production.md#complete-merchant-onboarding) ：コマース Web サイトのライブ支払いを有効にします。
-1. [Adobe Analytics の [!DNL Payment Services] マーチャント ID](production.md#configure-pricing-tier) 正しい価格帯を設定するために、セールスに渡します。
-1. [有効にする [!DNL Payment Services] ライブモード](production.md#enable-live-payments) ：ライブ支払の処理を開始します。
-1. テスト支払（両方） [sandbox](sandbox.md#test-in-sandbox-environment) および [実稼動](production.md#test-in-production) 環境。
+1. [ 拡張機能をイ  [!DNL Payment Services]  ストールします ](install.md#get-payment-services)。
+1. [API 資格情報を取得 ](connect.md#obtain-api-credentials)。
+1. Commerce サービスに [ インスタンスを接続 ](connect.md#configure-commerce-services) します。 この接続は、Commerce インスタンスごとに 1 回だけ完了する必要があります。
+1. [ テスト用の PayPal 支払い処理アカウントを使用して ](sandbox.md#enable-sandbox-testing) サンドボックスサービスを設定します [ または、別の環境で機能をテストした場合は ](sandbox.md#enable-live-payments) ライブ支払いの有効化）に進みます。
+1. サンドボック  [!DNL Payment Services]  モードで [ 支払い方法として設定 ](production.md#set-payment-services-as-payment-method) し、テスト支払いの処理を開始します。
+1. ライブオンボーディングを有効にする [ 支払い権限をリクエスト ](production.md#request-payments-entitlement-from-adobe)。
+1. [ マーチャントのオンボーディングを完了 ](production.md#complete-merchant-onboarding) して、Commerce web サイトでライブ支払いを有効にします。
+1. [ マーチャント ID [!DNL Payment Services]  取得し ](production.md#configure-pricing-tier)Sales に渡して、正しい価格レベルを設定します。
+1. [ ライブモード  [!DNL Payment Services]  有効化 ](production.md#enable-live-payments) してライブ支払いの処理を開始します。
+1. [ サンドボックス ](sandbox.md#test-in-sandbox-environment) 環境と [ 実稼動 ](production.md#test-in-production) 環境の両方で支払いをテストします。
 
 >[!NOTE]
 >
->管理（手順 3）でコマースサービスを設定しない場合、サンドボックスまたはライブ支払いを設定できません。
+>管理者でCommerce サービスを設定しない場合（手順 3）、サンドボックスやライブ支払いを設定することはできません。
 
 ## トラブルシューティング
 
-* [トラブルシューティング [!DNL Payment Services] インストール](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
-* [PayPal Sandbox アカウントが検証されていません](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
-* [遅延 [!DNL Payment Services] レポートデータ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
-* [サンドボックス環境で支払いを処理する際、PayPal でクレジットカードのテストが失敗する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
+* [ トラブルシューティング  [!DNL Payment Services]  インストール ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+* [PayPal サンドボックスアカウントが検証されていません ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+* [ 遅延レポ  [!DNL Payment Services]  トデータ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+* [ サンドボックス環境で支払いを処理する際に、PayPal でクレジットカードのテストが失敗する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

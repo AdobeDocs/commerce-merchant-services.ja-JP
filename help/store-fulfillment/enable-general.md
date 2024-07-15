@@ -1,35 +1,35 @@
 ---
 title: 一般設定
-description: 有効にする一般設定を構成します [!DNL Store Fulfillment] お客様のストアの。 グローバル拡張機能の設定、ログのシステム設定、データの同期、セキュリティを設定します。 Adobe Commerceとストアフルフィルメントサービスの統合を可能にするための主要なデータを提供します。
+description: 一般設定を構成して、ストアに対して有効  [!DNL Store Fulfillment]  します。 グローバル拡張機能の設定、ログ、データ同期およびセキュリティのためのシステム設定を構成します。 Adobe Commerceと Store Fulfillment サービスの統合を有効にするための主要なデータを提供します。
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
 
-# ストアサービスとセールスの設定
+# ストア・サービスとセールス構成
 
-有効にする [!DNL Store Fulfillment] からの拡張 [!DNL Commerce] 管理者は、拡張機能の設定、Store Assist アプリユーザーのセキュリティ設定、配信方法のオプションを設定します。
+拡張機能 [!DNL Store Fulfillment] 設定、ストアアシストアプリユーザーのセキュリティ設定、配信方法のオプションを設定して、[!DNL Commerce] 管理者から拡張機能を有効にします。
 
 >[!IMPORTANT]
 >
->ストアフルフィルメントサービスの設定は、Adobe Commerceインスタンスと [!DNL Store Fulfillment] アプリを使用します。 詳しくは、 [ストアの達成を接続](connect-set-up-service.md).
+>ストアフルフィルメントサービスの設定は、Adobe Commerce インスタンスと [!DNL Store Fulfillment] アプリを接続した後にのみ適用されます。 [Connect Store Fulfillment](connect-set-up-service.md) を参照してください。
 
-## ストアフルフィルメントサービス設定の管理
+## Store Fulfillment サービス設定の管理
 
-次からストアフルフィルメントサービスの設定を管理： [!DNL Commerce Admin Store Configuration] メニュー。
+[!DNL Commerce Admin Store Configuration] メニューから Store Fulfillment サービスの設定を管理します。
 
-- 拡張機能を有効にし、グローバル設定を指定し、Store Assist アプリのユーザー接続とアカウントのセキュリティオプションを指定するには、次を選択します。 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+- 拡張機能を有効にし、グローバル設定を構成し、[**[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**] を選択して Store Assist アプリのユーザー接続およびアカウントのセキュリティ オプションを指定します。
 
-  ![ストアのフルフィルメント用の Admin Store サービス構成](assets/store-services-admin-sf-config.png)
+  ![ ストアフルフィルメントの管理ストアサービス設定 ](assets/store-services-admin-sf-config.png)
 
-- 選択による配信方法の設定 **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+- **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]** を選択して配信方法を設定します。
 
-  ![ストアフルフィルメントの管理ストア販売構成](assets/store-sales-admin-sf-deliver-config.png)
+  ![Store Fulfillment の管理ストア販売設定 ](assets/store-sales-admin-sf-deliver-config.png)
 
 ## 基本設定
 
@@ -47,31 +47,31 @@ ht-degree: 0%
 <td><strong>[!UICONTROL Price]</strong></td>
 <td>店舗での受け取りに対して顧客に請求する価格。 デフォルトは 0 です。</td>
 <td>Web サイト</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Search Radius]</strong></td>
-<td>買い物客がストアフロントチェックアウトでストアのピックアップの場所を検索する際に使用する半径（キロメートル単位）。 検索結果は、指定した検索半径内にあるストアのみを返します。</td>
+<td>買い物客がストアフロントのチェックアウトで店舗の集荷場所を検索する際に使用する半径（キロメートル単位）。 検索結果には、指定した検索半径内にあるストアのみが返されます。</td>
 <td>Web サイト</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Displayed error message]</strong></td>
-<td>顧客が店舗でのピックアップに使用できない品目に対して店舗でのピックアップを選択したときに表示されるメッセージ。 必要に応じて、デフォルトのテキストをカスタマイズできます。
+<td>店舗での受け取りに使用できない品目に対して顧客が店舗での受け取りを選択すると表示されるメッセージ。 必要に応じて、デフォルトのテキストをカスタマイズできます。
 </td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 </tbody>
 </table>
 
 >[!NOTE]
 >
->The [!UICONTROL Search Radius] 設定は、 [ストアの場所とマッピングの設定](store-location-map-provider-setup.md) Adobe Commerceの
+>[!UICONTROL Search Radius] の設定は、Adobe Commerceに [ ストアの場所とマッピングの設定 ](store-location-map-provider-setup.md) を設定した場合にのみ使用されます。
 
-## ストアフルフィルメントソリューションを有効にする
+## ストアフルフィルメントソリューションの有効化
 
-を有効にします。 [!DNL Store Fulfillment] Adobe Commerceストアフロントのショッピングエクスペリエンスやチェックアウトエクスペリエンスに、店舗内およびカーブサイドのピックアップ機能を追加するソリューションです。
+[!DNL Store Fulfillment] ソリューションを有効にすると、Adobe Commerce ストアフロントのショッピングエクスペリエンスとチェックアウトエクスペリエンスに店舗内および縁側のピックアップ機能が追加されます。
 
 <table>
 <thead>
@@ -85,14 +85,14 @@ ht-degree: 0%
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>ソリューションを有効または無効にします。 有効な場合は、ストアフルフィルメント機能を設定および使用し、Adobe Commerceストアと [!DNL Store Fulfillment] サービス。 無効にすると、すべてのストアフルフィルメント機能が無効になり、Adobe Commerceとストアフルフィルメントサービス間の通信が行われなくなります。 注文情報を処理または受け取ることができません。</td>
+<td>ソリューションを有効または無効にします。 有効化すると、ストアフルフィルメント機能を設定および使用し、Adobe Commerceストアと [!DNL Store Fulfillment] のサービスとの連携を確立します。 無効にすると、すべてのストアフルフィルメント機能が無効になり、Adobe Commerceとストアフルフィルメントサービスの間のやり取りがなくなります。 注文情報は処理または受信できません。</td>
 <td>Web サイト</td>
 <td>はい</td>
 </tr>
 </tbody>
 </table>
 
-## アカウント資格情報を追加
+## アカウント資格情報の追加
 
 <table>
 <tr>
@@ -103,55 +103,55 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>次のいずれかを選択 <i>[!UICONTROL Sandbox]</i> または <i>[!UICONTROL Production]</i><br></br>選択 [!UICONTROL Sandbox] は、テスト環境でフルフィルメントサービスとの通信を可能にします。<br></br>選択 [!UICONTROL Production] は、実稼働環境でフルフィルメントサービスとの通信を可能にします。<br></br>各環境に対して一連の資格情報が提供され、同じインストールで両方のセットを管理できます。 <br></br>接続を検証する前に、資格情報を保存します。</td>
+<td><i>[!UICONTROL Sandbox]</i> または <i>[!UICONTROL Production]</i><br></br> 選択すると、テスト環境 [!UICONTROL Sandbox] フルフィルメントサービスとの通信が可能になります。<br></br> 「[!UICONTROL Production]」を選択すると、ライブ環境でフルフィルメントサービスとの通信が可能になります。<br></br> 各環境に一連の資格情報が与えられ、同じインストールで両方のセットを管理できます。 <br></br> 接続を検証する前に、資格情報を保存します。</td>
 <td>グローバル</td>
 <td>はい</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>Walmart Store Fulfilment API エンドポイントへの URL。 値は、オンボーディングプロセス中に提供される完全修飾 URL である必要があります。 ストアフルフィルメントのお客様は、サンドボックス URL と実稼動 URL の両方を受け取ります。 値を追加する場合は、完全な URL（末尾のスラッシュ「/」を含む）をコピーして貼り付けます。</td>
+<td>Walmart Store Fulfillment API エンドポイントへの URL。 値は、オンボーディングプロセス中に提供される完全修飾 URL である必要があります。 ストアフルフィルメントの顧客は、サンドボックスと実稼動 URL の両方を受け取ります。 値を追加する場合は、末尾のスラッシュ「/」を含む完全な URL をコピーして貼り付けます。</td>
 <td>グローバル</td>
 <td>はい</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
-<td>Walmart Store Fulfilment Authentication エンドポイントへの URL。 値は、オンボーディングプロセス中に提供される完全修飾 URL である必要があります。 サンドボックス URL と実稼動 URL の両方を受け取ります。 値を追加する場合は、完全な URL（末尾のスラッシュ「/」を含む）をコピーして貼り付けます。</td>
+<td>Walmart Store フルフィルメント認証エンドポイントの URL。 値は、オンボーディングプロセス中に提供される完全修飾 URL である必要があります。 サンドボックスと実稼動 URL の両方を受け取ります。 値を追加する場合は、末尾のスラッシュ「/」を含む完全な URL をコピーして貼り付けます。</td>
 <td>グローバル</td>
 <td>はい</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Merchant Id]</strong></td>
-<td>オンボーディングプロセス中に提供された一意のマーチャント（テナント） ID。 この ID は、マーチャントストアが確実に注文を受け取るようにルーティングするために使用されます。</td>
+<td>オンボーディングプロセス中に提供された一意のマーチャント（テナント） ID。 この ID は、マーチャントストアが注文を確実に受け取れるように注文をルーティングするために使用されます。</td>
 <td>グローバル</td>
 <td>はい</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Id]</strong></td>
-<td>オンボーディングプロセス中に提供された一意の統合 ID。 この ID は、Adobe Commerceとストアフルフィルメントサービス間のすべての通信を認証するために使用されます</td>
+<td>オンボーディングプロセス中に提供された一意の統合 ID。 この ID は、Adobe Commerceとストアフルフィルメントサービス間のすべての通信の認証に使用されます</td>
 <td>グローバル</td>
 <td>はい</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Secret]</strong></td>
-<td>オンボーディングプロセス中に提供される一意の統合キー。 このキーは、Adobe Commerceとストアフルフィルメントサービス間のすべての通信を認証するために使用されます。</td>
+<td>オンボーディングプロセス中に提供された一意の統合キー。 このキーは、Adobe Commerceとストアフルフィルメントサービス間のすべての通信の認証に使用されます。</td>
 <td>グローバル</td>
 <td>はい</td>
 </tr>
 </table>
 
-次の設定を行った後、 [!UICONTROL Account Credentials]を選択します。 <strong>[!UICONTROL Validate Credentials]</strong> を使用して、初めてストアフルフィルメントサービスへの接続を確認し、確立します。
+[!UICONTROL Account Credentials] を設定したら、「<strong>[!UICONTROL Validate Credentials]</strong>」を選択して、ストアフルフィルメントサービスへの接続を初めて検証および確立します。
 
 ## ログの設定
 
-ストアフルフィルメントサービスのログはログファイルで使用できます `var/log/walmart-bopis.log`.
+Store Fulfillment サービスのログは、ログ ファイル `var/log/walmart-bopis.log` で使用できます。
 
-API 関連の例外がファイアウォールまたはキャッシュを通じて取り込めるように、例外の処理を許可するように環境を設定するようにシステム管理者に依頼します。
+API 関連の例外をファイアウォールまたはキャッシュから取得できるように、例外処理を許可するように環境を設定するようにシステム管理者に依頼してください。
 
-アプリケーション・ログ・ファイルは迅速に拡張できるため、必要に応じて短時間のみ、アプリケーションのログを有効にします。例えば、 [!DNL Commerce] 注文。 この設定により、大きなログファイルが原因で発生する、実稼動環境での応答時間の問題を防ぐことができます。
+アプリケーション・ログ・ファイルは急速に増大する可能性があるため、必要に応じてアプリケーションのログを短時間だけ有効にします。たとえば、[!DNL Commerce] 注文のストア・フルフィルメントに関する問題のトラブルシューティングを行う場合などです。 この設定により、ログファイルのサイズが大きいことに起因する実稼動環境での応答時間の問題が回避されます。
 
 >[!TIP]
 >
->Adobe Commerceのオンプレミスでのインストールの場合は、システム管理者に問い合わせて、 `var/log/walmart-bopis.log` ファイルのサイズを最小限に抑えます。 Adobe Commerceのオンプレミスでのインストールの場合は、 [対数のローテーション](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) （内） _Adobe Commerce Installation Guide_. Adobe Commerce on cloud infrastructure プロジェクトについては、 [ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Adobe Commerceのオンプレミスインストールでは、サイズを最小限に抑えるために、`var/log/walmart-bopis.log` ファイルのログローテーションを設定するようにシステム管理者に依頼してください。 Adobe Commerceのオンプレミスインストールについては、_Adobe Commerce インストールガイド ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) の [ ログローテーション_ を参照してください。 クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[ ログの表示と管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) を参照してください。
 
 <table>
 <thead>
@@ -165,19 +165,19 @@ API 関連の例外がファイアウォールまたはキャッシュを通じ�
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>デバッグモードは、統合内のログに記録されるアクティビティを増やすために使用します。 無効にした場合、デバッグ情報はログに記録されません。 有効にすると、すべてのデバッグ情報がログに記録されます <br></br>ログに記録されたすべてのデータは、次のファイルで見つかります。 <pre>var/log/walmart-bopis.log</pre>
+<td>デバッグモードは、統合内のログに記録されるアクティビティを増やすために使用します。 無効にすると、デバッグ情報はログに記録されません。 有効にすると、すべてのデバッグ情報がログに記録されます <br></br> すべてのログに記録されたデータは次のファイルにあります。 <pre>var/log/walmart-bopis.log</pre>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 </tbody>
 </table>
 
 ## 注文の同期の管理
 
-注文の同期のエラー処理を管理する設定、注文の選択中にバーコードスキャンに使用するカタログ属性、ストアの達成キューの注文バッチサイズを構成する設定を構成します。
+注文の同期に対するエラー処理の管理、注文ピッキング中のバーコード スキャンに使用するカタログ属性の管理、および店舗受け渡しキューの注文バッチ サイズの構成を行うための設定を構成します。
 
-オーダーの同期操作の詳細は、管理者の「ストア履行キュー管理」ダッシュボードから表示できます (
-<strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong>) をクリックします。
+注文の同期操作に関する詳細は、管理の店舗受け渡しキュー管理ダッシュボード（
+<strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong>）に設定します。
 
 ### 同期エラー管理
 
@@ -190,27 +190,27 @@ API 関連の例外がファイアウォールまたはキャッシュを通じ�
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>重大なエラーが発生した後のレコードの同期操作の再試行を指定します。<br></br>統合が達成サービスから肯定的な応答を受け取れない場合は、重大なエラーが発生します。 これらの問題は、サービスが停止した場合、または送信される注文データにエラーがある場合に発生します。<br></br>再試行のしきい値に達すると、項目はキューに残りますが、再処理はおこなわれません。 エラーが発生したすべての項目を表示 <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> 管理者での管理。 一貫して失敗する項目のトラブルシューティングをおこなうには、担当のアカウントマネージャーにお問い合わせください。</td>
+<td>重大なエラーが発生した後のレコード同期処理の再試行を指定します。<br></br> 重要なエラーは、統合がフルフィルメントサービスから肯定的な応答を受け取れなかったときに発生します。 これらの問題は、サービスが停止している場合や、送信されている注文データにエラーがある場合に発生します。<br></br> 再試行しきい値に達した場合、項目はキューに残りますが、再処理されません。 エラーが発生したすべての項目は <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Management の Admin で表示されます。 一貫して失敗する項目のトラブルシューティングを行うには、アカウントマネージャーにお問い合わせください。</td>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Error Notification Email]</strong></td>
-<td>エラー通知を有効にして、 [!UICONTROL Retry Critical Error Threshold] が注文に達しました。 通知には、エラーに関する利用可能な詳細が含まれます。</td>
+<td>注文の [!UICONTROL Retry Critical Error Threshold] に達したときにメールを受け取るためのエラー通知を有効にする。 通知には、エラーに関して使用可能な詳細が含まれます。</td>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Send Error Notification Email To]</strong></td>
-<td>エラー通知用の受信者の E メールアドレスのコンマ区切りリスト。</td>
+<td>エラー通知用の受信者のメールアドレスのコンマ区切りリスト。</td>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Order Sync Exception Email Template]</strong></td>
-<td>注文の同期エラーを受信者に通知するために使用する電子メールテンプレートを指定します。 デフォルトのテンプレートが提供されます。 カスタマイズはサポートされていません。</td>
+<td>注文同期エラーを受信者に通知するために使用するメールテンプレートを指定します。 デフォルトのテンプレートが提供されます。 カスタマイズはサポートされていません。</td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 </table>
 
@@ -228,30 +228,30 @@ API 関連の例外がファイアウォールまたはキャッシュを通じ�
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>マーチャントロケーション内の対応する品目のスキャン可能コードを保存するカタログ属性。<br></br>既存のマーチャントロケーションが 1 つだけの場合は、UPC コードを使用し、e コマースチャネルでは SKU ごとに製品が識別される可能性があります。 このシナリオでは、UPC コードを含むカタログ属性を選択します。<br></br>この設定により、店舗リスト項目に送信される注文が正しい識別子で保証され、店舗がピッキングプロセス中に品目を正確にスキャンできるようになります。<br></br>不明な場合は、送付する属性を決定するために、配送およびピッキング部門の顧客に確認してください。 属性が現在データベースに含まれていない場合は、属性をAdobe Commerce製品属性セットに追加できます。</td>
+<td>マーチャントの場所にある対応する品目のスキャン可能なコードを格納するカタログ属性。<br></br> 既存のマーチャントの場所が 1 つしかない場合、UPC コードを使用している一方で、e コマースチャネルは製品を SKU で識別している可能性があります。 このシナリオでは、UPC コードを含むカタログ属性を選択します。<br></br> この設定により、正しい識別子を持つ注文が店舗リスト品目に送信されるため、店舗の担当者はピッキング プロセス中に品目を正確にスキャンできます。<br></br> 不明な場合は、出荷およびピッキング部門のフルフィルメント担当者に問い合わせて、どの属性を送信するかを決定してください。 属性が現在データベースに含まれていない場合は、Adobe Commerceの製品属性セットに属性を追加できます。</td>
 <td>Web サイト</td>
 <td>はい</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Barcode Type]</strong></td>
-<td>マーチャントロケーションの対応する品目のバーコードソースを保存する catalog 属性。<br></br>この設定により、店舗リスト項目に送信される注文が正しい識別子で保証され、店舗はピッキングプロセス中に品目を正確にスキャンできます。 オプションには、SKU、UPC、GTIN、UPCA、EAN13、UPCE0、DISA、UAB、CODABAR、Price Embedded UPC が含まれます。<br></br>不明な場合は、 [!UICONTROL Barcode Source] 属性。 店舗の関連付けは、選択リストから手動で項目を照合できます。</td>
+<td>マーチャントの場所にある対応する項目のバーコードソースを保存するカタログ属性。<br></br> この設定により、店舗に送信された注文が正しい識別子でリストされるため、店舗の担当者はピッキング プロセス中に品目を正確にスキャンできます。 オプションには、SKU、UPC、GTIN、UPCA、EAN13、UPCE0、DISA、UAB、CODABAR、Price Embedded UPC があります。<br></br> 不明な場合は、[!UICONTROL Barcode Source] 属性に含まれる値に最も近いオプションを選択します。 店舗の担当者は、選択リストから手動で項目を照合できます。</td>
 <td>Web サイト</td>
 <td>はい</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Max Number of Items]</strong></td>
-<td>一度にストアフルフィルメントキューから送信する項目の最大数。<br></br>BOPIS オーダーは、一定の間隔で、バッチでフルフィルメントサービスに送信されます。 この設定を使用すると、バッチのサイズを制御できます。<br></br>デフォルト値は 100 項目です。 注文量と処理能力に応じて、最大値を上下に調整できます。</td>
+<td>ストア フルフィルメント キューから一度に送信するアイテムの最大数。<br></br>BOPIS の注文は、定期的に一括でフルフィルメントサービスに送信されます。 この設定を使用すると、バッチのサイズを制御できます。<br></br> デフォルト値は 100 項目です。 ご注文の数量や容量に応じて、最大値を上下に調整できます。</td>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 </tbody>
 </table>
 
-## 店舗フルフィルメント配送オプションを有効化
+## 店舗フルフィルメント配送オプションの有効化
 
-Adobe Commerceストアの店頭受け取りと宅配オプションの可用性を決定する「店舗フルフィルメント配送オプション」を設定します。
+Adobe Commerce ストアで店舗の受け取りおよび宅配オプションを利用できるかどうかを決定するストアフルフィルメントの配送オプションを設定します。
 
-### 出荷先ストア
+### 出荷先店舗
 
 <table>
 <thead>
@@ -265,14 +265,14 @@ Adobe Commerceストアの店頭受け取りと宅配オプションの可用性
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>出荷先店舗の設定は、既存の出荷先店舗機能に基づいています。 Inventory managementを使用する場合、または店舗間在庫移動を通じて在庫なしの商店ロケーションで注文を受け入れ、履行できる場合は、このオプションを「はい」に設定します。<br></br>出荷先店舗オプションをサポートできない場合や提供したくない場合は、「いいえ」に設定します。 無効にした場合、商店の在庫がゼロのカタログ内の項目、または [!DNL Out of Stock Threshold] その場所では、は店舗でのピックアップオプションでは提供されません。<br></br>この設定の値は、商人の場所ごとに調整できます。</td>
+<td>出荷先店舗の設定は、既存の出荷先店舗機能に基づいています。 Inventory managementを使用する場合、または店舗間在庫移動により、在庫のない販売店場所で注文を受け入れて履行できる場合は、このオプションを「Yes」に設定します。<br></br>Ship-to-Store オプションをサポートできない場合、または提供を希望しない場合は、「いいえ」に設定します。 無効にすると、カタログ内の商品在庫ゼロの商品はその店舗では提供されません。また、その場所の [!DNL Out of Stock Threshold] を下回る商品は、店舗内の集荷オプションで提供されません。<br></br> この設定の値は、マーチャントの場所ごとに調整できます。</td>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 </tbody>
 </table>
 
-### 出荷元ストア
+### 出荷元店舗
 
 <table>
 <thead>
@@ -286,17 +286,17 @@ Adobe Commerceストアの店頭受け取りと宅配オプションの可用性
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>マーチャントストアでの「ホーム配信」オプションの有効/無効を切り替えます。 有効にすると、マーチャントストアの場所は、Web サイトに関連付けられた在庫内の他の割り当てられたソースと集計されて考慮されます。<br></br>標準のInventory managementサービスでは、 [!DNL Ship from Store] はオプション固有で、無効にできません。 Store Fulfilment ソリューションでは、オン/オフを切り替えることができます。<br></br>この設定は、商人の場所と製品ごとに調整できます。</td>
+<td>マーチャントストアのホーム配信オプションを有効または無効にします。 有効にすると、マーチャントストアの場所は、web サイトに関連付けられた在庫の他の割り当てられたソースと集計して考慮されます。<br></br> 標準のInventory management サービスでは、[!DNL Ship from Store] れはオプション固有のオプションであり、無効にすることはできません。 ストアフルフィルメントソリューションを使用すると、そのソリューションのオンとオフを切り替えることができます。<br></br> この設定は、マーチャントの場所と製品ごとに調整できます。</td>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 </tbody>
 </table>
 
 
-## ストアフルフィルメントアプリの管理アカウントと権限の使用
+## Store Fulfillment App のアカウントと権限の使用の管理
 
-Store Fulfilment App のユーザーアカウントとパスワードセキュリティおよび 2 要素認証の設定を構成します。
+Store Fulfillment App のユーザーアカウントとパスワードのセキュリティ、および二要素認証の設定を構成します。
 
 ### アプリのセキュリティ
 
@@ -312,55 +312,56 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
  <tbody>
 <tr>
 <td><strong>[!UICONTROL User Session Lifetime]</strong></td>
-<td>ストア関連ユーザーセッションが自動ログアウト前にアクティブなままになる時間（秒）。 有効な値の範囲は 60 ～ 31536000です。</td>
+<td>ストア関連付けユーザーセッションが自動ログアウトの前にアクティブのままである期間（秒）。 有効な値の範囲は 60 ～ 31536000 です。</td>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Maximum Login Failures to Lockout Account]</strong></td>
-<td>ストアの関連付けがアカウントからロックアウトされるまでに、ログイン試行に失敗した回数を指定します。<br></br>アカウントのロックアウトを無効にするには、値を 0 に設定します。</td>
+<td>ストアの関連付けがユーザーのアカウントからロックアウトされるまで、許可されるログインの失敗回数を指定します。<br></br> アカウントのロックアウトを無効にするには、値を 0 に設定します。</td>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Lockout Time (minutes)]</strong></td>
-<td>ログイン失敗後にアカウントをロックする時間（分）。</td>
+<td>ログインに失敗した後、アカウントをロックする時間（分）。</td>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td><em>[!UICONTROL Yes]</em>：アカウントの設定後に、ユーザーがパスワードを変更する必要があります。<br></br><em>[!UICONTROL No]</em>：アカウント設定後にユーザーがパスワードを変更することをお勧めします。</td>
+<td><em>[!UICONTROL Yes]</em>：アカウントの設定後にパスワードの変更をユーザーに要求します。<br></br><em>[!UICONTROL No]</em>: アカウントの設定後にパスワードを変更することをお勧めします。</td>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
-<td>パスワードが必要な変更までに、パスワードが有効である日数を示します。 このオプションを無効にするには、空のままにします。</td>
+<td>必要なパスワードが変更されるまでパスワードが有効である日数。 このオプションを無効にするには、空のままにします。</td>
 <td>グローバル</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 </tbody>
 </table>
 
 ## 配信方法
 
-ネイティブのAdobe Commerceを拡張することで、ストアの達成が機能 [!DNL In-Store Delivery] 機能。 拡張機能をインストールした後、管理者に追加された次の拡張設定を使用して、ストア内配信方法を設定できます。
+ストアフルフィルメントは、Adobe Commerceのネイティブな [!DNL In-Store Delivery] 機能を拡張することで機能します。 拡張機能をインストールしたら、管理者に追加される次の拡張設定を使用して、ストア内配信方法を設定できます。
 
-- **店内受け取り** — チェックアウトプロセス中の店舗配信用オファーオプションこれらの設定は、BOPIS 注文で最も一般的な配信シナリオを設定します。
+- **店舗での受け取り** - チェックアウトプロセス中の店舗内配信のオファーオプション
+これらの設定は、BOPI 注文の最も一般的な配信シナリオを設定します。
 
-- **[!UICONTROL Curbside pick up]** — 店舗に駐車し、店舗の関係者から受け渡しを受け付ける顧客向けのオファーオプション。
+- 顧客が店舗の場所に駐車して、店員によって注文を配達するための **[!UICONTROL Curbside pick up]** ートオファーオプション。
 
-管理者から、以下の設定を選択してください。 <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
+<strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong> を選択して、管理者からこれらの設定を構成します。
 
 >[!NOTE]
 >
->ストア内配信オプションの設定について詳しくは、 [ストア内配信](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) （内） _Adobe Commerce User Guide_.
+>ストア内配信オプションの設定について詳しくは、{2[Adobe Commerce ユーザーガイド ](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) ストア内配信 _を参照してください。_
 
 
-### 配信メソッドの設定
+### 配信方法の設定
 
-店舗での配信方法を使用すると、顧客は、チェックアウト時にピックアップ場所として使用するソースを選択できます。
+店舗内配送方式では、お客様はチェックアウト時に集荷場所として使用するソースを選択できます。
 
 <table>
 <thead>
@@ -374,20 +375,20 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable In-Store Pickup]</strong></td>
-<td>店舗ピックアップを選択した顧客のチェックアウト時に使用できる店舗ピックアップオプションを有効または無効にします。 店舗でのピックアップが無効な場合、このオプションは表示されません。<br></br>このグローバル設定は、すべての小売店の場所に適用されます。 有効にした場合、小売ストアの場所で選択的に無効にできます。</td>
+<td>店舗の受け取りを選択する顧客のチェックアウト時に使用できる店舗の受け取りオプションを有効または無効にします。 店舗での受け取りが無効になっている場合、このオプションは表示されません。<br></br> このグローバル設定は、すべての小売店の場所に適用されます。 有効にすると、小売店の場所で選択的に無効にすることができます。</td>
 <td>Web サイト</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Curbside Pickup]</strong></td>
-<td>店舗受取を選択した顧客のチェックアウトプロセス中に、カーブサイド受取オプションを有効または無効にします。<br></br>このグローバル設定は、すべての小売店の場所に適用されます。 有効にした場合、小売ストアの場所で選択的に無効にできます。</td>
+<td>店舗の集荷を選択する顧客のチェックアウト プロセス中にカーブサイドの集荷オプションを有効または無効にします。<br></br> このグローバル設定は、すべての小売店の場所に適用されます。 有効にすると、小売店の場所で選択的に無効にすることができます。</td>
 <td>Web サイト</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 </tbody>
 </table>
 
-### 配信方法のタイトル設定
+### 配信方法のタイトルの設定
 
 <table>
 <thead>
@@ -399,75 +400,75 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>ホーム配信のタイトル</strong></td>
-<td>製品、買い物かご、チェックアウト領域の「ホーム配信」オプションに対して表示するタイトルを指定します。 宅配は、Adobe Commerceの標準的な配送能力を指します。倉庫から、運送業者によって、または顧客が指定した配送先住所に直接送付されます。 </br></br>このラベルは、選択した配送業者の発送方法ラベルには影響しません。</td>
+<td><strong>ホーム配信タイトル</strong></td>
+<td>製品、買い物かご、チェックアウトの各エリアのホーム配信オプションに表示するタイトルを指定します。 宅配とは、Adobe Commerceの標準的な配送機能を指します。倉庫から、配送業者によって、またはお客様が指定した配送先住所に直接お届けします。 </br></br> このラベルは、選択した配送業者の配送方法ラベルには影響しません。</td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
-<td><strong>宅配の説明</strong></td>
-<td>顧客にホーム配信のタイトルが表示されるたびに表示される説明（オプション）。 ほとんどの場合、説明は、配信プロミスを伝えるための静的なメッセージです。 次に例を示します。</br><code>Same-day shipping on orders by 4</code></br></br><code>Ships within 2 business days</code></td>
+<td><strong>ホーム配信の説明</strong></td>
+<td>顧客にホーム配信のタイトルが表示されるたびに表示されるオプションの説明です。 ほとんどの場合、説明は、配信のプロミスを伝えるための静的メッセージです。 次に例を示します。</br><code>Same-day shipping on orders by 4</code></br></br><code>Ships within 2 business days</code></td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
-<td><strong>受け取りのタイトルを保存</strong></td>
-<td>顧客に配信オプションが提示され、店頭でのピックアップが可能になると、このラベルが表示されます。 </br></br>このラベルは、製品、買い物かご、チェックアウト領域に表示されるようにカスタマイズできます。</td>
+<td><strong>店舗の集荷タイトル</strong></td>
+<td>顧客に配信オプションが表示され、店舗での受け取りが可能な場合、このラベルが表示されます。 </br></br> このラベルは、製品、買い物かご、チェックアウトの各エリアに表示されるようにカスタマイズできます。</td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
-<td><strong>店舗ピックアップの説明</strong></td>
-<td>ストアピックアップのタイトルが表示される場所に、オプションで説明を含めることができます。 この静的メッセージは、ストアの受け取り操作に関連する顧客とのコミュニケーションを改善するのに役立ちます。 次に例を示します。</br></br><code>Get it today for free!</code></br></br><code>Ready for pickup in an hour!</code></td>
+<td><strong>店舗の受け取りの説明</strong></td>
+<td>ストア ピックアップ タイトルが表示される場所に関わらず、説明を任意で含めることができます。 この静的メッセージは、ストアの受け取りエクスペリエンスに関連する顧客コミュニケーションを改善するのに役立ちます。 次に例を示します。</br></br><code>Get it today for free!</code></br></br><code>Ready for pickup in an hour!</code></td>
 <td>ストア表示</td>
-<td>いいえ</td>
-</tr>
-<tr>
-<td><strong>店内ピックアップのタイトル</strong></td>
-<td>店頭での集荷が有効になっている場合、このタイトルが「集荷配信を保存」オプションとして顧客に表示されます。 ラベルをカスタマイズできます。</td>
-<td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
-<tr>
-<td><strong>カーブサイドピックアップのタイトル</strong></td>
-<td>カーブサイドピックアップが有効な場合、このオプションは「ピックアップを保存」配信オプションのタイプとして顧客に表示されます。 ここでラベルをカスタマイズできます。</td>
+<td><strong>店舗内集荷タイトル</strong></td>
+<td>店舗での受け取りが有効になっている場合、このタイトルは、店舗での受け取り配信オプションとして顧客に表示されます。 ラベルをカスタマイズできます。</td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
+</tr>
+<tr>
+<tr>
+<td><strong>カーブサイド ピックアップ タイトル</strong></td>
+<td>カーブサイドの受け取りを有効にすると、このオプションは、店舗の受け取り配信オプションのタイプとして顧客に表示されます。 ここでラベルをカスタマイズできます。</td>
+<td>ストア表示</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>店舗での受け取り手順</strong></td>
-<td>小売店で注文を受け取る準備が整うと、顧客に E メールで通知が送られます。 顧客が [!DNL In-Store Pickup] チェックアウト時に、ここでピックアップの手順をカスタマイズできます。 </br></br>これらの手順はグローバルに設定され、すべての小売ストアの場所に適用されます。 また、小売ストアの場所レベルで手順をカスタマイズすることもできます。</td>
+<td>小売店で注文を受け取る準備が整うと、顧客にメールで通知されます。 お客様がチェックアウト時に [!DNL In-Store Pickup] を選択した場合は、ここでピックアップ手順をカスタマイズできます。 </br></br> これらの手順はグローバルに設定され、すべての小売店の場所に適用されます。 小売店の場所レベルで指示をカスタマイズすることもできます。</td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
-<td><strong>カーブ側ピックアップの手順</strong></td>
-<td>カスタマーメール通知に含める、カスタマイズされた受注情報を指定します。受注情報は、受注を制限するために送信されます。 </br></br>これらの手順はグローバルに設定され、すべての小売ストアの場所に適用されます。 また、小売ストアの場所レベルで手順をカスタマイズすることもできます。</td>
+<td><strong>カーブサイドの受け取り手順</strong></td>
+<td>カーブサイドの集荷注文に関する顧客の電子メール通知に含める、カスタマイズされた注文集荷指示を指定します。 </br></br> これらの手順はグローバルに設定され、すべての小売店の場所に適用されます。 小売店の場所レベルで指示をカスタマイズすることもできます。</td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
-<td><strong>推定ピックアップリードタイム</strong></td>
-<td>注文を受信し、満たされ、取得する準備が整うまでに必要な分数。 この情報は、顧客が「受け取り商品の小売店舗の場所」の配信オプションを選択する際に表示されます。 この設定は、すべての小売店舗の場所に適用されます。 リードタイムは、小売店舗の場所レベルでカスタマイズすることもできます。</td>
+<td><strong>推定集荷リード タイム</strong></td>
+<td>注文を受け取り、履行し、受け取る準備が整うまでに必要な分数。 この情報は、店舗ピックアップ配信オプションの小売店舗の場所を選択する際に顧客に表示されます。 この設定は、すべての小売店舗の場所に適用されます。 小売店の場所レベルでリードタイムをカスタマイズすることもできます。</td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>推定ピックアップ時間ラベル</strong></td>
-<td>注文が顧客の受け取りに使用可能になるまでの推定時間を表示します。 この情報は、顧客が [!DNL In-Store Pickup] 配信オプション。 </br></br>このラベルをカスタマイズする場合は、コードを使用できます <code>%1</code> を <strong>推定ピックアップリードタイム</strong>. 例：</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>この設定は、すべての小売店舗の場所に適用されます。 リードタイムは、小売店舗の場所レベルでカスタマイズすることもできます。</td>
+<td>顧客の集荷に対する注文が利用可能になるまでの推定時間を表示します。 この情報は、顧客が [!DNL In-Store Pickup] 配信オプションで小売店の場所を選択した場合に表示されます。 </br></br> このラベルをカスタマイズする場合、コード <code>%1</code> を使用して <strong> 推定ピックアップリードタイム </strong> を挿入できます。 例：</br></br><code>Ready for Pickup in %1 minutes.</code></br></br> この設定は、すべての小売店の場所に適用されます。 小売店の場所レベルでリードタイムをカスタマイズすることもできます。</td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 <tr>
-<td><strong>ピックアップ時間免責事項</strong></td>
-<td>製品ページに表示される、営業時間、休日、予期しない閉鎖などを示すツールチップのコンテンツ</td>
+<td><strong>集荷時間の免責事項</strong></td>
+<td>時間、休日、予期しない閉鎖などを一覧表示するツールヒントの製品ページに表示されるコンテンツ</td>
 <td>ストア表示
 </td>
-<td>いいえ
+<td>不可
 </td>
 </tr>
 </tbody></table>
 
-### 在庫品目の設定
+### 在庫の可用性タイトルの設定
 
 <table>
 <thead>
@@ -480,21 +481,21 @@ Store Fulfilment App のユーザーアカウントとパスワードセキュ�
 </thead>
 <tbody><tr>
 <td><strong>在庫</strong></td>
-<td>顧客が小売店舗ロケーターを使用している場合、現在の品目の在庫状況が各場所に表示されます。 </br></br>次の項目をカスタマイズできます。 <em>[!UICONTROL in-stock]</em> ステータスラベルをここに入力します。</td>
+<td>顧客が小売店舗保管棚を使用している場合、現在の品目の在庫可用性が事業所ごとに表示されます。 </br></br> ここで <em>[!UICONTROL in-stock]</em> ステータスラベルをカスタマイズできます。</td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
 <td><strong>在庫切れ</strong></td>
-<td>顧客が小売店舗ロケーターを使用している場合、現在の品目の在庫状況が各場所に表示されます。</td>
+<td>顧客が小売店舗保管棚を使用している場合、現在品目の在庫可用性が各事業所に表示されます。</td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 <tr>
-<td><strong>一部在庫</strong></td>
-<td>顧客が小売店舗ロケーターを使用している場合、現在の品目の在庫可用性は各場所に対して表示されます。 </br></br>次の項目をカスタマイズできます。 <em>[!UICONTROL partially in-stock]</em> ステータスラベルをここに入力します。</td>
+<td><strong>一部在庫あり</strong></td>
+<td>顧客が小売店舗保管棚を使用している場合、現在品目の在庫可用性が各事業所に表示されます。 </br></br> ここで <em>[!UICONTROL partially in-stock]</em> ステータスラベルをカスタマイズできます。</td>
 <td>ストア表示</td>
-<td>いいえ</td>
+<td>不可</td>
 </tr>
 </tbody></table>
 

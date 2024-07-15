@@ -1,6 +1,6 @@
 ---
 user-guide-title: 「[!DNL Live Search] ガイド」
-user-guide-description: 「このガイドでは、を使用する詳細な手順を説明します [!DNL Live Search] Adobe Commerceから」
+user-guide-description: 「このガイドでは、Adobe Commerceから  [!DNL Live Search]  を使用する詳細な手順を説明します。」
 breadcrumb-title: 「[!DNL Live Search] ガイド」
 role: Admin
 feature: Services, Search
@@ -11,9 +11,9 @@ ht-degree: 10%
 
 ---
 
-# [!DNL Live Search] Commerceの場合 {#live-search}
+# Commerceの [!DNL Live Search] {#live-search}
 
-- [について [!DNL Live Search]?](overview.md)
+- [何  [!DNL Live Search]?](overview.md)
 - [インストール](install.md)
 - [Live Search のセットアップ](workspace.md)
 - [境界と制限](boundaries-limits.md)
@@ -21,12 +21,12 @@ ht-degree: 10%
 - ストアフロント {#live-search-storefront}
    - [ストアフロントウィジェット](storefront-widgets.md)
    - [製品リストページ](plp-styling.md)
-   - [ストアフロント [!DNL Popover]](storefront-popover.md)
+   - [ストアフロント  [!DNL Popover]](storefront-popover.md)
 - Admin {#live-search-admin}
    - [パフォーマンス](performance.md)
    - ファセット {#facets}
       - [概要](facets.md)
-      - [ワークスペース](faceting-workspace.md)
+      - [Workspace](faceting-workspace.md)
       - [ファセットのタイプ](facets-type.md)
       - [ファセットを追加](facets-add.md)
       - [ファセットの管理](facets-manage.md)
@@ -35,9 +35,9 @@ ht-degree: 10%
       - [シノニムのタイプ](synonyms-type.md)
       - [シノニムの追加](synonyms-add.md)
       - [シノニムの管理](synonyms-manage.md)
-   - マーチャンダイジングを検索 {#rules}
+   - マーチャンダイジング {#rules} の検索
       - [概要](rules.md)
-      - [ワークスペース](rules-workspace.md)
+      - [Workspace](rules-workspace.md)
       - [ルールの追加](rules-add.md)
       - [ルール管理](rules-manage.md)
    - [カテゴリマーチャンダイジング](category-merch.md)

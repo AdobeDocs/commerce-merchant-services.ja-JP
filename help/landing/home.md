@@ -17,9 +17,9 @@ ht-degree: 0%
 
 Adobeは、マーチャントがビジネスの主要なコンポーネントをサポートするのに役立つ、Commerce、統合、データサービスのコレクションを提供します。
 
->[!BEGINSHADEBOX 「リリース情報」]
+>[!BEGINSHADEBOX  「リリース情報」 ]
 
-参照： [ドキュメントの新機能](whats-new.md) または [リリースノート](release-notes-all.md) （Commerce サービスごとに）。
+各Commerce サービスについては、[ ドキュメントの新機能 ](whats-new.md) または [ リリースノート ](release-notes-all.md) を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -44,14 +44,14 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 <tr>
     <td valign="top" width="200px">
        <img alt="カタログサービス" src="assets/catalog-service.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview"> <strong>カタログサービス</strong></a> <br>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview"> <strong> カタログサービス </strong></a> <br>
     <div>顧客に最適化された製品体験を提供すると同時に、パフォーマンスを向上させ、スケーラビリティを向上させ、コンバージョンを増やします。</div>
   </td>
    </tr>
 <tr>
   <td valign="top" width="200px">
     <img alt="支払いサービス" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>支払いサービス</strong></a>  <br><em>（Magento Open Source可能）</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong> 支払いサービス </strong></a> <br><em> （Magento Open Source可能） </em>
     <div>無利子の分割払い、支払い処理、注文、請求書の単一ビューなど、様々な支払い方法を簡単に提供することで、顧客満足度を高めます。</div>
   </td>
     </tr>
@@ -65,14 +65,14 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 <tr>
     <td valign="top" width="200px">
        <img alt="AmazonSales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon販売チャネル</strong></a> <br><em>（Magento Open Source可能）</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon販売チャネル </strong></a> <br><em> （Magento Open Source提供） </em>
     <div>を世界最大のグローバルオンラインショッピング先と統合すると、Amazonのセールス、データの自動処理と同期、Amazonのリスト管理などを、1 つのダッシュボードで行えるようになります。</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>チャネルマネージャー</strong></a> <br><em>（Magento Open Source可能）</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>Channel Manager</strong></a> <br><em> （Magento Open Source可能） </em>
     <div>ウォルマート マーケットプレイスとの統合により、売上の増加、新規顧客へのリーチ、運用の合理化、時間の節約を実現します。 スタッフが Walmart Marketplace の売上、在庫、価格設定をすべてCommerceでシームレスに管理できるようにします。</div>
   </td>
    </tr>

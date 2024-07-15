@@ -18,6 +18,6 @@ ht-degree: 0%
 
 | サービス | 変更 | タイプ |
 | -- | -- | -- |
-| [**カタログサービス**](../live-search/overview.md) | さんがを追加しました [カタログサービスと API メッシュを使用した税金の表示](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) トピック。 | 新規トピック |
+| [**カタログサービス**](../live-search/overview.md) | [ カタログサービスと API メッシュを使用した税金の表示 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) のトピックを追加しました。 | 新規トピック |
 
 このテーブルは毎月第一月曜日に更新されます。

@@ -1,6 +1,6 @@
 ---
-title: Check-In Experience Setup
-description: 受取注文フォームを完了した顧客がカーブ側の受取顧客が利用できる車の製造とモデルの選択を設定します。
+title: チェックイン エクスペリエンスの設定
+description: カーメーカーとモデルを設定する ] ピックアップのお客様がピックアップ注文フォームを完了したときにカーサイドで選択できます。
 role: Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
@@ -11,24 +11,24 @@ ht-degree: 0%
 
 ---
 
-# Check-In Experience Setup
+# チェックイン エクスペリエンスの設定
 
-お客様がカーブサイドピックアップに到着した場合、受け取り注文フォームを使用してチェックインし、位置、車種、車種に関する情報を提供します。 この情報は、Store Assist アプリを通じて Store Associates に送信されるので、キューブ側の受け取り注文を迅速に配信できます。
+カーブサイドの受け取りに到着した場合は、受け取り注文フォームを使用して、場所、車種、車種に関する情報をチェックインして提供します。 この情報はストアアシストアプリを通じてストアアソシエイトに送信され、カーブサイドの集荷注文を迅速に配信できます。
 
-![[!DNL Check-In Experience Car Make] および [!DNL Model] カーブサイドピックアップの設定](assets/checkin-system-settings-car-options.png)
+カーブサイドピックアップの ![[!DNL Check-In Experience Car Make] と [!DNL Model] の設定 ](assets/checkin-system-settings-car-options.png)
 
 >[!NOTE]
 >
->受け取り注文フォームインターフェイスは、 [ストア設定メニュー](merchant-store-configuration.md#configure-check-in-experience-interface-options). 例えば、表示する入力フィールドと、必須か任意かを指定できます。
+>[Store Configuration メニュー ](merchant-store-configuration.md#configure-check-in-experience-interface-options) から Pickup Order フォーム インターフェイスを設定します。 例えば、表示する入力フィールドと、入力フィールドが必須かオプションかを指定できます。
 
 
 ## 車種と色の選択を設定する
 
-管理者は、ピックアップフォームで利用可能な車種およびモデルの選択を、Adobe Commerceのシステム設定から管理できます。
+管理者ユーザーは、Adobe Commerce システムの設定から、ピックアップフォームで使用できる車種とモデルの選択を管理できます。
 
 - **[!UICONTROL System]> チェックイン > 自動車メーカー**
-- **[!UICONTROL System]> チェックイン > 車の色**
+- **[!UICONTROL System]> チェックイン > Car Colors**
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)
 
-デフォルトの設定には、米国市場向けの一般的な車の製造と色の広範なリストが含まれています。 [!DNL Commerce] 管理者は、設定を管理して、使用可能なオプションを追加または編集できます。
+デフォルトの設定には、米国市場向けの一般的な車種と色の広範なリストが含まれています。 管理者ユーザー [!DNL Commerce]、設定を管理して、使用可能なオプションを追加または編集できます。

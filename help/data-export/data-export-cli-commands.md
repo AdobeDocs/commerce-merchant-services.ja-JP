@@ -1,6 +1,6 @@
 ---
 title: SaaS データ書き出しコマンドライン インターフェイス
-description: コマンドラインインターフェイスコマンドを使用して、のフィードとプロセスを管理する方法を説明します [!DNL data export extension] Adobe Commerce SaaS サービスの場合。
+description: コマンドラインインターフェイスコマンドを使用して、Adobe Commerce向け SaaS サービスのフィードとプロセス  [!DNL data export extension]  管理する方法について説明します。
 recommendations: noCatalog
 exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
 source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
@@ -12,12 +12,12 @@ ht-degree: 0%
 
 # SaaS データ書き出しコマンドライン インターフェイス リファレンス
 
-開発者およびシステム管理者は、を使用して、SaaS データ書き出しの同期操作を管理できます [Adobe Commerce コマンドラインツール](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）。 この `saas:resync` コマンドはに含まれています `magento/saas-export` パッケージ。
+開発者およびシステム管理者は、[Adobe Commerce コマンドラインツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）を使用して SaaS データエクスポートの同期処理を管理できます。 `saas:resync` コマンドは `magento/saas-export` パッケージに含まれています。
 
-Adobeは、 `saas:resync` 定期的にコマンドを実行します。 コマンドを使用する一般的なシナリオは次のとおりです。
+Adobeは、`saas:resync` コマンドを定期的に使用することはお勧めしません。 コマンドを使用する一般的なシナリオは次のとおりです。
 
 - 初期同期
-- この [SaaS データ空間 ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) が変更されたため、新しいデータ空間にデータを同期する必要があります。
+- [SaaS データ空間 ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) が変更されたため、新しいデータ空間にデータを同期する必要があります。
 - トラブルシューティング
 
 ## 初期同期
@@ -25,7 +25,7 @@ Adobeは、 `saas:resync` 定期的にコマンドを実行します。 コマ�
 >[!NOTE]
 >Live Search または Product Recommendationsを使用している場合は、初期同期を実行する必要はありません。 サービスをCommerce インスタンスに接続すると、プロセスが自動的に開始されます。
 
-をトリガーすると、 `saas:resync` コマンドラインでは、カタログのサイズに応じて、データの更新に数分から数時間かかる場合があります。
+コマンドラインから `saas:resync` をトリガーする場合、カタログのサイズに応じて、データの更新に数分から数時間かかる場合があります。
 
 初期同期の場合、Adobeでは次の順序でコマンドを実行することをお勧めします。
 
@@ -43,7 +43,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ## コマンドの例
 
-使用前に `saas:resync` コマンド、を確認する [オプションの説明](#command-options).
+`saas:resync` のコマンドを使用する前に、[ オプションの説明 ](#command-options) を確認してください。
 
 - エンティティフィードの完全再同期を実行します。
 
@@ -59,7 +59,7 @@ bin/magento saas:resync --feed categoryPermissions
   bin/magento saas:resync --feed='FEED_NAME' --cleanup-feed
   ```
 
-  を実行した後にのみ使用します。 [!DNL Data Space ID Cleanup] 操作。
+  [!DNL Data Space ID Cleanup] 操作を実行した後にのみ使用します。
 
 - すぐにエクスポートフィードを使用するには、フィードテーブルのインデックスデータを切り捨てずに、接続されたCommerce サービスにすべてのデータを再送信します
 
@@ -75,17 +75,17 @@ bin/magento saas:resync --feed categoryPermissions
 
 ## コマンドオプション
 
-管理には次のオプションを使用できます `saas:resync` の操作。
+`saas:resync` 操作を管理するには、次のオプションを使用できます。
 
 >[!NOTE]
 >
->この `saas:resync` また、コマンドは、バッチサイズを増やし、マルチスレッド処理を追加して、データの書き出しコマンドを改善する高度なオプションもサポートします。 参照： [エクスポート処理のカスタマイズ](customize-export-processing.md).
+>`saas:resync` コマンドは、バッチサイズを増やし、マルチスレッド処理を追加して、データのエクスポートコマンドを改善する高度なオプションもサポートしています。 [ エクスポート処理のカスタマイズ ](customize-export-processing.md) を参照してください。
 
 ### `feed`
 
-この必須オプションは、次のような、再同期するフィードエンティティを指定します `products`.
+この必須オプションは、再同期するフィードエンティティ（`products` など）を指定します。
 
-この `feed` オプションの値には、使用可能なエンティティフィードを含めることができます。
+`feed` のオプション値には、使用可能な任意のエンティティフィードを含めることができます。
 
 - `products`：製品データフィード
 - `productAttributes`：製品属性データフィード
@@ -97,15 +97,15 @@ bin/magento saas:resync --feed categoryPermissions
 - `inventoryStockStatus`：在庫状況データフィード
 - `scopesWebsite`：ストアおよびストアビューのデータフィードを使用する web サイト
 - `scopesCustomerGroup`：顧客グループデータフィード
-- `orders`：受注データフィード
+- `orders`：受注データ・フィード
 
-対象 [Commerce サービス](../landing/saas.md) がインストールされている場合は、で使用できるフィードのセットが異なる可能性があります `saas:resync` コマンド。
+インストールされている ](../landing/saas.md)0}Commerce サービス } によっては、`saas:resync` コマンドで使用できるフィードのセットが異なる場合があります。[
 
 ### `no-reindex`
 
-このオプションは、既存のカタログ データをに再送信します [!DNL Commerce Services] のインデックスが再作成されることはありません。 このオプションを指定しない場合、コマンドはデータを同期する前に完全な再インデックスを実行します。
+このオプションは、インデックスを再作成せずに、既存のカタログ データを [!DNL Commerce Services] に再送信します。 このオプションを指定しない場合、コマンドはデータを同期する前に完全な再インデックスを実行します。
 
-このオプションの動作は、フィードがで書き出されるかどうかによって異なります [レガシーまたは即時エクスポートモード](data-synchronization.md#synchronization-modes)
+このオプションの動作は、フィードが [ レガシーまたは即時エクスポートモード ](data-synchronization.md#synchronization-modes) でエクスポートされるかどうかによって異なります。
 
 - 従来のエクスポートフィードの場合、同期処理では、フィードテーブル内のインデックス付きデータは切り捨てられません。 代わりに、すべてのデータをAdobe Commerce サービスに再送信します。
 - 即時エクスポートフィードの場合、このオプションは指定されている場合は無視されます。 これらのフィードの場合、再同期プロセスではインデックスが切り捨てられず、以前に失敗した更新や項目のみが再同期されます。
@@ -114,12 +114,12 @@ bin/magento saas:resync --feed categoryPermissions
 
 このオプションは、同期前にフィードインデクサーテーブルをクリーンアップします。 指定した場合、SaaS データの書き出しにより、指定したフィードの完全再同期が実行され、フィード テーブル内の既存のデータがすべてクリーンアップされます。
 
-Adobeでは、 [!DNL Data Space ID Cleanup] 操作。
+Adobeでは、[!DNL Data Space ID Cleanup] の操作を実行した後にのみ、このコマンドを使用することをお勧めします。
 
 >[!WARNING]
 >
->**このオプションを定期的に使用しない**. Adobe Commerce サービスでデータ同期の問題が発生する可能性があります。 例： `delete product event` 次の場合、Adobe Commerce サービスには反映されない可能性があります `cleanup` オプションが使用されます。
+>**このオプションを定期的に使用しないでください**。 Adobe Commerce サービスでデータ同期の問題が発生する可能性があります。 例えば、`cleanup` オプションを使用すると、`delete product event` がAdobe Commerce サービスに反映されない可能性があります。
 
 ## トラブルシューティング
 
-接続されたCommerce サービスに期待されるデータが表示されない場合は、データの書き出しのエラーログを確認し、を使用して、問題のトラブルシューティングを行います `saas:resync` ペイロードとプロファイラーのデータを確認するために、環境変数を指定してコマンドを実行します。 参照： [ログの確認とトラブルシューティング](troubleshooting-logging.md).
+接続されたCommerce サービスに期待されるデータが表示されない場合は、データの書き出しエラーログを確認し、`saas:resync` コマンドを環境変数と共に使用してペイロードとプロファイラーのデータを確認することで、問題のトラブルシューティングを行います。 [ ログの確認とトラブルシューティング ](troubleshooting-logging.md) を参照してください。

@@ -16,6 +16,6 @@ ht-degree: 0%
 
 - [SaaS 価格インデックス作成の概要](price-indexing.md)
 - [カタログアダプタ](catalog-adapter.md)
-- [Commerce サービスに戻る](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Commerce サービスに戻る ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
 
 

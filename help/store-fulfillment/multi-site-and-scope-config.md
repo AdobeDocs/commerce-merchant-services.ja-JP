@@ -1,41 +1,41 @@
 ---
-title: 複数の Web サイトおよび範囲の設定
-description: 複数の Web サイトやストア範囲の在庫と配信方法を設定します。
+title: 複数の Web サイトとスコープの設定
+description: 複数の web サイトおよびストア範囲の在庫および配信方法を設定します。
 role: Admin
 level: Experienced
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
 
-# 複数の Web サイトおよび範囲の設定
+# 複数の Web サイトとスコープの設定
 
-次の設定が可能です。 [範囲](https://docs.magento.com/user-guide/configuration/scope.html) 複数の web サイト、ストア、ストアの表示を収容するいくつかの要素の場合：
+複数の web サイト、ストア、ストアビューに対応するために、いくつかの要素に対して [ 範囲 ](https://docs.magento.com/user-guide/configuration/scope.html) を設定できます。
 
-- [在庫の管理](https://docs.magento.com/user-guide/catalog/inventory-stock.html) 範囲ごと
+- 範囲ごとの [ 在庫の管理 ](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
 
-- 管理 [!DNL Delivery Methods] 範囲ごと
+- 範囲ごとに [!DNL Delivery Methods] を管理
 
-在庫は、Web サイトまたは店舗の範囲に割り当てることができます。 次に、ストアのソースを更新して、使用可能な配信方法（ホーム配信、ストアピックアップ）を設定します。
+Web サイトまたはストア範囲に在庫を割り当てることができます。 次に、店舗のソースを更新して、使用可能な配信方法（宅配、店舗の受け取り）を設定します。
 
-設定が正常に更新された後、Adobe Commerceストアフロントの製品の詳細ページ (PDP) のストアのピックアップオプションは、ストアのピックアップを許可する在庫ソースから利用可能な製品に対してのみ選択できます。
+コンフィギュレーションを正常に更新した後、Adobe Commerce ストアフロントの商品詳細ページ（PDP）の店舗受取オプションは、店舗受取を許可する在庫ソースから入手できる商品に対してのみ選択できます。
 
-## ストア内ピックアップ設定の管理
+## 店舗ピックアップ設定の管理
 
-を有効または無効にする [!UICONTROL In-Store Pickup] 各 web サイトまたはストア範囲のオプション [配信方法の設定](enable-general.md#delivery-methods) 」と入力します。
+管理の [ 配信方法の設定 ](enable-general.md#delivery-methods) で、各 web サイトまたはストア範囲の [!UICONTROL In-Store Pickup] のオプションを有効または無効にします。
 
-1. に移動します。 **[!UICONTROL Stores > Configuration]**.
+1. **[!UICONTROL Stores > Configuration]** に移動します。
 
-1. 設定する範囲（保存する Web サイト）を選択します。
+1. 設定する範囲（格納する web サイト）を選択します。
 
-1. 範囲を選択した状態で、に移動します。 **[!UICONTROL Sales > Delivery Methods]**.
+1. 範囲を選択した状態で、**[!UICONTROL Sales > Delivery Methods]** に移動します。
 
-1. を無効または有効にする **[!UICONTROL In-Store Pickup]** 配信方法。
+1. **[!UICONTROL In-Store Pickup]** 配信メソッドを無効または有効にします。
 
-また、このセクションでは、カーブサイドまたは店内でのピックアップをグローバルに使用できるかどうかを管理できます。
+また、このセクションでは、カーブサイドまたは店舗での受け取りをグローバルに利用できるかどうかを管理できます。
 
-の管理 [!UICONTROL In-Store Pickup] および [!UICONTROL Delivery Method] 在庫ソースごとの設定。 実装を完全に柔軟におこなうには、他にも多数の設定が存在します。
+在庫ソースごとに [!UICONTROL In-Store Pickup] と [!UICONTROL Delivery Method] の設定を管理します。 実装に対する完全な柔軟性を実現するために、その他の設定は数多く存在します。

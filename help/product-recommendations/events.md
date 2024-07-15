@@ -1,6 +1,6 @@
 ---
 title: データを収集
-description: イベントが商品レコメンデーションのデータを収集する方法を説明します。
+description: イベントで製品レコメンデーションのデータを収集する方法を説明します。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
 source-git-commit: 7ed9321a2f4e58a7476aa91e74611fe896e1a7b1
@@ -12,40 +12,48 @@ ht-degree: 0%
 
 # データを収集
 
-SaaS ベースのAdobe Commerce機能 ( [製品Recommendations](install-configure.md) または [ライブ検索](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html)を使用する場合、モジュールは行動データ収集をストアフロントにデプロイします。 このメカニズムは、匿名化された行動データを買い物客から収集し、製品のレコメンデーションを強化します。 例えば、 `view` イベントは、 `Viewed this, viewed that` レコメンデーションタイプ、および `place-order` イベントは、 `Bought this, bought that` レコメンデーションタイプ。
+[Product Recommendations](install-configure.md) や [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) などの SaaS ベースのAdobe Commerce機能をインストールして設定すると、行動データ収集がストアフロントにデプロイされます。 このメカニズムにより、匿名化された行動データが買い物客から収集され、製品レコメンデーションが強化されます。 例えば、`view` イベントは `Viewed this, viewed that` レコメンデーションタイプの計算に使用され、`place-order` イベントは `Bought this, bought that` レコメンデーションタイプの計算に使用されます。
 
 >[!NOTE]
 >
->製品レコメンデーションを目的としたデータ収集には、個人を特定できる情報 (PII) は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は厳密に匿名化されます。 学ぶ [その他](https://www.adobe.com/privacy/experience-cloud.html).
+>製品レコメンデーションのためのデータ収集には、個人を特定できる情報（PII）は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は、厳密に匿名化されます。 詳細情報 [ 詳細情報 ](https://www.adobe.com/privacy/experience-cloud.html)。
 
-次のイベントは、Product Recommendationsに固有のものではありませんが、結果を返すために必要になります。
+次のイベントは、製品Recommendationsに固有ではありませんが、結果を返すために必要です。
 
 - `view`
 - `add-to-cart`
 - `place-order`
 
-The [Adobe Commerce Storefront イベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) ストアフロントにデプロイされたすべてのイベントの一覧が表示されます。 ただし、このリストからは、Product Recommendationsに固有のイベントのサブセットが得られます。 これらのイベントは、買い物客がストアフロントでレコメンデーション単位を操作する際にデータを収集し、レコメンデーションのパフォーマンスを分析するのに役立つ指標を活用します。
+[Adobe Commerce ストアフロントイベントコレクター ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) には、ストアフロントにデプロイされたすべてのイベントが一覧表示されます。 ただし、このリストからは、製品Recommendationsに固有のイベントのサブセットがあります。 これらのイベントは、買い物客がストアフロントでレコメンデーションユニットとやり取りする際にデータを収集し、レコメンデーションのパフォーマンスを分析するのに役立つ指標を強化します。
 
-| イベント | 説明 | 指標に使用されますか？ |
+| イベント | 説明 | 指標に使用しますか？ |
 | --- | --- | --- |
-| `impression-render` | レコメンデーション単位は、ページ上にレンダリングされます。 | はい |
-| `rec-add-to-cart-click` | 顧客が **買い物かごに追加** ボタンを使用して、レコメンデーション単位の品目を表示できます。 | はい、 **買い物かごに追加** ボタンが recommendations テンプレートに存在することを確認します。 |
-| `rec-click` | 顧客がレコメンデーション単位で商品をクリックします。 | はい |
-| `view` | レコメンデーションユニットは、ビューにスクロールして表示するなど、ページ上で表示可能になります。 | はい |
+| `impression-render` | レコメンデーションユニットがページ上にレンダリングされます。 | はい |
+| `rec-add-to-cart-click` | 顧客が、レコメンデーションユニット内の項目の **買い物かごに追加** ボタンをクリックする。 | はい。「**買い物かごに追加**」ボタンがレコメンデーションテンプレートに表示されている場合は有効です。 |
+| `rec-click` | 顧客は、レコメンデーションユニット内の製品をクリックします。 | はい |
+| `view` | レコメンデーションユニットは、スクロールして表示するなど、ページ上で表示可能になる。 | はい |
 
-ダッシュボードに適切に入力するには、次のイベントが必要です。
-| ダッシュボード列 | イベント | フィールドを結合 | | — | — | — | | Impressions |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId | | 件数 |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId | | クリック数 |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`    | unitId | | 売上高 |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku | | LT 収益 |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku | | CTR |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | unitId, sku | | vCTR |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
+ダッシュボードに正しくデータを入力するには、次のイベントが必要です。
+| ダッシュボード列 | イベント    |結合フィールド  |
+| ---------------- | --------- | ----------- |
+| インプレッション数      |`page-view`、`recs-request-sent`、`recs-response-received`、`recs-unit-render` | unitId  |
+|回表示            |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId  |
+| クリック数           |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`    | unitId  |
+|売上高          |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId、sku |
+|長期売上高       |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId、sku |
+| CTR              |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | unitId、sku |
+| vCTR             |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId、sku |
 
-ストアフロントがPWA Studioで実装されている場合は、 [PWA文書](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). React や Vue JS などのカスタムフロントエンドテクノロジーを使用する場合は、ユーザーガイドを参照して、 [ヘッドレスの製品Recommendations](headless.md) 環境。
+ストアフロントがPWA Studioを使用して実装されている場合は、[PWAドキュメント ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) を参照してください。 React や Vue JS などのカスタムフロントエンドテクノロジーを使用している場合は、ユーザーガイドを参照して、[Product Recommendationsをヘッドレス ](headless.md) 環境に統合する方法を確認してください。
 
 ## 注意事項
 
-広告ブロッカーやプライバシー設定が `magento/product-recommendations` イベントのキャプチャからモジュールを削除し、エンゲージメントと売上高を引き起こす可能性がある [指標](workspace.md) 過少報告される
+広告ブロッカーとプライバシー設定は、`magento/product-recommendations` モジュールがイベントをキャプチャするのを防ぎ、エンゲージメントと売上高 [ 指標 ](workspace.md) が過小報告される可能性があります。
 
-イベンティングは、商人のサイトで発生するすべてのトランザクションをキャプチャするわけではありません。 イベンティングは、サイト上で発生しているイベントに関する一般的なアイデアを商人に与えることを目的としています。
+イベントは、マーチャントサイトで発生するすべてのトランザクションを取り込むわけではありません。 イベントは、サイト上で発生しているイベントの一般的な考えをマーチャントに提供することを目的としています。
 
-ヘッドレス実装では、製品のRecommendationsダッシュボードを強化するために、イベンティングを実装する必要があります。
+ヘッドレス実装では、製品Recommendationsダッシュボードを強化するためにイベンティングを実装する必要があります。
 
 >[!NOTE]
 >
->次の場合 [Cookie 制限モード](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、Adobe Commerceは買い物客が cookie の使用を同意するまで行動データを収集しません。 「Cookie Restriction Mode」が無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。

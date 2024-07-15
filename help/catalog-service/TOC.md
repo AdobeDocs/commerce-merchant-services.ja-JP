@@ -1,6 +1,6 @@
 ---
 user-guide-title: 「[!DNL Catalog Service] ガイド」
-user-guide-description: 「このガイドでは、を使用する詳細な手順を説明します [!DNL Catalog Service] Adobe Commerceのために」
+user-guide-description: 「このガイドでは、 [!DNL Catalog Service] for Adobe Commerce」を使用するための詳細な手順を説明します。
 breadcrumb-title: 「[!DNL Catalog Service] ガイド」
 hide: true
 role: Admin
@@ -12,17 +12,17 @@ ht-degree: 10%
 
 ---
 
-# [!DNL Catalog Service] Adobe Commerceの場合 {#catalog-service}
+# Adobe Commerceの [!DNL Catalog Service] {#catalog-service}
 
 - [ガイドの概要](guide-overview.md)
-- [の概要 [!DNL Catalog Service]](overview.md)
+- [概要  [!DNL Catalog Service]](overview.md)
 - [オンボーディングとインストール](installation.md)
 - [カタログサービスと API メッシュ](mesh.md)
 - [API メッシュを使用した課税価格の表示](taxes.md)
 - GraphQL クエリ {#graphql}
-   - [カテゴリクエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
-   - [製品クエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
-   - [productSearch クエリ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
-   - [refineProduct クエリ](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
+   - [ カテゴリクエリ ](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
+   - [ 製品クエリ ](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
+   - [productSearch クエリ ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
+   - [refineProduct クエリ ](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [リリースノート](release-notes.md)
-- [Commerce サービスに戻る](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/home)
+- [Commerce サービスに戻る ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/home)

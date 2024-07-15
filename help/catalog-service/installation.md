@@ -1,6 +1,6 @@
 ---
 title: オンボーディングとインストール
-description: 「インストール方法を学ぶ [!DNL Catalog Service]“
+description: 「インストール方法を説明  [!DNL Catalog Service]」
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
 source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # オンボーディングとインストール
 
-カタログサービスをインストールし、を使用してCommerce インスタンスから商品データをリクエストおよび受信する [Catalog Service GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/). カタログサービスは、repo.magento.com リポジトリからコンポーザメタパッケージとして提供されます。
+カタログサービスをインストールし、[Catalog Service GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/) を使用してCommerce インスタンスから商品データをリクエストし、受け取ります。 カタログサービスは、repo.magento.com リポジトリからコンポーザメタパッケージとして提供されます。
 
 >[!NOTE]
 >
->Commerce インスタンスで Live Search または Product Recommendationsを使用している場合は、サービスのオンボーディングまたはアップグレードの際に、Catalog Service のインストールまたは更新が自動的に行われます。 詳しくは、のインストール手順を参照してください [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) および [製品のRecommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure).
+>Commerce インスタンスで Live Search または Product Recommendationsを使用している場合は、サービスのオンボーディングまたはアップグレードの際に、Catalog Service のインストールまたは更新が自動的に行われます。 詳しくは、[Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) および [Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) のインストール手順を参照してください。
 
 
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 - PHP 8.1、8.2、8.3
 - コンポーザー：2.x
 
-**サポートされるプラットフォーム**
+**サポートされているプラットフォーム**
 
 - クラウドインフラストラクチャー上のAdobe Commerce:2.4.4 以降
 - Adobe Commerce オンプレミス：2.4.4 以降
@@ -36,18 +36,18 @@ ht-degree: 0%
 
 [!DNL Catalog Service] には、オンボーディングに使用できる 2 つのエンドポイントがあります。
 
-- サンドボックス （`https://catalog-service-sandbox.adobe.io/graphql`）：運用開始前のテストおよび検証に使用
-- 実稼動（`https://catalog-service.adobe.io/graphql`） – Commerceのマーチャントおよび web サイトのライブトラフィックに使用します。
+- サンドボックス（`https://catalog-service-sandbox.adobe.io/graphql`） – 運用開始前のテストと検証に使用
+- 実稼動（`https://catalog-service.adobe.io/graphql`） - Commerceのマーチャントおよび web サイトのライブトラフィックに使用します。
 
 すべてのCommerce テストインスタンスは、サンドボックス エンドポイントを使用します。
 
-サンドボックスエンドポイントですべての負荷テストを実行します。 負荷テストを開始する前に、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) そのため、サービスチームは、追加のサーバートラフィックを予測することができます。
+サンドボックスエンドポイントですべての負荷テストを実行します。 負荷テストを開始する前に、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) を送信して、サービスチームが追加のサーバートラフィックを予測できるようにします。
 
 ## インストールと設定
 
-を使用するには [!DNL Catalog Service] Adobe Commerceには、次の手順が必要です。
+Adobe Commerceの [!DNL Catalog Service] を使い始めるには、次の手順が必要です。
 
-- カタログサービス拡張機能（`magento/catalog-service`）
+- カタログサービス拡張機能（`magento/catalog-service`）のインストール
 - サービスとデータの書き出しの設定
 - サービスへのアクセス
 
@@ -57,25 +57,25 @@ ht-degree: 0%
 
 **前提条件**
 
-- アクセス [repo.magento.com](https://repo.magento.com) をクリックして拡張機能をインストールします。 キーの生成と必要な権限の取得については、を参照してください。 [認証キーの取得](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). クラウドインストールについては、を参照してください [クラウドインフラストラクチャー上のCommerce ガイド](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+- [repo.magento.com](https://repo.magento.com) にアクセスして、拡張機能をインストールします。 キーの生成と必要な権限の取得については、[ 認証キーの取得 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) を参照してください。 クラウドインストールについては、[Commerce on Cloud Infrastructure ガイドを参照してください ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
 - Adobe Commerce アプリケーションサーバーのコマンドラインにアクセスします。
 
 >[!ENDSHADEBOX]
 
-カタログサービス拡張機能の最新バージョン（`magento/catalog-service`Adobe Commerce Adobe Commerce）を選択する必要があります。 カタログサービスは、 [repo.magento.com](https://repo.magento.com) リポジトリ。
+Adobe Commerce バージョン 2.4.4 以降が稼働しているAdobe Commerce インスタンスに、最新バージョンのカタログサービス拡張機能（`magento/catalog-service`）をインストールします。 カタログサービスは、[repo.magento.com](https://repo.magento.com) リポジトリからコンポーザメタパッケージとして提供されます。
 
 >[!BEGINTABS]
 
->[!TAB クラウドインフラストラクチャ]
+>[!TAB  クラウドインフラストラクチャ ]
 
-このメソッドを使用して、 [!DNL Catalog Service] Commerce Cloudインスタンスの場合。
+このメソッドを使用して、Commerce Cloudインスタンスの [!DNL Catalog Service] をインストールします。
 
 1. ローカルワークステーションで、Adobe Commerce on cloud infrastructure プロジェクトのプロジェクトディレクトリに移動します。
 
    >[!NOTE]
    >
-   >Commerce プロジェクト環境のローカル管理については、を参照してください。 [CLI によるブランチの管理](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) が含まれる _Adobe Commerce on Cloud Infrastructure ユーザーガイド_.
+   >Commerce Adobe Commerce プロジェクト環境のローカル管理について詳しくは、_クラウドインフラストラクチャユーザーガイドの [CLI を使用したブランチの管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) を参照してください_。
 
 1. Adobe Commerce Cloud CLI を使用して更新する環境ブランチを確認します。
 
@@ -95,9 +95,9 @@ ht-degree: 0%
    composer update "magento/catalog-service"
    ```
 
-1. のコード変更をコミットしてプッシュします `composer.json` および `composer.lock` ファイル。
+1. `composer.json` ファイルと `composer.lock` ファイルのコード変更をコミットしプッシュします。
 
-1. のコード変更の追加、コミット、プッシュ `composer.json` および `composer.lock` ファイルをクラウド環境に送信します。
+1. `composer.json` ファイルと `composer.lock` ファイルのコード変更を追加、コミットし、クラウド環境にプッシュします。
 
    ```shell
    git add -A
@@ -105,11 +105,11 @@ ht-degree: 0%
    git push origin <branch-name>
    ```
 
-   更新をクラウド環境にプッシュすると、が開始されます [Commerce cloud のデプロイメントプロセス](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) 変更を適用します。 からデプロイメントステータスを確認します。 [ログをデプロイ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   アップデートをクラウド環境にプッシュすると、[Commerce クラウドデプロイメントプロセスが開始され ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) 変更が適用されます。 [ デプロイメントログ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) からデプロイメントステータスを確認します。
 
->[!TAB オンプレミス]
+>[!TAB  オンプレミス ]
 
-このメソッドを使用して、 [!DNL Catalog Service] オンプレミスのインスタンスの場合。
+オンプレミスのインスタンスに [!DNL Catalog Service] をインストールするには、この方法を使用します。
 
 1. Composer を使用して、Catalog Service モジュールをプロジェクトに追加します。
 
@@ -143,42 +143,42 @@ ht-degree: 0%
 
 ### サービスとデータの書き出しの設定
 
-をインストールしたら、 [!DNL Catalog Service]カタログサービスをAdobe Commerce インスタンスに統合するには、次のタスクを実行します。 この統合により、Commerce インスタンス、カタログサービスおよびその他のサポートサービス間のデータ同期と通信が可能になります。
+[!DNL Catalog Service] をインストールしたら、次のタスクを実行してカタログサービスをAdobe Commerce インスタンスに統合します。 この統合により、Commerce インスタンス、カタログサービスおよびその他のサポートサービス間のデータ同期と通信が可能になります。
 
-1. の設定 [Commerce サービスコネクタ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) API キーを指定し、SaaS データ空間を選択する。
+1. API キーを指定し、SaaS データ空間を選択して ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas)0}Commerce サービスコネクタ } を設定します。[
 
    Commerce Services Connector のセットアップは、カタログサービス、ライブ検索、製品RecommendationsなどのAdobe Commerce サービスを使用するために必要な 1 回限りのプロセスです。 別のサービス用にコネクタを既に設定している場合は、この手順をスキップします。
 
-1. からの初期データ同期の実行 [データ管理ダッシュボード](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+1. [ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) から初期データ同期を実行します。
 
    カタログのサイズに応じて、最初の同期に数分から数時間かかる場合があります。 同期ステータスは、データ管理ダッシュボードから監視できます。 最初の同期の後、カタログは、サービスを最新の状態に保つために、継続的に製品データを書き出します。
 
    >[!NOTE]
    >
-   >Commerce CLI を使用して、コマンドラインから初期同期を開始することもできます。 参照： [初期同期](../data-export/data-export-cli-commands.md#initial-sync) が含まれる _SaaS データ エクスポート ガイド_.
+   >Commerce CLI を使用して、コマンドラインから初期同期を開始することもできます。 [SaaS データ書き出しガイド ](../data-export/data-export-cli-commands.md#initial-sync) の _初期同期_ を参照してください。
 
 カタログの書き出しが正しく実行されていることを確認するには：
 
-- [Cron ジョブが実行中であることを確認](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
-- インデクサーがから実行されていることを確認 [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) または、Commerce CLI コマンドを使用します `bin/magento indexer:info`.
-- を確認します `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、および `Product Variant Feed` インデクサーはに設定されています。 `Update by Schedule`.
+- [cron ジョブが実行中であることを確認 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- インデクサーが [ 管理者 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) から、またはCommerce CLI コマンド `bin/magento indexer:info` ールを使用して実行されていることを確認します。
+- `Catalog Attributes Feed, Product Feed, Product Overrides Feed` と `Product Variant Feed` のインデクサーが `Update by Schedule` に設定されていることを確認します。
 
 ### サービスへのアクセス
 
-この [!DNL Catalog Service] GraphQL API には、 ` https://catalog-service.adobe.io/graphql` https 経由でPOSTコマンドを使用するエンドポイント
+[!DNL Catalog Service] GraphQL API には、` https://catalog-service.adobe.io/graphql` エンドポイントから、POSTコマンドを使用して HTTPS でアクセスできます。
 
-GraphQL クエリでは、管理者でAdobe Commerce サービスコネクタ設定に追加した公開 API キーを含む、複数の HTTP ヘッダーを指定する必要があります。 詳しくは、を参照してください [ストアフロントサービスGraphQL](https://developer.adobe.com/commerce/services/graphql/) ドキュメント。
+GraphQL クエリでは、管理者でAdobe Commerce サービスコネクタ設定に追加した公開 API キーを含む、複数の HTTP ヘッダーを指定する必要があります。 詳しくは、[ ストアフロントサービスGraphQL](https://developer.adobe.com/commerce/services/graphql/) ドキュメントを参照してください。
 
 ### ファイアウォール設定
 
-許可する [!DNL Catalog Service] ファイアウォールを使用して、次を追加します `commerce.adobe.io` を許可リストに追加します。
+ファイアウォールを通過する [!DNL Catalog Service] を許可するには、`commerce.adobe.io` を許可リストに追加します。
 
 ## カタログサービスと API メッシュ
 
-この [Adobe Developer App Builderの API メッシュ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、開発者は、プライベートまたはサードパーティの API およびその他のインターフェイスを、Adobe IO を使用するAdobe製品と統合できます。
+Adobe Developer App Builderの [API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、開発者は、プライベートまたはサードパーティの API およびその他のインターフェイスを、Adobe IO を使用するAdobe製品と統合できます。
 
-を参照してください。 [[!DNL Catalog Service] と API メッシュ](mesh.md) インストールと設定の詳細に関するトピック。
+インストールと設定について詳しくは、[[!DNL Catalog Service]  および API メッシュ ](mesh.md) に関するトピックを参照してください。
 
 ## データ管理ダッシュボード
 
-詳しくは、 [!DNL Catalog Service] データ同期については、を参照してください。 [データ管理ダッシュボード](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+データの同期について詳 [!DNL Catalog Service] くは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) を参照してください。

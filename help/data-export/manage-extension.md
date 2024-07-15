@@ -1,27 +1,28 @@
 ---
-title: "[!DNL Manage the Data Export extension]"
-description: 「をアップグレードする方法を学ぶ [!DNL Data Export] 不要なデータ書き出しサービスを削除または無効にするための、およびの拡張。」
+title: '[!DNL Manage the Data Export extension]'
+description: 拡張機能をアップグレードする方法と  [!DNL Data Export]  不要なデータ書き出しサービスを削除または無効にする方法について説明します。
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: d2326673-0f82-4266-bf56-74d55e32fcab
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
 
 ---
 
-
 # SaaS データ書き出し拡張機能の管理
 
-この [!DNL data export] saaS サービスの拡張機能は、Adobe Commerceと接続されたCommerce サービス間のデータ収集と同期を可能にするモジュールの集まりです。
+SaaS サービスの [!DNL data export] 拡張機能は、Adobe Commerceと接続されたCommerce サービスの間でデータ収集と同期を可能にするモジュールの集まりです。
 
-特定のモジュールは、次のようなAdobe Commerce サービス拡張機能のメタパッケージに含まれています [Live Search](/help/live-search/overview.md), [製品のRecommendations](/help/product-recommendations/overview.md)、および [カタログサービス](/help/catalog-service/overview.md). これらのサービスを使用している場合、データの書き出し拡張機能を有効にするために別のインストールは必要ありません。
+Adobe Commerce サービス拡張機能のメタパッケージには、次のような特定のモジュールが含まれています
+[Live Search](/help/live-search/overview.md)、[Product Recommendations](/help/product-recommendations/overview.md)、および [ カタログサービス ](/help/catalog-service/overview.md) として。 これらのサービスを使用している場合、データの書き出し拡張機能を有効にするために別のインストールは必要ありません。
 
 ## Commerceのデータ書き出し機能を削除または無効にする
 
-インストールされているコマースデータ書き出しモジュールが必要ない場合は、を使用します。 `magento:module:disable` CLI コマンドを使用して無効にします。
+インストールされているコマースデータ書き出しモジュールが必要ない場合は、`magento:module:disable` CLI コマンドを使用して無効にします。
 
-例えば、 [Categories API](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) は、カテゴリ権限フィードデータを内部的に使用します。 この API を使用していない場合は、カテゴリ権限フィードのデータ書き出しを無効にできます。
+例えば、カテゴリ権限フィードデータを内部的に使用する [Categories API](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) があります。 この API を使用していない場合は、カテゴリ権限フィードのデータ書き出しを無効にできます。
 
 ```shell script
 bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCategoryPermissions
@@ -39,8 +40,4 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
    composer require magento/module-saas-price:103.3.1 --with-all-dependencies
    ```
 
-Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 参照： [拡張機能のアップグレード](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) が含まれる _クラウドインフラストラクチャー上のAdobe Commerce ガイド_.
-
-
-
-
+Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 [2}Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) 拡張機能のアップグレード _を参照してください。_

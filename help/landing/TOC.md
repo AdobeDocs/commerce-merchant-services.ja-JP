@@ -26,12 +26,12 @@ ht-degree: 43%
    - [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
    - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
    - [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
-- 統合サービス {#integration-services}
+- Integration services {#integration-services}
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
    - [サービスコネクタ](/help/landing/saas.md)
-- データツール {#data-services}
-   - [SaaS データ エクスポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
-   - [SaaS 価格インデックス作成](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
+- データ ツール {#data-services}
+   - [SaaS データのエクスポート ](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
+   - [SaaS 価格インデックス作成 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
    - [カタログ同期](/help/landing/catalog-sync.md)
 
 

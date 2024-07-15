@@ -1,55 +1,55 @@
 ---
 title: ストアフルフィルメントサービスのオンボーディングの概要
-description: '[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限事項について説明します。'
+description: '[!DNL Live Search] オンボーディングフロー、システム要件、境界、制限」'
 role: Admin, Leader
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
 
-# ストアのフルフィルメントのオンボーディングの概要
+# ストアフルフィルメントのオンボーディングの概要
 
-の基本を学ぶ [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 次のコンポーネントを設定、設定および有効化する。
+[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] の基本を学ぶには、次のコンポーネントを設定、設定および有効にします。
 
-- **Store Fulfilment 拡張機能** — このサードパーティの拡張機能をAdobe Commerceインスタンスにインストールして設定します。 インストール後、管理者からサポートするストアフルフィルメントソリューションを設定および管理できます [!DNL buys online, pickup in store] (BOPIS) シナリオが Commerce ストアフロントに表示されます。
+- **ストアフルフィルメント拡張機能** – このサードパーティ製拡張機能をAdobe Commerce インスタンスにインストールして設定します。 インストール後、管理者からストアフルフィルメントソリューションを設定および管理して、Commerce ストアフロントの [!DNL buys online, pickup in store] （BOPI）シナリオをサポートできます。
 
-  ![[!DNL Store Fulfillment Service] 管理ビューでの設定](assets/store-fulfillment-admin-home.png)
+  管理ビューの ![[!DNL Store Fulfillment Service] 設定 ](assets/store-fulfillment-admin-home.png)
 
-- **フルフィルメントアカウントを保存** — 有効化プロセス中に、アカウントマネージャがストアフルフィルメントアカウントを作成し、アカウント情報と認証情報を提供します。 これらの資格情報は、Adobe Commerceとストアフルフィルメントソリューション間の接続を有効にするために必要です。
+- **ストアフルフィルメントアカウント** – 有効化プロセス中に、アカウントマネージャーがストアフルフィルメントアカウントを作成し、アカウント情報と資格情報を提供します。 これらの資格情報は、Adobe Commerceとストアフルフィルメントソリューションの間の接続を有効にするために必要です。
 
-- **ストアアシストアプリ** — ストアをエンドツーエンドのストアフルフィルメントワークフローと関連付けて、モバイルデバイスからの BOPIS 注文を管理します。 Store Associates は Walmart の [!DNL Store Assist] (iOSおよび Android™デバイス用 ) アプリのオンボーディングプロセスは、Walmart Commerce Technologies Client Center によって別のプロセスとして管理されます。 しかし、 [一部のアプリ設定](user-setup.md) は、Adobe Commerce Admin から入力されます。
+- **ストアアシストアプリ** - モバイルデバイスからの BOPI 注文を管理するためのエンドツーエンドのストアフルフィルメントワークフローを店員に提供します。 Store Associates は、iOSおよびAndroid™ デバイス向けのウォルマート [!DNL Store Assist] をダウンロードしてインストールできます。 アプリのオンボーディングプロセスは、ウォルマート Commerce テクノロジーズ クライアントセンターによって別のプロセスとして管理されます。 ただし [ 一部のアプリ設定 ](user-setup.md) は、Adobe Commerce管理者が行います。
 
-  | Store Assist App — はじめに表示 | Store Assist App — モジュールビュー |
+  | ストアアシストアプリ – 概要ビュー | Store Assist App — モジュール表示 |
   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-  | ![[!DNL Store Assist App Getting Started] モバイルデバイスで表示](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] モバイルデバイス上](assets/store-assist-orders-small.png) |
+  | モバイルデバイスの ![[!DNL Store Assist App Getting Started] ビュー ](assets/store-assist-get-started-small.png) | モバイルデバイスで ![[!DNL Store Assist App Orders view] 動 ](assets/store-assist-orders-small.png) |
 
 ## プロビジョニング手順
 
-- **新規登録[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]** — 次のサインアップフォームに入力します： [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)または、Adobe Commerceのアカウントマネージャーにお問い合わせください。
+- **新規登録[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**- [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html) の新規登録フォームに入力するか、Adobe Commerce担当営業または販売店にお問い合わせください。
 
-- **ストアフルフィルメントのプロビジョニングリクエストを開始します** — 担当のアカウントマネージャーから提供された取り込みフォームに入力し、プロビジョニングプロセスの開始に必要な情報を入力します。
+- **Store Fulfillment のプロビジョニングリクエストの開始** - アカウントマネージャーから提供される取り込みフォームに入力して、プロビジョニングプロセスの開始に必要な情報を指定します。
 
-- **ストアフルフィルメントアカウントの資格情報を取得** — ストアフルフィルメントアカウントを作成したら、ストアフルフィルメントソリューションをAdobe Commerceと統合するために必要な資格情報を受け取ります。
+- **ストアフルフィルメントアカウントの資格情報を取得する** – ストアフルフィルメントアカウントが作成されると、ストアフルフィルメントソリューションをAdobe Commerceと統合するために必要な資格情報を受け取ります。
 
-- **[ソースコードをダウンロードして、 [!DNL Store Fulfillment] 拡張](install.md)**
+- **[ソースコードをダウンロードして、拡張機能をインスト  [!DNL Store Fulfillment]  ルする](install.md)**
 
 ## オンボーディング手順
 
-1. [Adobe Commerceの Store Fulfilment 拡張機能のインストール](install.md).
+1. [Adobe Commerceのストアフルフィルメント拡張機能をインストールします ](install.md)。
 
-1. 管理者から、 [解決策を有効にする](enable-general.md).
+1. 管理者で、[ ソリューションを有効にする ](enable-general.md) をクリックします。
 
-1. [Adobe Commerce管理者からの Store Fulfilment 拡張機能の設定](service-config-settings-overview.md).
+1. [Adobe Commerce管理者からストアフルフィルメント拡張機能を設定します ](service-config-settings-overview.md)。
 
-1. [接続する [!DNL Store Fulfillment] 指定されたストアフルフィルメント資格情報を使用したサービス](connect-set-up-service.md).
+1. [ 提供されたストアフルフィルメントの資格情報を使用して  [!DNL Store Fulfillment]  サービスに接続します ](connect-set-up-service.md)。
 
-1. [Store Assist アプリのユーザーとロールの作成](user-setup.md).
+1. [ ストアアシストアプリのユーザーと役割を作成します ](user-setup.md)。
 
-1. [ウォルマートの [!DNL Store Assist] を目的のデバイスに追加します。 このアプリは、Appleアプリ (iOS) とGoogle Play(Android™) の両方で使用できます](app-setup.md) ストア。
+1. [Walmart&#39;s [!DNL Store Assist]  アプリをお好みのデバイスにダウンロードしてください。 このアプリは、Apple アプリ（iOS）とGoogle Play（Android™）の両方のストアで利用 ](app-setup.md) きます。
 
-のインストール、設定、オンボーディングの完了、およびへのアクセス権の取得が完了したら、 [!DNL Store Assist] アプリで、以下を実行できます。 [オーダーとテストの作成を開始します](test-and-deploy.md).
+正常にインストール、設定、オンボーディングを完了し、[!DNL Store Assist] アプリにアクセスできるようになったら、[ 注文の作成とテストを開始 ](test-and-deploy.md) できます。

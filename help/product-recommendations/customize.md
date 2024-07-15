@@ -1,63 +1,63 @@
 ---
-title: カスタマイズ
-description: 製品のレコメンデーションをカスタマイズする方法を説明します。
+title: Customize
+description: 製品レコメンデーションをカスタマイズする方法を説明します。
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
 source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
 
-# カスタマイズ
+# Customize
 
-製品のRecommendationsモジュールをインストールすると、Adobe Commerceは、 `ProductRecommendationsLayout` ディレクトリ。 このディレクトリにはテンプレートファイルが含まれています。このファイルをカスタマイズして、レコメンデーションがストアフロントに表示される方法を変更できます。 特に、次のテンプレートを変更または上書きできます。
+製品Recommendations モジュールをインストールすると、Adobe Commerceによって `ProductRecommendationsLayout` ディレクトリが作成されます。 このディレクトリには、ストアフロントでのレコメンデーションの表示方法を変更するためにカスタマイズできるテンプレートファイルが含まれています。 特に、次のテンプレートを変更または上書きできます。
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-テンプレートファイルの変更について詳しくは、 [テンプレートのカスタマイズ](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) （Frontend 開発者ガイド）を参照してください。
+テンプレートファイルの変更について詳しくは、フロントエンド開発者ガイドの [ テンプレートのカスタマイズ ](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) を参照してください。
 
-次の変更を加えた場合、 `recommendations.html` ファイルに保存する場合、Adobe Commerceがストアフロントからレコメンデーション指標を確実に収集できるように、ファイルで次のタグを保持する必要があります。
+`recommendations.html` ファイルを変更する場合、Adobe Commerceがストアフロントからレコメンデーション指標を収集できるように、ファイルに次のタグを保持する必要があります。
 
-| タグ | 用途 |
+| タグ | 使用方法 |
 |---|---|
 | `<div data-bind="attr : {'data-unit-id' : unitId }"...</div>` | ビューイベントを収集します。 |
-| `<a data-bind="attr : {'data-sku' : sku, 'data-unit-id'}"...</a>` | クリックイベントを収集します。 <br/>**注意：** アンカータグを追加する場合は、これらの属性を含める必要があります。 |
+| `<a data-bind="attr : {'data-sku' : sku, 'data-unit-id'}"...</a>` | クリックイベントを収集します。 <br/>**メモ：** アンカータグを追加する場合は、これらの属性を含める必要があります。 |
 
-また、 `recommendations.html` ファイル、 `ProductRecommendationsLayout` ディレクトリには、次のサブディレクトリが含まれます。
+`recommendations.html` ファイルに加えて、`ProductRecommendationsLayout` ディレクトリには次のサブディレクトリが含まれています。
 
 | ディレクトリ | 目的 |
 |---|---|
-| `layout` | 次を含む `*.xml` 各ページタイプのファイル |
-| `templates` | フェッチおよびレンダリングスクリプトを呼び出すファイルを含みます |
-| `web/js` | ストアのレコメンデーションを取得してレンダリングする JavaScript ファイルを含みます |
-| `web/template` | 次のテンプレートを含む： `magento/product-recommendations` モジュール |
+| `layout` | 各ページタイプの `*.xml` ファイルが含まれます |
+| `templates` | fetch スクリプトと render スクリプトを呼び出すファイルが含まれます |
+| `web/js` | ストアのレコメンデーションを取得およびレンダリングするJavaScript ファイルが含まれます |
+| `web/template` | `magento/product-recommendations` モジュールのテンプレートが含まれます |
 
-## レコメンデーション単位の位置付け
+## レコメンデーションユニットの配置
 
-次の場合： [作成](create.md) レコメンデーションの場合は、次を指定します。 [場所](placement.md) ページ上で表示される場所です。 レコメンデーションユニットは、メインコンテンツコンテナの上部または下部に配置できます。 ただし、この配置はカスタマイズできます。 ページビルダーのレコメンデーションコンテンツタイプを作成する場合、ページビルダーツールを使用して、レコメンデーション単位をページ上に配置します。 その他のすべてのページタイプについては、 `*.xml` レコメンデーションの作成時に生成されるファイル。
+レコメンデーションを [ 作成 ](create.md) する際には、ページ上に表示される [ 場所 ](placement.md) を指定します。 レコメンデーションユニットは、メインコンテンツコンテナの上部または下部に配置できます。 ただし、このプレースメントをカスタマイズすることはできます。 ページビルダーのレコメンデーションコンテンツタイプを作成する場合は、ページビルダーツールを使用して、ページ上にレコメンデーション単位を配置します。 その他のすべてのページタイプについては、レコメンデーションの作成時に生成される `*.xml` ファイルを編集します。
 
-1. 次に変更： `layout` ディレクトリ：
+1. `layout` ディレクトリに移動します。
 
    ```bash
    cd `<your theme>/Magento_ProductRecommendationsLayout/layout`
    ```
 
-   次の表に、このディレクトリに存在する XML ファイルの一覧を示します。
+   次の表に、このディレクトリに存在する XML ファイルを示します。
 
    | ファイル名 | ページ |
    |---|---|
    | `catalog_category_view.xml` | カテゴリ |
    | `catalog_product_view.xml` | 製品の詳細 |
-   | `checkout_cart_index.xml` | 買い物かご |
+   | `checkout_cart_index.xml` | カート |
    | `checkout_onepage_success.xml` | チェックアウト |
    | `cms_index_index.xml` | ホーム |
 
    >[!NOTE]
    >
-   >のファイル名 `layout` ストアでサードパーティの拡張機能を使用する場合は、ディレクトリが異なる可能性があります。
+   >ストアでサードパーティの拡張機能を使用している場合、`layout` ディレクトリのファイル名が異なる可能性があります。
 
-1. を変更します。 `catalog_product_view.xml` ファイルを作成して、商品の詳細ページの商品の画像の後にレコメンデーション単位を表示するようにします。 この XML ファイルをカスタマイズする前に、ファイルを見て、変更する必要のあるセクションを理解しておきましょう。
+1. レコメンデーションユニットが製品の詳細ページの製品画像の後に表示されるように、`catalog_product_view.xml` ファイルを変更します。 この XML ファイルをカスタマイズする前に、ファイルを確認し、変更する必要があるセクションを理解してください。
 
    ```xml
    <?xml version="1.0"?>
@@ -77,11 +77,11 @@ ht-degree: 0%
    </page>
    ```
 
-   上記のスニペットでは、 `main.content` 参照ブロックは、レコメンデーション単位が、その要素を基準としたどこかに配置されることを示します。 Its `block` 要素に次を含む `after="-"` 属性：レコメンデーション単位がページのメインコンテンツブロックの後に表示されるように指定します。
+   上記のスニペットでは、`main.content` 参照ブロックは、レコメンデーションユニットがその要素に関連する場所に配置されることを示しています。 `block` 要素には `after="-"` 属性が含まれます。この属性は、レコメンデーションユニットがメインコンテンツブロックの後のページに表示されることを指定します。
 
 1. 別のコンテンツブロックを指定して、このファイルを変更します。
 
-   参照ブロックを変更する `name` から `main.content` から `product.info.media`.
+   参照ブロック `name` を `main.content` から `product.info.media` に変更します。
 
    ```xml
    <?xml version="1.0"?>
@@ -101,22 +101,22 @@ ht-degree: 0%
    </page>
    ```
 
-   この変更により、レコメンデーション単位が、製品の詳細ページで製品の画像の後に表示されるようになります。 レコメンデーション単位を `product.info.media`、 `after="-"` 属性 `before="-"`. The `pagePlacement` 引数は、変更しない内部引数です。
+   この変更により、レコメンデーションユニットが製品の詳細ページの製品画像の後に表示されます。 レコメンデーションユニットを `product.info.media` の前に表示する場合は、`after="-"` 属性を `before="-"` に変更します。 `pagePlacement` 引数は内部引数であり、変更しないでください。
 
-参照： [レイアウトの概要](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) を参照してください。
+ページ上のブロックのタイプについて詳しくは、[ レイアウトの概要 ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) を参照してください。
 
 ## カスタム製品属性
 
-開発者は、多くの場合、ストアフロントのレコメンデーション単位のカスタム製品属性値にアクセスし、それらの属性に基づく製品に視覚的な処理を追加できる必要があります。
+開発者は、多くの場合、ストアフロントの Recommendations 単位のカスタム製品属性値にアクセスして、それらの属性に基づいて製品に視覚的処理を追加する必要があります。
 
-例えば、店舗で一部のオーガニック製品を販売している場合、それらの製品に対してカスタム属性を設定し、 `Organic = Yes`. ストアフロントでこの属性値にアクセスして、これらの製品がRecommendationsに表示されたときに特別な視覚的処理を行うことができるようにする必要がある場合があります。 同様に、これらのカスタム製品属性値にアクセスすると、サイトのプレゼンテーションレイヤーで製品にバッジを付けたり、カスタムロジックを駆動したりできます。
+例えば、店舗で一部のオーガニック製品を販売している場合、それらの製品を `Organic = Yes` として指定するカスタム属性がある可能性があります。 これらの商品がRecommendationsに表示されたときに特別な視覚的な処理を行うために、ストアフロントでこの属性値にアクセスする必要がある場合があります。 同様に、これらのカスタム製品属性値にアクセスすると、製品のバッジを付けたり、サイトのプレゼンテーションレイヤーでカスタムロジックを推進したりできます。
 
-![バッジを追加](assets/unit-custom.png)
+![ バッジを追加 ](assets/unit-custom.png)
 
-ページでレコメンデーション単位をレンダリングする際にカスタム製品属性が使用可能であることを確認するには、 `Used in Product Listing` プロパティを `Yes` （内） [製品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) ページを管理者に表示します。
+ページでレコメンデーションユニットをレンダリングする際に、カスタムの製品属性が使用可能であることを確認するには、管理者の [ 製品属性 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) ページで `Used in Product Listing` プロパティを `Yes` に設定します。
 
-このプロパティを設定すると、JSON ペイロードに `attributes` 属性コードと値の配列を含むオブジェクト。 その後、これらの属性値に基づいて、前述のように特別な視覚的処理やバッジを追加するなど、カスタムのストアフロントスタイルを適用できます。
+このプロパティを設定すると、JSON ペイロードには、属性コードと値の配列を含む `attributes` オブジェクトが含まれます。 その後、これらの属性値に基づいて、カスタムストアフロントのスタイル設定を適用できます（前述のように特別なビジュアル処理やバッジの追加など）。
 
 >[!NOTE]
 >
->製品属性の変更は、JSON ペイロードに表示されるまでに最大 1 時間かかる場合があります。
+>製品属性の変更が JSON ペイロードに表示されるまでに最大 1 時間かかる場合があります。

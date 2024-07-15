@@ -1,71 +1,71 @@
 ---
 title: インストールと設定
-description: インストール、更新、アンインストールの方法を説明します [!DNL Product Recommendations].
+description: ' [!DNL Product Recommendations] をインストール、更新、アンインストールする方法を説明します。'
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
 source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
 # インストールと設定
 
-の導入 [!DNL Product Recommendations] をストアフロントと管理者に送信するには、モジュールをインストールし、 [Commerce Services コネクタ](../landing/saas.md). アップデートがリリースされると、インストールを最新バージョンで簡単に更新できます。
+[!DNL Product Recommendations] をストアフロントおよび管理者にデプロイするには、モジュールをインストールして ](../landing/saas.md)1}Commerce サービスコネクタ } を設定する必要があります。 [更新がリリースされると、インストールを最新バージョンに簡単に更新できます。
 
 - [インストール](#install)
 - [設定](#configure)
 - [更新](#update)
-- [アンインストール](#uninstall)
+- [Uninstall](#uninstall)
 
-## インストール [!DNL Product Recommendations] {#install}
+## [!DNL Product Recommendations] のインストール {#install}
 
-これは、 [!DNL Product Recommendations] モジュールはスタンドアロンのメタパッケージで、更新はAdobe Commerceよりも頻繁にリリースされます。 最新のバグ修正と機能を確認するには、 [リリースノート](release-notes.md).
+[!DNL Product Recommendations] モジュールはスタンドアロンメタパッケージなので、アップデートはAdobe Commerceよりも頻繁にリリースされます。 最新のバグ修正と機能を確認するには、[ リリースノート ](release-notes.md) を参照してください。
 
-をインストールします。 `magento/product-recommendations` Composer を使用したモジュール：
+Composer を使用して `magento/product-recommendations` モジュールをインストールします。
 
 ```bash
 composer require magento/product-recommendations
 ```
 
-### Page Builder サポートの追加 {#pbsupport}
+### ページビルダーのサポートの追加 {#pbsupport}
 
-[!DNL Product Recommendations] for Page Builder はオプションのモジュールで、別途インストールされます。 次を使用するには： [!DNL Product Recommendations] ページビルダーで、次のコマンドを実行してモジュールをインストールします。
+ページビルダーの [!DNL Product Recommendations] はオプションのモジュールで、個別にインストールされます。 ページビルダーで [!DNL Product Recommendations] を使用するには、次のコマンドを実行してモジュールをインストールします。
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
 ```
 
-を有効にして [!DNL Product Recommendations] ページビルダーで、既存のアクティブな [レコメンデーション単位](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) ページ、ブロック、動的ブロックなど、ページビルダーで作成されたすべてのコンテンツに追加できます。
+ページビルダーで [!DNL Product Recommendations] を有効にすると、ページ、ブロック、動的ブロックなど、ページビルダーで作成した任意のコンテンツに既存のアクティブな [ レコメンデーションユニット ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) を追加できます。
 
-詳しくは、 [使用 [!DNL Product Recommendations] Page Builder コンテンツを使用](page-builder.md) を参照してください。
+詳しくは [ ページビルダーコンテンツの使用  [!DNL Product Recommendations]  を参照 ](page-builder.md) てください。
 
-### 視覚的類似性レコメンデーションタイプの追加 {#vissimsupport}
+### 視覚的類似性レコメンデーションタイプを追加 {#vissimsupport}
 
-The _視覚的類似性_ レコメンデーションタイプを使用すると、レコメンデーションユニットを、 [似たような](type.md#visualsim) 表示される製品に追加します。 このレコメンデーションタイプは、商品の画像や視覚的要素が買い物エクスペリエンスの重要な部分である場合に最も役に立ちます。 をインストールします。 _視覚的類似性_ 次のコマンドを実行してレコメンデーションタイプを指定します。
+_視覚的類似性_ レコメンデーションタイプを使用すると、表示している製品に [ 視覚的に類似 ](type.md#visualsim) している製品を表示するレコメンデーションユニットを製品の詳細ページにデプロイできます。 このレコメンデーションタイプは、商品の画像や視覚的側面がショッピング体験の重要な部分である場合に最も役立ちます。 次のコマンドを実行して、「_ビジュアルな類似性_」レコメンデーションタイプをインストールします。
 
 ```bash
 composer require magento/module-visual-product-recommendations
 ```
 
-## 設定 [!DNL Product Recommendations] {#configure}
+## [!DNL Product Recommendations] の設定 {#configure}
 
-インストール後、 `magento/product-recommendations` モジュールの場合は、 [Commerce Services コネクタ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) API キーを指定し、SaaS データ領域を選択する。
+`magento/product-recommendations` モジュールをインストールした後、API キーを指定して SaaS Data Space を選択することにより ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)1}Commerce サービスコネクタを設定する必要があります。[
 
-カタログの書き出しが正しく実行されていることを確認するには、 [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) ジョブと [インデクサー](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行中で、 `Product Feed` indexer は次のように設定されています： `Update by Schedule`.
+カタログの書き出しが正しく実行されていることを確認するには、[cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) ジョブと [ インデクサー ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行され、`Product Feed` インデクサーが `Update by Schedule` に設定されていることを確認します。
 
-API キーを使用して Commerce Services に正常にリンクし、SaaS データスペースを指定すると、カタログの同期が開始されます。 次の操作が可能です。 [確認](verify.md) その行動データがストアフロントに送信されます。
+API キーを使用してCommerce サービスに正常にリンクし、SaaS Data Space を指定すると、カタログの同期が開始されます。 その後、行動データがストアフロントに送信されていることを [ 確認 ](verify.md) できます。
 
-## を更新します。 [!DNL Product Recommendations] インストール {#update}
+## [!DNL Product Recommendations] インストールの更新 {#update}
 
-全てのAdobe Commerceと同じように [!DNL Product Recommendations] は、インストールと更新に Composer を使用します。 次の手順で `magento/product-recommendations` モジュールで、以下を実行します。
+他のすべてのAdobe Commerceと同様に、[!DNL Product Recommendations] はインストールとアップデートに Composer を使用します。 `magento/product-recommendations` モジュールを更新するには、次の手順を実行します。
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-3.0 から 4.0 のようなメジャーバージョンに更新するには、ルートを編集する必要があります `composer.json` ファイルを作成します。 ( [リリースノート](release-notes.md) を参照してください。) 例えば、 `composer.json` ファイルを開き、 `magento/product-recommendations` モジュール：
+3.0 から 4.0 などのメジャーバージョンにアップデートするには、プロジェクトのルート `composer.json` ファイルを編集する必要があります。 （最新のバージョンについて詳しくは、[ リリースノート ](release-notes.md) を参照してください）。 例えば、メインの `composer.json` ファイルを開いて、`magento/product-recommendations` モジュールを検索します。
 
 ```json
 "require": {
@@ -75,7 +75,7 @@ composer update magento/product-recommendations --with-dependencies
 }
 ```
 
-メジャーバージョンを次から比較しましょう： `3.0` から `4.0`:
+メジャーバージョンを `3.0` から `4.0` に変更しましょう。
 
 ```json
 "require": {
@@ -85,13 +85,13 @@ composer update magento/product-recommendations --with-dependencies
 }
 ```
 
-を保存します。 `composer.json` ファイルと実行：
+`composer.json` ファイルを保存し、次を実行します。
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-または、 `magento/module-visual-product-recommendations` および `magento/module-page-builder-product-recommendations` モジュール：
+または、`magento/module-visual-product-recommendations` モジュールと `magento/module-page-builder-product-recommendations` モジュールがインストールされている場合は、次の手順を実行します。
 
 ```bash
 composer update --with-dependencies magento/product-recommendations magento/module-visual-product-recommendations magento/module-page-builder-product-recommendations
@@ -99,12 +99,12 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> Product Recommendationsのバージョン 3.x.x では、1 つの API キーのみが必要でした。 バージョン 4.x.x 以降では、Production の公開および非公開 API キーと、Sandbox の公開および非公開 API キーを提供する必要があります。 両方の API キーのペアを指定しない場合、管理の Product Recommendations機能にアクセスできません。 ただし、データ収集はストアフロントで引き続きおこなわれ、既存のレコメンデーションは引き続き買い物客に表示されます。
+> Product Recommendationsのバージョン 3.x.x では、1 つの API キーのみが必要でした。 バージョン 4.x.x 以降では、実稼動用の公開 API および秘密 API キーと、サンドボックスの公開 API および秘密 API キーを指定する必要があります。 API キーの両方のペアを指定しない場合は、管理者の Product Recommendations機能にアクセスできません。 ただし、データ収集はストアフロントで続行され、既存のお勧めは引き続き買い物客に表示されます。
 
 ## ファイアウォール
 
-製品Recommendationsにファイアウォールを介させるには、 `commerce.adobe.io` 許可リストに
+Product Recommendationsがファイアウォールを通過できるようにするには、許可リストに `commerce.adobe.io` を追加します。
 
-## アンインストール [!DNL Product Recommendations] {#uninstall}
+## [!DNL Product Recommendations] のアンインストール {#uninstall}
 
-必要に応じて、 [uninstall](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) 製品レコメンデーションモジュール。
+必要に応じて、製品レコメンデーションモジュールを [ アンインストール ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) できます。

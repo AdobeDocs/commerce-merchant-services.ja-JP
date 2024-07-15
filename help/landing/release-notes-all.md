@@ -19,7 +19,7 @@ ht-degree: 0%
 <table>
   <tbody>
     <tr>
-      <td><strong>Commerce サービス</strong>
+      <td><strong>Commerce サービス </strong>
         <p>拡張機能として利用可能な革新的なCommerce サービスに対する最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">AmazonSales Channel</a></li>
@@ -31,14 +31,14 @@ ht-degree: 0%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">[!DNL Store Fulfillment]</a></li>
           </ul>
         </td>
-      <td><strong>統合サービス</strong>
+      <td><strong> 統合サービス </strong>
         <p>Commerce サービスと他のサービスおよびAdobeの拡張機能や製品との連携を可能にする、統合サービスの最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">[!DNL Data Connection]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">[!DNL Services Connector]</a></li>
           </ul>
       </td>
-      <td><strong>データサービス</strong>
+      <td><strong> データサービス </strong>
         <p>Commerce サービスによる商品データの管理を可能にする、データサービスに対する最新の改善点について説明します。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">カタログ同期</a></li>

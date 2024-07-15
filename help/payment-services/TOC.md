@@ -1,6 +1,6 @@
 ---
 user-guide-title: 「[!DNL Payment Services] ガイド」
-user-guide-description: 「このガイドでは、のインストールと設定に関する詳細情報を提供します [!DNL Payment Services] の場合 [!DNL Adobe Commerce] または [!DNL Magento Open Source] 保管」という意味です。
+user-guide-description: 「このガイドでは、お客様またはストア向けに  [!DNL Payment Services]  をインストールおよび設定する方法に関す  [!DNL Adobe Commerce]  詳細  [!DNL Magento Open Source]  説明します。」
 breadcrumb-title: 「[!DNL Payment Services] ガイド」
 index: true
 role: Admin, Leader, User
@@ -14,10 +14,10 @@ ht-degree: 4%
 ---
 
 
-# [!DNL Payment Services] Commerceの場合 {#payment-services}
+# Commerceの [!DNL Payment Services] {#payment-services}
 
 - [ガイドの概要](guide-overview.md)
-- [の概要 [!DNL Payment Services]](overview.md)
+- [概要  [!DNL Payment Services]](overview.md)
 - [リリースノート](release-notes.md)
 - 支払いとチェックアウト {#payments-checkout}
    - [支払いオプション](payments-options.md)
@@ -25,24 +25,24 @@ ht-degree: 4%
    - [チェックアウト](checkout.md)
 - Onboard [!DNL Payment Services] {#get-started}
    - [オンボーディングの概要](onboard.md)
-   - [のインストール [!DNL Payment Services] 拡張子](install.md)
+   - [拡張機能のイ  [!DNL Payment Services]  ストール](install.md)
    - [インスタンスに接続](connect.md)
    - [テストサンドボックスの設定](sandbox.md)
    - [実稼動で有効にする](production.md)
-- 設定 [!DNL Payment Services] {#configure}
+- [!DNL Payment Services] {#configure} の設定
    - [[!DNL Payment Services] ホーム](payments-home.md)
-   - [[!DNL Payment Services] 設定](settings.md)
+   - [[!DNL Payment Services] Settings](settings.md)
    - [コマンドライン設定](configure-cli.md)
    - [レガシー設定](configure-admin.md)
 - [テストと検証](test-validate.md)
 - [オーダーの作成](create-order.md)
-- 財務報告 {#reporting}
+- Financial reporting {#reporting}
    - [トランザクションレポート](transactions.md)
    - [注文支払いステータスレポート](order-payment-status.md)
    - [支払いレポート](payouts.md)
    - [使用可能なデータ](data.md)
    - [レベル 2 およびレベル 3 の処理](levels-card-payment-transactions.md)
-- 支払いの管理 {#manage}
+- 支払い {#manage} ールの管理
    - [払戻](refunds.md)
    - [ボイド](voids.md)
 - セキュリティ {#security-compliance}

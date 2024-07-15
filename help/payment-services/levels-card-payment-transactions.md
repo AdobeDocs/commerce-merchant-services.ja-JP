@@ -1,29 +1,29 @@
 ---
 title: レベル 2 およびレベル 3 の処理
-description: 内のカード支払い処理レベル [!DNL Payment Services] トランザクション。
+description: トランザクション内のカード支払  [!DNL Payment Services]  処理レベル。
 role: Admin
 feature: Payments
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
+source-git-commit: 496817ecd0be3bffe53d8f596d922ff366212966
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
-
 # レベル 2 およびレベル 3 の処理
 
-で使用できるカード処理には 3 つのレベルがあります。 [!DNL Payment Services]:
+[!DNL Payment Services] では、次の 3 つのレベルのカード処理を使用できます。
 
 * レベル 1 は最も一般的であり、必要な情報は少ないため、一般に、レベル 2 またはレベル 3 のデータで処理される取引（通常は企業のクレジットカードやクレジットカードの購入に関連する取引）と比べて、高い交換手数料が発生します。
 
-* レベル 2 およびレベル 3 の場合、 [!DNL Payment Services] interchange plus （IC++）価格を使用しているお客様が、購入カードまたは企業カードの取引を大量に受け入れた場合、次の処理を行うことで、より低い処理レートが得られる可能性があります。 [!DNL Payment Services] トランザクションに関する詳細情報を送信します。 トランザクションが適切であれば、カードのネットワーク要件に従って、マーチャントは特定のトランザクションに対してより低い処理レートを受け取る場合があります。
+* レベル 2 およびレベル 3 の場合、インターチェンジ プラス プラス （IC++）価格を使用して多くの購入カードまたは企業カードの取引を受け入れる [!DNL Payment Services] のお客様は、取引に関する詳細情報を送信できるようにすることで、処理レートを下げる可能性が [!DNL Payment Services] ります。 トランザクションが適切であれば、カードのネットワーク要件に従って、マーチャントは特定のトランザクションに対してより低い処理レートを受け取る場合があります。
 
 >[!NOTE]
 >
->レベル 2 およびレベル 3 の価格設定は、Visa および MasterCard 取引にのみ適用されます。 American Express はレベル 2 の価格のみを提供しています。 Discover ではレベル 2 もレベル 3 の価格は提供されていません。 参照： [支払い処理](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} 詳しくは、PayPal 開発者向けドキュメントを参照してください。
+>レベル 2 およびレベル 3 の価格設定は、Visa および MasterCard 取引にのみ適用されます。 American Express はレベル 2 の価格のみを提供しています。 Discover ではレベル 2 もレベル 3 の価格は提供されていません。 詳しくは、PayPal Developer ドキュメントの [ 支払い処理 ](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} を参照してください。
 
-参照： [IC と++?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} 詳しくは、PayPal 開発者向けドキュメントを参照してください。
+[IC とは++？を参照詳しくは、PayPal 開発者向けドキュメントを ](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} 照してください。
 
 レベル 2 およびレベル 3 の処理データを使用すると、マーチャントは、購入に関する追加の詳細情報を提供することで、IC++の価格を引き下げることができます。これにより、プロセッサーのリスクが軽減され、有益な側面が得られます。
 
@@ -37,18 +37,18 @@ ht-degree: 0%
 
 * レベル 3 のデータは、販売に関するより詳細な情報であり、レベル 2 と比較してさらに低い交換料金に適合するのに役立ちます。 レベル 3 のデータには、購入した品目の説明、購入した数量、注文した品目の単位、その他の特定の詳細などの情報が含まれます。
 
-[!DNL Payment Services] このデータを収集し、支払いトランザクションの詳細なレポートを提供します。
+[!DNL Payment Services] はこのデータを収集し、支払いトランザクションの詳細なレポートを提供します。
 
-## におけるレベル 2 およびレベル 3 のカード支払トランザクション [!DNL Payment Services]
+## [!DNL Payment Services] におけるレベル 2 およびレベル 3 のカード支払トランザクション
 
 レベル 2 またはレベル 3 の処理の対象となるためには、マーチャントは以前の情報を送信する必要がありますが、それは、トランザクションを処理する際に対象となるレベルを最終的に決定するのはカードネットワークです。
 
-を参照してください。 [支払い処理に関するよくある質問](https://www.paypal.com/us/cshelp/article/ts2278?_ga=1.131773126.875104296.1712843492){target=_blank} 詳しくは、PayPal 開発者向けドキュメントを参照してください。
+詳しくは、PayPal 開発者向けドキュメントの [ 支払い処理に関する FAQ](https://www.paypal.com/us/cshelp/article/ts2278?_ga=1.131773126.875104296.1712843492){target=_blank} を参照してください。
 
-では、レベル 2 およびレベル 3 の処理は、デフォルトで無効になっています。 [!DNL Payment Services] 店舗レベルのマーチャント。
+レベル 2 およびレベル 3 の処理は、ストアレベルの [!DNL Payment Services] マーチャントに対して、デフォルトで無効になっています。
 
-既に IC++の価格設定を使用している場合は、レベル 2 およびレベル 3 の処理を利用できます。 この機能を有効にするには、 [コマンドラインインターフェイス（CLI）](configure-cli.md).
+既に IC++の価格設定を使用している場合は、レベル 2 およびレベル 3 の処理を利用できます。 この機能を有効にするには、[ コマンドラインインターフェイス（CLI](configure-cli.md) を使用します。
 
 >[!IMPORTANT]
 >
->ご不明な点がございましたら、お客様にお問い合わせください [!DNL Payment Services] アカウントマネージャー。
+>ご不明な点は [!DNL Payment Services] 担当のアカウントマネージャーにお問い合わせください。

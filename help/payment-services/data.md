@@ -20,15 +20,15 @@ ht-degree: 0%
 
 特定の注文に関連付けられた増分 ID を使用して、Adobe Commerceの財務レポートをAdobe以外の Enterprise Resource Planning （ERP）システムと紐付けることができます。
 
-支払いサービスがCommerce注文を PayPal に送信すると、増分 ID が `custom_id` _および_ が含まれる `invoice_id` （このファイルには、の後のランダムな文字列も含まれます） `increment_id`）に設定します。
+支払いサービスがCommerceの注文を PayPal に送信すると、増分 ID が `custom_id` _および_ として `invoice_id` に含まれます（`increment_id` の後にランダムな文字列も含まれます）。
 
 ID には、支払いのマーチャントアクティビティの詳細と PayPal Webhook の両方で簡単にアクセスできます。
 
-この `invoice_id` および `custom_id` 支払いの業者活動の詳細の下部付近に表示されます。
+`invoice_id` と `custom_id` は、支払いに関するマーチャントアクティビティの詳細の下部付近に表示されます。
 
-![`custom_id` マーチャントアクティビティの詳細で](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
+マーチャントアクティビティの詳細で ![`custom_id` 明する ](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
-`custom_id` および `invoice_id` PayPal の Webhook の詳細で：
+PayPal の Webhook の詳細で `custom_id` と `invoice_id` を参照してください。
 
 ```json
    ...
@@ -79,5 +79,5 @@ ID には、支払いのマーチャントアクティビティの詳細と PayP
 
 詳しくは、PayPal の REST API ドキュメントを参照してください。
 
-* [`purchase_unit`。この条件は `custom_id` および `invoice_id` 存在する](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
-* [注文の詳細を表示](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
+* `custom_id` と `invoice_id` が存在する [`purchase_unit`](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
+* [ 注文の詳細を表示 ](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

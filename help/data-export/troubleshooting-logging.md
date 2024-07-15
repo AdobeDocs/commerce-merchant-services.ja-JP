@@ -1,6 +1,6 @@
 ---
 title: ログの確認とトラブルシューティング
-description: トラブルシューティング方法を学ぶ [!DNL data export] data-export ログと saas-export ログを使用したエラー。
+description: データの書き出しログと saas [!DNL data export]  書き出しログを使用してエラーのトラブルシューティングを行う方法を説明します。
 feature: Services
 recommendations: noCatalog
 exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # ログの確認とトラブルシューティング
 
-この [!DNL data export] 拡張機能は、データ収集および同期プロセスを追跡するログを提供します。
+[!DNL data export] 拡張機能は、データ収集および同期プロセスを追跡するログを提供します。
 
 ## ログ
 
-ログは、次で利用できます `var/log` Commerce アプリケーションサーバー上のディレクトリ。
+ログは、Commerce Application Server の `var/log` ディレクトリで利用できます。
 
 | ログ名 | ファイル名 | 説明 |
 |-----------------| ----------| -------------|
@@ -26,7 +26,7 @@ ht-degree: 0%
 | SaaS エクスポート ログ | `saas-export.log` | Commerce SaaS サービスに送信されるデータに関する情報を提供します。 |
 | SaaS エクスポート エラーログ | `saas-export-errors.log` | Commerce SaaS サービスにデータを送信する際に発生するエラーについて説明します。 |
 
-Adobe Commerce サービスで予期されたデータが表示されない場合は、データエクスポート拡張機能のエラーログを使用して問題の発生場所を特定してください。 また、トラッキングやトラブルシューティングのために、追加データを使用してログを拡張することもできます。 参照： [拡張ログ](#extended-logging).
+Adobe Commerce サービスで予期されたデータが表示されない場合は、データエクスポート拡張機能のエラーログを使用して問題の発生場所を特定してください。 また、トラッキングやトラブルシューティングのために、追加データを使用してログを拡張することもできます。 [ 拡張ログ ](#extended-logging) を参照してください。
 
 ### ログ形式
 
@@ -54,10 +54,10 @@ Adobe Commerce サービスで予期されたデータが表示されない場�
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 完全同期 | フル同期では、特定のフィードに対して、すべてのデータを収集し、SaaS に送信します。 | `bin/magento saas:resync --feed=products` |
 | 部分再インデックス | 部分同期では、特定のフィード内で更新されたエンティティについてのみ、データを収集して SaaS に送信します。 このログは、更新されたエンティティが存在する場合にのみ表示されます。 | `bin/magento cron:run --group=index` |
-| 失敗した項目を再試行 | Commerce アプリケーションまたはサーバーエラーが原因で前回の同期処理に失敗した場合に、SaaS への特定のフィードの項目を再送信します。 このログは、失敗した項目が存在する場合にのみ存在します。 | `bin/magento cron:run --group=saas_data_exporter`  （任意の「*_data_exporter」 cron グループ） |
+| 失敗した項目を再試行 | Commerce アプリケーションまたはサーバーエラーが原因で前回の同期処理に失敗した場合に、SaaS への特定のフィードの項目を再送信します。 このログは、失敗した項目が存在する場合にのみ存在します。 | `bin/magento cron:run --group=saas_data_exporter` （「*_data_exporter」 cron グループのいずれか） |
 | 完全同期（レガシー） | レガシーエクスポートモードでの特定フィードの完全同期。 | `bin/magento saas:resync --feed=categories` |
 | 部分再インデックス（レガシー） | レガシー書き出しモードの特定のフィードに対して、更新されたエンティティを SaaS に送信します。 このログは、更新されたエンティティが存在する場合にのみ表示されます。 | `bin/magento cron:run --group=index` |
-| 部分同期（レガシー） | レガシー書き出しモードの特定のフィードに対して、更新されたエンティティを SaaS に送信します。 このログは、更新されたエンティティが存在する場合にのみ表示されます。 | `bin/magento cron:run --group=saas_data_exporter` （任意の「*_data_exporter」 cron グループ） |
+| 部分同期（レガシー） | レガシー書き出しモードの特定のフィードに対して、更新されたエンティティを SaaS に送信します。 このログは、更新されたエンティティが存在する場合にのみ表示されます。 | `bin/magento cron:run --group=saas_data_exporter` （「*_data_exporter」 cron グループのいずれか） |
 
 
 ### ログの例
@@ -75,13 +75,13 @@ Adobe Commerce サービスで予期されたデータが表示されない場�
 }
 ```
 
-この例では、 `status` 値は、同期操作に関する情報を提供します。
+この例では、`status` の値が同期操作に関する情報を提供します。
 
-- **`"Progress 2/5"`** 5 回のイテレーションのうち 2 回が完了したことを示します。 イテレーションの数は、エクスポートされたエンティティの数によって異なります。
-- **`"processed: 200"`** 200 個の項目が処理されたことを示します。
-- **`"synced: 100"`** 100 項目が SaaS に送信されたことを示します。 予想される `"synced"` 次と等しくない `"processed"`. 次に例を示します。
-   - **`"synced" < "processed"`** は、以前に同期されたバージョンと比較して、フィードテーブルで項目の変更が検出されなかったことを意味します。 このような項目は、同期操作中は無視されます。
-   - **`"synced" > "processed"`** 同じエンティティ id （例：） `Product ID`）には、異なる範囲に複数の値を含めることができます。 例えば、1 つの製品を 5 つの web サイトに割り当てることができます。 この場合、「1 件の処理済み」項目と「5 件の同期済み」項目が存在する可能性があります。
+- **`"Progress 2/5"`** は、5 回のイテレーションのうち 2 回が完了したことを示しています。 イテレーションの数は、エクスポートされたエンティティの数によって異なります。
+- **`"processed: 200"`** は、200 個の項目が処理されたことを示しています。
+- **`"synced: 100"`** は、100 項目が SaaS に送信されたことを示します。 `"synced"` が `"processed"` に等しくないと予想される。 次に例を示します。
+   - **`"synced" < "processed"`** れは、以前に同期されたバージョンと比較して、フィードテーブルで項目の変更が検出されなかったことを意味します。 このような項目は、同期操作中は無視されます。
+   - 同じエンティティ id （`Product ID` など）に **`"synced" > "processed"`**、異なるスコープに複数の値を含めることができます。 例えば、1 つの製品を 5 つの web サイトに割り当てることができます。 この場合、「1 件の処理済み」項目と「5 件の同期済み」項目が存在する可能性があります。
 
 +++ **例：価格フィードの完全再同期ログ**
 
@@ -105,9 +105,9 @@ Adobe Commerce ログをNew Relicに保存する場合は、解析ルールを�
 
 1. New Relicにログインします。
 
-1. に移動 `Logs => Parsing`.
+1. `Logs => Parsing` に移動します。
 
-1. クリック `Create parsing rule`.
+1. 「`Create parsing rule`」をクリックします。
 
 1. 次の値を追加して、解析ルールを設定します。
 
@@ -130,7 +130,7 @@ Commerce Services でデータが見つからないか間違っている場合�
 - commerce-data-export-errors.log – 収集フェーズでエラーが発生した場合
 - saas-export-errors.log – 送信フェーズでエラーが発生したかどうか
 
-設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) できるだけ多くの情報を使用します。
+設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を記載した [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) を送信します。
 
 ### カタログ同期の問題を解決 {#resolvesync}
 
@@ -139,23 +139,23 @@ Commerce Services でデータが見つからないか間違っている場合�
 #### データの不一致
 
 1. 検索結果に、該当する製品の詳細ビューを表示します。
-1. JSON 出力をコピーし、コンテンツが内にあるものと一致することを確認します。 [!DNL Commerce] カタログ。
+1. JSON 出力をコピーし、コンテンツが [!DNL Commerce] カタログの内容と一致することを確認します。
 1. コンテンツが一致しない場合は、スペースやピリオドの追加など、カタログの製品に小さな変更を加えます。
-1. 再同期を待つか、 [手動再同期のトリガー](#resync).
+1. 再同期を待つか、[ 手動の再同期をトリガーしてください ](#resync)。
 
 #### 同期が実行されていません
 
-同期がスケジュールに従って実行されていないか、何も同期されていない場合は、こちらを参照してください [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 記事。
+同期がスケジュールに従って実行されていない場合や、何も同期されていない場合は、この [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) の記事を参照してください。
 
 #### 同期できませんでした
 
-カタログ同期のステータスがの場合 **失敗**、送信 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+カタログ同期のステータスが **失敗** の場合は、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) を送信します。
 
 ## 拡張ログ
 
 その他のログ情報については、環境変数を使用して、トラッキングやトラブルシューティング用に追加のデータでログを拡張できます。
 
-には 2 つのログファイルがあります。 `var/log/` ディレクトリ：
+`var/log/` ディレクトリには 2 つのログファイルがあります。
 
 - commerce-data-export-errors.log – 収集フェーズでエラーが発生した場合
 - saas-export-errors.log – 送信フェーズでエラーが発生したかどうか
@@ -164,19 +164,19 @@ Commerce Services でデータが見つからないか間違っている場合�
 
 ### フィードペイロードを確認
 
-を追加して、フィードペイロードを SaaS 書き出しログに含めます。 `EXPORTER_EXTENDED_LOG=1` フィードを再同期する際の環境変数。
+フィードを再同期する際に環境変数を追加して、フィード ペイロード `EXPORTER_EXTENDED_LOG=1`SaaS 書き出しログに含めます。
 
 ```shell script
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 ```
 
-操作が完了すると、フィードペイロードを SaaS 書き出しログ（`var/.log/saas-export.log`）に設定します。
+操作が完了すると、フィードペイロードを SaaS 書き出しログで確認できるようになります（`var/.log/saas-export.log`）。
 
 ### フィードインデックステーブルにペイロードを保持
 
-Commerce SaaS データエクスポート拡張機能の場合（`magento/module-data-exporter`） 103.3.0 以降、即時エクスポートフィードでは、インデックステーブルに必要な最小限のデータのみが保持されます。 フィードには、すべてのカタログと在庫のステータスフィードが含まれます。
+Commerce SaaS Data Export Extension （`magento/module-data-exporter`） 103.3.0 以降では、即時エクスポートフィードは、インデックステーブルに必要な最小限のデータのみを保持します。 フィードには、すべてのカタログと在庫のステータスフィードが含まれます。
 
-実稼動環境ではペイロードデータをインデックステーブルに保持することは推奨されませんが、開発者環境では便利です。 を追加して、フィードペイロードをインデックスに含めます。 `PERSIST_EXPORTED_FEED=1` フィードを再同期する際の環境変数。
+実稼動環境ではペイロードデータをインデックステーブルに保持することは推奨されませんが、開発者環境では便利です。 フィードを再同期する際に `PERSIST_EXPORTED_FEED=1` 環境変数を追加して、フィードペイロードをインデックスに含めます。
 
 ```shell script
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
@@ -186,13 +186,13 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 特定のフィードの再インデックスプロセスに不相応な時間がかかる場合は、プロファイラーを実行して、サポートチームに役立つ追加データを収集します。
 
-を追加してプロファイラーを実行します。 `EXPORTER_PROFILER=1` reindex コマンド実行時の環境変数。
+reindex コマンドを実行する場合は、環境変数 `EXPORTER_PROFILER=1` を追加してプロファイラーを実行します。
 
 ```
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 
-プロファイラーデータはデータ書き出しログ（`var/log/commerce-data-export.log`）に設定する必要があります。
+プロファイラーデータは、次の形式でデータ書き出しログ（`var/log/commerce-data-export.log`）に保存されます。
 
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>

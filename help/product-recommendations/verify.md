@@ -1,69 +1,69 @@
 ---
-title: イベントコレクションを検証
+title: イベント収集の検証
 description: 行動データがAdobe Commerceに送信されていることを確認する方法を説明します。
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
 source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
-# イベントコレクションを検証
+# イベント収集の検証
 
-後で [インストールと設定](install-configure.md) の `magento/product-recommendations` モジュールの両方に属している場合は、行動データがAdobe Commerceに送信されていることを確認できます。 Chrome で利用可能な開発者ツールを使用するか、Snowplow Chrome 拡張機能をインストールできます。 その他のヘルプが必要な場合は、 [トラブルシューティング [!DNL Product Recommendations] モジュール](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 」を参照してください。
+`magento/product-recommendations` モジュールを [ インストールおよび設定 ](install-configure.md) した後、行動データがAdobe Commerceに送信されていることを確認できます。 Chromeで利用可能な開発者ツールを使用するか、Snowplow Chrome拡張機能をインストールできます。 追加のヘルプが必要な場合は、サポートナレッジベースの [ トラブルシューティング  [!DNL Product Recommendations]  モジュール ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) を参照してください。
 
-## Chrome の開発者ツールを使用した検証
+## Chromeのデベロッパーツールを使用した検証
 
-イベントコレクターの JS ファイルをすべてのサイトページに確実に読み込むには、次の手順を実行します。
+イベントコレクター JS ファイルがすべてのサイトページに読み込まれていることを確認するには：
 
-1. Chrome で、を選択します。 **Google Chrome のカスタマイズと制御** 次に、 **その他のツール** > **開発者ツール**.
-1. を選択します。 **ネットワーク** 「 」タブをクリックし、「 」を選択します。 **JS** タイプ。
-1. フィルター `ds.`
+1. Chromeで、「**Google Chromeをカスタマイズして制御する**」を選択し、**その他のツール**/**開発者ツール** を選択します。
+1. 「**ネットワーク**」タブを選択し、**JS** タイプを選択します。
+1. `ds.` のフィルター
 1. ページをリロードします。
-1. 次のようになります。 `ds.js` または `ds.min.js` （内） **名前** 列。
+1. **Name** 列に `ds.js` または `ds.min.js` が表示されます。
 
-![イベントコレクター JS](assets/filter-ds.png)
-_イベントコレクター JS_
+![ イベントコレクター JS](assets/filter-ds.png)
+_イベント コレクター JS_
 
-サイト全体のページ（ホーム、製品、チェックアウトなど）でイベントが発生していることを確認するには、次の手順を実行します。
+サイト全体（ホーム、製品、チェックアウトなど）でイベントが発生していることを確認するには：
 
-1. ブラウザー上での広告ブロッカーを必ず無効にし、サイト上での cookie を受け入れてください。
-1. Chrome で、を選択します。 **Google Chrome のカスタマイズと制御** （ブラウザーの右上隅の 3 つの縦のドット）次に、「 **その他のツール** > **開発者ツール**.
-1. を選択します。 **ネットワーク** タブとフィルター `tp2`.
+1. ブラウザーで広告ブロッカーを無効にし、サイトの Cookie を受け入れてください。
+1. Chromeで、「**Google Chromeのカスタマイズと制御**」（ブラウザーの右上隅にある 3 つの縦並びのドット）を選択し、**その他のツール**/**開発者ツール** を選択します。
+1. 「**ネットワーク**」タブを選択し、`tp2` のフィルターを適用します。
 1. ページをリロードします。
-1. の下に呼び出しが表示されます。 `tp2` （内） **名前** 列。
+1. **Name** 列の `tp2` の下に呼び出しが表示されます。
 
-![イベントの発生](assets/filter-tp2.png)
-_イベントが発生していることを確認します。_
+![ イベントの実行 ](assets/filter-tp2.png)
+_イベントが発生していることを確認_
 
-## Snowplow Chrome 拡張機能を使用した検証
+## Snowplow Chrome拡張機能を使用した検証
 
-をインストールします。 [Chrome 用 Snowplow Analytics Debugger 拡張機能](https://chrome.google.com/webstore/detail/snowplow-analytics-debugg/jbnlcgeengmijcghameodeaenefieedm). この拡張機能では、収集され、Adobe Commerceに送信されるイベントを表示します。
+[Chrome用 Snowplow Analytics デバッガー拡張機能 ](https://chrome.google.com/webstore/detail/snowplow-analytics-debugg/jbnlcgeengmijcghameodeaenefieedm) をインストールします。 この拡張機能は、収集されてAdobe Commerceに送信されるイベントを表示します。
 
-1. ブラウザー上での広告ブロッカーを必ず無効にし、サイト上での cookie を受け入れてください。
+1. ブラウザーで広告ブロッカーを無効にし、サイトの Cookie を受け入れてください。
 
-1. Chrome で、を選択します。 **Google Chrome のカスタマイズと制御** （ブラウザーの右上隅の 3 つの縦のドット）次に、「 **その他のツール** > **開発者ツール**.
+1. Chromeで、「**Google Chromeのカスタマイズと制御**」（ブラウザーの右上隅にある 3 つの縦並びのドット）を選択し、**その他のツール**/**開発者ツール** を選択します。
 
-1. を選択します。 **Snowplow Analytics デバッガー** タブをクリックします。
+1. 「**Snowplow Analytics デバッガー**」タブを選択します。
 
-1. の下 **イベント** 列、選択 **構造化イベント**.
+1. **イベント** 列の下で、「**構造化イベント**」を選択します。
 
-1. 下にスクロールして、 **コンテキストデータ _n_**. でストアフロントインスタンスを探します。**スキーマ**.
+1. **コンテキストデータ _n_**が表示されるまで下にスクロールします。**スキーマ**でストアフロントインスタンスを探します。
 
-1. 次を確認します。 [SaaS データ容量 ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) が正しく設定されている。
+1. [SaaS Data Space ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) が正しく設定されていることを確認します。
 
-![Snowplow フィルター](assets/snowplow-filter.png)
-_Snowplow フィルター_
+![ 除雪機フィルタ ](assets/snowplow-filter.png)
+_除雪機フィルタ_
 
 >[!NOTE]
 >
-> 値： `Data validity : NOT FOUND` デバッガーに内部スキーマが表示されます。 Snowplow Chrome プラグインは、内部スキーマを持つイベントを検証できません。 これは、実際の機能には影響しません。
+> デバッガーの値 `Data validity : NOT FOUND` は内部スキーマを示します。 Snowplow Chrome プラグインは、内部スキーマでイベントを検証できません。 実際の機能には影響はありません。
 
-## イベントが正しく実行されていることを確認する
+## イベントが正しく実行されていることを確認
 
-指標に使用されるイベントが正しく実行されていることを確認するには、 `impression-render`, `view`、および `rec-click` イベントを Snowplow Analytics Debugger に追加しました。 詳しくは、 [イベントの完全なリスト](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
+指標に使用されるイベントが正しく実行されていることを確認するには、Snowplow Analytics デバッガーで `impression-render`、`view`、`rec-click` の各イベントを探します。 [ イベントの完全なリスト ](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html) を参照してください。
 
 >[!NOTE]
 >
-> 次の場合 [Cookie 制限モード](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、Adobe Commerceは買い物客の同意を得るまで行動データを収集しません。 「Cookie Restriction Mode」が無効になっている場合、行動データはデフォルトで収集されます。
+> [Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、Adobe Commerceは、買い物客が同意するまで行動データを収集しません。 Cookie 制限モードが無効になっている場合、行動データがデフォルトで収集されます。

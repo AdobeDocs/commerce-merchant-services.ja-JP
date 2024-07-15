@@ -1,6 +1,6 @@
 ---
 title: データを SaaS データ書き出しと同期
-description: 詳細を見る [!DNL SaaS Data Export] Adobe Commerce インスタンスと接続された SaaS サービス間でデータを収集して同期します。
+description: Adobe Commerce インスタンスと接続された SaaS サ  [!DNL SaaS Data Export]  ビスとの間でデータを収集および同期する方法について説明します。
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 カタログサービス、Live Search、Product Recommendationsなど、データのエクスポートを必要とするCommerce サービスをインストールすると、データの収集と同期プロセスを管理するために、Saas データのエクスポートモジュールのコレクションがインストールされます。
 
-SaaS データのエクスポートでは、商品データをAdobe Commerce インスタンスからCommerce サービスプラットフォームに継続的に移動して、データを最新の状態に保ちます。 例えば、商品Recommendationsでは、現在のカタログ情報を使用して、正確な名前、価格、在庫状況でレコメンデーションを正確に返す必要があります。 の使用 [データ管理ダッシュボード](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) 同期プロセスを監視および管理したり、同期をトリガーしたり、Commerce サービスで使用するために製品データを再インデックス化するためのコマンドラインインターフェイスを使用したりできます。
+SaaS データのエクスポートでは、商品データをAdobe Commerce インスタンスからCommerce サービスプラットフォームに継続的に移動して、データを最新の状態に保ちます。 例えば、商品Recommendationsでは、現在のカタログ情報を使用して、正確な名前、価格、在庫状況でレコメンデーションを正確に返す必要があります。 [ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) を使用して、同期プロセスまたはコマンドラインインターフェイスを監視および管理し、同期をトリガーして、Commerce Services で使用するために製品データを再インデックス化します。
 
 次の図は、SaaS データの書き出しフローを示しています。
 
-![Adobe Commerceの SaaS データ書き出し収集および同期フロー](assets/data-export-flow.png){width="900" zoomable="yes"}
+![Adobe Commerceの SaaS データ書き出し収集および同期フロー ](assets/data-export-flow.png){width="900" zoomable="yes"}
 
 SaaS データ書き出しフローの主なコンポーネントは次のとおりです。
 
@@ -31,9 +31,9 @@ SaaS データ書き出しフローの主なコンポーネントは次のとお
 
 SaaS データ エクスポートには、エンティティ フィードを処理するための 2 つのモードがあります。
 
-- **即時書き出しモード** – このモードでは、データが収集され、1 回のイテレーションで直ちにCommerce サービスに送信されます。 このモードでは、Commerce サービスへのエンティティの更新の配信が高速化され、フィードテーブルのストレージサイズが縮小されます。
+- **即時エクスポートモード** – このモードでは、データが収集され、1 回のイテレーションでCommerce サービスにすぐに送信されます。 このモードでは、Commerce サービスへのエンティティの更新の配信が高速化され、フィードテーブルのストレージサイズが縮小されます。
 
-- **レガシー書き出しモード** – このモードでは、データは 1 つのプロセスで収集されます。 次に、cron ジョブが、収集したデータを接続されたコマースサービスに送信します。 データ書き出しログエントリでは、レガシーモードを使用するフィードにはラベルが付けられます `(legacy)`.
+- **レガシーエクスポートモード** – このモードでは、データは 1 つのプロセスで収集されます。 次に、cron ジョブが、収集したデータを接続されたコマースサービスに送信します。 データ書き出しログエントリでは、レガシーモードを使用するフィードには `(legacy)` というラベルが付けられます。
 
 ## 同期タイプ
 
@@ -54,41 +54,41 @@ Adobe Commerce インスタンスをCommerce サービスに接続した後、�
 データの書き出しプロセスでは、次の cron ジョブを使用して部分同期操作を自動化します。
 
 - cron グループジョブの「インデックス」:
-   - この `indexer_reindex_all_invalid` ジョブでは、無効なフィードのインデックスを再作成します。 これは、標準のAdobe Commerce cron ジョブです。
-   - この `saas_data_exporter` ジョブは従来のエクスポートフィード用です。
-   - この `sales_data_exporter` ジョブは、販売データのエクスポートフィードに固有です。
+   - `indexer_reindex_all_invalid` ジョブでは、無効なフィードのインデックスがすべて再作成されます。 これは、標準のAdobe Commerce cron ジョブです。
+   - `saas_data_exporter` のジョブは、従来のエクスポートフィードに対するものです。
+   - `sales_data_exporter` ジョブは、販売データのエクスポート フィードに固有です。
 
 これらのジョブは毎分実行されます。
 
 部分同期を機能させるには、Commerce アプリケーションで次の設定が必要です。
 
-- [Cron ジョブを介してタスクスケジュールが有効になる](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
+- [Cron ジョブを介してタスクスケジュールが有効になる ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 
-- すべての SaaS データ書き出しインデクサーは、次の場所で設定されます `Update by Schedule` モード。
+- すべての SaaS データ書き出しインデクサーは、`Update by Schedule` モードで設定されます。
 
-  SaaS データ エクスポート バージョン 103.1.0 以降では、 `Update by Schedule` モードはデフォルトで有効になっています。 Commerce CLI コマンドを使用して、サーバー上のインデックス設定を確認できます。 `bin/magento indexer:show-mode | grep -i feed`
+  SaaS データ エクスポート バージョン 103.1.0 以降では、`Update by Schedule` モードはデフォルトで有効になっています。 Commerce CLI コマンド（`bin/magento indexer:show-mode | grep -i feed`）を使用して、サーバー上のインデックス設定を確認できます。
 
 ### 失敗した項目の同期を再試行
 
 失敗した項目の同期の再試行では、アプリケーション エラー、ネットワーク障害、SaaS サービス エラーなど、同期プロセス中のエラーが原因で同期に失敗した項目を、別のプロセスを使用して再送信します。 この同期の実装は、cron ジョブにも基づいています。
 
 - `resync_failed_feeds_data_exporter` cron グループジョブ：
-   - この `<feed name>_feed_resend_failed_feeds_items` ジョブが同期に失敗した項目を再送信する。例： `products_feed_resend_failed_items`.
+   - `<feed name>_feed_resend_failed_feeds_items` ジョブは、同期に失敗した項目（例：`products_feed_resend_failed_items`）を再送信します。
 
 ### 同期プロセスの表示と管理
 
 ほとんどの同期アクティビティは、アプリケーション設定に基づいて自動的に処理されます。 ただし、SaaS データのエクスポートには、プロセスを管理するためのツールも用意されています。
 
-- 管理者ユーザーは、同期の進行状況を表示および追跡し、からデータに関する情報を取得できます。 [データ管理ダッシュボード](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+- 管理者ユーザーは、同期の進行状況を表示および追跡し、データに関する情報を [ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) から取得できます。
 
-- Commerce アプリケーションサーバーへのアクセス権を持つ開発者、システムインテグレーター、管理者は、Adobe Commerce コマンドラインツール（CLI）を使用して同期プロセスとデータフィードを管理できます。 参照： [データ書き出しコマンド リファレンス](data-export-cli-commands.md).
+- Commerce アプリケーションサーバーへのアクセス権を持つ開発者、システムインテグレーター、管理者は、Adobe Commerce コマンドラインツール（CLI）を使用して同期プロセスとデータフィードを管理できます。 [ データ書き出しコマンドリファレンス ](data-export-cli-commands.md) を参照してください。
 
 ### Commerce アプリケーション設定の確認
 
 部分同期および失敗した項目の再試行同期は、Commerce インスタンスが正しく設定されている場合にのみ機能します。 通常、設定はCommerce サービスを設定する際に完了します。 データの書き出しが正しく機能しない場合は、次の設定を確認します。
 
-- [Cron ジョブが実行中であることを確認](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [cron ジョブが実行中であることを確認 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
 
-- インデクサーがから実行されていることを確認 [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) または、Commerce CLI コマンドを使用します `bin/magento indexer:info`.
+- インデクサーが [ 管理者 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) から、またはCommerce CLI コマンド `bin/magento indexer:info` ールを使用して実行されていることを確認します。
 
-- 次のフィードのインデクサーがに設定されていることを確認します。 `Update by Schedule`：カタログ属性、製品、製品オーバーライド、製品バリアント。 インデクサーは、次の場所から確認できます。 [インデックス管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) 管理モードまたは CLI の使用（`bin/magento indexer:show-mode | grep -i feed`）に設定します。
+- カタログ属性、製品、製品オーバーライド、製品バリアントのフィードのインデクサーが `Update by Schedule` に設定されていることを確認します。 インデクサーは、管理者の [ インデックス管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) または CLI （`bin/magento indexer:show-mode | grep -i feed`）を使用して確認できます。

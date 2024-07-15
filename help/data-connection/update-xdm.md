@@ -1,6 +1,6 @@
 ---
-title: コマースデータ取り込み用の時系列イベントスキーマの更新
-description: コマースデータ取り込み用の時系列イベントデータを収集して送信するスキーマ、データセット、データストリームを作成する方法について説明します。
+title: Commerceのデータ取り込みに対する時系列イベントスキーマの更新
+description: スキーマ、データセット、データストリームを作成して、Commerceのデータ取り込み用に時系列イベントデータを収集して送信する方法を説明します。
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
@@ -11,67 +11,67 @@ ht-degree: 0%
 
 ---
 
-# コマースデータ取り込み用の時系列イベントスキーマの更新
+# Commerceのデータ取り込みに対する時系列イベントスキーマの更新
 
-いずれかの [オンボーディング手順](overview.md#onboarding-steps) を使用する場合 [!DNL Data Connection] 拡張機能は、datastream workspace にアクセスし、 [データストリームの作成](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) これはAdobe Commerceに固有です。 そのデータストリームを作成する場合は、取り込む予定のデータを記述したスキーマも選択する必要があります。 このスキーマには、コマース固有のフィールドグループを含める必要があります。
+[!DNL Data Connection] 拡張機能を使用するための [ オンボーディング手順 ](overview.md#onboarding-steps) の 1 つは、データストリームワークスペースにアクセスし、Adobe Commerceに固有の [ データストリームを作成 ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) することです。 そのデータストリームを作成する際は、取り込む予定のデータを記述したスキーマも選択する必要があります。 このスキーマには、コマース固有のフィールドグループを含める必要があります。
 
-この記事では、Adobe Commerceイベントによって提供される次の時系列データを正しく収集するために、スキーマに含める必要があるフィールドグループについて説明します。
+この記事では、Adobe Commerce イベントで提供される次の時系列データを正常に収集するために、スキーマに含める必要があるフィールドグループについて説明します。
 
-- [行動](events.md)  — ストアフロント、プロファイル、検索、B2B イベントが含まれます。
-- [バックオフィス](events-backoffice.md)  — 注文ステータスとプロファイルイベントが含まれます。
+- [ 行動 ](events.md) - ストアフロント、プロファイル、検索、B2B イベントが含まれます。
+- [ バックオフィス ](events-backoffice.md) – 注文ステータスとプロファイルイベントが含まれます。
 
-詳細情報： [時系列データ](data-ingestion.md).
+詳しくは、[ 時系列データ ](data-ingestion.md) を参照してください。
 
-詳しくは、 [スキーマ構成の基本](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html).
+詳しくは、[ スキーマ構成の基本 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) を参照してください。
 
-## 時系列の行動とバックオフィスのイベントデータでスキーマを更新
+## 時系列の行動およびバックオフィスイベントデータを使用したスキーマの更新
 
-この節では、既存のスキーマを更新する方法、または行動とバックオフィスのイベントデータを含むスキーマを作成する方法について説明します。
+この節では、既存のスキーマを更新する方法や、行動およびバックオフィスイベントデータを含むスキーマを作成する方法について説明します。
 
 >[!NOTE]
 >
->詳しくは、 [時系列プロファイルイベントデータ](#time-series-profile-event-data) を参照してください。
+>プロファイル固有のフィールドを追加する方法については、[ 時系列プロファイルイベントデータ ](#time-series-profile-event-data) を参照してください。
 
-1. スキーマをまだ持っていない場合は、 [作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) 1 つは、クラスが **エクスペリエンスイベント**.
+1. スキーマがまだない場合は、[Experience Event](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) に設定されたクラスを持つ **create** スキーマを使用します。
 
-1. [追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) 次のコマース固有のフィールドグループを使用します（または既存のスキーマを編集し、これらのフィールドグループを追加します）。
+1. 次のCommerce固有のフィールドグループを [ 追加 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) します（または、既存のスキーマを編集して、これらのフィールドグループを追加します）。
 
    - サイト検索
-   - ウェブページにアクセス
+   - Web ページを訪問
    - ユーザーログインプロセス
    - 参照キー
    - 個人の連絡先の詳細
    - チャネルの詳細
-   - コマースの詳細
-   - Adobe Analytics ExperienceEvent Commerce(Adobe Analyticsにデータを送信する場合 )
+   - Commerceの詳細
+   - Adobe Analytics ExperienceEvent Commerce（Adobe Analyticsにデータを送信する場合）
 
    >[!NOTE]
    >
-   > コマース固有のフィールドグループを次のように設定しない `Primary identity`. これにより、フィールドが必須として識別され、Experience Platformはすべてのイベントでそのフィールドを想定します。 そのフィールドがない場合、データの取り込みは失敗します。
+   > Commerce固有のフィールドグループを `Primary identity` のように設定しないでください。 これにより、フィールドが必須として特定され、Experience Platformはすべてのイベントでそのフィールドを使用することを想定します。 このフィールドが存在しない場合、データ取り込みは失敗します。
 
-   これで、スキーマにコマース固有のフィールドグループが含まれ、コマースから時系列データが収集されます [行動](events.md) および [バックオフィス](events-backoffice.md) イベントは、スキーマで表されます。
+   Commerce[ 行動 ](events.md) および [ バックオフィス ](events-backoffice.md) イベントから収集された時系列データがスキーマに表されるように、スキーマにCommerce固有のフィールドグループが含まれるようになりました。
 
-1. [有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) プロファイルのスキーマ。
+1. プロファイルのスキーマ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) 有効 [。
 
-   プロファイルに対してスキーマを有効にすると、このスキーマから作成されたすべてのデータセットがReal-Time CDPに参加し、異なるソースのデータを結合して、各顧客の完全なビューを構築します。
+   スキーマがプロファイルで有効になっている場合、このスキーマから作成されたデータセットは、異なるソースのデータを結合して各顧客の全体像を構築するReal-Time CDPに関与します。
 
-1. [データセットの作成](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 作成または更新したスキーマに基づいて
+1. 作成または更新したスキーマに基づいて [ データセットを作成 ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) します。
 
-   データセットは、データの集まり ( 通常、スキーマ（列）とフィールド（行）を含むテーブル ) のストレージと管理の構成体です。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
+   データセットは、データのコレクションのためのストレージおよび管理用の構成体で、通常は、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
 
-1. [データストリームの作成](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) をクリックし、コマース固有のフィールドグループと、対応するデータセットを含むスキーマを選択します。
+1. [ データストリームを作成 ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) し、Commerce固有のフィールドグループと対応するデータセットを含むスキーマを選択します。
 
-   データストリームは、収集したデータをデータセットに転送します。 データは、選択したスキーマに基づいて、データセット内に表されます。
+   データストリームは、収集したデータをデータセットに転送します。 データは、選択したスキーマに基づいてデータセット内で表されます。
 
-1. **ベータ版** （オプション）カスタムのバックオフィスイベントデータをコマースインスタンスからExperience Platformに渡す場合は、カスタム属性を使用できます。 この機能はベータ版です。 ベータ版プログラムに参加したい場合は、にリクエストを送信してください。 [dataconnection@adobe.com](mailto:dataconnection@adobe.com). リクエストに次を含めます。
+1. **Beta** （オプション）カスタムのバックオフィスイベントデータをCommerce インスタンスからExperience Platformに渡す場合は、カスタム属性を使用できます。 この機能はベータ版です。 ベータ版プログラムへの参加を希望される場合は、[dataconnection@adobe.com](mailto:dataconnection@adobe.com) にリクエストを送信してください。 リクエストに、以下を含めます。
 
-   - お使いの [Adobe組織 ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255). 例： `organization_id@AdobeOrg`.
+   - [Adobe組織 ID ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)。 例：`organization_id@AdobeOrg`。
    - 注文レベルのカスタム属性のリスト。
-   - 注文項目レベルの属性のリスト。
+   - 受注品目レベル属性のリスト。
 
-   Adobe Commerceチームから、詳細および次の手順についての連絡が届きます。
+   Adobe Commerce チームから、詳細および次の手順についてご連絡いたします。
 
-行動データとバックオフィスデータ用に設定されたスキーマ、データセット、データストリームを使用すると、次のことが可能になります。 [設定](connect-data.md#data-collection) コマースインスタンスを使用してデータを収集し、Experience Platformに送信します。
+行動データやバックオフィスデータ用に設定されたスキーマ、データセット、データストリームを使用すると、データを収集してExperience Platformに送信するようにCommerce インスタンスを [ 設定 ](connect-data.md#data-collection) できます。
 
 買い物客のプロファイル情報を含めるには、次の節を参照してください。
 
@@ -83,49 +83,49 @@ ht-degree: 0%
 - [&#39;accountUpdated&#39;](events-backoffice.md#accountupdated)
 - [&#39;accountDeleted&#39;](events-backoffice.md#accountdeleted)
 
-顧客のプロファイルイベントデータをExperience Platformに取り込む場合は、既存のコマーススキーマを更新し、設定済みと同じデータストリームを使用するか、プロファイル固有のデータストリームとスキーマを作成します。 この決定は、お客様の会社のデータガバナンスに基づいておこなわれます。 次の 2 つのセクションでは、どちらの場合も説明します。
+顧客のプロファイルイベントデータをスキーマに取り込む場合は、既存のCommerce Experience Platformを更新し、設定済みの同じデータストリームを使用するか、プロファイル固有のデータストリームとスキーマを作成できます。 この決定は、会社のデータガバナンスに基づいています。 次の 2 つの節では、どちらの場合についても説明します。
 
-### 既存のデータストリームを使用して、時系列プロファイルイベントデータをExperience Platformに送信します。
+### 既存のデータストリームを使用して、時系列プロファイルイベントデータをExperience Platformに送信する
 
-時系列を追加する場合 [サーバーサイドプロファイルイベントデータ](events-backoffice.md#customer-profile-events-server-side) 既存のコマースデータストリームに、 `Demographic Details` フィールドグループをスキーマに追加します。 スキーマに、次のコマース固有のフィールドグループが含まれます。
+時系列 [ サーバーサイドのプロファイルイベントデータ ](events-backoffice.md#customer-profile-events-server-side) を既存のCommerce データストリームに追加する場合は、スキーマに `Demographic Details` フィールドグループを追加します。 スキーマには、次のCommerce固有のフィールドグループが含まれるようになりました。
 
 - サイト検索
-- ウェブページにアクセス
+- Web ページを訪問
 - ユーザーログインプロセス
 - 参照キー
 - 個人の連絡先の詳細
 - チャネルの詳細
-- コマースの詳細
-- Adobe Analytics ExperienceEvent Commerce(Adobe Analyticsにデータを送信する場合 )
-- 新規： **人口統計の詳細**
+- Commerceの詳細
+- Adobe Analytics ExperienceEvent Commerce（Adobe Analyticsにデータを送信する場合）
+- 新規：**人口統計の詳細**
 
-を `Demographic Details` 既存のコマーススキーマのフィールドグループでは、コマーススキーマに既に関連付けられているデータセットとデータストリームが、この時系列プロファイルデータに使用されます。
+既存のCommerce スキーマに `Demographic Details` フィールドグループを追加すると、この時系列プロファイルデータには、Commerce スキーマに既に関連付けられているデータセットとデータストリームが使用されます。
 
-### 時系列プロファイルイベントデータを別のデータストリームのExperience Platformに送信する
+### 時系列プロファイルイベントデータを別のデータストリームでExperience Platformに送信する
 
-を追加する場合、 [サーバーサイドプロファイルイベントデータ](events-backoffice.md#customer-profile-events-server-side) 新しいプロファイル固有のデータストリームとスキーマに対して、次の手順を実行します。
+[ サーバーサイドのプロファイルイベントデータ ](events-backoffice.md#customer-profile-events-server-side) を新しいプロファイル固有のデータストリームおよびスキーマに追加する場合は、次の手順を実行します。
 
-1. [作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) スキーマを作成し、クラスを **エクスペリエンスイベント**.
+1. [ 作成 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) スキーマを作成し、クラスを **エクスペリエンスイベント** に設定します。
 
-1. [追加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) 次のプロファイル固有のフィールドグループ：
+1. [ 追加 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) 次のプロファイル固有のフィールドグループ：
 
    - 人口統計の詳細
    - 個人の連絡先の詳細
    - チャネルの詳細
-   - コマースの詳細
+   - Commerceの詳細
 
-1. [有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) プロファイルのスキーマ。
+1. プロファイルのスキーマ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) 有効 [。
 
-   プロファイルに対してスキーマを有効にすると、このスキーマから作成されたすべてのデータセットがReal-Time CDPに参加し、異なるソースのデータを結合して、各顧客の完全なビューを構築します。
+   スキーマがプロファイルで有効になっている場合、このスキーマから作成されたデータセットは、異なるソースのデータを結合して各顧客の全体像を構築するReal-Time CDPに関与します。
 
-1. [データセットの作成](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 作成したスキーマに基づいて
+1. 作成したスキーマに基づいて [ データセットを作成 ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) します。
 
-   データセットは、データの集まり ( 通常、スキーマ（列）とフィールド（行）を含むテーブル ) のストレージと管理の構成体です。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
+   データセットは、データのコレクションのためのストレージおよび管理用の構成体で、通常は、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
 
-1. [データストリームの作成](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) をクリックし、コマース固有のフィールドグループと対応するデータセットを含む XDM スキーマを選択します。
+1. [ データストリームを作成 ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) し、Commerce固有のフィールドグループと対応するデータセットを含む XDM スキーマを選択します。
 
-   データストリームは、収集したデータをデータセットに転送します。 データは、選択したスキーマに基づいて、データセット内に表されます。
+   データストリームは、収集したデータをデータセットに転送します。 データは、選択したスキーマに基づいてデータセット内で表されます。
 
-顧客プロファイルデータ用に設定されたスキーマ、データセット、データストリームを使用すると、次のことが可能になります。 [設定](connect-data.md#data-collection) コマースインスタンスを使用して、そのデータを収集し、Experience Platformに送信します。
+顧客プロファイルデータ用に設定されたスキーマ、データセット、データストリームを使用すると、データを収集してExperience Platformに送信するようにCommerce インスタンスを [ 設定 ](connect-data.md#data-collection) できます。
 
-プロファイルレコードデータのスキーマ、データセット、データストリームを作成するには、 [プロファイルレコードデータをExperience Platformに送信](profile-data.md).
+プロファイルレコードデータのスキーマ、データセット、データストリームを作成するには、[ プロファイルレコードデータのExperience Platformへの送信 ](profile-data.md) を参照してください。

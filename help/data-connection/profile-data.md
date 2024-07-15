@@ -11,37 +11,37 @@ ht-degree: 0%
 
 ---
 
-# Commerce データ取り込み（ベータ版）用のプロファイルレコードスキーマの更新
+# Commerce データ取り込み（Beta）用のプロファイルレコードスキーマの更新
 
 買い物客がCommerce サイトでプロファイルを作成すると、プロファイルレコードが作成され、データが取り込まれます。 そのプロファイルデータをExperience Platformにストリーミングするには、そのプロファイルレコードに固有のスキーマとデータセットを作成する必要があります。
 
-1. [作成](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) スキーマし、クラスをに設定します **個人プロファイル**.
+1. [ 作成 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) スキーマを作成し、クラスを **個人プロファイル** に設定します。
 
-1. [追加](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) 次のプロファイル固有のフィールドグループ：
+1. [ 追加 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) 次のプロファイル固有のフィールドグループ：
 
    - identityMap
    - 人口統計の詳細
    - 個人の連絡先の詳細
    - ユーザーアカウントの詳細
 
-1. [Enable （有効）](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) プロファイルのスキーマ。
+1. プロファイルのスキーマ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) 有効 [。
 
    スキーマがプロファイルで有効になっている場合、このスキーマから作成されたデータセットは、異なるソースのデータを結合して各顧客の全体像を構築するReal-Time CDPに関与します。
 
-1. [データセットの作成](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform) 作成または更新したスキーマに基づいています。
+1. 作成または更新したスキーマに基づいて ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform) データセットを作成 [ します。
 
    データセットは、データのコレクションのためのストレージおよび管理用の構成体で、通常は、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
 
-1. を作成 [カスタム名前空間](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces) 次の値とExperience Platformします。
+1. Experience Platformに次の値を持つ [ カスタムネームスペース ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces) を作成します。
 
    - **表示名**: _Commerce顧客 ID_
-   - **ID シンボル**: _顧客 ID_
-   - **タイプ**: _個々のクロスデバイス ID_
+   - **ID シンボル**: _CustomerId_
+   - **タイプ**:_個々のクロスデバイス ID_
 
-   ![カスタム名前空間の作成](assets/custom-namespace.png){width="700" zoomable="yes"}
+   ![ カスタム名前空間の作成 ](assets/custom-namespace.png){width="700" zoomable="yes"}
 
-   クリック **[!UICONTROL Create]**. カスタム名前空間は、プロファイルフラグメントをステッチして結合するために、統合プロファイルサービスで使用されます。
+   「**[!UICONTROL Create]**」をクリックします。 カスタム名前空間は、プロファイルフラグメントをステッチして結合するために、統合プロファイルサービスで使用されます。
 
-顧客プロファイルレコードデータ用に設定されたスキーマ、データセット、カスタムネームスペースを使用すると、次のことができます [設定](connect-data.md#data-collection) そのデータを収集してExperience Platformに送信するCommerce インスタンス。
+顧客プロファイルレコードデータ用に設定されたスキーマ、データセット、カスタムネームスペースを使用すると、Commerce インスタンスを [ 設定 ](connect-data.md#data-collection) し、そのデータを収集してExperience Platformに送信できます。
 
-行動およびバックオフィスイベントデータのスキーマ、データセット、データストリームを作成するには、を参照してください。 [Commerce データ取り込みの時系列イベントスキーマの更新](update-xdm.md).
+行動およびバックオフィスイベントデータのスキーマ、データセット、データストリームを作成するには、[Commerce データ取り込みの時系列イベントスキーマを更新 ](update-xdm.md) を参照してください。

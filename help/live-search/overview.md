@@ -1,6 +1,6 @@
 ---
-title: について [!DNL Live Search]?
-description: “[!DNL Live Search] Adobe Commerceから迅速で関連性の高い直感的な検索を提供します。」
+title: 何  [!DNL Live Search]?
+description: 「Adobe Commerceの [!DNL Live Search] は、迅速で関連性の高い直感的な検索エクスペリエンスを提供します。」
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
 source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
@@ -10,11 +10,11 @@ ht-degree: 0%
 
 ---
 
-# について [!DNL Live Search]?
+# [!DNL Live Search] とは
 
-[!DNL Live Search] は、Adobe Commerceの標準の検索機能を置き換える機能です。 この [!DNL Live Search] 機能は Composer と共にインストールされ、 [!DNL Commerce] に保存 [Commerce サービスコネクタ](../landing/saas.md). これを設定すると、デフォルトの検索テキストフィールドがに置き換えられます [!DNL Live Search] テキストフィールド。 [!DNL Live Search] は製品リストページ（PLP）ウィジェットもインストールします。このウィジェットは、検索結果を参照する際に堅牢なフィルタリング機能を提供します。
+[!DNL Live Search] は、Adobe Commerceの標準の検索機能に代わる機能です。 [!DNL Live Search] 機能は Composer と共にインストールされ、[!DNL Commerce] ストアを [Commerce Services Connector](../landing/saas.md) に接続します。 これを設定すると、デフォルトの検索テキストフィールドが [!DNL Live Search] のテキストフィールドに置き換えられます。 [!DNL Live Search] は、検索結果を参照する際に堅牢なフィルタリング機能を提供する製品一覧表示ページ（PLP）ウィジェットもインストールします。
 
-（を使用） [!DNL Live Search]では、以下のことが可能です。
+[!DNL Live Search] を使用すると、次のことができます。
 
 - 有意義な検索エクスペリエンスを作成すると、買い物客や買い物客ができるだけ少ない労力で欲しいものを見つけるのに役立ちます。
 - セッション内の買い物客の行動に応じて、AI を活用した動的なファセット化と検索結果の再ランキングを利用できます。
@@ -23,64 +23,64 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->サイト検索に関しては、Adobe Commerceのオプションが用意されています。 実装する前に、 [境界と制限](boundaries-limits.md) を保証するための情報 [!DNL Live Search] は、お客様のビジネスニーズに合っています。
+>サイト検索に関しては、Adobe Commerceのオプションが用意されています。 実装する前に、[ 境界と制限 ](boundaries-limits.md) 情報を確認し、ビジネスニーズに適し [!DNL Live Search] いることを確認します。
 
 ## アーキテクチャ
 
-アーキテクチャのAdobe Commerce側には、検索のホストが含まれます *Admin*、カタログデータの同期とクエリサービスの実行。 後 [!DNL Live Search] をインストールして設定すると、Adobe Commerceで検索とカタログデータの SaaS サービスとの共有が開始されます。 この時点で、管理者ユーザーは検索を設定、カスタマイズ、管理できます [ファセット](facets.md), [同義語](synonyms.md)、および [マーチャンダイジングルール](category-merch.md).
+アーキテクチャのAdobe Commerce側では、検索 *管理者* のホスティング、カタログデータの同期、クエリサービスの実行が含まれます。 [!DNL Live Search] をインストールして設定すると、Adobe Commerceで検索とカタログデータの SaaS サービスとの共有が開始されます。 この時点で、管理者ユーザーは、検索 [ ファセット ](facets.md)、[ 同義語 ](synonyms.md) および [ マーチャンダイジングルール ](category-merch.md) を設定、カスタマイズおよび管理できます。
 
-![ライブ検索のデータフロー](assets/ls-cs-data-flow.png)
+![ ライブ検索のデータフロー ](assets/ls-cs-data-flow.png)
 
 ## クイックツアー
 
-速度、関連性、使いやすさに重点を置いて、 [!DNL Live Search] は、買い物客と商人の両方にとってゲームのチェンジャーです。 次のビデオを視聴し、 [!DNL Live Search] 店舗の前から。
+スピード、関連性、使いやすさを重視し、買い物客とマーチャントの両方に [!DNL Live Search] ってゲームの変化をもたらします。 次のビデオをご覧になり、ストアフロントから [!DNL Live Search] の簡単なツアーをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-Live Search の使用と設定について詳しくは、 [の完全なデモ [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) トピック。
+Live Search の使用と設定に関する詳細なビデオについては、[ 完全なデモ  [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) のトピックを参照してください。
 
 ### 入力中に検索
 
-[!DNL Live Search] は、製品の提案と、での上位の検索結果のサムネール画像を返します。 [ポップオーバー](storefront-popover.md) 買い物客がにクエリを入力する際 [検索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) ボックス。 この [製品の詳細](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) ページは、買い物客が推奨製品またはおすすめ製品をクリックすると表示されます。 A _すべて表示_ ポップオーバーのフッターにあるリンクをクリックすると、検索結果のページが表示されます。
+買 [!DNL Live Search] 物客が [ 検索 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) ボックスにクエリを入力すると、検索結果の候補と、上位のサムネール画像が [ ポップオーバー ](storefront-popover.md) で応答されます。 [ 製品詳細 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) ページは、買い物客が推奨製品またはおすすめ製品をクリックすると表示されます。 ポップオーバーのフッターにある _すべて表示_ リンクには、検索結果のページが表示されます。
 
-[!DNL Live Search] 2 文字以上のクエリに対しては、「入力中に検索」を行った結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 クエリの文字数は変更できません。 ポップオーバーには、`name`, `sku`、および `category_ids` フィールド。
+[!DNL Live Search] は、2 文字以上のクエリに対して、「入力中に検索」を行った結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 クエリの文字数は変更できません。 ポップオーバーには、「`name`」、「`sku`」および「`category_ids`」フィールドが含まれます。
 
-![ストアフロントの例 – 入力中に検索](assets/storefront-search-as-you-type.png)
+![ 例 storefront – 入力中に検索 ](assets/storefront-search-as-you-type.png)
 
 ### すべての検索結果を表示
 
-「入力中の検索」クエリで返されたすべての製品をリストするには、 _すべて表示_ ポップオーバーのフッター。
+「入力中の検索」クエリで返されたすべての製品をリストするには、ポップオーバーのフッターにある _すべて表示_ をクリックします。
 
-![ストアフロントの例 – 価格ファセット](assets/storefront-view-all-search-results.png)
+![ ストアフロントの例 – 価格ファセット ](assets/storefront-view-all-search-results.png)
 
 ### ファセットを使用したフィルター検索
 
-フィルタリングされた検索で、属性値の複数のディメンションを使用する [ファセット](facets.md)を検索条件として使用します。 フィルターの選択はマーチャントによって定義され、返された製品に従って変更されます。最も一般的に使用されるファセットはリストの上部にピン留めされます。
+フィルタリングされた検索では、複数のディメンションの属性値、つまり [ ファセット ](facets.md) が検索条件として使用されます。 フィルターの選択はマーチャントによって定義され、返された製品に従って変更されます。最も一般的に使用されるファセットはリストの上部にピン留めされます。
 
-ファセットを URL パラメーターとして使用：`http://yourwebsite.com?color=red`、およびライブ検索では、これらの属性値に基づいて結果がフィルタリングされます。
+ファセットを URL パラメーターとして使用：`http://yourwebsite.com?color=red`、ライブ検索では、これらの属性値に基づいて結果がフィルタリングされます。
 
 ### 同義語
 
-[同義語](synonyms.md) リーチを拡大し、買い物客がカタログと異なる単語を使用する可能性がある単語を含めることで、クエリのフォーカスを絞り込みます。 同義語辞書を微調整して、買い物客がエンゲージし、購入するパスを維持することができます。
+[ シノニム ](synonyms.md) リーチを拡大し、カタログ内の用語とは異なる、買い物客が使用する可能性のある用語を含めることで、クエリの焦点を絞ります。 同義語辞書を微調整して、買い物客がエンゲージし、購入するパスを維持することができます。
 
 ### マーチャンダイジングルール
 
-マーチャンダイジング [個のルール](rules.md) 検索するロジックとイベントを追加する if-then ステートメントを使用して、ショッピングエクスペリエンスを形作ります。 プロモーションやシーズン、その他の期間に合わせて、商品を簡単にブーストまたは埋め込むことができます。
+マーチャンダイジング [ ルール ](rules.md) は、検索するロジックとイベントを追加する if-then ステートメントを使用してショッピングエクスペリエンスを形成します。 プロモーションやシーズン、その他の期間に合わせて、商品を簡単にブーストまたは埋め込むことができます。
 
 ### 検索用語のサポート
 
-[!DNL Live Search] はCommerceをサポートします [検索語句のリダイレクト](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). 例えば、「配送料」などの語句を検索すると、配送料ページに直接移動できます。
+[!DNL Live Search] は、Commerce[ 検索語句のリダイレクト ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) をサポートしています。 例えば、「配送料」などの語句を検索すると、配送料ページに直接移動できます。
 
 ## Live Search コンポーネント
 
-- [!DNL Live Search] [ポップオーバーウィジェット](storefront-popover.md) は、検索結果を含む検索フィールドの下に開くボックスです。
-- [製品一覧ページウィジェット](plp-styling.md) （PLP）は、ファセットと同義語のサポートを備えた検索可能な製品リストページを提供します。 このウィジェットは Live Search 4.0.0 以降にインストールされ、有効になっています。
+- [ ポップオーバーウィジェット ](storefront-popover.md)[!DNL Live Search]、検索結果を含む検索フィールドの下に開くボックスです。
+- [ 製品一覧表示ページウィジェット ](plp-styling.md) （PLP）は、ファセットと同義語をサポートする、検索可能な製品一覧表示ページを提供します。 このウィジェットは Live Search 4.0.0 以降にインストールされ、有効になっています。
 - （**非推奨**）検索アダプターは PLP ウィジェットの前身であり、Live Search &lt; 4.0.0 でインストールされました。4.0.0 より前のバージョンの Live Search を使用している場合、Commerceはアップグレードして、PLP ウィジェットの機能のメリットを享受し、今後の改善を受けることをお勧めします。
 
 ## [!DNL Live Search] workspace
 
-この [!DNL Live Search] [workspace](workspace.md) は、管理者で設定する領域です [!DNL Live Search] 同義語、ファセット、カテゴリマーチャンダイジングなどの機能。
+[!DNL Live Search][ ワークスペース ](workspace.md) は、管理者でシノニム、ファセット、カテゴリマーチャンダイジングなどの [!DNL Live Search] 機能を設定する領域です。
 
 ## イベント
 
-[!DNL Live Search] 使用 [イベント](events.md) 計算する [インテリジェントマーチャンダイジング](category-merch.md) および [給付](performance.md) ダッシュボード。 イベントはデフォルトの実装で提供されています。 ヘッドレスストアフロントのイベントは、手動で有効にする必要があります。
+[!DNL Live Search] は [ イベント ](events.md) を使用して [ インテリジェントマーチャンダイジング ](category-merch.md) および [ パフォーマンス ](performance.md) ダッシュボードを計算します。 イベントはデフォルトの実装で提供されています。 ヘッドレスストアフロントのイベントは、手動で有効にする必要があります。

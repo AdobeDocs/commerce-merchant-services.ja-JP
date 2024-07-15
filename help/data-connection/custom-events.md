@@ -1,29 +1,29 @@
 ---
 title: カスタムイベントの作成
-description: Adobe Commerceのデータを他のAdobeDX 製品に接続するカスタムイベントを作成する方法を説明します。
+description: カスタムイベントを作成して、Adobe Commerce データを他のAdobe DX 製品に接続する方法を説明します。
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
 # カスタムイベントの作成
 
-次の項目を拡張することができます： [イベントプラットフォーム](events.md) 独自のストアフロントイベントを作成して、自社の業界固有のデータを収集する。 カスタムイベントを作成して設定すると、 [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
+独自のストアフロントイベントを作成して業界に固有のデータを収集することで、[ イベントプラットフォーム ](events.md) を拡張できます。 カスタムイベントを作成して設定すると、そのイベントは [Adobe Commerce イベントコレクター ](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector) に送信されます。
 
 ## カスタムイベントの処理
 
-カスタムイベントは、Adobe Experience Platformでのみサポートされています。 カスタムデータは、Adobe Commerceのダッシュボードおよび指標トラッカーには転送されません。
+カスタムイベントは、Adobe Experience Platformでのみサポートされています。 カスタムデータは、Adobe Commerce ダッシュボードおよび指標トラッカーに転送されません。
 
-任意の `custom` イベント、コレクター：
+`custom` イベントの場合、コレクターは以下を行います。
 
-- 追加数 `identityMap` 次を使用 `ECID` プライマリ ID として
-- 次を含む `email` in `identityMap` セカンダリ ID として _if_ `personalEmail.address` がイベントに設定されている
-- イベント全体を `xdm` Edge に転送する前のオブジェクト
+- `ECID` をプライマリ ID として `identityMap` を追加します
+- イベントで設定されているセカンダリ ID _if_`personalEmail.address` として `identityMap` に `email` を含めます
+- Edgeに転送する前に、`xdm` オブジェクト内でイベント全体をラップします
 
 例：
 
@@ -39,7 +39,7 @@ mse.publish.custom({
 });
 ```
 
-Experience PlatformEdge 内：
+EdgeのExperience Platformで：
 
 ```javascript
 {
@@ -69,21 +69,21 @@ Experience PlatformEdge 内：
 
 >[!NOTE]
 >
-> カスタムイベントを使用すると、デフォルトのAdobe Analyticsレポートに影響を与える場合があります。
+> カスタムイベントを使用すると、デフォルトのAdobe Analytics レポートに影響する可能性があります。
 
 ## イベントの上書きの処理（カスタム属性）
 
-標準イベントの属性の上書きは、イベントでのみサポートされています。Experience Platform。 カスタムデータは、コマースダッシュボードおよび指標トラッカーには転送されません。
+標準イベントの属性のオーバーライドは、Experience Platformでのみサポートされています。 カスタムデータは、Commerce ダッシュボードおよび指標トラッカーに転送されません。
 
-次を含む任意のイベントの `customContext`の場合、コレクターは関連するコンテキストで設定された結合フィールドを、 `customContext`. オーバーライドの使用例は、開発者が、既にサポートされているイベントでページの他の部分によって設定されたコンテキストを再利用し、拡張したい場合です。
+`customContext` を含むイベントの場合、コレクターは、関連するコンテキストで設定されたフィールドを `customContext` のフィールドでオーバーライドします。 オーバーライドのユースケースは、開発者が、既にサポートされているイベントでページの他の部分が設定したコンテキストを再利用および拡張する場合です。
 
 >[!NOTE]
 >
->カスタムイベントを上書きする場合は、そのイベントタイプに対してExperience Platformへのイベント転送をオフにして、二重カウントを回避する必要があります。
+>カスタムイベントを上書きする場合は、重複カウントを避けるために、そのイベントタイプのExperience Platformへのイベント転送をオフにする必要があります。
 
-例:
+例：
 
-Adobe Commerce Events SDK で公開された上書きを含む製品表示：
+Adobe Commerce Events SDK を通じて公開されたオーバーライドを含む製品ビュー：
 
 ```javascript
 mse.publish.productPageView({
@@ -101,7 +101,7 @@ mse.publish.productPageView({
 });
 ```
 
-Experience PlatformEdge 内：
+EdgeのExperience Platformで：
 
 ```javascript
 {
@@ -135,4 +135,4 @@ Experience PlatformEdge 内：
 
 >[!NOTE]
 >
-> カスタム属性を使用したイベントの上書きは、デフォルトのAdobe Analyticsレポートに影響を与える可能性があります。
+> カスタム属性を使用してイベントを上書きすると、デフォルトのAdobe Analytics レポートに影響する場合があります。

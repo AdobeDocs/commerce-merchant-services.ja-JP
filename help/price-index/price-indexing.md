@@ -15,19 +15,19 @@ ht-degree: 0%
 
 SaaS の価格インデックス作成では、インデックス作成や価格計算などの重い計算プロセスをCommerce アプリケーションからAdobeのクラウドインフラストラクチャに移行することで、サイトのパフォーマンスが向上します。 このアプローチにより、マーチャントはリソースを迅速に拡張して価格のインデックス化時間を短縮し、データをストアフロントおよび接続されたCommerce サービスに送信する際に価格の変化をより迅速に反映できます。
 
-次の図は、Commerceがを使用している場合の SaaS サービスへのインデックス作成データフローを示しています。 [価格索引付け](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) Commerce アプリケーションに含まれるプロセス：
+次の図は、Commerce アプリケーションに含まれている [ 価格インデックス作成 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) プロセスをCommerceが使用している場合の SaaS サービスへのインデックス作成データフローを示しています。
 
-![デフォルトのデータフロー](assets/old_way.png)
+![ デフォルトのデータフロー ](assets/old_way.png)
 
-SaaS 価格インデックスを有効にすると、データフローが変更されます。 価格のインデックス作成は、次を使用して実行します。 [Commerce SaaS データの書き出し](../data-export/data-synchronization.md).
+SaaS 価格インデックスを有効にすると、データフローが変更されます。 価格のインデックス作成は、[Commerce SaaS データのエクスポート ](../data-export/data-synchronization.md) を使用して実行されます。
 
-![SaaS 価格インデックス作成データ フロー](assets/new_way.png)
+![SaaS 価格インデックス作成のデータフロー ](assets/new_way.png)
 
 すべてのマーチャントは、SaaS 価格インデックスを使用することでメリットを得ることができますが、次のような特徴を持つプロジェクトを持つマーチャントは、最大のメリットを得ることができます。
 
-* **継続的な価格変更**・頻繁なプロモーション、季節的な割引、在庫の値動きなど、戦略目標を達成するために何度も価格を変更する必要がある販売者。
-* **複数の web サイトや顧客グループ** – 複数の web サイト（ドメイン/ブランド）や顧客グループで製品カタログを共有しているマーチャント。
-* **Web サイトまたは顧客グループをまたいだ多くのユニークな価格**-Web サイトや顧客グループをまたいだ一意の価格を含む、広範な共有製品カタログを持つマーチャント。 例えば、事前に交渉された価格を持つ B2B マーチャントや、異なる価格戦略を持つブランドが含まれます。
+* **一定の価格変更** 頻繁なプロモーション、季節的な割引、在庫販売などの戦略目標を達成するために、価格の繰り返しの変更を必要とする商人。
+* **複数の web サイトや顧客グループ** 複数の web サイト（ドメイン/ブランド）や顧客グループで製品カタログを共有しているマーチャント。
+* **Web サイトまたは顧客グループをまたいだ一意の価格が多い**-Web サイトまたは顧客グループをまたいだ一意の価格を含む広範な共有製品カタログを持つマーチャント。 例えば、事前に交渉された価格を持つ B2B マーチャントや、異なる価格戦略を持つブランドが含まれます。
 
 ## SaaS 価格インデックス作成の使用
 
@@ -48,7 +48,7 @@ SaaS 価格インデックス作成は、Adobe Commerce サービスのインス
 
 >[!NOTE]
 >
->必要に応じて、Commerce アプリケーションのデフォルトの価格インデクサーを [カタログアダプタ](catalog-adapter.md).
+>必要に応じて、Commerce アプリケーションのデフォルトの価格インデクサーを [ カタログアダプター ](catalog-adapter.md) を使用して無効にできます。
 
 ## 価格と SaaS 価格インデックスの同期
 
@@ -66,7 +66,7 @@ bin/magento saas:resync --feed=prices
 
 特定の数式を使用して最終価格を計算するカスタム製品タイプがある場合、製品価格フィードの動作を拡張できます。
 
-1. にプラグインを作成する `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` クラス。
+1. `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` クラスにプラグインを作成します。
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

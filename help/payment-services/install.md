@@ -1,5 +1,5 @@
 ---
-title: インストール [!DNL Payment Services]
+title: インストール  [!DNL Payment Services]
 description: 支払いサービス拡張機能をインストールします。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
@@ -11,44 +11,44 @@ ht-degree: 0%
 
 ---
 
-# インストール [!DNL Payment Services]
+# [!DNL Payment Services] のインストール
 
-の支払いサービスの使用を開始するには [!DNL Adobe Commerce] および [!DNL Magento Open Source]では、いくつかのオンボーディング手順を完了する必要があります。
+[!DNL Adobe Commerce] と [!DNL Magento Open Source] の支払いサービスの使用を開始するには、いくつかのオンボーディング手順を完了する必要があります。
 
 >[!INFO]
 >
-> のを表示 [設定 [!DNL Payment Services] Adobe Commerceの場合](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) ビデオを参照してください。
+> 詳しくは、[Adobe Commerce用の設定  [!DNL Payment Services]  ビデオ ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) 参照してください。
 
-のダウンロードとインストール [!DNL Payment Services] の拡張機能 [!DNL Adobe Commerce] および [!DNL Magento Open Source] を使用するための前提条件となる手順です [!DNL Payment Services].
+[!DNL Adobe Commerce] および [!DNL Magento Open Source] 用の [!DNL Payment Services] 拡張機能をダウンロードしてインストールすることは、[!DNL Payment Services] を使用するための前提条件の手順です。
 
-![[!DNL Payment Services] 拡張機能の管理者ビュー](assets/admin-view.png){width="300" zoomable="yes"}
+拡張機 ![[!DNL Payment Services] の管理者表示 ](assets/admin-view.png){width="300" zoomable="yes"}
 
 ## 拡張機能のダウンロード
 
-最初に、から拡張機能をダウンロードする必要があります。 [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) インストールする前に。
+インストールする前に、最初に [ Commerce Marketplaceーから拡張機能をダウンロ ](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) ドする必要があります。
 
-1. に移動します。 [Commerce Marketplaceの支払いサービス拡張機能](https://commercemarketplace.adobe.com/magento-payment-services.html).
-1. エディションとバージョンを選択するには、を切り替えます **[!UICONTROL Edition]** および **[!UICONTROL Your store version]** 任意の選択に変更できます。
-1. クリック **[!UICONTROL Add to Cart]**.
-1. チェックアウトを完了し、 **[!UICONTROL Place Order]**.
+1. [Commerce Marketplaceの支払いサービス拡張機能 ](https://commercemarketplace.adobe.com/magento-payment-services.html) に移動します。
+1. エディションとバージョンを選択するには、**[!UICONTROL Edition]** と **[!UICONTROL Your store version]** を希望の選択項目に切り替えます。
+1. 「**[!UICONTROL Add to Cart]**」をクリックします。
+1. チェックアウトを完了し、「**[!UICONTROL Place Order]**」をクリックします。
 1. 注文の確認と詳細については、Marketplace のダウンロードに関連するメールを確認してください。
 
 ## 拡張機能のインストール
 
-をインストールできます [!DNL Payment Services] 両方の拡張機能 [!DNL Adobe Commerce] Commerce アカウントにリンクされたクラウドインフラストラクチャー上およびオンプレミスインスタンス [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) 登録プロセスで提供されます。
-[!DNL Magento Open Source] お客様は、オンプレミスの手順を使用します。
+[!DNL Payment Services] 拡張機能は、クラウドインフラストラクチャー上のインスタンスとオンプレミスインスタンスの両方に対してイ [!DNL Adobe Commerce] ストールできます。これらのインスタンスは、登録プロセスで提供されるCommerce アカウント [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) にリンクされています。
+オンプレミスの手順を使用するお客様は [!DNL Magento Open Source] とんどいません。
 
-Composer は、の初期インストール時にこれらのキーを使用します。 [!DNL Adobe Commerce]、または Composer キーが以前にに保存されていなかった状況で `auth.json` ファイル。
+Composer は、[!DNL Adobe Commerce] の初期インストール時、または Composer のキーが以前に `auth.json` ファイルに保存されていなかった場合に、これらのキーを使用します。
 
-参照： [認証キーの取得](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) composer キーの取得の詳細については、を参照してください。
+Composer キーの取得の詳細については、[ 認証キーの取得 ](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) を参照してください。
 
-参照： [拡張機能のインストール](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) 拡張機能のダウンロードとインストールの前に考慮すべき事項の詳細については、を参照してください。
+拡張機能をダウンロードしてインストールする前に考慮すべき事項について詳しくは、[ 拡張機能のインストール ](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) を参照してください。
 
-### [!DNL Adobe Commerce] クラウドインフラストラクチャー上
+### クラウドインフラストラクチャー上の [!DNL Adobe Commerce]
 
-このメソッドは、 [!DNL Payment Services] Commerce Cloudインスタンス用の拡張機能。
+Commerce Cloudインスタンスの [!DNL Payment Services] 拡張機能をインストールする場合に使用します。
 
-1. を更新 `composer.json` ファイル：
+1. `composer.json` ファイルを更新します。
 
    ```bash
    composer require magento/payment-services --no-update
@@ -60,13 +60,13 @@ Composer は、の初期インストール時にこれらのキーを使用し�
    composer update magento/payment-services --with-dependencies
    ```
 
-   の使用 `composer update` すべてのルート依存関係を更新するコマンド。
+   `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
 
 1. 変更をコミットし、プッシュします。
 
 ### オンプレミスおよびその他の設定
 
-このメソッドは、 [!DNL Payment Services] オンプレミスインスタンスの拡張機能および [!DNL Magento Open Source] 顧客。
+この方法は、オンプレミスのインスタンスおよび [!DNL Magento Open Source] のお客様の [!DNL Payment Services] 拡張機能をインストールする場合に使用します。
 
 1. 拡張機能を取得するには、次のコマンドを実行します。
 
@@ -80,7 +80,7 @@ Composer は、の初期インストール時にこれらのキーを使用し�
    composer update magento/payment-services --with-dependencies
    ```
 
-   の使用 `composer update` すべてのルート依存関係を更新するコマンド。
+   `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
 
 1. インスタンスをアップグレード：
 
@@ -99,7 +99,7 @@ Composer は、の初期インストール時にこれらのキーを使用し�
 
 ## 拡張機能のアップグレード
 
-新しいバージョンの [!DNL Payment Services] はリリースされました。拡張機能を簡単にアップグレードできます。
+新しいバージョンの [!DNL Payment Services] がリリースされると、拡張機能を簡単にアップグレードできます。
 
 1. パッケージの最新バージョンを取得するには：
 
@@ -107,13 +107,13 @@ Composer は、の初期インストール時にこれらのキーを使用し�
    composer update magento/payment-services --with-dependencies
    ```
 
-   の使用 `composer update` すべてのルート依存関係を更新するコマンド。
+   `composer update` コマンドを使用して、すべてのルート依存関係を更新します。
 
 1. 変更をコミットし、プッシュします。
 
 ## トラブルシューティング
 
-をインストールしようとすると、エラーが発生することがあります [!DNL Payment Services] 拡張機能。 次のトラブルシューティング方法を使用して、エラーを解決します。
+[!DNL Payment Services] 拡張機能をインストールしようとすると、エラーが発生することがあります。 次のトラブルシューティング方法を使用して、エラーを解決します。
 
 ### コンポーザーのキーが正しくありません
 
@@ -127,19 +127,19 @@ Composer キーが有効で、他のMagento パッケージにアクセスでき
 
 設定されている Composer キーを確認するには：
 
-1. の場所を検索 `auth.json` ファイル：
+1. `auth.json` ファイルの場所を見つけます。
 
    ```bash
    composer config --global home
    ```
 
-1. を表示する `auth.json` ファイル：
+1. `auth.json` ファイルを表示します。
 
    ```bash
    cat /path/to/auth.json
    ```
 
-1. 参照： [Commerce アカウントに関連付けられているキー `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. 詳しくは [Commerce アカウントに関連付けられているキ `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) を参照してください。
 
 ### PHP に必要なメモリが不足しています
 
@@ -149,9 +149,9 @@ PHP 用のメモリが足りないことを示す次のエラーが表示され�
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[メモリの上限を増やす](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) 使用している環境での PHP の場合： `php.ini`.
+[ メモリ制限を増やす ](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) ご使用の環境の PHP の場合は、`php.ini` を使用します。
 
-または、次のコマンドを使用してメモリ制限を指定することもできます。 `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
+または、次のコマンドを使用してメモリ制限を指定できます：`php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`。
 
 例：
 

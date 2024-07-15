@@ -1,6 +1,6 @@
 ---
 title: オンボーディング
-description: での要件とサポートされるプラットフォームについて説明します。 [!DNL Product Recommendations].
+description: ' [!DNL Product Recommendations] の要件とサポートされるプラットフォームについて説明します。'
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
 source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # オンボーディング
 
-のオンボーディングプロセス [!DNL Product Recommendations] は、サーバーのコマンドラインにアクセスする必要があり、次の手順で構成されます。 コマンドラインでの作業に慣れていない場合は、開発者またはシステムインテグレーターに問い合わせてください。
+[!DNL Product Recommendations] のオンボーディングプロセスでは、サーバーのコマンドラインにアクセスする必要があります。このプロセスは次の手順で構成されます。 コマンドラインからの操作に詳しくない場合は、開発者またはシステムインテグレーターにお問い合わせください。
 
 - [実装ワークフロー](implementation-workflow.md)
 - [インストールと設定](install-configure.md)
@@ -27,27 +27,27 @@ ht-degree: 0%
 
 ### サポートされるプラットフォーム
 
-- Adobe Commerceオンプレミス (EE) :2.4.4 以降
-- Adobe Commerce on Cloud (ECE) :2.4.4 以降
+- Adobe Commerce オンプレミス（EE） :2.4.4 以降
+- クラウド上のAdobe Commerce（ECE） :2.4.4 以降
 
 ## エンドポイント
 
-[!DNL Product Recommendations] は、次の場所のエンドポイントを通じて通信します： `https://catalog-service.adobe.io/graphql`.
+[!DNL Product Recommendations] は、`https://catalog-service.adobe.io/graphql` のエンドポイントを介して通信します。
 
 ### ページビルダーのサポート
 
-[!DNL Product Recommendations] は、Page Builder コンテンツタイプとしてページに追加できます。 Page Builder サポートを製品Recommendationsに追加するには、 [インストールと設定](install-configure.md).
+ページビル [!DNL Product Recommendations] ーコンテンツタイプとしてページに追加できます。 ページビルダーのサポートを製品Recommendationsに追加するには、[ インストールと設定 ](install-configure.md) を参照してください。
 
-詳しくは、 [[!DNL Page Builder] 統合](page-builder.md) 追加方法の手順 [!DNL Product Recommendations] into [!DNL Page Builder] コンテンツ。
+コンテンツに [!DNL Product Recommendations] ータを追加する方法については、[[!DNL Page Builder]  統合 ](page-builder.md) を参照 [!DNL Page Builder] てください。
 
-### SaaS 価格のインデックス作成
+### SaaS 価格インデックス作成
 
-製品レコメンデーションのお客様が [SaaS 価格のインデックス作成](../price-index/price-indexing.md)：価格変更の更新と同期時間を短縮します。
+製品レコメンデーションのお客様は、[SaaS 価格インデックス作成 ](../price-index/price-indexing.md) を使用できます。これにより、価格の変更の更新と同期化時間が短縮されます。
 
 ### B2B サポート {#b2bsupport}
 
-B2B ストアフロントでは、多くの場合、買い物客や顧客グループごとに製品の表示と価格を指示する複雑なロジックが必要です。 [!DNL Product Recommendations] now [サポート](release-notes.md) この機能は、次の点に従って動作します。 [カテゴリ権限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [共有カタログ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)、および [顧客グループ固有の価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). 例えば、小売顧客セグメントで特定のカテゴリを非表示にしている場合、そのセグメントの買い物客には、そのカテゴリにある製品のレコメンデーションは表示されません。 また、特定の顧客グループや会社用に共有カタログを定義すると、それらの買い物客は、アクセス可能な製品のレコメンデーションのみを表示します。 すべての推奨商品は、各買い物客の顧客グループに基づく、正しい顧客グループ固有の価格を反映しています。
+B2B ストアフロントには、多くの場合、買い物客または顧客グループごとに製品の可視性と価格を指示する複雑なロジックが必要です。 [ カテゴリ権限 ](release-notes.md)、[ 共有カタログ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)、および [ 顧客グループ固有の価格 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) を考慮して、この機能を [ サポート ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) するように設 [!DNL Product Recommendations] しました。 例えば、小売顧客セグメントから特定のカテゴリを非表示にした場合、そのセグメントの買い物客には、それらのカテゴリの製品のレコメンデーションは表示されません。 また、特定の顧客グループや会社用に共有カタログを定義すると、買い物客は、アクセスできる製品に関するレコメンデーションのみが表示されます。 すべての推奨製品は、各買い物客の顧客グループに基づいて、正しい顧客グループ固有の価格を反映しています。
 
 >[!NOTE]
 >
->マーチャントは、 [カタログサービス](../catalog-service/overview.md) ストアフロント API ですが、カスタマイズはAdobeのサポートチームの範囲外です。
+>マーチャントは、[ カタログサービス ](../catalog-service/overview.md)Storefront API を使用して、ウィジェットやストアフロント要素をカスタマイズおよび拡張できますが、カスタマイズはAdobeのサポートチームの範囲外です。
