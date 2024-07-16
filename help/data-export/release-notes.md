@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 051e558f9aa9760c2d6e993713e49a5997270f1b
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,17 @@ ht-degree: 0%
 >SaaS データ書き出し拡張機能は、Live Search、Product Recommendations、カタログサービスと共に自動的にインストールされるモジュールのコレクションです。 コンポーザーを使用して、システムにインストールされているバージョンを確認できます。 場合によっては、Commerce サービスのバージョンを更新せずに修正点または新機能を取得するように、システムのデータエクスポート拡張機能をアップグレードする必要があります。
 
 ## 現在のメジャーバージョン
+
+## 103.3.7 リリース
+
+![ 修正 ](../assets/fix.svg) InventoryDataExporter モジュールから不要な依存関係を削除しました。
+![ 修正 ](../assets/fix.svg)CatalogInventoryDataExporter モジュールに含まれる在庫モジュールの必須バージョンを、Adobe Commerce バージョン 2.4.4 をサポートするように変更しました。
+
+## 103.3.6 リリース
+
+![ 修正 ](../assets/fix.svg) マルチスレッドモードでのフィードのインデックス再作成中に発生したデッドロックを修正しました。 クエリは、挿入操作と更新操作に分けられるようになりました。
+![ 修正 ](../assets/fix.svg) 多くの web サイトを含む大規模なカタログの価格クエリを最適化しました。
+![ 新規 ](../assets/new.svg) デッドロックが発生した場合に失敗したトランザクションを再実行する再試行ロジックが追加されました。
 
 ## 103.3.5 リリース
 
