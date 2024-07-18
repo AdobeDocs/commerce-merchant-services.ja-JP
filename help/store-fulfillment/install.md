@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Store Fulfillment ソリューションの [ 要件 ](solution-requirements.md) 
 
 プレリリース版またはベータ版の Store Fulfillment for Adobe Commerce拡張機能をインストールしている場合は、現在のバージョンをインストールする前に、次のコマンドを使用して削除します。
 
-```terminal
+```bash
 rm -rf composer.lock vendor/walmart &&
 composer require walmart/magento-bopis-metapackage:1.0.0
 ```
@@ -107,7 +107,7 @@ Composer を使用して、インストールのソース ディレクトリを�
 
 1. `setup:upgrade` の拡張機能 CLI コマンドを使用して、Adobe CommerceにMagentoを登録します。
 
-   ```terminal
+   ```bash
    bin/magento setup:upgrade
    ```
 
@@ -191,7 +191,7 @@ Adobe Commerce サーバーで、Store Fulfillment Services 拡張機能のモ�
 
 必要に応じて、[setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} CLI コマンドを使用して、静的ビューファイルを実稼動環境にデプロイします。
 
-```terminal
+```bash
 php bin/magento setup:static-content:deploy -f
 ```
 
