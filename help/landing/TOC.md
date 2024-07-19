@@ -5,10 +5,10 @@ title: Adobe Commerce 向けサービス
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 45%
+source-wordcount: '58'
+ht-degree: 48%
 
 ---
 
@@ -18,19 +18,16 @@ ht-degree: 45%
 - リリース情報 {#release-information}
    - [リリースノート](/help/landing/release-notes-all.md)
 - Commerce サービス {#commerce-services}
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
-   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
-   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
-   - [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
-   - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
-   - [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview)
+   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/guide-overview)
+   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview)
 - Integration services {#integration-services}
-   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+   - [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview)
    - [サービスコネクタ](/help/landing/saas.md)
 - データ ツール {#data-services}
-   - [SaaS データのエクスポート ](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
-   - [SaaS 価格インデックス作成 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
+   - [SaaS データのエクスポート ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview)
+   - [SaaS 価格インデックス作成 ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/price-indexer/price-indexing)
    - [カタログ同期](/help/landing/catalog-sync.md)
 
 
