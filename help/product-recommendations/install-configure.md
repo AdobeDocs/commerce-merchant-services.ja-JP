@@ -3,9 +3,9 @@ title: インストールと設定
 description: ' [!DNL Product Recommendations] をインストール、更新、アンインストールする方法を説明します。'
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -51,11 +51,19 @@ composer require magento/module-visual-product-recommendations
 
 ## [!DNL Product Recommendations] の設定 {#configure}
 
-`magento/product-recommendations` モジュールをインストールした後、API キーを指定して SaaS Data Space を選択することにより ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)1}Commerce サービスコネクタを設定する必要があります。[
+1. `magento/product-recommendations` モジュールをインストールしたら、API キーを指定して SaaS Data Space を選択し ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)[Commerce サービスコネクタを設定します。
 
-カタログの書き出しが正しく実行されていることを確認するには、[cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) ジョブと [ インデクサー ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行され、`Product Feed` インデクサーが `Update by Schedule` に設定されていることを確認します。
+   この接続を設定すると、Commerce インスタンス、カタログサービス、その他のサポートサービス間のデータ同期と通信が可能になります。 データ同期は、[SaaS データ書き出し拡張機能 ](../data-export/overview.md) で処理されます。
 
-API キーを使用してCommerce サービスに正常にリンクし、SaaS Data Space を指定すると、カタログの同期が開始されます。 その後、行動データがストアフロントに送信されていることを [ 確認 ](verify.md) できます。
+1. カタログの書き出しを正しく実行できるようにするには、[cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) ジョブと [ インデクサー ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行中で、`Product Feed` インデクサーが `Update by Schedule` に設定されていることを確認します。
+
+Commerce アプリケーションをCommerce サービスに正常にリンクし、SaaS Data Space を指定したら、カタログの同期が開始されます。 その後、行動データがストアフロントに送信されていることを [ 確認 ](verify.md) できます。
+
+## データ同期の監視とトラブルシューティング
+
+Commerce Admin から、[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) を使用して同期プロセスを監視できます。 [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) とログを使用して、プロセスの管理とトラブルシューティングを行います。
+
+その後、行動データがストアフロントに送信されていることを [ 確認 ](verify.md) できます。
 
 ## [!DNL Product Recommendations] インストールの更新 {#update}
 

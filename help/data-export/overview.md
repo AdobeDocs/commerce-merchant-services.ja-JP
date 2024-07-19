@@ -4,7 +4,7 @@ description: Adobe Commerceと接続されたCommerce サービスの間でデ�
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # [!DNL SaaS Data Export] ガイド
 
-[!DNL SaaS data export] は、Adobe Commerce インスタンスと接続されたCommerce サービスの間のデータ同期を最適化することで、フロントエンドのパフォーマンスを向上させます。 Adobe Commerceのインストールに Live Search、Product Recommendations、または Catalog Service を追加すると、[!DNL Data export] 拡張機能が自動的にインストールされます。
+Adobe Commerce インスタンスと接続されたCommerce サービスの間でデータを同期で [!DNL SaaS data export] ます。 Adobe Commerceのインストールに Live Search、Product Recommendations、または Catalog Service を追加すると、[!DNL Data export] 拡張機能が自動的にインストールされます。
 
-SaaS データ エクスポートでは、さまざまなタイプのデータを収集してエクスポートします。これらのデータは _フィード_ と呼ばれ、特定のタイプの情報を集約します。 インストールされているCommerce サービスに応じて、SaaS データ書き出しフィードには次のものが含まれます。
+SaaS データ エクスポートは、さまざまな種類のデータを収集してエクスポートします。これらのデータは _フィード_ と呼ばれ、特定の種類の情報を集計します。 インストールされているCommerce サービスに応じて、SaaS データ書き出しフィードには次のものが含まれます。
 
 - **カタログエンティティフィード** 製品データを集計します。 データには、製品、製品属性、製品価格、製品バリエーション、カテゴリ、カテゴリ権限、製品権限が含まれます。
 - **スコープフィード** は、顧客グループ、web サイト、ストアおよびストアビューのデータを集計します。
 - **受注フィード** は、請求書、出荷、クレジット・メモなどの関連エンティティを含む受注データを集約します。
 - **マルチSourceインベントリフィード** は、在庫ステータス項目に関するデータを集計します。
 
-データの書き出し拡張機能では、データ同期プロセスを開始および管理するためのいくつかの方法をサポートしています。
+SaaS データのエクスポートは、PHP 拡張モジュールとして提供されます。 データ同期プロセスを開始および管理するためのいくつかの方法をサポートしています。
 
 - **管理者またはコマンドラインからの手動同期**
 

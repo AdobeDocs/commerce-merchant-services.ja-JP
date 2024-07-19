@@ -4,9 +4,9 @@ user-guide-description: 「このガイドでは、Adobe Commerceから  [!DNL L
 breadcrumb-title: 「[!DNL Live Search] ガイド」
 role: Admin
 feature: Services, Search
-source-git-commit: a1d3e87f71a19df355009a7ae5d736b5d2dc7b15
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '80'
 ht-degree: 10%
 
 ---
@@ -48,3 +48,4 @@ ht-degree: 10%
 - GraphQL クエリ {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

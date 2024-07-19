@@ -5,9 +5,9 @@ breadcrumb-title: "Saas price indexer Guide"
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '33'
+source-wordcount: '34'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 - [SaaS 価格インデックス作成の概要](price-indexing.md)
 - [カタログアダプタ](catalog-adapter.md)
-- [Commerce サービスに戻る ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
 
 

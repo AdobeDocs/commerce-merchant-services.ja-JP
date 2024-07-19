@@ -4,16 +4,16 @@ description: SaaS 価格インデックスを使用したパフォーマンス�
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # SaaS 価格インデックス作成
 
-SaaS の価格インデックス作成では、インデックス作成や価格計算などの重い計算プロセスをCommerce アプリケーションからAdobeのクラウドインフラストラクチャに移行することで、サイトのパフォーマンスが向上します。 このアプローチにより、マーチャントはリソースを迅速に拡張して価格のインデックス化時間を短縮し、データをストアフロントおよび接続されたCommerce サービスに送信する際に価格の変化をより迅速に反映できます。
+SaaS の価格インデックス作成は、インデックス作成や価格計算など、リソースを大量に消費するタスクをCommerce アプリケーションからAdobeのクラウドインフラストラクチャにオフロードすることで、サイトのパフォーマンスを最適化します。 このアプローチにより、マーチャントはリソースを迅速に拡張して価格のインデックス化に要する時間を短縮し、ストアフロントおよび接続されたCommerce サービスに対して価格の更新をより迅速に提供できるようになります。
 
 次の図は、Commerce アプリケーションに含まれている [ 価格インデックス作成 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) プロセスをCommerceが使用している場合の SaaS サービスへのインデックス作成データフローを示しています。
 

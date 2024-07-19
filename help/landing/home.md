@@ -6,9 +6,9 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: マニュアル
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 
 >[!BEGINSHADEBOX  「リリース情報」 ]
 
-各Commerce サービスについては、[ ドキュメントの新機能 ](whats-new.md) または [ リリースノート ](release-notes-all.md) を参照してください。
+各Commerce サービスについては、[ リリースノート ](release-notes-all.md) を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -98,9 +98,23 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
    </tr>
 </table>
 
-## データサービス
+## データツール
 
 <table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Data Export]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview"><strong>[!DNL SaaS Data Export]</strong></a>
+    <div>SaaS Data Export は、カタログ、注文、在庫データをCommerce サーバーから接続されたCommerce サービスに書き出して、サービスを最新の状態に保ちます。 インデクサーは、製品価格や在庫レベルの変更などのイベントによってトリガーされたときにデータをコンパイルします。 このプロセスは、*データ管理ダッシュボード*またはコマンドラインインターフェイスを介して監視および管理できます。</div>
+  </td>
+</tr>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Price Indexer]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/price-index/price-indexing.md"><strong>[!DNL SaaS Price Indexer]</strong></a>
+    <div>SaaS の価格インデックス作成は、インデックス作成や価格計算など、リソースを大量に消費するタスクをCommerce アプリケーションからAdobeのクラウドインフラストラクチャにオフロードすることで、サイトのパフォーマンスを最適化します。 このアプローチにより、マーチャントはリソースを迅速に拡張して価格のインデックス化に要する時間を短縮し、ストアフロントおよび接続されたCommerce サービスに対して価格の更新をより迅速に提供できるようになります。</div>
+  </td>
+</tr>
 <tr>
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>

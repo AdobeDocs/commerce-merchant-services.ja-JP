@@ -3,9 +3,9 @@ title: 「の概要  [!DNL Live Search]」
 description: Adobe Commerceの必要システム構成とインストール手順  [!DNL Live Search]  説明します。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2357'
 ht-degree: 0%
 
 ---
@@ -146,6 +146,8 @@ bin/magento saas:resync --feed categoryPermissions
 [ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) を使用して、同期および共有されるデータを表示できます。 このダッシュボードは、ストアフロントの製品データの可用性に関する貴重なインサイトを提供し、買い物客に迅速に表示できるようにします。
 
 ![ データ管理ダッシュボード ](assets/data-management-dashboard.png)
+
+また、[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) およびデータ書き出し拡張機能のログを使用して、同期コマンドを実行し、同期プロセスのトラブルシューティングを行うこともできます。
 
 #### 今後の製品アップデート
 
@@ -386,6 +388,10 @@ Commerce管理者の言語設定（_ストア_/設定/_設定_/_一般_/国の�
 - [PLP ウィジェット ](https://github.com/adobe/storefront-product-listing-page)
 - [ 検索バー ](https://github.com/adobe/storefront-search-as-you-type)
 
+### データエクスポート拡張機能
+
+Live Search を有効にすると、データ書き出し拡張機能によってCommerce アプリケーションと Live Search の間でCommerce データが同期されます。 このプロセスにより、最新のCommerce データをストアフロントで確実に利用できるようになります。 管理者では、データ管理ダッシュボードを使用して同期ステータスを確認できます。 Commerce CLI とログを使用して、データのエクスポートプロセスを管理およびトラブルシューティングできます。 詳しくは、[ データの書き出しガイド ](../data-export/overview.md) を参照してください。
+
 ### Inventory management
 
 [!DNL Live Search] は、Commerce（旧称：マルチSourceインベントリ、MSI）で [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) 機能をサポートしています。 完全なサポートを有効にするには、依存関係モジュールをバージョン 102.2.0 以降に [ 更新 ](install.md#update) する必要 `commerce-data-export` あります。
@@ -394,7 +400,7 @@ Commerce管理者の言語設定（_ストア_/設定/_設定_/_一般_/国の�
 
 ### 価格インデクサー
 
-Live Search のお客様は、新しい [SaaS 価格インデクサー ](../price-index/price-indexing.md) を使用して、価格変更の更新と同期時間を高速化できます。
+Live Search のお客様は、[SaaS 価格インデクサー ](../price-index/price-indexing.md) を使用できます。これにより、価格変更の更新と同期時間が短縮されます。
 
 ### 価格サポート
 

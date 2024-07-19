@@ -2,9 +2,9 @@
 title: オンボーディングとインストール
 description: 「インストール方法を説明  [!DNL Catalog Service]」
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Adobe Commerce バージョン 2.4.4 以降が稼働しているAdobe Commerce �
 
 ### サービスとデータの書き出しの設定
 
-[!DNL Catalog Service] をインストールしたら、次のタスクを実行してカタログサービスをAdobe Commerce インスタンスに統合します。 この統合により、Commerce インスタンス、カタログサービスおよびその他のサポートサービス間のデータ同期と通信が可能になります。
+[!DNL Catalog Service] をインストールしたら、次のタスクを実行してカタログサービスをAdobe Commerce インスタンスに統合します。 この統合により、Commerce インスタンス、カタログサービスおよびその他のサポートサービス間のデータ同期と通信が可能になります。 データ同期は、[SaaS データ書き出し拡張機能 ](../data-export/overview.md) で処理されます。
 
 1. API キーを指定し、SaaS データ空間を選択して ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas)0}Commerce サービスコネクタ } を設定します。[
 
@@ -162,6 +162,10 @@ Adobe Commerce バージョン 2.4.4 以降が稼働しているAdobe Commerce �
 - [cron ジョブが実行中であることを確認 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
 - インデクサーが [ 管理者 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) から、またはCommerce CLI コマンド `bin/magento indexer:info` ールを使用して実行されていることを確認します。
 - `Catalog Attributes Feed, Product Feed, Product Overrides Feed` と `Product Variant Feed` のインデクサーが `Update by Schedule` に設定されていることを確認します。
+
+### データ同期の監視とトラブルシューティング
+
+Commerce Admin から、[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) を使用して同期プロセスを監視できます。 [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) とログを使用して、プロセスの管理とトラブルシューティングを行います。
 
 ### サービスへのアクセス
 
