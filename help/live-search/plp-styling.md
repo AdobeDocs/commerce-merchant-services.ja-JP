@@ -2,9 +2,9 @@
 title: 製品一覧ページウィジェット
 description: ' [!DNL Live Search Product Listing Page Widget] のコンポーネントの有効化とスタイル設定'
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
+source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - 複数言語のサポート
 - 価格スライダー
 
-上記の機能を処理するための PLP ウィジェットのカスタマイズ方法については、次の [repo](https://github.com/adobe/storefront-product-listing-page/) の `storefront-product-listing-page` Readme を参照してください。
+上記の機能を処理するための PLP ウィジェットのカスタマイズ方法については、次の [ リポジトリ ](https://github.com/adobe/storefront-product-listing-page/) の `storefront-product-listing-page` Readme を参照してください。 このリポジトリの Readme には、PLP ウィジェットをカスタマイズし、そのカスタマイズをサイトにデプロイする方法の例が記載されています。
 
 >[!WARNING]
 >

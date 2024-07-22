@@ -4,9 +4,9 @@ description: Adobe Commerceから拡張機能をインストール、更新、�
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
+source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,12 @@ ht-degree: 0%
 
    このメタパッケージには、次のモジュールと拡張機能が含まれています。
 
-   * `module-experience-connector-admin` – 管理 UI を更新し、特定のAdobe Commerce インスタンスのデータストリーム ID を選択できるようにします。
-   * `module-experience-connector` - Storefront Events SDK の `Organization ID` と `datastreamId` を設定します。
-   * `data-services` - ストアフロントイベントの属性コンテキストを提供します。 例えば、チェックアウトイベントが発生した場合、買い物かごに入っているアイテムの数に関する情報と、それらのアイテムの製品属性データが含まれます。
-   * `services-id` - サンドボックスおよび実稼動 API キーを使用してAdobe Commerce インスタンスを [Adobe Commerce SaaS](../landing/saas.md) に接続し、IMS 組織 ID を取得するためにAdobe Experience Platformに接続します。
-   * `orders-connector` – 注文ステータスサービスをAdobe Commerce インスタンスに接続します。
+   - `magento/orders-connector`
+   - `magento/data-services`
+   - `magento/module-experience-connector`
+   - `magento/module-experience-connector-admin`
+   - `magento/module-experience-connector-admin-graph-ql`
+   - `magento/module-experience-connector-aep-integration`
 
 1. （任意） [ 検索イベント ](events.md#search-events) を含む [!DNL Live Search] データを含めるには、[[!DNL Live Search]](../live-search/install.md) 拡張機能をインストールします。
 
