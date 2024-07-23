@@ -5,10 +5,10 @@ breadcrumb-title: "SaaS サービスの [!DNL Data Export] ガイド"
 hide: true
 role: Admin
 feature: Services
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 51238f86f36a756b86d07bdf6bb0a5cf0c61cbeb
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 6%
+source-wordcount: '70'
+ht-degree: 5%
 
 ---
 
@@ -22,5 +22,6 @@ ht-degree: 6%
 - [CLI コマンド リファレンス](data-export-cli-commands.md)
 - [ログの確認とトラブルシューティング](troubleshooting-logging.md)
 - [SaaS データ書き出し拡張機能の管理](manage-extension.md)
+- [SaaS データ書き出しフィードの拡張とカスタマイズ](extensibility-and-customizations.md)
 - [リリースノート](release-notes.md)
 - [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
