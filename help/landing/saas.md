@@ -4,9 +4,9 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
+source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,7 @@ SaaS プロジェクトを選択または作成するには、ストアの [!DNL
 
 1. SaaS プロジェクトが存在しない場合は、[**プロジェクトの作成**] をクリックします。 次に、**プロジェクト** フィールドに、SaaS プロジェクトの名前を入力します。
 
-   SaaS プロジェクトを作成する場合、[!DNL Commerce] は [!DNL Commerce] ライセンスに応じて 1 つ以上の SaaS データ スペースを生成します。
-   - Adobe Commerce – 実稼動データスペース 1 つ、テスト用データスペース 2 つのみ。 複数のステージング環境を使用する Cloud Pro プロジェクトでは、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) することで、ステージング環境ごとに追加のテストデータスペースをリクエストできます。
-   - Magento Open Source - 1 つの実稼動データスペースで、テスト用のデータスペースはない
+   すべてのマーチャントは、SaaS プロジェクトごとに 1 つの実稼動データスペースと 2 つのテストデータスペースにアクセスできます。 複数のステージング環境を使用する Cloud Pro プロジェクトの場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/) することで、ステージング環境ごとに追加のテストデータスペースをリクエストできます。
 
 1. [!DNL Commerce] ストアの現在の設定に使用する **データスペース** を選択します。
 
