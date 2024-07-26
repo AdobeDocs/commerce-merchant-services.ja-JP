@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: ビジネスのニーズを確実に満たすための  [!DNL Live Search]  の境界と制限について説明します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2d383d6b0d9e7b915fac32f90b25f1640dcab6cf
+source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 ## 同義語
 
 - 1 つ [!DNL Live Search] ストア表示で最大 200 個の [ 同義語 ](synonyms.md) を管理できます。
-- マルチワード同義語は、ストアビューあたり 20 に制限されています。
+- 複数の単語の同義語は、常に期待どおりに動作するとは限りません。 これらの同義語は、関連性に悪影響を及ぼす可能性があるので、実稼動で使用する前に、ステージング環境でテストしてください。
 
 ## カテゴリマーチャンダイジング
 
