@@ -3,16 +3,16 @@ title: インストールと設定
 description: ' [!DNL Product Recommendations] をインストール、更新、アンインストールする方法を説明します。'
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
 
 # インストールと設定
 
-[!DNL Product Recommendations] をストアフロントおよび管理者にデプロイするには、モジュールをインストールして ](../landing/saas.md)1}Commerce サービスコネクタ } を設定する必要があります。 [更新がリリースされると、インストールを最新バージョンに簡単に更新できます。
+[!DNL Product Recommendations] をストアフロントおよび管理者にデプロイするには、モジュールをインストールして ](../landing/saas.md)1}Commerce サービスコネクタ } を設定する必要があります。 [アップデートがリリースされると、インストールを最新バージョンに簡単にアップデートできます。
 
 - [インストール](#install)
 - [設定](#configure)
@@ -37,7 +37,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-ページビルダーで [!DNL Product Recommendations] を有効にすると、ページ、ブロック、動的ブロックなど、ページビルダーで作成した任意のコンテンツに既存のアクティブな [ レコメンデーションユニット ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) を追加できます。
+ページビルダーで [!DNL Product Recommendations] を有効にすると、ページ、ブロック、動的ブロックなど、ページビルダーで作成した任意のコンテンツに既存のアクティブな [ レコメンデーションユニット ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) を追加できます。
 
 詳しくは [ ページビルダーコンテンツの使用  [!DNL Product Recommendations]  を参照 ](page-builder.md) てください。
 
@@ -51,13 +51,13 @@ composer require magento/module-visual-product-recommendations
 
 ## [!DNL Product Recommendations] の設定 {#configure}
 
-1. `magento/product-recommendations` モジュールをインストールしたら、API キーを指定して SaaS Data Space を選択し ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)[Commerce サービスコネクタを設定します。
+1. `magento/product-recommendations` モジュールをインストールしたら、API キーを指定して SaaS Data Space を選択し ](../landing/saas.md)[Commerce サービスコネクタを設定します。
 
    この接続を設定すると、Commerce インスタンス、カタログサービス、その他のサポートサービス間のデータ同期と通信が可能になります。 データ同期は、[SaaS データ書き出し拡張機能 ](../data-export/overview.md) で処理されます。
 
-1. カタログの書き出しを正しく実行できるようにするには、[cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) ジョブと [ インデクサー ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) が実行中で、`Product Feed` インデクサーが `Update by Schedule` に設定されていることを確認します。
+1. カタログの書き出しを正しく実行できるようにするには、[cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) ジョブと [ インデクサー ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) が実行中で、`Product Feed` インデクサーが `Update by Schedule` に設定されていることを確認します。
 
-Commerce アプリケーションをCommerce サービスに正常にリンクし、SaaS Data Space を指定したら、カタログの同期が開始されます。 その後、行動データがストアフロントに送信されていることを [ 確認 ](verify.md) できます。
+Commerce アプリケーションをCommerce サービスに正常にリンクし、[SaaS Data Space](../landing/saas.md#saas-configuration) を指定すると、カタログの同期が開始されます。 その後、行動データがストアフロントに送信されていることを [ 確認 ](verify.md) できます。
 
 ## データ同期の監視とトラブルシューティング
 
@@ -107,7 +107,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> Product Recommendationsのバージョン 3.x.x では、1 つの API キーのみが必要でした。 バージョン 4.x.x 以降では、実稼動用の公開 API および秘密 API キーと、サンドボックスの公開 API および秘密 API キーを指定する必要があります。 API キーの両方のペアを指定しない場合は、管理者の Product Recommendations機能にアクセスできません。 ただし、データ収集はストアフロントで続行され、既存のお勧めは引き続き買い物客に表示されます。
+> Product Recommendationsのバージョン 3.x.x では、1 つの API キーのみが必要でした。 バージョン 4.x.x 以降では、サンドボックス環境と実稼動環境の両方に公開および秘密 API キーを指定する必要があります。 API キーの両方のペアを指定しない場合は、管理者の Product Recommendations機能にアクセスできません。 ただし、データ収集はストアフロントで引き続き行われ、既存のお勧めは引き続き買い物客に表示されます。
 
 ## ファイアウォール
 
@@ -115,4 +115,4 @@ Product Recommendationsがファイアウォールを通過できるようにす
 
 ## [!DNL Product Recommendations] のアンインストール {#uninstall}
 
-必要に応じて、製品レコメンデーションモジュールを [ アンインストール ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) できます。
+必要に応じて、製品レコメンデーションモジュールを [ アンインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) できます。

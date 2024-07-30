@@ -4,16 +4,16 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Services] を利用し、SaaS （software as a service）としてデプロイされます。 これらのサービスを使用するには、実稼動およびサンドボックス API キーを使用して [!DNL Commerce] インスタンスを接続し、[configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) でデータ領域を指定する必要があります。 接続の設定は、Commerce インスタンスごとに 1 回だけ行う必要があります。
+Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Services] を利用し、SaaS （software as a service）としてデプロイされます。 これらのサービスを使用するには、実稼動およびサンドボックス API キーを使用して [!DNL Commerce] インスタンスを接続し、[configuration](#saas-configuration) でデータ領域を指定する必要があります。 接続の設定は、Commerce インスタンスごとに 1 回だけ行う必要があります。
 
 ## 利用可能なサービス {#availableservices}
 
@@ -24,7 +24,7 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe CommerceとMagento Open Source |
-| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
 
@@ -50,7 +50,7 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 
 ### 実稼動およびサンドボックス API キーの生成 {#genapikey}
 
-1. [!DNL Commerce] アカウント（[https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}）にログインします。
+1. [!DNL Commerce] アカウント（[https://account.magento.com](https://account.magento.com/customer/account/login){:target=&quot;_blank&quot;}）にログインします。
 
 1. 「**Magento**」タブで、サイドバーの **API ポータル** を選択します。
 
@@ -80,6 +80,10 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 >
 > データの競合を避けるために、実稼動 [!DNL Commerce] ースのインストールにのみ実稼動 SaaS データ領域を使用します。 そうしないと、テストデータで実稼動サイトデータが汚染され、デプロイメントの遅延が発生するリスクがあります。 例えば、実稼動製品のデータが、ステージング URL などのステージングデータと誤って上書きされる可能性があります。
 
+### SaaS データ領域のプロビジョニング
+
+すべてのマーチャントは、SaaS プロジェクトごとに 1 つの実稼動データスペースと 2 つのテストデータスペースにアクセスできます。 複数のステージング環境を使用するAdobe Commerce Cloud Pro プロジェクトの場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) することで、ステージング環境ごとに追加のテストデータスペースをリクエストできます。
+
 ### SaaS プロジェクトの選択または作成 {#createsaasenv}
 
 SaaS プロジェクトを選択または作成するには、ストアの [!DNL Commerce] ライセンス所有者に [!DNL Commerce] API キーをリクエストします。
@@ -92,17 +96,15 @@ SaaS プロジェクトを選択または作成するには、ストアの [!DNL
 
    [!DNL Commerce] の設定に **[!UICONTROL Commerce Services Connector]** のセクションが表示されない場合は、目的の [[!DNL Commerce]  サービス ](#availableservices) に [!DNL Commerce] モジュールをインストールします。 また、`magento/module-services-id` パッケージがインストールされていることを確認します。
 
-1. 「_サンドボックス API キー_」セクションと _実稼動 API キー_ セクションに、キー値を貼り付けます。
+1. _[!UICONTROL Sandbox API Keys]_セクションと_[!UICONTROL Production API Keys]_ セクションに、キー値を貼り付けます。
 
-   秘密鍵は、鍵の先頭に `----BEGIN PRIVATE KEY---` を、秘密鍵の末尾に `----END PRIVATE KEY----` を含める必要があります。
+   秘密鍵は、鍵の先頭に `----BEGIN PRIVATE KEY---`、鍵の末尾に `----END PRIVATE KEY----` を含める必要があります。
 
 1. **保存** をクリックします。
 
 キーに関連付けられている SaaS プロジェクトは、[**SaaS Identifier**] セクションの [**プロジェクト**] フィールドに表示されます。
 
 1. SaaS プロジェクトが存在しない場合は、[**プロジェクトの作成**] をクリックします。 次に、**プロジェクト** フィールドに、SaaS プロジェクトの名前を入力します。
-
-   すべてのマーチャントは、SaaS プロジェクトごとに 1 つの実稼動データスペースと 2 つのテストデータスペースにアクセスできます。 複数のステージング環境を使用する Cloud Pro プロジェクトの場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/) することで、ステージング環境ごとに追加のテストデータスペースをリクエストできます。
 
 1. [!DNL Commerce] ストアの現在の設定に使用する **データスペース** を選択します。
 
