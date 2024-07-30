@@ -3,9 +3,9 @@ title: Commerce Data のAdobe Experience Platformへの接続
 description: Commerce データをAdobe Experience Platformに接続する方法を説明します。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
@@ -182,6 +182,10 @@ Experience Platformに送信できるプロファイルデータには、プロ�
 
 Real-Time CDPでプロファイルレコードが使用可能になるまで、約 10 分かかることがあります。 プロファイルイベントのストリーミングは直ちに開始されます。
 
+>[!TIP]
+>
+>Experience Platformにプロファイルデータが表示されない場合は、[Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) でトラブルシューティングの提案を参照してください。
+
 #### フィールドの説明
 
 | フィールド | 説明 |
@@ -277,6 +281,10 @@ Experience Platformに送付する過去の注文の日付範囲を指定しま�
 この例では、[`commerce.productListAdds`](events.md#addtocart)、[`commerce.productViews`](events.md#productpageview)、[`web.webpagedetails.pageViews`](events.md#pageview) などからのイベントデータが表示されます。 このビューを使用すると、Commerce データがエッジに到達したことを確認できます。
 
 結果が期待どおりでない場合は、データセットを開いて、失敗したバッチの読み込みを探します。 詳しくは、[ バッチインポートのトラブルシューティング ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html) を参照してください。
+
+### プロファイルデータがExperience Platformに表示されることを確認
+
+Experience Platformにプロファイルデータが表示されない場合は、[Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) でトラブルシューティングの提案を参照してください。
 
 ## 次の手順
 

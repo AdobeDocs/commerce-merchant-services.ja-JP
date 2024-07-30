@@ -4,9 +4,9 @@ description: Adobe Commerceから拡張機能をインストール、更新、�
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
+source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 0%
 
    - `magento/orders-connector`
    - `magento/data-services`
+   - `magento/customers-connector`
    - `magento/module-experience-connector`
    - `magento/module-experience-connector-admin`
    - `magento/module-experience-connector-admin-graph-ql`
@@ -44,9 +45,9 @@ ht-degree: 0%
 
 1. （任意） [ 要求イベント ](events.md#b2b-events) を含む B2B データを含めるには、[B2B 拡張機能 ](#install-the-b2b-extension) をインストールします。
 
-### Adobe I/Oイベントのインストール
+### Adobe I/Oイベントのインストールと customers-connector モジュールの設定
 
-`experience-platform-connector` 拡張機能をインストールしたら、Adobe CommerceのAdobe I/Oイベントをインストールする必要があります。
+`experience-platform-connector` 拡張機能をインストールした後、Adobe CommerceのAdobe I/Oイベントをインストールし、`customers-connector` モジュールを設定する必要があります。
 
 次の手順は、クラウドインフラストラクチャー上のAdobe Commerceとオンプレミスの両方のインストールに適用されます。
 
@@ -70,19 +71,7 @@ ht-degree: 0%
    bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
    ```
 
-オンプレミスまたはAdobe Commerce on Cloud インフラストラクチャのデプロイメントタイプに基づいてインストールを完了します。
-
-#### オンプレミス
-
-オンプレミス環境では、コード生成とAdobe Commerce イベントを手動で有効にする必要があります。
-
-```bash
-bin/magento events:generate:module
-bin/magento module:enable Magento_AdobeCommerceEvents
-bin/magento setup:upgrade
-bin/magento setup:di:compile
-bin/magento config:set adobe_io_events/eventing/enabled 1
-```
+クラウドインフラストラクチャー上のAdobe Commerceまたはオンプレミスのデプロイメントタイプに基づいて、インストールを最終処理します。
 
 #### クラウドインフラストラクチャー上
 
@@ -97,6 +86,18 @@ stage:
 更新されたファイルをコミットしてクラウド環境にプッシュします。 デプロイメントが完了したら、次のコマンドでイベントの送信を有効にします。
 
 ```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### オンプレミス
+
+オンプレミス環境では、コード生成とAdobe Commerce イベントを手動で有効にする必要があります。
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
 bin/magento config:set adobe_io_events/eventing/enabled 1
 ```
 
