@@ -4,9 +4,9 @@ description: スキーマ、データセット、データストリームを作�
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
@@ -63,17 +63,36 @@ ht-degree: 0%
 
    データストリームは、収集したデータをデータセットに転送します。 データは、選択したスキーマに基づいてデータセット内で表されます。
 
-1. **Beta** （オプション）カスタムのバックオフィスイベントデータをCommerce インスタンスからExperience Platformに渡す場合は、カスタム属性を使用できます。 この機能はベータ版です。 ベータ版プログラムへの参加を希望される場合は、[dataconnection@adobe.com](mailto:dataconnection@adobe.com) にリクエストを送信してください。 リクエストに、以下を含めます。
-
-   - [Adobe組織 ID ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)。 例：`organization_id@AdobeOrg`。
-   - 注文レベルのカスタム属性のリスト。
-   - 受注品目レベル属性のリスト。
-
-   Adobe Commerce チームから、詳細および次の手順についてご連絡いたします。
-
 行動データやバックオフィスデータ用に設定されたスキーマ、データセット、データストリームを使用すると、データを収集してExperience Platformに送信するようにCommerce インスタンスを [ 設定 ](connect-data.md#data-collection) できます。
 
-買い物客のプロファイル情報を含めるには、次の節を参照してください。
+買い物客のプロファイル情報を含めるには、[ 時系列プロファイルイベントデータ ](#time-series-profile-event-data) を参照してください。
+
+### カスタム属性の追加
+
+カスタム属性は、カスタムのバックオフィスイベントデータをCommerce インスタンスからExperience Platformに渡す場合に使用できます。
+
+カスタム属性は、次の 2 つのレベルでサポートされます。
+
+- 注文レベル
+- 注文品目レベル
+
+>[!NOTE]
+>
+>Adobe Commerceでは、データタイプが文字列または文字列配列のカスタム属性をサポートしています。
+
+1. [!DNL Commerce] アプリケーションに追加のモジュールを追加して有効にします。 次の [ 例 ](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php) を参照してください。
+
+   追加のカスタム属性を公開するには、サンプルコードを変更する必要があります。 実装は、これらの属性が保存される場所と、属性の抽出に必要なロジックによって異なります。
+
+1. 既存の XDM スキーマを拡張する。 注文および注文品目レベルのカスタム属性を作成するには、次の [ ガイド ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) を参照してください。 テナント ID フィールドは動的に生成されますが、フィールド構造は提供された例に類似している必要があります。
+
+   >[!IMPORTANT]
+   >
+   >XDM カスタム属性は、[!DNL Commerce] から送信された属性と一致する必要があります。
+
+1. XDM スキーマに関連付けられたデータストリームが、「[ データ収集 ](connect-data.md#data-collection)」タブで指定されたデータストリームと同じであることを確認します。
+
+1. **データ収集** タブの **[!UICONTROL Save]** をクリックして、指定したカスタム属性を取得します。
 
 ## 時系列プロファイルイベントデータ
 
