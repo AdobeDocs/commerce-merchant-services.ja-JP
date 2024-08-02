@@ -3,9 +3,9 @@ title: "[!DNL Live Search] リリースノート"
 description: 「Adobe Commerceからの最新  [!DNL Live Search]  リリース情報。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
+source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
 workflow-type: tm+mt
-source-wordcount: '1966'
+source-wordcount: '1993'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,14 @@ _2023 年 10 月 27 日_
 
 ![ 新規 ](../assets/new.svg)[!DNL Live Search] PLP ウィジェットがカラースウォッチをサポートするようになりました。
 
+## [!DNL Live Search] 4.2.1 {#421}
+
+_2024 年 7 月 31 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 修正 ](../assets/fix.svg) 特定のスクリプトがチェックアウトページに読み込まれない問題を修正しました。
+![ 修正 ](../assets/fix.svg) `composer.json` ファイルの依存関係バージョンを修正しました。
 
 ## [!DNL Live Search] 4.2.0 {#420}
 
