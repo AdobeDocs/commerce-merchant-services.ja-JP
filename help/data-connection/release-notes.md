@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe Commerceの拡張機能の最新  [!DNL Data Connection]  リリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
+source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,21 @@ ht-degree: 0%
 
 [!DNL Data Connection] 拡張機能で使用される拡張機能に関連する機能の変更と修正については、**サポートされるサービス更新** を参照してください。
 
-リリーススケジュールとサポートについては、[ 今後のリリース ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) を参照してください。
+リリーススケジュールとサポートについては、[ 今後のリリース ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) を参照してください。
 
-開発者向けドキュメントの [ このモジュールをサポートするCommerceのバージョンについては ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) を参照してください。
+開発者向けドキュメントの [ このモジュールをサポートするCommerceのバージョンについては ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) を参照してください。
 
 ## サポートされるサービスのアップデート
 
 これらのリリースノートでは、[!DNL Data Connection] 拡張機能で使用される拡張機能に関連する機能の変更と修正について説明します。
 
 +++サポートされているサービスのアップデート
+
+_2024 年 8 月 2 日_
+
+![ 修正 ](../assets/fix.svg) – 注文合計が税金を含むように設定されている場合に、支払合計金額を修正しました。
+![ 新規 ](../assets/new.svg) – 購入イベントを注文するための `taxAmount` フィールドを追加しました。
+![ 新規 ](../assets/new.svg) - イベントにカスタムデータを追加する機能を追加しました。 [ 例 ](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md) については、次を参照してください。
 
 _2024 年 1 月 24 日_
 
@@ -78,7 +84,7 @@ _2024 年 7 月 22 日_
 
 [!BADGE  互換性 ]{type=Informative tooltip="互換性"}
 
-![ 修正 ](../assets/new.svg) – 未使用のデータエクスポーターとインデクサーを削除するようにExperience Platformコネクタのメタパッケージを更新しました。
+![ 修正 ](../assets/fix.svg) – 未使用のデータエクスポーターとインデクサーを削除するようにExperience Platformコネクタのメタパッケージを更新しました。
 
 ## 3.1.2
 
@@ -86,8 +92,8 @@ _2024 年 6 月 5 日_
 
 [!BADGE  互換性 ]{type=Informative tooltip="互換性"}
 
-![ 修正 ](../assets/new.svg) - [ 履歴同期 ](connect-data.md#specify-order-history-date-range) を開始する際に、間違った日付形式が使用されていた問題を修正しました。
-![ 修正 ](../assets/new.svg) - [startCheckout](events.md#startcheckout) イベントがAdobe Commerce 2.4.7 で送信されない問題を修正しました。
+![ 修正 ](../assets/fix.svg) - [ 履歴同期 ](connect-data.md#specify-order-history-date-range) を開始する際に、間違った日付形式が使用されていた問題を修正しました。
+![ 修正 ](../assets/fix.svg) - [startCheckout](events.md#startcheckout) イベントがAdobe Commerce 2.4.7 で送信されない問題を修正しました。
 
 ## 3.1.1
 
@@ -115,8 +121,8 @@ _2023 年 11 月 16 日_
 [!BADGE  互換性 ]{type=Informative tooltip="互換性"}
 
 ![ 新規 ](../assets/new.svg) -Experience Platformコネクタの名前が [!DNL Data Connection] に変更されました。
-![ 修正 ](../assets/new.svg) - Adobe IMSがアクセストークンを生成できない場合にエラー応答をログに記録できるようになりました。
-![ 修正 ](../assets/new.svg) – 注文履歴を同期しようとしたが、アカウント資格情報を指定していない場合に表示される通知メッセージを追加しました。
+![ 修正 ](../assets/fix.svg) - Adobe IMSがアクセストークンを生成できない場合にエラー応答をログに記録できるようになりました。
+![ 修正 ](../assets/fix.svg) – 注文履歴を同期しようとしたが、アカウント資格情報を指定していない場合に表示される通知メッセージを追加しました。
 
 ## 3.0.0
 
