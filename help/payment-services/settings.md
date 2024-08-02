@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2404'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Web サイトに対して [!DNL Payment Services] を有効にし、サンドボ
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]** に移動します。
 
-   ![ ホームビュー ](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
-
 1. 「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[ 概要  [!DNL Payment Services]  ホーム ](payments-home.md) を参照してください。
+
+   ![React 設定ビュー ](assets/react-settings-view.png){width="500" zoomable="yes"}
 
    _[!UICONTROL General]_のセクションには、支払い方法として [!DNL Payment Services] を有効にするために使用する設定が含まれています。
 
@@ -40,9 +40,11 @@ Web サイトに対して [!DNL Payment Services] を有効にし、サンドボ
 
 1. ストアで [!DNL Payment Services] をテストしている場合は、**支払いモード** を `Sandbox` に設定します。 ライブ支払いを有効にする準備が整ったら、`Production` に設定します。
 
-   >[!NOTE]
+1. **[!UICONTROL Payment Services Sandbox ID]** と **[!UICONTROL Payment Services Production ID]** の値は、[Commerce サービスコネクタを設定し ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} 初めて [!DNL Payment Services] ダッシュボードにアクセスすると自動入力されます。 サンドボックス環境や実稼動環境のオンボーディングを完了するには、これを行います。 これらの値は、SaaS ID を [!DNL Payment Services] に関連付けます。
+
+   >[!WARNING]
    >
-   >_[!UICONTROL Sandbox Merchant ID]_と_[!UICONTROL Production Merchant ID]_ は自動生成され、サンドボックスや実稼働環境のオンボーディングが完了すると、該当するフィールドに表示されます。
+   > [!DNL Payment Services] ID をリセットした場合は、再度オンボーディングする必要があります。
 
 1. 「**[!UICONTROL Save]**」をクリックします。
 
@@ -59,7 +61,7 @@ Web サイトまたは個々のストア表示の設定に [!UICONTROL Soft Desc
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]** に移動します。
 1. 「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[ 概要  [!DNL Payment Services]  ホーム ](payments-home.md) を参照してください。
 1. ソフト記述子を作成する web サイト表示またはストア表示を **[!UICONTROL Scope]** ドロップダウンメニューで選択します。 初期設定の場合、このオプションを **[!UICONTROL Default]** のままにしてデフォルト値を設定します。
-1. `Custom descriptor` を置き換えて、テキストフィールドにカスタムテキスト（最大 22 文字）を追加します。
+1. `Soft descriptor` を置き換えて、テキストフィールドにカスタムテキスト（最大 22 文字）を追加します。
 1. 「**[!UICONTROL Save]**」をクリックします。
 1. Web サイトまたはストアビュー用に設定されたデフォルト以外のソフト記述子を作成するには：
    1. ソフト記述子を作成する web サイト表示またはストア表示を **[!UICONTROL Scope]** ドロップダウンメニューで選択します。
@@ -79,8 +81,8 @@ Web サイトまたは個々のストア表示の設定に [!UICONTROL Soft Desc
 |---|---|---|
 | [!UICONTROL Enable] | web サイト | Web サイトの [!DNL Payment Services] を有効または無効にします。 オプション：[!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | ストア表示 | ストアのメソッド（環境）を設定します。 オプション：[!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | ストア表示 | サンドボックスオンボーディング中に自動生成されるサンドボックスマーチャント ID。 |
-| [!UICONTROL Production Merchant ID] | ストア表示 | サンドボックスのオンボーディング中に自動生成される実稼動マーチャント ID。 |
+| [!UICONTROL Payment Services Sandbox ID] | ストア表示 | サンドボックスオンボーディング中に自動生成されるサンドボックスマーチャント ID。 |
+| [!UICONTROL Payment Services Production ID] | ストア表示 | サンドボックスのオンボーディング中に自動生成される実稼動マーチャント ID。 |
 | [!UICONTROL Soft Descriptor] | web サイトまたはストア表示 | Web サイトおよびストアビューにソフト記述子を追加して、ブランド、ストアまたは製品ラインを区別する顧客トランザクションに情報を追加します。 [!UICONTROL Use website] の切り替えにより、web サイトレベルで追加されたソフト記述子が適用されます。 [!UICONTROL Use default] 切替スイッチは、デフォルトとして追加された任意のソフト記述子を適用します。 |
 
 ## 支払オプションの設定

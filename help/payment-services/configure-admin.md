@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,18 @@ ht-degree: 0%
 
 1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**に移動します。
 1. 左側のパネルで「**[!UICONTROL Sales]**」を展開し、「**[!UICONTROL Payment Methods]**」を選択します。
-
-   ![ メソッド ビュー ](assets/methods-view.png){width="400" zoomable="yes"}
-
-1. _[!UICONTROL Merchant Location]_で「_[!UICONTROL Merchant Country]_」フィールドを設定します。
+1. _[!UICONTROL Merchant Location]_で「_[!UICONTROL Merchant Country]_」フィールドを設定します。 _[!UICONTROL Merchant Country]_を指定しない場合は、一般設定の_[!UICONTROL Default Country]_ が使用されます。
 1. 「_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_」セクションを展開して、「_[!UICONTROL [!DNL Payment Services]]_」セクションにアクセスします。
 1. 「_[!UICONTROL [!DNL Payment Services]]_」セクションで、「_[!UICONTROL General Configuration]_」セクションを展開します。
 1. **有効** の場合は、`Yes` に設定して、ストアに対して [!DNL Payment Services] を有効にします。
 1. **メソッド** については、ストアで [!DNL Payment Services] をテストしている場合は `Sandbox` に、ライブ支払いを有効にする準備ができている場合は `Production` に設定します。
+1. **[!UICONTROL Payment Services Sandbox ID]** と **[!UICONTROL Payment Services Production ID]** の値は、[Commerce サービスコネクタを設定し ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} 初めて [!DNL Payment Services] ダッシュボードにアクセスすると自動入力されます。 サンドボックス環境や実稼動環境のオンボーディングを完了するには、これを行います。 これらの値は、SaaS ID を [!DNL Payment Services] に関連付けます。
 
    >[!WARNING]
    >
-   >_[!UICONTROL Sandbox Merchant ID]_と_[!UICONTROL Production Merchant ID]_ は自動生成され、サンドボックスや実稼動環境のオンボーディングが完了すると、該当するフィールドに表示されます。 これらの ID を削除または変更しないでください。
+   > Commerce サービスコネクタでデータスペース ID を変更する必要がある場合は、[!DNL Payment Services] ID をリセットする必要があります。 「**支払いサービス ID をリセット**」をクリックして、サンドボックスまたは実稼動 ID をリセットします。 [!DNL Payment Services] ID をリセットした場合は、再度オンボーディングする必要があります。
 
-1. **ソフト記述子** （顧客トランザクションの銀行取引明細書に表示されてストア/ブランド/カタログ間を区別するカスタム値）の場合は、カスタムテキスト（最大 22 文字）をテキストフィールドに追加して、`Custom descriptor` または既存の値に置き換えます。
+1. **ソフト記述子** （顧客トランザクションの銀行取引明細書に表示されてストア/ブランド/カタログ間を区別するカスタム値）の場合は、カスタムテキスト（最大 22 文字）をテキストフィールドに追加して、`Soft descriptor` または既存の値に置き換えます。
 1. 「**[!UICONTROL Save Config]**」をクリックして変更を保存します。
 1. **[!UICONTROL System]** / **[!UICONTROL Cache Management]** に移動し、**[!UICONTROL Flush Cache]** をクリックして、無効なキャッシュをすべて更新します。
 
@@ -49,8 +47,8 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Enable] | web サイト | Web サイトの [!DNL Payment Services] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Method] | ストア表示 | ストアのメソッド（環境）を設定します。 オプション：[!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | ストア表示 | サンドボックスオンボーディング中に自動生成されるサンドボックスマーチャント ID。 この ID は変更しないでください。 |
-| [!UICONTROL Production Merchant ID] | ストア表示 | サンドボックスのオンボーディング中に自動生成される実稼動マーチャント ID。 この ID は変更しないでください。 |
+| [!UICONTROL Payment Services Sandbox ID] | ストア表示 | サンドボックスオンボーディング中に自動生成されるサンドボックスマーチャント ID。 |
+| [!UICONTROL Payment Services Production ID] | ストア表示 | サンドボックスのオンボーディング中に自動生成される実稼動マーチャント ID。 |
 | [!UICONTROL Soft Descriptor] | web サイトまたはストア表示 | Web サイトおよびストアビューにソフト記述子を追加して、ブランド、ストアまたは製品ラインを区別する顧客トランザクションに情報を追加します。 |
 
 ## [!UICONTROL Credit Card Fields]
