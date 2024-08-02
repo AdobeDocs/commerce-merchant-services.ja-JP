@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,13 @@ ht-degree: 0%
 
 ## オンボーディングフロー
 
+次のフロー図は、[!DNL Payment Services] ーザーをオンボーディングする一般的なプロセスを示しています。
+
 ![ オンボーディングフロー ](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
-このオンボーディングフロー図は、[!DNL Payment Services] ーザーをオンボーディングする一般的なプロセスを示しています。
+>[!NOTE]
+>
+> Adobe Commerce バージョン 2.4.7 以降では、標準搭載の [!DNL Payment Services] が用意されているので、Marketplace 拡張機能の手順をスキップできます。
 
 サンドボックスまたはライブ支払いのオンボーディングを完了すると、管理者の [!DNL Payment Services] から財務レポートにアクセスできます。
 
@@ -28,13 +32,15 @@ ht-degree: 0%
 
 ## 前提条件
 
-[!DNL Payment Services] を使用するには、お使いのインスタンスで以下が可能である必要があります。
+[!DNL Payment Services] を使用するには、すべての依存モジュールを有効にして、インスタンスで次の機能を使用できるようにする必要があります。
 
 * サービスコネクタモジュール
 * サービス ID モジュール
 * API キー
 
-サービスコネクタとサービス ID モジュールは、[ のインストール  [!DNL Payment Services]](install.md) 中に自動的にインストールされます。 インストールが完了したら、**[!UICONTROL Services]** - **[!UICONTROL Commerce Services Connector]** を展開すると、設定（**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**）に新しいセクションが表示されます。
+サービスコネクタとサービス ID モジュールは、[ のインストール  [!DNL Payment Services]](install.md) 中に自動的にインストールされます。
+
+インストールが完了したら、**[!UICONTROL Services]** - **[!UICONTROL Commerce Services Connector]** を展開すると、設定（**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**）に新しいセクションが表示されます。
 
 API キーを作成する方法や API キーにアクセスする方法については、[API 資格情報 ](#obtain-api-credentials) を参照してください。
 

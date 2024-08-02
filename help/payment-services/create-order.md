@@ -3,7 +3,7 @@ title: ' [!DNL Payment Services] を使用して注文を作成します。'
 description: 管理者は、支援を必要とする顧客のマーチャントが管理者から直接  [!DNL Payment Services]  注文を履行する機能を提供します。
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## ホストしているクレジットカードのフィールド
 
-管理者で注文を作成する際に、支払い方法として [!DNL Payment Services] を使用できます。
+注文を作成する際の支払い方法として、管理者で [!DNL Payment Services] を使用できます。
 
 1. _管理者_ サイドバーで、「**[!UICONTROL Sales]**」を展開し、「**[!UICONTROL Orders]**」を選択します。
 1. 「**[!UICONTROL Create New Order]**」をクリックします。

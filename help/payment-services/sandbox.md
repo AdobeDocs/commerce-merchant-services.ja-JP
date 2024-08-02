@@ -3,9 +3,9 @@ title: テストサンドボックスの設定
 description: テストモードで使用するには、PayPal サンドボック  [!DNL Payment Services]  アカウントを使用します。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -81,5 +81,7 @@ PayPal サンドボックスオンボーディングが承認されると、支�
 >この設定は、他のチェックアウトフローには適用されません。
 
 ## サンドボックス環境でのテスト
+
+この機能を買い物客に公開する前に、統合およびステージング環境でテスト用データセットを使用し、実際のクレジットカードや銀行で実稼動環境で支払いをテストすることを強くお勧めします。
 
 詳しくは [ テストと検証 ](test-validate.md) を参照してください。

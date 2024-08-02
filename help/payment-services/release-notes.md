@@ -3,12 +3,13 @@ title: "[!DNL Payment Services] リリースノート"
 description: すべてのリリースについて詳しくは、リリースノ  [!DNL Payment Services]  トを参照してください。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 0800b4a0f9a3297a3490fa11f32e6af0abe67e2a
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
 source-wordcount: '2576'
 ht-degree: 0%
 
 ---
+
 
 # リリースノート
 
@@ -30,7 +31,7 @@ ht-degree: 0%
 
 _2024 年 7 月 15 日_
 
-![ 新しい問題 ](../assets/new.svg)<!-- Issue PAY-5571 --> マーチャントは、[ トランザクションレポート ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) のCommerce顧客メールでトランザクションをフィルタリングできるようになりました。 特定の電子メールのトランザクションをフィルタリングする顧客の電子メールを入力します。
+![問題新規](../assets/new.svg)<!-- Issue PAY-5571 --> マーチャントは [トランザクションレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html)でコマース顧客電子メールでトランザクションをフィルタリングできるようになりました。 特定の電子メールのトランザクションをフィルタリングする顧客の電子メールを入力します。
 
 _2024 年 7 月 9 日_
 
@@ -38,15 +39,15 @@ _2024 年 7 月 9 日_
 
 _2024 年 3 月 5 日_
 
-![ 問題を修正 ](../assets/fix.svg)<!-- Issue PAY-5252 --> 単一セルの内容を選択することで、マーチャントがダッシュボードグリッドからデータをコピーできるようになりました。
+![固定問題](../assets/fix.svg)<!-- Issue PAY-5252 --> マーチャントは単一セルの内容を選択することで、ダッシュボードグリッドからデータをコピーできるようになりました。
 
-_2023 年 10 月 10 日_
+_2023年10月10日_
 
-![ 新規問題 ](../assets/fix.svg)<!-- Issue PAY-4888 --> マーチャントは、[ 取引レポート ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) のカード番号の最後の 4 桁でクレジットおよびデビットカード取引をフィルタリングできるようになりました。
+![問題新規](../assets/fix.svg)<!-- Issue PAY-4888 --> マーチャントは [トランザクションレポート](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html)のカード番号の下4桁でクレジットとデビットカードトランザクションをフィルタリングできるようになりました。
 
-_2023 年 7 月 12 日_
+_2023年7月12日_
 
-![ 修正された問題 ](../assets/fix.svg)<!-- Issue PAY-4587 --> [!DNL Payment Services] 2.1.0 リリースで導入された、以前の拡張機能バージョンで設定された認証ボイドが解決されるようになりました。 [!DNL Payment Services] の任意のバージョンを使用するマーチャントは、認証を無効にすることができます。
+![固定問題](../assets/fix.svg)<!-- Issue PAY-4587 --> [!DNL Payment Services] 2.1.0 リリースで導入された、以前の拡張バージョンによって配置された認証ボイドを妨げていた問題が解決されました。 [!DNL Payment Services] のいずれかのバージョンを使用している販売者は、承認を無効にすることができます。
 
 _2023 年 6 月 9 日_
 
@@ -92,7 +93,7 @@ _2024 年 6 月 4 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg)<!-- PAY-4877 --> 現在、[!DNL Payment Services] は [L2/L3 の価格設定機能をサポートしています ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/levels-card-payment-transactions.html)。 この機能は、IC++の価格が有効になっている [!DNL Payment Services] のお客様のみが利用できます。 [!DNL Payment Services] に L2/L3 処理データを使用する場合は、[!DNL Payment Services] のアカウントマネージャーにお問い合わせください。
+![新規](../assets/new.svg)<!-- PAY-4877 --> 現在、 [!DNL Payment Services] は [L2/L3 価格設定機能をサポートしています](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/levels-card-payment-transactions.html)。 この機能は、IC++ 価格が有効になっている [!DNL Payment Services] のお客様のみが利用できます。 [!DNL Payment Services]にL2/L3処理データを使用する場合は、[!DNL Payment Services] アカウントマネージャーにお問い合わせください。
 
 ![ 修正 ](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] を使用すると、[ ドメイン関連付けファイル ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) をダウンロードしてホストすることなく、拡張機能から直接Apple Pay を有効にできます。
 
@@ -128,7 +129,7 @@ _2024 年 4 月 4 日_
 
 ![ 修正 ](../assets/fix.svg)<!-- PAY-5322 --> 新しいAdobe Commerce リリースとの PCI 互換性の問題を修正しました。 現在は、支払 [!DNL Payment Services] オプションとしてAdobe Commerceのチェックアウト要件に適応しています。
 
-![Fix](../assets/fix.svg)<!-- PAY-5323 -->PayLater および Venmo がAdobe Commerceで正しく表示されます。 管理者に PayLater と Venmo の切り替えオプションを表示できなかったエラーを修正しました。
+![Fix](../assets/fix.svg)<!-- PAY-5323 -->PayLater および Venmo がAdobe Commerceで正しく表示されます。 固定管理者がPayLaterとVenmoのトグルオプションを表示できないエラーです。
 
 ## v2.4.0
 
@@ -136,13 +137,13 @@ _2024 年 3 月 20 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
-![ 新機能 ](../assets/new.svg)<!-- PAY-4868 --> マーチャントは、の他の支払いボタンと同様に、管理者を通じて ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html) 購入エクスペリエンス全体を通してGoogle Pay を正常に [ 設定 [!DNL Payment Services] できます。
+![新規](../assets/new.svg)<!-- PAY-4868 -->販売者は、管理者を介して、購入エクスペリエンス](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html)全体で Google Pay を正常に[設定[!DNL Payment Services]できます。
 
-![ 新規 ](../assets/new.svg)<!-- PAY-4381 --> [ 支払いサービスは、GraphQLを通じてGoogle Pay をサポートしており ](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) マーチャントはGoogle Pay 支払い方法でヘッドレスなCommerce エクスペリエンスを得ることができます。
+![新機能](../assets/new.svg)<!-- PAY-4381 --> [ペイメント サービスは GraphQL による Google Pay をサポートしているため](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) マーチャントは Google Pay の支払い方法でヘッドレス コマース エクスペリエンスを行うことができます。
 
-![ 新機能 ](../assets/new.svg)<!-- PAY-4878 -->Adobe CommerceおよびMagento Open Sourceマーチャントには、[!DNL Payment Services] の基本的なチェックアウト機能がバンドルされるようになりました。[!DNL Payment Services] は、世界中の 200 か所の地域で、ビジネスを行うマーチャントをサポートできるようになりました。基本的 [!DNL Payment Services] チェックアウトでは、デビット/クレジット、PayPal、Venmo （利用可能な場合）、PayLater （利用可能な場合）のオプションがセルフサービスのオンボーディングで提供されます。
+![新規](../assets/new.svg)<!-- PAY-4878 --> 現在、 [!DNL Payment Services] 基本的なチェックアウト機能は、Adobe SystemsコマースとMagento Open Sourceマーチャントにバンドルされています。[!DNL Payment Services] 現在、世界中の200の地域のいずれかでビジネスを持つマーチャントをサポートできます。[!DNL Payment Services] 基本チェックアウトは、セルフサービスオンボーディングでデビット/クレジット、PayPal、Venmo(利用可能な場合)、およびPayLater(利用可能な場合)オプションを提供します。
 
-![ 修正 ](../assets/fix.svg)<!-- PAY-5291 --> 一部の取引について、支払い確認の受信が遅延する場合があります。 その場合、マーチャントは注文の更新された支払いステータスを取得できるようになりました。 [Payment Services は、保留中の取引を検出し ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html) これらの取引をプロアクティブに監視し、保留中のステータスが取得されたときに更新することで、支払い取引の保留中のステータスを順番に検出します。
+![修正](../assets/fix.svg)<!-- PAY-5291 --> 一部の取引の支払い確認の受信が遅れる場合があります。 その場合、マーチャントは注文の更新された支払いステータスを取得できるようになりました。 [Payment Services は、保留中の取引を検出し ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html) これらの取引をプロアクティブに監視し、保留中のステータスが取得されたときに更新することで、支払い取引の保留中のステータスを順番に検出します。
 
 ## v2.3.4
 
@@ -224,13 +225,13 @@ _2023 年 6 月 9 日_
 
 ![ 新規 ](../assets/new.svg)<!-- Issue xxx -->Adobe Commerce 2.4.7-beta1 がサポートされるようになりました。
 
-![ 新規 ](../assets/new.svg)<!-- Issue xxx -->[ オーストラリア、フランス、英国の国および関連通貨での提供 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability) を追加しました。
+![新規](../assets/new.svg)<!-- Issue xxx --> オーストラリア、フランス、英国 [ の国および関連通貨](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability)で利用可能になりました。
 
-![ 新規 ](../assets/new.svg)<!-- Issue PAY-4296 --> 管理者ロール用に拡張されたリソース [ が追加されました ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) 管理者ユーザーが顧客の注文を作成および管理でき、セールスメニューで表示できる [!DNL Payment Services] ようにします。
+![新規](../assets/new.svg)<!-- Issue PAY-4296 --> 管理者ユーザーが顧客の注文を作成および管理できるように](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles)[管理者ロールの拡張されたリソースを追加し、販売メニューで[!DNL Payment Services]を確認できるようにします。
 
-![ 新規 ](../assets/new.svg)<!-- Issue PAY-4236 -->[ チェックアウト中にエラーが発生する注文の自動無効化 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error) を追加しました。
+![新規](../assets/new.svg)<!-- Issue PAY-4236 --> チェックアウト](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error)中にエラーが発生した注文に対する[自動無効機能を追加しました。
 
-![ 新規 ](../assets/new.svg)<!-- Issue PAY-4183 --> チェックアウトページに [ クレジット/デビットカード支払いオプションボタンを表示 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) する機能が作成されました。
+![チェックアウト ページにボタン](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button)クレジット/デビットカード支払いオプションを[表示する新規](../assets/new.svg)<!-- Issue PAY-4183 --> 作成日機能。
 
 ## v2.0.0
 
@@ -318,9 +319,9 @@ _2022 年 10 月 14 日_
 
 ## v1.4.0
 
-_2022 年 9 月 30 日_
+_2022年9月30日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE サポート]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services] に、マーチャントアカウントを設定して [ 複数の PayPal ビジネスアカウントを使用 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts) する機能が含まれるようになりました。 これにより、マーチャントは、異なる通貨を使用して複数の国で店舗を運営したり、ビジネスの一部にAdobe Commerceを使用したりできます。
 
