@@ -2,7 +2,7 @@
 title: "設定"
 description: 「サービスの設定  [!DNL Live Search]  指定します。」
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 1. 管理者で、**マーケティング**/*SEO と検索*/**[!DNL Live Search]** に移動します。
 1. **価格ファセット** の下の *設定* ワークスペースで、次の操作を行います。
    * 使用可能な **選択数** または価格グループを入力します。 最大 50 個の価格グループを定義できます。
-   * 各グループの **間隔値** または価格範囲を入力します。 最大値は 10,000 です。
+   * 各グループの **間隔値** または価格範囲を入力します。 最大値は 40,000,000 です。
 1. **保存** をクリックします。
 
    更新された設定がストアフロントで使用できるようになるまで、約 15 分かかります。

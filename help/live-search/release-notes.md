@@ -3,9 +3,9 @@ title: "[!DNL Live Search] リリースノート"
 description: 「Adobe Commerceからの最新  [!DNL Live Search]  リリース情報。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## ホステッド サービスの更新
 
 これらのメモでは、バージョン管理されたリリースの外部で公開された更新や、ホストされるサービスの改善について説明します。
+
+_2024 年 8 月 7 日_
+
+![ 修正 ](../assets/fix.svg) 10,000 から 40,000,000 に [ 価格ファセット ](settings.md#price-faceting) の最大間隔値または価格範囲を増やしました。
 
 _2024 年 2 月 13 日_
 
