@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe Commerceの拡張機能の最新  [!DNL Data Connection]  リリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
+source-git-commit: f894a1a192f648df01e1f869bec9c8a4c66803e1
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -78,13 +78,21 @@ _2022 年 10 月 12 日_
 
 +++
 
+## 3.1.4
+
+_2024 年 8 月 9 日_
+
+[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+
+![ 修正 ](../assets/fix.svg) – 未使用のデータエクスポーターとインデクサーを追加で削除する `experience-platform-connector` メタパッケージを更新しました。
+
 ## 3.1.3
 
 _2024 年 7 月 22 日_
 
 [!BADGE  互換性 ]{type=Informative tooltip="互換性"}
 
-![ 修正 ](../assets/fix.svg) – 未使用のデータエクスポーターとインデクサーを削除するようにExperience Platformコネクタのメタパッケージを更新しました。
+![ 修正 ](../assets/fix.svg) – 未使用のデータエクスポーターとインデクサーを削除するように `experience-platform-connector` メタパッケージを更新しました。
 
 ## 3.1.2
 
