@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: ビジネスのニーズを確実に満たすための  [!DNL Live Search]  の境界と制限について説明します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
+source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 0%
 - カテゴリマーチャンダイジングには、カテゴリごとに 1 つのルールを設定できます。
 - ルールごとの条件の最大数は 10 です。
 - ルールごとのイベントの最大数は 25 です。
+- 応答がページ分割される際に予期しない結果が生じるのを防ぐため、ピン留めされた製品の数がリクエストされたページサイズを超えないようにしてください。
 
 ## 同義語
 
