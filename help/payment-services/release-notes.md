@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] リリースノート"
 description: すべてのリリースについて詳しくは、リリースノ  [!DNL Payment Services]  トを参照してください。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
+source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2788'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ _2024 年 8 月 2 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] では、[ 注文レベルでの行項目データ ](line-items.md) をサポートするようになりました。 この機能を使用すると、マーチャントは、商品の詳細、数量、価格（消費税、割引、その他の関連情報を含む）など、注文の品目に関する詳細情報を表示できます。
+![ 新規 ](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] では、[ 注文レベルでの行項目データ ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/manage/line-items) をサポートするようになりました。 この機能を使用すると、マーチャントは、商品の詳細、数量、価格（消費税、割引、その他の関連情報を含む）など、注文の品目に関する詳細情報を表示できます。
 
 ![ 新規 ](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] では、マーチャント向けの [ 管理での設定 ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) エクスペリエンスが改善され、より簡単で直感的なオンボーディングプロセスが実現しました。 この機能を使用すると、マーチャントは [!DNL Payment Services] ID をリセットできます。
 
