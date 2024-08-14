@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 11ea98069dcc6d06e9ab90add8239fef2c8edc7d
+source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,16 @@ ht-degree: 0%
 
 ![ 新規 ](../assets/new.svg) 即時エクスポートフィード cron-jobs の名前を `*_feed_resend_failed_items` に変更しました。
 
-![ 新規 ](../assets/new.svg) 即時エクスポートフィードおよび変更ログテーブルの名前を変更しました。
+![ 新規 ](../assets/new.svg) 即時エクスポートフィード、インデクサービュー ID および変更ログテーブルの名前を変更しました。
+- フィードテーブル（およびインデクサー表示 ID）:
+   - `catalog_data_exporter_products` -> `cde_products_feed`
+   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+   - `catalog_data_exporter_categories` -> `cde_categories_feed`
+   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+- 変更ログテーブル名 – フィードテーブルと同じ命名パターンに従いますが、変更ログテーブル名には `_cl` サフィックスが追加されます。  例：`catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+これらのエンティティのいずれかを参照するカスタムコードがある場合、コードが引き続き正しく機能するように、新しい名前で参照を更新します。
 
 ![ 修正 ](../assets/fix.svg) フィードデータのフィールド `modified_at`、必要なフィードに対してのみ設定します。
 
