@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: ビジネスのニーズを確実に満たすための  [!DNL Live Search]  の境界と制限について説明します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
    - 200 フィルタリング可能な属性
    - 検索可能な属性 200
 - [!DNL Live Search] は、Adobe Commerce データベースからの商品のみにインデックスを作成します。
-- CMS ページにはインデックスが作成されません。
+- CMSページにはインデックスが作成されません。
 - SKU、名前、カテゴリの属性は、デフォルトで検索でき、検索から除外することはできません。 これらのカテゴリに製品を入れない場合は、カテゴリから製品の割り当てを解除してください。
 
 ## ファセット
@@ -70,12 +70,13 @@ ht-degree: 0%
 ## B2B およびカテゴリの権限
 
 - 製品は、デフォルトの共有カタログに追加されていない場合は表示されません。
-- カタログ権限を使用して顧客グループを制限するには：
+- [ カテゴリ権限 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions) を使用して顧客グループを制限するには：
    - 製品はルートカテゴリに割り当てる必要があります。
    - 「ログインしていない」顧客グループには、「許可」閲覧権限を付与する必要があります。
-   - 製品を「ログインしていない」顧客グループに制限するには、各カテゴリに移動して、各顧客グループに権限を設定します。
+   - 製品を「ログインしていない」顧客グループに制限するには、各カテゴリに移動して、各 [ 顧客グループ ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) に権限を設定します。
 - PWA Studioで PLP ウィジェットを使用した B2B の標準サポートは、現時点ではサポートされていません。 ただし、この機能を実装するには [API を使用 ](install.md#pwa-support) できます。
-- [!DNL Live Search] のカテゴリファセットには、特定の顧客グループに表示できないカテゴリが表示される場合があります。
+- [!DNL Live Search] のカテゴリファセットには、特定の [ 顧客グループ ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) に表示できないカテゴリが表示される場合があります。
+- 最大 1,000 の顧客グループをサポートで [!DNL Live Search] ます。
 
 ## [!DNL Storefront popover]
 
