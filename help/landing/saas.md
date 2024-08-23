@@ -4,9 +4,9 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
+source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,12 @@ SaaS プロジェクトを選択または作成するには、ストアの [!DNL
 
 1. _[!UICONTROL Sandbox API Keys]_セクションと_[!UICONTROL Production API Keys]_ セクションに、キー値を貼り付けます。
 
-   秘密鍵は、鍵の先頭に `----BEGIN PRIVATE KEY---`、鍵の末尾に `----END PRIVATE KEY----` を含める必要があります。
+   - 秘密鍵は、鍵の先頭に `----BEGIN PRIVATE KEY---`、鍵の末尾に `----END PRIVATE KEY----` を含める必要があります。
+   - 実際のキーのコピーがない場合は、アカウント所有者に問い合わせて、値を設定に接続します。
+
+   >[!WARNING]
+   >
+   > データベースのバックアップまたはスナップショットに対してクエリを実行し、その値を設定に貼り付けることでキー値を追加した場合、追加の暗号化レイヤーが適用され、キーは機能しません。
 
 1. **保存** をクリックします。
 
