@@ -4,9 +4,9 @@ description: Adobe Commerce インスタンスと接続された SaaS サ  [!DNL
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,22 @@ Adobe Commerce インスタンスをCommerce サービスに接続した後、�
 - インデクサーが [ 管理者 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) から、またはCommerce CLI コマンド `bin/magento indexer:info` ールを使用して実行されていることを確認します。
 
 - カタログ属性、製品、製品オーバーライド、製品バリアントのフィードのインデクサーが `Update by Schedule` に設定されていることを確認します。 インデクサーは、管理者の [ インデックス管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) または CLI （`bin/magento indexer:show-mode | grep -i feed`）を使用して確認できます。
+
+### データ転送ログのイベント マネージャー通知
+
+バージョン 103.3.4 以降では、Commerce インスタンスからAdobe Commerce サービスにデータが送信されると、SaaS データエクスポートによって `data_sent_outside` イベントがディスパッチされます。
+
+```php
+$this->eventManager->dispatch(
+   "data_sent_outside",
+   [
+       "timestamp" => time(),
+       "type" => $metadata->getFeedName(),
+       "data" => $data
+   ]
+);
+```
+
+>[!NOTE]
+>
+>イベントとその登録方法について詳しくは、Adobe Commerce Developer ドキュメントの [ イベントとオブザーバー ](https://developer.adobe.com/commerce/php/development/components/events-and-observers) を参照してください。

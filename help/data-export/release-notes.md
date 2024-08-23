@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 103.3.4 リリース
 
-![ 修正 ](../assets/fix.svg) インデックス再作成プロセスの詳細を追加して、Commerce SaaS データ書き出しログを改善します。
+![ 修正 ](../assets/fix.svg) Commerce インスタンスからCommerce サービス <!--MDEE-785--> ーバーにデータが送信されるたびに `data_sent_outside` イベントをディスパッチするメカニズムを追加することで、データ転送監査ログがサポートされるようになりました
 
 ## 103.3.3 リリース
 
