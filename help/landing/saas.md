@@ -4,9 +4,9 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 
 ### 実稼動およびサンドボックス API キーの生成 {#genapikey}
 
-1. [!DNL Commerce] アカウント（[https://account.magento.com](https://account.magento.com/customer/account/login){:target=&quot;_blank&quot;}）にログインします。
+1. [!DNL Commerce] アカウント（[https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"}）にログインします。
 
 1. 「**Magento**」タブで、サイドバーの **API ポータル** を選択します。
 
@@ -79,10 +79,17 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 >[!WARNING]
 >
 > データの競合を避けるために、実稼動 [!DNL Commerce] ースのインストールにのみ実稼動 SaaS データ領域を使用します。 そうしないと、テストデータで実稼動サイトデータが汚染され、デプロイメントの遅延が発生するリスクがあります。 例えば、実稼動製品のデータが、ステージング URL などのステージングデータと誤って上書きされる可能性があります。
+> これが発生した場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) して、データのクリーンアップをリクエストします。
 
 ### SaaS データ領域のプロビジョニング
 
-すべてのマーチャントは、SaaS プロジェクトごとに 1 つの実稼動データスペースと 2 つのテストデータスペースにアクセスできます。 複数のステージング環境を使用するAdobe Commerce Cloud Pro プロジェクトの場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) することで、ステージング環境ごとに追加のテストデータスペースをリクエストできます。
+すべてのAdobe Commerce マーチャントは、SaaS プロジェクトごとに 1 つの実稼動データスペースと 2 つのテストデータスペースにアクセスできます。
+
+同じデータスペースを複数の環境で同時に使用しない限り、非実稼動環境でテストデータスペースを使用できます。 別の環境でテストデータ領域を使用するには、その環境でデータ領域を選択および設定する前に、データクリーンアップを実行します。
+
+複数のステージング環境を使用するAdobe Commerce Cloud Pro プロジェクトの場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) することで、ステージング環境ごとに追加のテストデータスペースをリクエストできます。 ただし、ステージング環境が 1 つのみで、追加のテストデータスペースが必要な場合は、次のオプションがあります。
+- 追加のステージング環境をリクエストする場合は、カスタマーサクセスチームまたは担当のカスタマーサクセスマネージャーにお問い合わせください。 追加費用がかかります。
+- 追加のテストデータスペースの [ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) し、追加のデータスペースに対するビジネス上の正当性を示します。 このリクエストは承認される場合があります。
 
 ### SaaS プロジェクトの選択または作成 {#createsaasenv}
 
