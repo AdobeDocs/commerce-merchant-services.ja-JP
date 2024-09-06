@@ -3,7 +3,7 @@ title: 『境界と限界』
 description: ビジネスのニーズを確実に満たすための  [!DNL Live Search]  の境界と制限について説明します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2f28b77691e5b125875f1ce39301bfebd093a922
+source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 ## ファセット
 
 - インデックス作成可能な 200 のフィルタリング可能な属性から、最大 100 の属性をファセットとして設定できます。
-- ファセット内では、最大 30 個のバケットを返すことができます。 30 を超えるバケットを返す必要がある場合は、[ サポートチケットを作成 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) します。これにより、Adobeはパフォーマンスへの影響を分析し、お使いの環境でこの制限を増やすことが可能かどうかを判断できます。
+- ファセット内では、最大 100 個のバケットを返すことができます。 100 を超えるバケットを返す必要がある場合は、[ サポートチケットを作成 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) します。これにより、Adobeはパフォーマンスへの影響を分析し、お使いの環境でこの制限を増やすことが可能かどうかを判断できます。
 - 動的ファセットは、大きなインデックスや通常のインデックスのパフォーマンスで問題を引き起こす可能性があります。 動的ファセットを作成し、パフォーマンスの低下や、タイムアウトエラーを伴うページの読み込みがない場合は、ファセットをピン留めに変更して、パフォーマンスの問題が解決するかどうかを判断してください。
 - 在庫状態（`quantity_and_stock_status`）はファセットとしてサポートされていません。 `inStock: 'true'` を使用して、在庫製品を除外できます。 [!DNL Commerce] 管理者で「在庫切れの製品を表示」が「True」に設定されている場合、これは `LiveSearchAdapter` モジュールの初期設定でサポートされています。
 - 日付タイプ属性はファセットとしてサポートされていません。

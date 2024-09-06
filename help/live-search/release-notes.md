@@ -3,9 +3,9 @@ title: "[!DNL Live Search] リリースノート"
 description: 「Adobe Commerceからの最新  [!DNL Live Search]  リリース情報。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2027'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## ホステッド サービスの更新
 
 これらのメモでは、バージョン管理されたリリースの外部で公開された更新や、ホストされるサービスの改善について説明します。
+
+_2024 年 9 月 4 日_
+
+![ 修正 ](../assets/fix.svg) 返すことができるバケットの最大数 [ ファセット内 ](boundaries-limits.md#facets) が 100 に増えました。
 
 _2024 年 8 月 7 日_
 
