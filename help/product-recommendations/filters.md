@@ -2,9 +2,9 @@
 title: 製品のフィルタリング
 description: レコメンデーションとして使用される製品を含める、または除外する条件を定義します。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
+source-git-commit: b602385b956b6af131b008428d1182a586303bc7
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ Adobe Commerceは、設定不可のデフォルトフィルターをレコメン
 
 ### カテゴリ
 
-製品のカテゴリに基づくフィルターでは、直接カテゴリ割り当てとそのサブカテゴリを使用します。 例えば、カテゴリ `Gear` の除外条件を有効にすると、`Gear` に割り当てられた製品とそのすべてのサブカテゴリ（`Gear/Bags`、`Gear/Fitness Equipment` など）が除外されます。 B2B マーチャントの場合、カテゴリフィルターは、設定した [ 顧客固有の製品カテゴリ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) に従います。
+製品のカテゴリに基づくフィルターでは、直接カテゴリ割り当てとそのサブカテゴリを使用します。 例えば、カテゴリ `Gear` の除外条件を有効にすると、`Gear` に割り当てられた製品とそのすべてのサブカテゴリ（`Gear/Bags`、`Gear/Fitness Equipment` など）が除外されます。 同じことがカテゴリのインクルージョンフィルターにも当てはまります。 例えば、カテゴリ `Gear` のインクルージョン条件を有効にすると、`Gear` に割り当てられた製品とそのすべてのサブカテゴリ（`Gear/Bags`、`Gear/Fitness Equipment` など）が含まれます。
+
+>[!NOTE]
+>
+>B2B マーチャントの場合、カテゴリフィルターは、設定した [ 顧客固有の製品カテゴリ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) に従います。
 
 Adobe Commerceでは、ページタイプにレコメンデーションをデプロイする際に、次のカテゴリフィルター設定を使用することをお勧めします。
 

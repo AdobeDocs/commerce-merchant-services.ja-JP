@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: ビジネスのニーズを確実に満たすための  [!DNL Live Search]  の境界と制限について説明します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
+source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,10 @@ ht-degree: 0%
 - [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) および [Special Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) は、[!DNL Live Search] フィールドおよび製品一覧ページウィジェットではサポートされていません。
 - 製品価格には付加価値税（VAT）は含まれていません。
 - コンテンツの検索はサポートされていません。
-- ページ分割できる製品には、10,000 個の制限があります。
+- ページ分割できる製品には、10,000 個の制限があります。 この制限を増やすことは可能ですが、パフォーマンスに影響を与える可能性があります。 買い物客が深いページネーションを使用する必要がないように、カテゴリや検索結果に多数の商品が含まれる場合は、商品をフィルタリングする意味のある方法を提供するようにします。
 - 属性には、説明やカスタム属性を含め、1MB のハード制限があります。
 - 検索アダプターは、カスタム ソース モデルで作成され、ファセットとして使用される製品属性をサポートしていません。 この機能をサポートするには、[ 製品一覧ページウィジェット ](plp-styling.md) を使用する必要があります。
+- カスタム製品タイプはサポートされていません。
 
 ## インデックス作成
 
@@ -84,3 +85,15 @@ ht-degree: 0%
 - [!DNL popover] は *Blank* テーマをサポートしていません。
 - [!DNL popover] は、クイックオーダーフォームではサポートされていません。
 - ウィッシュリストと製品の比較はサポートされていません。
+- ペルーのソル （PEN）の通貨記号はサポートされていません。
+
+## トラブルシューティング
+
+[!DNL Live Search] でよくある問題のトラブルシューティングについては、次のナレッジベースの記事を参照してください。
+
+- [[!DNL Live Search]  カタログが同期されていません ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search]  ダッシュボードと検索結果のランキングが正しくありません ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search]  管理者の在庫状況設定に関係なく、在庫切れの製品を表示します ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
+- [[!DNL Live Search]  ファセットはアルファベット順に並べ替えられません ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+
+追加のサポートが必要な場合は、[ サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) にお問い合わせください。

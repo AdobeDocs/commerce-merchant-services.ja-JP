@@ -3,9 +3,9 @@ title: 「の概要  [!DNL Live Search]」
 description: Adobe Commerceの必要システム構成とインストール手順  [!DNL Live Search]  説明します。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 43e821de9e147508397d45ccd24b5417478b520a
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2417'
 ht-degree: 0%
 
 ---
@@ -333,7 +333,7 @@ Adobeでは、SaaS API （特にカタログサービスエンドポイント）
 - [PLP ウィジェット ](https://github.com/adobe/storefront-product-listing-page)
 - [ ライブ検索フィールド ](https://github.com/adobe/storefront-search-as-you-type)
 
-検索アダプター、Luma ウィジェット、AEM CIFウィジェットなどの標準コンポーネントを使用しない場合、ユーザーインタラクションデータの自動収集はデフォルトでは機能しません。 この収集されたデータは、Adobe Senseiでインテリジェントなマーチャンダイジングとパフォーマンストラッキングに使用されます。 この問題を解決するには、このデータ収集をヘッドレスで実装するカスタムソリューションを開発する必要があります。
+検索アダプター、Luma ウィジェット、AEM CIFウィジェットなどの標準コンポーネントを使用しない場合、ユーザーインタラクションデータの自動収集はデフォルトでは機能しません。 Adobe Senseiでは、この収集されたデータを使用して、インテリジェントなマーチャンダイジングとパフォーマンスのトラッキングを行います。 この問題を解決するには、このデータ収集をヘッドレスで実装するカスタムソリューションを開発する必要があります。
 
 [!DNL Live Search] の最新バージョンでは、既に [!DNL Catalog Service] が使用されています。
 
