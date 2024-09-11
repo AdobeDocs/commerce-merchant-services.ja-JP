@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] リリースノート'
 description: Adobe Commerceの最新  [!DNL Catalog Service]  リリース情報です。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
+source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,15 @@ ht-degree: 0%
 
 ## 現在のメジャーバージョン
 
+### V1.23 リリース
+
+_2024 年 8 月 22 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 修正 ](../assets/fix.svg) 製品の上書き（価格）データを使用せずに製品情報を取得できるようになりました。 以前のリリースでは、これらのクエリで次のエラーが返されていました。
+`The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
+
 ### V1.22 リリース
 
 _2024 年 8 月 13 日_
@@ -34,6 +43,14 @@ _2024 年 8 月 13 日_
 ## 以前のバージョン
 
 +++ 以前のバージョン
+
+### V1.22 リリース
+
+_2024 年 8 月 13 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 新規 ](../assets/new.svg) 製品 SKU ごとにすべてのバリアントを取得するサポートが追加されました。 詳しくは、[Catalog Service API リファレンス ](https://developer.adobe.com/commerce/services/graphql/catalog-service/) を参照してください。<!--DATA-6067-->
 
 ### V1.19 リリース
 
