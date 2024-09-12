@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '108'
 ht-degree: 3%
 
 ---
@@ -34,12 +34,13 @@ ht-degree: 3%
 - 支払いとチェックアウト {#payments-checkout}
    - [支払いオプション](payments-options.md)
    - [クレジットカードの保管](vaulting.md)
-   - [チェックアウト](checkout.md)
-   - [管理者でのオーダーの作成](create-order.md)
+   - [チェックアウト イン  [!DNL Payment Services]](checkout.md)
    - 支払い {#manage} ールの管理
       - [行項目  [!DNL Payment Services]](line-items.md)
       - [払戻](refunds.md)
       - [ボイド](voids.md)
+   - [管理者でのオーダーの作成](create-order.md)
+   - [配送状況の追跡  [!DNL Payment Services]](track-shipment.md)
 - Financial reporting {#reporting}
    - [トランザクションレポート](transactions.md)
    - [注文支払いステータスレポート](order-payment-status.md)

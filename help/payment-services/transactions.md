@@ -4,9 +4,9 @@ description: 取引レポートを使用して、取引承認レートと取引�
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 0800b4a0f9a3297a3490fa11f32e6af0abe67e2a
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1272'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ ht-degree: 0%
 
 _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**に移動して、詳細な表形式のトランザクションレポート表示を表示します。
 
-![ トランザクションレポートの表示 ](assets/transactions-report-view.png){width="600" zoomable="yes"}
+![ トランザクションレポートの表示 ](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
 このトピックのセクションに従って、表示するデータを最も適切に表示するように、このビューを設定できます。
 
-このレポート内のリンクされたCommerceの注文とプロバイダーの取引 ID、取引額、1 取引あたりの支払い方法などを参照してください。
+このレポート内のリンクされたCommerceの注文と PayPal の取引 ID、取引額、1 取引あたりの支払い方法などを参照してください。
 
 すべての支払い方法が同じ精度の情報を提供するわけではありません。 例えば、クレジットカードの取引では、応答、AVS および CCV コードが提供され、取引レポートではカードの最後の 4 桁が提供されますが、PayPal の支払いボタンは提供されません。
 
@@ -86,12 +86,11 @@ _[!UICONTROL Live]_が選択されているデータソースの場合、実稼�
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**に移動します。
 1. **[!UICONTROL Filter]** セレクターをクリックします。
 1. _[!UICONTROL Transaction Result]_のオプションを切り替えて、選択した注文トランザクションのみのレポート結果を表示します。
-1. _[!UICONTROL Card Type]_を選択して、選択したカードタイプのレポート結果を確認します。 支払プロセッサがカード タイプを識別できない場合は、詳細情報を含むツールヒントが表示されます。
-1. _[!UICONTROL Card Brand]_を選択して、選択したカードブランドのレポート結果を確認します。 支払い処理者がカードブランドを識別できない場合は、詳細情報を含むツールヒントが表示されます。
-1. _[!UICONTROL Payment Method]_のオプションを切り替えて、選択した支払い方法のみのレポート結果を表示します。
+1. _[!UICONTROL Payment Method]_のオプションを切り替えて、トランザクションに使用された支払いタイプのレポート結果を表示します。
+1. _[!UICONTROL Payment Detail]_のオプションを切り替えて、使用する支払いタイプの追加情報を表示します（使用可能な場合）。
 1. _最小オーダー金額_ または _最大オーダー金額_ を入力して、そのオーダー金額範囲内のレポート結果を表示します。
 1. 特定のトランザクションを検索する _[!UICONTROL Order ID]_を入力します。
-1. 特定のクレジット カードまたはデビット カードを検索する _[!UICONTROL Card Last Four Digits]_を紹介します。
+1. 特定のクレジット カードまたはデビット カードを検索する _[!UICONTROL Card Last Four]_を紹介します。
 1. 特定の顧客のすべてのトランザクションを表示する _[!UICONTROL Customer ID]_を入力します。
 1. その電子メールのトランザクションをフィルター処理する _[!UICONTROL Customer Email]_を入力します。
 1. 「**[!UICONTROL Hide filters]**」をクリックすると、フィルターが非表示になります。
@@ -134,11 +133,12 @@ _[!UICONTROL Live]_が選択されているデータソースの場合、実稼�
 | 列 | 説明 |
 | ------------ | -------------------- |
 | [!UICONTROL Order ID] | Commerce注文 ID （成功した取引の値のみを含み、却下された取引の値は空） <br> <br> 関連する [ 注文情報 ](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} を表示するには、ID をクリックします。 |
-| [!UICONTROL Provider Transaction ID] | 支払いプロバイダーから提供されたトランザクション ID。成功したトランザクションの値のみを含み、却下されたトランザクションのダッシュを含みます。 |
+| [!UICONTROL PayPal Transaction ID] | 支払いプロバイダーから提供されたトランザクション ID。成功したトランザクションの値のみを含み、却下されたトランザクションのダッシュを含みます。 この ID をクリックすると、PayPal の取引詳細ページにアクセスできます。 |
 | [!UICONTROL Customer ID] | 注文のCommerce顧客 ID<br> <br> 詳しくは、[customer info](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} を参照してください。 |
 | [!UICONTROL Transaction Date] | トランザクション日タイムスタンプ |
-| [!UICONTROL Payment Method] | ブランドとカードタイプに関する詳細情報を使用したトランザクションの支払い方法。 詳しくは、[ カードタイプ ](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) を参照してください。支払いサービス バージョン 1.6.0 以降で使用できます。 |
-| [!UICONTROL Card Last Four Digits] | 取引に使用するクレジット カードまたはデビット カードの最後の 4 桁 |
+| [!UICONTROL Payment Method] | ブランドおよびカードのタイプに関する情報を使用して、トランザクションに使用する支払のタイプ。 詳しくは、[ カードタイプ ](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) を参照してください。支払いサービス バージョン 1.6.0 以降で使用できます。 |
+| [!UICONTROL Payment Detail] | トランザクションに使用される支払いタイプに関する追加情報を提供します（利用可能な場合）。 |
+| [!UICONTROL Card Last Four] | 取引に使用するクレジット カードまたはデビット カードの最後の 4 桁 |
 | [!UICONTROL Result] | トランザクションの結果 – *[!UICONTROL OK]* （成功したトランザクション）、*[!UICONTROL Rejected by Payment Provider]* （PayPal によって却下）、*[!UICONTROL Rejected by Bank]* （カードを発行した銀行によって却下） |
 | [!UICONTROL Response Code] | 支払いプロバイダーまたは銀行から拒否の理由を提供するエラーコード。[`Rejected by Bank` の状態および [`Rejected by Payment Provider` の状態については ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) 考えられる応答コードと説明の一覧を参照してください ](https://developer.paypal.com/api/rest/reference/orders/v2/errors/) |
 | [!UICONTROL AVS Code] | 住所確認サービスコード。支払いリクエストに対するプロセッサー応答情報です。 詳しくは、[ 使用可能なコードと説明のリスト ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) を参照してください。 |

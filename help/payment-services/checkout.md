@@ -1,16 +1,17 @@
 ---
-title: チェックアウト
-description: 顧客のニーズに合わせてチェックアウトをカスタマイズします。
+title: チェックアウト イン  [!DNL Payment Services]
+description: 顧客のニーズに合わせてカスタマイズ  [!DNL Payment Services]  チェックアウトします。
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# チェックアウト
+
+# [!DNL Payment Services] でのチェックアウト
 
 買い物客に最適なAdobe Commerce [!DNL Payment Services] のチェックアウトを設定できます。 [ 注文の自動無効化 ](#order-auto-voided-if-error) および [ クレジットカードの保管 ](#credit-card-vaulting) などの機能により、買い物客はスムーズにユーザーエクスペリエンスを得ることができます。
 

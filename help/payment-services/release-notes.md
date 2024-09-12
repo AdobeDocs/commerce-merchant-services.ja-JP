@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] リリースノート"
 description: すべてのリリースについて詳しくは、リリースノ  [!DNL Payment Services]  トを参照してください。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '2788'
+source-wordcount: '2968'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 これらのリリースノートでは、ホステッド サービスの通常の機能リリースの外部で発生した機能の変更と修正について説明します。
 
 +++ホステッド サービスの更新
+
+_2024 年 8 月 30 日_
+
+![ 新しい問題 ](../assets/new.svg)<!-- Issue PAY-5658 --> マーチャントは、[ トランザクションレポート ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) の支払詳細でトランザクションをフィルタリングして、より詳細で正確な支払方法のデータを取得できるようになりました。
 
 _2024 年 7 月 15 日_
 
@@ -86,6 +90,20 @@ _2021 年 6 月 28 日_
 ![ 新規 ](../assets/new.svg)<!-- Issue PAY-2761 --> 列設定コントロールを使用して、[ 注文支払いステータスレポート ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) および [ 支払いレポート ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) に表示されるデータをカスタマイズできるようになりました。
 
 +++
+
+## v2.8.0
+
+_2024 年 9 月 13 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 新規 ](../assets/new.svg)<!-- PAY-5499 --> [!DNL Payment Services] は、Adobe Commerceで [ トラッキング番号が入力された ](track-shipment.md) 場合の PayPal へのトラッキング番号情報の送信をサポートするようになりました。
+
+![ 修正 ](../assets/fix.svg)<!-- PAY-5626 --> [!DNL Payment Services] は、お客様がCommerceのチェックアウトページにアクセスした際の、マーチャントレジストリに対するリクエストプロセスを最適化しました。 以前は、支払い方法（ホストされているフィールド、Google Pay、Apple Pay、スマートボタン）ごとに別々のリクエストが行われていました。 この改善により、呼び出し数が減り、チェックアウトプロセス中のパフォーマンスと効率が向上します。
+
+![ 修正 ](../assets/fix.svg)<!-- PAY-5645 --> 買い物客 [!DNL Payment Services]、チェックアウトページでマーチャントがカスタム利用条件の作成に同意しない場合、PayPal/Google Pay のポップアップが開かなくなりました。
+
+![ 修正 ](../assets/fix.svg)<!-- PAY-5648 -->  [!DNL Payment Services] は、PayPal ポータルの明細行項目の税分類に関する問題を解決しました。 注文の送料に税金が関連付けられている場合、その税金は送料の一部として含まれ、PayPal ポータルに表示される明細項目の詳細にこの方法で表示されます。
 
 ## v2.7.0
 
