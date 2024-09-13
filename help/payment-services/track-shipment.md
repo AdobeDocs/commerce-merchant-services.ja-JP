@@ -2,7 +2,7 @@
 title: 配送状況の追跡  [!DNL Payment Services]
 description: Paypal [!DNL Payment Services]  マーチャントダッシュボードに表示される出荷およびトラッキング情報をカスタマイズします。
 feature: Payments
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 2169907d7200a0937ce5a3ddf9634423cc8c2f5f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -48,4 +48,4 @@ Adobe Commerceの出荷グリッドについて詳しくは、[ 出荷 ](https:/
 
 ### サードパーティとの互換性
 
-サードパーティの拡張機能は、[Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#magentosalesapishipmentrepositoryinterface-shipmentrepositoryinterface){target=_blank} を通じて出荷エンティティが作成された場合の機能と互換性があります。
+サードパーティの拡張機能は、[Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank} を通じて出荷エンティティが作成された場合の機能と互換性があります。
