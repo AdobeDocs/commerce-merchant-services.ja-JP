@@ -3,7 +3,7 @@ title: 「の概要  [!DNL Live Search]」
 description: Adobe Commerceの必要システム構成とインストール手順  [!DNL Live Search]  説明します。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 8981dda82dbdf45d1df0257beb8603b22e98aa4b
+source-git-commit: b17cdc61ddbf7e3d1e5782eb079a628a240ea8c0
 workflow-type: tm+mt
 source-wordcount: '2977'
 ht-degree: 0%
@@ -144,7 +144,7 @@ Adobe Commerce [!DNL Live Search] と [[!DNL Catalog Service]](../catalog-servic
 1. ベータ版をインストールするには、コマンドラインから次のコマンドを実行します。
 
    ```bash
-   composer require magento/module-live-search-search-types:"^1.0-beta"
+   composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
    このベータ版では、管理者に **[!UICONTROL Autocomplete]**、**[!UICONTROL Contains]**、**[!UICONTROL Starts with]** の **[!UICONTROL Search types]** チェックボックスが追加されています。 また、`productSearch` GraphQL API を更新して、これらの新しい検索機能を組み込みます。
