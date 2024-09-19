@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: ビジネスのニーズを確実に満たすための  [!DNL Live Search]  の境界と制限について説明します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
+source-git-commit: 2feb97bf6aa41e5b99d3dcbc51ef3c1cdc05d8da
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,14 @@ ht-degree: 0%
 ## 一般
 
 - [!DNL Live Search] がインストールされている場合は [ 詳細検索 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) モジュールが無効になり、ストアフロントフッターの詳細検索リンクが削除されます。
-- [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) および [Special Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) は、[!DNL Live Search] フィールドおよび製品一覧ページウィジェットではサポートされていません。
+- [ 階層の価格 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) は、[!DNL Live Search] フィールドおよび製品一覧ページウィジェットではサポートされていません。
 - 製品価格には付加価値税（VAT）は含まれていません。
-- コンテンツの検索はサポートされていません。
+- コンテンツ検索（CMSのページとブロック）はサポートされていません。
 - ページ分割できる製品には、10,000 個の制限があります。 この制限を増やすことは可能ですが、パフォーマンスに影響を与える可能性があります。 買い物客が深いページネーションを使用する必要がないように、カテゴリや検索結果に多数の商品が含まれる場合は、商品をフィルタリングする意味のある方法を提供するようにします。
 - 属性には、説明やカスタム属性を含め、1MB のハード制限があります。
 - 検索アダプターは、カスタム ソース モデルで作成され、ファセットとして使用される製品属性をサポートしていません。 この機能をサポートするには、[ 製品一覧ページウィジェット ](plp-styling.md) を使用する必要があります。
 - カスタム製品タイプはサポートされていません。
+- 「次で始まる」または「次を含む」条件を使用し、一部の制限事項を除いて結果をフィルタリングできます [ こちら ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations)。
 
 ## インデックス作成
 

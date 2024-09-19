@@ -3,9 +3,9 @@ title: 「の概要  [!DNL Live Search]」
 description: Adobe Commerceの必要システム構成とインストール手順  [!DNL Live Search]  説明します。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 8981dda82dbdf45d1df0257beb8603b22e98aa4b
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2977'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,58 @@ Adobe Commerce [!DNL Live Search] と [[!DNL Catalog Service]](../catalog-servic
    ```bash
    bin/magento setup:upgrade
    ```
+
+### [!DNL Live Search] ベータ版のインストール
+
+>[!IMPORTANT]
+>
+>[!DNL Live Search] で利用可能な新機能を確認したい場合は、ベータ版のインストールを検討してください。
+
+このベータ版では、](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) の 3 つの新しい機能が [`productSearch` クエリでサポートされています。
+
+- **レイヤー検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリを最大 2 つのレイヤーで検索できます。 例：
+
+   - **レイヤー 1 検索** – 「product_attribute_1」で「motor」を検索します。
+   - **レイヤー 2 検索** – 「product_attribute_2」の「品番 123」を検索します。 この例では、「motor」の結果に含まれる「part number 123」を検索します。
+
+  レイヤー検索は、以下に説明するように、`startsWith` 検索インデックスと `contains` 検索インデックスの両方で使用できます。
+
+- **startsWith 検索インデックス付け** - `startsWith` インデックス付けを使用して検索します。 この新機能により、次のことが可能になります。
+
+   - 属性値が特定の文字列で始まる製品の検索。
+   - 「次で終わる」検索の設定による、買い物客での属性値が特定の文字列で終わる製品の検索。 「次で終わる」検索を有効にするには、製品属性を逆に取り込む必要があり、API 呼び出しも逆の文字列にする必要があります。
+
+- **contains search indexation** -contains indexation を使用して属性を検索します。 この新機能により、次のことが可能になります。
+
+   - 大きい文字列内でのクエリの検索。 例えば、買い物客が「HAPE-123」という文字列で製品番号「PE-123」を検索するとします。
+
+      - 注意：この検索タイプは、オートコンプリート検索を実行する既存の [ フレーズ検索 ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) とは異なります。 例えば、製品属性値が「outdoor pants」の場合、フレーズ検索は「out pan」に対する応答を返しますが、「or ants」に対する応答は返しません。 ただし、「を含む」検索では、「または ants」に対する応答が返されます。
+
+これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。
+
+これらの新しい条件は、検索結果ページに実装できます。 例えば、ページに新しいセクションを追加して、買い物客が検索結果をさらに絞り込めるようにすることができます。 買い物客が「製造元」、「部品番号」、「説明」など、特定の製品属性を選択できるようにすることができます。 そこから、`contains` 条件または `startsWith` 条件を使用して、これらの属性内を検索します。 検索可能な [ 属性 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) のリストについては、管理ガイドを参照してください。
+
+1. ベータ版をインストールするには、コマンドラインから次のコマンドを実行します。
+
+   ```bash
+   composer require magento/module-live-search-search-types:"^1.0-beta"
+   ```
+
+   このベータ版では、管理者に **[!UICONTROL Autocomplete]**、**[!UICONTROL Contains]**、**[!UICONTROL Starts with]** の **[!UICONTROL Search types]** チェックボックスが追加されています。 また、`productSearch` GraphQL API を更新して、これらの新しい検索機能を組み込みます。
+
+1. 管理者で、検索可能にする [ 製品属性を設定する ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) と、その属性の検索機能を指定します。例えば、**次を含む** （デフォルト）や **次で始まる** などです。 **Contains** に対して有効にする属性を最大 6 つ指定し、**Starts with** に対して有効にする属性を最大 6 つ指定できます。 ベータ版の場合、管理者はこの制限を強制しませんが、API 検索では強制されます。
+
+   ![ 検索機能の指定 ](./assets/search-filters-admin.png)
+
+1. 新しい `contains` および `startsWith` の検索機能を使用して [!DNL Live Search] API 呼び出しを更新する方法については、[ 開発者向けドキュメント ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) を参照してください。
+
+### フィールドの説明
+
+| フィールド | 説明 |
+|--- |--- |
+| `Autocomplete` | デフォルトで有効になっており、変更できません。 `Autocomplete` では、[ 検索フィルター ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering) で `contains` を使用できます。 ここで、`contains` の検索クエリは、オートコンプリートタイプの検索応答を返します。 Adobeでは、通常 50 文字を超える説明フィールドに、このタイプの検索を使用することをお勧めします。 |
+| `Contains` | オートコンプリート検索ではなく、真の「文字列に含まれるテキスト」検索を有効にします。 [ 検索フィルター ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) で `contains` を使用します。 詳しくは、[ 制限事項 ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) を参照してください。 |
+| `Starts with` | 特定の値で始まる文字列をクエリできます。 [ 検索フィルター ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) で `startsWith` を使用します。 |
 
 ## 2. API キーの設定
 
