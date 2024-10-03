@@ -3,9 +3,9 @@ title: "[!DNL Live Search] リリースノート"
 description: 「Adobe Commerceからの最新  [!DNL Live Search]  リリース情報。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
+source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## ホステッド サービスの更新
 
 これらのメモでは、バージョン管理されたリリースの外部で公開された更新や、ホストされるサービスの改善について説明します。
+
+_2024 年 9 月 19 日_
+
+![ 新規 ](../assets/new.svg) レイヤ検索、で始まる検索、含まれる検索の 3 つの新しい機能をサポートするベータ版がリリースされました。 [ 詳細情報 ](install.md#install-the-live-search-beta)。
 
 _2024 年 9 月 4 日_
 
