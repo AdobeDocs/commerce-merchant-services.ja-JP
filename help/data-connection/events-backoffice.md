@@ -4,9 +4,9 @@ description: バックオフィスイベントがそれぞれキャプチャす�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3606'
 ht-degree: 0%
 
 ---
@@ -403,10 +403,6 @@ ht-degree: 0%
 | `productListItems.categories.path` | カテゴリへのパス。 |
 
 ## 顧客プロファイルイベント
-
->[!IMPORTANT]
->
->この機能はベータ版です。
 
 サーバーサイドから取得したプロファイルイベントには、`accountCreated`、`accountUpdated`、`accountDeleted` などのアカウント情報が含まれます。 このデータは、新規登録割引オファーの送信、アカウント変更の確認など、セグメントを適切に定義したり、マーケティングキャンペーンを実行したりするために必要な、主な顧客詳細の入力に使用されます。 [ ストアフロント ](events.md#customer-profile-events) から取り込まれた類似のプロファイルイベントがあります。
 

@@ -3,9 +3,9 @@ title: リリースノート
 description: Adobe Commerceの拡張機能の最新  [!DNL Data Connection]  リリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,16 @@ _2022 年 10 月 12 日_
 
 +++
 
+## 3.2.0
+
+_2024 年 10 月 7 日_
+
+[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+
+![ 新規 ](../assets/new.svg) - バックオフィスデータに [ カスタムオーダー属性 ](custom-attributes.md) を作成する機能を追加しました。
+![ 新規 ](../assets/new.svg) – 新しい [ カスタム注文属性 ](connect-data.md#data-customization) テーブルが追加され、[!DNL Commerce] で設定され、Experience Platformに送信されたカスタム属性を確認できるようになりました。
+![ 新規 ](../assets/new.svg) - プロファイルレコードとデータを [ 収集してExperience Platformに送信 ](connect-data.md#send-customer-profile-data) する機能が追加されました。
+
 ## 3.2.0-beta3
 
 _2024 年 8 月 27 日_
@@ -128,7 +138,7 @@ _2024 年 3 月 4 日_
 [!BADGE  互換性 ]{type=Informative tooltip="互換性"}
 
 ![ 新規 ](../assets/new.svg) - ベータ版に参加している場合は、`composer.json` ファイルのルートレベルに次のものが含まれていることを確認してください：` "minimum-stability": "beta"`。 また、`composer require "magento/customers-connector: ^1.2.0"` を追加して、Commerce インスタンスから SaaS に顧客プロファイルを送信します。
-![ 新規 ](../assets/new.svg) - [ カスタム属性を追加 ](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data) 機能を追加しました。
+![ 新規 ](../assets/new.svg) - [ カスタム属性を追加 ](custom-attributes.md) 機能を追加しました。
 ![ 新規 ](../assets/new.svg) - プロファイルレコードとデータを [ 収集してExperience Platformに送信 ](connect-data.md#send-customer-profile-data) する機能が追加されました。
 
 ## 3.1.0

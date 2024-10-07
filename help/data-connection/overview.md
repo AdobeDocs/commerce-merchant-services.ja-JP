@@ -3,7 +3,7 @@ title: ガイドの概要
 description: 拡張機能を使用してAdobe Commerce データをAdobe Experience Platformと統合する方法  [!DNL Data Connection]  説明します。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 7b9867179a871e4949ea74f9214e9e52ea26bb71
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 0%
@@ -67,6 +67,8 @@ CommerceからExperience Platformへの接続とCommerceへのExperience Platfor
 * [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
 * [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
+>[!BEGINSHADEBOX]
+
 ## 前提条件
 
 [!DNL Data Connection] 拡張機能を使用するには、次の要件を満たす必要があります。
@@ -75,6 +77,8 @@ CommerceからExperience Platformへの接続とCommerceへのExperience Platfor
 * Adobe IDと組織 ID
 * [Adobeクライアントデータレイヤー（ACDL） ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html) （ストアフロントイベントデータの収集に必要）
 * 他のAdobeDX 製品の使用権限。
+
+>[!ENDSHADEBOX]
 
 ## オンボーディング手順
 

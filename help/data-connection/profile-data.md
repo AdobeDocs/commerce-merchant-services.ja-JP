@@ -4,14 +4,14 @@ description: スキーマ、データセット、データストリームを作�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 86a3ba12-7f26-4f7e-98a0-9af0d1d8d881
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
-# Commerce データ取り込み（Beta）用のプロファイルレコードスキーマの更新
+# Commerce データ取り込み用のプロファイルレコードスキーマの更新
 
 買い物客がCommerce サイトでプロファイルを作成すると、プロファイルレコードが作成され、データが取り込まれます。 そのプロファイルデータをExperience Platformにストリーミングするには、そのプロファイルレコードに固有のスキーマとデータセットを作成する必要があります。
 

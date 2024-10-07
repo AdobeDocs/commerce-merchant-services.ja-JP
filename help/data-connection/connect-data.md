@@ -3,9 +3,9 @@ title: Commerce Data のAdobe Experience Platformへの接続
 description: Commerce データをAdobe Experience Platformに接続する方法を説明します。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,13 @@ Adobe Developer Consoleを認証するプロジェクトをCommerceで作成し�
 
 1. 「**設定を保存**」をクリックします。
 
+1. [**[!UICONTROL Test connection]**] ボタンをクリックし、入力したサービス アカウントと認証情報が正しいことを確認します。
+
 ### 一般
 
 1. 管理者で、**システム**/サービス/**[!DNL Data Connection]** に移動します。
+
+   ![[!DNL Data Connection] Settings](./assets/epc-settings.png){width="700" zoomable="yes"}
 
 1. **一般** の下の **設定** タブで、[Commerce サービスコネクタ ](../landing/saas.md#organizationid) で設定されているように、Adobe Experience Platform アカウントに関連付けられている ID を確認します。 組織 ID はグローバルです。 Adobe Commerce インスタンスごとに関連付けることができる組織 ID は 1 つだけです。
 
@@ -97,7 +101,7 @@ Adobe Developer Consoleを認証するプロジェクトをCommerceで作成し�
 
 - **バックオフィス** （サーバーサイドデータ）は、Commerce サーバーで取得されたデータです。 注文のステータスに関する情報（注文が行われた、キャンセルされた、払い戻された、出荷された、完了したかどうかなど）が含まれます。 また、[ 過去の注文データ ](#send-historical-order-data) も含まれます。
 
-- **プロファイル（Beta）** は、買い物客のプロファイル情報に関連するデータです。 詳細情報 [ 詳細情報 ](#send-customer-profile-data)。
+- **プロファイル** は、買い物客のプロファイル情報に関連するデータです。 詳細情報 [ 詳細情報 ](#send-customer-profile-data)。
 
 Adobe Commerce インスタンスがデータ収集を開始できるようにするには、[ 前提条件 ](overview.md#prerequisites) を確認してください。
 
@@ -157,10 +161,6 @@ Adobe Commerce インスタンスがデータ収集を開始できるように�
 オンボーディング後、ストアフロントデータがExperience Platformエッジに流れ始めます。 バックオフィスのデータがエッジに表示されるまでに約 5 分かかります。 その後の更新は、cron スケジュールに基づいてエッジに表示されます。
 
 ### 顧客プロファイルデータの送信
-
->[!IMPORTANT]
->
->この機能はベータ版です。
 
 Experience Platformに送信できるプロファイルデータには、プロファイルレコードと時系列プロファイルイベントの 2 つのタイプがあります。
 
@@ -240,6 +240,8 @@ Experience Platformに送付する過去の注文の日付範囲を指定しま�
 
 1. 「**注文履歴**」タブを選択します。
 
+   ![[!DNL Data Connection] Order History](./assets/epc-order-history.png){width="700" zoomable="yes"}
+
 1. **注文履歴の同期** で、「**設定からデータセット ID をコピー**」チェックボックスが既に有効になっています。 これにより、「**設定** タブで指定したデータセットと同じデータセットを使用していることになります。
 
 1. **From** および **To** フィールドで、送信する過去の注文データの日付範囲を指定します。 日付範囲は 5 年を超えることはできません。
@@ -255,6 +257,36 @@ Experience Platformに送付する過去の注文の日付範囲を指定しま�
 | 送信元 | 注文履歴データの収集を開始する日付。 |
 | 終了 | 注文履歴データの収集を終了する日付。 |
 | 同期を開始 | 注文履歴データをExperience Platformエッジに同期するプロセスを開始します。 このボタンは、**[!UICONTROL Dataset ID]** フィールドが空白の場合やデータセット ID が無効な場合は無効になります。 |
+
+### データのカスタマイズ
+
+「**データのカスタマイズ**」タブでは、[!DNL Commerce] で設定され、Experience Platformに送信されたカスタム属性を表示できます。
+
+![[!DNL Data Connection] データのカスタマイズ ](./assets/epc-data-customization.png){width="700" zoomable="yes"}
+
+>[!IMPORTANT]
+>
+>**データ収集** タブで [ 指定 ](#data-collection) したデータストリーム ID が、カスタム属性を取り込むためにスキーマにリンクされた ID と一致することを確認します。
+
+注文のカスタム属性を作成してExperience Platformに送信する場合、Commerceの属性名がExperience Platformの [!DNL Commerce] スキーマの属性名と一致する必要があります。 一致しない場合は、違いを特定するのが難しい可能性があります。 名前が一致しない場合は、**カスタム順序属性** テーブルが問題の解決に役立ちます。
+
+**カスタム注文属性** テーブルを使用すると、Experience Platform中の [!DNL Commerce] ルチバックオフィスと [!DNL Commerce] スキーマの間でのカスタム注文属性の設定とマッピングを視覚的に確認できます。 このテーブルを使用すると、様々なソースをまたいで注文レベルおよび注文品目レベルのカスタム属性を表示でき、見つからない属性や調整が正しくない属性を簡単に識別できます。 また、データセット ID も表示されるので、ライブデータセットと履歴データセットを区別するのに役立ちます。各データセットには独自のカスタム属性を設定できるからです。
+
+テーブルのカスタム属性名の横に緑色のチェックマークが表示されない場合は、ソースの属性名が一致していないことを示しています。 1 つのソースの属性名を修正すると、緑色のチェックマークが表示され、名前が一致したことが示されます。
+
+- Experience Platformのスキーマで属性名が更新された場合、Experience Platformスキーマの変更をトリガーするには、「**データのカスタマイズ**」タブで設定を保存する必要があります。 この変更は、「**[!UICONTROL Refresh]**」ボタンをクリックすると **カスタム注文属性** テーブルに反映されます。
+- [!DNL Commerce] で属性名を更新する場合は、注文イベントを生成して **カスタム注文属性** テーブルの名前を更新する必要があります。 変更は約 60 分後に反映されます。
+
+詳しくは、[ カスタム属性の設定 ](custom-attributes.md) を参照してください。
+
+#### フィールドの説明
+
+| フィールド | 説明 |
+|--- |--- |
+| データセット | カスタム属性を含むデータセットを表示します。 ライブデータセットと履歴データセットには、独自のカスタム属性を設定できます。 |
+| Adobe Commerce | バックオフィスで作成されたカスタム属性 [!DNL Commerce] 表示します。 |
+| Experience Platform | [!DNL Commerce] スキーマで指定されているカスタム属性をExperience Platformに表示します。 |
+| 更新 | Experience Platformの [!DNL Commerce] スキーマからカスタム属性名を取得します。 |
 
 ## イベントデータが収集されることを確認します
 
