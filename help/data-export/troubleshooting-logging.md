@@ -2,9 +2,8 @@
 title: ログの確認とトラブルシューティング
 description: データの書き出しログと saas [!DNL data export]  書き出しログを使用してエラーのトラブルシューティングを行う方法を説明します。
 feature: Services
-recommendations: noCatalog
 exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
