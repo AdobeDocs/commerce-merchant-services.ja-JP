@@ -2,9 +2,9 @@
 title: Product Recommendations管理者向けの開発
 description: Product Recommendationsのアーキテクチャと開発機能の概要です。
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,6 @@ Product Recommendationsは、コンバージョンを増やし、売上高を増
 ![Product Recommendations のアーキテクチャ図 ](assets/arch-diag-sensei.svg)
 
 レコメンデーションモジュールがインストールされて設定されると、ストアフロントで行動データの収集が開始されます。 Adobe Senseiは、カタログデータと共にこの行動データを処理し、recommendations サービスで活用される商品の関連付けを計算します。 この時点で、マーチャントは、管理 UI から直接製品レコメンデーションユニットを作成、管理およびストアフロントにデプロイできます。
-
-## データタイプ
-
-製品Recommendationsには次のデータが必要です。
-
-- **行動** – 製品表示、買い物かごに追加された項目、購入など、サイトに対する買い物客のエンゲージメントからのデータ。 CommerceおよびAdobe Senseiでは、個人を特定できる情報は収集されません。
-
-- **カタログ** – 製品メタデータ（名前、価格、在庫状況など）。
-
-`magento/product-recommendations` モジュールをインストールすると、Adobe Senseiは行動データとカタログデータを集計し、レコメンデーションタイプごとに商品Recommendationsを作成します。 その後、製品Recommendations サービスは、お客様のストアフロントにこれらのレコメンデーションをデプロイします。
-
->[!NOTE]
->
->設定可能な商品については、商品Recommendationsはレコメンデーションユニットの親商品の画像を使用します。 設定可能な製品に画像が指定されていない場合、その特定の製品のレコメンデーションユニットは空になります。
 
 ## 次の手順
 

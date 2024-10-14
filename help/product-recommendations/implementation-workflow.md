@@ -2,9 +2,9 @@
 title: 実装ワークフロー
 description: ストアフロントに正常に実装する手順  [!DNL Product Recommendations]  説明します。
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. **データ収集の実稼動環境へのデプロイ**
 
-   [!DNL Product Recommendations] のデプロイには、カタログと行動という 2 つの主な [ データソース ](type.md) が必要です。 実稼動環境は買い物客のアクションを取得して分析する唯一の環境なので、できるだけ早く実稼動環境でデータ収集を開始することが最善の利益となります。 [ 詳細情報 ](behavioral-data.md)Adobe Senseiが機械学習モデルをトレーニングして、より高品質のレコメンデーションを実現する方法を説明します。 さらに利点として、実稼動環境で行動データの収集を開始する際に、非実稼動環境で動作しながら、この実稼動データに基づいて [ レコメンデーションを取得 ](verify.md) できます。 その後、実稼動環境で収集された実際の買い物客データに基づいて計算された、様々なレコメンデーションを使用してテストおよび実験できます。
+   [!DNL Product Recommendations] のデプロイには、カタログと行動という 2 つの主な [ データソース ](type.md) が必要です。 実稼動環境は買い物客のアクションを取得および分析する唯一の環境なので、できるだけ早く実稼動環境でデータ収集を開始します。 [ 詳細情報 ](events.md)Adobe Senseiが機械学習モデルをトレーニングして、より高品質のレコメンデーションを実現する方法を説明します。 さらに利点として、実稼動環境で行動データの収集を開始する際に、非実稼動環境で動作しながら、この実稼動データに基づいて [ レコメンデーションを取得 ](verify.md) できます。 その後、実稼動環境で収集された実際の買い物客データに基づいて計算された、様々なレコメンデーションを使用してテストおよび実験できます。
 
    データ収集を実稼動環境にデプロイするには、[API キー ](install-configure.md) を指定して [!DNL Product Recommendations] モジュールを [ インストールおよび設定 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) する必要があります。
 

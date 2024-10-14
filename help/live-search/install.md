@@ -3,9 +3,9 @@ title: 「の概要  [!DNL Live Search]」
 description: Adobe Commerceの必要システム構成とインストール手順  [!DNL Live Search]  説明します。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
+source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3093'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,14 @@ Adobe Commerce [!DNL Live Search] と [[!DNL Catalog Service]](../catalog-servic
 
 大まかに言えば、オンボーディング [!DNL Live Search] では、次の操作が必要です。
 
-![Live Search ワークフロー ](assets/livesearch-workflow.png)
+1. [!DNL Live Search] 拡張機能の [ インストール ](#1-install-the-live-search-extension)
+1. API キーの [ 設定 ](#2-configure-api-keys)
+1. カタログデータの [ 同期 ](#3-sync-your-catalog-data)
+1. カタログ データがエクスポートされたことを [ 確認 ](#4-verify-that-the-data-was-exported) します
+1. データ ](#5-configure-the-data)[ 設定）
+1. [ テスト ](#6-test-the-connection) 接続
+1. イベントでデータがキャプチャされていることを [ 確認 ](#7-validate-events-are-capturing-data) します
+1. ストアフロントの [ カスタマイズ ](#8-customize-for-your-storefront)
 
 ## 1. [!DNL Live Search] 拡張機能をインストールする
 
@@ -272,7 +279,15 @@ bin/magento saas:resync --feed categoryPermissions
 
 ファイアウォールを通過する [!DNL Live Search] を許可するには、`commerce.adobe.io` を許可リストに追加します。
 
-## 7. ストアフロントに合わせたカスタマイズ
+## 7. イベントでデータが取り込まれていることを確認する
+
+サイトにデプロイしたストアフロントイベントが機能していることを確認します。 これは、ヘッドレス実装で特に重要です。
+
+- リク [!DNL Live Search] ストに必要な [ イベント ](events.md) を確認します。
+- [ ライブ検索ダッシュボード ](performance.md) に実稼動以外の環境のデータが表示されていることを確認します。
+- [ イベント コレクションの検証 ](../product-recommendations/verify.md). このページは [!DNL Product Recommendations] ガイドですが、検証手順は [!DNL Live Search] にも適用されます。
+
+## 8. ストアフロントに合わせたカスタマイズ
 
 [!DNL Live Search] 拡張機能のインストール、データの同期、検証および設定が完了していること。 次の手順では、[!DNL Live Search] ウィジェットがストアのルックアンドフィールに合っていることを確認します。
 

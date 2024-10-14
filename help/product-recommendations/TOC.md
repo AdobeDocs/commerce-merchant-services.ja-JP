@@ -4,10 +4,10 @@ user-guide-description: このガイドでは、Adobe Commerceのを使用する
 breadcrumb-title: 「[!DNL Product Recommendations] ガイド」
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 11%
+source-wordcount: '58'
+ht-degree: 12%
 
 ---
 
@@ -19,11 +19,9 @@ ht-degree: 11%
 - {#getting-started} の基本を学ぶ
    - [オンボーディング](onboarding.md)
    - [実装ワークフロー](implementation-workflow.md)
-   - [行動データ](behavioral-data.md)
    - [ヘッドレス](headless.md)
    - [インストール](install-configure.md)
    - [設定](settings.md)
-   - [検証](verify.md)
    - [ステージング環境](staging-environment.md)
    - [ページビルダーの統合](page-builder.md)
 - [!DNL Product Recommendations] Admin {#admin}
@@ -36,6 +34,7 @@ ht-degree: 11%
 - [!DNL Product Recommendations] Developer {#developer}
    - [概要](development-overview.md)
    - [データを収集](events.md)
+   - [検証](verify.md)
    - [Customize](customize.md)
    - [Cookie 制限の処理](setting-cookie.md)
 - [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

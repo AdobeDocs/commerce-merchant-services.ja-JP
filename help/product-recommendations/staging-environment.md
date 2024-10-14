@@ -3,7 +3,7 @@ title: ステージング環境でのテスト
 description: テスト目的で、ステージング環境で実稼動環境から  [!DNL Product Recommendations]  を使用する方法を説明します。
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 レコメンデーションを実稼動環境にデプロイする前に、非実稼動環境でサービスをテストし、すべてが期待どおりに動作していることを確認します。
 
-ストアフロントから収集した [ 買い物客の行動データ ](behavioral-data.md) に基づいて商品を返すことがで [!DNL Product Recommendations] ます。 ただし、実稼動以外の環境では、買い物客からの行動データがない可能性があります。 行動データを使用せずにテストできるレコメンデーションタイプは `More like this` のみです。 このレコメンデーションタイプではコンテンツの直接類似性一致が使用されるので、入力データは必要ありません。
+ストアフロントから収集した [ 買い物客の行動データ ](events.md) に基づいて商品を返すことがで [!DNL Product Recommendations] ます。 ただし、実稼動以外の環境では、買い物客からの行動データがない可能性があります。 行動データを使用せずにテストできるレコメンデーションタイプは `More like this` のみです。 このレコメンデーションタイプではコンテンツの直接類似性一致が使用されるので、入力データは必要ありません。
 
 次のレコメンデーションタイプには、行動データが必要です。
 

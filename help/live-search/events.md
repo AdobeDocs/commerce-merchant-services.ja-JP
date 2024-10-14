@@ -3,34 +3,25 @@ title: '[!DNL Live Search] イベント'
 description: イベントで  [!DNL Live Search] のデータを収集する方法を説明します。
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
+source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] イベント
 
-[!DNL Live Search] はイベントを使用して、「最も多く閲覧された」、「これを閲覧し、それを閲覧した」などの検索アルゴリズムを強化します。 LUMA ユーザーは初期設定のイベンティングを受け取りますが、ヘッドレスやその他のカスタム実装では、独自のニーズに応じてイベンティングを実装する必要があります。
+[!DNL Live Search] はイベントを使用して、「最も多く閲覧された」、「これを閲覧し、それを閲覧した」などの検索アルゴリズムを強化します。 [Commerceのサンプル Luma テーマ ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) が標準でイベントを取得する一方で、ヘッドレスやその他のカスタム実装では、独自のニーズに応じてイベントを実装する必要があります。
 
-[!DNL Live Search] と [!DNL Product Recommendations] は同じバックエンドアルゴリズムを使用するので、一部のイベントは両方のサービスで共有されます。 一部の Product Recommendations イベントは、Recommendations ダッシュボードへの入力に必要です。
+次の表に、[!DNL Live Search] が使用するイベントについて説明します [ ランキング戦略 ](rules-add.md#intelligent-ranking)。
 
-次の表に、戦略で使用されるイベント [!DNL Live Search] 説明します。
-
-| 方法 | 製品 | イベント | ページ |
+| ランキング戦略 | イベント | ページ |
 | --- | --- | --- | ---|
-| 最も頻繁に閲覧された | Live Search<br>Product Recs | ページビュー <br> 製品表示 | 製品詳細ページ |
-| 最も多く購入された | Live Search<br>Product Recs | ページビュー <br> チェックアウトの完了 | 買い物かご/チェックアウト |
-| 買い物かごに追加済み | Live Search<br>Product Recs | ページ表示 <br> 買い物かごに追加 | 製品詳細ページ <br> 製品一覧ページ <br> 買い物かご <br> お気に入りリスト |
-| がこれを表示し、が表示されました | Live Search<br>Product Recs | ページビュー <br> 製品表示 | 製品詳細ページ |
-| トレンド | Live Search<br>Product Recs | ページビュー <br> 製品表示 | 製品詳細ページ |
-| これを閲覧し、次を購入 | 製品のレシピ | ページビュー <br> 製品表示 | 製品詳細ページ <br> 買い物かご/チェックアウト |
-| これを購入し、それを購入しました | 製品のレシピ | ページビュー <br> 製品表示 | 製品詳細ページ |
-| コンバージョン：表示から購入 | 製品のレシピ | ページビュー <br> 製品表示 | 製品詳細ページ |
-| コンバージョン：表示から購入 | 製品のレシピ | ページビュー <br> チェックアウトの完了 | 買い物かご/チェックアウト |
-| コンバージョン：買い物かごに表示 | 製品のレシピ | ページビュー <br> 製品表示 | 製品詳細ページ |
-| コンバージョン：買い物かごに表示 | 製品のレシピ | ページ表示 <br> 買い物かごに追加 | 製品詳細ページ <br> 製品リストページ <br> 買い物かご <br> ウィッシュリスト |
+| 最も頻繁に閲覧された | `page-view`<br>`product-view` | 製品詳細ページ |
+| 最も多く購入された | `page-view`<br>`complete-checkout` | 買い物かご/チェックアウト |
+| 買い物かごに追加済み | `page-view`<br>`add-to-cart` | 製品詳細ページ <br> 製品一覧ページ <br> 買い物かご <br> お気に入りリスト |
+| がこれを表示し、が表示されました | `page-view`<br>`product-view` | 製品詳細ページ |
 
 >[!NOTE]
 >
@@ -42,13 +33,13 @@ ht-degree: 0%
 
 | ダッシュボード領域 | イベント | 結合フィールド |
 | ------------------- | ------------- | ---------- |
-| ユニーク検索 | `page-view`, `search-request-sent`, | searchRequestId |
-| ゼロ結果検索 | `page-view`, `search-request-sent`, | searchRequestId |
-| ゼロ結果率 | `page-view`, `search-request-sent`, | searchRequestId |
-| 一般的な検索 | `page-view`, `search-request-sent`, | searchRequestId |
+| ユニーク検索 | `page-view`、`search-request-sent`、`search-response-received` | `searchRequestId` |
+| ゼロ結果検索 | `page-view`、`search-request-sent`、`search-response-received` | `searchRequestId` |
+| ゼロ結果率 | `page-view`、`search-request-sent`、`search-response-received` | `searchRequestId` |
+| 一般的な検索 | `page-view`、`search-request-sent`、`search-response-received` | `searchRequestId` |
 | 平均 クリック位置 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
-| クリックスルー率 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
-| コンバージョン率 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
+| クリックスルー率 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId`、`sku`、`parentSku` |
+| コンバージョン率 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | `searchRequestId`、`sku`、`parentSku` |
 
 ### 必要なコンテキスト
 
@@ -72,11 +63,8 @@ mse.publish.searchRequestSent("search-bar");
 
 ## 注意事項
 
-広告ブロッカーとプライバシー設定は、イベントがキャプチャされるのを防ぎ、エンゲージメントと売上高 [ 指標 ](workspace.md) が過小報告される原因になる可能性があります。
-
-イベントは、マーチャントサイトで発生するすべてのトランザクションを取り込むわけではありません。 イベントは、サイト上で発生しているイベントの一般的な考えをマーチャントに提供することを目的としています。
-
-ヘッドレス実装では、[ 製品Recommendations ダッシュボード ](../product-recommendations/events.md) を強化するためにイベンティングを実装する必要があります。
+- 広告ブロッカーとプライバシー設定は、イベントがキャプチャされるのを防ぎ、エンゲージメントと売上高 [ 指標 ](performance.md) が過小報告される原因になる可能性があります。 さらに、買い物客のページからの離脱やネットワークの問題が原因で、一部のイベントが送信されない場合があります。
+- ヘッドレス実装では、インテリジェントなマーチャンダイジングを強化するためにイベンティングを実装する必要があります。
 
 >[!NOTE]
 >
