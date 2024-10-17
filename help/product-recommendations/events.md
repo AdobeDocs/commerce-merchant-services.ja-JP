@@ -3,7 +3,7 @@ title: データを収集
 description: イベントで製品レコメンデーションのデータを収集する方法を説明します。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 87db52e0c851b56c9a8ceba1bf25c222c6d63cda
+source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -78,7 +78,7 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 [Adobe Commerce ストアフロントイベントコレクター ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) には、ストアフロントにデプロイされたすべてのイベントが一覧表示されます。 ただし、このリストからは、製品Recommendationsに固有のイベントのサブセットがあります。 これらのイベントは、買い物客がストアフロントでレコメンデーションユニットとやり取りする際にデータを収集し、レコメンデーションのパフォーマンスを分析するのに役立つ指標を強化します。
 
 | イベント | 説明 |
-| --- | --- | --- |
+| --- | --- |
 | `impression-render` | レコメンデーションユニットがページでレンダリングされる際に送信されます。 ページに 2 つのレコメンデーションユニット（購入済み、表示ビュー）がある場合、2 つの `impression-render` イベントが送信されます。 このイベントは、インプレッション数の指標を追跡するために使用されます。 |
 | `rec-add-to-cart-click` | 買い物客は、レコメンデーションユニット内の項目の **買い物かごに追加** ボタンをクリックします。 |
 | `rec-click` | 買い物客は、レコメンデーションユニット内の製品をクリックします。 |
@@ -113,7 +113,7 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 次の表に、各レコメンデーションタイプで使用されるイベントを示します。
 
 | レコメンデーションタイプ | イベント | ページ |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | 最も頻繁に閲覧された | `page-view`<br>`product-view` | 製品詳細ページ |
 | 最も多く購入された | `page-view`<br>`complete-checkout` | 買い物かご/チェックアウト |
 | 買い物かごに追加済み | `page-view`<br>`add-to-cart` | 製品詳細ページ <br> 製品一覧ページ <br> 買い物かご <br> お気に入りリスト |
