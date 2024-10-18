@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: ビジネスのニーズを確実に満たすための  [!DNL Live Search]  の境界と制限について説明します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2feb97bf6aa41e5b99d3dcbc51ef3c1cdc05d8da
+source-git-commit: c01c0480d9452e52ebf7e31e6a5d81c26c0a8234
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 0%
 
 - [!DNL Live Search] では、クエリで一意の [GraphQL エンドポイント ](https://developer.adobe.com/commerce/services/graphql/live-search/) を使用して、動的なファセットや入力に応じた検索などの機能をサポートしています。 [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) と似ていますが、いくつかの違いがあり、一部のフィールドは完全な互換性がない場合があります。
 - 検索クエリで返される結果の最大数は 10,000 個です。
+- ページあたりの結果の最大数は 500 です。
 - 日付タイプの属性を使用して結果をフィルタリングすることはできません。
 
 ## ルール
