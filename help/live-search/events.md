@@ -3,7 +3,7 @@ title: '[!DNL Live Search] イベント'
 description: イベントで  [!DNL Live Search] のデータを収集する方法を説明します。
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
+source-git-commit: f771e741d92bf94f46772934edf7a6bc39c75999
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 次の表に、[!DNL Live Search] が使用するイベントについて説明します [ ランキング戦略 ](rules-add.md#intelligent-ranking)。
 
 | ランキング戦略 | イベント | ページ |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | 最も頻繁に閲覧された | `page-view`<br>`product-view` | 製品詳細ページ |
 | 最も多く購入された | `page-view`<br>`complete-checkout` | 買い物かご/チェックアウト |
 | 買い物かごに追加済み | `page-view`<br>`add-to-cart` | 製品詳細ページ <br> 製品一覧ページ <br> 買い物かご <br> お気に入りリスト |
