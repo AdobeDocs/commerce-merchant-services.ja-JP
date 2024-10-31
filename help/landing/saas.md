@@ -4,16 +4,16 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
+source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Services] を利用し、SaaS （software as a service）としてデプロイされます。 これらのサービスを使用するには、実稼動およびサンドボックス API キーを使用して [!DNL Commerce] インスタンスを接続し、[configuration](#saas-configuration) でデータ領域を指定する必要があります。 接続の設定は、Commerce インスタンスごとに 1 回だけ行う必要があります。
+Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Services] を利用し、SaaS （software as a service）としてデプロイされます。 これらのサービスを使用するには、実稼動およびサンドボックス API キーを使用して [!DNL Commerce] インスタンスを接続し、[configuration](#saas-configuration) でデータ領域を指定する必要があります。 接続はインスタンスごとに 1 回だけ設定する必要があります。
 
 ## 利用可能なサービス {#availableservices}
 
@@ -45,6 +45,7 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 さらに、ソリューションインテグレーターは [!DNL Commerce Services] も使用できます。 ソリューションインテグレーターの場合は、[!DNL Commerce] パートナー契約の署名者が API キーを生成する必要があります。
 
 >[!NOTE]
+>キー識別子 *実稼動* と *サンドボックス* は、お使いの環境を参照しません。 同じ API キーのセットを、ローカル環境、開発環境、ステージング環境、実稼動環境など、各環境に対して使用します。
 >
 >ライセンスオーナーは通常、Adobe Commerce アカウントのプライマリ連絡先であり、クラウドインフラストラクチャプロジェクトにおけるAdobe Commerceのプロジェクトオーナーと同じでないことがあります。
 
@@ -68,7 +69,7 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 
 1. 各環境（実稼動環境とサンドボックス）で上記の手順を繰り返します。
 
-   **API キー** セクションに API （公開）キーが表示されるようになりました。 [SaaS プロジェクトを選択または作成 ](#createsaasenv) する場合は、実稼動用キーとサンドボックス用キー（公開+秘密）の両方が必要です。
+   **API キー** セクションに API （公開）キーが表示されるようになりました。 ライセンスに関連付けられたいずれかの環境またはインストールで [SaaS プロジェクトを選択または作成 ](#createsaasenv) する場合、4 つのキー（実稼動用キーとサンドボックス用キーの両方、公開鍵と秘密鍵）がすべて必要です。
 
 ## SaaS 設定 {#saasenv}
 
@@ -78,7 +79,7 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 
 >[!WARNING]
 >
-> データの競合を避けるために、実稼動 [!DNL Commerce] ースのインストールにのみ実稼動 SaaS データ領域を使用します。 そうしないと、テストデータで実稼動サイトデータが汚染され、デプロイメントの遅延が発生するリスクがあります。 例えば、実稼動製品のデータが、ステージング URL などのステージングデータと誤って上書きされる可能性があります。
+> **実稼動 SaaS データ領域** は、データの競合を避けるために、実稼動 [!DNL Commerce] インストールでのみ使用します。 そうしないと、テストデータで実稼動サイトデータが汚染され、デプロイメントの遅延が発生するリスクがあります。 例えば、実稼動製品のデータが、ステージング URL などのステージングデータと誤って上書きされる可能性があります。
 > これが発生した場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) して、データのクリーンアップをリクエストします。
 
 ### SaaS データ領域のプロビジョニング
