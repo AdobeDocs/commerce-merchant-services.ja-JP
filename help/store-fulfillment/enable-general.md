@@ -4,7 +4,7 @@ description: 一般設定を構成して、ストアに対して有効  [!DNL St
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 <tr>
 <td><strong>フィールド</strong></td>
 <td><strong>説明</strong></td>
-<td><strong>範囲</strong></td>
+<td><strong>対象範囲</strong></td>
 <td><strong>必須</strong></td>
 </tr>
 </thead>
@@ -78,7 +78,7 @@ ht-degree: 0%
 <tr>
 <td><strong>フィールド</strong></td>
 <td><strong>説明</strong></td>
-<td><strong>範囲</strong></td>
+<td><strong>対象範囲</strong></td>
 <td><strong>必須</strong></td>
 </tr>
  </thead>
@@ -98,7 +98,7 @@ ht-degree: 0%
 <tr>
 <td><strong>フィールド</strong></td>
 <td><strong>説明</strong></td>
-<td><strong>範囲</strong></td>
+<td><strong>対象範囲</strong></td>
 <td><strong>必須</strong></td>
 </tr>
 <tr>
@@ -158,7 +158,7 @@ API 関連の例外をファイアウォールまたはキャッシュから取�
 <tr>
 <td><strong>フィールド</strong></td>
 <td><strong>説明</strong></td>
-<td><strong>範囲</strong></td>
+<td><strong>対象範囲</strong></td>
 <td><strong>必須</strong></td>
 </tr>
 </thead>
@@ -185,7 +185,7 @@ API 関連の例外をファイアウォールまたはキャッシュから取�
 <tr>
 <td><strong>フィールド</strong></td>
 <td><strong>説明</strong></td>
-<td><strong>範囲</strong></td>
+<td><strong>対象範囲</strong></td>
 <td><strong>必須</strong></td>
 </tr>
 <tr>
@@ -221,7 +221,7 @@ API 関連の例外をファイアウォールまたはキャッシュから取�
 <tr>
 <td><strong>フィールド</strong></td>
 <td><strong>説明</strong></td>
-<td><strong>範囲</strong></td>
+<td><strong>対象範囲</strong></td>
 <td><strong>必須</strong></td>
 </tr>
 </thead>
@@ -258,7 +258,7 @@ Adobe Commerce ストアで店舗の受け取りおよび宅配オプション�
 <tr>
 <td><strong>フィールド</strong></td>
 <td><strong>説明</strong></td>
-<td><strong>範囲</strong></td>
+<td><strong>対象範囲</strong></td>
 <td><strong>必須</strong></td>
 </tr>
 </thead>
@@ -279,7 +279,7 @@ Adobe Commerce ストアで店舗の受け取りおよび宅配オプション�
 <tr>
 <td><strong>フィールド</strong></td>
 <td><strong>説明</strong></td>
-<td><strong>範囲</strong></td>
+<td><strong>対象範囲</strong></td>
 <td><strong>必須</strong></td>
 </tr>
 </thead>
@@ -305,7 +305,7 @@ Store Fulfillment App のユーザーアカウントとパスワードのセキ�
 <tr>
 <td><strong>フィールド</strong></td>
 <td><strong>説明</strong></td>
-<td><strong>範囲</strong></td>
+<td><strong>対象範囲</strong></td>
 <td><strong>必須</strong></td>
 </tr>
  </thead>
@@ -356,7 +356,7 @@ Store Fulfillment App のユーザーアカウントとパスワードのセキ�
 
 >[!NOTE]
 >
->ストア内配信オプションの設定について詳しくは、{2[Adobe Commerce ユーザーガイド ](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) ストア内配信 _を参照してください。_
+>ストア内配信オプションの設定について詳しくは、{2[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) ストア内配信 _を参照してください。_
 
 
 ### 配信方法の設定
@@ -368,7 +368,7 @@ Store Fulfillment App のユーザーアカウントとパスワードのセキ�
 <tr>
 <td><strong>フィールド</strong></td>
 <td><strong>説明</strong></td>
-<td><strong>範囲</strong></td>
+<td><strong>対象範囲</strong></td>
 <td><strong>必須</strong></td>
 </tr>
  </thead>
@@ -395,7 +395,7 @@ Store Fulfillment App のユーザーアカウントとパスワードのセキ�
 <tr>
 <th><strong>フィールド</strong></th>
 <th><strong>説明</strong></th>
-<th><strong>範囲</strong></th>
+<th><strong>対象範囲</strong></th>
 <th><strong>必須</strong></th>
 </tr>
 </thead>
@@ -475,7 +475,7 @@ Store Fulfillment App のユーザーアカウントとパスワードのセキ�
 <tr>
 <th><strong>フィールド</strong></th>
 <th><strong>説明</strong></th>
-<th><strong>範囲</strong></th>
+<th><strong>対象範囲</strong></th>
 <th><strong>必須</strong></th>
 </tr>
 </thead>

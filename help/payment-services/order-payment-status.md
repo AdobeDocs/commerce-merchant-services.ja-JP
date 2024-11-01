@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -114,11 +114,11 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Se
 
 [!DNL Payment Services] は、注文データを使用し、他のソース（PayPal など）からの集計支払いデータと組み合わせて、意味のある非常に役に立つレポートを提供します。
 
-注文データが書き出され、支払いサービスに保持されます。 [ 注文ステータスの変更または追加 ](https://docs.magento.com/user-guide/sales/order-status-custom.html) または [ ストア表示の編集 ](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html)、[ ストア ](https://docs.magento.com/user-guide/stores/store-information.html)、web サイト名を行うと、そのデータは支払いデータと組み合わされ、組み合わされた情報が注文支払いステータスレポートに入力されます。
+注文データが書き出され、支払いサービスに保持されます。 [ 注文ステータスの変更または追加 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) または [ ストア表示の編集 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[ ストア ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information)、web サイト名を行うと、そのデータは支払いデータと組み合わされ、組み合わされた情報が注文支払いステータスレポートに入力されます。
 
 このプロセスには次の 2 つのステップがあります。
 
-1. インデックスは、管理者の [ インデックス管理 ](https://docs.magento.com/user-guide/system/index-management.html) での設定に応じて、`ON SAVE` （注文情報またはストア情報が変更されるたびに）または `BY SCHEDULE` （事前設定された cron スケジュールに基づいて）のデータで変更されます。
+1. インデックスは、管理者の [ インデックス管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) での設定に応じて、`ON SAVE` （注文情報またはストア情報が変更されるたびに）または `BY SCHEDULE` （事前設定された cron スケジュールに基づいて）のデータで変更されます。
 
    デフォルトでは、データのインデックス作成は `ON SAVE` で行われます。つまり、注文、注文のステータス、ストア表示、ストア、web サイトで何らかの変更が行われると、インデックス再作成プロセスが直ちに実行されます。
 
@@ -134,7 +134,7 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Se
 
 デフォルトではインデックス再作成は `ON SAVE` モードで行われますが、`BY SCHEDULE` モードでインデックスを作成することをお勧めします。 `BY SCHEDULE` インデックスは 1 分の cron スケジュールで実行され、変更されたデータは、データの変更から 2 分以内に注文ステータスレポートに表示されます。 このスケジュールされたインデックス再作成は、（各注文が行われるときではなく）スケジュールに従って行われるため、特に大量の注文を受信する場合に、ストアの負担を軽減するのに役立ちます。
 
-インデックスモード（`ON SAVE` または `BY SCHEDULE`）は [ 管理 ](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode) で変更できます。
+インデックスモード（`ON SAVE` または `BY SCHEDULE`）は [ 管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode) で変更できます。
 
 データの書き出しを設定する方法については、[ コマンドライン設定 ](configure-cli.md#configure-data-export) を参照してください。
 
@@ -245,10 +245,10 @@ Order Payment Status レポートには、デフォルトで使用可能なす�
 
 | 列 | 説明 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce注文 ID<br> <br> 関連する [ 注文情報 ](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} を表示するには、ID をクリックします。 |
+| [!UICONTROL Order ID] | Commerce注文 ID<br> <br> 関連する [ 注文情報 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} を表示するには、ID をクリックします。 |
 | [!UICONTROL Order Date] | 注文日タイムスタンプ |
 | [!UICONTROL Authorized Date] | 支払認証の日付タイムスタンプ |
-| [!UICONTROL Order Status] | 現在のCommerce[ 注文ステータス ](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
+| [!UICONTROL Order Status] | 現在のCommerce[ 注文ステータス ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | 注文の請求書ステータス - *[!UICONTROL No]*、*[!UICONTROL Partial]* または *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | 注文の配送ステータス（*[!UICONTROL No]*、*[!UICONTROL Partial]*、*[!UICONTROL Yes]*） |
 | [!UICONTROL Order Amt] | 注文の合計金額 |

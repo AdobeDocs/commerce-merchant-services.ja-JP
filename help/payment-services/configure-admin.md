@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 09944ccad182e7f83c722ca6619a414416015ab4
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ### 設定オプション
 
-| フィールド | 範囲 | 説明 |
+| フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Enable] | web サイト | Web サイトの [!DNL Payment Services] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Method] | ストア表示 | ストアのメソッド（環境）を設定します。 オプション：[!UICONTROL Sandbox] / [!UICONTROL Production] |
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ### 設定オプション
 
-| フィールド | 範囲 | 説明 |
+| フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：[!UICONTROL text field] |
 | [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
@@ -108,7 +108,7 @@ ht-degree: 0%
 
 ### 設定オプション
 
-| フィールド | 範囲 | 説明 |
+| フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：[!UICONTROL text field] |
 | [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
@@ -144,7 +144,7 @@ ht-degree: 0%
 
 ### 設定オプション
 
-| フィールド | 範囲 | 説明 |
+| フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションに表示されるテキスト ラベルを指定します。 オプション：`[!UICONTROL text field]` |
 | [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：`[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
@@ -191,10 +191,10 @@ PayPal 支払いボタンの支払いオプションを管理内で有効にし�
 
 ### 設定オプション
 
-| フィールド | 範囲 | 説明 |
+| フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
-| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | web サイト | 買い物かご、製品ページ、ミニカート、およびチェックアウトフロー中の「後で支払う」メッセージを有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on checkout page] | ストア表示 | チェックアウトページで [!DNL PayPal payment buttons] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on product detail page] | ストア表示 | 製品の詳細ページで [!DNL PayPal payment buttons] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -226,7 +226,7 @@ PayPal 支払いボタンの支払いオプションを管理内で有効にし�
 
 ### 設定オプション
 
-| フィールド | 範囲 | 説明 |
+| フィールド | 対象範囲 | 説明 |
 |--- |--- |--- |
 | [!UICONTROL Layout] | ストア表示 | Paypal 支払いボタンのレイアウトのスタイルを定義します。 オプション：`[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
 | [!UICONTROL Color] | ストア表示 | Paypal 支払いボタンの色を定義します。 オプション：[!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |

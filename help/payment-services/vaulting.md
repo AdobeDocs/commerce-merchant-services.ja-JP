@@ -3,7 +3,7 @@ title: クレジットカードの保管
 description: 買い物客は、今後の購入のためにクレジットカードの詳細をヴォールティング（保存）できます。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ![ 今後の購入のために保存された資格情報を使用する ](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-また、自分のマイアカウントにある [ 保存された支払い方法 ](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) から簡単にボールト化されたクレジットカードを削除できます。
+また、自分のマイアカウントにある [ 保存された支払い方法 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) から簡単にボールト化されたクレジットカードを削除できます。
 
 ![ マイアカウントに保存されているお支払い方法 ](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 

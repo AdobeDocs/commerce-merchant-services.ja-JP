@@ -4,7 +4,7 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 
 [!DNL Commerce] インスタンスは、データを適切な場所に送信できるように、SaaS プロジェクトと SaaS データ領域を使用して設定する必要が [!DNL Commerce Services] ります。 SaaS プロジェクトは、すべての SaaS データ スペースをグループ化します。 SaaS データ スペースは、[!DNL Commerce Services] ーザーが作業できるようにするデータの収集および保存に使用されます。 このデータの一部は [!DNL Commerce] インスタンスから書き出され、一部はストアフロントの買い物客の行動から収集される場合があります。 そのデータは、セキュリティで保護されたクラウドストレージに保持されます。
 
-[!DNL Product Recommendations] えば、SaaS データ スペースには、カタログと行動データが含まれています。 [!DNL Commerce] 設定で [ 選択 ](https://docs.magento.com/user-guide/configuration/services/saas.html) することにより、[!DNL Commerce] インスタンスを SaaS データ空間にポイントできます。
+[!DNL Product Recommendations] えば、SaaS データ スペースには、カタログと行動データが含まれています。 [!DNL Commerce] 設定で [ 選択 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) することにより、[!DNL Commerce] インスタンスを SaaS データ空間にポイントできます。
 
 >[!WARNING]
 >

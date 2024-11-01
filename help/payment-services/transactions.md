@@ -4,7 +4,7 @@ description: 取引レポートを使用して、取引承認レートと取引�
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 0%
@@ -132,7 +132,7 @@ _[!UICONTROL Live]_が選択されているデータソースの場合、実稼�
 
 | 列 | 説明 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce注文 ID （成功した取引の値のみを含み、却下された取引の値は空） <br> <br> 関連する [ 注文情報 ](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} を表示するには、ID をクリックします。 |
+| [!UICONTROL Order ID] | Commerce注文 ID （成功した取引の値のみを含み、却下された取引の値は空） <br> <br> 関連する [ 注文情報 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} を表示するには、ID をクリックします。 |
 | [!UICONTROL PayPal Transaction ID] | 支払いプロバイダーから提供されたトランザクション ID。成功したトランザクションの値のみを含み、却下されたトランザクションのダッシュを含みます。 この ID をクリックすると、PayPal の取引詳細ページにアクセスできます。 |
 | [!UICONTROL Customer ID] | 注文のCommerce顧客 ID<br> <br> 詳しくは、[customer info](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} を参照してください。 |
 | [!UICONTROL Transaction Date] | トランザクション日タイムスタンプ |

@@ -3,7 +3,7 @@ title: 実稼動  [!DNL Payment Services]  有効にする
 description: 実稼動に対して  [!DNL Payment Services]  を有効にして、オンボーディングプロセスを完了します。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
    このオプションは、1 つ以上の web サイトの支払い方法として [!DNL Payment Services] を設定していない場合に表示されます。
 
-   関連するオプションが展開された状態で（**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Settings]_） ホームビューの設定エリアに移動します。ここで、[!DNL Payment Services] のオプションを [ 支払い方法 ](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"} として有効にできます。
+   関連するオプションが展開された状態で（**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Settings]_） ホームビューの設定エリアに移動します。ここで、[!DNL Payment Services] のオプションを [ 支払い方法 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} として有効にできます。
 
 1. _[!UICONTROL General Configuration]_で、**[!UICONTROL Enable]**を `Yes` に設定します。
 1. _[!UICONTROL Credit Card Fields]_と_[!UICONTROL PayPal payment buttons]_ の両方について、**[!UICONTROL Payment Action]** を次のいずれかに設定します。
@@ -157,7 +157,7 @@ _実稼動マーチャント ID_ が自動生成され、[configuration](configu
 1. 「ホーム」で、ページの右上にある「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[ ホーム ](payments-home.md) を参照してください。
 1. _[!UICONTROL General Configuration]_のセクションで、**[!UICONTROL Payment mode]**を `Production` に設定します。
 1. 「**[!UICONTROL Save]**」をクリックします。
-1. [ キャッシュをクリアします ](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}。
+1. [ キャッシュをクリアします ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
 
    >[!IMPORTANT]
    >

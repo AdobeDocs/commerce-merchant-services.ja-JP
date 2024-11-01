@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ### [!DNL Magento Open Source] での cron の設定
 
-[!DNL Magento Open Source] で `BY SCHEDULE` インデックスモードを使用する場合は、cron を設定する必要があります。 [cron の設定と実行 ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) を参照してください。
+[!DNL Magento Open Source] で `BY SCHEDULE` インデックスモードを使用する場合は、cron を設定する必要があります。 [cron の設定と実行 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) を参照してください。
 
 ### インデクサーの設定
 
@@ -48,13 +48,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >コマンドでインデクサーを指定しない場合、すべてのインデクサーが同じ値に更新されます。 特定のインデクサーを変更する場合は、コマンドでそのインデクサーをリストする必要があります。
 
-インデクサーのモードを手動で変更する方法については、開発者向けドキュメントの [ インデクサーの設定 ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} を参照してください。 管理者で変更する方法については、『コアユーザーガイド』の [ インデックス管理 ](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} を参照してください。
+インデクサーのモードを手動で変更する方法については、開発者向けドキュメントの [ インデクサーの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} を参照してください。 管理者で変更する方法については、『コアユーザーガイド』の [ インデックス管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} を参照してください。
 
 ### データを手動で再インデックス化
 
-データが自動的に実行されるのを待たずに、手動でデータをインデックス再作成できます。 詳しくは、[ インデクサーの管理 [ の ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} インデックス再作成 ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} を参照してください。
+データが自動的に実行されるのを待たずに、手動でデータをインデックス再作成できます。 詳しくは、[ インデクサーの管理 [ の ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} インデックス再作成 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} を参照してください。
 
-モード `BY SCHEDULE` 設定すると、システムは変更されたエンティティを追跡し、cron ジョブは設定されたスケジュールに基づいてエンティティのインデックスを更新します。 Cron ジョブを使用してインデックスを手動でトリガーする方法については、[Configure and run cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) の [ コマンドラインからの Run cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) を参照してください。
+モード `BY SCHEDULE` 設定すると、システムは変更されたエンティティを追跡し、cron ジョブは設定されたスケジュールに基づいてエンティティのインデックスを更新します。 Cron ジョブを使用してインデックスを手動でトリガーする方法については、[Configure and run cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) の [ コマンドラインからの Run cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) を参照してください。
 
 ### インデックス再作成されたデータを支払サービスに送信
 
@@ -88,7 +88,7 @@ cron が設定およびインストールされている場合、レポートに
 bin/magento cron:run --group payment_services_data_export
 ```
 
-再インデックスとインデクサーについて詳しくは、開発者向けドキュメントの [ インデクサーの管理 ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) に関するトピックを参照してください。
+再インデックスとインデクサーについて詳しくは、開発者向けドキュメントの [ インデクサーの管理 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) に関するトピックを参照してください。
 
 ## L2/L3 処理の設定
 

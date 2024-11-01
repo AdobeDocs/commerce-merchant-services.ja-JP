@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->支払いレポートには、キャプチャされた（支払いアクションが [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method) に設定されている）、または `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html) としてマークされている [ 注文のみが表示されます。
+>支払いレポートには、キャプチャされた（支払いアクションが [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method) に設定されている）、または `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) としてマークされている [ 注文のみが表示されます。
 
 ## 支払いデータビジュアライゼーションビュー
 
@@ -155,7 +155,7 @@ _[!UICONTROL Live]_のデータ ソースを選択した場合、本番モード
 | [!UICONTROL Code] | 貸方（*CR*）または借方（*DR*）を示す取引コード |
 | [!UICONTROL Reference ID] | このイベントが関連付けられている元のトランザクション ID |
 | [!UICONTROL Invoice] | トランザクションの請求書 ID （注文ごとに 1 つ） |
-| [!UICONTROL Commerce order] | Commerce注文 ID <br> <br> 関連する [ 注文情報 ](https://docs.magento.com/user-guide/sales/orders.html) を表示するには、ID をクリックします。 |
+| [!UICONTROL Commerce order] | Commerce注文 ID <br> <br> 関連する [ 注文情報 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) を表示するには、ID をクリックします。 |
 | [!UICONTROL Commerce trans] | Commerce トランザクション ID |
 | [!UICONTROL Pay method] | クレジットカードの種類（*[!UICONTROL BANK]*、*[!UICONTROL PAYPAL]*、*[!UICONTROL CREDIT_CARD]*）および関連するカードプロバイダー（*Visa* や *MasterCard* など） |
 | [!UICONTROL TRANS AMT] | トランザクションの金額 |

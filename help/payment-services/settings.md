@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 09944ccad182e7f83c722ca6619a414416015ab4
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Web サイトまたは個々のストア表示の設定に [!UICONTROL Soft Desc
 
 ### 設定オプション
 
-| フィールド | 範囲 | 説明 |
+| フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Enable] | web サイト | Web サイトの [!DNL Payment Services] を有効または無効にします。 オプション：[!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | ストア表示 | ストアのメソッド（環境）を設定します。 オプション：[!UICONTROL Sandbox] / [!UICONTROL Production] |
@@ -117,10 +117,10 @@ _[!UICONTROL Credit Card Fields]_の設定は、クレジットカードまた�
 
 #### 設定オプション
 
-| フィールド | 範囲 | 説明 |
+| フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：[!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | ストア表示 | チェックアウトページでの指定した支払い方法の並べ替え順。 `Numeric Only` 値 |
 | [!UICONTROL 3DS Secure authentication] | web サイト | [3DS セキュア認証 ](security.md#3ds) を有効または無効にします。 オプション：[!UICONTROL Always]/[!UICONTROL When Required]/[!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページに表示するクレジットカードフィールドを有効または無効にします。 オプション：[!UICONTROL Off] / [!UICONTROL On] |
@@ -153,10 +153,10 @@ Apple Pay は、Paypal で [Apple Pay のセルフ登録を完了し ](https://d
 
 #### 設定オプション
 
-| フィールド | 範囲 | 説明 |
+| フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Checkout title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：[!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページに表示する「Apple支払い」ボタンを有効または無効にします。 オプション：[!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on checkout page] | web サイト | Appleの「支払い」ボタンを有効または無効にして、商品の詳細ページに表示します。 オプション：[!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on mini cart preview] | web サイト | Appleの「支払い」ボタンを有効または無効にして、ミニ買い物かごのプレビューに表示します。 オプション：[!UICONTROL Off] / [!UICONTROL On] |
@@ -200,10 +200,10 @@ PayPal 支払いボタンの支払いオプションを有効にして設定で�
 
 #### 設定オプション
 
-| フィールド | 範囲 | 説明 |
+| フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
-| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | ストア表示 | チェックアウトページでの指定した支払い方法の並べ替え順。 `Numeric Only` 値 |
 | [!UICONTROL Show PayPal buttons on checkout page] | ストア表示 | チェックアウトページで [!DNL PayPal payment buttons] を有効または無効にします。 オプション：[!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | ストア表示 | 製品の詳細ページで [!DNL PayPal payment buttons] を有効または無効にします。 オプション：[!UICONTROL  Yes] / [!UICONTROL No] |
@@ -246,7 +246,7 @@ PayPal 支払いボタンの支払いオプションを有効にして設定で�
 
 #### 設定オプション
 
-| フィールド | 範囲 | 説明 |
+| フィールド | 対象範囲 | 説明 |
 |--- |--- |--- |
 | [!UICONTROL Layout] | ストア表示 | 支払いボタンのレイアウトのスタイルを定義します。 オプション：[!UICONTROL Vertical] / [!UICONTROL Horizontal] |
 | [!UICONTROL Tagline] | ストア表示 | タグラインを有効/無効にします。 オプション：[!UICONTROL Off] / [!UICONTROL On] |
@@ -278,7 +278,7 @@ _設定_ で設定を変更した場合（例えば、Apple Pay、Venmo、また
 
 キャッシュ管理テーブルのキャッシュ タイプのステータスが `INVALIDATED` の場合、ストアにはその項目の最新の構成が表示されないことがあります。 キャッシュをフラッシュしてストアを更新し、最新の設定を表示します。
 
-ストアが正しい設定を表示していることを確認するには、定期的に [ キャッシュをフラッシュ ](https://docs.magento.com/user-guide/system/cache-management.html) します。
+ストアが正しい設定を表示していることを確認するには、定期的に [ キャッシュをフラッシュ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) します。
 
 ## カードボルト
 
@@ -300,7 +300,7 @@ _設定_ で設定を変更した場合（例えば、Apple Pay、Venmo、また
 
 ## 複数の PayPal アカウントの使用
 
-ま [!UICONTROL Payment Services]、web サイトレベルの **one** マーチャントアカウント内で複数の PayPal アカウントを使用できます。 例えば、複数の国（異なる [ 通貨 ](https://docs.magento.com/user-guide/stores/currency.html) を使用している）で店舗を運営している場合や、ビジネスの一部で _すべて_ ではなくAdobe Commerceを使用したい場合は、複数の PayPal アカウントを使用するようにマーチャントアカウントを設定できます。
+ま [!UICONTROL Payment Services]、web サイトレベルの **one** マーチャントアカウント内で複数の PayPal アカウントを使用できます。 例えば、複数の国（異なる [ 通貨 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency) を使用している）で店舗を運営している場合や、ビジネスの一部で _すべて_ ではなくAdobe Commerceを使用したい場合は、複数の PayPal アカウントを使用するようにマーチャントアカウントを設定できます。
 
 Web サイト、ストア、ストア表示の階層について詳しくは、[ サイト、ストア、表示範囲 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) を参照してください。
 

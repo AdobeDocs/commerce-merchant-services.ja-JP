@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] リリースノート"
 description: すべてのリリースについて詳しくは、リリースノ  [!DNL Payment Services]  トを参照してください。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '3017'
 ht-degree: 0%
@@ -391,7 +391,7 @@ _2022 年 8 月 9 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg)<!-- Issue PAY-XX --> 一般提供リリース – [!DNL Payment Services] が [ バージョン 2.4.0 ～ 2.4.5 で  [!DNL Adobe Commerce]  および  [!DNL Magento Open Source]  サポート ](https://devdocs.magento.com/release/availability.html#compatibility) になりました。
+![ 新規 ](../assets/new.svg)<!-- Issue PAY-XX --> 一般提供リリース – [!DNL Payment Services] が [ バージョン 2.4.0 ～ 2.4.5 で  [!DNL Adobe Commerce]  および  [!DNL Magento Open Source]  サポート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) になりました。
 
 ![ 修正された問題 ](../assets/fix.svg)<!-- Issue PAY-x -->Apple Pay は、モバイルおよびデスクトップ上の Safari ブラウザー v15.5 と互換性を持つようになりました。
 
@@ -419,7 +419,7 @@ _2022 年 3 月 31 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg)<!-- Issue PAY-2127 --> 一般提供リリース – [!DNL Payment Services] が [ バージョン 2.4.0 ～ 2.4.4 で  [!DNL Adobe Commerce]  および  [!DNL Magento Open Source]  サポート ](https://devdocs.magento.com/release/availability.html#compatibility) になりました。
+![ 新規 ](../assets/new.svg)<!-- Issue PAY-2127 --> 一般提供リリース – [!DNL Payment Services] が [ バージョン 2.4.0 ～ 2.4.4 で  [!DNL Adobe Commerce]  および  [!DNL Magento Open Source]  サポート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) になりました。
 
 ![ 新規 ](../assets/new.svg)<!-- Issue PAY-2682 --> カナダのマーチャントが [!DNL Adobe Commerce] および [!DNL Magento Open Source] の [!DNL Payment Services] 拡張機能を使用できるようになりました。 マーチャントは、支払設定を [ フランス語 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) または [ 英語 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies) で表示できます。
 
@@ -463,7 +463,7 @@ _2021 年 11 月 29 日_
 
 ![ 新規 ](../assets/new.svg)<!-- Issue PAY-1443 -->[!DNL Payment Services] 拡張機能の PayPal 支払いボタンとクレジットカードフィールドを、簡単に [ ルックアンドフィールをカスタマイズ ](payments-options.md) できます。
 
-![ 既知の問題 ](../assets/bug.svg)<!-- Issue PAY-2473 --> 拡張機能のインストール中に [Composer キーが正しくない ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) を使用すると、ユーザーは正しい `MAGEID` で [ 認証 ](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) できません。
+![ 既知の問題 ](../assets/bug.svg)<!-- Issue PAY-2473 --> 拡張機能のインストール中に [Composer キーが正しくない ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) を使用すると、ユーザーは正しい `MAGEID` で [ 認証 ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) できません。
 
 ![ 既知の問題 ](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] レポート [ すぐには同期されない場合があります ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)。
 

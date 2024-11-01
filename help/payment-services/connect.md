@@ -3,7 +3,7 @@ title: インスタンスの接続
 description: API キーと秘密鍵を使用してCommerce インスタンスを接続し、設定内のデータスペースを指定します。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 ## API 資格情報の取得
 
-Commerce SaaS サービスを使用するには、サンドボックスと実稼働環境の両方でインスタンスの API キー（Commerce公開 API キーと秘密キー）を使用する必要があります。このキーは、[ マイアカウントダッシュボード ](https://account.magento.com/customer/account/login) で作成および管理されます。 [ キーペア ](https://docs.magento.com/user-guide/configuration/services/saas.html) はCommerce アカウント用に作成できます（サンドボックス用に 1 つ、実稼動用に 1 つ）。ただし、一度にアクティブに使用できるペアは 1 つだけです。
+Commerce SaaS サービスを使用するには、サンドボックスと実稼働環境の両方でインスタンスの API キー（Commerce公開 API キーと秘密キー）を使用する必要があります。このキーは、[ マイアカウントダッシュボード ](https://account.magento.com/customer/account/login) で作成および管理されます。 [ キーペア ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) はCommerce アカウント用に作成できます（サンドボックス用に 1 つ、実稼動用に 1 つ）。ただし、一度にアクティブに使用できるペアは 1 つだけです。
 
 >[!NOTE]
 >
->[!UICONTROL My Account] ダッシュボードへのアクセスに関するサポートが必要な場合は、 [Commerce アカウントの作成 ](https://docs.magento.com/user-guide/magento/magento-account-create.html) を参照してください。
+>[!UICONTROL My Account] ダッシュボードへのアクセスに関するサポートが必要な場合は、 [Commerce アカウントの作成 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create) を参照してください。
 
 公開 API キーを作成すると、常にマイアカウントダッシュボードで使用できるようになります。 必要に応じて、コピーまたは削除できます。 秘密 API キーは、サンドボックスまたは実稼動用の公開 API キーを作成する際に表示されます。結果として表示されるダイアログボックスからのコピーまたは保存にのみ使用でき、後でアクセスすることはできません。
 
@@ -40,7 +40,7 @@ Commerce SaaS サービスを使用するには、サンドボックスと実稼
 
 API キーが失われた場合は、新しい API キーペアを [ 生成 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) および [ 適用 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) して、管理者のCommerce サービスコネクタ設定に送信する必要があります。 間違ったキーが設定されている場合、または設定に何も存在しない場合、アカウントが検証されなかったことを通知するアカウント検証エラーダイアログが支払いサービスに表示されます。
 
-[API を使用する使用可能なCommerce サービスのリスト ](https://docs.magento.com/user-guide/system/saas.html#available-services) を参照してください。
+[API を使用する使用可能なCommerce サービスのリスト ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices) を参照してください。
 
 サンドボックス環境または実稼動環境用の API キーを生成する方法については、[ 資格情報 ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey) を参照してください。
 

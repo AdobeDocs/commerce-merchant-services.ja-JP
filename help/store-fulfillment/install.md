@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -36,17 +36,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Walmart Commerce Technologies ソフトウェアアーカイブ（.zip ファイル）によるストアフルフィルメントへのアクセス** - オンボーディングおよび有効化プロセス中は、担当のアカウントマネージャーと協力して、ストアフルフィルメント拡張機能のインストールファイルにアクセスできます。
 
-- **Adobe Commerce アカウント情報** - [!DNL Store Fulfillment] ソリューションをインストールするには、[[!DNL Commerce]  アカウント ](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"} が必要です。 [!DNL Adobe Commerce] プロジェクトへの所有者または管理者アクセス権を持つアカウント ID と資格情報が必要です。
+- **Adobe Commerce アカウント情報** - [!DNL Store Fulfillment] ソリューションをインストールするには、[[!DNL Commerce]  アカウント ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"} が必要です。 [!DNL Adobe Commerce] プロジェクトへの所有者または管理者アクセス権を持つアカウント ID と資格情報が必要です。
 
-- クラウドインフラストラクチャプロジェクトに [!DNL Adobe Commerce] いては、ソフトウェアインストーラーがクラウドプロジェクトへの管理者アクセス権を持っている必要があります。 [ ユーザーアクセスの管理 ](https://devdocs.magento.com/cloud/project/user-admin.html) を参照してください。
+- クラウドインフラストラクチャプロジェクトに [!DNL Adobe Commerce] いては、ソフトウェアインストーラーがクラウドプロジェクトへの管理者アクセス権を持っている必要があります。 [ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access) を参照してください。
 
-- **Composer と[!DNL Commerce CLI]** の使用経験 – これらのツールを使用して [!DNL Adobe Commerce] プラットフォームで拡張機能をインストールおよび管理する方法については、[ 一般的な CLI のインストール ](https://devdocs.magento.com/extensions/install/){target="_blank"} を参照してください。
+- **Composer と[!DNL Commerce CLI]** の使用経験 – これらのツールを使用して [!DNL Adobe Commerce] プラットフォームで拡張機能をインストールおよび管理する方法については、[ 一般的な CLI のインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"} を参照してください。
 
 - **Adobe Commerceにサードパーティの拡張機能をインストールした経験** – 詳しくは、Adobe Commerceのドキュメントを参照してください。
 
-   - [ クラウドインフラストラクチャインスタンス上のAdobe Commerceの拡張機能をインストール ](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)。
+   - [ クラウドインフラストラクチャインスタンス上のAdobe Commerceの拡張機能をインストール ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension)。
 
-   - [Adobe Commerce オンプレミスインスタンスの拡張機能をインストールします ](https://devdocs.magento.com/extensions/install/)。
+   - [Adobe Commerce オンプレミスインスタンスの拡張機能をインストールします ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)。
 
 ### 手順 1：拡張機能バンドルをダウンロードする
 
@@ -135,7 +135,7 @@ Adobe Commerce サーバーで、Store Fulfillment Services 拡張機能のモ�
 
 1. サーバーにログインします。
 
-   クラウドインフラストラクチャー上のAdobe Commerceにインストールするには、[SSH を使用してリモート環境にログイン ](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) します。
+   クラウドインフラストラクチャー上のAdobe Commerceにインストールするには、[SSH を使用してリモート環境にログイン ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) します。
 
 1. Store Fulfillment Services モジュールが有効になっていることを確認します。
 

@@ -5,7 +5,7 @@ role: Admin
 level: Experienced
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # 複数の Web サイトとスコープの設定
 
-複数の web サイト、ストア、ストアビューに対応するために、いくつかの要素に対して [ 範囲 ](https://docs.magento.com/user-guide/configuration/scope.html) を設定できます。
+複数の web サイト、ストア、ストアビューに対応するために、いくつかの要素に対して [ 範囲 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) を設定できます。
 
-- 範囲ごとの [ 在庫の管理 ](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+- 範囲ごとの [ 在庫の管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
 
 - 範囲ごとに [!DNL Delivery Methods] を管理
 
