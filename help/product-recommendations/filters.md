@@ -2,9 +2,9 @@
 title: 製品のフィルタリング
 description: レコメンデーションとして使用される製品を含める、または除外する条件を定義します。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Adobe Commerceでは、ページタイプにレコメンデーションをデプ
 
 ### タイプ
 
-製品タイプに基づくフィルターは、特定のタイプのすべての製品を含めるか除外します。 サポートされるタイプには、_シンプル_、_設定可能_、_仮想_、_ダウンロード可能_、_ギフトカード_ などがあります。 _バンドル_ 製品と _グループ化_ 製品はまだサポートされていません。
+製品タイプに基づくフィルターは、特定のタイプのすべての製品を含めるか除外します。 サポートされるタイプには、_simple_、_configurable_、_virtual_、_downloadable_、または _gift card_ があります。 _バンドル_、_グループ化_、カスタム製品タイプはサポートされていません。
 
 ### 可視性
 

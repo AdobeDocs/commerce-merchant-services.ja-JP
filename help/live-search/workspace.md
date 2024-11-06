@@ -2,7 +2,7 @@
 title: 'Live Search のセットアップ'
 description: ワークスペ  [!DNL Live Search]  スを使用して、検索パフォーマンスの設定、管理、監視を行います。
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 | [ シノニム ](synonyms.md) | 検索範囲を拡張し、買い物客がカタログと異なる製品を検索するために使用する可能性のある単語を含めます。 |
 | [ マーチャンダイジングを検索 ](rules.md) | スケジュールされたアクションをトリガーにする論理ルールを使用して、検索エクスペリエンスを形作ります。 製品をブースト、埋め込み、ピン留め、非表示にして、検索結果を調整してビジネス目標をサポートします。 |
 | [ カテゴリマーチャンダイジング ](category-merch.md) | カテゴリレベルでルールとインテリジェントマーチャンダイジングを適用します。 |
-| [GraphQL](graphql.md) | ストアの管理者にログインした開発者は、実際のカタログデータを使用してクエリを作成およびテストできます。 詳しくは、[!DNL Live Search] 開発者向けドキュメントの [GraphQLの概要 ](https://developer.adobe.com/commerce/webapi/graphql/) を参照してください。 |
+| [GraphQL](graphql.md) | ストアの管理者にログインした開発者は、実際のカタログデータを使用してクエリを作成およびテストできます。 詳しくは、[!DNL Live Search] 開発者向けドキュメントの [GraphQLの概要 ](https://developer.adobe.com/commerce/services/graphql/live-search/) を参照してください。 |
 | [ 設定 ](settings.md) | ストアフロントで価格ファセット値を価格範囲ごとにグループ化する方法を決定し、インデックス作成言語を設定します。 |
 
 ## 検索可能として属性を設定

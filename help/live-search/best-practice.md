@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] のベストプラクティス'
 description: ストアに実装する際のベストプラクティス  [!DNL Live Search]  説明します。
 role: Admin, Developer
-source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
+exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
+source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
@@ -137,7 +138,7 @@ Live Search は、デフォルトでスペルミスを管理します。 同義�
 
 ### 製品メタデータの活用
 
-正確で詳細な製品属性が [ 検索可能として設定 ](workspace.md#set-attributes-as-searchable) されていることを確認します。 SKU、名前、カテゴリの属性は、デフォルトで検索でき、検索から除外することはできません。 
+正確で詳細な製品属性が [ 検索可能として設定 ](workspace.md#set-attributes-as-searchable) されていることを確認します。 SKU、名前、カテゴリの属性は、デフォルトで検索でき、検索から除外することはできません。 最適な結果を得るには、SKU にスペースを使用しないでください。
 
 検索関連性を高めるには、検索可能な各属性に重みを割り当てます。 重み付けが大きい属性は、検索結果内で高く表示されます。 関連度による並べ替えは、検索の重みなど、複数の条件の影響を受けます。 つまり、検索の重み付けが小さい属性は、検索の重み付けが大きい属性よりも関連性が高い場合があります。 その他の条件には、特定の属性の一致数、見つかった検索語句の位置、検索語句の前後の全体的なテキスト構造などがあります。
 

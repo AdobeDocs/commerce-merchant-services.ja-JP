@@ -3,9 +3,9 @@ title: '[!DNL Live Search] イベント'
 description: イベントで  [!DNL Live Search] のデータを収集する方法を説明します。
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: f771e741d92bf94f46772934edf7a6bc39c75999
+source-git-commit: e1bf54b9fde42746a8c2f75253cbb3730821fb8c
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 | ゼロ結果検索 | `page-view`、`search-request-sent`、`search-response-received` | `searchRequestId` |
 | ゼロ結果率 | `page-view`、`search-request-sent`、`search-response-received` | `searchRequestId` |
 | 一般的な検索 | `page-view`、`search-request-sent`、`search-response-received` | `searchRequestId` |
-| 平均 クリック位置 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| 平均 クリック位置 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId` |
 | クリックスルー率 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId`、`sku`、`parentSku` |
 | コンバージョン率 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | `searchRequestId`、`sku`、`parentSku` |
 

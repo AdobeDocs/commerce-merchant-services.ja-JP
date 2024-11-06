@@ -3,7 +3,7 @@ title: 何  [!DNL Live Search]?
 description: 「Adobe Commerceの [!DNL Live Search] は、迅速で関連性の高い直感的な検索エクスペリエンスを提供します。」
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 - 有意義な検索エクスペリエンスを作成すると、買い物客や買い物客ができるだけ少ない労力で欲しいものを見つけるのに役立ちます。
 - セッション内の買い物客の行動に応じて、AI を活用した動的なファセット化と検索結果の再ランキングを利用できます。
 - 簡単に更新でき、ライセンスに含まれる軽量の SaaS ベースのサービスを使用して、総所有コストを削減します。
-- graphQL API、ヘッドレスの柔軟性、API サンドボックス環境、超高速 SaaS を有効にして、技術的な情報を取得します。
+- GraphQL API、ヘッドレスの柔軟性、API サンドボックス環境、超高速 SaaS を有効にして、技術を習得します。
 
 >[!IMPORTANT]
 >

@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] リリースノート'
 description: Adobe Commerceからのの最新  [!DNL Product Recommendations]  リリース情報です。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
+source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,15 @@ _2023 年 4 月 25 日_
 ![ 新規 ](../assets/new.svg) [!DNL Product Recommendations] お客様は、[SaaS 価格インデックス作成 ](../price-index/price-indexing.md) を活用できるようになりました。
 
 ## 現在のメジャーバージョン
+
+### magento/product-recommendations の 6.0.3
+
+_2024 年 11 月 6 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 修正 ](../assets/fix.svg) 現在の storreview に属さないカテゴリが [ カテゴリフィルター ](filters.md#category) に含まれていた問題を修正しました。
+![ 修正 ](../assets/fix.svg) `magento/product-recommendations` メタパッケージの依存関係の問題を修正しました。
 
 ### magento/product-recommendations の 6.0.2
 
@@ -142,7 +151,7 @@ _2023 年 3 月 20 日_
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg) 新しく追加された [ レコメンデーションタイプ ](type.md)：コンバージョン（買い物かごに表示）、コンバージョン（購入に表示）、最近表示された項目。 これらの新しいレコメンデーションタイプは、`magento/product-recommendations` モジュール 3.2.2 以降で使用できます。
-![ 修正 ](../assets/fix.svg) Fastly の Web アプリケーションファイアウォール（WAF）が誤って Cookie をブロックしていた問題を修正しました
+![ 修正 ](../assets/fix.svg)Fastly の Web Application Firewall （WAF）が誤って Cookie をブロックしていた問題を修正しました
 ![ 修正 ](../assets/fix.svg) デフォルト以外のストア表示に割り当てられた商品が、そのストア表示のレコメンデーションを作成する際に、_Recommendationsの商品プレビュー_ パネルに表示されない問題を修正しました
 ![ 修正 ](../assets/fix.svg) ページビルダーの特定のレコメンデーションユニット名でレコメンデーションユニットがストアフロントに表示されない問題を修正しました
 
@@ -169,7 +178,7 @@ _2023 年 3 月 20 日_
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
 ![ 修正 ](../assets/fix.svg)JavaScript モーダルエラーを修正しました
-![ 修正 ](../assets/fix.svg) Fastly の Web アプリケーションファイアウォール（WAF）が誤って Cookie をブロックしていた問題を修正しました
+![ 修正 ](../assets/fix.svg)Fastly の Web Application Firewall （WAF）が誤って Cookie をブロックしていた問題を修正しました
 
 ### magento/product-recommendations の 3.2.5
 

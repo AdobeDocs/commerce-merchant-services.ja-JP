@@ -3,9 +3,9 @@ title: "[!DNL Live Search] リリースノート"
 description: 「Adobe Commerceからの最新  [!DNL Live Search]  リリース情報。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -318,8 +318,8 @@ _2023 年 3 月 14 日_
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
-![Fix](../assets/fix.svg) [Custom price 属性 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) が [facet] （{% link live-search/facets-add.md %}）として設定された場合にエラーが返されなくなりました。
-![ 修正 ](../assets/fix.svg) [ 通貨記号 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) （`data-currency-symbol`）が使用できない場合にエラーが発生する問題を修正しました。
+![Fix](../assets/fix.svg) [Custom price 属性 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) が [facet](facets-add.md) として設定された場合にエラーが返されなくなりました。
+![ 修正 ](../assets/fix.svg) [ 通貨記号 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) （`data-currency-symbol`）が使用できない場合にエラーが発生する問題を修正しました。
 ![ 修正 ](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) 利用可能な場合、[ 特別価格 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) （最終価格の最小値）が表示されるようになりました。
 
 ### [!DNL Live Search] 1.3.0 {#130}

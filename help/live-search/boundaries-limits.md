@@ -3,9 +3,9 @@ title: 『境界と限界』
 description: ビジネスのニーズを確実に満たすための  [!DNL Live Search]  の境界と制限について説明します。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: c01c0480d9452e52ebf7e31e6a5d81c26c0a8234
+source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 0%
 - 動的ファセットは、大きなインデックスや通常のインデックスのパフォーマンスで問題を引き起こす可能性があります。 動的ファセットを作成し、パフォーマンスの低下や、タイムアウトエラーを伴うページの読み込みがない場合は、ファセットをピン留めに変更して、パフォーマンスの問題が解決するかどうかを判断してください。
 - 在庫状態（`quantity_and_stock_status`）はファセットとしてサポートされていません。 `inStock: 'true'` を使用して、在庫製品を除外できます。 [!DNL Commerce] 管理者で「在庫切れの製品を表示」が「True」に設定されている場合、これは `LiveSearchAdapter` モジュールの初期設定でサポートされています。
 - 日付タイプ属性はファセットとしてサポートされていません。
+- 属性をファセットとして追加した後に属性メタデータに加えた変更は、ファセットには反映されません。
 
 ## クエリ
 
