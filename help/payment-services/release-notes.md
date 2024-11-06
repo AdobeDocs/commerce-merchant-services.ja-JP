@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] リリースノート"
 description: すべてのリリースについて詳しくは、リリースノ  [!DNL Payment Services]  トを参照してください。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3174'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,24 @@ _2021 年 6 月 28 日_
 ![ 新規 ](../assets/new.svg)<!-- Issue PAY-2761 --> 列設定コントロールを使用して、[ 注文支払いステータスレポート ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) および [ 支払いレポート ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) に表示されるデータをカスタマイズできるようになりました。
 
 +++
+
+## v2.9.0
+
+_2024 年 11 月 7 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 新規 ](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] は、Apple Pay 用に **アップグレードされた SDK URL** をサポートするようになり、Apple Pay を使用するマーチャント向けに統合を強化しました。 この機能はmacOS 14 以降と互換性があり、以前のバージョンのmacOSが動作するデバイスには表示されません。
+
+![ 新規 ](../assets/new.svg)<!-- PAY-5630 -->**チェックアウト**、**商品**、**買い物かご**、**ミニ買い物かご** の各ページを更新して、**Apple Pay 用にアップグレードされた SDK URL** をサポートするようになり、支払いオプションとしてApple Pay を提供するマーチャントのユーザーエクスペリエンスが向上しました。
+
+![ 新規 ](../assets/new.svg)<!-- PAY-5635 --> 配送見積もりを改善 **Apple Pay アドレスに基づく** し、お客様はチェックアウト時に正確な配送料を確認できるようになりました。
+
+![ 修正 ](../assets/fix.svg)<!-- PAY-5661 --> チェックアウト時の様々な **[!DNL Payment Services]の問題** を修正し、マーチャントと買い物客の支払いプロセスの信頼性を向上させました。
+
+![ 修正 ](../assets/fix.svg)<!-- PAY-5692 --> **高速チェックアウト用のスマートボタン** を使用したときに **顧客の姓と名** が注文に追加されない問題を修正しました。
+
+![ 修正 ](../assets/fix.svg)<!-- PAY-5712 --> 合計金額が無料の場合に、マーチャントが **小計ゼロのチェックアウト支払オプションを使用してチェックアウトを完了できない** 問題を解決しました。
 
 ## v2.8.1
 
