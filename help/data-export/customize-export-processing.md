@@ -3,7 +3,7 @@ title: SaaS データ書き出しパフォーマンスの向上
 description: マルチスレッドデータ書き出しモードを使用して、Commerce サービスの SaaS データ書き出しパフォーマンスを向上させる方法について説明します。
 role: Admin, Developer
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 6f67ea717595fe517d751ae14bf8123c7d05831b
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -41,8 +41,8 @@ Adobeでは、データ取得にはデフォルト設定を使用することを
 
 マルチスレッドモードは、すべての [ 同期メソッド ](data-synchronization.md#synchronization-process) 完全同期、部分同期、失敗した項目の同期）でサポートされます。 マルチスレッドを構成するには、同期中に使用するスレッドの数とバッチサイズを指定します。
 
-- `threadCount` は、エンティティを処理するためにアクティブ化されるスレッドの数です。 デフォルト `threadCount` は `1` です。
-- `batchSize` は、1 回のイテレーションで処理されるエンティティの数です。 デフォルトの `batchSize` は、価格フィードを除くすべてのフィードの `100` レコードです。 価格フィードの場合、デフォルト値は `500` レコードです。
+- `thread-count` は、エンティティを処理するためにアクティブ化されるスレッドの数です。 デフォルト `thread-count` は `1` です。
+- `batch-size` は、1 回のイテレーションで処理されるエンティティの数です。 デフォルトの `batch-size` は、価格フィードを除くすべてのフィードの `100` レコードです。 価格フィードの場合、デフォルト値は `500` レコードです。
 
 resync コマンドを実行するとき、またはマルチスレッド設定をAdobe Commerce アプリケーション設定に追加することにより、一時的なオプションとしてマルチスレッドを設定できます。
 
@@ -52,10 +52,10 @@ resync コマンドを実行するとき、またはマルチスレッド設定�
 
 ### 実行時にマルチスレッドを構成する
 
-コマンドラインから full sync コマンドを実行する場合は、`threadCount` および `batchSize` オプションを CLI コマンドに追加して、マルチスレッド処理を指定します。
+コマンドラインから full sync コマンドを実行する場合は、`thread-count` および `batch-size` オプションを CLI コマンドに追加して、マルチスレッド処理を指定します。
 
 ```
-bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
+bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
 コマンドラインで指定されたオプションは、Adobe Commerce アプリケーションの `config.php` ファイルで指定されたデータ書き出し設定を上書きします。
