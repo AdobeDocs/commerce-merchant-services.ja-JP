@@ -2,9 +2,9 @@
 title: ストアフロントウィジェット
 description: ストアフロントポップオーバーと製品リストページウィジェットについて説明します。
 exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
-source-git-commit: 9f5990309dc952b2e9d8545532487d990d40b0ad
+source-git-commit: 256a1891a4769dcb3f5fa3e78bf1300190363c10
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Commerce ストアフロントの検索ボックスに入力を開始すると、[!DNL Live Search] は提案された製品と、上位の検索結果のサムネール画像を [ ポップオーバーウィジェット ](storefront-popover.md) に返信します。
 
-![ ポップオーバーウィジェット ](assets/ls-search-popover.png)
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 ポップオーバーウィジェットの詳細と、ストアフロント用にウィジェットをカスタマイズする方法については、[[!DNL Storefront Popover]](storefront-popover.md) を参照してください。
 
@@ -30,6 +30,6 @@ Commerce ストアフロントの検索ボックスに入力を開始すると�
 
 ストアフロントポップオーバーのすべての結果をクリックして表示すると、製品リストページウィジェットに機能が表示されます。この機能を使用して、検索を継続的に絞り込むことができます。
 
-![ 製品一覧ページウィジェット ](assets/ls-plp.png)
+![ 製品一覧ページウィジェットの結果 ](assets/plp-css-widgets.png)
 
 製品一覧表示ページウィジェットの詳細と、ストアフロント用にウィジェットをカスタマイズする方法については、[ 製品一覧表示ページウィジェット ](plp-styling.md) を参照してください。
