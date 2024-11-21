@@ -2,10 +2,11 @@
 title: '[!DNL Catalog Service]'
 description: 「Adobe Commerce用の [!DNL Catalog Service] は、Adobe Commerce GraphQLのネイティブのクエリよりも迅速に商品表示ページと商品一覧ページのコンテンツを取得する方法を提供します」
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -61,6 +62,14 @@ Adobe Commerceには 2 つのGraphQL システムがあります。 コア Graph
 * 複雑な製品は、複数の単純な製品で構成されます。 コンポーネントのシンプルな製品は異なる価格を持つことができます。 買い物客がコンポーネントのシンプルな製品の数量を指定できるように、複雑な製品を定義することもできます。 カタログサービスは、設定可能な製品タイプ、バンドルタイプ、グループ化された製品タイプを `complexProductViews` にマッピングします。
 
 複雑な製品オプションは、タイプではなく行動によって統一され、区別されます。 各オプション値は単純な製品を表します。 このオプション値は、価格を含む単純な製品属性にアクセスできます。 買い物客が複雑な製品のすべてのオプションを選択すると、選択したオプションの組み合わせは、特定の単純な製品を指します。 シンプルな商品は、買い物客が使用可能なすべてのオプションの値を選択するまで、あいまいなままです。
+
+#### 製品ビュー属性
+
+シンプルな製品と複雑な製品にはどちらも、ストアフロントに表示できる顧客定義の属性があります。 これらの属性は [ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type) として返されます。 Adobe Commerceでは、使用可能な属性は商品の作成時に定義されます。 属性は、Adobe Commerce バックエンドから、またはプログラムを使用して追加できます。 [SaaS データ書き出しフィードデータの拡張とカスタマイズ ](../data-export/extensibility-and-customizations.md) を参照してください。
+
+>[!TIP]
+>
+>Commerce バックエンドにデータタイプを追加する代わりに、[API メッシュとカタログサービス ](mesh.md) を使用して、カタログサービス GraphQL スキーマを拡張し、データを追加したり、既存のカタログデータを設定して新しい機能を有効にしたりできます。
 
 ### 価格
 
