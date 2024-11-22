@@ -4,9 +4,9 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ SaaS プロジェクトを選択または作成するには、ストアの [!DNL
 キーに関連付けられている SaaS プロジェクトは、[**SaaS Identifier**] セクションの [**プロジェクト**] フィールドに表示されます。
 
 1. SaaS プロジェクトが存在しない場合は、[**プロジェクトの作成**] をクリックします。 次に、**プロジェクト** フィールドに、SaaS プロジェクトの名前を入力します。
+
+>[!NOTE]
+>
+>混乱を避けるために、*Live Search*、*Product Recommendations*、*Data Connection* など、特定のCommerce サービスをプロジェクトの名前として使用しないでください。  ライセンスが複数の SaaS プロジェクト用にプロビジョニングされていない限り、複数のサービスに同じ SaaS プロジェクトを使用できます。
 
 1. [!DNL Commerce] ストアの現在の設定に使用する **データスペース** を選択します。
 
