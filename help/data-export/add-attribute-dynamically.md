@@ -1,15 +1,15 @@
 ---
-title: データエクスポーターフィードにプログラムで製品属性を追加する
-description: フィードデータにカスタム製品属性を追加する方法  [!DNL SaaS Data Export]  説明します。
+title: 製品属性の動的な追加
+description: データの同期処理中にカスタム製品属性をデータ書き出しフィードに動的に追加する方法を説明します。
 role: Admin, Developer
-source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
+source-git-commit: e75092e918d06d4d1291784b0498d274ea8396e8
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-# データエクスポーターフィードにプログラムで製品属性を追加する
+# データ同期中に製品属性を動的に追加
 
 データの同期処理中に属性を追加するプラグインを作成することで、Adobe Commerceに属性を登録することなく、製品属性を拡張できます。
 
