@@ -3,9 +3,9 @@ title: 支払いオプション
 description: 支払いオプションを設定して、ストアの顧客が使用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,11 @@ ht-degree: 0%
 
 「[!DNL Apple Pay]」ボタンは、製品ページ、ミニカート、買い物かご、チェックアウト表示に表示されます。
 
+ストアで [!DNL Apple Pay] を使用するには、[ でのセルフ登録  [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) （「ライブドメインの登録 _」セクションのみ_ を完了し、[ のストアで設定  [!DNL Payment Services]](settings.md#payment-buttons) を行います。
+
 >[!NOTE]
 >
-> ストアで [!DNL Apple Pay] を使用するには、[ でのセルフ登録  [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) （「ライブドメインの登録 _」セクションのみ_ を完了し、[ のストアで設定  [!DNL Payment Services]](settings.md#payment-buttons) を行います。
+> 購入者がサイトでApple Pay を使用して支払いを行えるようにする方法を確認するには、PayPal 開発者向けドキュメントの [ 高度なチェックアウト ](https://www.paypal.com/us/cshelp/article/what-is-paypal-advanced-checkout-and-how-do-i-get-started-help953){target=_blank} を参照してください。
 
 [!UICONTROL Apple Pay] は、ストア設定または支払いサービスホームで設定できます。 詳しくは、[ 設定 ](settings.md#apple-pay) を参照してください。
 

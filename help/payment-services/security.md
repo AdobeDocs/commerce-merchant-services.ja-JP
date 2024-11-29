@@ -4,9 +4,9 @@ description: サイトのセキュリティおよびコンプライアンス要�
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,16 @@ PCI 3-D Secure （3DS）は、オンラインでのクレジットカード購�
 
 3DS コンプライアンスが必要な EU またはイギリスのマーチャントの場合、[ 設定 ](settings.md#credit-card-fields) で手動で 3DS をオンにする必要があります（デフォルトでは `Off` です）。
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >3DS 要件は、ビジネスとカード所有者の銀行が [ 欧州経済地域 ](https://www.efta.int/eea) （EEA）と英国に所在する取引に適用されます。 米国のマーチャントは 3DS を必要としませんが、必要に応じて取引で有効にすることができます。
 
 商店の担当者が購入者に対して行った注文は、3DS コンプライアンス対策で構成されていません。
 
-詳細は、設定の [3DS](settings.md#3ds) を参照してください。
+>[!MORELIKETHIS]
+>
+> * 詳しくは、設定の [3DS](settings.md#3ds) を参照してください。
+> * 3DS テスト用の特定のクレジットカードについて詳しくは、PayPal 開発者用ドキュメントの [ テストカード ](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/) を参照してください。
 
 ### カードボルト
 
@@ -65,7 +68,9 @@ PayPal の支払いボタンを使用すると、PCI で規制されたデータ
 
 ## 不正保護
 
-[Signifyd 拡張機能 ](https://commercemarketplace.adobe.com/signifyd-module-connect.html) を使用して、支払いサービスの自動不正保護を有効にできます。
+[Signifyd 拡張機能 ](https://commercemarketplace.adobe.com/signifyd-module-connect.html) を使用して、支払いサービスの自動不正保護を有効にできます。 詳しくは、[ 重大な不正防止 ](fraud-protection.md) を参照してください。
 
-詳しくは、[ 重大な不正防止 ](fraud-protection.md) を参照してください。
+PayPal は、開発者向けドキュメントに [ 不正保護 ](https://www.paypal.com/us/cshelp/article/what-is-fraud-protection-help1014){target=_blank} のその他のオプションを用意しています。
 
+* 詳しくは、[ 不正防止の詳細 ](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced){target=_blank} を参照してください。
+* 詳細は、「[ チャージバック保護 ](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608){target=_blank}」を参照してください。
