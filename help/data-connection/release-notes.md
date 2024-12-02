@@ -3,10 +3,10 @@ title: リリースノート
 description: Adobe Commerceの拡張機能の最新  [!DNL Data Connection]  リリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
+source-git-commit: 4662c9467f750d9a255034feb69f51492c98a0d9
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 0%
+source-wordcount: '1108'
+ht-degree: 1%
 
 ---
 
@@ -77,6 +77,15 @@ _2022 年 10 月 12 日_
 ![ 新規 ](../assets/new.svg) - [AEM ストアフロント ](overview.md#aem-support) のサポートを追加しました。
 
 +++
+
+## 3.2.1
+
+_2024 年 12 月 2 日_
+
+[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+
+![ 新規 ](../assets/new.svg) - [!DNL Data Connection] に HIPAA 対応の拡張機能が追加されました。これにより、マーチャントはバックオフィスのイベントデータをExperience Platformと共有し、HIPAA へのコンプライアンス [!DNL Commerce] 維持できるようになりました。
+![ 修正 ](../assets/fix.svg) - [!DNL Data Connection] 拡張機能がデータを上書きし、すべてのお客様 `eventForwarding` 対して `HIPAA` フラグを設定していた問題を修正しました。 現在は、拡張機能は HIPAA のお客様向けのフラグのみを設定します。
 
 ## 3.2.0
 
