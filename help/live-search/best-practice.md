@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Live Search] のベストプラクティス'
+title: '[!DNL Live Search] ベストプラクティス'
 description: ストアに実装する際のベストプラクティス  [!DNL Live Search]  説明します。
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
-source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
+source-git-commit: ba2b798f2e7d5716be0d1686359ac8382f6cf8e4
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,14 @@ Live Search は、デフォルトでスペルミスを管理します。 同義�
 ## 検索結果の関連性の向上
 
 この節では、有効な検索ルールを実装し、製品メタデータを使用して正確で詳細な属性を確実に検索できるようにすることで、検索結果の関連性を向上させる方法について説明します。
+
+### 画像
+
+設定可能な製品の子製品に、正しい役割を持つ画像があることを確認します。 親製品または子製品があると、検索結果に画像が表示されない場合があります。
+
+>[!NOTE]
+>
+>検索語によって、検索結果の画像が異なる場合があります。 検索語句によって子製品の方が関連性が高いと判断された場合は、親製品の画像ではなく子製品の画像が使用されます。
 
 ### ルールを検索
 
