@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 9ccf4707ae46d2df52a5510c774688fe6da1d951
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1303'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ _[!UICONTROL Live]_のデータ ソースを選択した場合、本番モード
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Payouts]_/**[!UICONTROL View Report]**に移動します。
 1. [ トランザクションの日付範囲の期間をカスタマイズします ](#customize-transactions-timeframe)。
-1. _ダウンロード_ （![](assets/icon-download.png){width="20" zoomable="yes"}）アイコンをクリックします。
+1. _ダウンロード_ （![ ダウンロードアイコン ](assets/icon-download.png){width="20" zoomable="yes"}）アイコンをクリックします。
 
 支払いトランザクションは.csv 形式でダウンロードされます。
 
