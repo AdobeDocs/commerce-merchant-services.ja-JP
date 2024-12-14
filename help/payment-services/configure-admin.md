@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
 1. **[!UICONTROL Show on checkout page]** しくは、「`Yes`」を選択して、チェックアウトページでクレジットカードフィールドを有効にします。
 1. **[!UICONTROL Vault Enabled]**: チェックアウト時にクレジット・カードのヴォールティングを有効にする場合は、「`Yes`」を選択します。
 1. **[!UICONTROL Vault Enabled in Admin]** に、加盟店がボールトに登録されたクレジット カードを使用して顧客の注文を作成できるようにする `Yes` を選択します。
-1. **[!UICONTROL 3DS Secure authentication]** を有効にするには（デフォルトでは `Off`）、「`Always`」または「`When required`」を選択します。
+1. **[!UICONTROL 3D Secure authentication]** を有効にするには（デフォルトでは `Off`）、「`Always`」または「`When required`」を選択します。
 1. **[!UICONTROL Debug Mode]**: デバッグモードを有効にするには `Yes` を選択し、無効にするには `No` を選択します。
 1. 「**[!UICONTROL Save Config]**」をクリックして変更を保存します。
 1. **[!UICONTROL System]** / **[!UICONTROL Cache Management]** に移動し、**[!UICONTROL Flush Cache]** をクリックして、無効なキャッシュをすべて更新します。
@@ -82,7 +82,7 @@ ht-degree: 0%
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページのクレジットカードフィールドを有効または無効にします。 オプション：[!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | ストア表示 | [ クレジット カードの保管 ](vaulting.md) を有効または無効にします。 オプション：[!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | ストア表示 | [ マーチャントが管理でボルト付き支払い方法を使用して顧客の注文を完了する ](vaulting.md) 機能を有効または無効にします。 オプション：[!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL 3DS Secure authentication] | web サイト | [3DS セキュア認証 ](security.md#3ds) を有効または無効にします。 オプション：[!UICONTROL Always]/[!UICONTROL When Required]/[!UICONTROL Off] |
+| [!UICONTROL 3D Secure authentication] | web サイト | [3DS セキュア認証 ](security.md#3ds) を有効または無効にします。 オプション：[!UICONTROL Always]/[!UICONTROL When Required]/[!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## [!UICONTROL Apple Pay]
@@ -136,6 +136,7 @@ ht-degree: 0%
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. **[!UICONTROL 3D Secure authentication]** を有効にするには（デフォルトでは `Off`）、「`Always`」または「`When required`」を選択します。
 1. デバッグモードを有効にするには、**[!UICONTROL Debug Mode]** の `Yes` を選択します（`No` は無効にします）。
 1. 必要に応じて **[!UICONTROL Button Color]**、**[!UICONTROL Button Type]**、**[!UICONTROL Button Style]** を選択して、「_[!UICONTROL Google Pay]_」ボタンの外観を設定します。
 1. 高さを設定するには、**[!UICONTROL Button Style]** で定義された高さの既定値を使用します。
@@ -153,6 +154,7 @@ ht-degree: 0%
 | [!UICONTROL Show buttons on product detail page] | ストア表示 | 製品の詳細ページで [!DNL Google Pay] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | ストア表示 | ミニ買い物かごのプレビューで [!DNL Google Pay] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | ストア表示 | 買い物かごページの [!DNL Google Pay] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL 3D Secure authentication] | ストア表示 | [3D セキュア認証 ](security.md#3ds) を有効または無効にします。 オプション：[!UICONTROL Always]/[!UICONTROL When Required]/[!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | ストア表示 | 「[!DNL Google Pay]」ボタンの色を定義します。 オプション：`[!UICONTROL Default]`/`[!UICONTROL Black]`/`[!UICONTROL White]` |
 | [!UICONTROL Button Type] | ストア表示 | 「[!DNL Google Pay]」ボタンのタイプを定義します。 オプション：`[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |

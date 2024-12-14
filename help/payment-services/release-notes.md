@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Payment Services] リリースノート"
+title: '[!DNL Payment Services] リリースノート'
 description: すべてのリリースについて詳しくは、リリースノ  [!DNL Payment Services]  トを参照してください。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3311'
 ht-degree: 0%
 
 ---
@@ -91,15 +91,33 @@ _2021 年 6 月 28 日_
 
 +++
 
+## v2.10.0
+
+_2024 年 12 月 13 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 新規 ](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] では、購入せずに保管するためのGraphQL エンドポイントをサポートするようになったので、お客様はトランザクションを行わずに支払い方法を保存できます。
+
+![ 新規 ](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] は、Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds) での [3D セキュア認証をサポートするようになり、支払い取引中のマーチャントおよびお客様のセキュリティを強化します。
+
+![ 修正 ](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] では、[ 顧客が自分の **マイアカウント**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting) にカードを直接保存する機能が追加され、利便性が向上し、今後のチェックアウトが簡素化されます。`Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/)。
+
+![ 修正 ](../assets/fix.svg)<!-- PAY-5762 --> 注文が製品詳細ページ（PDP）から開始された際に、注文レビューページでクーポンコードが適用されない問題を修正しました。
+
+![ 修正 ](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] では、[ チェックアウトページのヴォールトカード ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting) の説明と請求先住所が表示されるようになり、顧客は保存済みの支払い方法をより明確に把握できるようになりました。
+
+![ 修正 ](../assets/fix.svg)<!-- PAY-5793 --> [!DNL Payment Services] を使用すると、マーチャントはチェックアウトページから直接保管されたカードの請求先住所を保存できるので、正確で完全な支払い情報を確保できます。
+
 ## v2.9.0
 
 _2024 年 11 月 7 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] は、Apple Pay 用に **アップグレードされた SDK URL** をサポートするようになり、Apple Pay を使用するマーチャント向けに統合を強化しました。 この機能はmacOS 14 以降と互換性があり、以前のバージョンのmacOSが動作するデバイスには表示されません。
+![ 新規 ](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] は、Apple Pay 用に **アップグレードされたSDK URL** をサポートするようになり、Apple Pay を使用するマーチャントの統合を強化しました。 この機能はmacOS 14 以降と互換性があり、以前のバージョンのmacOSが動作するデバイスには表示されません。
 
-![ 新規 ](../assets/new.svg)<!-- PAY-5630 -->**チェックアウト**、**商品**、**買い物かご**、**ミニ買い物かご** の各ページを更新して、**Apple Pay 用にアップグレードされた SDK URL** をサポートするようになり、支払いオプションとしてApple Pay を提供するマーチャントのユーザーエクスペリエンスが向上しました。
+![ 新規 ](../assets/new.svg)<!-- PAY-5630 --> **チェックアウト**、**商品**、**買い物かご** および **ミニ買い物かご** ページを更新して、**Apple Pay 用にアップグレードされたSDK URL** をサポートし、支払いオプションとしてApple Pay を提供するマーチャントのユーザーエクスペリエンスを強化しました。
 
 ![ 新規 ](../assets/new.svg)<!-- PAY-5635 --> 配送見積もりを改善 **Apple Pay アドレスに基づく** し、お客様はチェックアウト時に正確な配送料を確認できるようになりました。
 
@@ -115,7 +133,7 @@ _2024 年 9 月 13 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
-![ 修正 ](../assets/fix.svg)<!-- PAY-5644 --> [!DNL Payment Services] で複数のスコープを使用する場合の、SDK パラメーターのキャッシュの問題を修正しました。 SDK 設定は、単一のキーの下ではなく、スコープごとに個別にキャッシュされるようになりました。 これにより、各範囲のキャッシュが個別に無効化されるため、複数の範囲を管理する際の信頼性が向上します。
+![ 修正 ](../assets/fix.svg)<!-- PAY-5644 --> [!DNL Payment Services] で複数のスコープを使用する場合の、SDK パラメーターのキャッシュの問題を修正しました。 SDK設定は、単一のキーの下ではなく、スコープごとに個別にキャッシュされるようになりました。 これにより、各範囲のキャッシュが個別に無効化されるため、複数の範囲を管理する際の信頼性が向上します。
 
 ## v2.8.0
 
