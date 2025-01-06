@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 15f5d4b5409c8879312af058099aaa4b9db2a610
+source-git-commit: 8c6957d4b77af7128d2c7bdb1356b2905c6e054b
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,13 @@ ht-degree: 0%
 >SaaS データ書き出し拡張機能は、Live Search、Product Recommendations、カタログサービスと共に自動的にインストールされるモジュールのコレクションです。 コンポーザーを使用して、システムにインストールされているバージョンを確認できます。 場合によっては、Commerce サービスのバージョンを更新せずに修正点または新機能を取得するように、システムのデータエクスポート拡張機能をアップグレードする必要があります。
 
 ## 現在のメジャーバージョン
+
+## 103.3.15 リリース
+
+![ 修正 ](../assets/fix.svg) 古い設定での統合テストが安定して動作するようにしました。 &lt;!-MDEE-869—>
+![ 修正 ](../assets/fix.svg) 不要な属性オプションの伝播を停止します。 &lt;!-MDEE-882—>
+![ 修正 ](../assets/fix.svg) データのシリアル化が失敗した場合に、データのエクスポートログに送信されるエラーメッセージを修正しました。 &lt;!-MDEE-913—>
+![ 修正 ](../assets/fix.svg) テストカバレッジを追加し、シンプルな製品アップデートの信頼性を向上しました。 &lt;!-MDEE-886—>
 
 ## 103.3.14 リリース
 
