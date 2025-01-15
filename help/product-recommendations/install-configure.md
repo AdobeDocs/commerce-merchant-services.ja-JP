@@ -3,9 +3,9 @@ title: インストールと設定
 description: ' [!DNL Product Recommendations] をインストール、更新、アンインストールする方法を説明します。'
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 0%
 ## [!DNL Product Recommendations] のインストール {#install}
 
 [!DNL Product Recommendations] モジュールはスタンドアロンメタパッケージなので、アップデートはAdobe Commerceよりも頻繁にリリースされます。 最新のバグ修正と機能を確認するには、[ リリースノート ](release-notes.md) を参照してください。
+
+>[!IMPORTANT]
+>
+>製品Recommendationsを使用するための正しい [ 使用権限 ](../landing/saas.md#credentials) があることを確認します。
 
 Composer を使用して `magento/product-recommendations` モジュールをインストールします。
 

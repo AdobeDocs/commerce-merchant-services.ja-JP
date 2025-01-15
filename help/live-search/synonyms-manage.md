@@ -1,10 +1,10 @@
 ---
-title: 「シノニムの管理」
-description: 「既存の同義語の管理方法  [!DNL Live Search]  ついて説明します。」
+title: シノニムの管理
+description: 既存の同義語の管理方法  [!DNL Live Search]  説明します。
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ ht-degree: 0%
 1. **編集** をクリックします。
 キーワードはリストの最初の用語で、各用語はコンマで区切られています。 キーワードと展開用語は更新できますが、シノニムのタイプは変更できません。
 1. 編集する項目をクリックします。 次に、必要に応じてテキストを更新します。
-
-   ![ 双方向類義語の編集 ](assets/synonym-two-way-edit.png)
 
 1. 完了したら、「**保存**」をクリックします。
 
