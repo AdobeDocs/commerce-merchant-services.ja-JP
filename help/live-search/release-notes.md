@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Live Search] リリースノート"
-description: 「Adobe Commerceからの最新  [!DNL Live Search]  リリース情報。」
+title: '[!DNL Live Search] リリースノート'
+description: Adobe Commerceからのの最新  [!DNL Live Search]  リリース情報です。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2068'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,14 @@ _2024 年 5 月 31 日_
 _2023 年 10 月 27 日_
 
 ![ 新規 ](../assets/new.svg)[!DNL Live Search] PLP ウィジェットがカラースウォッチをサポートするようになりました。
+
+## [!DNL Live Search] 4.2.2 {#422}
+
+_2025 年 1 月 6 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 修正 ](../assets/fix.svg) Adobe Commerce バージョン 2.4.5 以前の `categoryList` GraphqL クエリでエラーが発生していた問題を修正しました。
 
 ## [!DNL Live Search] 4.2.1 {#421}
 
@@ -269,7 +277,7 @@ _2023 年 3 月 14 日_
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
-![ 修正 ](../assets/fix.svg) - ネットワークの問題が原因で SDK リソースが使用できない場合、Live Search がエラーをスローします。 このバグは修正されました。
+![ 修正 ](../assets/fix.svg) - ネットワークの問題が原因でSDK リソースが使用できない場合、Live Search がエラーをスローします。 このバグは修正されました。
 
 マーチャントがこれらの機能にアクセスするには、Live Search 拡張機能のバージョン >= 2.0.5 をアップグレードする必要があります。
 
@@ -327,7 +335,7 @@ _2023 年 3 月 14 日_
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg)[ パフォーマンス ](performance.md) レポートダッシュボードは、買い物客が使用する検索用語に関するインサイトを提供します。
-![ 新規 ](../assets/new.svg) [!DNL Live Search] [ ストアフロントイベント SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) を使用すると、イベントの公開サービス、購読サービスおよび指標を含む共通のデータレイヤーにアクセスできます。
+![ 新規 ](../assets/new.svg) [!DNL Live Search] [ ストアフロントイベントSDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) を使用すると、イベントの公開サービス、サブスクリプションサービス、指標を含む共通のデータレイヤーにアクセスできます。
 ![ 修正 ](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) には、表示を制御する `.search-autocomplete` コンテナ用の新しい `active` クラスがあります。
 ![ 修正 ](../assets/fix.svg) ストアフロントで、[ 検索語句 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) フッターリンクが削除され、[!DNL Live Search] のインストールではキャッシュが無効になります。
 ![ バグ ](../assets/bug.svg) 検索アダプタのパッチが重複した製品を処理します。
