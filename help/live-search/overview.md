@@ -1,11 +1,11 @@
 ---
 title: 何  [!DNL Live Search]?
-description: 「Adobe Commerceの [!DNL Live Search] は、迅速で関連性の高い直感的な検索エクスペリエンスを提供します。」
+description: Adobe Commerceの [!DNL Live Search] は、迅速で関連性の高い直感的な検索エクスペリエンスを提供します。
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ Live Search の使用と設定に関する詳細なビデオについては、[ 
 ## Live Search コンポーネント
 
 - [ ポップオーバーウィジェット ](storefront-popover.md)[!DNL Live Search]、検索結果を含む検索フィールドの下に開くボックスです。
-- [ 製品一覧表示ページウィジェット ](plp-styling.md) （PLP）は、ファセットと同義語をサポートする、検索可能な製品一覧表示ページを提供します。 このウィジェットは Live Search 4.0.0 以降にインストールされ、有効になっています。
-- （**非推奨**）検索アダプターは PLP ウィジェットの前身であり、Live Search &lt; 4.0.0 でインストールされました。4.0.0 より前のバージョンの Live Search を使用している場合、Commerceはアップグレードして、PLP ウィジェットの機能のメリットを享受し、今後の改善を受けることをお勧めします。
+- [ 製品一覧表示ページウィジェット ](plp-styling.md) （PLP）は、ファセットと同義語をサポートする、検索可能な製品一覧表示ページを提供します。 このウィジェットは Live Search 4.0.0 以降にインストールされ、有効になっており、検索アダプターを置き換えます。
+- （**非推奨**）検索アダプターは PLP ウィジェットの前身であり、Live Search &lt; 4.0.0 でインストールされました。4.0.0 より前のバージョンの Live Search を使用している場合、Commerceはアップグレードして、PLP ウィジェットの機能のメリットを享受し、今後の改善を受けることをお勧めします。 今後、検索アダプタは、セキュリティ上の問題に対処するためにのみ更新されます。
 
 ## [!DNL Live Search] workspace
 

@@ -3,9 +3,9 @@ title: '[!DNL Live Search] リリースノート'
 description: Adobe Commerceからのの最新  [!DNL Live Search]  リリース情報です。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2087'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,7 @@ _2023 年 11 月 13 日_
 ### 更新
 
 ![ 修正 ](../assets/fix.svg) 新規インストールの場合、[!DNL Live Search] PLP ウィジェットがデフォルトで有効になりました。
+![ 修正 ](../assets/fix.svg) 検索アダプターは非推奨（廃止予定）になりました。 今後、検索アダプタは、セキュリティ上の問題に対処するためにのみ更新されます。
 ![ 修正 ](../assets/fix.svg)CSS スタイルを再設定し、ウィジェットクラスを適切に分離しました。
 ![ 修正 ](../assets/fix.svg) 軽微なバグ修正
 
