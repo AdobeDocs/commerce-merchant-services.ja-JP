@@ -3,7 +3,7 @@ title: リリースノート
 description: Adobe Commerceの拡張機能の最新  [!DNL Data Connection]  リリース情報です。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 4662c9467f750d9a255034feb69f51492c98a0d9
+source-git-commit: 83d801fea806df51b440c11b87cd0de45793a322
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 1%
@@ -73,18 +73,18 @@ _2023 年 3 月 30 日_
 
 _2022 年 10 月 12 日_
 
-![ 新規 ](../assets/new.svg) - Adobe Commerce Storefront Events SDK およびコレクターに、`openCart` と `removeFromCart` の 2 つの [storefront イベント ](events.md) を追加しました。
+![ 新規 ](../assets/new.svg) - Adobe Commerce Storefront イベントのSDKおよびコレクターに、`openCart` と `removeFromCart` の 2 つの [storefront イベント ](events.md) を追加しました。
 ![ 新規 ](../assets/new.svg) - [AEM ストアフロント ](overview.md#aem-support) のサポートを追加しました。
 
 +++
 
 ## 3.2.1
 
-_2024 年 12 月 2 日_
+_2025 年 1 月 17 日_
 
 [!BADGE  互換性 ]{type=Informative tooltip="互換性"}
 
-![ 新規 ](../assets/new.svg) - [!DNL Data Connection] に HIPAA 対応の拡張機能が追加されました。これにより、マーチャントはバックオフィスのイベントデータをExperience Platformと共有し、HIPAA へのコンプライアンス [!DNL Commerce] 維持できるようになりました。
+![ 新規 ](../assets/new.svg) - [HIPAA 対応の拡張機能 ](hipaa-readiness.md) を [!DNL Data Connection] に追加しました。これにより、マーチャントはバックオフィスイベントデータをExperience Platformと共有し、HIPAA へのコンプライアンス [!DNL Commerce] 維持できるようになりました。
 ![ 修正 ](../assets/fix.svg) - [!DNL Data Connection] 拡張機能がデータを上書きし、すべてのお客様 `eventForwarding` 対して `HIPAA` フラグを設定していた問題を修正しました。 現在は、拡張機能は HIPAA のお客様向けのフラグのみを設定します。
 
 ## 3.2.0
@@ -138,7 +138,7 @@ _2024 年 4 月 4 日_
 [!BADGE  互換性 ]{type=Informative tooltip="互換性"}
 
 ![ 新規 ](../assets/new.svg) – すべての [!DNL Data Connection] 拡張機能で PHP 8.3 のサポートを追加しました。
-![ 新規 ](../assets/new.svg) - Adobe Experience Platform Mobile SDK とCommerceを [ 統合 ](mobile-sdk-epc.md) する方法に関する記事を追加しました。
+![ 新規 ](../assets/new.svg) - Adobe Experience Platform Mobile SDKとCommerceを [ 統合 ](mobile-sdk-epc.md) する方法に関する記事を追加しました。
 
 ## 3.2.0-beta2
 
@@ -214,7 +214,7 @@ _2023 年 1 月 17 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg) - [[!DNL Data Connection]  拡張機能の管理者 ](connect-data.md) を更新して、独自の AEP Web SDK （alloy）を指定できるようになりました。
+![ 新規 ](../assets/new.svg) - [[!DNL Data Connection] extension Admin](connect-data.md) を更新して、独自の AEP Web SDK（alloy）を指定できるようになりました。
 ![ 修正 ](../assets/fix.svg) エッジにプッシュされたデータのプライマリ ID を設定する際に、`personID` の代わりに `identityMap` を使用するように変更しました。
 
 ## 2.0.1
@@ -223,7 +223,7 @@ _2022 年 11 月 10 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
-![ 修正 ](../assets/fix.svg) - Storefront Event Collector および Storefront Event SDK が正常に読み込まれた後にのみAdobe Experience Platform コンテキストが設定されるようになりました。
+![ 修正 ](../assets/fix.svg) - Storefront イベントコレクターおよび Storefront イベントSDKが正常に読み込まれた後にのみ、Adobe Experience Platform コンテキストが設定されるようになりました。
 
 ## 2.0.0
 
@@ -231,7 +231,7 @@ _2022 年 10 月 12 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg) - Adobe Commerce インスタンスをExperience Platformに [ 接続 ](connect-data.md) する際に、独自の AEP Web SDK を指定する機能が追加されました。
+![ 新規 ](../assets/new.svg) - Adobe Commerce インスタンスをExperience Platformに [ 接続 ](connect-data.md) する際に、独自の AEP Web SDKを指定する機能が追加されました。
 ![ 修正 ](../assets/fix.svg) - データストリーム ID を storereview ではなく web サイトにスコープする必要があるので、データストリーム範囲の要件を更新しました。
 
 ## 1.0.0

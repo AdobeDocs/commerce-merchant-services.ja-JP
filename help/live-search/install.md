@@ -1,9 +1,9 @@
 ---
-title: 「の概要  [!DNL Live Search]」
+title: ' [!DNL Live Search] の基本を学ぶ'
 description: Adobe Commerceの必要システム構成とインストール手順  [!DNL Live Search]  説明します。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
+source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
 workflow-type: tm+mt
 source-wordcount: '3093'
 ht-degree: 0%
@@ -178,7 +178,7 @@ Adobe Commerce API キーとそれに関連する秘密鍵は、Adobe Commerce�
 
 API キーを設定する方法については、[Commerce サービスコネクタ ](../landing/saas.md) の記事を参照してください。
 
-## 3. カタログデータを同期する {#synchronize-catalog-data}
+## 3. カタログデータを同期する
 
 [!DNL Live Search] は、カタログ・データをAdobeの SaaS インフラストラクチャに移動します。 データにインデックスが作成され、検索結果はこのインデックスからストアフロントに直接配信されます。 サイズと複雑さに応じて、インデックス作成に 30 分から数時間かかる場合があります。
 
@@ -214,7 +214,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 初回同期後、製品の増分更新がストアフロント検索で使用できるようになるまで最大 15 分かかる場合があります。 詳しくは、インデックス作成ドキュメントの [ 製品アップデートのストリーミング ](indexing.md) を参照してください。
 
-## 4. データが書き出されたことを確認する {#verify-export}
+## 4. データが書き出されたことを確認する
 
 カタログデータがAdobe Commerceから書き出され、[!DNL Live Search] と同期されているかどうかを確認するには、次のいずれかの方法を使用します。
 
@@ -265,7 +265,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 [!DNL Live Search] で返された製品は、[ カテゴリ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories) に割り当てられている必要があります。 例えば Luma では、製品が「男性」、「女性」、「歯車」などのカテゴリに分類されます。 サブカテゴリも「トップス」、「ボトムス」、「ウォッチポイント」に設定されます。 これらのカテゴリの割り当てにより、フィルタリング時の精度が向上します。
 
-## 6.接続をテストする {#test-connection}
+## 6.接続をテストする
 
 カタログデータを SaaS にして、テストを行い、次のシナリオで製品データが返されることを確認します。
 
@@ -299,7 +299,7 @@ bin/magento saas:resync --feed categoryPermissions
 - [PLP ウィジェットリポジトリ ](https://github.com/adobe/storefront-product-listing-page)
 - [ 検索バーのリポジトリ ](https://github.com/adobe/storefront-search-as-you-type)
 
-## [!DNL Live Search] を更新中 {#update}
+## [!DNL Live Search] を更新中
 
 Live Search を更新する前に、コマンドラインから次のコマンドを実行して、インストールされている Live Search のバージョンを確認します。
 
@@ -345,11 +345,11 @@ composer update magento/live-search --with-dependencies
    composer update magento/live-search --with-dependencies
    ```
 
-## [!DNL Live Search] のアンインストール {#uninstall}
+## [!DNL Live Search] のアンインストール
 
 [!DNL Live Search] をアンインストールするには、[ モジュールのアンインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) を参照してください。
 
-## [!DNL Live Search] パッケージ {#packages}
+## [!DNL Live Search] パッケージ
 
 [!DNL Live Search] 拡張機能は、次のパッケージで構成されています。
 
@@ -359,7 +359,7 @@ composer update magento/live-search --with-dependencies
 | `module-live-search-adapter` | 検索リクエストをストアフロントから [!DNL Live Search] サービスにルーティングし、結果をストアフロントにレンダリングします。 <br />- カテゴリの参照 – ストアフロント [ 上部のナビゲーション ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) から検索サービスにリクエストをルーティングします。<br />- グローバル検索 – ストアフロントの右上にある [ クイック検索 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) ボックスからリクエストを [!DNL Live Search] サービスにルーティングします。 |
 | `module-live-search-storefront-popover` | 「入力中に検索」ポップオーバーは、標準のクイック検索に代わるもので、上位の検索結果のデータとサムネールを返します。 |
 
-## [!DNL Live Search] 依存関係 {#dependencies}
+## [!DNL Live Search] 依存関係
 
 [!DNL Live Search] 拡張機能をインストールするための [!DNL Composer] メタパッケージには、次のモジュール依存関係が含まれています。
 

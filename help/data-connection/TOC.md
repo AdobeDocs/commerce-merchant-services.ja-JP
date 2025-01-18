@@ -1,13 +1,13 @@
 ---
-user-guide-title: "[!DNL Data Connection] extension for Adobe Commerce"
-user-guide-description: 「このガイドでは、 [!DNL Data Connection] extension for Adobe Commerce」を使用する方法について詳しく説明します。
-breadcrumb-title: "[!DNL Data Connection] extension for Adobe Commerce"
+user-guide-title: Adobe Commerceの [!DNL Data Connection] 拡張機能
+user-guide-description: このガイドでは、Adobe Commerce用の拡張機能を使用する際の詳細な手順  [!DNL Data Connection]  説明します。
+breadcrumb-title: Adobe Commerceの [!DNL Data Connection] 拡張機能
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: 5593f97db030f4cc8daeaa95948a6763fc45eb8f
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '129'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 3%
 # Adobe Commerceの [!DNL Data Connection] 拡張機能 {#data-connection}
 
 - [ガイドの概要](overview.md)
+- [Commerce サービスに対する HIPAA 対応](hipaa-readiness.md)
+- [Commerce サービスによるプライバシーリクエストの処理方法](handle-privacy-request.md)
 - [リリースノート](release-notes.md)
 - 基本 {#fundamentals}
    - [拡張機能のイ  [!DNL Data Connection]  ストール](install.md)
@@ -22,7 +24,7 @@ ht-degree: 3%
    - [Commerceのデータ取り込みに対する時系列イベントスキーマの更新](update-xdm.md)
    - [Commerce データ取り込み用のプロファイルレコードスキーマの更新](profile-data.md)
    - [Commerce Data のAdobe Experience Platformへの接続](connect-data.md)
-   - [Adobe Experience Platform Mobile SDK とCommerceの統合](mobile-sdk-epc.md)
+   - [Adobe Experience Platform Mobile SDKとCommerceの統合](mobile-sdk-epc.md)
 - Capture Data {#event-forwarding}
    - [行動イベント](events.md)
    - [バックオフィスイベント](events-backoffice.md)

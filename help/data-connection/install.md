@@ -4,9 +4,9 @@ description: Adobe Commerceから拡張機能をインストール、更新、�
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
+source-git-commit: ae8651e3c3e11d1ed4c39f4d989b816a74d2437b
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,8 @@ ht-degree: 0%
 1. （任意） [ 検索イベント ](events.md#search-events) を含む [!DNL Live Search] データを含めるには、[[!DNL Live Search]](../live-search/install.md) 拡張機能をインストールします。
 
 1. （任意） [ 要求イベント ](events.md#b2b-events) を含む B2B データを含めるには、[B2B 拡張機能 ](#install-the-b2b-extension) をインストールします。
+
+1. （オプション）ヘルスケアのマーチャントの場合は、[!DNL Commerce] バックオフィスデータが HIPAA に対応するように [ データサービス HIPAA](#install-the-data-services-hipaa-extension) 拡張機能をインストールします。
 
 ### Adobe I/Oイベントのインストールと customers-connector モジュールの設定
 
@@ -109,6 +111,16 @@ B2B マーチャントの場合、次の拡張機能をインストールして 
 
 ```bash
 composer require magento/experience-platform-connector-b2b
+```
+
+### データサービス HIPAA 拡張機能のインストール
+
+医療関係者向けに、次の拡張機能をインストールして、バックオフィスイベントデータが HIPAA に対応していることを確認します。
+
+コマンドラインから次のコマンドを実行して、`magento/module-data-services-hipaa` 拡張機能をダウンロードします。
+
+```bash
+composer require magento/module-data-services-hipaa
 ```
 
 ## [!DNL Data Connection] 拡張機能の更新 {#update}

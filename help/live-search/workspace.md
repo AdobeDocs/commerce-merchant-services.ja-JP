@@ -1,10 +1,10 @@
 ---
-title: 'Live Search のセットアップ'
+title: Live Search のセットアップ
 description: ワークスペ  [!DNL Live Search]  スを使用して、検索パフォーマンスの設定、管理、監視を行います。
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 - ライブ検索ダッシュボードの [ 必須イベント ](events.md)。
 - 前提条件として追加する必要がある [ ストアフロントイベントコレクター ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
 - イベント構造 ](https://github.com/adobe/commerce-events/tree/main/examples) 例 [。
+
+### ヘルスケア関連のお客様
+
+医療関係のお客様が [ データ接続 ](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [ データサービス HIPAA 拡張機能 ](../data-connection/overview.md) をインストールした場合、[!DNL Live Search] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Live Search] のイベント収集を再度有効にします。 詳しくは、[ 一般設定 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) を参照してください。
 
 ## 範囲を設定
 

@@ -3,9 +3,9 @@ title: ガイドの概要
 description: 拡張機能を使用してAdobe Commerce データをAdobe Experience Platformと統合する方法  [!DNL Data Connection]  説明します。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Experience Platformコネクタの名前が [!DNL Data Connection] に変更されました。
 
-[!DNL Data Connection] 拡張機能は、Adobe Commerce web インスタンスをAdobe Experience PlatformとEdge Networkに接続します。 モバイルアプリ開発者向けに、Adobe Experience Platform Mobile SDK とCommerceを使用して、Commerce データを取得し、Experience Platformに送信します。 [ 詳細情報 ](./mobile-sdk-epc.md)。
+[!DNL Data Connection] 拡張機能は、Adobe Commerce web インスタンスをAdobe Experience PlatformとEdge Networkに接続します。 モバイルアプリ開発者は、CommerceでAdobe Experience Platform Mobile SDKを使用して、Commerce データを取得し、Experience Platformに送信します。 [ 詳細情報 ](./mobile-sdk-epc.md)。
 
 Commerce ストアには、大量のデータが含まれています。 買い物客がサイト上の製品を参照、表示、最終的に購入する方法に関する情報を入手することで、よりパーソナライズされたショッピングエクスペリエンスを作成する機会が明らかになります。 そのデータは、買い物かごの価格ルールや動的ブロックなどのCommerceのネイティブ機能に情報を提供できますが、Commerce インスタンスではデータがサイロ化されたままになります。
 
@@ -49,23 +49,23 @@ CommerceからExperience Platformへの接続とCommerceへのExperience Platfor
 
 これらの 2 つのシステム間でデータを共有するには、いくつかの概念を理解している必要があります。
 
-* **データ** - Experience Platformと共有されるデータは、ストアフロントのブラウザーイベント、サーバーのバックオフィスイベント、プロファイルレコードデータから収集されたデータです。 ストアフロントイベントは、サイトでの買い物客のインタラクションからキャプチャされ、[`addToCart`](events.md#addtocart)、[`pageView`](events.md#pageview)、[`createAccount`](events.md#createaccount)、[`editAccount`](events.md#editaccount)、[`startCheckout`](events.md#startcheckout)、[`completeCheckout`](events.md#completecheckout)、[`signIn`](events.md#signin)、[`signOut`](events.md#signout) などのイベントが含まれます。 ストアフロントイベントの完全なリストについては、[ ストアフロントイベント ](events.md#storefront-events) を参照してください。 サーバーサイドまたはバックオフィスイベントには、[`orderPlaced`](events-backoffice.md#orderplaced)、[`orderReturned`](events-backoffice.md#orderitemreturncompleted)、[`orderShipped`](events-backoffice.md#ordershipmentcompleted)、[`orderCancelled`](events-backoffice.md#ordercancelled) などの [ 注文ステータス ](events-backoffice.md#order-status) 情報が含まれます。 バックオフィスイベントの完全なリストについては、[ バックオフィスイベント ](events-backoffice.md) を参照してください。 プロファイルレコードデータには、新しいプロファイルが作成、更新または削除された際の情報が含まれています。 詳しくは、[ プロファイルレコードデータ ](events-profilerecord.md) を参照してください。
+- **データ** - Experience Platformと共有されるデータは、ストアフロントのブラウザーイベント、サーバーのバックオフィスイベント、プロファイルレコードデータから収集されたデータです。 ストアフロントイベントは、サイトでの買い物客のインタラクションからキャプチャされ、[`addToCart`](events.md#addtocart)、[`pageView`](events.md#pageview)、[`createAccount`](events.md#createaccount)、[`editAccount`](events.md#editaccount)、[`startCheckout`](events.md#startcheckout)、[`completeCheckout`](events.md#completecheckout)、[`signIn`](events.md#signin)、[`signOut`](events.md#signout) などのイベントが含まれます。 ストアフロントイベントの完全なリストについては、[ ストアフロントイベント ](events.md#storefront-events) を参照してください。 サーバーサイドまたはバックオフィスイベントには、[`orderPlaced`](events-backoffice.md#orderplaced)、[`orderReturned`](events-backoffice.md#orderitemreturncompleted)、[`orderShipped`](events-backoffice.md#ordershipmentcompleted)、[`orderCancelled`](events-backoffice.md#ordercancelled) などの [ 注文ステータス ](events-backoffice.md#order-status) 情報が含まれます。 バックオフィスイベントの完全なリストについては、[ バックオフィスイベント ](events-backoffice.md) を参照してください。 プロファイルレコードデータには、新しいプロファイルが作成、更新または削除された際の情報が含まれています。 詳しくは、[ プロファイルレコードデータ ](events-profilerecord.md) を参照してください。
 
-* **Experience PlatformとEdge Network** – ほとんどのAdobeDX 製品のデータウェアハウス。 Experience Platformに送信されたデータは、Experience PlatformEdge Networkを介してAdobeの DX 製品に伝播されます。 例えば、Journey Optimizerを起動し、特定のCommerce イベントデータをエッジから取得し、放棄された買い物かごメールをJourney Optimizerに作成できます。 Journey Optimizerは、Commerce ストアに放棄された買い物かごがある場合に、そのメールを送信できます。 [Experience PlatformとEdge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html) の詳細をご覧ください。
+- **Experience PlatformとEdge Network** – ほとんどのAdobeDX 製品のデータウェアハウス。 Experience Platformに送信されたデータは、Experience PlatformEdge Networkを通じてAdobeの DX 製品に伝播されます。 例えば、Journey Optimizerを起動し、特定のCommerce イベントデータをエッジから取得し、放棄された買い物かごメールをJourney Optimizerに作成できます。 Journey Optimizerは、Commerce ストアに放棄された買い物かごがある場合に、そのメールを送信できます。 [Experience PlatformとEdge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html) の詳細をご覧ください。
 
-* **スキーマ** – 送信されるデータの構造を表すスキーマです。 Experience PlatformでCommerce データを取り込む前に、データの構造を記述するスキーマを作成し、各フィールドに含めることができるデータのタイプに制約を指定する必要があります。 スキーマは、基本クラスと 0 個以上のスキーマフィールドグループで構成されます。 このスキーマは、すべてのAdobe DX 製品が読み取れる XDM 構造を使用しています。 そのため、Experience Platformにデータを送る際に、すべての DX 製品でデータを確実に理解できるようになります。 詳しくは、[ スキーマ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) を参照してください。
+- **スキーマ** - スキーマは、送信されるデータの構造を記述します。 Experience PlatformでCommerce データを取り込む前に、データの構造を記述するスキーマを作成し、各フィールドに含めることができるデータのタイプに制約を指定する必要があります。 スキーマは、基本クラスと 0 個以上のスキーマフィールドグループで構成されます。 このスキーマは、すべてのAdobe DX 製品が読み取れる XDM 構造を使用しています。 Experience Platformに送信されたデータは、すべての DX 製品に確実に反映されます。 詳しくは、[ スキーマ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) を参照してください。
 
-* **データセット** - データのコレクションのためのストレージと管理の構成体。通常、スキーマ（列）とフィールド（行）を含むテーブル。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。 Adobe Experience Platformに正常に取り込まれたすべてのデータは、データセットに含まれています。 [ データセット ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) の詳細情報。
+- **データセット** - データのコレクションのためのストレージと管理の構成体。通常、スキーマ（列）とフィールド（行）を含むテーブル。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。 Adobe Experience Platformに正常に取り込まれたすべてのデータは、データセットに含まれています。 [ データセット ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) の詳細情報。
 
-* **データストリーム** - Adobe Experience Platformから他のAdobe DX 製品にデータを送信できるようにする ID。 この ID は、特定のAdobe Commerce インスタンス内の特定の web サイトに関連付ける必要があります。 このデータストリームを作成する場合は、上記で作成した XDM スキーマを指定します。 詳細情報：[ データストリーム ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)。
+- **データストリーム** - Adobe Experience Platformから他のAdobe DX 製品にデータを送信できるようにする ID。 この ID は、特定のAdobe Commerce インスタンス内の特定の web サイトに関連付ける必要があります。 このデータストリームを作成する場合は、上記で作成した XDM スキーマを指定します。 詳細情報：[ データストリーム ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)。
 
 ## サポートされるアーキテクチャ
 
 [!DNL Data Connection] 拡張機能は、次のアーキテクチャで使用できます。
 
-* PHP/Luma
-* [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
-* [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+- PHP/Luma
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
+- [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
 >[!BEGINSHADEBOX]
 
@@ -73,10 +73,10 @@ CommerceからExperience Platformへの接続とCommerceへのExperience Platfor
 
 [!DNL Data Connection] 拡張機能を使用するには、次の要件を満たす必要があります。
 
-* Adobe Commerce 2.4.4 以降
-* Adobe IDと組織 ID
-* [Adobeクライアントデータレイヤー（ACDL） ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html) （ストアフロントイベントデータの収集に必要）
-* 他のAdobeDX 製品の使用権限。
+- Adobe Commerce 2.4.4 以降
+- Adobe IDと組織 ID
+- [Adobeクライアントデータレイヤー（ACDL） ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html) （ストアフロントイベントデータの収集に必要）
+- 他のAdobeDX 製品の使用権限。
 
 >[!ENDSHADEBOX]
 
@@ -98,7 +98,11 @@ CommerceからExperience Platformへの接続とCommerceへのExperience Platfor
 
 >[!NOTE]
 >
->モバイル開発者向けに、Adobe Experience Platform Mobile SDK とCommerceの [ 統合 ](./mobile-sdk-epc.md) 方法を説明します。
+>モバイル開発者向けに、Adobe Experience Platform Mobile SDKをCommerceと [ 統合 ](./mobile-sdk-epc.md) する方法を説明します。
+
+## HIPAA 対応
+
+[!DNL Data Connection] 拡張機能を使用すると、バックオフィスデータ [!DNL Commerce]Experience Platformと共有し、HIPAA 準拠を維持できます。 [ 詳細情報 ](hipaa-readiness.md)。
 
 ## オーディエンス
 
@@ -108,5 +112,5 @@ CommerceからExperience Platformへの接続とCommerceへのExperience Platfor
 
 情報が必要な場合や、このガイドで扱われていない質問がある場合は、次のリソースを使用してください。
 
-* [ ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
-* [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} - チケットを送信すると、追加のヘルプを受けることができます。
+- [ ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} - チケットを送信すると、追加のヘルプを受けることができます。
