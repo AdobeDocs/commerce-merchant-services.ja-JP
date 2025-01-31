@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 5379299cdd10f3a9aab41da56ed0a7b41282b085
+source-git-commit: f222d66ff3fc99c1fb234e1988a760482aadf2ca
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 103.3.18 リリース
 
-![ 修正 ](../assets/fix.svg) 製品およびカテゴリエンティティのステージング更新が、データの書き出しデータの更新時に正しくトリガーされるようになりました。&lt;!-MDEE-963—>
+![ 修正 ](../assets/fix.svg) 製品およびカテゴリエンティティのステージングの更新が、データの書き出しのデータの更新時に正しくトリガーされるようになりました。<!--MDEE-963-->
 
 ## 103.3.17 リリース
 
