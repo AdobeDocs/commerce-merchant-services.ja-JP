@@ -4,9 +4,9 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
+source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 
 同じデータスペースを複数の環境で同時に使用しない限り、非実稼動環境でテストデータスペースを使用できます。 別の環境でテストデータ領域を使用するには、その環境でデータ領域を選択および設定する前に、データクリーンアップを実行します。
 
-複数のステージング環境を使用するAdobe Commerce Cloud Pro プロジェクトの場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) することで、ステージング環境ごとに追加のテストデータスペースをリクエストできます。 ただし、ステージング環境が 1 つのみで、追加のテストデータスペースが必要な場合は、次のオプションがあります。
-- 追加のステージング環境をリクエストする場合は、カスタマーサクセスチームまたは担当のカスタマーサクセスマネージャーにお問い合わせください。 追加費用がかかります。
-- 追加のテストデータスペースの [ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) し、追加のデータスペースに対するビジネス上の正当性を示します。 このリクエストは承認される場合があります。
+複数のステージング環境を使用するAdobe Commerce Cloud Pro プロジェクトの場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/home?support-tab=home#support) することで、ステージング環境ごとに追加のテストデータスペースをリクエストできます。 ただし、ステージング環境が 1 つのみで、追加のテストデータスペースが必要な場合は、次のオプションがあります。
+- 追加のステージング環境をリクエストする場合は、カスタマーサクセスチームまたは担当のカスタマーサクセスマネージャーにお問い合わせください。
+- [ サポートリクエストを送信 ](https://experienceleague.adobe.com/home?support-tab=home#support) して追加のテストデータスペースをリクエストし、追加のデータスペースに対するビジネス上の正当性を示します。 このリクエストは承認される場合があります。
+
+Adobe支払いサービスを使用するMagento Open Sourceのお客様は、追加のデータスペースをリクエストする場合もあります。 テストデータスペースをリクエストするには、[ サポートリクエスト ](https://experienceleague.adobe.com/home?support-tab=home#support) を送信する前に、支払いチームに追加のデータスペースに関する事前承認を問い合わせてください。
 
 ### SaaS プロジェクトの選択または作成 {#createsaasenv}
 
