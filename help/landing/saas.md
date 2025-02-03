@@ -4,9 +4,9 @@ description: 実稼動およびサンドボックス API キーを使用して�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
+source-git-commit: c7ba4401d94f14cc66ef7b404e5444e1f2cb1e23
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 
 1. _環境_ メニューから、「**実稼動**」または「**サンドボックス**」を選択します。
 
+   >[!NOTE]
+   >
+   >*実稼動環境* および *サンドボックス* とは、データがAdobeの SaaS バックエンドシステムに保存されるデータスペース環境を指します。 キーを使用するコマース環境ではありません。
+
 1. _API キー_ セクションに名前を入力し、**新規追加** をクリックして、新しいキーをダウンロードするためのダイアログを開きます。
 
    ![ 秘密鍵のダウンロード ](assets/download-api-private-key.png)
@@ -69,7 +73,7 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 
 1. 各環境（実稼動環境とサンドボックス）で上記の手順を繰り返します。
 
-   **API キー** セクションに API （公開）キーが表示されるようになりました。 ライセンスに関連付けられたいずれかの環境またはインストールで [SaaS プロジェクトを選択または作成 ](#createsaasenv) する場合、4 つのキー（実稼動用キーとサンドボックス用キーの両方、公開鍵と秘密鍵）がすべて必要です。
+   **API キー** セクションに API （公開）キーが表示されるようになりました。 ライセンスに関連付けられたいずれかの環境またはインストールで [SaaS プロジェクトを選択または作成 ](#createsaasenv) する場合、4 つのキー（実稼動鍵とサンドボックス鍵の両方、公開鍵と秘密鍵）がすべて必要です。
 
 ## SaaS 設定 {#saasenv}
 
