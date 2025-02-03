@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] リリースノート'
 description: Adobe Commerceからのの最新  [!DNL Product Recommendations]  リリース情報です。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 0%
 ## ホステッド サービスの更新
 
 これらのメモでは、バージョン管理されたリリースの外部で公開または検出された、更新プログラムや既知の問題、またはホストされるサービスの改善について説明します。
+
+_2025 年 1 月 31 日_
+
+![ 新規 ](../assets/new.svg) テスト環境には、クエリされていないカタログデータ用の新しいデータ保持ポリシーがあります。 [ 詳細情報 ](overview.md#catalog-data-retention-policy)。
 
 _2024 年 6 月 28 日_
 

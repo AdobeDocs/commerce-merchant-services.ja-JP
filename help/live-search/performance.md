@@ -1,10 +1,10 @@
 ---
-title: "パフォーマンス"
-description: 「パフォーマンス  [!DNL Live Search]  ワークスペースは、買い物客が使用する検索用語に関するインサイトを提供します。」
+title: パフォーマンス
+description: ' [!DNL Live Search]  パフォーマンスワークスペースでは、買い物客が使用する検索用語に関するインサイトを提供します。'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 
 また、データ同期について詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) を参照してください。
 
+>[!NOTE]
+>
+>パフォーマンスワークスペースは 12 時間ごとに更新されます。
+
 ## レポートの表示
 
 1. **日付範囲** を入力するには、カレンダー（![ カレンダー ](assets/btn-calendar.png)）をクリックして、次のいずれかの操作を行います。
@@ -30,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->パフォーマンスワークスペースは 12 時間ごとに更新されます。
+>日付の範囲は 1 年を超えることはできません。
 
 ## フィールドの説明
 

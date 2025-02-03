@@ -3,9 +3,9 @@ title: '[!DNL Live Search] リリースノート'
 description: Adobe Commerceからのの最新  [!DNL Live Search]  リリース情報です。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '2087'
+source-wordcount: '2106'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## ホステッド サービスの更新
 
 これらのメモでは、バージョン管理されたリリースの外部で公開された更新や、ホストされるサービスの改善について説明します。
+
+_2025 年 1 月 31 日_
+
+![ 新規 ](../assets/new.svg) テスト環境には、クエリされていないカタログデータ用の新しいデータ保持ポリシーがあります。 [ 詳細情報 ](overview.md#catalog-data-retention-policy)。
 
 _2024 年 9 月 19 日_
 

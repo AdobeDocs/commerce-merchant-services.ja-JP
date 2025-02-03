@@ -1,11 +1,11 @@
 ---
 title: 概要  [!DNL Product Recommendations]
-description: 「[!DNL Product Recommendations] は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを刺激するために使用できる、強力なマーケティングツールです」。
+description: '[!DNL Product Recommendations] は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,9 @@ ht-degree: 0%
 [!DNL Product Recommendations] について詳しくは、このビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+
+## カタログデータ保持ポリシー
+
+テスト環境でカタログデータのクエリを 90 日間連続で送信しない場合、カタログデータは休止モードに設定され、クエリに対してデータが返されません。 実稼動環境のカタログデータは、このポリシーの影響を受けません。
+
+テスト環境でカタログデータを再アクティブ化するには、「[!DNL Product Recommendations] を再アクティブ化 [ というタイトルで ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) サポートリクエストを送信」し、環境 ID を含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。

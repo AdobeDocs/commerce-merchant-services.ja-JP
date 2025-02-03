@@ -3,9 +3,9 @@ title: 何  [!DNL Live Search]?
 description: Adobe Commerceの [!DNL Live Search] は、迅速で関連性の高い直感的な検索エクスペリエンスを提供します。
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -84,3 +84,9 @@ Live Search の使用と設定に関する詳細なビデオについては、[ 
 ## イベント
 
 [!DNL Live Search] は [ イベント ](events.md) を使用して [ インテリジェントマーチャンダイジング ](category-merch.md) および [ パフォーマンス ](performance.md) ダッシュボードを計算します。 イベントはデフォルトの実装で提供されています。 ヘッドレスストアフロントのイベントは、手動で有効にする必要があります。
+
+## カタログデータ保持ポリシー
+
+テスト環境で、カタログデータの検索クエリを 90 日連続で送信しない場合、カタログデータは休止モードに設定され、検索クエリではデータが返されません。 実稼動環境のカタログデータは、このポリシーの影響を受けません。
+
+テスト環境でカタログデータを再アクティブ化するには、「[!DNL Live Search] を再アクティブ化 [ というタイトルで ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) サポートリクエストを送信」し、環境 ID を含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。
