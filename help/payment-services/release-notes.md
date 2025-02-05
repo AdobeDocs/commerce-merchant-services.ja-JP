@@ -3,9 +3,9 @@ title: '[!DNL Payment Services] リリースノート'
 description: すべてのリリースについて詳しくは、リリースノ  [!DNL Payment Services]  トを参照してください。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
+source-git-commit: 8cf48ade51157a8d2ce51333deb4d142e4a1a011
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3344'
 ht-degree: 0%
 
 ---
@@ -91,13 +91,23 @@ _2021 年 6 月 28 日_
 
 +++
 
+## v2.10.1
+
+_2025 年 2 月 5 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 新規 ](../assets/new.svg)<!-- PAY-5813 --> Adobe Commerce 2.4.8 および PHP 8.4 がサポートされるようになりました。
+
 ## v2.10.0
 
 _2024 年 12 月 13 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] では、購入せずに保管するためのGraphQL エンドポイントをサポートするようになったので、お客様はトランザクションを行わずに支払い方法を保存できます。
+![ 新規 ](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services] は、Adobe Commerceの [Edge Delivery Servicesストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/) で [[!DNL Payment Services]  ドロップインコンポーネント ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) をサポートするようになりました。
+
+![ 新規 ](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] は、購入せずに保管するための [GraphQL エンドポイント ](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/queries/get-vault-config/) をサポートするようになりました。これにより、お客様は、トランザクションを完了することなく支払い方法を保存できます。
 
 ![ 新規 ](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] は、Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds) での [3D セキュア認証をサポートするようになり、支払い取引中のマーチャントおよびお客様のセキュリティを強化します。
 
