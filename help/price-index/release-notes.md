@@ -1,12 +1,13 @@
 ---
 title: '[!DNL Catalog Adapter] リリースノート'
-description: 'Adobe Commerceの最新  [!DNL Catalog Adapter]  リリース情報。'
+description: Adobe Commerceの最新  [!DNL Catalog Adapter]  リリース情報です。
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
-source-git-commit: 71e3a3c6b6339895f19a0cd71a7952790ba3f8a8
+exl-id: d7aeee8f-9043-4517-9fde-ffe24aa77b19
+source-git-commit: 7bc5a4185317afbe3b767945455070734c452450
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,10 @@ ht-degree: 0%
 
 ## 現在のメジャーバージョン
 
+## 1.0.9 リリース
+
+![ 修正 ](../assets/fix.svg)PHP 8.4 の互換性を追加しました。<!--MDEE-941-->
+
 ## 1.0.8 リリース
 
-![ 修正 ](../assets/fix.svg) 数値 SKU を持つ設定可能な製品バリアントをウィッシュリストに追加する際に、例外ログでエラーが発生する問題を修正しました。 &lt;!-MDEE-876—>
-
+![ 修正 ](../assets/fix.svg) 数値 SKU を持つ設定可能な製品バリアントをウィッシュリストに追加する際に、例外ログでエラーが発生する問題を修正しました。<!--MDEE-876-->
