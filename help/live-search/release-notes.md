@@ -3,9 +3,9 @@ title: '[!DNL Live Search] リリースノート'
 description: Adobe Commerceからのの最新  [!DNL Live Search]  リリース情報です。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
+source-git-commit: f5bd9e76239dfa73babe4067efae20b4fbcd82c1
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2129'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,15 @@ _2023 年 10 月 27 日_
 
 ![ 新規 ](../assets/new.svg)[!DNL Live Search] PLP ウィジェットがカラースウォッチをサポートするようになりました。
 
-## [!DNL Live Search] 4.2.2 {#422}
+## [!DNL Live Search] 4.2.3
+
+_2025 年 2 月 13 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 修正 ](../assets/fix.svg) 注文詳細ページに注文番号、日付、**[!UICONTROL Reorder]** ボタンが表示されない問題を修正しました。
+
+## [!DNL Live Search] 4.2.2
 
 _2025 年 1 月 6 日_
 
@@ -78,7 +86,7 @@ _2025 年 1 月 6 日_
 
 ![ 修正 ](../assets/fix.svg) Adobe Commerce バージョン 2.4.5 以前の `categoryList` GraphqL クエリでエラーが発生していた問題を修正しました。
 
-## [!DNL Live Search] 4.2.1 {#421}
+## [!DNL Live Search] 4.2.1
 
 _2024 年 7 月 31 日_
 
@@ -87,7 +95,7 @@ _2024 年 7 月 31 日_
 ![ 修正 ](../assets/fix.svg) 特定のスクリプトがチェックアウトページに読み込まれない問題を修正しました。
 ![ 修正 ](../assets/fix.svg) `composer.json` ファイルの依存関係バージョンを修正しました。
 
-## [!DNL Live Search] 4.2.0 {#420}
+## [!DNL Live Search] 4.2.0
 
 _2024 年 5 月 31 日_
 
@@ -95,7 +103,7 @@ _2024 年 5 月 31 日_
 
 ![ 新規 ](../assets/new.svg) PLP ウィジェットバージョン 2.0.0 を使用するように Live Search 拡張機能を更新しました。
 
-## [!DNL Live Search] 4.1.2 {#412}
+## [!DNL Live Search] 4.1.2
 
 _2024 年 5 月 16 日_
 
@@ -105,7 +113,7 @@ _2024 年 5 月 16 日_
 
 ![ 修正 ](../assets/fix.svg) カテゴリの `categoryPath` と `categoryList` に基づいて正しくフィルタリングするように、[`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) GraphQL クエリを修正しました。
 
-## [!DNL Live Search] 4.1.1 {#411}
+## [!DNL Live Search] 4.1.1
 
 _2024 年 3 月 19 日_
 
@@ -116,7 +124,7 @@ _2024 年 3 月 19 日_
 ![ 新規 ](../assets/new.svg) ポーランド語の言語サポートを追加しました。
 ![ 新規 ](../assets/new.svg) [!DNL Live Search] Adobe Commerce 2.4.4 を実行するインストールで、PHP 8.3 がサポートされるようになりました。
 
-## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0
 
 _2024 年 2 月 22 日_
 
@@ -132,7 +140,7 @@ _2024 年 2 月 22 日_
 ![ 修正 ](../assets/fix.svg) ロケールの設定に関係なく、検索ポップオーバーに通貨記号が常に価格値の前に表示される問題を修正しました。
 ![ 修正 ](../assets/fix.svg) インストール時の互換性の問題を修正するために、無効なコアプラグインの不要なタイプ定義を削除しました。
 
-## [!DNL Live Search] 4.0.0 {#400}
+## [!DNL Live Search] 4.0.0
 
 _2023 年 11 月 13 日_
 
@@ -165,7 +173,7 @@ _2023 年 11 月 13 日_
 
 +++3.1.1 以前
 
-## [!DNL Live Search] 3.1.1 {#311}
+## [!DNL Live Search] 3.1.1
 
 _2023 年 9 月 15 日（PT）_
 
@@ -194,7 +202,7 @@ _2023 年 9 月 15 日（PT）_
 ![ 修正 ](../assets/fix.svg) 「ランキングタイプ」は「インテリジェントランキング」に名前が変更されました
 ![ 修正 ](../assets/fix.svg) 軽微なバグ修正
 
-## [!DNL Live Search] 3.1.0 {#310}
+## [!DNL Live Search] 3.1.0
 
 _2023 年 9 月 1 日_
 
@@ -204,7 +212,7 @@ _2023 年 9 月 1 日_
 
 ![ 修正 ](../assets/fix.svg) 製品一覧表示ウィジェットが更新され、[Catalog Service API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/) を使用するようになりました。
 
-## [!DNL Live Search] 3.0.2 {#302}
+## [!DNL Live Search] 3.0.2
 
 _2023 年 8 月 7 日_
 
@@ -233,7 +241,7 @@ _2023 年 8 月 7 日_
 
 Live Search Product Listing Page Widget を使用すると、Google Tag Manager が失敗する。 Google Tag Manager が必要な場合は、デフォルトの検索アダプタを使用します。
 
-## [!DNL Live Search] 3.0.1 {#301}
+## [!DNL Live Search] 3.0.1
 
 _2023 年 3 月 14 日_
 
@@ -271,14 +279,14 @@ _2023 年 3 月 14 日_
 ![ 修正 ](../assets/fix.svg) その他のマイナーなバグ修正とパフォーマンスの更新
 
 
-![ バグ ](../assets/bug.svg) – 「あなたにお勧め」によるランキングは、ライブ検索ウィジェット内でのみサポートされています。 デフォルトの Luma およびPWAの検索機能ではサポートされていません。
+![ バグ ](../assets/bug.svg) – 「あなたにお勧め」によるランキングは、ライブ検索ウィジェット内でのみサポートされています。 デフォルトの Luma およびPWAの検索機能ではサポートされません。
 ![ バグ ](../assets/bug.svg) - カスタムの価格属性ファセットが Luma で正しくレンダリングされませんが、API が適切にフィルタリングします。
 
 マーチャントがこれらの機能にアクセスするには、[!DNL Live Search] 拡張機能のバージョン 3.0.1 をアップグレードする必要があります。
 
 実稼動環境にプッシュする前に、アップグレードとテストを行うことをお勧めします。 テスト環境の結果を確認した後、ピーク外の時間に実稼動環境をアップグレードすることを検討します。
 
-## [!DNL Live Search] 2.0.5 {#205}
+## [!DNL Live Search] 2.0.5
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
@@ -288,7 +296,7 @@ _2023 年 3 月 14 日_
 
 実稼動環境にプッシュする前に、アップグレードとテストを行うことをお勧めします。 テスト環境の結果を確認した後、ピーク外の時間に実稼動環境をアップグレードすることを検討します。
 
-### [!DNL Live Search] 2.0.4 {#204}
+### [!DNL Live Search] 2.0.4
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
@@ -302,7 +310,7 @@ _2023 年 3 月 14 日_
 
 実稼動環境にプッシュする前に、アップグレードとテストを行うことをお勧めします。 テスト環境の結果を確認した後、ピーク外の時間に実稼動環境をアップグレードすることを検討します。
 
-### [!DNL Live Search] 2.0.3 {#203}
+### [!DNL Live Search] 2.0.3
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
@@ -312,7 +320,7 @@ _2023 年 3 月 14 日_
 
 実稼動環境にプッシュする前に、アップグレードとテストを行うことをお勧めします。 テスト環境の結果を確認した後、ピーク外の時間に実稼動環境をアップグレードすることを検討します。
 
-### [!DNL Live Search] 2.0 {#20}
+### [!DNL Live Search] 2.0
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
@@ -321,13 +329,13 @@ _2023 年 3 月 14 日_
 ![ 新規 ](../assets/new.svg) [!DNL Live Search]Adobe Commerce 2.4.4 を実行するインストールで、PHP 8.1 がサポートされるようになりました。
 ![ 新規 ](../assets/new.svg) インストール中に無効になるモジュールのリストに `Magento_ElasticsearchCatalogPermissionsGraphQl` モジュールが追加されます。
 ![ 新規 ](../assets/new.svg) [[!DNL storefront popover]](overview.md) で使用可能な行数は、*Admin* から設定できます。
-![ 新規 ](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) が [!DNL Live Search] でサポートされています。
+![ 新規 ](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) が [!DNL Live Search] でサポートされました。
 ![ 新規 ](../assets/new.svg)[!DNL Live Search] インストールプロセスが、詳細なプロセス変更によって更新されました。
 ![ 修正 ](../assets/fix.svg)[ 詳細検索 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) リンクがストアフロントのフッターから削除されました。
-![ バグ ](../assets/bug.svg) 次の製品属性は、PWAのベータ版リリースに関連して使用される場合、[Commerce GraphQL API でサポートされていません ](https://developer.adobe.com/commerce/services/graphql/live-search/)`description`、`name`、`short_description`
-![ バグ ](../assets/bug.svg) [!DNL Live Search] のPWAのベータ版リリースでは、[ イベント処理 ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) がサポートされていません。
+![ バグ ](../assets/bug.svg) 次の製品属性は、PWAのベータ版リリースに関連して使用される場合、[Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) でサポートされていません：`description`、`name`、`short_description`
+![ バグ ](../assets/bug.svg) PWA for [!DNL Live Search] のベータ版リリースでは、[ イベント処理 ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) がサポートされていません。
 
-### [!DNL Live Search] 1.3.1 {#131}
+### [!DNL Live Search] 1.3.1
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
@@ -335,7 +343,7 @@ _2023 年 3 月 14 日_
 ![ 修正 ](../assets/fix.svg) [ 通貨記号 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) （`data-currency-symbol`）が使用できない場合にエラーが発生する問題を修正しました。
 ![ 修正 ](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) 利用可能な場合、[ 特別価格 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) （最終価格の最小値）が表示されるようになりました。
 
-### [!DNL Live Search] 1.3.0 {#130}
+### [!DNL Live Search] 1.3.0
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
@@ -346,7 +354,7 @@ _2023 年 3 月 14 日_
 ![ バグ ](../assets/bug.svg) 検索アダプタのパッチが重複した製品を処理します。
 ![ バグ ](../assets/bug.svg) [!DNL Live Search] は、複数の [ 仮想） ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) 在庫 ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) を持つ（単一ソース [ （物理）在庫の場所をサポートしています。 複数のインベントリソースは現在サポートされていません。
 
-### [!DNL Live Search] 1.2.0 {#120}
+### [!DNL Live Search] 1.2.0
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
@@ -359,7 +367,7 @@ _2023 年 3 月 14 日_
 ![ 修正 ](../assets/fix.svg) 検索条件 [!DNL Live Search] 空の並べ替え順の値が含まれる場合に、エラーがスローされなくなりました
 ![ 修正 ](../assets/fix.svg) 属性コードに「to」または「from」の文字列が含まれている場合に、範囲フィルタリングが機能しなくなった
 
-### [!DNL Live Search] 1.1.0 {#110}
+### [!DNL Live Search] 1.1.0
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
